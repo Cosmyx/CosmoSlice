@@ -5192,12 +5192,56 @@ bool GCode::_needSAFC(const ExtrusionPath &path)
     });
 }
 
+bool GCode::slowDownByHeight(double& maxSpeed, double& maxAcc, const ExtrusionPath& path)
+{
+    double currentHeight = this->m_layer->print_z;
+    bool do_slowdown = m_config.enable_height_slowdown.value;
+
+    // Only apply to normal extrusion roles, not travels/supports/etc.
+    if (path.role() <= erNone || path.role() > erGapFill)
+        do_slowdown = false;
+
+    if (do_slowdown) {
+        double height1 = m_config.slowdown_start_height.value;
+        double height2 = m_config.slowdown_end_height.value;
+        double speed1  = m_config.slowdown_start_speed.value;
+        double speed2  = m_config.slowdown_end_speed.value;
+        double acc1    = m_config.slowdown_start_acc.value;
+        double acc2    = m_config.slowdown_end_acc.value;
+
+        if (height1 >= height2 || currentHeight < height1 || currentHeight > height2) {
+            do_slowdown = false;
+        } else {
+            double t = (currentHeight - height1) / (height2 - height1);
+            maxSpeed = speed1 + t * (speed2 - speed1);
+            maxAcc   = acc1  - t * (acc1 - acc2);
+
+            m_config.travel_speed.value        = std::min(m_config.travel_speed.value,        maxSpeed);
+            m_config.travel_speed_z.value      = std::min(m_config.travel_speed_z.value,      maxSpeed);
+            m_config.travel_acceleration.value = std::min(m_config.travel_acceleration.value, maxAcc);
+            m_config.travel_jerk.value         = std::min(m_config.travel_jerk.value,         maxSpeed);
+            return true;
+        }
+    }
+    maxSpeed = m_config.travel_speed.value;
+    maxAcc   = m_config.travel_acceleration.value;
+    return false;
+}
+
 std::string GCode::_extrude(const ExtrusionPath &path, std::string description, double speed)
 {
     std::string gcode;
 
     if (is_bridge(path.role()))
         description += " (bridge)";
+
+    // save travel config before slowdown-by-height temporarily modifies it
+    auto temp_travel_speed   = m_config.travel_speed.value;
+    auto temp_travel_speed_z = m_config.travel_speed_z.value;
+    auto temp_travel_acc     = m_config.travel_acceleration.value;
+    auto temp_travel_jerk    = m_config.travel_jerk.value;
+    double dummy_speed, dummy_acc;
+    bool do_slowdown_by_height = slowDownByHeight(dummy_speed, dummy_acc, path);
 
     const ExtrusionPathSloped* sloped = dynamic_cast<const ExtrusionPathSloped*>(&path);
 
@@ -5227,6 +5271,14 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
         if (_last_pos_undefined && !slope_need_z_travel) {
             gcode += this->writer().travel_to_z(m_last_layer_z, "force restore Z after unknown last pos", true);
         }
+    }
+
+    // restore travel config after the travel move
+    if (do_slowdown_by_height) {
+        m_config.travel_speed.value        = temp_travel_speed;
+        m_config.travel_speed_z.value      = temp_travel_speed_z;
+        m_config.travel_acceleration.value = temp_travel_acc;
+        m_config.travel_jerk.value         = temp_travel_jerk;
     }
 
 

@@ -1277,6 +1277,63 @@ void PrintConfigDef::init_fff_params()
     def->mode = comAdvanced;
     def->set_default_value(new ConfigOptionFloatOrPercent(0, false));
 
+    def = this->add("enable_height_slowdown", coBool);
+    def->label = L("Slow down by height");
+    def->category = L("Speed");
+    def->tooltip = L("Enable this option to slow printing down by height");
+    def->mode = comAdvanced;
+    def->set_default_value(new ConfigOptionBool(false));
+
+    def = this->add("slowdown_start_height", coFloat);
+    def->label = L("Starting height");
+    def->category = L("Speed");
+    def->tooltip = L("The height at which slowdown begins");
+    def->sidetext = L("mm");
+    def->min = 0;
+    def->mode = comAdvanced;
+    def->set_default_value(new ConfigOptionFloat(0));
+
+    def = this->add("slowdown_start_speed", coFloat);
+    def->label = L("Speed at starting height");
+    def->category = L("Speed");
+    def->sidetext = L("mm/s");
+    def->min = 0;
+    def->mode = comAdvanced;
+    def->set_default_value(new ConfigOptionFloat(1000));
+
+    def = this->add("slowdown_start_acc", coFloat);
+    def->label = L("Acceleration at starting height");
+    def->category = L("Speed");
+    def->sidetext = L("mm/s\u00B2");
+    def->min = 0;
+    def->mode = comAdvanced;
+    def->set_default_value(new ConfigOptionFloat(100000));
+
+    def = this->add("slowdown_end_height", coFloat);
+    def->label = L("Ending height");
+    def->category = L("Speed");
+    def->tooltip = L("The height at which slowdown ends. Must be greater than starting height.");
+    def->sidetext = L("mm");
+    def->min = 0;
+    def->mode = comAdvanced;
+    def->set_default_value(new ConfigOptionFloat(400));
+
+    def = this->add("slowdown_end_speed", coFloat);
+    def->label = L("Speed at ending height");
+    def->category = L("Speed");
+    def->sidetext = L("mm/s");
+    def->min = 0;
+    def->mode = comAdvanced;
+    def->set_default_value(new ConfigOptionFloat(1000));
+
+    def = this->add("slowdown_end_acc", coFloat);
+    def->label = L("Acceleration at ending height");
+    def->category = L("Speed");
+    def->sidetext = L("mm/s\u00B2");
+    def->min = 0;
+    def->mode = comAdvanced;
+    def->set_default_value(new ConfigOptionFloat(100000));
+
     def = this->add("bridge_speed", coFloat);
     def->label = L("External");
     def->category = L("Speed");

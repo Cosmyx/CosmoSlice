@@ -382,6 +382,9 @@ private:
     double          m_last_mm3_mm = 0;
     // Orca: Adaptive PA code segment end
 
+    // slow down by height
+    bool slowDownByHeight(double& maxSpeed, double& maxAcc, const ExtrusionPath& path);
+
     // Extruding multiple objects with soluble / non-soluble / combined supports
     // on a multi-material printer, trying to minimize tool switches.
     // Following structures sort extrusions by the extruder ID, by an order of objects and object islands.

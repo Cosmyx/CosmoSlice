@@ -1060,6 +1060,13 @@ PRINT_CONFIG_CLASS_DEFINE(
     ((ConfigOptionFloatOrPercent,       overhang_2_4_speed))
     ((ConfigOptionFloatOrPercent,       overhang_3_4_speed))
     ((ConfigOptionFloatOrPercent,       overhang_4_4_speed))
+    ((ConfigOptionBool,                 enable_height_slowdown))
+    ((ConfigOptionFloat,                slowdown_start_height))
+    ((ConfigOptionFloat,                slowdown_start_speed))
+    ((ConfigOptionFloat,                slowdown_start_acc))
+    ((ConfigOptionFloat,                slowdown_end_height))
+    ((ConfigOptionFloat,                slowdown_end_speed))
+    ((ConfigOptionFloat,                slowdown_end_acc))
     ((ConfigOptionBool,                 only_one_wall_top))
 
     //SoftFever
