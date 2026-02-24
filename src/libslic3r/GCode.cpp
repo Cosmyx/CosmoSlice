@@ -5194,7 +5194,13 @@ bool GCode::_needSAFC(const ExtrusionPath &path)
 
 bool GCode::slowDownByHeight(double& maxSpeed, double& maxAcc, const ExtrusionPath& path)
 {
-    double currentHeight = this->m_layer->print_z;
+    if (m_layer == nullptr) {
+        maxSpeed = m_config.travel_speed.value;
+        maxAcc   = m_config.travel_acceleration.value;
+        return false;
+    }
+
+    double currentHeight = m_layer->print_z;
     bool do_slowdown = m_config.enable_height_slowdown.value;
 
     // Only apply to normal extrusion roles, not travels/supports/etc.
@@ -5240,8 +5246,8 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
     auto temp_travel_speed_z = m_config.travel_speed_z.value;
     auto temp_travel_acc     = m_config.travel_acceleration.value;
     auto temp_travel_jerk    = m_config.travel_jerk.value;
-    double dummy_speed, dummy_acc;
-    bool do_slowdown_by_height = slowDownByHeight(dummy_speed, dummy_acc, path);
+    double height_max_speed, height_max_acc;
+    bool do_slowdown_by_height = slowDownByHeight(height_max_speed, height_max_acc, path);
 
     const ExtrusionPathSloped* sloped = dynamic_cast<const ExtrusionPathSloped*>(&path);
 
@@ -5318,6 +5324,9 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
             acceleration = m_config.default_acceleration.value;
         }
         acceleration_i = (unsigned int)floor(acceleration + 0.5);
+        // Cap acceleration by height-based slowdown limit
+        if (do_slowdown_by_height && height_max_acc > 0)
+            acceleration_i = std::min(acceleration_i, (unsigned int)std::floor(height_max_acc + 0.5));
     }
 
     // adjust X Y jerk
@@ -5479,6 +5488,10 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
     }
 }
     
+    // Cap extrusion speed by height-based slowdown limit
+    if (do_slowdown_by_height && height_max_speed > 0)
+        speed = std::min(speed, height_max_speed);
+
     bool variable_speed = false;
     std::vector<ProcessedPoint> new_points {};
 
