@@ -258,12 +258,15 @@ bool ObjectTableSettings::update_settings_list(bool is_object, bool is_multiple_
             }
         }
         optgroup->activate();
-        for (auto& opt : cat.second)
-            optgroup->get_field(opt.name)->m_on_change = [weak_optgroup](const std::string& opt_id, const boost::any& value) {
-                // first of all take a snapshot and then change value in configuration
-                wxGetApp().plater()->take_snapshot((boost::format("Change Option %s") % opt_id).str());
-                weak_optgroup.lock()->on_change_OG(opt_id, value);
-            };
+        for (auto& opt : cat.second) {
+            Field* field = optgroup->get_field(opt.name);
+            if (field)
+                field->m_on_change = [weak_optgroup](const std::string& opt_id, const boost::any& value) {
+                    // first of all take a snapshot and then change value in configuration
+                    wxGetApp().plater()->take_snapshot((boost::format("Change Option %s") % opt_id).str());
+                    weak_optgroup.lock()->on_change_OG(opt_id, value);
+                };
+        }
 
         optgroup->reload_config();
         different_count = update_extra_column_visible_status(optgroup.get(), cat.second, config);

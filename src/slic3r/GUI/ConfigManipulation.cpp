@@ -800,6 +800,12 @@ void ConfigManipulation::toggle_print_fff_options(DynamicPrintConfig *config, co
 
     toggle_line("slowdown_for_curled_perimeters", has_overhang_speed);
 
+    const auto* height_slowdown_opt = config->option<ConfigOptionBool>("enable_height_slowdown");
+    bool has_height_slowdown = height_slowdown_opt && height_slowdown_opt->value;
+    for (auto el : {"slowdown_start_height", "slowdown_start_speed", "slowdown_start_acc",
+                    "slowdown_end_height",   "slowdown_end_speed",   "slowdown_end_acc"})
+        toggle_line(el, has_height_slowdown);
+
     toggle_line("flush_into_objects", !is_global_config);
 
     toggle_line("support_interface_not_for_body",config->opt_int("support_interface_filament")&&!config->opt_int("support_filament"));
