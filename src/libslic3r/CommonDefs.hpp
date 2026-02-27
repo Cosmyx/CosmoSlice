@@ -17,6 +17,7 @@ namespace Slic3r
         ntTungstenCarbide,
         ntBrass,
         ntE3D,
+        ntCHT,
         ntCount
     };
 }

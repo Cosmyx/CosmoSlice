@@ -2841,8 +2841,10 @@ int Print::get_hrc_by_nozzle_type(const NozzleType&type)
             nozzle_type_to_hrc = {
                 {"hardened_steel",55},
                 {"stainless_steel",20},
-                {"tungsten_carbide", 85},
+                {"tungsten_carbide", 90},
                 {"brass",2},
+                {"E3D", 65},
+                {"cht", 65},
                 {"undefine",0}
             };
         }
