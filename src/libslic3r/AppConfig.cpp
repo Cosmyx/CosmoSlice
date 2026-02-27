@@ -314,11 +314,11 @@ void AppConfig::set_defaults()
     }
 
     // Orca
-    if (get("stealth_mode").empty()) {
-        set_bool("stealth_mode", false);
-    }
-    if (get("allow_abnormal_storage").empty()) {
-        set_bool("allow_abnormal_storage", false);
+    //if (get("stealth_mode").empty()) {
+        set_bool("stealth_mode", true);
+    //}
+    if (get("legacy_networking").empty()) {
+        set_bool("legacy_networking", true);
     }
 #ifdef __linux__
     if (get(SETTING_USE_ENCRYPTED_TOKEN_FILE).empty())
