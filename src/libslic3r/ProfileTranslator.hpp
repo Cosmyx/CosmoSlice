@@ -21,10 +21,6 @@ public:
     // Translate a profile string. Returns the translation if found, otherwise returns the original.
     const std::string& translate(const std::string& source) const;
 
-    // Reverse translate: given a translated display string, return the original source name.
-    // Returns the input unchanged if no reverse mapping is found.
-    const std::string& untranslate(const std::string& translated) const;
-
     // Clear all loaded translations.
     void clear();
 
@@ -44,8 +40,6 @@ private:
 
     // source string -> translated string
     std::unordered_map<std::string, std::string> m_translations;
-    // translated string -> source string (reverse lookup)
-    std::unordered_map<std::string, std::string> m_reverse_translations;
     std::string m_current_language;
 };
 

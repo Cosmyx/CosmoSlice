@@ -1284,8 +1284,7 @@ int GuideFrame::LoadProfileFamily(std::string strVendor, std::string strFilePath
             json pm = json::parse(contents);
             // wxLogMessage("GUIDE: json_path2  loaded");
 
-            OneModel["name"]         = Slic3r::ProfileTranslator::instance().translate(pm["name"]);
-            OneModel["display_name"] = OneModel["name"];
+            OneModel["name"]      = Slic3r::ProfileTranslator::instance().translate(pm["name"]);
             OneModel["vendor"]    = strVendor;
             std::string NozzleOpt = pm["nozzle_diameter"];
             StringReplace(NozzleOpt, " ", "");
