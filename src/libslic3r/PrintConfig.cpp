@@ -408,6 +408,8 @@ static t_config_enum_values s_keys_map_NozzleType {
     { "hardened_steel", int(NozzleType::ntHardenedSteel) },
     { "stainless_steel",int(NozzleType::ntStainlessSteel) },
     { "brass",          int(NozzleType::ntBrass) }
+    { "tungsten_carbide",int(NozzleType::ntTungstenCarbide) },
+    { "cht",int(NozzleType::ntCHT) }
 };
 CONFIG_OPTION_ENUM_DEFINE_STATIC_MAPS(NozzleType)
 
@@ -3003,10 +3005,14 @@ void PrintConfigDef::init_fff_params()
     def->enum_values.push_back("hardened_steel");
     def->enum_values.push_back("stainless_steel");
     def->enum_values.push_back("brass");
+    def->enum_values.push_back("tungsten_carbide");
+    def->enum_values.push_back("cht");
     def->enum_labels.push_back(L("Undefine"));
     def->enum_labels.push_back(L("Hardened steel"));
     def->enum_labels.push_back(L("Stainless steel"));
     def->enum_labels.push_back(L("Brass"));
+    def->enum_labels.push_back(L("Tungsten Carbide"));
+    def->enum_labels.push_back(L("CHT"));
     def->mode = comAdvanced;
     def->set_default_value(new ConfigOptionEnum<NozzleType>(ntUndefine));
 
