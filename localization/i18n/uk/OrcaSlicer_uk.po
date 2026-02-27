@@ -22842,3 +22842,9 @@ msgstr ""
 
 #~ msgid "Set the brim type to \"painted\""
 #~ msgstr "Встановіть тип кайми на \"Мальована\""
+
+msgid "CHT"
+msgstr ""
+
+msgid "Tungsten Carbide"
+msgstr ""

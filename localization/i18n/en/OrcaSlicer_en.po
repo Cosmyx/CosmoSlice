@@ -20227,3 +20227,9 @@ msgstr ""
 #~ "It is not recommend for bed temperature of other layers to be lower than "
 #~ "the first layer by more than this threshold. Too low bed temperature of "
 #~ "other layer may cause the model to break free from the build plate."
+
+msgid "CHT"
+msgstr ""
+
+msgid "Tungsten Carbide"
+msgstr ""

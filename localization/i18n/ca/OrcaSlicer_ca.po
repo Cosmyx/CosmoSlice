@@ -24603,3 +24603,9 @@ msgstr ""
 
 #~ msgid "End end: "
 #~ msgstr "Final: "
+
+msgid "CHT"
+msgstr ""
+
+msgid "Tungsten Carbide"
+msgstr ""
