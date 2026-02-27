@@ -2220,13 +2220,14 @@ static wxMenu* generate_help_menu()
     //    [](wxCommandEvent&) {
     //        //TODO
     //    });
+    
     // Check New Version
-    append_menu_item(helpMenu, wxID_ANY, _L("Check for Update"), _L("Check for Update"),
-        [](wxCommandEvent&) {
-            wxGetApp().check_new_version_sf(true, 1);
-        }, "", nullptr, []() {
-            return true;
-        });
+    //append_menu_item(helpMenu, wxID_ANY, _L("Check for Update"), _L("Check for Update"),
+    //    [](wxCommandEvent&) {
+    //        wxGetApp().check_new_version_sf(true, 1);
+    //    }, "", nullptr, []() {
+    //        return true;
+    //    });
 
     append_menu_item(helpMenu, wxID_ANY, _L("Open Network Test"), _L("Open Network Test"), [](wxCommandEvent&) {
             NetworkTestDialog dlg(wxGetApp().mainframe);
