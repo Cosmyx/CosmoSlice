@@ -752,7 +752,7 @@ void PageMaterials::reload_presets()
 	list_printer->append(_L("(All)"), &EMPTY);
     //list_printer->SetLabelMarkup("<b>bald</b>");
 	for (const Preset* printer : materials->printers) {
-		list_printer->append(printer->name, &printer->name);
+		list_printer->append(ProfileTranslator::instance().translate(printer->name), &printer->name);
 	}
     sort_list_data(list_printer, true, false);
     if (list_printer->GetCount() > 0) {
@@ -1037,7 +1037,7 @@ void PageMaterials::update_lists(int sel_type, int sel_vendor, int last_selected
 
                     int cur_i = list_profile->find(p->alias);
                     if (cur_i == wxNOT_FOUND) {
-                        cur_i = list_profile->append(p->alias + (materials->get_omnipresent(p) ? "" : " *"), &p->alias);
+                        cur_i = list_profile->append(ProfileTranslator::instance().translate(p->alias) + (materials->get_omnipresent(p) ? "" : " *"), &p->alias);
                         to_list.emplace_back(p->alias, materials->get_omnipresent(p), checked);
                     }
                     else {

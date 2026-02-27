@@ -62,6 +62,7 @@
 #include "libslic3r/SLAPrint.hpp"
 #include "libslic3r/Utils.hpp"
 #include "libslic3r/PresetBundle.hpp"
+#include "libslic3r/ProfileTranslator.hpp"
 #include "libslic3r/ClipperUtils.hpp"
 
 // For stl export
@@ -6649,7 +6650,8 @@ void Plater::priv::on_select_preset(wxCommandEvent &evt)
     //!     combo->GetStringSelection().ToUTF8().data());
 
     std::string preset_name = wxGetApp().preset_bundle->get_preset_name_by_alias(preset_type,
-        Preset::remove_suffix_modified(combo->GetString(selection).ToUTF8().data()));
+        ProfileTranslator::instance().untranslate(
+            Preset::remove_suffix_modified(combo->GetString(selection).ToUTF8().data())));
 
     if (preset_type == Preset::TYPE_FILAMENT) {
         wxGetApp().preset_bundle->set_filament_preset(idx, preset_name);

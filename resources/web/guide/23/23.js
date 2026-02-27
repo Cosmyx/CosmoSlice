@@ -69,7 +69,7 @@ function SortUI()
 	{
 		let sModel=ModelList[n];	
 		/* ORCA use label tag to allow checkbox to toggle when user ckicked to text */
-		HtmlMode+='<label><input type="checkbox" mode="'+sModel['model']+'"  nozzle="'+sModel['nozzle_selected']+'"   onChange="MachineClick()" /><span>'+sModel['model']+'</span></label>';
+		HtmlMode+='<label><input type="checkbox" mode="'+sModel['model']+'"  nozzle="'+sModel['nozzle_selected']+'"   onChange="MachineClick()" /><span>'+(sModel['display_name'] || sModel['model'])+'</span></label>';
 	}
 	
 	$('#MachineList .CValues').append(HtmlMode);	
@@ -171,7 +171,8 @@ function SortUI()
 	        if(pFila.length==0)
 		    {
 				/* ORCA use label tag to allow checkbox to toggle when user ckicked to text */
-			    let HtmlFila='<label class="MItem"><input type="checkbox" vendor="'+fVendor+'"  filatype="'+fType+'" filalist="'+fWholeName+';'+'"  model="'+fModel+'" name="'+fShortName+'" /><span>'+fShortName+'</span></label>';
+			    let fDisplayName=OneFila['display_name'] || fShortName;
+			    let HtmlFila='<label class="MItem"><input type="checkbox" vendor="'+fVendor+'"  filatype="'+fType+'" filalist="'+fWholeName+';'+'"  model="'+fModel+'" name="'+fShortName+'" /><span>'+fDisplayName+'</span></label>';
 			
 			    $("#ItemBlockArea").append(HtmlFila);
 		    } 
