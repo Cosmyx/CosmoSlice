@@ -21107,3 +21107,9 @@ msgstr ""
 #~ "Lütfen geçerli değerleri girin:\n"
 #~ "başlangıç > 10 adım >= 0\n"
 #~ "bitiş > başlangıç + adım)"
+
+msgid "CHT"
+msgstr ""
+
+msgid "Tungsten Carbide"
+msgstr ""

@@ -22300,3 +22300,9 @@ msgstr ""
 
 #~ msgid "preparing, export 3mf failed!"
 #~ msgstr "Preparando; ¡Error al exportar 3MF!"
+
+msgid "CHT"
+msgstr ""
+
+msgid "Tungsten Carbide"
+msgstr ""

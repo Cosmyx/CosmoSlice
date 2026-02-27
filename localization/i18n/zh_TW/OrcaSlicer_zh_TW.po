@@ -18218,3 +18218,9 @@ msgstr ""
 
 #~ msgid ", ver: "
 #~ msgstr "，版本"
+
+msgid "CHT"
+msgstr ""
+
+msgid "Tungsten Carbide"
+msgstr ""

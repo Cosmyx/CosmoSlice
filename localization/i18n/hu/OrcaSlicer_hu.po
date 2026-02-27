@@ -18265,3 +18265,9 @@ msgstr ""
 
 #~ msgid "Orient the model"
 #~ msgstr "Modell orientációja"
+
+msgid "CHT"
+msgstr ""
+
+msgid "Tungsten Carbide"
+msgstr ""

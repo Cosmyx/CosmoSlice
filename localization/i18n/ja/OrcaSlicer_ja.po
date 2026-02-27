@@ -17725,3 +17725,9 @@ msgstr ""
 
 #~ msgid "Orient the model"
 #~ msgstr "モデルの向きを調整"
+
+msgid "CHT"
+msgstr ""
+
+msgid "Tungsten Carbide"
+msgstr ""
