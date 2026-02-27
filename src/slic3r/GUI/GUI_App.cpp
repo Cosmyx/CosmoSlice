@@ -64,6 +64,7 @@
 #include "libslic3r/Model.hpp"
 #include "libslic3r/I18N.hpp"
 #include "libslic3r/PresetBundle.hpp"
+#include "libslic3r/ProfileTranslator.hpp"
 #include "libslic3r/Thread.hpp"
 #include "libslic3r/miniz_extension.hpp"
 #include "libslic3r/Utils.hpp"
@@ -3106,6 +3107,14 @@ bool GUI_App::on_init_inner()
     // Let the libslic3r know the callback, which will translate messages on demand.
     Slic3r::I18N::set_translate_callback(libslic3r_translate_callback);
 
+    {
+        std::string lang = into_u8(current_language_code());
+        auto& translator = Slic3r::ProfileTranslator::instance();
+        translator.clear();
+        translator.load_translations((boost::filesystem::path(Slic3r::data_dir()) / PRESET_SYSTEM_DIR).string(), lang);
+        translator.load_translations((boost::filesystem::path(Slic3r::resources_dir()) / "profiles").string(), lang);
+    }
+
     BOOST_LOG_TRIVIAL(info) << "create the main window";
     mainframe = new MainFrame();
     // hide settings tabs after first Layout
@@ -4130,6 +4139,15 @@ void GUI_App::recreate_GUI(const wxString &msg_name)
     old_main_frame->SetClientObject(new ClientData);
 
     switch_window_pools();
+
+    {
+        std::string lang = into_u8(current_language_code());
+        auto& translator = Slic3r::ProfileTranslator::instance();
+        translator.clear();
+        translator.load_translations((boost::filesystem::path(Slic3r::data_dir()) / PRESET_SYSTEM_DIR).string(), lang);
+        translator.load_translations((boost::filesystem::path(Slic3r::resources_dir()) / "profiles").string(), lang);
+    }
+
     mainframe = new MainFrame();
     if (is_editor())
         // hide settings tabs after first Layout
