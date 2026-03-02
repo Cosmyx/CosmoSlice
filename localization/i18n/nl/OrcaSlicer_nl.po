@@ -5828,6 +5828,12 @@ msgstr "Huidig sliced bestand exporteren"
 msgid "Export all plate sliced file"
 msgstr "Exporteer alle plate sliced bestanden"
 
+msgid "Export all G-code files"
+msgstr "Exporteer alle G-code bestanden"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Kies een map om alle G-code bestanden te exporteren"
+
 msgid "Export G-code"
 msgstr "Exporteer G-code"
 

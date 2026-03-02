@@ -5692,6 +5692,12 @@ msgstr "현재 슬라이스 파일 내보내기"
 msgid "Export all plate sliced file"
 msgstr "모든 플레이트의 슬라이스 파일 내보내기"
 
+msgid "Export all G-code files"
+msgstr "모든 G-code 파일 내보내기"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "모든 G-code 파일을 내보낼 디렉토리 선택"
+
 msgid "Export G-code"
 msgstr "Gcode 내보내기"
 

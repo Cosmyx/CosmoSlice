@@ -5928,6 +5928,12 @@ msgstr "Exporter le fichier découpé actuel"
 msgid "Export all plate sliced file"
 msgstr "Exporter tous les fichiers découpés du plateau"
 
+msgid "Export all G-code files"
+msgstr "Exporter tous les fichiers G-code"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Choisir un dossier pour exporter tous les fichiers G-code"
+
 msgid "Export G-code"
 msgstr "Exporter le G-code"
 

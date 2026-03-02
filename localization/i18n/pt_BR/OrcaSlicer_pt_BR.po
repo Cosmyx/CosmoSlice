@@ -5876,6 +5876,12 @@ msgstr "Exportar arquivo fatiado atual"
 msgid "Export all plate sliced file"
 msgstr "Exportar todos os arquivos de placa fatiados"
 
+msgid "Export all G-code files"
+msgstr "Exportar todos os arquivos G-code"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Escolha um diretório para exportar todos os arquivos G-code"
+
 msgid "Export G-code"
 msgstr "Exportar G-code"
 

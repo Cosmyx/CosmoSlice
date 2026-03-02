@@ -6022,6 +6022,12 @@ msgstr "Экспортировать текущий нарезанный фай�
 msgid "Export all plate sliced file"
 msgstr "Экспорт всех нарезанных столов в файл"
 
+msgid "Export all G-code files"
+msgstr "Экспортировать все файлы G-кода"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Выберите папку для экспорта всех файлов G-кода"
+
 msgid "Export G-code"
 msgstr "Экспорт в G-код"
 

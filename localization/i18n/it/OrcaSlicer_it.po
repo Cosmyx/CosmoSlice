@@ -5910,6 +5910,12 @@ msgstr "Esporta il file elaborato corrente"
 msgid "Export all plate sliced file"
 msgstr "Esporta tutti i piatti elaborati"
 
+msgid "Export all G-code files"
+msgstr "Esporta tutti i file G-code"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Scegli una cartella per esportare tutti i file G-code"
+
 msgid "Export G-code"
 msgstr "Esporta G-code"
 
