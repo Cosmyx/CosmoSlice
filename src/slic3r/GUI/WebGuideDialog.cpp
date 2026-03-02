@@ -8,6 +8,7 @@
 #include "I18N.hpp"
 #include "libslic3r/AppConfig.hpp"
 #include "libslic3r/PresetBundle.hpp"
+#include "libslic3r/ProfileTranslator.hpp"
 #include "slic3r/GUI/wxExtensions.hpp"
 #include "slic3r/GUI/GUI_App.hpp"
 #include "libslic3r_version.h"
@@ -1215,7 +1216,8 @@ int GuideFrame::LoadProfileFamily(std::string strVendor, std::string strFilePath
             json pm = json::parse(contents);
             // wxLogMessage("GUIDE: json_path2  loaded");
 
-            OneModel["name"]      = pm["name"];
+            OneModel["name"]         = Slic3r::ProfileTranslator::instance().translate(pm["name"]);
+            OneModel["display_name"] = OneModel["name"];
             OneModel["vendor"]    = strVendor;
             std::string NozzleOpt = pm["nozzle_diameter"];
             StringReplace(NozzleOpt, " ", "");
@@ -1335,6 +1337,14 @@ int GuideFrame::LoadProfileFamily(std::string strVendor, std::string strFilePath
 
                     OneFF["models"]    = ModelList;
                     OneFF["selected"] = 0;
+
+                    std::string fila_alias = s1;
+                    size_t at_pos = fila_alias.find('@');
+                    if (at_pos != std::string::npos) {
+                        fila_alias = fila_alias.substr(0, at_pos);
+                        while (!fila_alias.empty() && fila_alias.back() == ' ') fila_alias.pop_back();
+                    }
+                    OneFF["display_name"] = Slic3r::ProfileTranslator::instance().translate(fila_alias);
 
                     m_ProfileJson["filament"][s1] = OneFF;
                 } else
