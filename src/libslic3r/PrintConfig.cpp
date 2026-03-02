@@ -464,9 +464,9 @@ CONFIG_OPTION_ENUM_DEFINE_STATIC_MAPS(LayerSeq)
 static t_config_enum_values s_keys_map_NozzleType {
     { "undefine",       int(NozzleType::ntUndefine) },
     { "hardened_steel", int(NozzleType::ntHardenedSteel) },
-    { "stainless_steel", int(NozzleType::ntStainlessSteel)},
-    { "tungsten_carbide", int(NozzleType::ntTungstenCarbide)},
+    { "stainless_steel",int(NozzleType::ntStainlessSteel) },
     { "brass",          int(NozzleType::ntBrass) },
+    { "tungsten_carbide",int(NozzleType::ntTungstenCarbide) },
     { "cht",int(NozzleType::ntCHT) }
 };
 CONFIG_OPTION_ENUM_DEFINE_STATIC_MAPS(NozzleType)
