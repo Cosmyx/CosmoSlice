@@ -123,6 +123,10 @@ private:
     wxMenu*     append_submenu_add_generic(wxMenu* menu, ModelVolumeType type);
     // Orca: add submenu for adding handy models
     wxMenu*     append_submenu_add_handy_model(wxMenu* menu, ModelVolumeType type);
+    // Cosmyx: add submenu for calibration models with embedded print settings
+    wxMenu*     append_submenu_add_calibration_model(wxMenu* menu, ModelVolumeType type);
+    // Cosmyx: unified submenu for all Cosmyx 3D models with nested categories
+    wxMenu*     append_submenu_cosmyx_models(wxMenu* menu, ModelVolumeType type);
     void        append_menu_item_add_text(wxMenu* menu, ModelVolumeType type, bool is_submenu_item = true);
     void        append_menu_item_add_svg(wxMenu *menu, ModelVolumeType type, bool is_submenu_item = true);    
     void        append_menu_items_add_volume(wxMenu* menu);
