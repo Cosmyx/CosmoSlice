@@ -4876,6 +4876,12 @@ msgstr "Eksportuoti dabartinį sluoksniuotą failą"
 msgid "Export all plate sliced file"
 msgstr "Eksportuoti visų sluoksniuotų plokščių failą"
 
+msgid "Export all G-code files"
+msgstr "Eksportuoti visus G-kodo failus"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Pasirinkite katalogą, į kurį eksportuoti visus G-kodo failus"
+
 msgid "Export G-code"
 msgstr "Eksportuoti G-kodą"
 

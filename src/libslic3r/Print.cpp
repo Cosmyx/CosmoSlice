@@ -2917,6 +2917,7 @@ std::string Print::output_filename(const std::string &filename_base) const
     config.set_key_value("num_extruders", new ConfigOptionInt((int) m_config.nozzle_diameter.size()));
     config.set_key_value("plate_name", new ConfigOptionString(get_plate_name()));
     config.set_key_value("plate_number", new ConfigOptionString(get_plate_number_formatted()));
+    config.set_key_value("plate_count", new ConfigOptionInt(get_plate_count()));
     config.set_key_value("model_name", new ConfigOptionString(get_model_name()));
 
     return this->PrintBase::output_filename(m_config.filename_format.value, ".gcode", filename_base, &config);

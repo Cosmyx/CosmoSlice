@@ -4958,6 +4958,12 @@ msgstr "Aktuelle Slice-Datei exportieren"
 msgid "Export all plate sliced file"
 msgstr "Exportieren aller gesliceten Druckplatten"
 
+msgid "Export all G-code files"
+msgstr "Alle G-Code-Dateien exportieren"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Verzeichnis zum Exportieren aller G-Code-Dateien wählen"
+
 msgid "Export G-code"
 msgstr "Exportiere G-Code"
 

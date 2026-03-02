@@ -4744,6 +4744,12 @@ msgstr "Exportera aktuell beredd fil"
 msgid "Export all plate sliced file"
 msgstr "Exportera alla beredda filer"
 
+msgid "Export all G-code files"
+msgstr "Exportera alla G-kodfiler"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Välj en mapp för att exportera alla G-kodfiler"
+
 msgid "Export G-code"
 msgstr "Exportera G-kod"
 

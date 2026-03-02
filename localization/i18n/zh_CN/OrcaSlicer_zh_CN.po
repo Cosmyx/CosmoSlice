@@ -4704,6 +4704,12 @@ msgstr "导出当前已切片的文件"
 msgid "Export all plate sliced file"
 msgstr "导出所有盘已切片的文件"
 
+msgid "Export all G-code files"
+msgstr "导出所有G-code文件"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "选择目录以导出所有G-code文件"
+
 msgid "Export G-code"
 msgstr "导出 G-code"
 

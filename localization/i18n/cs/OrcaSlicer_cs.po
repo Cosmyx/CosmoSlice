@@ -4822,6 +4822,12 @@ msgstr "Exportovat aktuální Slicovaný soubor"
 msgid "Export all plate sliced file"
 msgstr "Exportovat všechny soubor slicované na podložce"
 
+msgid "Export all G-code files"
+msgstr "Exportovat všechny soubory G-kódu"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Vyberte adresář pro export všech souborů G-kódu"
+
 msgid "Export G-code"
 msgstr "Exportovat G-kód"
 
