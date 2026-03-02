@@ -454,6 +454,10 @@ void PhysicalPrinterDialog::update_printhost_buttons()
 void PhysicalPrinterDialog::update_preset_input() {
     m_preset_name = into_u8(m_input_ctrl->GetValue());
 
+    // Auto-trim trailing spaces
+    while (!m_preset_name.empty() && m_preset_name.back() == ' ')
+        m_preset_name.pop_back();
+
     m_valid_type = Valid;
     wxString info_line;
 
@@ -505,10 +509,10 @@ void PhysicalPrinterDialog::update_preset_input() {
         m_valid_type = NoValid;
     }
 
-    if (m_valid_type == Valid && m_preset_name.find_last_of(' ') == m_preset_name.length() - 1) {
+    /*if (m_valid_type == Valid && m_preset_name.find_last_of(' ') == m_preset_name.length() - 1) {
         info_line    = _L("The name is not allowed to end with space character.");
         m_valid_type = NoValid;
-    }
+    }*/
 
     if (m_valid_type == Valid && m_presets->get_preset_name_by_alias(m_preset_name) != m_preset_name) {
         info_line    = _L("The name cannot be the same as a preset alias name.");

@@ -344,6 +344,7 @@ void AuFile::on_mouse_leave(wxMouseEvent &evt)
 void AuFile::on_input_enter(wxCommandEvent &evt)
 {
     auto     new_file_name = m_input_name->GetTextCtrl()->GetValue();
+    new_file_name.Trim(true);
     auto     m_valid_type  = Valid;
     wxString info_line;
 
@@ -389,10 +390,10 @@ void AuFile::on_input_enter(wxCommandEvent &evt)
         m_valid_type = NoValid;
     }
 
-    if (m_valid_type == Valid && new_file_name.find_last_of(' ') == new_file_name.length() - 1) {
+    /*if (m_valid_type == Valid && new_file_name.find_last_of(' ') == new_file_name.length() - 1) {
         info_line    = _L("The name is not allowed to end with space character.");
         m_valid_type = NoValid;
-    }
+    }*/
 
     if (m_valid_type == Valid) {
         fs::path oldPath = m_file_path;
