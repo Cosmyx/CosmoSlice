@@ -4678,6 +4678,12 @@ msgstr "エクスポート"
 msgid "Export all plate sliced file"
 msgstr "エクスポート (全プレート)"
 
+msgid "Export all G-code files"
+msgstr "全G-codeファイルをエクスポート"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "全G-codeファイルをエクスポートするフォルダを選択"
+
 msgid "Export G-code"
 msgstr "G-codeをエクスポート"
 

@@ -4752,6 +4752,12 @@ msgstr "Aktuális szeletelt fájl exportálása"
 msgid "Export all plate sliced file"
 msgstr "Az összes szeletelt tálca exportálása"
 
+msgid "Export all G-code files"
+msgstr "Az összes G-kód fájl exportálása"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Válasszon mappát az összes G-kód fájl exportálásához"
+
 msgid "Export G-code"
 msgstr "G-kód exportálása"
 

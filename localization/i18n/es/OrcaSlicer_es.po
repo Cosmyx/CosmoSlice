@@ -4926,6 +4926,12 @@ msgstr "Exportar la bandeja activa laminada a un archivo"
 msgid "Export all plate sliced file"
 msgstr "Exportar todas las bandejas laminadas a un archivo"
 
+msgid "Export all G-code files"
+msgstr "Exportar todos los archivos G-Code"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Elija un directorio para exportar todos los archivos G-Code"
+
 msgid "Export G-code"
 msgstr "Exportar G-Code"
 

@@ -4859,6 +4859,12 @@ msgstr "Geçerli dilimlenmiş dosyayı dışa aktar"
 msgid "Export all plate sliced file"
 msgstr "Dilimlenmiş tüm plaka dosyalarını dışa aktar"
 
+msgid "Export all G-code files"
+msgstr "Tüm G-kodu dosyalarını dışa aktar"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Tüm G-kodu dosyalarını dışa aktarmak için bir dizin seçin"
+
 msgid "Export G-code"
 msgstr "G-kodunu dışa aktar"
 

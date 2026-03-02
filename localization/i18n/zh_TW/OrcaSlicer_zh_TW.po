@@ -4711,6 +4711,12 @@ msgstr "匯出目前已切片的檔案"
 msgid "Export all plate sliced file"
 msgstr "匯出所有列印板已切片的檔案"
 
+msgid "Export all G-code files"
+msgstr "匯出所有 G-code 檔案"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "選擇目錄以匯出所有 G-code 檔案"
+
 msgid "Export G-code"
 msgstr "匯出 G-code"
 

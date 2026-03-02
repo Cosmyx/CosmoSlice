@@ -4638,6 +4638,12 @@ msgstr ""
 msgid "Export all plate sliced file"
 msgstr ""
 
+msgid "Export all G-code files"
+msgstr ""
+
+msgid "Choose a directory to export all G-code files"
+msgstr ""
+
 msgid "Export G-code"
 msgstr ""
 

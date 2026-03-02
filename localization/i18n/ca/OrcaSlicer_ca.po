@@ -4901,6 +4901,12 @@ msgstr "Exportar el fitxer laminat actual"
 msgid "Export all plate sliced file"
 msgstr "Exportar el fitxer laminat actual"
 
+msgid "Export all G-code files"
+msgstr "Exportar tots els fitxers G-code"
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Trieu un directori per exportar tots els fitxers G-code"
+
 msgid "Export G-code"
 msgstr "Exportar el Codi-G"
 
