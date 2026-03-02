@@ -1556,7 +1556,8 @@ void GCode::do_export(Print* print, const char* path, GCodeProcessorResult* resu
         const ConfigOptionInts *bed_temp_opt = m_config.option<ConfigOptionInts>(get_bed_temp_key(m_config.curr_bed_type));
         for(auto extruder_id : m_initial_layer_extruders){
             int cur_bed_temp = bed_temp_opt->get_at(extruder_id);
-            if (cur_bed_temp == 0 && bed_type_keys_map != nullptr) {
+            int unsupported_sentinel = (m_config.curr_bed_type == btCosmyx) ? -1 : 0;
+            if (cur_bed_temp == unsupported_sentinel && bed_type_keys_map != nullptr) {
                 for (auto item : *bed_type_keys_map) {
                     if (item.second == m_config.curr_bed_type) {
                         m_processor.result().bed_match_result = BedMatchResult(false, item.first, extruder_id);
