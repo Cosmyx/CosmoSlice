@@ -5547,9 +5547,32 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
     assert(is_decimal_separator_point());
 
     if (path.role() != m_last_processor_extrusion_role) {
+        ExtrusionRole old_role = m_last_processor_extrusion_role;
         m_last_processor_extrusion_role = path.role();
         sprintf(buf, ";%s%s\n", GCodeProcessor::reserved_tag(GCodeProcessor::ETags::Role).c_str(), ExtrusionEntity::role_to_string(m_last_processor_extrusion_role).c_str());
         gcode += buf;
+
+        // Ironing temperature control
+        int ironing_temp = EXTRUDER_CONFIG(ironing_temperature);
+        if (ironing_temp > 0 && m_writer.extruder() != nullptr) {
+            bool transitioning_to_ironing = (path.role() == erIroning && old_role != erIroning);
+            bool transitioning_from_ironing = (path.role() != erIroning && old_role == erIroning);
+
+            if (transitioning_to_ironing) {
+                // Set ironing temperature (no wait - already generated moves)
+                gcode += m_writer.set_temperature(ironing_temp, false, m_writer.extruder()->id());
+                gcode += "; ironing temperature\n";
+            }
+            else if (transitioning_from_ironing) {
+                // Restore normal temperature (no wait)
+                int restore_temp = this->on_first_layer() ?
+                    m_config.nozzle_temperature_initial_layer.get_at(m_writer.extruder()->id()) :
+                    m_config.nozzle_temperature.get_at(m_writer.extruder()->id());
+
+                gcode += m_writer.set_temperature(restore_temp, false, m_writer.extruder()->id());
+                gcode += "; restore printing temperature\n";
+            }
+        }
     }
 
     if (last_was_wipe_tower || m_last_width != path.width) {

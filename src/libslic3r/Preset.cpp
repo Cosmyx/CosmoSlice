@@ -356,6 +356,31 @@ void Preset::normalize(DynamicPrintConfig &config)
             if (opt != nullptr && opt->type() == coStrings)
                 static_cast<ConfigOptionStrings*>(opt)->values.resize(n, std::string());
         }
+
+       // Initialize ironing_temperature from nozzle_temperature if not explicitly set in preset
+        if (config.option("nozzle_temperature") != nullptr &&
+            config.option("ironing_temperature") != nullptr) {
+            auto* nozzle_temp = dynamic_cast<const ConfigOptionInts*>(config.option("nozzle_temperature"));
+            auto* ironing_temp = dynamic_cast<ConfigOptionInts*>(config.option("ironing_temperature"));
+
+            if (nozzle_temp != nullptr && ironing_temp != nullptr) {
+                // Get the default value to check against (0 or default from FullPrintConfig)
+                const auto &defaults_config = FullPrintConfig::defaults();
+                auto* default_ironing_temp = dynamic_cast<const ConfigOptionInts*>(defaults_config.option("ironing_temperature"));
+
+                for (size_t i = 0; i < ironing_temp->values.size(); ++i) {
+                    if (i < nozzle_temp->values.size()) {
+                        int default_value = (default_ironing_temp != nullptr && i < default_ironing_temp->values.size()) ?
+                            default_ironing_temp->values[i] : 0;
+
+                        // If ironing_temperature is at default value (0 or 200), copy from nozzle_temperature
+                        if (ironing_temp->values[i] == default_value || ironing_temp->values[i] == 0 || ironing_temp->values[i] == 200) {
+                            ironing_temp->values[i] = nozzle_temp->values[i];
+                        }
+                    }
+                }
+            }
+        }
     }
 
     handle_legacy_sla(config);
@@ -873,7 +898,7 @@ static std::vector<std::string> s_Preset_filament_options {
     "filament_vendor", "compatible_prints", "compatible_prints_condition", "compatible_printers", "compatible_printers_condition", "inherits",
     //BBS
     "filament_wipe_distance", "additional_cooling_fan_speed",
-    "nozzle_temperature_range_low", "nozzle_temperature_range_high",
+    "nozzle_temperature_range_low", "nozzle_temperature_range_high", "ironing_temperature",
     //SoftFever
     "enable_pressure_advance", "pressure_advance","adaptive_pressure_advance","adaptive_pressure_advance_model","adaptive_pressure_advance_overhangs", "adaptive_pressure_advance_bridges","chamber_temperature", "filament_shrink","filament_shrinkage_compensation_z", "support_material_interface_fan_speed","internal_bridge_fan_speed", "filament_notes" /*,"filament_seam_gap"*/,
     "ironing_fan_speed",
