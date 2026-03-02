@@ -12442,6 +12442,14 @@ msgstr ""
 "\n"
 "Devre dışı bırakmak için -1 olarak ayarlayın."
 
+msgid "Ironing temperature"
+msgstr "Ütüleme sıcaklığı"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "Ütüleme geçişi için ekstrüzyon sıcaklığını ayarlar. Filament profilinde ayarlanmamışsa, varsayılan olarak genel yazdırma sıcaklığı kullanılır."
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."

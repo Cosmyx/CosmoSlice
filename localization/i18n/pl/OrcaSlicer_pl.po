@@ -12503,6 +12503,14 @@ msgid ""
 "Set to -1 to disable it."
 msgstr ""
 
+msgid "Ironing temperature"
+msgstr "Temperatura prasowania"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "Ustawia temperaturę wytłaczania dla przejścia prasowania. Jeśli nie jest ustawiona w profilu filamentu, domyślnie używana jest globalna temperatura drukowania."
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."

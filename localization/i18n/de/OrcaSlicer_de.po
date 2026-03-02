@@ -12769,6 +12769,14 @@ msgstr ""
 "volumetrischen Durchflussrate, wodurch die Oberfläche glatter wird.\n"
 "Setzen Sie -1, um es zu deaktivieren."
 
+msgid "Ironing temperature"
+msgstr "Glättungstemperatur"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "Legt die Extrusionstemperatur für den Glättungsdurchgang fest. Wenn sie im Filamentprofil nicht festgelegt ist, wird standardmäßig die globale Drucktemperatur verwendet."
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."

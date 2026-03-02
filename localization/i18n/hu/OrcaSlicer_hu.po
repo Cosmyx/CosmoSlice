@@ -11613,6 +11613,14 @@ msgid ""
 "Set to -1 to disable it."
 msgstr ""
 
+msgid "Ironing temperature"
+msgstr "Vasalási hőmérséklet"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "Beállítja az extrudálási hőmérsékletet a vasalási menethez. Ha nincs beállítva a filament profilban, alapértelmezés szerint a globális nyomtatási hőmérséklet lesz használva."
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."
