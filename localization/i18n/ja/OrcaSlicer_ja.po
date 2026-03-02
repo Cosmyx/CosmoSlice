@@ -11340,6 +11340,14 @@ msgid ""
 "Set to -1 to disable it."
 msgstr ""
 
+msgid "Ironing temperature"
+msgstr "アイロン温度"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "アイロンパスの押出温度を設定します。フィラメントプロファイルで設定されていない場合は、デフォルトでグローバル印刷温度が使用されます。"
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."

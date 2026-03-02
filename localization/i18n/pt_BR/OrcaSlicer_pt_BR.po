@@ -12609,6 +12609,14 @@ msgstr ""
 "tornando a interface mais suave.\n"
 "Defina como -1 para desabilitá-lo."
 
+msgid "Ironing temperature"
+msgstr "Temperatura de passar a ferro"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "Define a temperatura de extrusão para a passagem de passar a ferro. Se não for definida no perfil do filamento, a temperatura de impressão global é usada por padrão."
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."

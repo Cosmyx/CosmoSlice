@@ -12576,6 +12576,14 @@ msgid ""
 "Set to -1 to disable it."
 msgstr ""
 
+msgid "Ironing temperature"
+msgstr "Temperatura de planxat"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "Estableix la temperatura d'extrusió per a la passada de planxat. Si no s'estableix al perfil de filament, s'utilitza la temperatura d'impressió global per defecte."
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."

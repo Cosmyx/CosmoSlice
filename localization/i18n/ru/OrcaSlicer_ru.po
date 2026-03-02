@@ -12712,6 +12712,14 @@ msgid ""
 "Set to -1 to disable it."
 msgstr ""
 
+msgid "Ironing temperature"
+msgstr "Температура разглаживания"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "Устанавливает температуру экструзии для прохода разглаживания. Если не задано в профиле филамента, по умолчанию используется глобальная температура печати."
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."
