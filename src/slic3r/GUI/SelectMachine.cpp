@@ -2875,6 +2875,7 @@ void SelectMachineDialog::on_rename_enter()
         }
     }
     new_file_name         = temp;
+    new_file_name.Trim(true); 
     auto     m_valid_type = Valid;
     wxString info_line;
 
@@ -2904,10 +2905,10 @@ void SelectMachineDialog::on_rename_enter()
         m_valid_type = NoValid;
     }
 
-    if (m_valid_type == Valid && new_file_name.find_last_of(' ') == new_file_name.length() - 1) {
+    /*if (m_valid_type == Valid && new_file_name.find_last_of(' ') == new_file_name.length() - 1) {
         info_line = _L("The name is not allowed to end with space character.");
         m_valid_type = NoValid;
-    }
+    }*/
 
     if (m_valid_type == Valid && new_file_name.size()  >= 100) {
         info_line = _L("The name length exceeds the limit.");
