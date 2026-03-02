@@ -14808,6 +14808,14 @@ msgstr ""
 "Filament-specific override for ironing speed. This allows you to customize "
 "the print speed of ironing lines for each filament type."
 
+msgid "Ironing temperature"
+msgstr "Teplota žehlení"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "Nastaví teplotu extruze pro průchod žehlení. Pokud není nastavena v profilu filamentu, ve výchozím nastavení se použije globální teplota tisku."
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."

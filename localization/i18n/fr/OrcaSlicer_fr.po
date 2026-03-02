@@ -15420,6 +15420,14 @@ msgstr ""
 "permet de personnaliser la vitesse d'impression des lignes de lissage pour "
 "chaque type de filament."
 
+msgid "Ironing temperature"
+msgstr "Température de lissage"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "Définit la température d'extrusion pour la passe de lissage. Si elle n'est pas définie dans le profil du filament, la température d'impression globale est utilisée par défaut."
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."

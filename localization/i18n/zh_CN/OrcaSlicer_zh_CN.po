@@ -13883,6 +13883,14 @@ msgid ""
 msgstr ""
 "特定于耗材的熨烫速度优先。这允许您自定义每种细丝类型的熨烫线的打印速度。"
 
+msgid "Ironing temperature"
+msgstr "熨平温度"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "设置熨平过程的挤出温度。如果在耗材配置中未设置，则默认使用全局打印温度。"
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."

@@ -15029,6 +15029,14 @@ msgstr ""
 "Filament-specific override for ironing speed. This allows you to customize "
 "the print speed of ironing lines for each filament type."
 
+msgid "Ironing temperature"
+msgstr "Strijktemperatuur"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr "Stelt de extrusietemperatuur in voor de strijkbeurt. Als dit niet is ingesteld in het filamentprofiel, wordt standaard de algemene afdruktemperatuur gebruikt."
+
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."
