@@ -6160,6 +6160,14 @@ void PrintConfigDef::init_fff_params()
     def->max = max_temp;
     def->set_default_value(new ConfigOptionInts { 240 });
 
+    def = this->add("ironing_temperature", coInts);
+    def->label = L("Ironing temperature");
+    def->tooltip = L("Sets the extrusion temperature for the ironing pass. If unset in the filament profile, the global printing temperature is used by default.");
+    def->sidetext = u8"\u2103" /* °C */;	// degrees Celsius
+    def->min = 0;
+    def->max = max_temp;
+    def->set_default_value(new ConfigOptionInts { 0 });
+
     def = this->add("head_wrap_detect_zone", coPoints);
     def->label = "Head wrap detect zone"; //do not need translation
     def->mode = comDevelop;

@@ -1506,6 +1506,7 @@ PRINT_CONFIG_CLASS_DERIVED_DEFINE(
     // BBS
     ((ConfigOptionInts,               nozzle_temperature_range_low))
     ((ConfigOptionInts,               nozzle_temperature_range_high))
+    ((ConfigOptionInts,               ironing_temperature))
     ((ConfigOptionFloats,             wipe_distance))
     ((ConfigOptionBool,               enable_prime_tower))
     ((ConfigOptionBool,               prime_tower_enable_framework))
