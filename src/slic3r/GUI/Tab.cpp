@@ -3936,6 +3936,12 @@ void TabFilament::build()
         line.append_option(optgroup->get_option("textured_plate_temp"));
         optgroup->append_line(line);
 
+        line = { L("Cosmyx Textured Bed"),
+                 L("Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off.") };
+        line.append_option(optgroup->get_option("cosmyx_textured_bed_temp_initial_layer"));
+        line.append_option(optgroup->get_option("cosmyx_textured_bed_temp"));
+        optgroup->append_line(line);
+
         optgroup->m_on_change = [this](t_config_option_key opt_key, boost::any value)
         {
             DynamicPrintConfig& filament_config = m_preset_bundle->filaments.get_edited_preset().config;
@@ -4214,7 +4220,8 @@ void TabFilament::toggle_options()
 
         const std::vector<std::string> bed_temp_keys = {"supertack_plate_temp_initial_layer", "cool_plate_temp_initial_layer",
                                                         "textured_cool_plate_temp_initial_layer", "eng_plate_temp_initial_layer",
-                                                        "textured_plate_temp_initial_layer", "hot_plate_temp_initial_layer"};
+                                                        "textured_plate_temp_initial_layer", "hot_plate_temp_initial_layer",
+                                                        "cosmyx_textured_bed_temp_initial_layer"};
 
         bool support_multi_bed_types = std::find(bed_temp_keys.begin(), bed_temp_keys.end(), bed_temp_1st_layer_key) ==
                                            bed_temp_keys.end() ||

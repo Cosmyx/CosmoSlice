@@ -2117,8 +2117,14 @@ void GCode::do_export(Print* print, const char* path, GCodeProcessorResult* resu
         std::vector<int> conflict_filament;
         for(auto extruder_id : m_initial_layer_extruders){
             int cur_bed_temp = bed_temp_opt->get_at(extruder_id);
-            if (cur_bed_temp == 0) {
-                conflict_filament.push_back(extruder_id);
+            int unsupported_sentinel = (m_config.curr_bed_type == btCosmyx) ? -1 : 0;
+            if (cur_bed_temp == unsupported_sentinel && bed_type_keys_map != nullptr) {
+                for (auto item : *bed_type_keys_map) {
+                    if (item.second == m_config.curr_bed_type) {
+                        m_processor.result().bed_match_result = BedMatchResult(false, item.first, extruder_id);
+                        break;
+                    }
+                }
             }
         }
 
