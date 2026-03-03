@@ -147,6 +147,8 @@ std::string GCodeWriter::set_temperature(unsigned int temperature, bool wait, in
 // BBS
 std::string GCodeWriter::set_bed_temperature(int temperature, bool wait)
 {
+    if (temperature < 0)
+        return std::string();
     if (temperature == m_last_bed_temperature && (! wait || m_last_bed_temperature_reached))
         return std::string();
 
