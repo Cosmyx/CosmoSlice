@@ -1804,6 +1804,29 @@ msgstr "Lemez"
 msgid "Torus"
 msgstr "Tórusz"
 
+msgid "Cosmyx Cube"
+msgstr ""
+
+msgid "Cube Bicolore"
+msgstr ""
+
+msgid "Control Tension Belt"
+msgstr ""
+
+msgid "Support Bobine"
+msgstr ""
+
+msgid "Cosmyx Calage 1 Nova"
+msgstr ""
+
+msgid "Calage 1 SNDT"
+msgstr ""
+
+msgid "Cosmyx Calage 2 SNDT"
+msgstr ""
+
+msgid "Cosmyx Calage 3 SNDT"
+msgstr ""
 msgid "Orca Cube"
 msgstr ""
 
@@ -1833,6 +1856,16 @@ msgid ""
 "No  - Do not change these settings for me"
 msgstr ""
 
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill direction' "
+"and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calibration Suggestion"
+msgstr ""
 msgid "Text"
 msgstr ""
 
