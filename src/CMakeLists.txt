@@ -120,8 +120,8 @@ endif (MINGW)
 
 if (NOT WIN32 AND NOT APPLE)
     # Binary name on unix like systems (Linux, Unix)
-    set_target_properties(OrcaSlicer PROPERTIES OUTPUT_NAME "CosmoSlice")
-    set(SLIC3R_APP_CMD "CosmoSlice")
+    set_target_properties(OrcaSlicer PROPERTIES OUTPUT_NAME "${SLIC3R_APP_NAME}")
+    set(SLIC3R_APP_CMD "${SLIC3R_APP_NAME}")
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/dev-utils/platform/unix/build_linux_image.sh.in ${CMAKE_CURRENT_BINARY_DIR}/build_linux_image.sh USE_SOURCE_PERMISSIONS @ONLY)
 endif ()
 
@@ -175,7 +175,7 @@ if (WIN32)
     endif()
     target_compile_definitions(OrcaSlicer_app_gui PRIVATE -DSLIC3R_WRAPPER_NOCONSOLE)
     add_dependencies(OrcaSlicer_app_gui OrcaSlicer)
-    set_target_properties(OrcaSlicer_app_gui PROPERTIES OUTPUT_NAME "CosmoSlice")
+    set_target_properties(OrcaSlicer_app_gui PROPERTIES OUTPUT_NAME "${SLIC3R_APP_NAME}")
     target_link_libraries(OrcaSlicer_app_gui PRIVATE boost_headeronly)
 endif ()
 
@@ -223,7 +223,7 @@ else ()
     if (APPLE AND NOT CMAKE_MACOSX_BUNDLE)
         # On OSX, the name of the binary matches the name of the Application.
         add_custom_command(TARGET OrcaSlicer POST_BUILD
-            COMMAND ln -sf OrcaSlicer CosmoSlice
+            COMMAND ln -sf OrcaSlicer "${SLIC3R_APP_NAME}"
             WORKING_DIRECTORY "$<TARGET_FILE_DIR:OrcaSlicer>"
             VERBATIM)
     else ()
