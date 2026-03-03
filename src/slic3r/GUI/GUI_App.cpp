@@ -2428,6 +2428,33 @@ bool GUI_App::on_init_inner()
         app_config->set("version", SLIC3R_VERSION);
     }
 
+    // Check if this is a new build by comparing stored values with current compile-time constants.
+    // Ignore on first run (keys not present yet).
+    const std::string stored_build_hash  = app_config->get("build_hash");
+    const std::string stored_cosmyx_ver  = app_config->get("cosmyx_version");
+    const bool        first_run          = stored_build_hash.empty() && stored_cosmyx_ver.empty();
+    const bool        build_hash_changed = !stored_build_hash.empty() && stored_build_hash != GIT_COMMIT_HASH;
+    const bool        cosmyx_ver_changed = !stored_cosmyx_ver.empty() && stored_cosmyx_ver != COSMYX_PATCH_VERSION;
+
+    app_config->set("build_hash",     GIT_COMMIT_HASH);
+    app_config->set("cosmyx_version", COSMYX_PATCH_VERSION);
+
+    if (!first_run && (build_hash_changed || cosmyx_ver_changed) && !app_config->get_bool("skip_build_change_notify")) {
+        CallAfter([this, stored_build_hash, stored_cosmyx_ver]() {
+            wxString msg = _L("A new version of CosmoSlice has been installed.") + "\n" +
+                           _L("Please Backup and delete the Cosmyx AppData Folder.") + "\n\n";
+            if (stored_build_hash != std::string(GIT_COMMIT_HASH))
+                msg += wxString::Format(_L("Build: %s \u2192 %s"), stored_build_hash, GIT_COMMIT_HASH) + "\n";
+            if (stored_cosmyx_ver != std::string(COSMYX_PATCH_VERSION))
+                msg += wxString::Format(_L("Bundle: %s \u2192 %s"), stored_cosmyx_ver, COSMYX_PATCH_VERSION) + "\n";
+            RichMessageDialog dlg(mainframe, msg, _L("New Build Detected"), wxOK | wxICON_INFORMATION);
+            dlg.ShowCheckBox(_L("Don't show again for future builds"));
+            dlg.ShowModal();
+            if (dlg.IsCheckBoxChecked())
+                app_config->set_bool("skip_build_change_notify", true);
+        });
+    }
+
     SplashScreen * scrn = nullptr;
     if (app_config->get("show_splash_screen") == "true") {
         // make a bitmap with dark grey banner on the left side
