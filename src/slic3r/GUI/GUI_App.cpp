@@ -2447,11 +2447,34 @@ bool GUI_App::on_init_inner()
                 msg += wxString::Format(_L("Build: %s \u2192 %s"), stored_build_hash, GIT_COMMIT_HASH) + "\n";
             if (stored_cosmyx_ver != std::string(COSMYX_PATCH_VERSION))
                 msg += wxString::Format(_L("Bundle: %s \u2192 %s"), stored_cosmyx_ver, COSMYX_PATCH_VERSION) + "\n";
-            RichMessageDialog dlg(mainframe, msg, _L("New Build Detected"), wxOK | wxICON_INFORMATION);
+            RichMessageDialog dlg(mainframe, msg, _L("New Build Detected"), wxYES_NO | wxICON_INFORMATION);
+            dlg.SetButtonLabel(wxID_YES, _L("Do it for me"));
+            dlg.SetButtonLabel(wxID_NO,  _L("Skip"));
             dlg.ShowCheckBox(_L("Don't show again for future builds"));
-            dlg.ShowModal();
+            const int result = dlg.ShowModal();
             if (dlg.IsCheckBoxChecked())
                 app_config->set_bool("skip_build_change_notify", true);
+            if (result == wxID_YES) {
+                namespace fs = boost::filesystem;
+                const fs::path data_path(Slic3r::data_dir());
+                auto t = std::time(nullptr);
+                char ts[32];
+                std::strftime(ts, sizeof(ts), "%Y%m%d_%H%M%S", std::localtime(&t));
+                const fs::path backup_path = data_path.parent_path() /
+                    (data_path.filename().string() + "_backup_" + ts);
+                try {
+                    app_config->save();
+                    fs::rename(data_path, backup_path);
+                    start_new_slicer(nullptr, false);
+                    mainframe->Close(false);
+                } catch (const fs::filesystem_error& e) {
+                    MessageDialog err(mainframe,
+                        wxString::Format(_L("Failed to backup AppData folder:\n%s"),
+                                         wxString::FromUTF8(e.what())),
+                        _L("Backup Failed"), wxOK | wxICON_ERROR);
+                    err.ShowModal();
+                }
+            }
         });
     }
 
