@@ -3,6 +3,7 @@
 
 set(SLIC3R_APP_NAME "OrcaSlicer")
 set(SLIC3R_APP_KEY "OrcaSlicer")
+set(SLIC3R_APP_VENDOR "Cosmyx")
 
 if(NOT DEFINED BBL_RELEASE_TO_PUBLIC)
 set(BBL_RELEASE_TO_PUBLIC "1")
