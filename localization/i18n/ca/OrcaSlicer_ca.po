@@ -20234,349 +20234,349 @@ msgid "Tungsten Carbide"
 msgstr ""
 
 msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
-msgstr ""
+msgstr "El fitxer 3mf seleccionat s'ha desat amb una versió més nova de %1% i no és compatible."
 
 msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "El 3MF seleccionat conté un objecte amb suports FDM pintats fent servir una versió més nova de PrusaSlicer i no és compatible."
 
 msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "El 3MF seleccionat conté un objecte amb costures pintades fent servir una versió més nova de PrusaSlicer i no és compatible."
 
 msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "El 3MF seleccionat conté un objecte pintat multimaterial fent servir una versió més nova de PrusaSlicer i no és compatible."
 
 msgid ""
 "Post-processing script %1% failed.\n"
 "\n"
 "The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
 "Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
-msgstr ""
+msgstr "L'script de postprocessament %1% ha fallat.\n\nS'espera que l'script de postprocessament modifiqui el fitxer G-code %2% en el seu lloc, però el fitxer G-code s'ha eliminat i probablement s'ha desat amb un nom nou.\nAjusteu l'script de postprocessament per modificar el G-code en el seu lloc i consulteu el manual sobre com reanomenar opcionalment el fitxer G-code postprocessat.\n"
 
 msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Temperatura del llit per a les capes excepte la inicial. Un valor de -1 significa que el filament no admet la impressió al Cosmyx Textured Bed. Un valor de 0 significa que el llit està apagat."
 
 msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Temperatura del llit de la capa inicial. Un valor de -1 significa que el filament no admet la impressió al Cosmyx Textured Bed. Un valor de 0 significa que el llit està apagat."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx Textured Bed"
 
 msgid "Hollowing"
-msgstr ""
+msgstr "Buidat"
 
 msgid "Pad brim size is too small for the current configuration."
-msgstr ""
+msgstr "La mida de la vora del coixinet és massa petita per a la configuració actual."
 
 msgid "Cannot proceed without support points! Add support points or disable support generation."
-msgstr ""
+msgstr "No es pot continuar sense punts de suport! Afegiu punts de suport o desactiveu la generació de suports."
 
 msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
-msgstr ""
+msgstr "L'elevació és massa baixa per a l'objecte. Feu servir la funció \"Coixinet al voltant de l'objecte\" per imprimir l'objecte sense elevació."
 
 msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
-msgstr ""
+msgstr "Els extrems dels pilars de suport es desplegaran en l'espai entre l'objecte i el coixinet. El paràmetre 'Distància de seguretat de la base de suport' ha de ser superior al paràmetre 'Espai del coixinet de l'objecte' per evitar-ho."
 
 msgid "Exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "El temps d'exposició està fora dels límits del perfil de la impressora."
 
 msgid "Initial exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "El temps d'exposició inicial està fora dels límits del perfil de la impressora."
 
 msgid "Slicing done"
-msgstr ""
+msgstr "Tall en capes completat"
 
 msgid "Hollowing model"
-msgstr ""
+msgstr "Buidant el model"
 
 msgid "Drilling holes into model."
-msgstr ""
+msgstr "Perforant forats al model."
 
 msgid "Slicing model"
-msgstr ""
+msgstr "Tallant el model en capes"
 
 msgid "Generating support points"
-msgstr ""
+msgstr "Generant punts de suport"
 
 msgid "Generating support tree"
-msgstr ""
+msgstr "Generant l'arbre de suport"
 
 msgid "Generating pad"
-msgstr ""
+msgstr "Generant el coixinet"
 
 msgid "Slicing supports"
-msgstr ""
+msgstr "Tallant els suports en capes"
 
 msgid "Merging slices and calculating statistics"
-msgstr ""
+msgstr "Fusionant capes i calculant estadístiques"
 
 msgid "Rasterizing layers"
-msgstr ""
+msgstr "Rasteritzant capes"
 
 msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
-msgstr ""
+msgstr "El tall en capes s'ha hagut d'aturar a causa d'un error intern: índex de capa inconsistent."
 
 msgid "Visualizing supports"
-msgstr ""
+msgstr "Visualitzant els suports"
 
 msgid "No pad can be generated for this model with the current configuration"
-msgstr ""
+msgstr "No es pot generar cap coixinet per a aquest model amb la configuració actual"
 
 msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
-msgstr ""
+msgstr "Hi ha objectes no imprimibles. Intenteu ajustar la configuració de suports per fer els objectes imprimibles."
 
 msgid "Taking a configuration snapshot failed."
-msgstr ""
+msgstr "No s'ha pogut fer una instantània de la configuració."
 
 msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
-msgstr ""
+msgstr "OrcaSlicer ha trobat un error en fer una instantània de la configuració."
 
 msgid "OrcaSlicer error"
-msgstr ""
+msgstr "Error d'OrcaSlicer"
 
 msgid "Continue"
-msgstr ""
+msgstr "Continua"
 
 msgid "Abort"
-msgstr ""
+msgstr "Cancel·la"
 
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Versió del paquet Cosmyx %s"
 
 msgid "Model Pictures"
-msgstr ""
+msgstr "Imatges del model"
 
 msgid "Auxiliaryies"
-msgstr ""
+msgstr "Auxiliars"
 
 msgid "nozzle"
-msgstr ""
+msgstr "broquet"
 
 msgid "Alternate nozzles:"
-msgstr ""
+msgstr "Broquets alternatius:"
 
 msgid "All standard"
-msgstr ""
+msgstr "Tot estàndard"
 
 msgid "Welcome to the %s Configuration Assistant"
-msgstr ""
+msgstr "Benvingut/da a l'Assistent de configuració de %s"
 
 msgid "Welcome to the %s Configuration Wizard"
-msgstr ""
+msgstr "Benvingut/da a l'Assistent de configuració de %s"
 
 msgid "Welcome"
-msgstr ""
+msgstr "Benvingut/da"
 
 msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
-msgstr ""
+msgstr "Hola, benvingut/da a %s! Aquest %s us ajuda amb la configuració inicial; amb uns quants paràmetres estareu llest/a per imprimir."
 
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
-msgstr ""
+msgstr "Elimina els perfils d'usuari (es farà una instantània prèviament)"
 
 msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
-msgstr ""
+msgstr "Realitza la integració d'escriptori (fa que el sistema pugui trobar aquest binari)."
 
 msgid "%s Family"
-msgstr ""
+msgstr "Família %s"
 
 msgid "Printer:"
-msgstr ""
+msgstr "Impressora:"
 
 msgid "Vendor:"
-msgstr ""
+msgstr "Fabricant:"
 
 msgid "Profile:"
-msgstr ""
+msgstr "Perfil:"
 
 msgid "(All)"
-msgstr ""
+msgstr "(Tot)"
 
 msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
-msgstr ""
+msgstr "%1% marcats amb <b>*</b> <b>no</b> són compatibles amb algunes impressores instal·lades."
 
 msgid "SLA materials"
-msgstr ""
+msgstr "Materials SLA"
 
 msgid "All installed printers are compatible with the selected %1%."
-msgstr ""
+msgstr "Totes les impressores instal·lades són compatibles amb el/la %1% seleccionat/da."
 
 msgid "filament"
-msgstr ""
+msgstr "filament"
 
 msgid "SLA material"
-msgstr ""
+msgstr "material SLA"
 
 msgid "Only the following installed printers are compatible with the selected filaments"
-msgstr ""
+msgstr "Només les impressores instal·lades següents són compatibles amb els filaments seleccionats"
 
 msgid "Only the following installed printers are compatible with the selected SLA materials"
-msgstr ""
+msgstr "Només les impressores instal·lades següents són compatibles amb els materials SLA seleccionats"
 
 msgid "Custom Printer Setup"
-msgstr ""
+msgstr "Configuració d'impressora personalitzada"
 
 msgid "Custom Printer"
-msgstr ""
+msgstr "Impressora personalitzada"
 
 msgid "Define a custom printer profile"
-msgstr ""
+msgstr "Defineix un perfil d'impressora personalitzat"
 
 msgid "Custom profile name:"
-msgstr ""
+msgstr "Nom del perfil personalitzat:"
 
 msgid "Firmware Type"
-msgstr ""
+msgstr "Tipus de microprogramari"
 
 msgid "Firmware"
-msgstr ""
+msgstr "Microprogramari"
 
 msgid "Choose the type of firmware used by your printer."
-msgstr ""
+msgstr "Trieu el tipus de microprogramari que utilitza la vostra impressora."
 
 msgid "Bed Shape and Size"
-msgstr ""
+msgstr "Forma i mida del llit"
 
 msgid "Set the shape of your printer's bed."
-msgstr ""
+msgstr "Establiu la forma del llit de la vostra impressora."
 
 msgid "Invalid numeric input."
-msgstr ""
+msgstr "Entrada numèrica no vàlida."
 
 msgid "Filament and Nozzle Diameters"
-msgstr ""
+msgstr "Diàmetres del filament i del broquet"
 
 msgid "Print Diameters"
-msgstr ""
+msgstr "Diàmetres d'impressió"
 
 msgid "Enter the diameter of your printer's hot end nozzle."
-msgstr ""
+msgstr "Introduïu el diàmetre del broquet del hotend de la vostra impressora."
 
 msgid "Nozzle Diameter:"
-msgstr ""
+msgstr "Diàmetre del broquet:"
 
 msgid "Enter the diameter of your filament."
-msgstr ""
+msgstr "Introduïu el diàmetre del vostre filament."
 
 msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
-msgstr ""
+msgstr "Cal una bona precisió, de manera que feu servir un peu de rei i realitzeu diverses mesures al llarg del filament, i calculeu la mitjana."
 
 msgid "Filament Diameter:"
-msgstr ""
+msgstr "Diàmetre del filament:"
 
 msgid "Nozzle and Bed Temperatures"
-msgstr ""
+msgstr "Temperatures del broquet i del llit"
 
 msgid "Enter the nozzle_temperature needed for extruding your filament."
-msgstr ""
+msgstr "Introduïu la temperatura del broquet necessària per extrudir el vostre filament."
 
 msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
-msgstr ""
+msgstr "Una regla general és de 160 a 230 °C per al PLA i de 215 a 250 °C per a l'ABS."
 
 msgid "Extrusion Temperature:"
-msgstr ""
+msgstr "Temperatura d'extrusió:"
 
 msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
-msgstr ""
+msgstr "Introduïu la temperatura del llit necessària perquè el vostre filament s'adhereixi al llit calefactat."
 
 msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
-msgstr ""
+msgstr "Una regla general és de 60 °C per al PLA i de 110 °C per a l'ABS. Deixeu zero si no teniu llit calefactat."
 
 msgid "Bed Temperature:"
-msgstr ""
+msgstr "Temperatura del llit:"
 
 msgid "SLA Materials"
-msgstr ""
+msgstr "Materials SLA"
 
 msgid "FFF Technology Printers"
-msgstr ""
+msgstr "Impressores de tecnologia FFF"
 
 msgid "SLA Technology Printers"
-msgstr ""
+msgstr "Impressores de tecnologia SLA"
 
 msgid "Following printer profiles has no default filament: %1%Please select one manually."
-msgstr ""
+msgstr "Els perfils d'impressora següents no tenen cap filament predeterminat: %1%Seleccioneu-ne un manualment."
 
 msgid "Following printer profiles has no default material: %1%Please select one manually."
-msgstr ""
+msgstr "Els perfils d'impressora següents no tenen cap material predeterminat: %1%Seleccioneu-ne un manualment."
 
 msgid "The following FFF printer models have no filament selected:"
-msgstr ""
+msgstr "Els models d'impressora FFF següents no tenen cap filament seleccionat:"
 
 msgid "Do you want to select default filaments for these FFF printer models?"
-msgstr ""
+msgstr "Voleu seleccionar filaments predeterminats per a aquests models d'impressora FFF?"
 
 msgid "Configuration is edited in ConfigWizard"
-msgstr ""
+msgstr "La configuració s'edita a ConfigWizard"
 
 msgid "All user presets will be deleted."
-msgstr ""
+msgstr "Tots els ajustos preestablerts d'usuari s'eliminaran."
 
 msgid "A new Printer was installed and it will be activated."
-msgstr ""
+msgstr "S'ha instal·lat una impressora nova i s'activarà."
 
 msgid "Some Printers were uninstalled."
-msgstr ""
+msgstr "Algunes impressores s'han desinstal·lat."
 
 msgid "A new filament was installed and it will be activated."
-msgstr ""
+msgstr "S'ha instal·lat un filament nou i s'activarà."
 
 msgid "A new SLA material was installed and it will be activated."
-msgstr ""
+msgstr "S'ha instal·lat un material SLA nou i s'activarà."
 
 msgid "Some filaments were uninstalled."
-msgstr ""
+msgstr "Alguns filaments s'han desinstal·lat."
 
 msgid "Custom printer was installed and it will be activated."
-msgstr ""
+msgstr "S'ha instal·lat una impressora personalitzada i s'activarà."
 
 msgid "<Back"
-msgstr ""
+msgstr "<Enrere"
 
 msgid "Next>"
-msgstr ""
+msgstr "Següent>"
 
 msgid "Filament Profiles Selection"
-msgstr ""
+msgstr "Selecció de perfils de filament"
 
 msgid "Configuration Assistant"
-msgstr ""
+msgstr "Assistent de configuració"
 
 msgid "Configuration &Assistant"
-msgstr ""
+msgstr "Assistent de &configuració"
 
 msgid "Configuration Wizard"
-msgstr ""
+msgstr "Assistent de configuració"
 
 msgid "Configuration &Wizard"
-msgstr ""
+msgstr "Assistent de &configuració"
 
 msgid "A new vendor was installed and one of its printers will be activated"
 msgid_plural "New vendors were installed and one of theirs printers will be activated"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "S'ha instal·lat un fabricant nou i una de les seves impressores s'activarà"
+msgstr[1] "S'ha instal·lat un fabricant nou i una de les seves impressores s'activarà"
 
 msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "La integració d'escriptori ha fallat: boost::filesystem::canonical no ha retornat la ruta de AppImage."
 
 msgid "Performing desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "La integració d'escriptori ha fallat: no s'ha pogut trobar l'executable."
 
 msgid "Performing desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "La integració d'escriptori ha fallat perquè no s'ha trobat el directori de l'aplicació."
 
 msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
-msgstr ""
+msgstr "La integració d'escriptori ha fallat: no s'ha pogut crear el fitxer d'escriptori de Gcodeviewer. Probablement el fitxer d'escriptori d'OrcaSlicer s'ha creat correctament."
 
 msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "La integració d'escriptori del descarregador ha fallat: boost::filesystem::canonical no ha retornat la ruta de AppImage."
 
 msgid "Performing downloader desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "La integració d'escriptori del descarregador ha fallat: no s'ha pogut trobar l'executable."
 
 msgid "Performing downloader desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "La integració d'escriptori del descarregador ha fallat perquè no s'ha trobat el directori de l'aplicació."
 
 msgid "Desktop Integration"
-msgstr ""
+msgstr "Integració d'escriptori"
 
 msgid ""
 "Desktop Integration sets this binary to be searchable by the system.\n"
@@ -20585,231 +20585,231 @@ msgid ""
 msgstr ""
 
 msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
-msgstr ""
+msgstr "La temperatura actual de la cambra o la temperatura objectiu de la cambra supera els 45\\u2103. Per evitar l'obstrucció de l'extrusor, no es permet carregar filament de baixa temperatura (PLA/PETG/TPU)."
 
 msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
-msgstr ""
+msgstr "Hi ha filament de baixa temperatura (PLA/PETG/TPU) carregat a l'extrusor. Per evitar l'obstrucció de l'extrusor, no es permet establir la temperatura de la cambra per sobre de 45\\u2103."
 
 msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
-msgstr ""
+msgstr "Quan establiu la temperatura de la cambra per sota de 40\\u2103, el control de temperatura de la cambra no s'activarà i la temperatura objectiu de la cambra s'establirà automàticament a 0\\u2103."
 
 msgid "The download has failed"
-msgstr ""
+msgstr "La descàrrega ha fallat"
 
 msgid "Can't create file at %1%"
-msgstr ""
+msgstr "No es pot crear el fitxer a %1%"
 
 msgid "Archive preview"
-msgstr ""
+msgstr "Previsualització de l'arxiu"
 
 msgid "Movement:"
-msgstr ""
+msgstr "Moviment:"
 
 msgid "Movement"
-msgstr ""
+msgstr "Moviment"
 
 msgid "Auto Segment"
-msgstr ""
+msgstr "Segment automàtic"
 
 msgid "Depth ratio"
-msgstr ""
+msgstr "Relació de profunditat"
 
 msgid "Prizm"
-msgstr ""
+msgstr "Prisma"
 
 msgid "connector is out of cut contour"
-msgstr ""
+msgstr "el connector és fora del contorn de tall"
 
 msgid "connectors are out of cut contour"
-msgstr ""
+msgstr "els connectors són fora del contorn de tall"
 
 msgid "connector is out of object"
-msgstr ""
+msgstr "el connector és fora de l'objecte"
 
 msgid "connectors is out of object"
-msgstr ""
+msgstr "els connectors són fora de l'objecte"
 
 msgid ""
 "Invalid state. \n"
 "No one part is selected for keep after cut"
-msgstr ""
+msgstr "Estat no vàlid. \nCap part seleccionada per conservar després del tall"
 
 msgid "Please confirm explosion ratio = 1 and select at least two volumes."
-msgstr ""
+msgstr "Confirmeu que la relació d'explosió = 1 i seleccioneu almenys dos volums."
 
 msgid "Please select at least two volumes."
-msgstr ""
+msgstr "Seleccioneu almenys dos volums."
 
 msgid "(Moving)"
-msgstr ""
+msgstr "(En moviment)"
 
 msgid "Point and point assembly"
-msgstr ""
+msgstr "Assemblatge punt a punt"
 
 msgid ""
 "It is recommended to assemble the objects first,\n"
 "because the objects is restriced to bed \n"
 "and only parts can be lifted."
-msgstr ""
+msgstr "Es recomana assemblar primer els objectes,\nperquè els objectes estan restringits al llit \ni només es poden aixecar les parts."
 
 msgid "Face and face assembly"
-msgstr ""
+msgstr "Assemblatge cara a cara"
 
 msgid "Entering Assembly gizmo"
-msgstr ""
+msgstr "Entrant al gizmo d'assemblatge"
 
 msgid "Leaving Assembly gizmo"
-msgstr ""
+msgstr "Sortint del gizmo d'assemblatge"
 
 msgid "Entering Cut gizmo"
-msgstr ""
+msgstr "Entrant al gizmo de tall"
 
 msgid "Leaving Cut gizmo"
-msgstr ""
+msgstr "Sortint del gizmo de tall"
 
 msgid "Cut gizmo editing"
-msgstr ""
+msgstr "Edició del gizmo de tall"
 
 msgid "Add fuzzy skin"
-msgstr ""
+msgstr "Afegeix pell difusa"
 
 msgid "Remove fuzzy skin"
-msgstr ""
+msgstr "Elimina la pell difusa"
 
 msgid "Reset selection"
-msgstr ""
+msgstr "Restableix la selecció"
 
 msgid "Entering Paint-on fuzzy skin"
-msgstr ""
+msgstr "Entrant a pell difusa pintada"
 
 msgid "Leaving Paint-on fuzzy skin"
-msgstr ""
+msgstr "Sortint de pell difusa pintada"
 
 msgid "Paint-on fuzzy skin editing"
-msgstr ""
+msgstr "Edició de pell difusa pintada"
 
 msgid "Hollow this object"
-msgstr ""
+msgstr "Buida aquest objecte"
 
 msgid "Preview hollowed and drilled model"
-msgstr ""
+msgstr "Previsualitza el model buidat i perforat"
 
 msgid "Offset"
-msgstr ""
+msgstr "Desplaçament"
 
 msgid "Closing distance"
-msgstr ""
+msgstr "Distància de tancament"
 
 msgid "Hole diameter"
-msgstr ""
+msgstr "Diàmetre del forat"
 
 msgid "Hole depth"
-msgstr ""
+msgstr "Profunditat del forat"
 
 msgid "Remove selected holes"
-msgstr ""
+msgstr "Elimina els forats seleccionats"
 
 msgid "Remove all holes"
-msgstr ""
+msgstr "Elimina tots els forats"
 
 msgid "Clipping of view"
-msgstr ""
+msgstr "Retall de la vista"
 
 msgid "Show supports"
-msgstr ""
+msgstr "Mostra els suports"
 
 msgid "Hollow and drill"
-msgstr ""
+msgstr "Buida i perfora"
 
 msgid "Entering Measure gizmo"
-msgstr ""
+msgstr "Entrant al gizmo de mesura"
 
 msgid "Leaving Measure gizmo"
-msgstr ""
+msgstr "Sortint del gizmo de mesura"
 
 msgid "Model simplification has been canceled"
-msgstr ""
+msgstr "La simplificació del model s'ha cancel·lat"
 
 msgid "Lock supports under new islands"
-msgstr ""
+msgstr "Bloqueja els suports sota les illes noves"
 
 msgid "Remove all points"
-msgstr ""
+msgstr "Elimina tots els punts"
 
 msgid "Apply changes"
-msgstr ""
+msgstr "Aplica els canvis"
 
 msgid "Discard changes"
-msgstr ""
+msgstr "Descarta els canvis"
 
 msgid "Minimal points distance"
-msgstr ""
+msgstr "Distància mínima entre punts"
 
 msgid "Support points density"
-msgstr ""
+msgstr "Densitat dels punts de suport"
 
 msgid "Manual editing"
-msgstr ""
+msgstr "Edició manual"
 
 msgid "SLA Support Points"
-msgstr ""
+msgstr "Punts de suport SLA"
 
 msgid "Do you want to save your manually edited support points?"
-msgstr ""
+msgstr "Voleu desar els punts de suport editats manualment?"
 
 msgid "Save support points?"
-msgstr ""
+msgstr "Deseu els punts de suport?"
 
 msgid "Autogeneration will erase all manually edited points."
-msgstr ""
+msgstr "La generació automàtica esborrarà tots els punts editats manualment."
 
 msgid "Are you sure you want to do it?"
-msgstr ""
+msgstr "Esteu segur/a que voleu fer-ho?"
 
 msgid "SLA gizmo keyboard shortcuts"
-msgstr ""
+msgstr "Dreceres de teclat del gizmo SLA"
 
 msgid "Note: some shortcuts work in (non)editing mode only."
-msgstr ""
+msgstr "Nota: algunes dreceres funcionen únicament en mode d'edició (o de no edició)."
 
 msgid "Add point"
-msgstr ""
+msgstr "Afegeix punt"
 
 msgid "Remove point"
-msgstr ""
+msgstr "Elimina punt"
 
 msgid "Move point"
-msgstr ""
+msgstr "Mou punt"
 
 msgid "Add point to selection"
-msgstr ""
+msgstr "Afegeix punt a la selecció"
 
 msgid "Remove point from selection"
-msgstr ""
+msgstr "Elimina punt de la selecció"
 
 msgid "Select by rectangle"
-msgstr ""
+msgstr "Selecciona amb rectangle"
 
 msgid "Deselect by rectangle"
-msgstr ""
+msgstr "Desselecciona amb rectangle"
 
 msgid "Select all points"
-msgstr ""
+msgstr "Selecciona tots els punts"
 
 msgid "Move clipping plane"
-msgstr ""
+msgstr "Mou el pla de retall"
 
 msgid "Reset clipping plane"
-msgstr ""
+msgstr "Restableix el pla de retall"
 
 msgid "Switch to editing mode"
-msgstr ""
+msgstr "Canvia al mode d'edició"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calage 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calage 3 SNDT"
 
 msgid ""
 "This calibration model works best with specific infill settings.\n"
@@ -20820,282 +20820,282 @@ msgid ""
 "\n"
 "Yes - Change these settings automatically\n"
 "No  - Do not change these settings for me"
-msgstr ""
+msgstr "Aquest model de calibratge funciona millor amb paràmetres de farciment específics.\nPer obtenir resultats de calibratge òptims, és recomanable establir:\n- Direcció de farciment: %.0f\\u00b0\n- Direcció de farciment sòlid: %.0f\\u00b0\n- Només una paret a la primera capa: %s\n\nSí - Canvia aquests paràmetres automàticament\nNo  - No canviïs aquests paràmetres"
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calage 1 Nova"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Models de calibratge de capçal doble"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Models de calibratge de capçal simple"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx Handy Models"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D Models"
 
 msgid "Add Emboss text object"
-msgstr ""
+msgstr "Afegeix objecte de text en relleu"
 
 msgid "Emboss attribute change"
-msgstr ""
+msgstr "Canvi d'atribut de relleu"
 
 msgid "Add Emboss text Volume"
-msgstr ""
+msgstr "Afegeix volum de text en relleu"
 
 msgid "Font doesn't have any shape for given text."
-msgstr ""
+msgstr "La font no té cap forma per al text indicat."
 
 msgid "There is no valid surface for text projection."
-msgstr ""
+msgstr "No hi ha cap superfície vàlida per a la projecció del text."
 
 msgid "An unexpected error occurred"
-msgstr ""
+msgstr "S'ha produït un error inesperat"
 
 msgid "Best surface quality"
-msgstr ""
+msgstr "Millor qualitat de superfície"
 
 msgid "Optimize object rotation for best surface quality."
-msgstr ""
+msgstr "Optimitza la rotació de l'objecte per a la millor qualitat de superfície."
 
 msgid "Reduced overhang slopes"
-msgstr ""
+msgstr "Pendents de voladís reduïts"
 
 msgid ""
 "Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
 "Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
-msgstr ""
+msgstr "Optimitza la rotació de l'objecte per tenir el mínim de voladissos que necessitin estructures de suport.\nTingueu en compte que aquest mètode intentarà trobar la millor superfície de l'objecte per tocar el llit d'impressió si no s'ha establert cap elevació."
 
 msgid "Lowest Z height"
-msgstr ""
+msgstr "Alçada Z mínima"
 
 msgid "Rotate the model to have the lowest z height for faster print time."
-msgstr ""
+msgstr "Gireu el model per tenir l'alçada z mínima per reduir el temps d'impressió."
 
 msgid "Choose SLA archive:"
-msgstr ""
+msgstr "Trieu l'arxiu SLA:"
 
 msgid "Import file"
-msgstr ""
+msgstr "Importa fitxer"
 
 msgid "Import model and profile"
-msgstr ""
+msgstr "Importa model i perfil"
 
 msgid "Import profile only"
-msgstr ""
+msgstr "Importa només el perfil"
 
 msgid "Import model only"
-msgstr ""
+msgstr "Importa només el model"
 
 msgid "Accurate"
-msgstr ""
+msgstr "Precís"
 
 msgid "Balanced"
-msgstr ""
+msgstr "Equilibrat"
 
 msgid "Quick"
-msgstr ""
+msgstr "Ràpid"
 
 msgid "3D Models"
-msgstr ""
+msgstr "Models 3D"
 
 msgid "Click to return"
-msgstr ""
+msgstr "Feu clic per tornar"
 
 msgid "Left Arrow"
-msgstr ""
+msgstr "Fletxa esquerra"
 
 msgid "Click to continue"
-msgstr ""
+msgstr "Feu clic per continuar"
 
 msgid "Right Arrow"
-msgstr ""
+msgstr "Fletxa dreta"
 
 msgid "Authorizing..."
-msgstr ""
+msgstr "Autoritzant..."
 
 msgid "NO RAMMING AT ALL"
-msgstr ""
+msgstr "SENSE CAP COMPACTACIÓ"
 
 msgid "Volumetric speed"
-msgstr ""
+msgstr "Velocitat volumètrica"
 
 msgid "Search"
-msgstr ""
+msgstr "Cerca"
 
 msgid "My Device"
-msgstr ""
+msgstr "El meu dispositiu"
 
 msgid "Other Device"
-msgstr ""
+msgstr "Un altre dispositiu"
 
 msgid "Can't find my devices?"
-msgstr ""
+msgstr "No trobeu els vostres dispositius?"
 
 msgid "Modifying the device name"
-msgstr ""
+msgstr "Modificant el nom del dispositiu"
 
 msgid "Bind with Access Code"
-msgstr ""
+msgstr "Vincula amb el codi d'accés"
 
 msgid "Step file import parameters"
-msgstr ""
+msgstr "Paràmetres d'importació del fitxer STEP"
 
 msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
-msgstr ""
+msgstr "Les deflexions lineals i angulars més petites produeixen transformacions de major qualitat, però augmenten el temps de processament."
 
 msgid "View Wiki for more information"
-msgstr ""
+msgstr "Vegeu la Wiki per a més informació"
 
 msgid "Linear Deflection"
-msgstr ""
+msgstr "Deflexió lineal"
 
 msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
-msgstr ""
+msgstr "Introduïu un valor vàlid (0,001 < deflexió lineal < 0,1)"
 
 msgid "Angle Deflection"
-msgstr ""
+msgstr "Deflexió angular"
 
 msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
-msgstr ""
+msgstr "Introduïu un valor vàlid (0,01 < deflexió angular < 1,0)"
 
 msgid "Split compound and compsolid into multiple objects"
-msgstr ""
+msgstr "Divideix el compost i el sòlid compost en múltiples objectes"
 
 msgid "Number of triangular facets"
-msgstr ""
+msgstr "Nombre de facetes triangulars"
 
 msgid "Calculating, please wait..."
-msgstr ""
+msgstr "Calculant, espereu..."
 
 msgid "Move over surface"
-msgstr ""
+msgstr "Mou per sobre de la superfície"
 
 msgid "System Information"
-msgstr ""
+msgstr "Informació del sistema"
 
 msgid "Blacklisted libraries loaded into OrcaSlicer process:"
-msgstr ""
+msgstr "Biblioteques a la llista negra carregades al procés d'OrcaSlicer:"
 
 msgid "SIMD is supported:"
-msgstr ""
+msgstr "SIMD és compatible:"
 
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Copia al porta-retalls"
 
 msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Temperatura del llit quan el Cosmyx Textured Bed és instal·lat. Un valor de -1 significa que el filament no admet la impressió al Cosmyx Textured Bed. Un valor de 0 significa que el llit està apagat."
 
 msgid "Forward"
-msgstr ""
+msgstr "Endavant"
 
 msgid "Reload"
-msgstr ""
+msgstr "Recarrega"
 
 msgid "Tools"
-msgstr ""
+msgstr "Eines"
 
 msgid "View Source"
-msgstr ""
+msgstr "Visualitza el codi font"
 
 msgid "View Text"
-msgstr ""
+msgstr "Visualitza el text"
 
 msgid "Handle Navigation"
-msgstr ""
+msgstr "Gestiona la navegació"
 
 msgid "Handle New Windows"
-msgstr ""
+msgstr "Gestiona les finestres noves"
 
 msgid "Edit Mode"
-msgstr ""
+msgstr "Mode d'edició"
 
 msgid "Run Script"
-msgstr ""
+msgstr "Executa l'script"
 
 msgid "Add user script"
-msgstr ""
+msgstr "Afegeix script d'usuari"
 
 msgid "Set custom user agent"
-msgstr ""
+msgstr "Estableix un agent d'usuari personalitzat"
 
 msgid "Clear Selection"
-msgstr ""
+msgstr "Esborra la selecció"
 
 msgid "Delete Selection"
-msgstr ""
+msgstr "Elimina la selecció"
 
 msgid "Custom Scheme Example"
-msgstr ""
+msgstr "Exemple d'esquema personalitzat"
 
 msgid "Memory File System Example"
-msgstr ""
+msgstr "Exemple de sistema de fitxers en memòria"
 
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "Activa el menú contextual"
 
 msgid "Enable Dev Tools"
-msgstr ""
+msgstr "Activa les eines de desenvolupament"
 
 msgid "An error occurred loading "
-msgstr ""
+msgstr "S'ha produït un error en carregar "
 
 msgid "%"
-msgstr ""
+msgstr "%"
 
 msgid "Connected to CrealityPrint successfully!"
-msgstr ""
+msgstr "Connexió a CrealityPrint establerta correctament!"
 
 msgid "Could not connect to CrealityPrint"
-msgstr ""
+msgstr "No s'ha pogut connectar a CrealityPrint"
 
 msgid "Connection to ElegooLink is working correctly."
-msgstr ""
+msgstr "La connexió a ElegooLink funciona correctament."
 
 msgid "Could not connect to ElegooLink"
-msgstr ""
+msgstr "No s'ha pogut connectar a ElegooLink"
 
 msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "El fitxer s'ha transferit, però s'han produït alguns errors desconeguts. Comproveu la pàgina del dispositiu per al fitxer i intenteu iniciar la impressió de nou."
 
 msgid "Error code not found"
-msgstr ""
+msgstr "Codi d'error no trobat"
 
 msgid "The printer is busy, Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "La impressora està ocupada. Comproveu la pàgina del dispositiu per al fitxer i intenteu iniciar la impressió de nou."
 
 msgid "The file is lost, please check and try again."
-msgstr ""
+msgstr "El fitxer s'ha perdut, comproveu-ho i torneu-ho a intentar."
 
 msgid "The file is corrupted, please check and try again."
-msgstr ""
+msgstr "El fitxer està corromput, comproveu-ho i torneu-ho a intentar."
 
 msgid "Transmission abnormality, please check and try again."
-msgstr ""
+msgstr "Anomalia de transmissió, comproveu-ho i torneu-ho a intentar."
 
 msgid "The file does not match the printer, please check and try again."
-msgstr ""
+msgstr "El fitxer no coincideix amb la impressora, comproveu-ho i torneu-ho a intentar."
 
 msgid "Start print timeout"
-msgstr ""
+msgstr "S'ha superat el temps d'espera per iniciar la impressió"
 
 msgid "Start print failed"
-msgstr ""
+msgstr "No s'ha pogut iniciar la impressió"
 
 msgid "Connection to ESP3D is working correctly."
-msgstr ""
+msgstr "La connexió a ESP3D funciona correctament."
 
 msgid "Could not connect to ESP3D"
-msgstr ""
+msgstr "No s'ha pogut connectar a ESP3D"
 
 msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
-msgstr ""
+msgstr "S'ha superat el temps de connexió. Comproveu si la impressora i la xarxa de l'ordinador funcionen correctament i confirmeu que estan a la mateixa xarxa."
 
 msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
-msgstr ""
+msgstr "No s'ha pogut analitzar el nom d'amfitrió/IP/URL, comproveu-ho i torneu-ho a intentar."
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
-msgstr ""
+msgstr "S'ha interromput la transferència de fitxers/dades. Comproveu la impressora i la xarxa i torneu-ho a intentar."

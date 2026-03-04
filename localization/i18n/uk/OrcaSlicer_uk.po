@@ -19396,349 +19396,349 @@ msgid "Tungsten Carbide"
 msgstr ""
 
 msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
-msgstr ""
+msgstr "Вибраний файл 3mf збережено у новішій версії %1% і він несумісний."
 
 msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Вибраний файл 3MF містить об'єкт із пофарбованими FDM-підтримками, створений у новішій версії PrusaSlicer, і є несумісним."
 
 msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Вибраний файл 3MF містить об'єкт із пофарбованим швом, створений у новішій версії PrusaSlicer, і є несумісним."
 
 msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Вибраний файл 3MF містить об'єкт із багатоматеріальним фарбуванням, створений у новішій версії PrusaSlicer, і є несумісним."
 
 msgid ""
 "Post-processing script %1% failed.\n"
 "\n"
 "The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
 "Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
-msgstr ""
+msgstr "Помилка скрипту постобробки %1%.\n\nСкрипт постобробки повинен змінювати файл G-code %2% на місці, але файл G-code було видалено і, ймовірно, збережено під новою назвою.\nБудь ласка, скоригуйте скрипт постобробки для зміни G-code на місці та зверніться до посібника щодо необов'язкового перейменування обробленого файлу G-code.\n"
 
 msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Температура столика для шарів, крім першого. Значення -1 означає, що філамент не підтримує друк на Cosmyx Textured Bed. Значення 0 означає, що столик вимкнено."
 
 msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Температура столика для першого шару. Значення -1 означає, що філамент не підтримує друк на Cosmyx Textured Bed. Значення 0 означає, що столик вимкнено."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx Textured Bed"
 
 msgid "Hollowing"
-msgstr ""
+msgstr "Порожнення"
 
 msgid "Pad brim size is too small for the current configuration."
-msgstr ""
+msgstr "Розмір облямівки підкладки надто малий для поточної конфігурації."
 
 msgid "Cannot proceed without support points! Add support points or disable support generation."
-msgstr ""
+msgstr "Неможливо продовжити без точок підтримки! Додайте точки підтримки або вимкніть генерацію підтримок."
 
 msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
-msgstr ""
+msgstr "Висота підйому занадто мала для об'єкта. Скористайтеся функцією \"Підкладка навколо об'єкта\", щоб надрукувати об'єкт без підйому."
 
 msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
-msgstr ""
+msgstr "Кінці стовпів підтримки будуть розміщені на зазорі між об'єктом і підкладкою. Щоб уникнути цього, параметр «Безпечна відстань основи підтримки» має бути більшим за параметр «Зазор між об'єктом і підкладкою»."
 
 msgid "Exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "Час експозиції виходить за межі профілю принтера."
 
 msgid "Initial exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "Початковий час експозиції виходить за межі профілю принтера."
 
 msgid "Slicing done"
-msgstr ""
+msgstr "Нарізання завершено"
 
 msgid "Hollowing model"
-msgstr ""
+msgstr "Порожнення моделі"
 
 msgid "Drilling holes into model."
-msgstr ""
+msgstr "Свердління отворів у моделі."
 
 msgid "Slicing model"
-msgstr ""
+msgstr "Нарізання моделі"
 
 msgid "Generating support points"
-msgstr ""
+msgstr "Генерація точок підтримки"
 
 msgid "Generating support tree"
-msgstr ""
+msgstr "Генерація дерева підтримок"
 
 msgid "Generating pad"
-msgstr ""
+msgstr "Генерація підкладки"
 
 msgid "Slicing supports"
-msgstr ""
+msgstr "Нарізання підтримок"
 
 msgid "Merging slices and calculating statistics"
-msgstr ""
+msgstr "Об'єднання зрізів та обчислення статистики"
 
 msgid "Rasterizing layers"
-msgstr ""
+msgstr "Растеризація шарів"
 
 msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
-msgstr ""
+msgstr "Нарізання було зупинено через внутрішню помилку: Непослідовний індекс зрізу."
 
 msgid "Visualizing supports"
-msgstr ""
+msgstr "Відображення підтримок"
 
 msgid "No pad can be generated for this model with the current configuration"
-msgstr ""
+msgstr "Для цієї моделі неможливо згенерувати підкладку з поточною конфігурацією"
 
 msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
-msgstr ""
+msgstr "Є недруковані об'єкти. Спробуйте налаштувати параметри підтримок, щоб зробити об'єкти придатними для друку."
 
 msgid "Taking a configuration snapshot failed."
-msgstr ""
+msgstr "Не вдалося зробити знімок конфігурації."
 
 msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
-msgstr ""
+msgstr "OrcaSlicer зіткнувся з помилкою під час створення знімку конфігурації."
 
 msgid "OrcaSlicer error"
-msgstr ""
+msgstr "Помилка OrcaSlicer"
 
 msgid "Continue"
-msgstr ""
+msgstr "Продовжити"
 
 msgid "Abort"
-msgstr ""
+msgstr "Скасувати"
 
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Версія пакету Cosmyx %s"
 
 msgid "Model Pictures"
-msgstr ""
+msgstr "Зображення моделей"
 
 msgid "Auxiliaryies"
-msgstr ""
+msgstr "Допоміжні елементи"
 
 msgid "nozzle"
-msgstr ""
+msgstr "сопло"
 
 msgid "Alternate nozzles:"
-msgstr ""
+msgstr "Альтернативні сопла:"
 
 msgid "All standard"
-msgstr ""
+msgstr "Усі стандартні"
 
 msgid "Welcome to the %s Configuration Assistant"
-msgstr ""
+msgstr "Ласкаво просимо до Помічника налаштування %s"
 
 msgid "Welcome to the %s Configuration Wizard"
-msgstr ""
+msgstr "Ласкаво просимо до Майстра налаштування %s"
 
 msgid "Welcome"
-msgstr ""
+msgstr "Ласкаво просимо"
 
 msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
-msgstr ""
+msgstr "Привіт, ласкаво просимо до %s! Цей %s допоможе вам із початковим налаштуванням; лише кілька параметрів — і ви будете готові до друку."
 
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
-msgstr ""
+msgstr "Видалити профілі користувача (попередньо буде зроблено знімок)"
 
 msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
-msgstr ""
+msgstr "Виконати інтеграцію з робочим столом (дозволяє системі знаходити цей виконуваний файл)."
 
 msgid "%s Family"
-msgstr ""
+msgstr "Сімейство %s"
 
 msgid "Printer:"
-msgstr ""
+msgstr "Принтер:"
 
 msgid "Vendor:"
-msgstr ""
+msgstr "Виробник:"
 
 msgid "Profile:"
-msgstr ""
+msgstr "Профіль:"
 
 msgid "(All)"
-msgstr ""
+msgstr "(Усі)"
 
 msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
-msgstr ""
+msgstr "%1%, позначені <b>*</b>, <b>не</b> сумісні з деякими встановленими принтерами."
 
 msgid "SLA materials"
-msgstr ""
+msgstr "SLA матеріали"
 
 msgid "All installed printers are compatible with the selected %1%."
-msgstr ""
+msgstr "Усі встановлені принтери сумісні з вибраним %1%."
 
 msgid "filament"
-msgstr ""
+msgstr "філамент"
 
 msgid "SLA material"
-msgstr ""
+msgstr "SLA матеріал"
 
 msgid "Only the following installed printers are compatible with the selected filaments"
-msgstr ""
+msgstr "Лише наступні встановлені принтери сумісні з вибраними філаментами"
 
 msgid "Only the following installed printers are compatible with the selected SLA materials"
-msgstr ""
+msgstr "Лише наступні встановлені принтери сумісні з вибраними SLA матеріалами"
 
 msgid "Custom Printer Setup"
-msgstr ""
+msgstr "Налаштування користувацького принтера"
 
 msgid "Custom Printer"
-msgstr ""
+msgstr "Користувацький принтер"
 
 msgid "Define a custom printer profile"
-msgstr ""
+msgstr "Визначте профіль користувацького принтера"
 
 msgid "Custom profile name:"
-msgstr ""
+msgstr "Назва користувацького профілю:"
 
 msgid "Firmware Type"
-msgstr ""
+msgstr "Тип прошивки"
 
 msgid "Firmware"
-msgstr ""
+msgstr "Прошивка"
 
 msgid "Choose the type of firmware used by your printer."
-msgstr ""
+msgstr "Оберіть тип прошивки, яку використовує ваш принтер."
 
 msgid "Bed Shape and Size"
-msgstr ""
+msgstr "Форма та розмір столика"
 
 msgid "Set the shape of your printer's bed."
-msgstr ""
+msgstr "Задайте форму столика вашого принтера."
 
 msgid "Invalid numeric input."
-msgstr ""
+msgstr "Недійсне числове введення."
 
 msgid "Filament and Nozzle Diameters"
-msgstr ""
+msgstr "Діаметри філаменту та сопла"
 
 msgid "Print Diameters"
-msgstr ""
+msgstr "Діаметри друку"
 
 msgid "Enter the diameter of your printer's hot end nozzle."
-msgstr ""
+msgstr "Введіть діаметр сопла хотенду вашого принтера."
 
 msgid "Nozzle Diameter:"
-msgstr ""
+msgstr "Діаметр сопла:"
 
 msgid "Enter the diameter of your filament."
-msgstr ""
+msgstr "Введіть діаметр вашого філаменту."
 
 msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
-msgstr ""
+msgstr "Потрібна висока точність, тому використовуйте штангенциркуль і виконайте декілька вимірювань вздовж філаменту, після чого обчисліть середнє значення."
 
 msgid "Filament Diameter:"
-msgstr ""
+msgstr "Діаметр філаменту:"
 
 msgid "Nozzle and Bed Temperatures"
-msgstr ""
+msgstr "Температури сопла та столика"
 
 msgid "Enter the nozzle_temperature needed for extruding your filament."
-msgstr ""
+msgstr "Введіть температуру сопла, необхідну для екструзії вашого філаменту."
 
 msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
-msgstr ""
+msgstr "Орієнтовно: 160–230 °C для PLA та 215–250 °C для ABS."
 
 msgid "Extrusion Temperature:"
-msgstr ""
+msgstr "Температура екструзії:"
 
 msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
-msgstr ""
+msgstr "Введіть температуру столика, необхідну для прилипання філаменту до підігрітого столика."
 
 msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
-msgstr ""
+msgstr "Орієнтовно: 60 °C для PLA та 110 °C для ABS. Залиште нуль, якщо у вас немає підігрітого столика."
 
 msgid "Bed Temperature:"
-msgstr ""
+msgstr "Температура столика:"
 
 msgid "SLA Materials"
-msgstr ""
+msgstr "SLA матеріали"
 
 msgid "FFF Technology Printers"
-msgstr ""
+msgstr "Принтери технології FFF"
 
 msgid "SLA Technology Printers"
-msgstr ""
+msgstr "Принтери технології SLA"
 
 msgid "Following printer profiles has no default filament: %1%Please select one manually."
-msgstr ""
+msgstr "Наступні профілі принтерів не мають філаменту за замовчуванням: %1%Будь ласка, виберіть його вручну."
 
 msgid "Following printer profiles has no default material: %1%Please select one manually."
-msgstr ""
+msgstr "Наступні профілі принтерів не мають матеріалу за замовчуванням: %1%Будь ласка, виберіть його вручну."
 
 msgid "The following FFF printer models have no filament selected:"
-msgstr ""
+msgstr "Для наступних моделей FFF принтерів не вибрано філамент:"
 
 msgid "Do you want to select default filaments for these FFF printer models?"
-msgstr ""
+msgstr "Бажаєте вибрати філаменти за замовчуванням для цих моделей FFF принтерів?"
 
 msgid "Configuration is edited in ConfigWizard"
-msgstr ""
+msgstr "Конфігурацію редаговано у ConfigWizard"
 
 msgid "All user presets will be deleted."
-msgstr ""
+msgstr "Усі профілі користувача будуть видалені."
 
 msgid "A new Printer was installed and it will be activated."
-msgstr ""
+msgstr "Встановлено новий принтер, його буде активовано."
 
 msgid "Some Printers were uninstalled."
-msgstr ""
+msgstr "Деякі принтери були видалені."
 
 msgid "A new filament was installed and it will be activated."
-msgstr ""
+msgstr "Встановлено новий філамент, його буде активовано."
 
 msgid "A new SLA material was installed and it will be activated."
-msgstr ""
+msgstr "Встановлено новий SLA матеріал, його буде активовано."
 
 msgid "Some filaments were uninstalled."
-msgstr ""
+msgstr "Деякі філаменти були видалені."
 
 msgid "Custom printer was installed and it will be activated."
-msgstr ""
+msgstr "Встановлено користувацький принтер, його буде активовано."
 
 msgid "<Back"
-msgstr ""
+msgstr "<Назад"
 
 msgid "Next>"
-msgstr ""
+msgstr "Далі>"
 
 msgid "Filament Profiles Selection"
-msgstr ""
+msgstr "Вибір профілів філаменту"
 
 msgid "Configuration Assistant"
-msgstr ""
+msgstr "Помічник налаштування"
 
 msgid "Configuration &Assistant"
-msgstr ""
+msgstr "Помічник &налаштування"
 
 msgid "Configuration Wizard"
-msgstr ""
+msgstr "Майстер налаштування"
 
 msgid "Configuration &Wizard"
-msgstr ""
+msgstr "Майстер &налаштування"
 
 msgid "A new vendor was installed and one of its printers will be activated"
 msgid_plural "New vendors were installed and one of theirs printers will be activated"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Встановлено нового виробника, один з його принтерів буде активовано"
+msgstr[1] "Встановлено нового виробника, один з його принтерів буде активовано"
 
 msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Помилка інтеграції з робочим столом — boost::filesystem::canonical не повернув шлях до AppImage."
 
 msgid "Performing desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Помилка інтеграції з робочим столом — не вдалося знайти виконуваний файл."
 
 msgid "Performing desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Помилка інтеграції з робочим столом — каталог програми не знайдено."
 
 msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
-msgstr ""
+msgstr "Помилка інтеграції з робочим столом — не вдалося створити файл робочого столу для Gcodeviewer. Файл робочого столу OrcaSlicer, ймовірно, був створений успішно."
 
 msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Помилка інтеграції завантажувача з робочим столом — boost::filesystem::canonical не повернув шлях до AppImage."
 
 msgid "Performing downloader desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Помилка інтеграції завантажувача з робочим столом — не вдалося знайти виконуваний файл."
 
 msgid "Performing downloader desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Помилка інтеграції завантажувача з робочим столом — каталог програми не знайдено."
 
 msgid "Desktop Integration"
-msgstr ""
+msgstr "Інтеграція з робочим столом"
 
 msgid ""
 "Desktop Integration sets this binary to be searchable by the system.\n"
@@ -19747,231 +19747,231 @@ msgid ""
 msgstr ""
 
 msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
-msgstr ""
+msgstr "Поточна або цільова температура камери перевищує 45\\u2103. Щоб уникнути засмічення екструдера, завантаження низькотемпературного філаменту (PLA/PETG/TPU) не дозволено."
 
 msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
-msgstr ""
+msgstr "У екструдері завантажено низькотемпературний філамент (PLA/PETG/TPU). Щоб уникнути засмічення екструдера, встановлення температури камери вище 45\\u2103 не дозволено."
 
 msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
-msgstr ""
+msgstr "Якщо ви встановите температуру камери нижче 40\\u2103, керування температурою камери не буде активовано, а цільова температура камери автоматично встановиться на 0\\u2103."
 
 msgid "The download has failed"
-msgstr ""
+msgstr "Завантаження не вдалося"
 
 msgid "Can't create file at %1%"
-msgstr ""
+msgstr "Не вдається створити файл за адресою %1%"
 
 msgid "Archive preview"
-msgstr ""
+msgstr "Попередній перегляд архіву"
 
 msgid "Movement:"
-msgstr ""
+msgstr "Переміщення:"
 
 msgid "Movement"
-msgstr ""
+msgstr "Переміщення"
 
 msgid "Auto Segment"
-msgstr ""
+msgstr "Автосегментація"
 
 msgid "Depth ratio"
-msgstr ""
+msgstr "Відношення глибини"
 
 msgid "Prizm"
-msgstr ""
+msgstr "Призма"
 
 msgid "connector is out of cut contour"
-msgstr ""
+msgstr "з'єднувач виходить за межі контуру розрізу"
 
 msgid "connectors are out of cut contour"
-msgstr ""
+msgstr "з'єднувачі виходять за межі контуру розрізу"
 
 msgid "connector is out of object"
-msgstr ""
+msgstr "з'єднувач виходить за межі об'єкта"
 
 msgid "connectors is out of object"
-msgstr ""
+msgstr "з'єднувачі виходять за межі об'єкта"
 
 msgid ""
 "Invalid state. \n"
 "No one part is selected for keep after cut"
-msgstr ""
+msgstr "Недійсний стан. \nЖодна частина не вибрана для збереження після розрізу"
 
 msgid "Please confirm explosion ratio = 1 and select at least two volumes."
-msgstr ""
+msgstr "Будь ласка, підтвердіть коефіцієнт розбивки = 1 та виберіть принаймні два об'єми."
 
 msgid "Please select at least two volumes."
-msgstr ""
+msgstr "Будь ласка, виберіть принаймні два об'єми."
 
 msgid "(Moving)"
-msgstr ""
+msgstr "(Переміщення)"
 
 msgid "Point and point assembly"
-msgstr ""
+msgstr "З'єднання точка до точки"
 
 msgid ""
 "It is recommended to assemble the objects first,\n"
 "because the objects is restriced to bed \n"
 "and only parts can be lifted."
-msgstr ""
+msgstr "Рекомендується спочатку зібрати об'єкти,\nоскільки об'єкти обмежені столиком \nі піднімати можна лише частини."
 
 msgid "Face and face assembly"
-msgstr ""
+msgstr "З'єднання грань до грані"
 
 msgid "Entering Assembly gizmo"
-msgstr ""
+msgstr "Відкриття інструменту збірки"
 
 msgid "Leaving Assembly gizmo"
-msgstr ""
+msgstr "Закриття інструменту збірки"
 
 msgid "Entering Cut gizmo"
-msgstr ""
+msgstr "Відкриття інструменту розрізу"
 
 msgid "Leaving Cut gizmo"
-msgstr ""
+msgstr "Закриття інструменту розрізу"
 
 msgid "Cut gizmo editing"
-msgstr ""
+msgstr "Редагування інструменту розрізу"
 
 msgid "Add fuzzy skin"
-msgstr ""
+msgstr "Додати нерівну поверхню"
 
 msgid "Remove fuzzy skin"
-msgstr ""
+msgstr "Видалити нерівну поверхню"
 
 msgid "Reset selection"
-msgstr ""
+msgstr "Скинути виділення"
 
 msgid "Entering Paint-on fuzzy skin"
-msgstr ""
+msgstr "Відкриття режиму малювання нерівної поверхні"
 
 msgid "Leaving Paint-on fuzzy skin"
-msgstr ""
+msgstr "Закриття режиму малювання нерівної поверхні"
 
 msgid "Paint-on fuzzy skin editing"
-msgstr ""
+msgstr "Редагування малювання нерівної поверхні"
 
 msgid "Hollow this object"
-msgstr ""
+msgstr "Зробити об'єкт порожнистим"
 
 msgid "Preview hollowed and drilled model"
-msgstr ""
+msgstr "Попередній перегляд порожнистої та просвердленої моделі"
 
 msgid "Offset"
-msgstr ""
+msgstr "Зміщення"
 
 msgid "Closing distance"
-msgstr ""
+msgstr "Відстань закриття"
 
 msgid "Hole diameter"
-msgstr ""
+msgstr "Діаметр отвору"
 
 msgid "Hole depth"
-msgstr ""
+msgstr "Глибина отвору"
 
 msgid "Remove selected holes"
-msgstr ""
+msgstr "Видалити вибрані отвори"
 
 msgid "Remove all holes"
-msgstr ""
+msgstr "Видалити всі отвори"
 
 msgid "Clipping of view"
-msgstr ""
+msgstr "Відсічення виду"
 
 msgid "Show supports"
-msgstr ""
+msgstr "Показати підтримки"
 
 msgid "Hollow and drill"
-msgstr ""
+msgstr "Порожнення та свердління"
 
 msgid "Entering Measure gizmo"
-msgstr ""
+msgstr "Відкриття інструменту вимірювання"
 
 msgid "Leaving Measure gizmo"
-msgstr ""
+msgstr "Закриття інструменту вимірювання"
 
 msgid "Model simplification has been canceled"
-msgstr ""
+msgstr "Спрощення моделі скасовано"
 
 msgid "Lock supports under new islands"
-msgstr ""
+msgstr "Зафіксувати підтримки під новими островами"
 
 msgid "Remove all points"
-msgstr ""
+msgstr "Видалити всі точки"
 
 msgid "Apply changes"
-msgstr ""
+msgstr "Застосувати зміни"
 
 msgid "Discard changes"
-msgstr ""
+msgstr "Відхилити зміни"
 
 msgid "Minimal points distance"
-msgstr ""
+msgstr "Мінімальна відстань між точками"
 
 msgid "Support points density"
-msgstr ""
+msgstr "Щільність точок підтримки"
 
 msgid "Manual editing"
-msgstr ""
+msgstr "Ручне редагування"
 
 msgid "SLA Support Points"
-msgstr ""
+msgstr "Точки підтримки SLA"
 
 msgid "Do you want to save your manually edited support points?"
-msgstr ""
+msgstr "Бажаєте зберегти відредаговані вручну точки підтримки?"
 
 msgid "Save support points?"
-msgstr ""
+msgstr "Зберегти точки підтримки?"
 
 msgid "Autogeneration will erase all manually edited points."
-msgstr ""
+msgstr "Автогенерація видалить усі відредаговані вручну точки."
 
 msgid "Are you sure you want to do it?"
-msgstr ""
+msgstr "Ви впевнені, що хочете це зробити?"
 
 msgid "SLA gizmo keyboard shortcuts"
-msgstr ""
+msgstr "Клавіатурні скорочення інструменту SLA"
 
 msgid "Note: some shortcuts work in (non)editing mode only."
-msgstr ""
+msgstr "Примітка: деякі скорочення працюють лише в режимі редагування (або поза ним)."
 
 msgid "Add point"
-msgstr ""
+msgstr "Додати точку"
 
 msgid "Remove point"
-msgstr ""
+msgstr "Видалити точку"
 
 msgid "Move point"
-msgstr ""
+msgstr "Перемістити точку"
 
 msgid "Add point to selection"
-msgstr ""
+msgstr "Додати точку до виділення"
 
 msgid "Remove point from selection"
-msgstr ""
+msgstr "Видалити точку з виділення"
 
 msgid "Select by rectangle"
-msgstr ""
+msgstr "Вибрати прямокутником"
 
 msgid "Deselect by rectangle"
-msgstr ""
+msgstr "Скасувати виділення прямокутником"
 
 msgid "Select all points"
-msgstr ""
+msgstr "Вибрати всі точки"
 
 msgid "Move clipping plane"
-msgstr ""
+msgstr "Перемістити площину відсічення"
 
 msgid "Reset clipping plane"
-msgstr ""
+msgstr "Скинути площину відсічення"
 
 msgid "Switch to editing mode"
-msgstr ""
+msgstr "Перейти до режиму редагування"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calage 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calage 3 SNDT"
 
 msgid ""
 "This calibration model works best with specific infill settings.\n"
@@ -19982,282 +19982,282 @@ msgid ""
 "\n"
 "Yes - Change these settings automatically\n"
 "No  - Do not change these settings for me"
-msgstr ""
+msgstr "Ця калібрувальна модель найкраще працює з певними параметрами заповнення.\nДля оптимальних результатів калібрування рекомендується встановити:\n- Напрямок заповнення: %.0f\\u00b0\n- Напрямок суцільного заповнення: %.0f\\u00b0\n- Лише одна стінка на першому шарі: %s\n\nТак - Змінити ці параметри автоматично\nНі  - Не змінювати ці параметри"
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calage 1 Nova"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Калібрувальні моделі для подвійної головки"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Калібрувальні моделі для одинарної головки"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx Handy Models"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D Models"
 
 msgid "Add Emboss text object"
-msgstr ""
+msgstr "Додати об'єкт з тисненим текстом"
 
 msgid "Emboss attribute change"
-msgstr ""
+msgstr "Зміна атрибуту тиснення"
 
 msgid "Add Emboss text Volume"
-msgstr ""
+msgstr "Додати об'єм з тисненим текстом"
 
 msgid "Font doesn't have any shape for given text."
-msgstr ""
+msgstr "Шрифт не має жодного символу для вказаного тексту."
 
 msgid "There is no valid surface for text projection."
-msgstr ""
+msgstr "Немає придатної поверхні для проекції тексту."
 
 msgid "An unexpected error occurred"
-msgstr ""
+msgstr "Сталася непередбачена помилка"
 
 msgid "Best surface quality"
-msgstr ""
+msgstr "Найкраща якість поверхні"
 
 msgid "Optimize object rotation for best surface quality."
-msgstr ""
+msgstr "Оптимізувати обертання об'єкта для найкращої якості поверхні."
 
 msgid "Reduced overhang slopes"
-msgstr ""
+msgstr "Зменшені нависаючі схили"
 
 msgid ""
 "Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
 "Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
-msgstr ""
+msgstr "Оптимізувати обертання об'єкта для мінімальної кількості нависань, що потребують підтримок.\nЗверніть увагу: цей метод намагатиметься знайти найкращу поверхню об'єкта для контакту зі столиком, якщо висота підйому не задана."
 
 msgid "Lowest Z height"
-msgstr ""
+msgstr "Найменша висота по Z"
 
 msgid "Rotate the model to have the lowest z height for faster print time."
-msgstr ""
+msgstr "Повернути модель так, щоб мати найменшу висоту по Z для скорочення часу друку."
 
 msgid "Choose SLA archive:"
-msgstr ""
+msgstr "Виберіть SLA архів:"
 
 msgid "Import file"
-msgstr ""
+msgstr "Імпортувати файл"
 
 msgid "Import model and profile"
-msgstr ""
+msgstr "Імпортувати модель і профіль"
 
 msgid "Import profile only"
-msgstr ""
+msgstr "Імпортувати лише профіль"
 
 msgid "Import model only"
-msgstr ""
+msgstr "Імпортувати лише модель"
 
 msgid "Accurate"
-msgstr ""
+msgstr "Точний"
 
 msgid "Balanced"
-msgstr ""
+msgstr "Збалансований"
 
 msgid "Quick"
-msgstr ""
+msgstr "Швидкий"
 
 msgid "3D Models"
-msgstr ""
+msgstr "3D Моделі"
 
 msgid "Click to return"
-msgstr ""
+msgstr "Натисніть, щоб повернутися"
 
 msgid "Left Arrow"
-msgstr ""
+msgstr "Стрілка вліво"
 
 msgid "Click to continue"
-msgstr ""
+msgstr "Натисніть, щоб продовжити"
 
 msgid "Right Arrow"
-msgstr ""
+msgstr "Стрілка вправо"
 
 msgid "Authorizing..."
-msgstr ""
+msgstr "Авторизація..."
 
 msgid "NO RAMMING AT ALL"
-msgstr ""
+msgstr "БЕЗ УДАРУ ВЗАГАЛІ"
 
 msgid "Volumetric speed"
-msgstr ""
+msgstr "Об'ємна швидкість"
 
 msgid "Search"
-msgstr ""
+msgstr "Пошук"
 
 msgid "My Device"
-msgstr ""
+msgstr "Мій пристрій"
 
 msgid "Other Device"
-msgstr ""
+msgstr "Інший пристрій"
 
 msgid "Can't find my devices?"
-msgstr ""
+msgstr "Не вдається знайти мої пристрої?"
 
 msgid "Modifying the device name"
-msgstr ""
+msgstr "Зміна назви пристрою"
 
 msgid "Bind with Access Code"
-msgstr ""
+msgstr "Прив'язати за кодом доступу"
 
 msgid "Step file import parameters"
-msgstr ""
+msgstr "Параметри імпорту файлу STEP"
 
 msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
-msgstr ""
+msgstr "Менші лінійні та кутові відхилення забезпечують перетворення вищої якості, але збільшують час обробки."
 
 msgid "View Wiki for more information"
-msgstr ""
+msgstr "Перегляньте Wiki для отримання додаткової інформації"
 
 msgid "Linear Deflection"
-msgstr ""
+msgstr "Лінійне відхилення"
 
 msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
-msgstr ""
+msgstr "Будь ласка, введіть дійсне значення (0.001 < лінійне відхилення < 0.1)"
 
 msgid "Angle Deflection"
-msgstr ""
+msgstr "Кутове відхилення"
 
 msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
-msgstr ""
+msgstr "Будь ласка, введіть дійсне значення (0.01 < кутове відхилення < 1.0)"
 
 msgid "Split compound and compsolid into multiple objects"
-msgstr ""
+msgstr "Розділити складені та компактні тіла на кілька об'єктів"
 
 msgid "Number of triangular facets"
-msgstr ""
+msgstr "Кількість трикутних граней"
 
 msgid "Calculating, please wait..."
-msgstr ""
+msgstr "Обчислення, зачекайте..."
 
 msgid "Move over surface"
-msgstr ""
+msgstr "Переміщення по поверхні"
 
 msgid "System Information"
-msgstr ""
+msgstr "Системна інформація"
 
 msgid "Blacklisted libraries loaded into OrcaSlicer process:"
-msgstr ""
+msgstr "Бібліотеки з чорного списку, завантажені у процес OrcaSlicer:"
 
 msgid "SIMD is supported:"
-msgstr ""
+msgstr "SIMD підтримується:"
 
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Копіювати до буфера обміну"
 
 msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Температура столика при встановленому Cosmyx Textured Bed. Значення -1 означає, що філамент не підтримує друк на Cosmyx Textured Bed. Значення 0 означає, що столик вимкнено."
 
 msgid "Forward"
-msgstr ""
+msgstr "Вперед"
 
 msgid "Reload"
-msgstr ""
+msgstr "Оновити"
 
 msgid "Tools"
-msgstr ""
+msgstr "Інструменти"
 
 msgid "View Source"
-msgstr ""
+msgstr "Переглянути джерело"
 
 msgid "View Text"
-msgstr ""
+msgstr "Переглянути текст"
 
 msgid "Handle Navigation"
-msgstr ""
+msgstr "Керування навігацією"
 
 msgid "Handle New Windows"
-msgstr ""
+msgstr "Керування новими вікнами"
 
 msgid "Edit Mode"
-msgstr ""
+msgstr "Режим редагування"
 
 msgid "Run Script"
-msgstr ""
+msgstr "Запустити скрипт"
 
 msgid "Add user script"
-msgstr ""
+msgstr "Додати скрипт користувача"
 
 msgid "Set custom user agent"
-msgstr ""
+msgstr "Встановити користувацький агент"
 
 msgid "Clear Selection"
-msgstr ""
+msgstr "Очистити виділення"
 
 msgid "Delete Selection"
-msgstr ""
+msgstr "Видалити виділення"
 
 msgid "Custom Scheme Example"
-msgstr ""
+msgstr "Приклад користувацької схеми"
 
 msgid "Memory File System Example"
-msgstr ""
+msgstr "Приклад файлової системи в пам'яті"
 
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "Увімкнути контекстне меню"
 
 msgid "Enable Dev Tools"
-msgstr ""
+msgstr "Увімкнути інструменти розробника"
 
 msgid "An error occurred loading "
-msgstr ""
+msgstr "Сталася помилка під час завантаження "
 
 msgid "%"
-msgstr ""
+msgstr "%"
 
 msgid "Connected to CrealityPrint successfully!"
-msgstr ""
+msgstr "Успішно підключено до CrealityPrint!"
 
 msgid "Could not connect to CrealityPrint"
-msgstr ""
+msgstr "Не вдалося підключитися до CrealityPrint"
 
 msgid "Connection to ElegooLink is working correctly."
-msgstr ""
+msgstr "З'єднання з ElegooLink працює коректно."
 
 msgid "Could not connect to ElegooLink"
-msgstr ""
+msgstr "Не вдалося підключитися до ElegooLink"
 
 msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "Файл передано, але виникли невідомі помилки. Будь ласка, перевірте файл на сторінці пристрою та спробуйте розпочати друк знову."
 
 msgid "Error code not found"
-msgstr ""
+msgstr "Код помилки не знайдено"
 
 msgid "The printer is busy, Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "Принтер зайнятий. Будь ласка, перевірте файл на сторінці пристрою та спробуйте розпочати друк знову."
 
 msgid "The file is lost, please check and try again."
-msgstr ""
+msgstr "Файл втрачено, будь ласка, перевірте та спробуйте ще раз."
 
 msgid "The file is corrupted, please check and try again."
-msgstr ""
+msgstr "Файл пошкоджено, будь ласка, перевірте та спробуйте ще раз."
 
 msgid "Transmission abnormality, please check and try again."
-msgstr ""
+msgstr "Аномалія передачі, будь ласка, перевірте та спробуйте ще раз."
 
 msgid "The file does not match the printer, please check and try again."
-msgstr ""
+msgstr "Файл не відповідає принтеру, будь ласка, перевірте та спробуйте ще раз."
 
 msgid "Start print timeout"
-msgstr ""
+msgstr "Перевищено час очікування початку друку"
 
 msgid "Start print failed"
-msgstr ""
+msgstr "Не вдалося розпочати друк"
 
 msgid "Connection to ESP3D is working correctly."
-msgstr ""
+msgstr "З'єднання з ESP3D працює коректно."
 
 msgid "Could not connect to ESP3D"
-msgstr ""
+msgstr "Не вдалося підключитися до ESP3D"
 
 msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
-msgstr ""
+msgstr "Час з'єднання вичерпано. Будь ласка, перевірте, чи правильно функціонують мережі принтера та комп'ютера, і підтвердіть, що вони знаходяться в одній мережі."
 
 msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
-msgstr ""
+msgstr "Не вдалося розпізнати ім'я хосту/IP/URL, будь ласка, перевірте та спробуйте ще раз."
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
-msgstr ""
+msgstr "Передачу файлу/даних перервано. Будь ласка, перевірте принтер і мережу, а потім спробуйте ще раз."

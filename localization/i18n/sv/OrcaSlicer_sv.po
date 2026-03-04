@@ -18312,349 +18312,349 @@ msgid "Tungsten Carbide"
 msgstr ""
 
 msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
-msgstr ""
+msgstr "Den valda 3mf-filen har sparats med en nyare version av %1% och är inte kompatibel."
 
 msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Den valda 3MF-filen innehåller ett objekt med FDM-stöd målat med en nyare version av PrusaSlicer och är inte kompatibel."
 
 msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Den valda 3MF-filen innehåller ett objekt med söm målat med en nyare version av PrusaSlicer och är inte kompatibel."
 
 msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Den valda 3MF-filen innehåller ett objekt med flera material målat med en nyare version av PrusaSlicer och är inte kompatibel."
 
 msgid ""
 "Post-processing script %1% failed.\n"
 "\n"
 "The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
 "Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
-msgstr ""
+msgstr "Efterbehandlingsskript %1% misslyckades.\n\nEfterbehandlingsskriptet förväntas ändra G-code-filen %2% på plats, men G-code-filen raderades och sparades troligtvis under ett nytt namn.\nJustera efterbehandlingsskriptet för att ändra G-code på plats och konsultera manualen för hur du valfritt byter namn på den efterbehandlade G-code-filen.\n"
 
 msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Bäddtemperatur för lager utom det första. Ett värde på -1 betyder att filamentet inte stöder utskrift på Cosmyx Textured Bed. Ett värde på 0 betyder att bädden är avstängd."
 
 msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Bäddtemperatur för det första lagret. Ett värde på -1 betyder att filamentet inte stöder utskrift på Cosmyx Textured Bed. Ett värde på 0 betyder att bädden är avstängd."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx Textured Bed"
 
 msgid "Hollowing"
-msgstr ""
+msgstr "Ihålgörning"
 
 msgid "Pad brim size is too small for the current configuration."
-msgstr ""
+msgstr "Plattformskantens storlek är för liten för den aktuella konfigurationen."
 
 msgid "Cannot proceed without support points! Add support points or disable support generation."
-msgstr ""
+msgstr "Kan inte fortsätta utan stödpunkter! Lägg till stödpunkter eller inaktivera stödgenerering."
 
 msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
-msgstr ""
+msgstr "Höjningen är för låg för objektet. Använd funktionen \"Plattform runt objekt\" för att skriva ut objektet utan höjning."
 
 msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
-msgstr ""
+msgstr "Ändarna på stödpelarna placeras i mellanrummet mellan objektet och plattformen. 'Säkerhetsavstånd för stödbas' måste vara större än parametern 'Plattformsobjektmellanrum' för att undvika detta."
 
 msgid "Exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "Exponeringstiden ligger utanför skrivarprofil-gränserna."
 
 msgid "Initial exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "Den initiala exponeringstiden ligger utanför skrivarprofil-gränserna."
 
 msgid "Slicing done"
-msgstr ""
+msgstr "Slicing klar"
 
 msgid "Hollowing model"
-msgstr ""
+msgstr "Gör modellen ihålig"
 
 msgid "Drilling holes into model."
-msgstr ""
+msgstr "Borrar hål i modellen."
 
 msgid "Slicing model"
-msgstr ""
+msgstr "Slicear modell"
 
 msgid "Generating support points"
-msgstr ""
+msgstr "Genererar stödpunkter"
 
 msgid "Generating support tree"
-msgstr ""
+msgstr "Genererar stödträd"
 
 msgid "Generating pad"
-msgstr ""
+msgstr "Genererar plattform"
 
 msgid "Slicing supports"
-msgstr ""
+msgstr "Slicear stöd"
 
 msgid "Merging slices and calculating statistics"
-msgstr ""
+msgstr "Sammanfogar lager och beräknar statistik"
 
 msgid "Rasterizing layers"
-msgstr ""
+msgstr "Rastrerar lager"
 
 msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
-msgstr ""
+msgstr "Slicingen måste stoppas på grund av ett internt fel: Inkonsekvent lagerindex."
 
 msgid "Visualizing supports"
-msgstr ""
+msgstr "Visualiserar stöd"
 
 msgid "No pad can be generated for this model with the current configuration"
-msgstr ""
+msgstr "Ingen plattform kan genereras för denna modell med den aktuella konfigurationen"
 
 msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
-msgstr ""
+msgstr "Det finns objekt som inte kan skrivas ut. Försök justera stödinställningarna för att göra objekten utskrivbara."
 
 msgid "Taking a configuration snapshot failed."
-msgstr ""
+msgstr "Det gick inte att ta en konfigurationsögonblicksbild."
 
 msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
-msgstr ""
+msgstr "OrcaSlicer stötte på ett fel när en konfigurationsögonblicksbild togs."
 
 msgid "OrcaSlicer error"
-msgstr ""
+msgstr "OrcaSlicer-fel"
 
 msgid "Continue"
-msgstr ""
+msgstr "Fortsätt"
 
 msgid "Abort"
-msgstr ""
+msgstr "Avbryt"
 
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Cosmyx Bundle Version %s"
 
 msgid "Model Pictures"
-msgstr ""
+msgstr "Modellbilder"
 
 msgid "Auxiliaryies"
-msgstr ""
+msgstr "Hjälpmedel"
 
 msgid "nozzle"
-msgstr ""
+msgstr "munstycke"
 
 msgid "Alternate nozzles:"
-msgstr ""
+msgstr "Alternativa munstycken:"
 
 msgid "All standard"
-msgstr ""
+msgstr "Alla standard"
 
 msgid "Welcome to the %s Configuration Assistant"
-msgstr ""
+msgstr "Välkommen till %s Konfigurationsassistenten"
 
 msgid "Welcome to the %s Configuration Wizard"
-msgstr ""
+msgstr "Välkommen till %s Konfigurationsassistenten"
 
 msgid "Welcome"
-msgstr ""
+msgstr "Välkommen"
 
 msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
-msgstr ""
+msgstr "Hej, välkommen till %s! Denna %s hjälper dig med den initiala konfigurationen; bara några inställningar och du är redo att skriva ut."
 
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
-msgstr ""
+msgstr "Ta bort användarprofiler (en ögonblicksbild tas i förväg)"
 
 msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
-msgstr ""
+msgstr "Utför skrivbordsintegrering (Gör denna binärfil sökbar av systemet)."
 
 msgid "%s Family"
-msgstr ""
+msgstr "%s Familj"
 
 msgid "Printer:"
-msgstr ""
+msgstr "Skrivare:"
 
 msgid "Vendor:"
-msgstr ""
+msgstr "Leverantör:"
 
 msgid "Profile:"
-msgstr ""
+msgstr "Profil:"
 
 msgid "(All)"
-msgstr ""
+msgstr "(Alla)"
 
 msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
-msgstr ""
+msgstr "%1% markerade med <b>*</b> är <b>inte</b> kompatibla med vissa installerade skrivare."
 
 msgid "SLA materials"
-msgstr ""
+msgstr "SLA-material"
 
 msgid "All installed printers are compatible with the selected %1%."
-msgstr ""
+msgstr "Alla installerade skrivare är kompatibla med det valda %1%."
 
 msgid "filament"
-msgstr ""
+msgstr "filament"
 
 msgid "SLA material"
-msgstr ""
+msgstr "SLA-material"
 
 msgid "Only the following installed printers are compatible with the selected filaments"
-msgstr ""
+msgstr "Endast följande installerade skrivare är kompatibla med de valda filamenten"
 
 msgid "Only the following installed printers are compatible with the selected SLA materials"
-msgstr ""
+msgstr "Endast följande installerade skrivare är kompatibla med de valda SLA-materialen"
 
 msgid "Custom Printer Setup"
-msgstr ""
+msgstr "Anpassad skrivarinställning"
 
 msgid "Custom Printer"
-msgstr ""
+msgstr "Anpassad skrivare"
 
 msgid "Define a custom printer profile"
-msgstr ""
+msgstr "Definiera en anpassad skrivarprofil"
 
 msgid "Custom profile name:"
-msgstr ""
+msgstr "Anpassat profilnamn:"
 
 msgid "Firmware Type"
-msgstr ""
+msgstr "Firmware-typ"
 
 msgid "Firmware"
-msgstr ""
+msgstr "Firmware"
 
 msgid "Choose the type of firmware used by your printer."
-msgstr ""
+msgstr "Välj den typ av firmware som används av din skrivare."
 
 msgid "Bed Shape and Size"
-msgstr ""
+msgstr "Bäddform och storlek"
 
 msgid "Set the shape of your printer's bed."
-msgstr ""
+msgstr "Ange formen på din skrivares bädd."
 
 msgid "Invalid numeric input."
-msgstr ""
+msgstr "Ogiltig numerisk inmatning."
 
 msgid "Filament and Nozzle Diameters"
-msgstr ""
+msgstr "Filament- och munstycksdiametrar"
 
 msgid "Print Diameters"
-msgstr ""
+msgstr "Utskriftsdiametrar"
 
 msgid "Enter the diameter of your printer's hot end nozzle."
-msgstr ""
+msgstr "Ange diametern på din skrivares hotend-munstycke."
 
 msgid "Nozzle Diameter:"
-msgstr ""
+msgstr "Munstycksdiameter:"
 
 msgid "Enter the diameter of your filament."
-msgstr ""
+msgstr "Ange diametern på ditt filament."
 
 msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
-msgstr ""
+msgstr "God precision krävs, använd därför ett skjutmått och gör flera mätningar längs filamentet och beräkna sedan genomsnittet."
 
 msgid "Filament Diameter:"
-msgstr ""
+msgstr "Filamentdiameter:"
 
 msgid "Nozzle and Bed Temperatures"
-msgstr ""
+msgstr "Munstycks- och bäddtemperaturer"
 
 msgid "Enter the nozzle_temperature needed for extruding your filament."
-msgstr ""
+msgstr "Ange nozzle_temperature som behövs för att extrudera ditt filament."
 
 msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
-msgstr ""
+msgstr "En tumregel är 160 till 230 °C för PLA och 215 till 250 °C för ABS."
 
 msgid "Extrusion Temperature:"
-msgstr ""
+msgstr "Extrusionstemperatur:"
 
 msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
-msgstr ""
+msgstr "Ange bäddtemperaturen som behövs för att ditt filament ska fästa på din värmebädd."
 
 msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
-msgstr ""
+msgstr "En tumregel är 60 °C för PLA och 110 °C för ABS. Lämna noll om du inte har någon värmebädd."
 
 msgid "Bed Temperature:"
-msgstr ""
+msgstr "Bäddtemperatur:"
 
 msgid "SLA Materials"
-msgstr ""
+msgstr "SLA-material"
 
 msgid "FFF Technology Printers"
-msgstr ""
+msgstr "FFF-teknikskrivare"
 
 msgid "SLA Technology Printers"
-msgstr ""
+msgstr "SLA-teknikskrivare"
 
 msgid "Following printer profiles has no default filament: %1%Please select one manually."
-msgstr ""
+msgstr "Följande skrivarprofiler har inget standardfilament: %1%Välj ett manuellt."
 
 msgid "Following printer profiles has no default material: %1%Please select one manually."
-msgstr ""
+msgstr "Följande skrivarprofiler har inget standardmaterial: %1%Välj ett manuellt."
 
 msgid "The following FFF printer models have no filament selected:"
-msgstr ""
+msgstr "Följande FFF-skrivarmodeller har inget filament valt:"
 
 msgid "Do you want to select default filaments for these FFF printer models?"
-msgstr ""
+msgstr "Vill du välja standardfilament för dessa FFF-skrivarmodeller?"
 
 msgid "Configuration is edited in ConfigWizard"
-msgstr ""
+msgstr "Konfigurationen redigeras i ConfigWizard"
 
 msgid "All user presets will be deleted."
-msgstr ""
+msgstr "Alla användarförinställningar kommer att raderas."
 
 msgid "A new Printer was installed and it will be activated."
-msgstr ""
+msgstr "En ny skrivare installerades och kommer att aktiveras."
 
 msgid "Some Printers were uninstalled."
-msgstr ""
+msgstr "Vissa skrivare avinstallerades."
 
 msgid "A new filament was installed and it will be activated."
-msgstr ""
+msgstr "Ett nytt filament installerades och kommer att aktiveras."
 
 msgid "A new SLA material was installed and it will be activated."
-msgstr ""
+msgstr "Ett nytt SLA-material installerades och kommer att aktiveras."
 
 msgid "Some filaments were uninstalled."
-msgstr ""
+msgstr "Vissa filament avinstallerades."
 
 msgid "Custom printer was installed and it will be activated."
-msgstr ""
+msgstr "En anpassad skrivare installerades och kommer att aktiveras."
 
 msgid "<Back"
-msgstr ""
+msgstr "<Tillbaka"
 
 msgid "Next>"
-msgstr ""
+msgstr "Nästa>"
 
 msgid "Filament Profiles Selection"
-msgstr ""
+msgstr "Val av filamentprofil"
 
 msgid "Configuration Assistant"
-msgstr ""
+msgstr "Konfigurationsassistent"
 
 msgid "Configuration &Assistant"
-msgstr ""
+msgstr "Konfiguration&sassistent"
 
 msgid "Configuration Wizard"
-msgstr ""
+msgstr "Konfigurationsassistent"
 
 msgid "Configuration &Wizard"
-msgstr ""
+msgstr "Konfiguration&sassistent"
 
 msgid "A new vendor was installed and one of its printers will be activated"
 msgid_plural "New vendors were installed and one of theirs printers will be activated"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "En ny leverantör installerades och en av dess skrivare aktiveras"
+msgstr[1] "En ny leverantör installerades och en av dess skrivare aktiveras"
 
 msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Skrivbordsintegrering misslyckades – boost::filesystem::canonical returnerade inte AppImage-sökvägen."
 
 msgid "Performing desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Skrivbordsintegrering misslyckades – Kunde inte hitta körbar fil."
 
 msgid "Performing desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Skrivbordsintegrering misslyckades eftersom programkatalogen inte hittades."
 
 msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
-msgstr ""
+msgstr "Skrivbordsintegrering misslyckades – kunde inte skapa Gcodeviewer-skrivbordsfilen. OrcaSlicer-skrivbordsfilen skapades troligtvis."
 
 msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Nedladdare skrivbordsintegrering misslyckades – boost::filesystem::canonical returnerade inte AppImage-sökvägen."
 
 msgid "Performing downloader desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Nedladdare skrivbordsintegrering misslyckades – Kunde inte hitta körbar fil."
 
 msgid "Performing downloader desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Nedladdare skrivbordsintegrering misslyckades eftersom programkatalogen inte hittades."
 
 msgid "Desktop Integration"
-msgstr ""
+msgstr "Skrivbordsintegrering"
 
 msgid ""
 "Desktop Integration sets this binary to be searchable by the system.\n"
@@ -18663,231 +18663,231 @@ msgid ""
 msgstr ""
 
 msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
-msgstr ""
+msgstr "Den aktuella kammartemperaturen eller målkammartemperaturen överstiger 45\\u2103. För att undvika att extrudern täpps igen är det inte tillåtet att ladda lågtemperaturfilament (PLA/PETG/TPU)."
 
 msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
-msgstr ""
+msgstr "Lågtemperaturfilament (PLA/PETG/TPU) är laddat i extrudern. För att undvika att extrudern täpps igen är det inte tillåtet att ställa in kammartemperaturen över 45\\u2103."
 
 msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
-msgstr ""
+msgstr "När du ställer in kammartemperaturen under 40\\u2103 aktiveras inte kammartemperaturkontrollen och målkammartemperaturen ställs automatiskt in på 0\\u2103."
 
 msgid "The download has failed"
-msgstr ""
+msgstr "Nedladdningen misslyckades"
 
 msgid "Can't create file at %1%"
-msgstr ""
+msgstr "Kan inte skapa fil på %1%"
 
 msgid "Archive preview"
-msgstr ""
+msgstr "Arkivförhandsvisning"
 
 msgid "Movement:"
-msgstr ""
+msgstr "Rörelse:"
 
 msgid "Movement"
-msgstr ""
+msgstr "Rörelse"
 
 msgid "Auto Segment"
-msgstr ""
+msgstr "Automatisk segmentering"
 
 msgid "Depth ratio"
-msgstr ""
+msgstr "Djupförhållande"
 
 msgid "Prizm"
-msgstr ""
+msgstr "Prisma"
 
 msgid "connector is out of cut contour"
-msgstr ""
+msgstr "kopplingen är utanför snittkontur"
 
 msgid "connectors are out of cut contour"
-msgstr ""
+msgstr "kopplingarna är utanför snittkontur"
 
 msgid "connector is out of object"
-msgstr ""
+msgstr "kopplingen är utanför objektet"
 
 msgid "connectors is out of object"
-msgstr ""
+msgstr "kopplingarna är utanför objektet"
 
 msgid ""
 "Invalid state. \n"
 "No one part is selected for keep after cut"
-msgstr ""
+msgstr "Ogiltigt tillstånd. \nIngen del är vald för att behålla efter snitt"
 
 msgid "Please confirm explosion ratio = 1 and select at least two volumes."
-msgstr ""
+msgstr "Bekräfta explosionsförhållande = 1 och välj minst två volymer."
 
 msgid "Please select at least two volumes."
-msgstr ""
+msgstr "Välj minst två volymer."
 
 msgid "(Moving)"
-msgstr ""
+msgstr "(Rör sig)"
 
 msgid "Point and point assembly"
-msgstr ""
+msgstr "Punkt-till-punkt-montering"
 
 msgid ""
 "It is recommended to assemble the objects first,\n"
 "because the objects is restriced to bed \n"
 "and only parts can be lifted."
-msgstr ""
+msgstr "Det rekommenderas att montera objekten först,\neftersom objekten är begränsade till bädden\noch bara delar kan lyftas."
 
 msgid "Face and face assembly"
-msgstr ""
+msgstr "Yta-till-yta-montering"
 
 msgid "Entering Assembly gizmo"
-msgstr ""
+msgstr "Öppnar Assembly-gizmo"
 
 msgid "Leaving Assembly gizmo"
-msgstr ""
+msgstr "Stänger Assembly-gizmo"
 
 msgid "Entering Cut gizmo"
-msgstr ""
+msgstr "Öppnar snitt-gizmo"
 
 msgid "Leaving Cut gizmo"
-msgstr ""
+msgstr "Stänger snitt-gizmo"
 
 msgid "Cut gizmo editing"
-msgstr ""
+msgstr "Redigerar snitt-gizmo"
 
 msgid "Add fuzzy skin"
-msgstr ""
+msgstr "Lägg till ojämn yta"
 
 msgid "Remove fuzzy skin"
-msgstr ""
+msgstr "Ta bort ojämn yta"
 
 msgid "Reset selection"
-msgstr ""
+msgstr "Återställ val"
 
 msgid "Entering Paint-on fuzzy skin"
-msgstr ""
+msgstr "Öppnar målarverktyg för ojämn yta"
 
 msgid "Leaving Paint-on fuzzy skin"
-msgstr ""
+msgstr "Stänger målarverktyg för ojämn yta"
 
 msgid "Paint-on fuzzy skin editing"
-msgstr ""
+msgstr "Redigerar målarverktyg för ojämn yta"
 
 msgid "Hollow this object"
-msgstr ""
+msgstr "Gör detta objekt ihåligt"
 
 msgid "Preview hollowed and drilled model"
-msgstr ""
+msgstr "Förhandsgranska ihålig och borrad modell"
 
 msgid "Offset"
-msgstr ""
+msgstr "Förskjutning"
 
 msgid "Closing distance"
-msgstr ""
+msgstr "Stängningsavstånd"
 
 msgid "Hole diameter"
-msgstr ""
+msgstr "Håldiameter"
 
 msgid "Hole depth"
-msgstr ""
+msgstr "Håldjup"
 
 msgid "Remove selected holes"
-msgstr ""
+msgstr "Ta bort valda hål"
 
 msgid "Remove all holes"
-msgstr ""
+msgstr "Ta bort alla hål"
 
 msgid "Clipping of view"
-msgstr ""
+msgstr "Beskärning av vy"
 
 msgid "Show supports"
-msgstr ""
+msgstr "Visa stöd"
 
 msgid "Hollow and drill"
-msgstr ""
+msgstr "Göra ihålig och borra"
 
 msgid "Entering Measure gizmo"
-msgstr ""
+msgstr "Öppnar mätnings-gizmo"
 
 msgid "Leaving Measure gizmo"
-msgstr ""
+msgstr "Stänger mätnings-gizmo"
 
 msgid "Model simplification has been canceled"
-msgstr ""
+msgstr "Modellförenkling har avbrutits"
 
 msgid "Lock supports under new islands"
-msgstr ""
+msgstr "Lås stöd under nya öar"
 
 msgid "Remove all points"
-msgstr ""
+msgstr "Ta bort alla punkter"
 
 msgid "Apply changes"
-msgstr ""
+msgstr "Tillämpa ändringar"
 
 msgid "Discard changes"
-msgstr ""
+msgstr "Ignorera ändringar"
 
 msgid "Minimal points distance"
-msgstr ""
+msgstr "Minimalt punktavstånd"
 
 msgid "Support points density"
-msgstr ""
+msgstr "Stödpunktsdensitet"
 
 msgid "Manual editing"
-msgstr ""
+msgstr "Manuell redigering"
 
 msgid "SLA Support Points"
-msgstr ""
+msgstr "SLA-stödpunkter"
 
 msgid "Do you want to save your manually edited support points?"
-msgstr ""
+msgstr "Vill du spara dina manuellt redigerade stödpunkter?"
 
 msgid "Save support points?"
-msgstr ""
+msgstr "Spara stödpunkter?"
 
 msgid "Autogeneration will erase all manually edited points."
-msgstr ""
+msgstr "Automatisk generering raderar alla manuellt redigerade punkter."
 
 msgid "Are you sure you want to do it?"
-msgstr ""
+msgstr "Är du säker på att du vill göra detta?"
 
 msgid "SLA gizmo keyboard shortcuts"
-msgstr ""
+msgstr "SLA-gizmo tangentbordsgenvägar"
 
 msgid "Note: some shortcuts work in (non)editing mode only."
-msgstr ""
+msgstr "Obs: Vissa genvägar fungerar bara i (icke-)redigeringsläge."
 
 msgid "Add point"
-msgstr ""
+msgstr "Lägg till punkt"
 
 msgid "Remove point"
-msgstr ""
+msgstr "Ta bort punkt"
 
 msgid "Move point"
-msgstr ""
+msgstr "Flytta punkt"
 
 msgid "Add point to selection"
-msgstr ""
+msgstr "Lägg till punkt i val"
 
 msgid "Remove point from selection"
-msgstr ""
+msgstr "Ta bort punkt från val"
 
 msgid "Select by rectangle"
-msgstr ""
+msgstr "Välj med rektangel"
 
 msgid "Deselect by rectangle"
-msgstr ""
+msgstr "Avmarkera med rektangel"
 
 msgid "Select all points"
-msgstr ""
+msgstr "Välj alla punkter"
 
 msgid "Move clipping plane"
-msgstr ""
+msgstr "Flytta klippningsplan"
 
 msgid "Reset clipping plane"
-msgstr ""
+msgstr "Återställ klippningsplan"
 
 msgid "Switch to editing mode"
-msgstr ""
+msgstr "Växla till redigeringsläge"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calage 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calage 3 SNDT"
 
 msgid ""
 "This calibration model works best with specific infill settings.\n"
@@ -18898,282 +18898,282 @@ msgid ""
 "\n"
 "Yes - Change these settings automatically\n"
 "No  - Do not change these settings for me"
-msgstr ""
+msgstr "Denna kalibringsmodell fungerar bäst med specifika fyllningsinställningar.\nFör optimala kalibringsresultat är det tillrådligt att ange:\n- Fyllningsriktning: %.0f\\u00b0\n- Massiv fyllningsriktning: %.0f\\u00b0\n- Bara en vägg på första lagret: %s\n\nJa – Ändra dessa inställningar automatiskt\nNej  – Ändra inte dessa inställningar åt mig"
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calage 1 Nova"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Kalibringsmodeller Dubbelt Huvud"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Kalibringsmodeller Enstaka Huvud"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx Praktiska Modeller"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D-modeller"
 
 msgid "Add Emboss text object"
-msgstr ""
+msgstr "Lägg till präglat textobjekt"
 
 msgid "Emboss attribute change"
-msgstr ""
+msgstr "Ändra präglingsegenskap"
 
 msgid "Add Emboss text Volume"
-msgstr ""
+msgstr "Lägg till präglad textvolym"
 
 msgid "Font doesn't have any shape for given text."
-msgstr ""
+msgstr "Teckensnittet har ingen form för den angivna texten."
 
 msgid "There is no valid surface for text projection."
-msgstr ""
+msgstr "Det finns ingen giltig yta för textprojektion."
 
 msgid "An unexpected error occurred"
-msgstr ""
+msgstr "Ett oväntat fel uppstod"
 
 msgid "Best surface quality"
-msgstr ""
+msgstr "Bästa ytkvalitet"
 
 msgid "Optimize object rotation for best surface quality."
-msgstr ""
+msgstr "Optimera objektrotation för bästa ytkvalitet."
 
 msgid "Reduced overhang slopes"
-msgstr ""
+msgstr "Minskade överhångssluttningar"
 
 msgid ""
 "Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
 "Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
-msgstr ""
+msgstr "Optimera objektrotation för att minimera antalet överhång som behöver stödstrukturer.\nObservera att denna metod försöker hitta den bästa ytan på objektet för kontakt med utskriftsbädden om ingen höjning är inställd."
 
 msgid "Lowest Z height"
-msgstr ""
+msgstr "Lägsta Z-höjd"
 
 msgid "Rotate the model to have the lowest z height for faster print time."
-msgstr ""
+msgstr "Rotera modellen för att ha den lägsta z-höjden för snabbare utskriftstid."
 
 msgid "Choose SLA archive:"
-msgstr ""
+msgstr "Välj SLA-arkiv:"
 
 msgid "Import file"
-msgstr ""
+msgstr "Importera fil"
 
 msgid "Import model and profile"
-msgstr ""
+msgstr "Importera modell och profil"
 
 msgid "Import profile only"
-msgstr ""
+msgstr "Importera endast profil"
 
 msgid "Import model only"
-msgstr ""
+msgstr "Importera endast modell"
 
 msgid "Accurate"
-msgstr ""
+msgstr "Exakt"
 
 msgid "Balanced"
-msgstr ""
+msgstr "Balanserad"
 
 msgid "Quick"
-msgstr ""
+msgstr "Snabb"
 
 msgid "3D Models"
-msgstr ""
+msgstr "3D-modeller"
 
 msgid "Click to return"
-msgstr ""
+msgstr "Klicka för att återvända"
 
 msgid "Left Arrow"
-msgstr ""
+msgstr "Vänsterpil"
 
 msgid "Click to continue"
-msgstr ""
+msgstr "Klicka för att fortsätta"
 
 msgid "Right Arrow"
-msgstr ""
+msgstr "Högerpil"
 
 msgid "Authorizing..."
-msgstr ""
+msgstr "Auktoriserar..."
 
 msgid "NO RAMMING AT ALL"
-msgstr ""
+msgstr "INGEN RAMNING ALLS"
 
 msgid "Volumetric speed"
-msgstr ""
+msgstr "Volymetrisk hastighet"
 
 msgid "Search"
-msgstr ""
+msgstr "Sök"
 
 msgid "My Device"
-msgstr ""
+msgstr "Min enhet"
 
 msgid "Other Device"
-msgstr ""
+msgstr "Annan enhet"
 
 msgid "Can't find my devices?"
-msgstr ""
+msgstr "Kan inte hitta mina enheter?"
 
 msgid "Modifying the device name"
-msgstr ""
+msgstr "Ändra enhetsnamn"
 
 msgid "Bind with Access Code"
-msgstr ""
+msgstr "Koppla med åtkomstkod"
 
 msgid "Step file import parameters"
-msgstr ""
+msgstr "STEP-fil importparametrar"
 
 msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
-msgstr ""
+msgstr "Mindre linjära och vinkelmässiga avvikelser ger transformationer av högre kvalitet men ökar bearbetningstiden."
 
 msgid "View Wiki for more information"
-msgstr ""
+msgstr "Visa Wiki för mer information"
 
 msgid "Linear Deflection"
-msgstr ""
+msgstr "Linjär avvikelse"
 
 msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
-msgstr ""
+msgstr "Ange ett giltigt värde (0,001 < linjär avvikelse < 0,1)"
 
 msgid "Angle Deflection"
-msgstr ""
+msgstr "Vinkelavvikelse"
 
 msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
-msgstr ""
+msgstr "Ange ett giltigt värde (0,01 < vinkelavvikelse < 1,0)"
 
 msgid "Split compound and compsolid into multiple objects"
-msgstr ""
+msgstr "Dela upp sammansatta och compsolida objekt i flera objekt"
 
 msgid "Number of triangular facets"
-msgstr ""
+msgstr "Antal triangulära fasetter"
 
 msgid "Calculating, please wait..."
-msgstr ""
+msgstr "Beräknar, vänligen vänta..."
 
 msgid "Move over surface"
-msgstr ""
+msgstr "Flytta över yta"
 
 msgid "System Information"
-msgstr ""
+msgstr "Systeminformation"
 
 msgid "Blacklisted libraries loaded into OrcaSlicer process:"
-msgstr ""
+msgstr "Svartlistade bibliotek laddade i OrcaSlicer-processen:"
 
 msgid "SIMD is supported:"
-msgstr ""
+msgstr "SIMD stöds:"
 
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopiera till urklipp"
 
 msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Bäddtemperatur när Cosmyx Textured Bed är installerat. Ett värde på -1 betyder att filamentet inte stöder utskrift på Cosmyx Textured Bed. Ett värde på 0 betyder att bädden är avstängd."
 
 msgid "Forward"
-msgstr ""
+msgstr "Framåt"
 
 msgid "Reload"
-msgstr ""
+msgstr "Ladda om"
 
 msgid "Tools"
-msgstr ""
+msgstr "Verktyg"
 
 msgid "View Source"
-msgstr ""
+msgstr "Visa källa"
 
 msgid "View Text"
-msgstr ""
+msgstr "Visa text"
 
 msgid "Handle Navigation"
-msgstr ""
+msgstr "Hantera navigering"
 
 msgid "Handle New Windows"
-msgstr ""
+msgstr "Hantera nya fönster"
 
 msgid "Edit Mode"
-msgstr ""
+msgstr "Redigeringsläge"
 
 msgid "Run Script"
-msgstr ""
+msgstr "Kör skript"
 
 msgid "Add user script"
-msgstr ""
+msgstr "Lägg till användarskript"
 
 msgid "Set custom user agent"
-msgstr ""
+msgstr "Ange anpassad user agent"
 
 msgid "Clear Selection"
-msgstr ""
+msgstr "Rensa val"
 
 msgid "Delete Selection"
-msgstr ""
+msgstr "Ta bort val"
 
 msgid "Custom Scheme Example"
-msgstr ""
+msgstr "Anpassat schema-exempel"
 
 msgid "Memory File System Example"
-msgstr ""
+msgstr "Minnesfilsystem-exempel"
 
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "Aktivera snabbmeny"
 
 msgid "Enable Dev Tools"
-msgstr ""
+msgstr "Aktivera utvecklarverktyg"
 
 msgid "An error occurred loading "
-msgstr ""
+msgstr "Ett fel uppstod vid laddning av "
 
 msgid "%"
-msgstr ""
+msgstr "%"
 
 msgid "Connected to CrealityPrint successfully!"
-msgstr ""
+msgstr "Ansluten till CrealityPrint!"
 
 msgid "Could not connect to CrealityPrint"
-msgstr ""
+msgstr "Kunde inte ansluta till CrealityPrint"
 
 msgid "Connection to ElegooLink is working correctly."
-msgstr ""
+msgstr "Anslutningen till ElegooLink fungerar korrekt."
 
 msgid "Could not connect to ElegooLink"
-msgstr ""
+msgstr "Kunde inte ansluta till ElegooLink"
 
 msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "Filen har överförts men det uppstod okända fel. Kontrollera enhetssidan för filen och försök starta utskriften igen."
 
 msgid "Error code not found"
-msgstr ""
+msgstr "Felkod hittades inte"
 
 msgid "The printer is busy, Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "Skrivaren är upptagen. Kontrollera enhetssidan för filen och försök starta utskriften igen."
 
 msgid "The file is lost, please check and try again."
-msgstr ""
+msgstr "Filen har försvunnit, kontrollera och försök igen."
 
 msgid "The file is corrupted, please check and try again."
-msgstr ""
+msgstr "Filen är skadad, kontrollera och försök igen."
 
 msgid "Transmission abnormality, please check and try again."
-msgstr ""
+msgstr "Överföringsavvikelse, kontrollera och försök igen."
 
 msgid "The file does not match the printer, please check and try again."
-msgstr ""
+msgstr "Filen matchar inte skrivaren, kontrollera och försök igen."
 
 msgid "Start print timeout"
-msgstr ""
+msgstr "Timeout vid utskriftsstart"
 
 msgid "Start print failed"
-msgstr ""
+msgstr "Utskriftsstart misslyckades"
 
 msgid "Connection to ESP3D is working correctly."
-msgstr ""
+msgstr "Anslutningen till ESP3D fungerar korrekt."
 
 msgid "Could not connect to ESP3D"
-msgstr ""
+msgstr "Kunde inte ansluta till ESP3D"
 
 msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
-msgstr ""
+msgstr "Anslutningen avbröts. Kontrollera att skrivarens och datorns nätverk fungerar korrekt och bekräfta att de är på samma nätverk."
 
 msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
-msgstr ""
+msgstr "Värdnamnet/IP/URL kunde inte tolkas, kontrollera och försök igen."
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
-msgstr ""
+msgstr "Fil-/dataöverföring avbruten. Kontrollera skrivaren och nätverket och försök igen."
