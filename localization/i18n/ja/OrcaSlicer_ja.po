@@ -17780,349 +17780,349 @@ msgid "Tungsten Carbide"
 msgstr ""
 
 msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
-msgstr ""
+msgstr "選択された3mfファイルは%1%の新しいバージョンで保存されており、互換性がありません。"
 
 msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "選択された3MFには、PrusaSlicer の新しいバージョンで塗装されたFDMサポートオブジェクトが含まれており、互換性がありません。"
 
 msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "選択された3MFには、PrusaSlicer の新しいバージョンで塗装されたシームオブジェクトが含まれており、互換性がありません。"
 
 msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "選択された3MFには、PrusaSlicer の新しいバージョンで塗装されたマルチマテリアルオブジェクトが含まれており、互換性がありません。"
 
 msgid ""
 "Post-processing script %1% failed.\n"
 "\n"
 "The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
 "Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
-msgstr ""
+msgstr "後処理スクリプト %1% が失敗しました。\n\n後処理スクリプトはG-codeファイル %2% をその場で変更することが期待されていますが、G-codeファイルが削除され、別の名前で保存された可能性があります。\nG-codeをその場で変更するように後処理スクリプトを調整し、後処理済みG-codeファイルの名前を変更する方法についてはマニュアルをご参照ください。\n"
 
 msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "初期レイヤー以外のレイヤーのベッド温度です。-1 は、そのフィラメントが Cosmyx Textured Bed での印刷に対応していないことを意味します。0 はベッドがオフであることを意味します。"
 
 msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "初期レイヤーのベッド温度です。-1 は、そのフィラメントが Cosmyx Textured Bed での印刷に対応していないことを意味します。0 はベッドがオフであることを意味します。"
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx Textured Bed"
 
 msgid "Hollowing"
-msgstr ""
+msgstr "中空化"
 
 msgid "Pad brim size is too small for the current configuration."
-msgstr ""
+msgstr "現在の設定では、パッドのブリムサイズが小さすぎます。"
 
 msgid "Cannot proceed without support points! Add support points or disable support generation."
-msgstr ""
+msgstr "サポートポイントなしでは続行できません。サポートポイントを追加するか、サポート生成を無効にしてください。"
 
 msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
-msgstr ""
+msgstr "オブジェクトに対して高さが低すぎます。高さなしでオブジェクトを印刷するには \"オブジェクト周囲のパッド\" 機能を使用してください。"
 
 msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
-msgstr ""
+msgstr "サポートピラーの末端がオブジェクトとパッドの隙間に展開されます。これを防ぐには「サポートベース安全距離」が「パッドオブジェクトギャップ」パラメーターより大きい必要があります。"
 
 msgid "Exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "露光時間がプリンタープロファイルの範囲外です。"
 
 msgid "Initial exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "初期露光時間がプリンタープロファイルの範囲外です。"
 
 msgid "Slicing done"
-msgstr ""
+msgstr "スライス完了"
 
 msgid "Hollowing model"
-msgstr ""
+msgstr "モデルを中空化しています"
 
 msgid "Drilling holes into model."
-msgstr ""
+msgstr "モデルに穴を開けています。"
 
 msgid "Slicing model"
-msgstr ""
+msgstr "モデルをスライスしています"
 
 msgid "Generating support points"
-msgstr ""
+msgstr "サポートポイントを生成しています"
 
 msgid "Generating support tree"
-msgstr ""
+msgstr "サポートツリーを生成しています"
 
 msgid "Generating pad"
-msgstr ""
+msgstr "パッドを生成しています"
 
 msgid "Slicing supports"
-msgstr ""
+msgstr "サポートをスライスしています"
 
 msgid "Merging slices and calculating statistics"
-msgstr ""
+msgstr "スライスをマージして統計を計算しています"
 
 msgid "Rasterizing layers"
-msgstr ""
+msgstr "レイヤーをラスタライズしています"
 
 msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
-msgstr ""
+msgstr "内部エラーのためスライスを停止しました: スライスインデックスが一致しません。"
 
 msgid "Visualizing supports"
-msgstr ""
+msgstr "サポートを可視化しています"
 
 msgid "No pad can be generated for this model with the current configuration"
-msgstr ""
+msgstr "現在の設定では、このモデルのパッドを生成できません"
 
 msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
-msgstr ""
+msgstr "印刷不可能なオブジェクトがあります。サポート設定を調整してオブジェクトを印刷可能にしてみてください。"
 
 msgid "Taking a configuration snapshot failed."
-msgstr ""
+msgstr "設定スナップショットの取得に失敗しました。"
 
 msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
-msgstr ""
+msgstr "OrcaSlicer は設定スナップショットの取得中にエラーが発生しました。"
 
 msgid "OrcaSlicer error"
-msgstr ""
+msgstr "OrcaSlicer エラー"
 
 msgid "Continue"
-msgstr ""
+msgstr "続行"
 
 msgid "Abort"
-msgstr ""
+msgstr "中止"
 
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Cosmyx バンドルバージョン %s"
 
 msgid "Model Pictures"
-msgstr ""
+msgstr "モデル画像"
 
 msgid "Auxiliaryies"
-msgstr ""
+msgstr "補助"
 
 msgid "nozzle"
-msgstr ""
+msgstr "ノズル"
 
 msgid "Alternate nozzles:"
-msgstr ""
+msgstr "代替ノズル:"
 
 msgid "All standard"
-msgstr ""
+msgstr "すべて標準"
 
 msgid "Welcome to the %s Configuration Assistant"
-msgstr ""
+msgstr "%s 設定アシスタントへようこそ"
 
 msgid "Welcome to the %s Configuration Wizard"
-msgstr ""
+msgstr "%s 設定ウィザードへようこそ"
 
 msgid "Welcome"
-msgstr ""
+msgstr "ようこそ"
 
 msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
-msgstr ""
+msgstr "こんにちは、%s へようこそ！この %s は初期設定をサポートします。いくつかの設定を行うだけで印刷の準備が整います。"
 
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
-msgstr ""
+msgstr "ユーザープロファイルを削除します（事前にスナップショットが取得されます）"
 
 msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
-msgstr ""
+msgstr "デスクトップ統合を実行します（このバイナリをシステムで検索可能に設定します）。"
 
 msgid "%s Family"
-msgstr ""
+msgstr "%s ファミリー"
 
 msgid "Printer:"
-msgstr ""
+msgstr "プリンター:"
 
 msgid "Vendor:"
-msgstr ""
+msgstr "ベンダー:"
 
 msgid "Profile:"
-msgstr ""
+msgstr "プロファイル:"
 
 msgid "(All)"
-msgstr ""
+msgstr "（すべて）"
 
 msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
-msgstr ""
+msgstr "<b>*</b> で示された %1% は、一部のインストール済みプリンターと<b>互換性がありません</b>。"
 
 msgid "SLA materials"
-msgstr ""
+msgstr "SLA マテリアル"
 
 msgid "All installed printers are compatible with the selected %1%."
-msgstr ""
+msgstr "インストール済みのすべてのプリンターは、選択された %1% と互換性があります。"
 
 msgid "filament"
-msgstr ""
+msgstr "フィラメント"
 
 msgid "SLA material"
-msgstr ""
+msgstr "SLA マテリアル"
 
 msgid "Only the following installed printers are compatible with the selected filaments"
-msgstr ""
+msgstr "選択されたフィラメントと互換性のあるインストール済みプリンターは以下のみです"
 
 msgid "Only the following installed printers are compatible with the selected SLA materials"
-msgstr ""
+msgstr "選択された SLA マテリアルと互換性のあるインストール済みプリンターは以下のみです"
 
 msgid "Custom Printer Setup"
-msgstr ""
+msgstr "カスタムプリンターのセットアップ"
 
 msgid "Custom Printer"
-msgstr ""
+msgstr "カスタムプリンター"
 
 msgid "Define a custom printer profile"
-msgstr ""
+msgstr "カスタムプリンタープロファイルを定義します"
 
 msgid "Custom profile name:"
-msgstr ""
+msgstr "カスタムプロファイル名:"
 
 msgid "Firmware Type"
-msgstr ""
+msgstr "ファームウェアの種類"
 
 msgid "Firmware"
-msgstr ""
+msgstr "ファームウェア"
 
 msgid "Choose the type of firmware used by your printer."
-msgstr ""
+msgstr "プリンターで使用するファームウェアの種類を選択してください。"
 
 msgid "Bed Shape and Size"
-msgstr ""
+msgstr "ベッドの形状とサイズ"
 
 msgid "Set the shape of your printer's bed."
-msgstr ""
+msgstr "プリンターのベッドの形状を設定します。"
 
 msgid "Invalid numeric input."
-msgstr ""
+msgstr "無効な数値入力です。"
 
 msgid "Filament and Nozzle Diameters"
-msgstr ""
+msgstr "フィラメントとノズルの直径"
 
 msgid "Print Diameters"
-msgstr ""
+msgstr "印刷直径"
 
 msgid "Enter the diameter of your printer's hot end nozzle."
-msgstr ""
+msgstr "プリンターのホットエンドノズルの直径を入力してください。"
 
 msgid "Nozzle Diameter:"
-msgstr ""
+msgstr "ノズル直径:"
 
 msgid "Enter the diameter of your filament."
-msgstr ""
+msgstr "フィラメントの直径を入力してください。"
 
 msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
-msgstr ""
+msgstr "高い精度が必要です。ノギスを使用してフィラメントに沿って複数回測定し、平均値を計算してください。"
 
 msgid "Filament Diameter:"
-msgstr ""
+msgstr "フィラメント直径:"
 
 msgid "Nozzle and Bed Temperatures"
-msgstr ""
+msgstr "ノズルとベッドの温度"
 
 msgid "Enter the nozzle_temperature needed for extruding your filament."
-msgstr ""
+msgstr "フィラメントを押し出すために必要なノズル温度を入力してください。"
 
 msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
-msgstr ""
+msgstr "目安として、PLA は 160〜230 °C、ABS は 215〜250 °C です。"
 
 msgid "Extrusion Temperature:"
-msgstr ""
+msgstr "押し出し温度:"
 
 msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
-msgstr ""
+msgstr "フィラメントをヒートベッドに密着させるために必要なベッド温度を入力してください。"
 
 msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
-msgstr ""
+msgstr "目安として、PLA は 60 °C、ABS は 110 °C です。ヒートベッドがない場合はゼロのままにしてください。"
 
 msgid "Bed Temperature:"
-msgstr ""
+msgstr "ベッド温度:"
 
 msgid "SLA Materials"
-msgstr ""
+msgstr "SLA マテリアル"
 
 msgid "FFF Technology Printers"
-msgstr ""
+msgstr "FFF テクノロジープリンター"
 
 msgid "SLA Technology Printers"
-msgstr ""
+msgstr "SLA テクノロジープリンター"
 
 msgid "Following printer profiles has no default filament: %1%Please select one manually."
-msgstr ""
+msgstr "次のプリンタープロファイルにはデフォルトのフィラメントがありません: %1%手動で選択してください。"
 
 msgid "Following printer profiles has no default material: %1%Please select one manually."
-msgstr ""
+msgstr "次のプリンタープロファイルにはデフォルトのマテリアルがありません: %1%手動で選択してください。"
 
 msgid "The following FFF printer models have no filament selected:"
-msgstr ""
+msgstr "次の FFF プリンターモデルにはフィラメントが選択されていません:"
 
 msgid "Do you want to select default filaments for these FFF printer models?"
-msgstr ""
+msgstr "これらの FFF プリンターモデルにデフォルトのフィラメントを選択しますか？"
 
 msgid "Configuration is edited in ConfigWizard"
-msgstr ""
+msgstr "設定は ConfigWizard で編集されています"
 
 msgid "All user presets will be deleted."
-msgstr ""
+msgstr "すべてのユーザープリセットが削除されます。"
 
 msgid "A new Printer was installed and it will be activated."
-msgstr ""
+msgstr "新しいプリンターがインストールされ、有効化されます。"
 
 msgid "Some Printers were uninstalled."
-msgstr ""
+msgstr "一部のプリンターがアンインストールされました。"
 
 msgid "A new filament was installed and it will be activated."
-msgstr ""
+msgstr "新しいフィラメントがインストールされ、有効化されます。"
 
 msgid "A new SLA material was installed and it will be activated."
-msgstr ""
+msgstr "新しい SLA マテリアルがインストールされ、有効化されます。"
 
 msgid "Some filaments were uninstalled."
-msgstr ""
+msgstr "一部のフィラメントがアンインストールされました。"
 
 msgid "Custom printer was installed and it will be activated."
-msgstr ""
+msgstr "カスタムプリンターがインストールされ、有効化されます。"
 
 msgid "<Back"
-msgstr ""
+msgstr "<戻る"
 
 msgid "Next>"
-msgstr ""
+msgstr "次へ>"
 
 msgid "Filament Profiles Selection"
-msgstr ""
+msgstr "フィラメントプロファイルの選択"
 
 msgid "Configuration Assistant"
-msgstr ""
+msgstr "設定アシスタント"
 
 msgid "Configuration &Assistant"
-msgstr ""
+msgstr "設定アシスタント(&A)"
 
 msgid "Configuration Wizard"
-msgstr ""
+msgstr "設定ウィザード"
 
 msgid "Configuration &Wizard"
-msgstr ""
+msgstr "設定ウィザード(&W)"
 
 msgid "A new vendor was installed and one of its printers will be activated"
 msgid_plural "New vendors were installed and one of theirs printers will be activated"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "新しいベンダーがインストールされ、そのプリンターの1台が有効化されます"
+msgstr[1] "新しいベンダーがインストールされ、そのプリンターの1台が有効化されます"
 
 msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "デスクトップ統合の実行に失敗しました - boost::filesystem::canonical が AppImage パスを返しませんでした。"
 
 msgid "Performing desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "デスクトップ統合の実行に失敗しました - 実行ファイルが見つかりませんでした。"
 
 msgid "Performing desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "アプリケーションディレクトリが見つからなかったため、デスクトップ統合の実行に失敗しました。"
 
 msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
-msgstr ""
+msgstr "デスクトップ統合の実行に失敗しました - Gcodeviewer のデスクトップファイルを作成できませんでした。OrcaSlicer のデスクトップファイルはおそらく正常に作成されました。"
 
 msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "ダウンローダーのデスクトップ統合の実行に失敗しました - boost::filesystem::canonical が AppImage パスを返しませんでした。"
 
 msgid "Performing downloader desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "ダウンローダーのデスクトップ統合の実行に失敗しました - 実行ファイルが見つかりませんでした。"
 
 msgid "Performing downloader desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "アプリケーションディレクトリが見つからなかったため、ダウンローダーのデスクトップ統合の実行に失敗しました。"
 
 msgid "Desktop Integration"
-msgstr ""
+msgstr "デスクトップ統合"
 
 msgid ""
 "Desktop Integration sets this binary to be searchable by the system.\n"
@@ -18131,231 +18131,231 @@ msgid ""
 msgstr ""
 
 msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
-msgstr ""
+msgstr "現在のチャンバー温度または目標チャンバー温度が 45\\u2103 を超えています。エクストルーダーの詰まりを避けるため、低温フィラメント（PLA/PETG/TPU）のロードは許可されていません。"
 
 msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
-msgstr ""
+msgstr "低温フィラメント（PLA/PETG/TPU）がエクストルーダーにロードされています。エクストルーダーの詰まりを避けるため、チャンバー温度を 45\\u2103 以上に設定することはできません。"
 
 msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
-msgstr ""
+msgstr "チャンバー温度を 40\\u2103 未満に設定すると、チャンバー温度制御は有効化されず、目標チャンバー温度は自動的に 0\\u2103 に設定されます。"
 
 msgid "The download has failed"
-msgstr ""
+msgstr "ダウンロードに失敗しました"
 
 msgid "Can't create file at %1%"
-msgstr ""
+msgstr "%1% にファイルを作成できません"
 
 msgid "Archive preview"
-msgstr ""
+msgstr "アーカイブプレビュー"
 
 msgid "Movement:"
-msgstr ""
+msgstr "移動:"
 
 msgid "Movement"
-msgstr ""
+msgstr "移動"
 
 msgid "Auto Segment"
-msgstr ""
+msgstr "自動セグメント"
 
 msgid "Depth ratio"
-msgstr ""
+msgstr "深度比"
 
 msgid "Prizm"
-msgstr ""
+msgstr "プリズム"
 
 msgid "connector is out of cut contour"
-msgstr ""
+msgstr "コネクターがカット輪郭の外にあります"
 
 msgid "connectors are out of cut contour"
-msgstr ""
+msgstr "コネクターがカット輪郭の外にあります"
 
 msgid "connector is out of object"
-msgstr ""
+msgstr "コネクターがオブジェクトの外にあります"
 
 msgid "connectors is out of object"
-msgstr ""
+msgstr "コネクターがオブジェクトの外にあります"
 
 msgid ""
 "Invalid state. \n"
 "No one part is selected for keep after cut"
-msgstr ""
+msgstr "無効な状態です。\nカット後に保持するパーツが選択されていません"
 
 msgid "Please confirm explosion ratio = 1 and select at least two volumes."
-msgstr ""
+msgstr "爆発比率 = 1 を確認し、少なくとも2つのボリュームを選択してください。"
 
 msgid "Please select at least two volumes."
-msgstr ""
+msgstr "少なくとも2つのボリュームを選択してください。"
 
 msgid "(Moving)"
-msgstr ""
+msgstr "（移動中）"
 
 msgid "Point and point assembly"
-msgstr ""
+msgstr "点と点のアセンブリ"
 
 msgid ""
 "It is recommended to assemble the objects first,\n"
 "because the objects is restriced to bed \n"
 "and only parts can be lifted."
-msgstr ""
+msgstr "オブジェクトは最初にアセンブルすることをお勧めします。\nオブジェクトはベッドに制限されており、\nパーツのみが持ち上げられます。"
 
 msgid "Face and face assembly"
-msgstr ""
+msgstr "面と面のアセンブリ"
 
 msgid "Entering Assembly gizmo"
-msgstr ""
+msgstr "アセンブリギズモに入ります"
 
 msgid "Leaving Assembly gizmo"
-msgstr ""
+msgstr "アセンブリギズモを終了します"
 
 msgid "Entering Cut gizmo"
-msgstr ""
+msgstr "カットギズモに入ります"
 
 msgid "Leaving Cut gizmo"
-msgstr ""
+msgstr "カットギズモを終了します"
 
 msgid "Cut gizmo editing"
-msgstr ""
+msgstr "カットギズモ編集"
 
 msgid "Add fuzzy skin"
-msgstr ""
+msgstr "ファジースキンを追加"
 
 msgid "Remove fuzzy skin"
-msgstr ""
+msgstr "ファジースキンを削除"
 
 msgid "Reset selection"
-msgstr ""
+msgstr "選択をリセット"
 
 msgid "Entering Paint-on fuzzy skin"
-msgstr ""
+msgstr "ペイントオンファジースキンに入ります"
 
 msgid "Leaving Paint-on fuzzy skin"
-msgstr ""
+msgstr "ペイントオンファジースキンを終了します"
 
 msgid "Paint-on fuzzy skin editing"
-msgstr ""
+msgstr "ペイントオンファジースキン編集"
 
 msgid "Hollow this object"
-msgstr ""
+msgstr "このオブジェクトを中空にします"
 
 msgid "Preview hollowed and drilled model"
-msgstr ""
+msgstr "中空化および穴あけ済みモデルをプレビュー"
 
 msgid "Offset"
-msgstr ""
+msgstr "オフセット"
 
 msgid "Closing distance"
-msgstr ""
+msgstr "クロージング距離"
 
 msgid "Hole diameter"
-msgstr ""
+msgstr "穴の直径"
 
 msgid "Hole depth"
-msgstr ""
+msgstr "穴の深さ"
 
 msgid "Remove selected holes"
-msgstr ""
+msgstr "選択した穴を削除"
 
 msgid "Remove all holes"
-msgstr ""
+msgstr "すべての穴を削除"
 
 msgid "Clipping of view"
-msgstr ""
+msgstr "ビューのクリッピング"
 
 msgid "Show supports"
-msgstr ""
+msgstr "サポートを表示"
 
 msgid "Hollow and drill"
-msgstr ""
+msgstr "中空化と穴あけ"
 
 msgid "Entering Measure gizmo"
-msgstr ""
+msgstr "測定ギズモに入ります"
 
 msgid "Leaving Measure gizmo"
-msgstr ""
+msgstr "測定ギズモを終了します"
 
 msgid "Model simplification has been canceled"
-msgstr ""
+msgstr "モデルの簡略化がキャンセルされました"
 
 msgid "Lock supports under new islands"
-msgstr ""
+msgstr "新しいアイランドの下のサポートをロック"
 
 msgid "Remove all points"
-msgstr ""
+msgstr "すべてのポイントを削除"
 
 msgid "Apply changes"
-msgstr ""
+msgstr "変更を適用"
 
 msgid "Discard changes"
-msgstr ""
+msgstr "変更を破棄"
 
 msgid "Minimal points distance"
-msgstr ""
+msgstr "最小ポイント距離"
 
 msgid "Support points density"
-msgstr ""
+msgstr "サポートポイント密度"
 
 msgid "Manual editing"
-msgstr ""
+msgstr "手動編集"
 
 msgid "SLA Support Points"
-msgstr ""
+msgstr "SLA サポートポイント"
 
 msgid "Do you want to save your manually edited support points?"
-msgstr ""
+msgstr "手動で編集したサポートポイントを保存しますか？"
 
 msgid "Save support points?"
-msgstr ""
+msgstr "サポートポイントを保存しますか？"
 
 msgid "Autogeneration will erase all manually edited points."
-msgstr ""
+msgstr "自動生成により、手動で編集したすべてのポイントが消去されます。"
 
 msgid "Are you sure you want to do it?"
-msgstr ""
+msgstr "本当に実行しますか？"
 
 msgid "SLA gizmo keyboard shortcuts"
-msgstr ""
+msgstr "SLA ギズモのキーボードショートカット"
 
 msgid "Note: some shortcuts work in (non)editing mode only."
-msgstr ""
+msgstr "注意: 一部のショートカットは（非）編集モードでのみ機能します。"
 
 msgid "Add point"
-msgstr ""
+msgstr "ポイントを追加"
 
 msgid "Remove point"
-msgstr ""
+msgstr "ポイントを削除"
 
 msgid "Move point"
-msgstr ""
+msgstr "ポイントを移動"
 
 msgid "Add point to selection"
-msgstr ""
+msgstr "ポイントを選択に追加"
 
 msgid "Remove point from selection"
-msgstr ""
+msgstr "ポイントを選択から削除"
 
 msgid "Select by rectangle"
-msgstr ""
+msgstr "矩形で選択"
 
 msgid "Deselect by rectangle"
-msgstr ""
+msgstr "矩形で選択解除"
 
 msgid "Select all points"
-msgstr ""
+msgstr "すべてのポイントを選択"
 
 msgid "Move clipping plane"
-msgstr ""
+msgstr "クリッピング平面を移動"
 
 msgid "Reset clipping plane"
-msgstr ""
+msgstr "クリッピング平面をリセット"
 
 msgid "Switch to editing mode"
-msgstr ""
+msgstr "編集モードに切り替え"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calage 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calage 3 SNDT"
 
 msgid ""
 "This calibration model works best with specific infill settings.\n"
@@ -18366,282 +18366,282 @@ msgid ""
 "\n"
 "Yes - Change these settings automatically\n"
 "No  - Do not change these settings for me"
-msgstr ""
+msgstr "このキャリブレーションモデルは特定のインフィル設定で最も効果的です。\n最適なキャリブレーション結果を得るには、以下を設定することをお勧めします:\n- インフィル方向: %.0f\\u00b0\n- ソリッドインフィル方向: %.0f\\u00b0\n- 最初のレイヤーのみ1つのウォール: %s\n\nはい - これらの設定を自動的に変更する\nいいえ - これらの設定を変更しない"
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calage 1 Nova"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "デュアルヘッドキャリブレーションモデル"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "シングルヘッドキャリブレーションモデル"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx ハンディモデル"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D モデル"
 
 msgid "Add Emboss text object"
-msgstr ""
+msgstr "エンボステキストオブジェクトを追加"
 
 msgid "Emboss attribute change"
-msgstr ""
+msgstr "エンボス属性の変更"
 
 msgid "Add Emboss text Volume"
-msgstr ""
+msgstr "エンボステキストボリュームを追加"
 
 msgid "Font doesn't have any shape for given text."
-msgstr ""
+msgstr "指定されたテキストに対してフォントに形状がありません。"
 
 msgid "There is no valid surface for text projection."
-msgstr ""
+msgstr "テキスト投影に有効なサーフェスがありません。"
 
 msgid "An unexpected error occurred"
-msgstr ""
+msgstr "予期しないエラーが発生しました"
 
 msgid "Best surface quality"
-msgstr ""
+msgstr "最高のサーフェス品質"
 
 msgid "Optimize object rotation for best surface quality."
-msgstr ""
+msgstr "最高のサーフェス品質のためにオブジェクトの回転を最適化します。"
 
 msgid "Reduced overhang slopes"
-msgstr ""
+msgstr "オーバーハング傾斜の低減"
 
 msgid ""
 "Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
 "Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
-msgstr ""
+msgstr "サポート構造が必要なオーバーハングが最小になるようにオブジェクトの回転を最適化します。\n高さが設定されていない場合、このメソッドはプリントベッドに接触するオブジェクトの最適なサーフェスを見つけようとします。"
 
 msgid "Lowest Z height"
-msgstr ""
+msgstr "最低 Z 高さ"
 
 msgid "Rotate the model to have the lowest z height for faster print time."
-msgstr ""
+msgstr "印刷時間を短縮するために、最低 Z 高さになるようにモデルを回転させます。"
 
 msgid "Choose SLA archive:"
-msgstr ""
+msgstr "SLA アーカイブを選択:"
 
 msgid "Import file"
-msgstr ""
+msgstr "ファイルをインポート"
 
 msgid "Import model and profile"
-msgstr ""
+msgstr "モデルとプロファイルをインポート"
 
 msgid "Import profile only"
-msgstr ""
+msgstr "プロファイルのみをインポート"
 
 msgid "Import model only"
-msgstr ""
+msgstr "モデルのみをインポート"
 
 msgid "Accurate"
-msgstr ""
+msgstr "正確"
 
 msgid "Balanced"
-msgstr ""
+msgstr "バランス"
 
 msgid "Quick"
-msgstr ""
+msgstr "クイック"
 
 msgid "3D Models"
-msgstr ""
+msgstr "3D モデル"
 
 msgid "Click to return"
-msgstr ""
+msgstr "クリックして戻る"
 
 msgid "Left Arrow"
-msgstr ""
+msgstr "左矢印"
 
 msgid "Click to continue"
-msgstr ""
+msgstr "クリックして続行"
 
 msgid "Right Arrow"
-msgstr ""
+msgstr "右矢印"
 
 msgid "Authorizing..."
-msgstr ""
+msgstr "認証中..."
 
 msgid "NO RAMMING AT ALL"
-msgstr ""
+msgstr "ラミングなし"
 
 msgid "Volumetric speed"
-msgstr ""
+msgstr "体積速度"
 
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 msgid "My Device"
-msgstr ""
+msgstr "マイデバイス"
 
 msgid "Other Device"
-msgstr ""
+msgstr "その他のデバイス"
 
 msgid "Can't find my devices?"
-msgstr ""
+msgstr "デバイスが見つかりませんか？"
 
 msgid "Modifying the device name"
-msgstr ""
+msgstr "デバイス名の変更"
 
 msgid "Bind with Access Code"
-msgstr ""
+msgstr "アクセスコードでバインド"
 
 msgid "Step file import parameters"
-msgstr ""
+msgstr "STEPファイルのインポートパラメーター"
 
 msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
-msgstr ""
+msgstr "線形および角度のたわみを小さくすると、より高品質な変換が得られますが、処理時間が増加します。"
 
 msgid "View Wiki for more information"
-msgstr ""
+msgstr "詳細についてはWikiをご覧ください"
 
 msgid "Linear Deflection"
-msgstr ""
+msgstr "線形たわみ"
 
 msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
-msgstr ""
+msgstr "有効な値を入力してください（0.001 < 線形たわみ < 0.1）"
 
 msgid "Angle Deflection"
-msgstr ""
+msgstr "角度たわみ"
 
 msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
-msgstr ""
+msgstr "有効な値を入力してください（0.01 < 角度たわみ < 1.0）"
 
 msgid "Split compound and compsolid into multiple objects"
-msgstr ""
+msgstr "コンパウンドおよびコンプソリッドを複数のオブジェクトに分割"
 
 msgid "Number of triangular facets"
-msgstr ""
+msgstr "三角面の数"
 
 msgid "Calculating, please wait..."
-msgstr ""
+msgstr "計算中です、お待ちください..."
 
 msgid "Move over surface"
-msgstr ""
+msgstr "サーフェス上を移動"
 
 msgid "System Information"
-msgstr ""
+msgstr "システム情報"
 
 msgid "Blacklisted libraries loaded into OrcaSlicer process:"
-msgstr ""
+msgstr "OrcaSlicer プロセスにロードされたブラックリストライブラリ:"
 
 msgid "SIMD is supported:"
-msgstr ""
+msgstr "SIMD がサポートされています:"
 
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "クリップボードにコピー"
 
 msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Cosmyx Textured Bed が装着されているときのベッド温度です。-1 は、そのフィラメントが Cosmyx Textured Bed での印刷に対応していないことを意味します。0 はベッドがオフであることを意味します。"
 
 msgid "Forward"
-msgstr ""
+msgstr "進む"
 
 msgid "Reload"
-msgstr ""
+msgstr "再読み込み"
 
 msgid "Tools"
-msgstr ""
+msgstr "ツール"
 
 msgid "View Source"
-msgstr ""
+msgstr "ソースを表示"
 
 msgid "View Text"
-msgstr ""
+msgstr "テキストを表示"
 
 msgid "Handle Navigation"
-msgstr ""
+msgstr "ナビゲーションの処理"
 
 msgid "Handle New Windows"
-msgstr ""
+msgstr "新しいウィンドウの処理"
 
 msgid "Edit Mode"
-msgstr ""
+msgstr "編集モード"
 
 msgid "Run Script"
-msgstr ""
+msgstr "スクリプトを実行"
 
 msgid "Add user script"
-msgstr ""
+msgstr "ユーザースクリプトを追加"
 
 msgid "Set custom user agent"
-msgstr ""
+msgstr "カスタムユーザーエージェントを設定"
 
 msgid "Clear Selection"
-msgstr ""
+msgstr "選択をクリア"
 
 msgid "Delete Selection"
-msgstr ""
+msgstr "選択を削除"
 
 msgid "Custom Scheme Example"
-msgstr ""
+msgstr "カスタムスキームの例"
 
 msgid "Memory File System Example"
-msgstr ""
+msgstr "メモリファイルシステムの例"
 
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "コンテキストメニューを有効化"
 
 msgid "Enable Dev Tools"
-msgstr ""
+msgstr "開発者ツールを有効化"
 
 msgid "An error occurred loading "
-msgstr ""
+msgstr "読み込み中にエラーが発生しました "
 
 msgid "%"
-msgstr ""
+msgstr "%"
 
 msgid "Connected to CrealityPrint successfully!"
-msgstr ""
+msgstr "CrealityPrint に正常に接続しました！"
 
 msgid "Could not connect to CrealityPrint"
-msgstr ""
+msgstr "CrealityPrint に接続できませんでした"
 
 msgid "Connection to ElegooLink is working correctly."
-msgstr ""
+msgstr "ElegooLink への接続は正常に動作しています。"
 
 msgid "Could not connect to ElegooLink"
-msgstr ""
+msgstr "ElegooLink に接続できませんでした"
 
 msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "ファイルは転送されましたが、不明なエラーが発生しました。デバイスページでファイルを確認し、再度印刷を開始してみてください。"
 
 msgid "Error code not found"
-msgstr ""
+msgstr "エラーコードが見つかりません"
 
 msgid "The printer is busy, Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "プリンターがビジー状態です。デバイスページでファイルを確認し、再度印刷を開始してみてください。"
 
 msgid "The file is lost, please check and try again."
-msgstr ""
+msgstr "ファイルが見つかりません。確認して再試行してください。"
 
 msgid "The file is corrupted, please check and try again."
-msgstr ""
+msgstr "ファイルが破損しています。確認して再試行してください。"
 
 msgid "Transmission abnormality, please check and try again."
-msgstr ""
+msgstr "送信異常が発生しました。確認して再試行してください。"
 
 msgid "The file does not match the printer, please check and try again."
-msgstr ""
+msgstr "ファイルがプリンターと一致しません。確認して再試行してください。"
 
 msgid "Start print timeout"
-msgstr ""
+msgstr "印刷開始タイムアウト"
 
 msgid "Start print failed"
-msgstr ""
+msgstr "印刷開始に失敗しました"
 
 msgid "Connection to ESP3D is working correctly."
-msgstr ""
+msgstr "ESP3D への接続は正常に動作しています。"
 
 msgid "Could not connect to ESP3D"
-msgstr ""
+msgstr "ESP3D に接続できませんでした"
 
 msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
-msgstr ""
+msgstr "接続がタイムアウトしました。プリンターとコンピューターのネットワークが正常に機能しているか確認し、同じネットワーク上にあることを確認してください。"
 
 msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
-msgstr ""
+msgstr "ホスト名/IP/URL を解析できませんでした。確認して再試行してください。"
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
-msgstr ""
+msgstr "ファイル/データ転送が中断されました。プリンターとネットワークを確認してから、再試行してください。"

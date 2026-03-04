@@ -19022,349 +19022,349 @@ msgid "Tungsten Carbide"
 msgstr ""
 
 msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
-msgstr ""
+msgstr "Vybraný soubor 3mf byl uložen v novější verzi aplikace %1% a není kompatibilní."
 
 msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Vybraný soubor 3MF obsahuje objekt s malovanými FDM podporami vytvořený v novější verzi PrusaSlicer a není kompatibilní."
 
 msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Vybraný soubor 3MF obsahuje objekt s malovaným švem vytvořený v novější verzi PrusaSlicer a není kompatibilní."
 
 msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Vybraný soubor 3MF obsahuje vícebarevně malovaný objekt vytvořený v novější verzi PrusaSlicer a není kompatibilní."
 
 msgid ""
 "Post-processing script %1% failed.\n"
 "\n"
 "The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
 "Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
-msgstr ""
+msgstr "Skript post-processingu %1% selhal.\n\nOčekávalo se, že skript post-processingu upraví soubor G-code %2% na místě, ale soubor G-code byl smazán a pravděpodobně uložen pod novým názvem.\nUpravte prosím skript post-processingu tak, aby upravoval G-code na místě, a prostudujte manuál, kde najdete postup pro volitelné přejmenování zpracovaného souboru G-code.\n"
 
 msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Teplota podložky pro vrstvy kromě první. Hodnota -1 znamená, že filament nepodporuje tisk na Cosmyx Textured Bed. Hodnota 0 znamená, že podložka je vypnutá."
 
 msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Teplota podložky pro první vrstvu. Hodnota -1 znamená, že filament nepodporuje tisk na Cosmyx Textured Bed. Hodnota 0 znamená, že podložka je vypnutá."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx Textured Bed"
 
 msgid "Hollowing"
-msgstr ""
+msgstr "Dutinování"
 
 msgid "Pad brim size is too small for the current configuration."
-msgstr ""
+msgstr "Velikost okraje podložky je příliš malá pro aktuální konfiguraci."
 
 msgid "Cannot proceed without support points! Add support points or disable support generation."
-msgstr ""
+msgstr "Bez podpůrných bodů nelze pokračovat! Přidejte podpůrné body nebo vypněte generování podpor."
 
 msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
-msgstr ""
+msgstr "Výška je příliš nízká pro objekt. Použijte funkci \"Podložka kolem objektu\" pro tisk objektu bez výšky."
 
 msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
-msgstr ""
+msgstr "Konce podpůrných sloupků budou umístěny v mezeře mezi objektem a podložkou. Aby se tomu předešlo, musí být parametr 'Bezpečná vzdálenost základny podpory' větší než parametr 'Mezera objektu od podložky'."
 
 msgid "Exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "Čas expozice je mimo meze profilu tiskárny."
 
 msgid "Initial exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "Počáteční čas expozice je mimo meze profilu tiskárny."
 
 msgid "Slicing done"
-msgstr ""
+msgstr "Slicování dokončeno"
 
 msgid "Hollowing model"
-msgstr ""
+msgstr "Dutinování modelu"
 
 msgid "Drilling holes into model."
-msgstr ""
+msgstr "Vrtání otvorů do modelu."
 
 msgid "Slicing model"
-msgstr ""
+msgstr "Slicování modelu"
 
 msgid "Generating support points"
-msgstr ""
+msgstr "Generování podpůrných bodů"
 
 msgid "Generating support tree"
-msgstr ""
+msgstr "Generování podpůrného stromu"
 
 msgid "Generating pad"
-msgstr ""
+msgstr "Generování podložky"
 
 msgid "Slicing supports"
-msgstr ""
+msgstr "Slicování podpor"
 
 msgid "Merging slices and calculating statistics"
-msgstr ""
+msgstr "Slučování vrstev a výpočet statistik"
 
 msgid "Rasterizing layers"
-msgstr ""
+msgstr "Rasterizace vrstev"
 
 msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
-msgstr ""
+msgstr "Slicování muselo být zastaveno z důvodu interní chyby: Nekonzistentní index vrstvy."
 
 msgid "Visualizing supports"
-msgstr ""
+msgstr "Vizualizace podpor"
 
 msgid "No pad can be generated for this model with the current configuration"
-msgstr ""
+msgstr "Pro tento model nelze s aktuální konfigurací vygenerovat žádnou podložku"
 
 msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
-msgstr ""
+msgstr "Existují netisknutelné objekty. Zkuste upravit nastavení podpor, aby byly objekty tisknutelné."
 
 msgid "Taking a configuration snapshot failed."
-msgstr ""
+msgstr "Pořízení snímku konfigurace selhalo."
 
 msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
-msgstr ""
+msgstr "OrcaSlicer narazil na chybu při pořizování snímku konfigurace."
 
 msgid "OrcaSlicer error"
-msgstr ""
+msgstr "Chyba OrcaSlicer"
 
 msgid "Continue"
-msgstr ""
+msgstr "Pokračovat"
 
 msgid "Abort"
-msgstr ""
+msgstr "Přerušit"
 
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Cosmyx Bundle Verze %s"
 
 msgid "Model Pictures"
-msgstr ""
+msgstr "Obrázky modelu"
 
 msgid "Auxiliaryies"
-msgstr ""
+msgstr "Pomocné prvky"
 
 msgid "nozzle"
-msgstr ""
+msgstr "tryska"
 
 msgid "Alternate nozzles:"
-msgstr ""
+msgstr "Alternativní trysky:"
 
 msgid "All standard"
-msgstr ""
+msgstr "Vše standardní"
 
 msgid "Welcome to the %s Configuration Assistant"
-msgstr ""
+msgstr "Vítejte v Průvodci konfigurací %s"
 
 msgid "Welcome to the %s Configuration Wizard"
-msgstr ""
+msgstr "Vítejte v Průvodci konfigurací %s"
 
 msgid "Welcome"
-msgstr ""
+msgstr "Vítejte"
 
 msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
-msgstr ""
+msgstr "Zdravím, vítejte v aplikaci %s! Tento %s vám pomůže s počáteční konfigurací; stačí nastavit jen několik parametrů a budete připraveni tisknout."
 
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
-msgstr ""
+msgstr "Odebrat uživatelské profily (předem bude pořízen snímek)"
 
 msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
-msgstr ""
+msgstr "Provést integraci do prostředí (nastaví tento spustitelný soubor tak, aby byl vyhledatelný systémem)."
 
 msgid "%s Family"
-msgstr ""
+msgstr "Rodina %s"
 
 msgid "Printer:"
-msgstr ""
+msgstr "Tiskárna:"
 
 msgid "Vendor:"
-msgstr ""
+msgstr "Výrobce:"
 
 msgid "Profile:"
-msgstr ""
+msgstr "Profil:"
 
 msgid "(All)"
-msgstr ""
+msgstr "(Vše)"
 
 msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
-msgstr ""
+msgstr "%1% označené <b>*</b> <b>nejsou</b> kompatibilní s některými nainstalovanými tiskárnami."
 
 msgid "SLA materials"
-msgstr ""
+msgstr "Materiály SLA"
 
 msgid "All installed printers are compatible with the selected %1%."
-msgstr ""
+msgstr "Všechny nainstalované tiskárny jsou kompatibilní s vybraným %1%."
 
 msgid "filament"
-msgstr ""
+msgstr "filament"
 
 msgid "SLA material"
-msgstr ""
+msgstr "Materiál SLA"
 
 msgid "Only the following installed printers are compatible with the selected filaments"
-msgstr ""
+msgstr "Pouze následující nainstalované tiskárny jsou kompatibilní s vybranými filamenty"
 
 msgid "Only the following installed printers are compatible with the selected SLA materials"
-msgstr ""
+msgstr "Pouze následující nainstalované tiskárny jsou kompatibilní s vybranými materiály SLA"
 
 msgid "Custom Printer Setup"
-msgstr ""
+msgstr "Nastavení vlastní tiskárny"
 
 msgid "Custom Printer"
-msgstr ""
+msgstr "Vlastní tiskárna"
 
 msgid "Define a custom printer profile"
-msgstr ""
+msgstr "Definovat vlastní profil tiskárny"
 
 msgid "Custom profile name:"
-msgstr ""
+msgstr "Název vlastního profilu:"
 
 msgid "Firmware Type"
-msgstr ""
+msgstr "Typ firmwaru"
 
 msgid "Firmware"
-msgstr ""
+msgstr "Firmware"
 
 msgid "Choose the type of firmware used by your printer."
-msgstr ""
+msgstr "Zvolte typ firmwaru používaného vaší tiskárnou."
 
 msgid "Bed Shape and Size"
-msgstr ""
+msgstr "Tvar a rozměr podložky"
 
 msgid "Set the shape of your printer's bed."
-msgstr ""
+msgstr "Nastavte tvar podložky vaší tiskárny."
 
 msgid "Invalid numeric input."
-msgstr ""
+msgstr "Neplatný číselný vstup."
 
 msgid "Filament and Nozzle Diameters"
-msgstr ""
+msgstr "Průměry filamentu a trysky"
 
 msgid "Print Diameters"
-msgstr ""
+msgstr "Tiskové průměry"
 
 msgid "Enter the diameter of your printer's hot end nozzle."
-msgstr ""
+msgstr "Zadejte průměr trysky hotendu vaší tiskárny."
 
 msgid "Nozzle Diameter:"
-msgstr ""
+msgstr "Průměr trysky:"
 
 msgid "Enter the diameter of your filament."
-msgstr ""
+msgstr "Zadejte průměr vašeho filamentu."
 
 msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
-msgstr ""
+msgstr "Je vyžadována dobrá přesnost, proto použijte posuvné měřidlo a proveďte více měření podél filamentu, poté vypočítejte průměr."
 
 msgid "Filament Diameter:"
-msgstr ""
+msgstr "Průměr filamentu:"
 
 msgid "Nozzle and Bed Temperatures"
-msgstr ""
+msgstr "Teploty trysky a podložky"
 
 msgid "Enter the nozzle_temperature needed for extruding your filament."
-msgstr ""
+msgstr "Zadejte teplotu trysky potřebnou pro extrudování vašeho filamentu."
 
 msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
-msgstr ""
+msgstr "Obecné pravidlo je 160 až 230 °C pro PLA a 215 až 250 °C pro ABS."
 
 msgid "Extrusion Temperature:"
-msgstr ""
+msgstr "Teplota extruze:"
 
 msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
-msgstr ""
+msgstr "Zadejte teplotu podložky potřebnou pro přilnutí filamentu na vyhřívanou podložku."
 
 msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
-msgstr ""
+msgstr "Obecné pravidlo je 60 °C pro PLA a 110 °C pro ABS. Ponechte nulu, pokud nemáte vyhřívanou podložku."
 
 msgid "Bed Temperature:"
-msgstr ""
+msgstr "Teplota podložky:"
 
 msgid "SLA Materials"
-msgstr ""
+msgstr "Materiály SLA"
 
 msgid "FFF Technology Printers"
-msgstr ""
+msgstr "Tiskárny s technologií FFF"
 
 msgid "SLA Technology Printers"
-msgstr ""
+msgstr "Tiskárny s technologií SLA"
 
 msgid "Following printer profiles has no default filament: %1%Please select one manually."
-msgstr ""
+msgstr "Následující profily tiskáren nemají výchozí filament: %1%Vyberte prosím jeden ručně."
 
 msgid "Following printer profiles has no default material: %1%Please select one manually."
-msgstr ""
+msgstr "Následující profily tiskáren nemají výchozí materiál: %1%Vyberte prosím jeden ručně."
 
 msgid "The following FFF printer models have no filament selected:"
-msgstr ""
+msgstr "Následující modely tiskáren FFF nemají vybraný filament:"
 
 msgid "Do you want to select default filaments for these FFF printer models?"
-msgstr ""
+msgstr "Chcete vybrat výchozí filamenty pro tyto modely tiskáren FFF?"
 
 msgid "Configuration is edited in ConfigWizard"
-msgstr ""
+msgstr "Konfigurace je upravována v ConfigWizard"
 
 msgid "All user presets will be deleted."
-msgstr ""
+msgstr "Všechny uživatelské předvolby budou smazány."
 
 msgid "A new Printer was installed and it will be activated."
-msgstr ""
+msgstr "Byla nainstalována nová tiskárna a bude aktivována."
 
 msgid "Some Printers were uninstalled."
-msgstr ""
+msgstr "Některé tiskárny byly odinstalovány."
 
 msgid "A new filament was installed and it will be activated."
-msgstr ""
+msgstr "Byl nainstalován nový filament a bude aktivován."
 
 msgid "A new SLA material was installed and it will be activated."
-msgstr ""
+msgstr "Byl nainstalován nový materiál SLA a bude aktivován."
 
 msgid "Some filaments were uninstalled."
-msgstr ""
+msgstr "Některé filamenty byly odinstalovány."
 
 msgid "Custom printer was installed and it will be activated."
-msgstr ""
+msgstr "Vlastní tiskárna byla nainstalována a bude aktivována."
 
 msgid "<Back"
-msgstr ""
+msgstr "<Zpět"
 
 msgid "Next>"
-msgstr ""
+msgstr "Další>"
 
 msgid "Filament Profiles Selection"
-msgstr ""
+msgstr "Výběr profilů filamentů"
 
 msgid "Configuration Assistant"
-msgstr ""
+msgstr "Průvodce konfigurací"
 
 msgid "Configuration &Assistant"
-msgstr ""
+msgstr "Průvodce &konfigurací"
 
 msgid "Configuration Wizard"
-msgstr ""
+msgstr "Průvodce nastavením"
 
 msgid "Configuration &Wizard"
-msgstr ""
+msgstr "Průvodce &nastavením"
 
 msgid "A new vendor was installed and one of its printers will be activated"
 msgid_plural "New vendors were installed and one of theirs printers will be activated"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Byl nainstalován nový výrobce a jedna z jeho tiskáren bude aktivována"
+msgstr[1] "Byl nainstalován nový výrobce a jedna z jeho tiskáren bude aktivována"
 
 msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Integrace do prostředí selhala – boost::filesystem::canonical nevrátil cestu k AppImage."
 
 msgid "Performing desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Integrace do prostředí selhala – spustitelný soubor nebyl nalezen."
 
 msgid "Performing desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Integrace do prostředí selhala, protože adresář aplikace nebyl nalezen."
 
 msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
-msgstr ""
+msgstr "Integrace do prostředí selhala – soubor plochy Gcodeviewer nelze vytvořit. Soubor plochy OrcaSlicer byl pravděpodobně vytvořen úspěšně."
 
 msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Integrace stahovače do prostředí selhala – boost::filesystem::canonical nevrátil cestu k AppImage."
 
 msgid "Performing downloader desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Integrace stahovače do prostředí selhala – spustitelný soubor nebyl nalezen."
 
 msgid "Performing downloader desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Integrace stahovače do prostředí selhala, protože adresář aplikace nebyl nalezen."
 
 msgid "Desktop Integration"
-msgstr ""
+msgstr "Integrace do prostředí"
 
 msgid ""
 "Desktop Integration sets this binary to be searchable by the system.\n"
@@ -19373,231 +19373,231 @@ msgid ""
 msgstr ""
 
 msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
-msgstr ""
+msgstr "Aktuální nebo cílová teplota komory překračuje 45\\u2103. Aby nedošlo k ucpání extrudéru, není povoleno vkládání filamentu na nízké teploty (PLA/PETG/TPU)."
 
 msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
-msgstr ""
+msgstr "V extrudéru je vložen filament na nízké teploty (PLA/PETG/TPU). Aby nedošlo k ucpání extrudéru, není povoleno nastavit teplotu komory nad 45\\u2103."
 
 msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
-msgstr ""
+msgstr "Pokud nastavíte teplotu komory pod 40\\u2103, řízení teploty komory nebude aktivováno a cílová teplota komory bude automaticky nastavena na 0\\u2103."
 
 msgid "The download has failed"
-msgstr ""
+msgstr "Stahování selhalo"
 
 msgid "Can't create file at %1%"
-msgstr ""
+msgstr "Nelze vytvořit soubor v %1%"
 
 msgid "Archive preview"
-msgstr ""
+msgstr "Náhled archivu"
 
 msgid "Movement:"
-msgstr ""
+msgstr "Pohyb:"
 
 msgid "Movement"
-msgstr ""
+msgstr "Pohyb"
 
 msgid "Auto Segment"
-msgstr ""
+msgstr "Automatické segmentování"
 
 msgid "Depth ratio"
-msgstr ""
+msgstr "Poměr hloubky"
 
 msgid "Prizm"
-msgstr ""
+msgstr "Hranol"
 
 msgid "connector is out of cut contour"
-msgstr ""
+msgstr "konektor je mimo řezný obrys"
 
 msgid "connectors are out of cut contour"
-msgstr ""
+msgstr "konektory jsou mimo řezný obrys"
 
 msgid "connector is out of object"
-msgstr ""
+msgstr "konektor je mimo objekt"
 
 msgid "connectors is out of object"
-msgstr ""
+msgstr "konektory jsou mimo objekt"
 
 msgid ""
 "Invalid state. \n"
 "No one part is selected for keep after cut"
-msgstr ""
+msgstr "Neplatný stav. \nŽádná část není vybrána pro zachování po řezu"
 
 msgid "Please confirm explosion ratio = 1 and select at least two volumes."
-msgstr ""
+msgstr "Potvrďte prosím poměr rozložení = 1 a vyberte alespoň dva objemy."
 
 msgid "Please select at least two volumes."
-msgstr ""
+msgstr "Vyberte prosím alespoň dva objemy."
 
 msgid "(Moving)"
-msgstr ""
+msgstr "(Pohyb)"
 
 msgid "Point and point assembly"
-msgstr ""
+msgstr "Sestavení bod-bod"
 
 msgid ""
 "It is recommended to assemble the objects first,\n"
 "because the objects is restriced to bed \n"
 "and only parts can be lifted."
-msgstr ""
+msgstr "Doporučuje se nejprve sestavit objekty,\nprotože objekty jsou omezeny na podložku \na lze zdvihnout pouze části."
 
 msgid "Face and face assembly"
-msgstr ""
+msgstr "Sestavení plocha-plocha"
 
 msgid "Entering Assembly gizmo"
-msgstr ""
+msgstr "Vstup do nástroje Sestavení"
 
 msgid "Leaving Assembly gizmo"
-msgstr ""
+msgstr "Opuštění nástroje Sestavení"
 
 msgid "Entering Cut gizmo"
-msgstr ""
+msgstr "Vstup do nástroje Řez"
 
 msgid "Leaving Cut gizmo"
-msgstr ""
+msgstr "Opuštění nástroje Řez"
 
 msgid "Cut gizmo editing"
-msgstr ""
+msgstr "Úpravy nástrojem Řez"
 
 msgid "Add fuzzy skin"
-msgstr ""
+msgstr "Přidat texturu povrchu"
 
 msgid "Remove fuzzy skin"
-msgstr ""
+msgstr "Odebrat texturu povrchu"
 
 msgid "Reset selection"
-msgstr ""
+msgstr "Obnovit výběr"
 
 msgid "Entering Paint-on fuzzy skin"
-msgstr ""
+msgstr "Vstup do malování textury povrchu"
 
 msgid "Leaving Paint-on fuzzy skin"
-msgstr ""
+msgstr "Opuštění malování textury povrchu"
 
 msgid "Paint-on fuzzy skin editing"
-msgstr ""
+msgstr "Úpravy malování textury povrchu"
 
 msgid "Hollow this object"
-msgstr ""
+msgstr "Vytvořit dutinu v objektu"
 
 msgid "Preview hollowed and drilled model"
-msgstr ""
+msgstr "Náhled vydutého a provrtaného modelu"
 
 msgid "Offset"
-msgstr ""
+msgstr "Odsazení"
 
 msgid "Closing distance"
-msgstr ""
+msgstr "Uzavírací vzdálenost"
 
 msgid "Hole diameter"
-msgstr ""
+msgstr "Průměr otvoru"
 
 msgid "Hole depth"
-msgstr ""
+msgstr "Hloubka otvoru"
 
 msgid "Remove selected holes"
-msgstr ""
+msgstr "Odebrat vybrané otvory"
 
 msgid "Remove all holes"
-msgstr ""
+msgstr "Odebrat všechny otvory"
 
 msgid "Clipping of view"
-msgstr ""
+msgstr "Ořez zobrazení"
 
 msgid "Show supports"
-msgstr ""
+msgstr "Zobrazit podpory"
 
 msgid "Hollow and drill"
-msgstr ""
+msgstr "Dutinování a vrtání"
 
 msgid "Entering Measure gizmo"
-msgstr ""
+msgstr "Vstup do nástroje Měření"
 
 msgid "Leaving Measure gizmo"
-msgstr ""
+msgstr "Opuštění nástroje Měření"
 
 msgid "Model simplification has been canceled"
-msgstr ""
+msgstr "Zjednodušení modelu bylo zrušeno"
 
 msgid "Lock supports under new islands"
-msgstr ""
+msgstr "Zamknout podpory pod novými ostrůvky"
 
 msgid "Remove all points"
-msgstr ""
+msgstr "Odebrat všechny body"
 
 msgid "Apply changes"
-msgstr ""
+msgstr "Použít změny"
 
 msgid "Discard changes"
-msgstr ""
+msgstr "Zahodit změny"
 
 msgid "Minimal points distance"
-msgstr ""
+msgstr "Minimální vzdálenost bodů"
 
 msgid "Support points density"
-msgstr ""
+msgstr "Hustota podpůrných bodů"
 
 msgid "Manual editing"
-msgstr ""
+msgstr "Ruční úpravy"
 
 msgid "SLA Support Points"
-msgstr ""
+msgstr "Podpůrné body SLA"
 
 msgid "Do you want to save your manually edited support points?"
-msgstr ""
+msgstr "Chcete uložit ručně upravené podpůrné body?"
 
 msgid "Save support points?"
-msgstr ""
+msgstr "Uložit podpůrné body?"
 
 msgid "Autogeneration will erase all manually edited points."
-msgstr ""
+msgstr "Automatické generování smaže všechny ručně upravené body."
 
 msgid "Are you sure you want to do it?"
-msgstr ""
+msgstr "Opravdu chcete tuto akci provést?"
 
 msgid "SLA gizmo keyboard shortcuts"
-msgstr ""
+msgstr "Klávesové zkratky nástroje SLA"
 
 msgid "Note: some shortcuts work in (non)editing mode only."
-msgstr ""
+msgstr "Poznámka: některé zkratky fungují pouze v režimu (bez) úprav."
 
 msgid "Add point"
-msgstr ""
+msgstr "Přidat bod"
 
 msgid "Remove point"
-msgstr ""
+msgstr "Odebrat bod"
 
 msgid "Move point"
-msgstr ""
+msgstr "Přesunout bod"
 
 msgid "Add point to selection"
-msgstr ""
+msgstr "Přidat bod do výběru"
 
 msgid "Remove point from selection"
-msgstr ""
+msgstr "Odebrat bod z výběru"
 
 msgid "Select by rectangle"
-msgstr ""
+msgstr "Vybrat obdélníkem"
 
 msgid "Deselect by rectangle"
-msgstr ""
+msgstr "Odebrat výběr obdélníkem"
 
 msgid "Select all points"
-msgstr ""
+msgstr "Vybrat všechny body"
 
 msgid "Move clipping plane"
-msgstr ""
+msgstr "Přesunout ořezávací rovinu"
 
 msgid "Reset clipping plane"
-msgstr ""
+msgstr "Obnovit ořezávací rovinu"
 
 msgid "Switch to editing mode"
-msgstr ""
+msgstr "Přepnout do režimu úprav"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calage 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calage 3 SNDT"
 
 msgid ""
 "This calibration model works best with specific infill settings.\n"
@@ -19608,282 +19608,282 @@ msgid ""
 "\n"
 "Yes - Change these settings automatically\n"
 "No  - Do not change these settings for me"
-msgstr ""
+msgstr "Tento kalibrační model funguje nejlépe s konkrétním nastavením výplně.\nPro optimální výsledky kalibrace se doporučuje nastavit:\n- Směr výplně: %.0f\\u00b0\n- Směr plné výplně: %.0f\\u00b0\n- Pouze jedna stěna na první vrstvě: %s\n\nAno - Změnit tato nastavení automaticky\nNe  - Neměnit tato nastavení za mě"
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calage 1 Nova"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Kalibrační modely pro dvojitou hlavu"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Kalibrační modely pro jednoduchou hlavu"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx Handy Models"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D Models"
 
 msgid "Add Emboss text object"
-msgstr ""
+msgstr "Přidat objekt s reliéfním textem"
 
 msgid "Emboss attribute change"
-msgstr ""
+msgstr "Změna atributu reliéfu"
 
 msgid "Add Emboss text Volume"
-msgstr ""
+msgstr "Přidat objem s reliéfním textem"
 
 msgid "Font doesn't have any shape for given text."
-msgstr ""
+msgstr "Písmo nemá žádný tvar pro zadaný text."
 
 msgid "There is no valid surface for text projection."
-msgstr ""
+msgstr "Neexistuje žádný platný povrch pro projekci textu."
 
 msgid "An unexpected error occurred"
-msgstr ""
+msgstr "Došlo k neočekávané chybě"
 
 msgid "Best surface quality"
-msgstr ""
+msgstr "Nejlepší kvalita povrchu"
 
 msgid "Optimize object rotation for best surface quality."
-msgstr ""
+msgstr "Optimalizovat otočení objektu pro nejlepší kvalitu povrchu."
 
 msgid "Reduced overhang slopes"
-msgstr ""
+msgstr "Snížené přesahy svahů"
 
 msgid ""
 "Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
 "Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
-msgstr ""
+msgstr "Optimalizovat otočení objektu tak, aby bylo minimální množství přesahů vyžadujících podpůrné struktury.\nUpozorňujeme, že tato metoda se pokusí najít nejlepší plochu objektu pro kontakt s tiskovou podložkou, pokud není nastavena výška."
 
 msgid "Lowest Z height"
-msgstr ""
+msgstr "Nejnižší výška Z"
 
 msgid "Rotate the model to have the lowest z height for faster print time."
-msgstr ""
+msgstr "Otočit model tak, aby měl nejnižší výšku Z pro kratší dobu tisku."
 
 msgid "Choose SLA archive:"
-msgstr ""
+msgstr "Zvolte archiv SLA:"
 
 msgid "Import file"
-msgstr ""
+msgstr "Importovat soubor"
 
 msgid "Import model and profile"
-msgstr ""
+msgstr "Importovat model a profil"
 
 msgid "Import profile only"
-msgstr ""
+msgstr "Importovat pouze profil"
 
 msgid "Import model only"
-msgstr ""
+msgstr "Importovat pouze model"
 
 msgid "Accurate"
-msgstr ""
+msgstr "Přesný"
 
 msgid "Balanced"
-msgstr ""
+msgstr "Vyvážený"
 
 msgid "Quick"
-msgstr ""
+msgstr "Rychlý"
 
 msgid "3D Models"
-msgstr ""
+msgstr "3D modely"
 
 msgid "Click to return"
-msgstr ""
+msgstr "Kliknutím se vrátíte"
 
 msgid "Left Arrow"
-msgstr ""
+msgstr "Šipka doleva"
 
 msgid "Click to continue"
-msgstr ""
+msgstr "Kliknutím pokračujete"
 
 msgid "Right Arrow"
-msgstr ""
+msgstr "Šipka doprava"
 
 msgid "Authorizing..."
-msgstr ""
+msgstr "Autorizace..."
 
 msgid "NO RAMMING AT ALL"
-msgstr ""
+msgstr "ŽÁDNÉ NABÍJENÍ"
 
 msgid "Volumetric speed"
-msgstr ""
+msgstr "Objemová rychlost"
 
 msgid "Search"
-msgstr ""
+msgstr "Hledat"
 
 msgid "My Device"
-msgstr ""
+msgstr "Moje zařízení"
 
 msgid "Other Device"
-msgstr ""
+msgstr "Jiné zařízení"
 
 msgid "Can't find my devices?"
-msgstr ""
+msgstr "Nelze najít moje zařízení?"
 
 msgid "Modifying the device name"
-msgstr ""
+msgstr "Úprava názvu zařízení"
 
 msgid "Bind with Access Code"
-msgstr ""
+msgstr "Párovat pomocí přístupového kódu"
 
 msgid "Step file import parameters"
-msgstr ""
+msgstr "Parametry importu souboru STEP"
 
 msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
-msgstr ""
+msgstr "Menší lineární a úhlové odchylky vedou k transformacím vyšší kvality, ale zvyšují dobu zpracování."
 
 msgid "View Wiki for more information"
-msgstr ""
+msgstr "Více informací najdete na Wiki"
 
 msgid "Linear Deflection"
-msgstr ""
+msgstr "Lineární odchylka"
 
 msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
-msgstr ""
+msgstr "Zadejte platnou hodnotu (0,001 < lineární odchylka < 0,1)"
 
 msgid "Angle Deflection"
-msgstr ""
+msgstr "Úhlová odchylka"
 
 msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
-msgstr ""
+msgstr "Zadejte platnou hodnotu (0,01 < úhlová odchylka < 1,0)"
 
 msgid "Split compound and compsolid into multiple objects"
-msgstr ""
+msgstr "Rozdělit složené těleso a compsolid na více objektů"
 
 msgid "Number of triangular facets"
-msgstr ""
+msgstr "Počet trojúhelníkových ploch"
 
 msgid "Calculating, please wait..."
-msgstr ""
+msgstr "Probíhá výpočet, prosím čekejte..."
 
 msgid "Move over surface"
-msgstr ""
+msgstr "Přesunout po povrchu"
 
 msgid "System Information"
-msgstr ""
+msgstr "Systémové informace"
 
 msgid "Blacklisted libraries loaded into OrcaSlicer process:"
-msgstr ""
+msgstr "Knihovny na černé listině načtené do procesu OrcaSlicer:"
 
 msgid "SIMD is supported:"
-msgstr ""
+msgstr "SIMD je podporováno:"
 
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopírovat do schránky"
 
 msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Teplota podložky při použití Cosmyx Textured Bed. Hodnota -1 znamená, že filament nepodporuje tisk na Cosmyx Textured Bed. Hodnota 0 znamená, že podložka je vypnutá."
 
 msgid "Forward"
-msgstr ""
+msgstr "Vpřed"
 
 msgid "Reload"
-msgstr ""
+msgstr "Obnovit"
 
 msgid "Tools"
-msgstr ""
+msgstr "Nástroje"
 
 msgid "View Source"
-msgstr ""
+msgstr "Zobrazit zdroj"
 
 msgid "View Text"
-msgstr ""
+msgstr "Zobrazit text"
 
 msgid "Handle Navigation"
-msgstr ""
+msgstr "Zpracovat navigaci"
 
 msgid "Handle New Windows"
-msgstr ""
+msgstr "Zpracovat nová okna"
 
 msgid "Edit Mode"
-msgstr ""
+msgstr "Režim úprav"
 
 msgid "Run Script"
-msgstr ""
+msgstr "Spustit skript"
 
 msgid "Add user script"
-msgstr ""
+msgstr "Přidat uživatelský skript"
 
 msgid "Set custom user agent"
-msgstr ""
+msgstr "Nastavit vlastní uživatelský agent"
 
 msgid "Clear Selection"
-msgstr ""
+msgstr "Zrušit výběr"
 
 msgid "Delete Selection"
-msgstr ""
+msgstr "Smazat výběr"
 
 msgid "Custom Scheme Example"
-msgstr ""
+msgstr "Příklad vlastního schématu"
 
 msgid "Memory File System Example"
-msgstr ""
+msgstr "Příklad souborového systému v paměti"
 
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "Povolit kontextové menu"
 
 msgid "Enable Dev Tools"
-msgstr ""
+msgstr "Povolit vývojářské nástroje"
 
 msgid "An error occurred loading "
-msgstr ""
+msgstr "Při načítání došlo k chybě "
 
 msgid "%"
-msgstr ""
+msgstr "%"
 
 msgid "Connected to CrealityPrint successfully!"
-msgstr ""
+msgstr "Úspěšně připojeno k CrealityPrint!"
 
 msgid "Could not connect to CrealityPrint"
-msgstr ""
+msgstr "Nelze se připojit k CrealityPrint"
 
 msgid "Connection to ElegooLink is working correctly."
-msgstr ""
+msgstr "Připojení k ElegooLink funguje správně."
 
 msgid "Could not connect to ElegooLink"
-msgstr ""
+msgstr "Nelze se připojit k ElegooLink"
 
 msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "Soubor byl přenesen, ale došlo k neznámým chybám. Zkontrolujte prosím stránku zařízení pro daný soubor a zkuste znovu zahájit tisk."
 
 msgid "Error code not found"
-msgstr ""
+msgstr "Kód chyby nebyl nalezen"
 
 msgid "The printer is busy, Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "Tiskárna je zaneprázdněna. Zkontrolujte prosím stránku zařízení pro daný soubor a zkuste znovu zahájit tisk."
 
 msgid "The file is lost, please check and try again."
-msgstr ""
+msgstr "Soubor byl ztracen, zkontrolujte prosím situaci a zkuste to znovu."
 
 msgid "The file is corrupted, please check and try again."
-msgstr ""
+msgstr "Soubor je poškozen, zkontrolujte prosím situaci a zkuste to znovu."
 
 msgid "Transmission abnormality, please check and try again."
-msgstr ""
+msgstr "Anomálie přenosu, zkontrolujte prosím situaci a zkuste to znovu."
 
 msgid "The file does not match the printer, please check and try again."
-msgstr ""
+msgstr "Soubor neodpovídá tiskárně, zkontrolujte prosím situaci a zkuste to znovu."
 
 msgid "Start print timeout"
-msgstr ""
+msgstr "Časový limit zahájení tisku vypršel"
 
 msgid "Start print failed"
-msgstr ""
+msgstr "Zahájení tisku selhalo"
 
 msgid "Connection to ESP3D is working correctly."
-msgstr ""
+msgstr "Připojení k ESP3D funguje správně."
 
 msgid "Could not connect to ESP3D"
-msgstr ""
+msgstr "Nelze se připojit k ESP3D"
 
 msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
-msgstr ""
+msgstr "Časový limit připojení vypršel. Zkontrolujte prosím, zda tiskárna a počítačová síť fungují správně, a potvrďte, že jsou ve stejné síti."
 
 msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
-msgstr ""
+msgstr "Název hostitele/IP/URL nelze analyzovat, zkontrolujte prosím a zkuste to znovu."
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
-msgstr ""
+msgstr "Přenos souboru/dat byl přerušen. Zkontrolujte prosím tiskárnu a síť a zkuste to znovu."

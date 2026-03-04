@@ -18749,349 +18749,349 @@ msgid "Tungsten Carbide"
 msgstr ""
 
 msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
-msgstr ""
+msgstr "Het geselecteerde 3mf-bestand is opgeslagen met een nieuwere versie van %1% en is niet compatibel."
 
 msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "De geselecteerde 3MF bevat een object met FDM-ondersteuning geschilderd met een nieuwere versie van PrusaSlicer en is niet compatibel."
 
 msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "De geselecteerde 3MF bevat een object met naad geschilderd met een nieuwere versie van PrusaSlicer en is niet compatibel."
 
 msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "De geselecteerde 3MF bevat een object met meerdere materialen geschilderd met een nieuwere versie van PrusaSlicer en is niet compatibel."
 
 msgid ""
 "Post-processing script %1% failed.\n"
 "\n"
 "The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
 "Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
-msgstr ""
+msgstr "Nabewerkingsscript %1% mislukt.\n\nHet nabewerkingsscript moet het G-code-bestand %2% ter plekke wijzigen, maar het G-code-bestand is verwijderd en waarschijnlijk onder een nieuwe naam opgeslagen.\nPas het nabewerkingsscript aan om de G-code ter plekke te wijzigen en raadpleeg de handleiding voor het optioneel hernoemen van het nabewerkte G-code-bestand.\n"
 
 msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Bedtemperatuur voor lagen behalve de eerste. Een waarde van -1 betekent dat het filament afdrukken op het Cosmyx Textured Bed niet ondersteunt. Een waarde van 0 betekent dat het bed uit is."
 
 msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Bedtemperatuur van de eerste laag. Een waarde van -1 betekent dat het filament afdrukken op het Cosmyx Textured Bed niet ondersteunt. Een waarde van 0 betekent dat het bed uit is."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx Textured Bed"
 
 msgid "Hollowing"
-msgstr ""
+msgstr "Uithollen"
 
 msgid "Pad brim size is too small for the current configuration."
-msgstr ""
+msgstr "De randgrootte van het platform is te klein voor de huidige configuratie."
 
 msgid "Cannot proceed without support points! Add support points or disable support generation."
-msgstr ""
+msgstr "Kan niet doorgaan zonder ondersteuningspunten! Voeg ondersteuningspunten toe of schakel ondersteuningsgeneratie uit."
 
 msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
-msgstr ""
+msgstr "De verhoging is te laag voor het object. Gebruik de functie \"Platform rondom object\" om het object zonder verhoging af te drukken."
 
 msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
-msgstr ""
+msgstr "De uiteinden van de ondersteuningspilaren worden geplaatst in de ruimte tussen het object en het platform. De 'Veiligheidsafstand ondersteuningsbasis' moet groter zijn dan de parameter 'Platformobjectruimte' om dit te voorkomen."
 
 msgid "Exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "De belichtingstijd valt buiten de grenzen van het printerprofiel."
 
 msgid "Initial exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "De initiële belichtingstijd valt buiten de grenzen van het printerprofiel."
 
 msgid "Slicing done"
-msgstr ""
+msgstr "Slicing voltooid"
 
 msgid "Hollowing model"
-msgstr ""
+msgstr "Model uithollen"
 
 msgid "Drilling holes into model."
-msgstr ""
+msgstr "Gaten boren in model."
 
 msgid "Slicing model"
-msgstr ""
+msgstr "Model slicen"
 
 msgid "Generating support points"
-msgstr ""
+msgstr "Ondersteuningspunten genereren"
 
 msgid "Generating support tree"
-msgstr ""
+msgstr "Ondersteuningsboom genereren"
 
 msgid "Generating pad"
-msgstr ""
+msgstr "Platform genereren"
 
 msgid "Slicing supports"
-msgstr ""
+msgstr "Ondersteuningen slicen"
 
 msgid "Merging slices and calculating statistics"
-msgstr ""
+msgstr "Lagen samenvoegen en statistieken berekenen"
 
 msgid "Rasterizing layers"
-msgstr ""
+msgstr "Lagen rasteren"
 
 msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
-msgstr ""
+msgstr "Het slicen moest worden gestopt vanwege een interne fout: Inconsistente laagindex."
 
 msgid "Visualizing supports"
-msgstr ""
+msgstr "Ondersteuningen visualiseren"
 
 msgid "No pad can be generated for this model with the current configuration"
-msgstr ""
+msgstr "Voor dit model kan met de huidige configuratie geen platform worden gegenereerd"
 
 msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
-msgstr ""
+msgstr "Er zijn objecten die niet afgedrukt kunnen worden. Probeer de ondersteuningsinstellingen aan te passen om de objecten afdrukbaar te maken."
 
 msgid "Taking a configuration snapshot failed."
-msgstr ""
+msgstr "Het maken van een configuratiemomentopname is mislukt."
 
 msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
-msgstr ""
+msgstr "OrcaSlicer heeft een fout ondervonden bij het maken van een configuratiemomentopname."
 
 msgid "OrcaSlicer error"
-msgstr ""
+msgstr "OrcaSlicer-fout"
 
 msgid "Continue"
-msgstr ""
+msgstr "Doorgaan"
 
 msgid "Abort"
-msgstr ""
+msgstr "Afbreken"
 
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Cosmyx Bundle Versie %s"
 
 msgid "Model Pictures"
-msgstr ""
+msgstr "Modelafbeeldingen"
 
 msgid "Auxiliaryies"
-msgstr ""
+msgstr "Hulpmiddelen"
 
 msgid "nozzle"
-msgstr ""
+msgstr "nozzle"
 
 msgid "Alternate nozzles:"
-msgstr ""
+msgstr "Alternatieve nozzles:"
 
 msgid "All standard"
-msgstr ""
+msgstr "Alle standaard"
 
 msgid "Welcome to the %s Configuration Assistant"
-msgstr ""
+msgstr "Welkom bij de %s Configuratieassistent"
 
 msgid "Welcome to the %s Configuration Wizard"
-msgstr ""
+msgstr "Welkom bij de %s Configuratieassistent"
 
 msgid "Welcome"
-msgstr ""
+msgstr "Welkom"
 
 msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
-msgstr ""
+msgstr "Hallo, welkom bij %s! Deze %s helpt u met de initiële configuratie; slechts een paar instellingen en u bent klaar om af te drukken."
 
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
-msgstr ""
+msgstr "Gebruikersprofielen verwijderen (er wordt vooraf een momentopname gemaakt)"
 
 msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
-msgstr ""
+msgstr "Bureaubladintegratie uitvoeren (maakt dit binaire bestand doorzoekbaar door het systeem)."
 
 msgid "%s Family"
-msgstr ""
+msgstr "%s Familie"
 
 msgid "Printer:"
-msgstr ""
+msgstr "Printer:"
 
 msgid "Vendor:"
-msgstr ""
+msgstr "Leverancier:"
 
 msgid "Profile:"
-msgstr ""
+msgstr "Profiel:"
 
 msgid "(All)"
-msgstr ""
+msgstr "(Alle)"
 
 msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
-msgstr ""
+msgstr "%1% gemarkeerd met <b>*</b> zijn <b>niet</b> compatibel met sommige geïnstalleerde printers."
 
 msgid "SLA materials"
-msgstr ""
+msgstr "SLA-materialen"
 
 msgid "All installed printers are compatible with the selected %1%."
-msgstr ""
+msgstr "Alle geïnstalleerde printers zijn compatibel met het geselecteerde %1%."
 
 msgid "filament"
-msgstr ""
+msgstr "filament"
 
 msgid "SLA material"
-msgstr ""
+msgstr "SLA-materiaal"
 
 msgid "Only the following installed printers are compatible with the selected filaments"
-msgstr ""
+msgstr "Alleen de volgende geïnstalleerde printers zijn compatibel met de geselecteerde filamenten"
 
 msgid "Only the following installed printers are compatible with the selected SLA materials"
-msgstr ""
+msgstr "Alleen de volgende geïnstalleerde printers zijn compatibel met de geselecteerde SLA-materialen"
 
 msgid "Custom Printer Setup"
-msgstr ""
+msgstr "Aangepaste printerinstelling"
 
 msgid "Custom Printer"
-msgstr ""
+msgstr "Aangepaste printer"
 
 msgid "Define a custom printer profile"
-msgstr ""
+msgstr "Een aangepast printerprofiel definiëren"
 
 msgid "Custom profile name:"
-msgstr ""
+msgstr "Naam van aangepast profiel:"
 
 msgid "Firmware Type"
-msgstr ""
+msgstr "Firmwaretype"
 
 msgid "Firmware"
-msgstr ""
+msgstr "Firmware"
 
 msgid "Choose the type of firmware used by your printer."
-msgstr ""
+msgstr "Kies het type firmware dat door uw printer wordt gebruikt."
 
 msgid "Bed Shape and Size"
-msgstr ""
+msgstr "Bedvorm en -grootte"
 
 msgid "Set the shape of your printer's bed."
-msgstr ""
+msgstr "Stel de vorm van het printbed in."
 
 msgid "Invalid numeric input."
-msgstr ""
+msgstr "Ongeldige numerieke invoer."
 
 msgid "Filament and Nozzle Diameters"
-msgstr ""
+msgstr "Filament- en nozzlediameters"
 
 msgid "Print Diameters"
-msgstr ""
+msgstr "Afdrukdiameters"
 
 msgid "Enter the diameter of your printer's hot end nozzle."
-msgstr ""
+msgstr "Voer de diameter van de hotend-nozzle van uw printer in."
 
 msgid "Nozzle Diameter:"
-msgstr ""
+msgstr "Nozzlediameter:"
 
 msgid "Enter the diameter of your filament."
-msgstr ""
+msgstr "Voer de diameter van uw filament in."
 
 msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
-msgstr ""
+msgstr "Er is een goede nauwkeurigheid vereist, gebruik daarom een schuifmaat en doe meerdere metingen langs het filament, bereken vervolgens het gemiddelde."
 
 msgid "Filament Diameter:"
-msgstr ""
+msgstr "Filamentdiameter:"
 
 msgid "Nozzle and Bed Temperatures"
-msgstr ""
+msgstr "Nozzle- en bedtemperaturen"
 
 msgid "Enter the nozzle_temperature needed for extruding your filament."
-msgstr ""
+msgstr "Voer de nozzle_temperature in die nodig is voor het extruderen van uw filament."
 
 msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
-msgstr ""
+msgstr "Als vuistregel geldt: 160 tot 230 °C voor PLA en 215 tot 250 °C voor ABS."
 
 msgid "Extrusion Temperature:"
-msgstr ""
+msgstr "Extrusietemperatuur:"
 
 msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
-msgstr ""
+msgstr "Voer de bedtemperatuur in die nodig is om uw filament aan het verwarmde bed te laten hechten."
 
 msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
-msgstr ""
+msgstr "Als vuistregel geldt: 60 °C voor PLA en 110 °C voor ABS. Laat nul als u geen verwarmd bed heeft."
 
 msgid "Bed Temperature:"
-msgstr ""
+msgstr "Bedtemperatuur:"
 
 msgid "SLA Materials"
-msgstr ""
+msgstr "SLA-materialen"
 
 msgid "FFF Technology Printers"
-msgstr ""
+msgstr "FFF-technologieprinters"
 
 msgid "SLA Technology Printers"
-msgstr ""
+msgstr "SLA-technologieprinters"
 
 msgid "Following printer profiles has no default filament: %1%Please select one manually."
-msgstr ""
+msgstr "De volgende printerprofielen hebben geen standaard filament: %1%Selecteer er handmatig een."
 
 msgid "Following printer profiles has no default material: %1%Please select one manually."
-msgstr ""
+msgstr "De volgende printerprofielen hebben geen standaard materiaal: %1%Selecteer er handmatig een."
 
 msgid "The following FFF printer models have no filament selected:"
-msgstr ""
+msgstr "De volgende FFF-printermodellen hebben geen filament geselecteerd:"
 
 msgid "Do you want to select default filaments for these FFF printer models?"
-msgstr ""
+msgstr "Wilt u standaardfilamenten selecteren voor deze FFF-printermodellen?"
 
 msgid "Configuration is edited in ConfigWizard"
-msgstr ""
+msgstr "De configuratie wordt bewerkt in ConfigWizard"
 
 msgid "All user presets will be deleted."
-msgstr ""
+msgstr "Alle gebruikersvoorinstellingen worden verwijderd."
 
 msgid "A new Printer was installed and it will be activated."
-msgstr ""
+msgstr "Een nieuwe printer is geïnstalleerd en wordt geactiveerd."
 
 msgid "Some Printers were uninstalled."
-msgstr ""
+msgstr "Sommige printers zijn verwijderd."
 
 msgid "A new filament was installed and it will be activated."
-msgstr ""
+msgstr "Een nieuw filament is geïnstalleerd en wordt geactiveerd."
 
 msgid "A new SLA material was installed and it will be activated."
-msgstr ""
+msgstr "Een nieuw SLA-materiaal is geïnstalleerd en wordt geactiveerd."
 
 msgid "Some filaments were uninstalled."
-msgstr ""
+msgstr "Sommige filamenten zijn verwijderd."
 
 msgid "Custom printer was installed and it will be activated."
-msgstr ""
+msgstr "Een aangepaste printer is geïnstalleerd en wordt geactiveerd."
 
 msgid "<Back"
-msgstr ""
+msgstr "<Terug"
 
 msgid "Next>"
-msgstr ""
+msgstr "Volgende>"
 
 msgid "Filament Profiles Selection"
-msgstr ""
+msgstr "Filamentprofielselectie"
 
 msgid "Configuration Assistant"
-msgstr ""
+msgstr "Configuratieassistent"
 
 msgid "Configuration &Assistant"
-msgstr ""
+msgstr "Configuratie&assistent"
 
 msgid "Configuration Wizard"
-msgstr ""
+msgstr "Configuratieassistent"
 
 msgid "Configuration &Wizard"
-msgstr ""
+msgstr "Configuratie&assistent"
 
 msgid "A new vendor was installed and one of its printers will be activated"
 msgid_plural "New vendors were installed and one of theirs printers will be activated"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Een nieuwe leverancier is geïnstalleerd en een van zijn printers wordt geactiveerd"
+msgstr[1] "Een nieuwe leverancier is geïnstalleerd en een van zijn printers wordt geactiveerd"
 
 msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Bureaubladintegratie mislukt – boost::filesystem::canonical heeft geen AppImage-pad geretourneerd."
 
 msgid "Performing desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Bureaubladintegratie mislukt – Uitvoerbaar bestand kon niet worden gevonden."
 
 msgid "Performing desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Bureaubladintegratie mislukt omdat de toepassingsmap niet werd gevonden."
 
 msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
-msgstr ""
+msgstr "Bureaubladintegratie mislukt – Gcodeviewer-bureaubladbestand kon niet worden aangemaakt. Het OrcaSlicer-bureaubladbestand is waarschijnlijk succesvol aangemaakt."
 
 msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Downloader bureaubladintegratie mislukt – boost::filesystem::canonical heeft geen AppImage-pad geretourneerd."
 
 msgid "Performing downloader desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Downloader bureaubladintegratie mislukt – Uitvoerbaar bestand kon niet worden gevonden."
 
 msgid "Performing downloader desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Downloader bureaubladintegratie mislukt omdat de toepassingsmap niet werd gevonden."
 
 msgid "Desktop Integration"
-msgstr ""
+msgstr "Bureaubladintegratie"
 
 msgid ""
 "Desktop Integration sets this binary to be searchable by the system.\n"
@@ -19100,231 +19100,231 @@ msgid ""
 msgstr ""
 
 msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
-msgstr ""
+msgstr "De huidige kamertemperatuur of de doelkamertemperatuur overschrijdt 45\\u2103. Om verstopping van de extruder te voorkomen, is het niet toegestaan laagtemperatuurfilament (PLA/PETG/TPU) te laden."
 
 msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
-msgstr ""
+msgstr "Laagtemperatuurfilament (PLA/PETG/TPU) is geladen in de extruder. Om verstopping van de extruder te voorkomen, is het niet toegestaan de kamertemperatuur boven 45\\u2103 in te stellen."
 
 msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
-msgstr ""
+msgstr "Wanneer u de kamertemperatuur onder 40\\u2103 instelt, wordt de kamertemperatuurregeling niet geactiveerd en wordt de doelkamertemperatuur automatisch ingesteld op 0\\u2103."
 
 msgid "The download has failed"
-msgstr ""
+msgstr "Het downloaden is mislukt"
 
 msgid "Can't create file at %1%"
-msgstr ""
+msgstr "Kan geen bestand aanmaken op %1%"
 
 msgid "Archive preview"
-msgstr ""
+msgstr "Archief voorvertoning"
 
 msgid "Movement:"
-msgstr ""
+msgstr "Beweging:"
 
 msgid "Movement"
-msgstr ""
+msgstr "Beweging"
 
 msgid "Auto Segment"
-msgstr ""
+msgstr "Automatisch segmenteren"
 
 msgid "Depth ratio"
-msgstr ""
+msgstr "Diepteverhouding"
 
 msgid "Prizm"
-msgstr ""
+msgstr "Prisma"
 
 msgid "connector is out of cut contour"
-msgstr ""
+msgstr "connector valt buiten het snijcontour"
 
 msgid "connectors are out of cut contour"
-msgstr ""
+msgstr "connectors vallen buiten het snijcontour"
 
 msgid "connector is out of object"
-msgstr ""
+msgstr "connector valt buiten het object"
 
 msgid "connectors is out of object"
-msgstr ""
+msgstr "connectors vallen buiten het object"
 
 msgid ""
 "Invalid state. \n"
 "No one part is selected for keep after cut"
-msgstr ""
+msgstr "Ongeldige toestand. \nGeen enkel onderdeel is geselecteerd om te bewaren na het snijden"
 
 msgid "Please confirm explosion ratio = 1 and select at least two volumes."
-msgstr ""
+msgstr "Bevestig explosieratio = 1 en selecteer minimaal twee volumes."
 
 msgid "Please select at least two volumes."
-msgstr ""
+msgstr "Selecteer minimaal twee volumes."
 
 msgid "(Moving)"
-msgstr ""
+msgstr "(Beweegt)"
 
 msgid "Point and point assembly"
-msgstr ""
+msgstr "Punt-tot-punt montage"
 
 msgid ""
 "It is recommended to assemble the objects first,\n"
 "because the objects is restriced to bed \n"
 "and only parts can be lifted."
-msgstr ""
+msgstr "Het wordt aanbevolen de objecten eerst samen te stellen,\nomdat de objecten beperkt zijn tot het bed\nen alleen onderdelen kunnen worden opgetild."
 
 msgid "Face and face assembly"
-msgstr ""
+msgstr "Vlak-tot-vlak montage"
 
 msgid "Entering Assembly gizmo"
-msgstr ""
+msgstr "Assembly-gizmo openen"
 
 msgid "Leaving Assembly gizmo"
-msgstr ""
+msgstr "Assembly-gizmo sluiten"
 
 msgid "Entering Cut gizmo"
-msgstr ""
+msgstr "Snij-gizmo openen"
 
 msgid "Leaving Cut gizmo"
-msgstr ""
+msgstr "Snij-gizmo sluiten"
 
 msgid "Cut gizmo editing"
-msgstr ""
+msgstr "Snij-gizmo bewerken"
 
 msgid "Add fuzzy skin"
-msgstr ""
+msgstr "Ruwe textuur toevoegen"
 
 msgid "Remove fuzzy skin"
-msgstr ""
+msgstr "Ruwe textuur verwijderen"
 
 msgid "Reset selection"
-msgstr ""
+msgstr "Selectie resetten"
 
 msgid "Entering Paint-on fuzzy skin"
-msgstr ""
+msgstr "Schildertool voor ruwe textuur openen"
 
 msgid "Leaving Paint-on fuzzy skin"
-msgstr ""
+msgstr "Schildertool voor ruwe textuur sluiten"
 
 msgid "Paint-on fuzzy skin editing"
-msgstr ""
+msgstr "Schildertool voor ruwe textuur bewerken"
 
 msgid "Hollow this object"
-msgstr ""
+msgstr "Dit object uithollen"
 
 msgid "Preview hollowed and drilled model"
-msgstr ""
+msgstr "Uitgehold en geboord model bekijken"
 
 msgid "Offset"
-msgstr ""
+msgstr "Verschuiving"
 
 msgid "Closing distance"
-msgstr ""
+msgstr "Sluitafstand"
 
 msgid "Hole diameter"
-msgstr ""
+msgstr "Gatdiameter"
 
 msgid "Hole depth"
-msgstr ""
+msgstr "Gatdiepte"
 
 msgid "Remove selected holes"
-msgstr ""
+msgstr "Geselecteerde gaten verwijderen"
 
 msgid "Remove all holes"
-msgstr ""
+msgstr "Alle gaten verwijderen"
 
 msgid "Clipping of view"
-msgstr ""
+msgstr "Weergave afknippen"
 
 msgid "Show supports"
-msgstr ""
+msgstr "Ondersteuningen weergeven"
 
 msgid "Hollow and drill"
-msgstr ""
+msgstr "Uithollen en boren"
 
 msgid "Entering Measure gizmo"
-msgstr ""
+msgstr "Meet-gizmo openen"
 
 msgid "Leaving Measure gizmo"
-msgstr ""
+msgstr "Meet-gizmo sluiten"
 
 msgid "Model simplification has been canceled"
-msgstr ""
+msgstr "Modelvereenvoudiging is geannuleerd"
 
 msgid "Lock supports under new islands"
-msgstr ""
+msgstr "Ondersteuningen vergrendelen onder nieuwe eilanden"
 
 msgid "Remove all points"
-msgstr ""
+msgstr "Alle punten verwijderen"
 
 msgid "Apply changes"
-msgstr ""
+msgstr "Wijzigingen toepassen"
 
 msgid "Discard changes"
-msgstr ""
+msgstr "Wijzigingen verwijderen"
 
 msgid "Minimal points distance"
-msgstr ""
+msgstr "Minimale puntsafstand"
 
 msgid "Support points density"
-msgstr ""
+msgstr "Ondersteuningspuntdichtheid"
 
 msgid "Manual editing"
-msgstr ""
+msgstr "Handmatig bewerken"
 
 msgid "SLA Support Points"
-msgstr ""
+msgstr "SLA-ondersteuningspunten"
 
 msgid "Do you want to save your manually edited support points?"
-msgstr ""
+msgstr "Wilt u uw handmatig bewerkte ondersteuningspunten opslaan?"
 
 msgid "Save support points?"
-msgstr ""
+msgstr "Ondersteuningspunten opslaan?"
 
 msgid "Autogeneration will erase all manually edited points."
-msgstr ""
+msgstr "Automatisch genereren verwijdert alle handmatig bewerkte punten."
 
 msgid "Are you sure you want to do it?"
-msgstr ""
+msgstr "Weet u zeker dat u dit wilt doen?"
 
 msgid "SLA gizmo keyboard shortcuts"
-msgstr ""
+msgstr "SLA-gizmo sneltoetsen"
 
 msgid "Note: some shortcuts work in (non)editing mode only."
-msgstr ""
+msgstr "Opmerking: sommige sneltoetsen werken alleen in de (niet-)bewerkingsmodus."
 
 msgid "Add point"
-msgstr ""
+msgstr "Punt toevoegen"
 
 msgid "Remove point"
-msgstr ""
+msgstr "Punt verwijderen"
 
 msgid "Move point"
-msgstr ""
+msgstr "Punt verplaatsen"
 
 msgid "Add point to selection"
-msgstr ""
+msgstr "Punt aan selectie toevoegen"
 
 msgid "Remove point from selection"
-msgstr ""
+msgstr "Punt uit selectie verwijderen"
 
 msgid "Select by rectangle"
-msgstr ""
+msgstr "Selecteren met rechthoek"
 
 msgid "Deselect by rectangle"
-msgstr ""
+msgstr "Deselecteren met rechthoek"
 
 msgid "Select all points"
-msgstr ""
+msgstr "Alle punten selecteren"
 
 msgid "Move clipping plane"
-msgstr ""
+msgstr "Knipvlak verplaatsen"
 
 msgid "Reset clipping plane"
-msgstr ""
+msgstr "Knipvlak resetten"
 
 msgid "Switch to editing mode"
-msgstr ""
+msgstr "Overschakelen naar bewerkingsmodus"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calage 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calage 3 SNDT"
 
 msgid ""
 "This calibration model works best with specific infill settings.\n"
@@ -19335,282 +19335,282 @@ msgid ""
 "\n"
 "Yes - Change these settings automatically\n"
 "No  - Do not change these settings for me"
-msgstr ""
+msgstr "Dit kalibratiemodel werkt het beste met specifieke vullinstellingen.\nVoor optimale kalibratieresultaten is het raadzaam in te stellen:\n- Vulrichting: %.0f\\u00b0\n- Massieve vulrichting: %.0f\\u00b0\n- Slechts één wand op de eerste laag: %s\n\nJa – Deze instellingen automatisch wijzigen\nNee – Deze instellingen niet voor mij wijzigen"
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calage 1 Nova"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Kalibratiemodellen Dubbele Kop"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Kalibratiemodellen Enkele Kop"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx Handige Modellen"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D-modellen"
 
 msgid "Add Emboss text object"
-msgstr ""
+msgstr "Reliëftekstobject toevoegen"
 
 msgid "Emboss attribute change"
-msgstr ""
+msgstr "Reliëfattribuut wijzigen"
 
 msgid "Add Emboss text Volume"
-msgstr ""
+msgstr "Reliëftekstvolume toevoegen"
 
 msgid "Font doesn't have any shape for given text."
-msgstr ""
+msgstr "Het lettertype heeft geen vorm voor de opgegeven tekst."
 
 msgid "There is no valid surface for text projection."
-msgstr ""
+msgstr "Er is geen geldig oppervlak voor tekstprojectie."
 
 msgid "An unexpected error occurred"
-msgstr ""
+msgstr "Er is een onverwachte fout opgetreden"
 
 msgid "Best surface quality"
-msgstr ""
+msgstr "Beste oppervlaktekwaliteit"
 
 msgid "Optimize object rotation for best surface quality."
-msgstr ""
+msgstr "Objectrotatie optimaliseren voor de beste oppervlaktekwaliteit."
 
 msgid "Reduced overhang slopes"
-msgstr ""
+msgstr "Verminderde overhanghellingen"
 
 msgid ""
 "Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
 "Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
-msgstr ""
+msgstr "Objectrotatie optimaliseren om het minimum aantal overhangen te hebben die ondersteuningsstructuren nodig hebben.\nLet op dat deze methode zal proberen het beste oppervlak van het object te vinden voor contact met het printbed als er geen verhoging is ingesteld."
 
 msgid "Lowest Z height"
-msgstr ""
+msgstr "Laagste Z-hoogte"
 
 msgid "Rotate the model to have the lowest z height for faster print time."
-msgstr ""
+msgstr "Draai het model om de laagste z-hoogte te hebben voor een snellere afdruktijd."
 
 msgid "Choose SLA archive:"
-msgstr ""
+msgstr "SLA-archief kiezen:"
 
 msgid "Import file"
-msgstr ""
+msgstr "Bestand importeren"
 
 msgid "Import model and profile"
-msgstr ""
+msgstr "Model en profiel importeren"
 
 msgid "Import profile only"
-msgstr ""
+msgstr "Alleen profiel importeren"
 
 msgid "Import model only"
-msgstr ""
+msgstr "Alleen model importeren"
 
 msgid "Accurate"
-msgstr ""
+msgstr "Nauwkeurig"
 
 msgid "Balanced"
-msgstr ""
+msgstr "Gebalanceerd"
 
 msgid "Quick"
-msgstr ""
+msgstr "Snel"
 
 msgid "3D Models"
-msgstr ""
+msgstr "3D-modellen"
 
 msgid "Click to return"
-msgstr ""
+msgstr "Klik om terug te keren"
 
 msgid "Left Arrow"
-msgstr ""
+msgstr "Pijl links"
 
 msgid "Click to continue"
-msgstr ""
+msgstr "Klik om door te gaan"
 
 msgid "Right Arrow"
-msgstr ""
+msgstr "Pijl rechts"
 
 msgid "Authorizing..."
-msgstr ""
+msgstr "Autoriseren..."
 
 msgid "NO RAMMING AT ALL"
-msgstr ""
+msgstr "GEEN RAMMEN"
 
 msgid "Volumetric speed"
-msgstr ""
+msgstr "Volumetrische snelheid"
 
 msgid "Search"
-msgstr ""
+msgstr "Zoeken"
 
 msgid "My Device"
-msgstr ""
+msgstr "Mijn apparaat"
 
 msgid "Other Device"
-msgstr ""
+msgstr "Ander apparaat"
 
 msgid "Can't find my devices?"
-msgstr ""
+msgstr "Apparaten niet gevonden?"
 
 msgid "Modifying the device name"
-msgstr ""
+msgstr "Apparaatnaam wijzigen"
 
 msgid "Bind with Access Code"
-msgstr ""
+msgstr "Koppelen met toegangscode"
 
 msgid "Step file import parameters"
-msgstr ""
+msgstr "STEP-bestand importparameters"
 
 msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
-msgstr ""
+msgstr "Kleinere lineaire en hoekige afwijkingen resulteren in transformaties van hogere kwaliteit maar verhogen de verwerkingstijd."
 
 msgid "View Wiki for more information"
-msgstr ""
+msgstr "Wiki bekijken voor meer informatie"
 
 msgid "Linear Deflection"
-msgstr ""
+msgstr "Lineaire afwijking"
 
 msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
-msgstr ""
+msgstr "Voer een geldige waarde in (0,001 < lineaire afwijking < 0,1)"
 
 msgid "Angle Deflection"
-msgstr ""
+msgstr "Hoekafwijking"
 
 msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
-msgstr ""
+msgstr "Voer een geldige waarde in (0,01 < hoekafwijking < 1,0)"
 
 msgid "Split compound and compsolid into multiple objects"
-msgstr ""
+msgstr "Samengestelde en compsolide objecten opsplitsen in meerdere objecten"
 
 msgid "Number of triangular facets"
-msgstr ""
+msgstr "Aantal driehoekige facetten"
 
 msgid "Calculating, please wait..."
-msgstr ""
+msgstr "Berekenen, even geduld..."
 
 msgid "Move over surface"
-msgstr ""
+msgstr "Over oppervlak bewegen"
 
 msgid "System Information"
-msgstr ""
+msgstr "Systeeminformatie"
 
 msgid "Blacklisted libraries loaded into OrcaSlicer process:"
-msgstr ""
+msgstr "Op de zwarte lijst geplaatste bibliotheken geladen in het OrcaSlicer-proces:"
 
 msgid "SIMD is supported:"
-msgstr ""
+msgstr "SIMD wordt ondersteund:"
 
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopiëren naar klembord"
 
 msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Bedtemperatuur wanneer het Cosmyx Textured Bed is geïnstalleerd. Een waarde van -1 betekent dat het filament afdrukken op het Cosmyx Textured Bed niet ondersteunt. Een waarde van 0 betekent dat het bed uit is."
 
 msgid "Forward"
-msgstr ""
+msgstr "Vooruit"
 
 msgid "Reload"
-msgstr ""
+msgstr "Herladen"
 
 msgid "Tools"
-msgstr ""
+msgstr "Hulpmiddelen"
 
 msgid "View Source"
-msgstr ""
+msgstr "Broncode bekijken"
 
 msgid "View Text"
-msgstr ""
+msgstr "Tekst bekijken"
 
 msgid "Handle Navigation"
-msgstr ""
+msgstr "Navigatie beheren"
 
 msgid "Handle New Windows"
-msgstr ""
+msgstr "Nieuwe vensters beheren"
 
 msgid "Edit Mode"
-msgstr ""
+msgstr "Bewerkingsmodus"
 
 msgid "Run Script"
-msgstr ""
+msgstr "Script uitvoeren"
 
 msgid "Add user script"
-msgstr ""
+msgstr "Gebruikersscript toevoegen"
 
 msgid "Set custom user agent"
-msgstr ""
+msgstr "Aangepaste user agent instellen"
 
 msgid "Clear Selection"
-msgstr ""
+msgstr "Selectie wissen"
 
 msgid "Delete Selection"
-msgstr ""
+msgstr "Selectie verwijderen"
 
 msgid "Custom Scheme Example"
-msgstr ""
+msgstr "Aangepast schema voorbeeld"
 
 msgid "Memory File System Example"
-msgstr ""
+msgstr "Geheugenbestandssysteem voorbeeld"
 
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "Contextmenu inschakelen"
 
 msgid "Enable Dev Tools"
-msgstr ""
+msgstr "Ontwikkelaarshulpmiddelen inschakelen"
 
 msgid "An error occurred loading "
-msgstr ""
+msgstr "Er is een fout opgetreden bij het laden van "
 
 msgid "%"
-msgstr ""
+msgstr "%"
 
 msgid "Connected to CrealityPrint successfully!"
-msgstr ""
+msgstr "Succesvol verbonden met CrealityPrint!"
 
 msgid "Could not connect to CrealityPrint"
-msgstr ""
+msgstr "Kan geen verbinding maken met CrealityPrint"
 
 msgid "Connection to ElegooLink is working correctly."
-msgstr ""
+msgstr "De verbinding met ElegooLink werkt correct."
 
 msgid "Could not connect to ElegooLink"
-msgstr ""
+msgstr "Kan geen verbinding maken met ElegooLink"
 
 msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "Het bestand is overgedragen, maar er zijn onbekende fouten opgetreden. Controleer de apparaatpagina voor het bestand en probeer opnieuw af te drukken."
 
 msgid "Error code not found"
-msgstr ""
+msgstr "Foutcode niet gevonden"
 
 msgid "The printer is busy, Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "De printer is bezet. Controleer de apparaatpagina voor het bestand en probeer opnieuw af te drukken."
 
 msgid "The file is lost, please check and try again."
-msgstr ""
+msgstr "Het bestand is verloren gegaan, controleer en probeer opnieuw."
 
 msgid "The file is corrupted, please check and try again."
-msgstr ""
+msgstr "Het bestand is beschadigd, controleer en probeer opnieuw."
 
 msgid "Transmission abnormality, please check and try again."
-msgstr ""
+msgstr "Overdrachtsafwijking, controleer en probeer opnieuw."
 
 msgid "The file does not match the printer, please check and try again."
-msgstr ""
+msgstr "Het bestand komt niet overeen met de printer, controleer en probeer opnieuw."
 
 msgid "Start print timeout"
-msgstr ""
+msgstr "Afdrukstart time-out"
 
 msgid "Start print failed"
-msgstr ""
+msgstr "Afdrukstart mislukt"
 
 msgid "Connection to ESP3D is working correctly."
-msgstr ""
+msgstr "De verbinding met ESP3D werkt correct."
 
 msgid "Could not connect to ESP3D"
-msgstr ""
+msgstr "Kan geen verbinding maken met ESP3D"
 
 msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
-msgstr ""
+msgstr "Verbinding verlopen. Controleer of het printer- en computernetwerk correct functioneren, en bevestig dat ze op hetzelfde netwerk zijn."
 
 msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
-msgstr ""
+msgstr "De hostnaam/IP/URL kon niet worden geparseerd, controleer deze en probeer opnieuw."
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
-msgstr ""
+msgstr "Bestands-/gegevensoverdracht onderbroken. Controleer de printer en het netwerk en probeer het opnieuw."

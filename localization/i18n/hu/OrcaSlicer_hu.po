@@ -18320,349 +18320,349 @@ msgid "Tungsten Carbide"
 msgstr ""
 
 msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
-msgstr ""
+msgstr "A kiválasztott 3mf fájl a(z) %1% egy újabb verziójával lett mentve, és nem kompatibilis."
 
 msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "A kiválasztott 3MF fájl egy PrusaSlicer újabb verziójával festett FDM támasszal rendelkező objektumot tartalmaz, és nem kompatibilis."
 
 msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "A kiválasztott 3MF fájl egy PrusaSlicer újabb verziójával festett varratvonalú objektumot tartalmaz, és nem kompatibilis."
 
 msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "A kiválasztott 3MF fájl egy PrusaSlicer újabb verziójával festett többanyagú objektumot tartalmaz, és nem kompatibilis."
 
 msgid ""
 "Post-processing script %1% failed.\n"
 "\n"
 "The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
 "Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
-msgstr ""
+msgstr "A(z) %1% utófeldolgozó szkript sikertelen volt.\n\nAz utófeldolgozó szkriptnek a(z) %2% G-code fájlt a helyén kellett volna módosítania, de a G-code fájl törlésre került, és valószínűleg új neve alatt lett mentve.\nKérjük, módosítsa az utófeldolgozó szkriptet úgy, hogy a G-code fájlt a helyén változtassa meg, és nézze meg a kézikönyvet arra vonatkozóan, hogyan nevezheti át opcionálisan az utófeldolgozott G-code fájlt.\n"
 
 msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Az ágyfelület hőmérséklete az első réteg kivételével minden réteghez. A -1 érték azt jelenti, hogy az anyag nem támogatja a nyomtatást a Cosmyx Textured Bed felületen. A 0 érték azt jelenti, hogy az ágy ki van kapcsolva."
 
 msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Az első réteg ágyfelületi hőmérséklete. A -1 érték azt jelenti, hogy az anyag nem támogatja a nyomtatást a Cosmyx Textured Bed felületen. A 0 érték azt jelenti, hogy az ágy ki van kapcsolva."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx Textured Bed"
 
 msgid "Hollowing"
-msgstr ""
+msgstr "Üregesítés"
 
 msgid "Pad brim size is too small for the current configuration."
-msgstr ""
+msgstr "A talpfelület pereme túl kicsi a jelenlegi konfigurációhoz."
 
 msgid "Cannot proceed without support points! Add support points or disable support generation."
-msgstr ""
+msgstr "Támaszpontok nélkül nem lehet folytatni! Adjon hozzá támaszpontokat, vagy tiltsa le a támaszgenerálást."
 
 msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
-msgstr ""
+msgstr "Az emelkedési magasság túl alacsony az objektumhoz. Használja az \"Alap az objektum körül\" funkciót az objektum szintezés nélküli nyomtatásához."
 
 msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
-msgstr ""
+msgstr "A tartópillérek végei az objektum és az alap közötti résben fognak elhelyezkedni. Ennek elkerülése érdekében a 'Támaszsz alapbiztonsági távolság' értékének nagyobbnak kell lennie, mint a 'Alap-objektum rés' paraméter."
 
 msgid "Exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "Az expozíciós idő kívül esik a nyomtatóprofil határain."
 
 msgid "Initial exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "A kezdeti expozíciós idő kívül esik a nyomtatóprofil határain."
 
 msgid "Slicing done"
-msgstr ""
+msgstr "A szeletelés kész"
 
 msgid "Hollowing model"
-msgstr ""
+msgstr "Modell üregesítése"
 
 msgid "Drilling holes into model."
-msgstr ""
+msgstr "Furatok fúrása a modellbe."
 
 msgid "Slicing model"
-msgstr ""
+msgstr "Modell szeletelése"
 
 msgid "Generating support points"
-msgstr ""
+msgstr "Támaszpontok generálása"
 
 msgid "Generating support tree"
-msgstr ""
+msgstr "Támaszfa generálása"
 
 msgid "Generating pad"
-msgstr ""
+msgstr "Talap generálása"
 
 msgid "Slicing supports"
-msgstr ""
+msgstr "Támaszok szeletelése"
 
 msgid "Merging slices and calculating statistics"
-msgstr ""
+msgstr "Szeletek összevonása és statisztikák kiszámítása"
 
 msgid "Rasterizing layers"
-msgstr ""
+msgstr "Rétegek raszterizálása"
 
 msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
-msgstr ""
+msgstr "A szeletelést belső hiba miatt le kellett állítani: Inkonzisztens szeletindex."
 
 msgid "Visualizing supports"
-msgstr ""
+msgstr "Támaszok vizualizálása"
 
 msgid "No pad can be generated for this model with the current configuration"
-msgstr ""
+msgstr "A jelenlegi konfigurációval nem generálható talap ehhez a modellhez"
 
 msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
-msgstr ""
+msgstr "Vannak nem nyomtatható objektumok. Próbálja meg módosítani a támaszszbeállításokat, hogy az objektumok nyomtathatóvá váljanak."
 
 msgid "Taking a configuration snapshot failed."
-msgstr ""
+msgstr "A konfigurációs pillanatkép készítése sikertelen."
 
 msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
-msgstr ""
+msgstr "Az OrcaSlicer hibát észlelt konfigurációs pillanatkép készítése közben."
 
 msgid "OrcaSlicer error"
-msgstr ""
+msgstr "OrcaSlicer hiba"
 
 msgid "Continue"
-msgstr ""
+msgstr "Folytatás"
 
 msgid "Abort"
-msgstr ""
+msgstr "Megszakítás"
 
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Cosmyx csomag verziója: %s"
 
 msgid "Model Pictures"
-msgstr ""
+msgstr "Modellképek"
 
 msgid "Auxiliaryies"
-msgstr ""
+msgstr "Segédeszközök"
 
 msgid "nozzle"
-msgstr ""
+msgstr "fúvóka"
 
 msgid "Alternate nozzles:"
-msgstr ""
+msgstr "Váltakozó fúvókák:"
 
 msgid "All standard"
-msgstr ""
+msgstr "Mind szabványos"
 
 msgid "Welcome to the %s Configuration Assistant"
-msgstr ""
+msgstr "Üdvözli a(z) %s Konfigurációs Asszisztens"
 
 msgid "Welcome to the %s Configuration Wizard"
-msgstr ""
+msgstr "Üdvözli a(z) %s Konfigurációs Varázsló"
 
 msgid "Welcome"
-msgstr ""
+msgstr "Üdvözöljük"
 
 msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
-msgstr ""
+msgstr "Üdvözöljük a(z) %s alkalmazásban! Ez a(z) %s segít Önnek az első konfigurációban; csupán néhány beállítás után készen áll a nyomtatásra."
 
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
-msgstr ""
+msgstr "Felhasználói profilok eltávolítása (előtte pillanatkép készül)"
 
 msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
-msgstr ""
+msgstr "Asztali integráció végrehajtása (Ez a bináris fájl kereshetővé válik a rendszer számára)."
 
 msgid "%s Family"
-msgstr ""
+msgstr "%s család"
 
 msgid "Printer:"
-msgstr ""
+msgstr "Nyomtató:"
 
 msgid "Vendor:"
-msgstr ""
+msgstr "Gyártó:"
 
 msgid "Profile:"
-msgstr ""
+msgstr "Profil:"
 
 msgid "(All)"
-msgstr ""
+msgstr "(Összes)"
 
 msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
-msgstr ""
+msgstr "A <b>*</b> jellel megjelölt %1% <b>nem</b> kompatibilis néhány telepített nyomtatóval."
 
 msgid "SLA materials"
-msgstr ""
+msgstr "SLA anyagok"
 
 msgid "All installed printers are compatible with the selected %1%."
-msgstr ""
+msgstr "Az összes telepített nyomtató kompatibilis a kiválasztott %1% típussal."
 
 msgid "filament"
-msgstr ""
+msgstr "filament"
 
 msgid "SLA material"
-msgstr ""
+msgstr "SLA anyag"
 
 msgid "Only the following installed printers are compatible with the selected filaments"
-msgstr ""
+msgstr "Csak a következő telepített nyomtatók kompatibilisek a kiválasztott filamentekkel"
 
 msgid "Only the following installed printers are compatible with the selected SLA materials"
-msgstr ""
+msgstr "Csak a következő telepített nyomtatók kompatibilisek a kiválasztott SLA anyagokkal"
 
 msgid "Custom Printer Setup"
-msgstr ""
+msgstr "Egyéni nyomtató beállítása"
 
 msgid "Custom Printer"
-msgstr ""
+msgstr "Egyéni nyomtató"
 
 msgid "Define a custom printer profile"
-msgstr ""
+msgstr "Egyéni nyomtatóprofil meghatározása"
 
 msgid "Custom profile name:"
-msgstr ""
+msgstr "Egyéni profil neve:"
 
 msgid "Firmware Type"
-msgstr ""
+msgstr "Firmware típusa"
 
 msgid "Firmware"
-msgstr ""
+msgstr "Firmware"
 
 msgid "Choose the type of firmware used by your printer."
-msgstr ""
+msgstr "Válassza ki a nyomtatója által használt firmware típusát."
 
 msgid "Bed Shape and Size"
-msgstr ""
+msgstr "Ágy alakja és mérete"
 
 msgid "Set the shape of your printer's bed."
-msgstr ""
+msgstr "Adja meg a nyomtatója ágyának alakját."
 
 msgid "Invalid numeric input."
-msgstr ""
+msgstr "Érvénytelen numerikus bevitel."
 
 msgid "Filament and Nozzle Diameters"
-msgstr ""
+msgstr "Filament és fúvóka átmérők"
 
 msgid "Print Diameters"
-msgstr ""
+msgstr "Nyomtatási átmérők"
 
 msgid "Enter the diameter of your printer's hot end nozzle."
-msgstr ""
+msgstr "Adja meg a nyomtatója hotend fúvókájának átmérőjét."
 
 msgid "Nozzle Diameter:"
-msgstr ""
+msgstr "Fúvóka átmérője:"
 
 msgid "Enter the diameter of your filament."
-msgstr ""
+msgstr "Adja meg a filament átmérőjét."
 
 msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
-msgstr ""
+msgstr "Jó pontosság szükséges, ezért használjon tolómérőt, és végezzen több mérést a filament mentén, majd számítsa ki az átlagot."
 
 msgid "Filament Diameter:"
-msgstr ""
+msgstr "Filament átmérője:"
 
 msgid "Nozzle and Bed Temperatures"
-msgstr ""
+msgstr "Fúvóka és ágy hőmérsékletei"
 
 msgid "Enter the nozzle_temperature needed for extruding your filament."
-msgstr ""
+msgstr "Adja meg a filament extrudálásához szükséges fúvóka hőmérsékletét."
 
 msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
-msgstr ""
+msgstr "Általános szabály: PLA esetén 160–230 °C, ABS esetén 215–250 °C."
 
 msgid "Extrusion Temperature:"
-msgstr ""
+msgstr "Extrudálási hőmérséklet:"
 
 msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
-msgstr ""
+msgstr "Adja meg az ágyfelület hőmérsékletét, amely szükséges ahhoz, hogy a filament tapadjon a fűtött ágyhoz."
 
 msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
-msgstr ""
+msgstr "Általános szabály: PLA esetén 60 °C, ABS esetén 110 °C. Hagyja nullán, ha nincs fűtött ágya."
 
 msgid "Bed Temperature:"
-msgstr ""
+msgstr "Ágy hőmérséklete:"
 
 msgid "SLA Materials"
-msgstr ""
+msgstr "SLA anyagok"
 
 msgid "FFF Technology Printers"
-msgstr ""
+msgstr "FFF technológiájú nyomtatók"
 
 msgid "SLA Technology Printers"
-msgstr ""
+msgstr "SLA technológiájú nyomtatók"
 
 msgid "Following printer profiles has no default filament: %1%Please select one manually."
-msgstr ""
+msgstr "A következő nyomtatóprofilokhoz nincs alapértelmezett filament beállítva: %1%Kérjük, válasszon egyet manuálisan."
 
 msgid "Following printer profiles has no default material: %1%Please select one manually."
-msgstr ""
+msgstr "A következő nyomtatóprofilokhoz nincs alapértelmezett anyag beállítva: %1%Kérjük, válasszon egyet manuálisan."
 
 msgid "The following FFF printer models have no filament selected:"
-msgstr ""
+msgstr "A következő FFF nyomtatómodelleknél nincs filament kiválasztva:"
 
 msgid "Do you want to select default filaments for these FFF printer models?"
-msgstr ""
+msgstr "Szeretne alapértelmezett filamenteket kiválasztani ezekhez az FFF nyomtatómodellekhez?"
 
 msgid "Configuration is edited in ConfigWizard"
-msgstr ""
+msgstr "A konfiguráció szerkesztése a ConfigWizard segítségével történik"
 
 msgid "All user presets will be deleted."
-msgstr ""
+msgstr "Az összes felhasználói beállítás törlésre kerül."
 
 msgid "A new Printer was installed and it will be activated."
-msgstr ""
+msgstr "Egy új nyomtató lett telepítve, és aktiválva lesz."
 
 msgid "Some Printers were uninstalled."
-msgstr ""
+msgstr "Néhány nyomtató el lett távolítva."
 
 msgid "A new filament was installed and it will be activated."
-msgstr ""
+msgstr "Egy új filament lett telepítve, és aktiválva lesz."
 
 msgid "A new SLA material was installed and it will be activated."
-msgstr ""
+msgstr "Egy új SLA anyag lett telepítve, és aktiválva lesz."
 
 msgid "Some filaments were uninstalled."
-msgstr ""
+msgstr "Néhány filament el lett távolítva."
 
 msgid "Custom printer was installed and it will be activated."
-msgstr ""
+msgstr "Az egyéni nyomtató telepítve lett, és aktiválva lesz."
 
 msgid "<Back"
-msgstr ""
+msgstr "<Vissza"
 
 msgid "Next>"
-msgstr ""
+msgstr "Tovább>"
 
 msgid "Filament Profiles Selection"
-msgstr ""
+msgstr "Filamentprofilok kiválasztása"
 
 msgid "Configuration Assistant"
-msgstr ""
+msgstr "Konfigurációs Asszisztens"
 
 msgid "Configuration &Assistant"
-msgstr ""
+msgstr "Konfigurációs &Asszisztens"
 
 msgid "Configuration Wizard"
-msgstr ""
+msgstr "Konfigurációs Varázsló"
 
 msgid "Configuration &Wizard"
-msgstr ""
+msgstr "Konfigurációs &Varázsló"
 
 msgid "A new vendor was installed and one of its printers will be activated"
 msgid_plural "New vendors were installed and one of theirs printers will be activated"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Egy új gyártó lett telepítve, és az egyik nyomtatója aktiválva lesz"
+msgstr[1] "Egy új gyártó lett telepítve, és az egyik nyomtatója aktiválva lesz"
 
 msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Az asztali integráció végrehajtása sikertelen – a boost::filesystem::canonical nem adta vissza az AppImage elérési útját."
 
 msgid "Performing desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Az asztali integráció végrehajtása sikertelen – a végrehajtható fájl nem található."
 
 msgid "Performing desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Az asztali integráció végrehajtása sikertelen, mert az alkalmazáskönyvtár nem található."
 
 msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
-msgstr ""
+msgstr "Az asztali integráció végrehajtása sikertelen – a Gcodeviewer asztali fájl nem hozható létre. Az OrcaSlicer asztali fájl valószínűleg sikeresen létrejött."
 
 msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "A letöltő asztali integrációjának végrehajtása sikertelen – a boost::filesystem::canonical nem adta vissza az AppImage elérési útját."
 
 msgid "Performing downloader desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "A letöltő asztali integrációjának végrehajtása sikertelen – a végrehajtható fájl nem található."
 
 msgid "Performing downloader desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "A letöltő asztali integrációjának végrehajtása sikertelen, mert az alkalmazáskönyvtár nem található."
 
 msgid "Desktop Integration"
-msgstr ""
+msgstr "Asztali integráció"
 
 msgid ""
 "Desktop Integration sets this binary to be searchable by the system.\n"
@@ -18671,231 +18671,231 @@ msgid ""
 msgstr ""
 
 msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
-msgstr ""
+msgstr "A jelenlegi kamrahőmérséklet vagy a célzott kamrahőmérséklet meghaladja a 45\\u2103 értéket. Az extruder eltömődésének elkerülése érdekében alacsony hőmérsékletű filament (PLA/PETG/TPU) betöltése nem engedélyezett."
 
 msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
-msgstr ""
+msgstr "Alacsony hőmérsékletű filament (PLA/PETG/TPU) van az extruderbe töltve. Az extruder eltömődésének elkerülése érdekében a kamrahőmérséklet nem állítható 45\\u2103 fölé."
 
 msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
-msgstr ""
+msgstr "Ha a kamrahőmérsékletet 40\\u2103 alá állítja, a kamrahőmérséklet-szabályozás nem aktiválódik, és a célzott kamrahőmérséklet automatikusan 0\\u2103 értékre lesz állítva."
 
 msgid "The download has failed"
-msgstr ""
+msgstr "A letöltés sikertelen"
 
 msgid "Can't create file at %1%"
-msgstr ""
+msgstr "Nem hozható létre fájl itt: %1%"
 
 msgid "Archive preview"
-msgstr ""
+msgstr "Archívum előnézete"
 
 msgid "Movement:"
-msgstr ""
+msgstr "Mozgás:"
 
 msgid "Movement"
-msgstr ""
+msgstr "Mozgás"
 
 msgid "Auto Segment"
-msgstr ""
+msgstr "Automatikus szegmentálás"
 
 msgid "Depth ratio"
-msgstr ""
+msgstr "Mélységarány"
 
 msgid "Prizm"
-msgstr ""
+msgstr "Prizma"
 
 msgid "connector is out of cut contour"
-msgstr ""
+msgstr "a csatlakozó kívül esik a vágási kontúron"
 
 msgid "connectors are out of cut contour"
-msgstr ""
+msgstr "a csatlakozók kívül esnek a vágási kontúron"
 
 msgid "connector is out of object"
-msgstr ""
+msgstr "a csatlakozó kívül esik az objektumon"
 
 msgid "connectors is out of object"
-msgstr ""
+msgstr "a csatlakozók kívül esnek az objektumon"
 
 msgid ""
 "Invalid state. \n"
 "No one part is selected for keep after cut"
-msgstr ""
+msgstr "Érvénytelen állapot. \nNincs kiválasztott rész, amelyet a vágás után megtartana"
 
 msgid "Please confirm explosion ratio = 1 and select at least two volumes."
-msgstr ""
+msgstr "Kérjük, erősítse meg, hogy a robbanási arány = 1, és válasszon ki legalább két tömböt."
 
 msgid "Please select at least two volumes."
-msgstr ""
+msgstr "Kérjük, válasszon ki legalább két tömböt."
 
 msgid "(Moving)"
-msgstr ""
+msgstr "(Mozgatás)"
 
 msgid "Point and point assembly"
-msgstr ""
+msgstr "Pont és pont összeszereléssel"
 
 msgid ""
 "It is recommended to assemble the objects first,\n"
 "because the objects is restriced to bed \n"
 "and only parts can be lifted."
-msgstr ""
+msgstr "Javasolt az objektumokat először összeszereléssel rendezni,\nmert az objektumok az ágyhoz vannak korlátozva,\nés csak alkatrészek emelhetők fel."
 
 msgid "Face and face assembly"
-msgstr ""
+msgstr "Felület és felület összeillesztése"
 
 msgid "Entering Assembly gizmo"
-msgstr ""
+msgstr "Összeszereléses eszköz megnyitása"
 
 msgid "Leaving Assembly gizmo"
-msgstr ""
+msgstr "Összeszereléses eszköz bezárása"
 
 msgid "Entering Cut gizmo"
-msgstr ""
+msgstr "Vágási eszköz megnyitása"
 
 msgid "Leaving Cut gizmo"
-msgstr ""
+msgstr "Vágási eszköz bezárása"
 
 msgid "Cut gizmo editing"
-msgstr ""
+msgstr "Vágási eszköz szerkesztése"
 
 msgid "Add fuzzy skin"
-msgstr ""
+msgstr "Érdes felület hozzáadása"
 
 msgid "Remove fuzzy skin"
-msgstr ""
+msgstr "Érdes felület eltávolítása"
 
 msgid "Reset selection"
-msgstr ""
+msgstr "Kijelölés alaphelyzetbe állítása"
 
 msgid "Entering Paint-on fuzzy skin"
-msgstr ""
+msgstr "Festéssel alkalmazott érdes felület megnyitása"
 
 msgid "Leaving Paint-on fuzzy skin"
-msgstr ""
+msgstr "Festéssel alkalmazott érdes felület bezárása"
 
 msgid "Paint-on fuzzy skin editing"
-msgstr ""
+msgstr "Festéssel alkalmazott érdes felület szerkesztése"
 
 msgid "Hollow this object"
-msgstr ""
+msgstr "Objektum üregesítése"
 
 msgid "Preview hollowed and drilled model"
-msgstr ""
+msgstr "Üregesített és átfúrt modell előnézete"
 
 msgid "Offset"
-msgstr ""
+msgstr "Eltolás"
 
 msgid "Closing distance"
-msgstr ""
+msgstr "Záró távolság"
 
 msgid "Hole diameter"
-msgstr ""
+msgstr "Furat átmérője"
 
 msgid "Hole depth"
-msgstr ""
+msgstr "Furat mélysége"
 
 msgid "Remove selected holes"
-msgstr ""
+msgstr "Kijelölt furatok eltávolítása"
 
 msgid "Remove all holes"
-msgstr ""
+msgstr "Az összes furat eltávolítása"
 
 msgid "Clipping of view"
-msgstr ""
+msgstr "Nézet kivágása"
 
 msgid "Show supports"
-msgstr ""
+msgstr "Támaszok megjelenítése"
 
 msgid "Hollow and drill"
-msgstr ""
+msgstr "Üregesítés és fúrás"
 
 msgid "Entering Measure gizmo"
-msgstr ""
+msgstr "Mérési eszköz megnyitása"
 
 msgid "Leaving Measure gizmo"
-msgstr ""
+msgstr "Mérési eszköz bezárása"
 
 msgid "Model simplification has been canceled"
-msgstr ""
+msgstr "A modell egyszerűsítése meg lett szakítva"
 
 msgid "Lock supports under new islands"
-msgstr ""
+msgstr "Támaszok rögzítése az új szigetek alatt"
 
 msgid "Remove all points"
-msgstr ""
+msgstr "Az összes pont eltávolítása"
 
 msgid "Apply changes"
-msgstr ""
+msgstr "Módosítások alkalmazása"
 
 msgid "Discard changes"
-msgstr ""
+msgstr "Módosítások elvetése"
 
 msgid "Minimal points distance"
-msgstr ""
+msgstr "Minimális pontok közötti távolság"
 
 msgid "Support points density"
-msgstr ""
+msgstr "Támaszpontok sűrűsége"
 
 msgid "Manual editing"
-msgstr ""
+msgstr "Kézi szerkesztés"
 
 msgid "SLA Support Points"
-msgstr ""
+msgstr "SLA támaszpontok"
 
 msgid "Do you want to save your manually edited support points?"
-msgstr ""
+msgstr "Szeretné menteni a kézzel szerkesztett támaszpontjait?"
 
 msgid "Save support points?"
-msgstr ""
+msgstr "Menti a támaszpontokat?"
 
 msgid "Autogeneration will erase all manually edited points."
-msgstr ""
+msgstr "Az automatikus generálás törli az összes kézzel szerkesztett pontot."
 
 msgid "Are you sure you want to do it?"
-msgstr ""
+msgstr "Biztos benne, hogy ezt szeretné tenni?"
 
 msgid "SLA gizmo keyboard shortcuts"
-msgstr ""
+msgstr "SLA eszköz billentyűparancsok"
 
 msgid "Note: some shortcuts work in (non)editing mode only."
-msgstr ""
+msgstr "Megjegyzés: egyes billentyűparancsok csak (nem) szerkesztési módban működnek."
 
 msgid "Add point"
-msgstr ""
+msgstr "Pont hozzáadása"
 
 msgid "Remove point"
-msgstr ""
+msgstr "Pont eltávolítása"
 
 msgid "Move point"
-msgstr ""
+msgstr "Pont mozgatása"
 
 msgid "Add point to selection"
-msgstr ""
+msgstr "Pont hozzáadása a kijelöléshez"
 
 msgid "Remove point from selection"
-msgstr ""
+msgstr "Pont eltávolítása a kijelölésből"
 
 msgid "Select by rectangle"
-msgstr ""
+msgstr "Kijelölés téglalappal"
 
 msgid "Deselect by rectangle"
-msgstr ""
+msgstr "Kijelölés megszüntetése téglalappal"
 
 msgid "Select all points"
-msgstr ""
+msgstr "Az összes pont kijelölése"
 
 msgid "Move clipping plane"
-msgstr ""
+msgstr "Vágósík mozgatása"
 
 msgid "Reset clipping plane"
-msgstr ""
+msgstr "Vágósík alaphelyzetbe állítása"
 
 msgid "Switch to editing mode"
-msgstr ""
+msgstr "Váltás szerkesztési módra"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calage 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calage 3 SNDT"
 
 msgid ""
 "This calibration model works best with specific infill settings.\n"
@@ -18906,282 +18906,282 @@ msgid ""
 "\n"
 "Yes - Change these settings automatically\n"
 "No  - Do not change these settings for me"
-msgstr ""
+msgstr "Ez a kalibrációs modell a legjobban bizonyos kitöltési beállításokkal működik.\nAz optimális kalibrációs eredmények érdekében javasolt a következők beállítása:\n- Kitöltési irány: %.0f\\u00b0\n- Tömör kitöltési irány: %.0f\\u00b0\n- Csak egy fal az első rétegen: %s\n\nIgen - Módosítsa ezeket a beállításokat automatikusan\nNem - Ne módosítsa ezeket a beállításokat"
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calage 1 Nova"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Kalibrációs modellek kettős fejhez"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Kalibrációs modellek egyfejű nyomtatóhoz"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx praktikus modellek"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D modellek"
 
 msgid "Add Emboss text object"
-msgstr ""
+msgstr "Domborított szövegobjektum hozzáadása"
 
 msgid "Emboss attribute change"
-msgstr ""
+msgstr "Domborítás attribútum módosítása"
 
 msgid "Add Emboss text Volume"
-msgstr ""
+msgstr "Domborított szövegtömb hozzáadása"
 
 msgid "Font doesn't have any shape for given text."
-msgstr ""
+msgstr "A betűtípusnak nincs alakja a megadott szöveghez."
 
 msgid "There is no valid surface for text projection."
-msgstr ""
+msgstr "Nincs érvényes felület a szöveg vetítéséhez."
 
 msgid "An unexpected error occurred"
-msgstr ""
+msgstr "Váratlan hiba történt"
 
 msgid "Best surface quality"
-msgstr ""
+msgstr "Legjobb felületi minőség"
 
 msgid "Optimize object rotation for best surface quality."
-msgstr ""
+msgstr "Objektum elforgatásának optimalizálása a legjobb felületi minőség érdekében."
 
 msgid "Reduced overhang slopes"
-msgstr ""
+msgstr "Csökkentett túlnyúlási lejtők"
 
 msgid ""
 "Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
 "Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
-msgstr ""
+msgstr "Optimalizálja az objektum elforgatását, hogy minimalizálja a támaszokat igénylő túlnyúlásokat.\nVegye figyelembe, hogy ez a módszer megpróbálja megtalálni az objektum legjobb felületét a nyomtatóágy érintéséhez, ha nincs emelési magasság beállítva."
 
 msgid "Lowest Z height"
-msgstr ""
+msgstr "Legkisebb Z magasság"
 
 msgid "Rotate the model to have the lowest z height for faster print time."
-msgstr ""
+msgstr "Forgassa el a modellt a legkisebb Z magasságra a gyorsabb nyomtatási idő érdekében."
 
 msgid "Choose SLA archive:"
-msgstr ""
+msgstr "Válasszon SLA archívumot:"
 
 msgid "Import file"
-msgstr ""
+msgstr "Fájl importálása"
 
 msgid "Import model and profile"
-msgstr ""
+msgstr "Modell és profil importálása"
 
 msgid "Import profile only"
-msgstr ""
+msgstr "Csak profil importálása"
 
 msgid "Import model only"
-msgstr ""
+msgstr "Csak modell importálása"
 
 msgid "Accurate"
-msgstr ""
+msgstr "Pontos"
 
 msgid "Balanced"
-msgstr ""
+msgstr "Kiegyensúlyozott"
 
 msgid "Quick"
-msgstr ""
+msgstr "Gyors"
 
 msgid "3D Models"
-msgstr ""
+msgstr "3D modellek"
 
 msgid "Click to return"
-msgstr ""
+msgstr "Kattintson a visszatéréshez"
 
 msgid "Left Arrow"
-msgstr ""
+msgstr "Bal nyíl"
 
 msgid "Click to continue"
-msgstr ""
+msgstr "Kattintson a folytatáshoz"
 
 msgid "Right Arrow"
-msgstr ""
+msgstr "Jobb nyíl"
 
 msgid "Authorizing..."
-msgstr ""
+msgstr "Engedélyezés..."
 
 msgid "NO RAMMING AT ALL"
-msgstr ""
+msgstr "EGYÁLTALÁN NINCS TORLASZTÁS"
 
 msgid "Volumetric speed"
-msgstr ""
+msgstr "Volumetrikus sebesség"
 
 msgid "Search"
-msgstr ""
+msgstr "Keresés"
 
 msgid "My Device"
-msgstr ""
+msgstr "Saját eszközöm"
 
 msgid "Other Device"
-msgstr ""
+msgstr "Másik eszköz"
 
 msgid "Can't find my devices?"
-msgstr ""
+msgstr "Nem találja az eszközét?"
 
 msgid "Modifying the device name"
-msgstr ""
+msgstr "Az eszköz nevének módosítása"
 
 msgid "Bind with Access Code"
-msgstr ""
+msgstr "Csatlakozás hozzáférési kóddal"
 
 msgid "Step file import parameters"
-msgstr ""
+msgstr "STEP fájl importálási paraméterek"
 
 msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
-msgstr ""
+msgstr "A kisebb lineáris és szögeltérések magasabb minőségű átalakításokat eredményeznek, de növelik a feldolgozási időt."
 
 msgid "View Wiki for more information"
-msgstr ""
+msgstr "Tekintse meg a Wiki oldalt további információkért"
 
 msgid "Linear Deflection"
-msgstr ""
+msgstr "Lineáris eltérés"
 
 msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
-msgstr ""
+msgstr "Kérjük, adjon meg érvényes értéket (0,001 < lineáris eltérés < 0,1)"
 
 msgid "Angle Deflection"
-msgstr ""
+msgstr "Szögelhalás"
 
 msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
-msgstr ""
+msgstr "Kérjük, adjon meg érvényes értéket (0,01 < szögeltérés < 1,0)"
 
 msgid "Split compound and compsolid into multiple objects"
-msgstr ""
+msgstr "Összetett és tömör összetett objektumok felosztása több objektumra"
 
 msgid "Number of triangular facets"
-msgstr ""
+msgstr "Háromszög lapkák száma"
 
 msgid "Calculating, please wait..."
-msgstr ""
+msgstr "Számítás folyamatban, kérjük várjon..."
 
 msgid "Move over surface"
-msgstr ""
+msgstr "Mozgatás a felület felett"
 
 msgid "System Information"
-msgstr ""
+msgstr "Rendszerinformáció"
 
 msgid "Blacklisted libraries loaded into OrcaSlicer process:"
-msgstr ""
+msgstr "Az OrcaSlicer folyamatba betöltött tiltólistás könyvtárak:"
 
 msgid "SIMD is supported:"
-msgstr ""
+msgstr "SIMD támogatott:"
 
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Másolás a vágólapra"
 
 msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Az ágy hőmérséklete, amikor a Cosmyx Textured Bed telepítve van. A -1 érték azt jelenti, hogy az anyag nem támogatja a nyomtatást a Cosmyx Textured Bed felületen. A 0 érték azt jelenti, hogy az ágy ki van kapcsolva."
 
 msgid "Forward"
-msgstr ""
+msgstr "Előre"
 
 msgid "Reload"
-msgstr ""
+msgstr "Újratöltés"
 
 msgid "Tools"
-msgstr ""
+msgstr "Eszközök"
 
 msgid "View Source"
-msgstr ""
+msgstr "Forrás megtekintése"
 
 msgid "View Text"
-msgstr ""
+msgstr "Szöveg megtekintése"
 
 msgid "Handle Navigation"
-msgstr ""
+msgstr "Navigáció kezelése"
 
 msgid "Handle New Windows"
-msgstr ""
+msgstr "Új ablakok kezelése"
 
 msgid "Edit Mode"
-msgstr ""
+msgstr "Szerkesztési mód"
 
 msgid "Run Script"
-msgstr ""
+msgstr "Szkript futtatása"
 
 msgid "Add user script"
-msgstr ""
+msgstr "Felhasználói szkript hozzáadása"
 
 msgid "Set custom user agent"
-msgstr ""
+msgstr "Egyéni felhasználói ügynök beállítása"
 
 msgid "Clear Selection"
-msgstr ""
+msgstr "Kijelölés törlése"
 
 msgid "Delete Selection"
-msgstr ""
+msgstr "Kijelölés törlése"
 
 msgid "Custom Scheme Example"
-msgstr ""
+msgstr "Egyéni séma példa"
 
 msgid "Memory File System Example"
-msgstr ""
+msgstr "Memória fájlrendszer példa"
 
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "Helyi menü engedélyezése"
 
 msgid "Enable Dev Tools"
-msgstr ""
+msgstr "Fejlesztői eszközök engedélyezése"
 
 msgid "An error occurred loading "
-msgstr ""
+msgstr "Hiba történt a betöltés során: "
 
 msgid "%"
-msgstr ""
+msgstr "%"
 
 msgid "Connected to CrealityPrint successfully!"
-msgstr ""
+msgstr "Sikeresen csatlakozva a CrealityPrint alkalmazáshoz!"
 
 msgid "Could not connect to CrealityPrint"
-msgstr ""
+msgstr "Nem sikerült csatlakozni a CrealityPrint alkalmazáshoz"
 
 msgid "Connection to ElegooLink is working correctly."
-msgstr ""
+msgstr "Az ElegooLink kapcsolat megfelelően működik."
 
 msgid "Could not connect to ElegooLink"
-msgstr ""
+msgstr "Nem sikerült csatlakozni az ElegooLink-hez"
 
 msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "A fájl átvitele megtörtént, de ismeretlen hibák léptek fel. Kérjük, ellenőrizze az eszköz oldalán a fájlt, és próbálja meg újra elindítani a nyomtatást."
 
 msgid "Error code not found"
-msgstr ""
+msgstr "A hibakód nem található"
 
 msgid "The printer is busy, Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "A nyomtató foglalt. Kérjük, ellenőrizze az eszköz oldalán a fájlt, és próbálja meg újra elindítani a nyomtatást."
 
 msgid "The file is lost, please check and try again."
-msgstr ""
+msgstr "A fájl elveszett, kérjük, ellenőrizze és próbálja újra."
 
 msgid "The file is corrupted, please check and try again."
-msgstr ""
+msgstr "A fájl sérült, kérjük, ellenőrizze és próbálja újra."
 
 msgid "Transmission abnormality, please check and try again."
-msgstr ""
+msgstr "Átviteli rendellenesség, kérjük, ellenőrizze és próbálja újra."
 
 msgid "The file does not match the printer, please check and try again."
-msgstr ""
+msgstr "A fájl nem egyezik a nyomtatóval, kérjük, ellenőrizze és próbálja újra."
 
 msgid "Start print timeout"
-msgstr ""
+msgstr "Nyomtatás indítási időtúllépés"
 
 msgid "Start print failed"
-msgstr ""
+msgstr "A nyomtatás indítása sikertelen"
 
 msgid "Connection to ESP3D is working correctly."
-msgstr ""
+msgstr "Az ESP3D kapcsolat megfelelően működik."
 
 msgid "Could not connect to ESP3D"
-msgstr ""
+msgstr "Nem sikerült csatlakozni az ESP3D-hez"
 
 msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
-msgstr ""
+msgstr "A kapcsolat időtúllépést szenvedett. Kérjük, ellenőrizze, hogy a nyomtató és a számítógép hálózata megfelelően működik-e, és győződjön meg arról, hogy ugyanazon a hálózaton vannak."
 
 msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
-msgstr ""
+msgstr "Az állomásnév/IP-cím/URL nem elemezhető, kérjük, ellenőrizze és próbálja újra."
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
-msgstr ""
+msgstr "A fájl/adat átvitel megszakadt. Kérjük, ellenőrizze a nyomtatót és a hálózatot, majd próbálja újra."

@@ -19799,349 +19799,349 @@ msgid "Tungsten Carbide"
 msgstr ""
 
 msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
-msgstr ""
+msgstr "Pasirinktas 3mf failas buvo išsaugotas su naujesne %1% versija ir yra nesuderinamas."
 
 msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Pasirinktas 3MF failas turi FDM atramomis nudažytą objektą, sukurtą naujesne PrusaSlicer versija, ir yra nesuderinamas."
 
 msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Pasirinktas 3MF failas turi siūle nudažytą objektą, sukurtą naujesne PrusaSlicer versija, ir yra nesuderinamas."
 
 msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
-msgstr ""
+msgstr "Pasirinktas 3MF failas turi daugiamediaginį nudažytą objektą, sukurtą naujesne PrusaSlicer versija, ir yra nesuderinamas."
 
 msgid ""
 "Post-processing script %1% failed.\n"
 "\n"
 "The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
 "Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
-msgstr ""
+msgstr "Poapdorojimo scenarijus %1% nepavyko.\n\nTikimasi, kad poapdorojimo scenarijus pakeis G-code failą %2% vietoje, tačiau G-code failas buvo ištrintas ir greičiausiai išsaugotas nauju pavadinimu.\nPrašome patikslinti poapdorojimo scenarijų, kad keistų G-code vietoje, ir peržiūrėkite instrukciją, kaip pasirinktinai pervadinti apdorotą G-code failą.\n"
 
 msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Stalo temperatūra sluoksniams, išskyrus pradinį. Reikšmė -1 reiškia, kad siūlas nepalaiko spausdinimo ant Cosmyx Textured Bed. Reikšmė 0 reiškia, kad stalas išjungtas."
 
 msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Pradinio sluoksnio stalo temperatūra. Reikšmė -1 reiškia, kad siūlas nepalaiko spausdinimo ant Cosmyx Textured Bed. Reikšmė 0 reiškia, kad stalas išjungtas."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx Textured Bed"
 
 msgid "Hollowing"
-msgstr ""
+msgstr "Ištuštinimas"
 
 msgid "Pad brim size is too small for the current configuration."
-msgstr ""
+msgstr "Pagrindo apvado dydis per mažas esamai konfigūracijai."
 
 msgid "Cannot proceed without support points! Add support points or disable support generation."
-msgstr ""
+msgstr "Negalima tęsti be atramų taškų! Pridėkite atramų taškų arba išjunkite atramų generavimą."
 
 msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
-msgstr ""
+msgstr "Pakėlimas per mažas objektui. Naudokite funkciją \"Pagrindas aplink objektą\", kad spausdintumėte objektą be pakėlimo."
 
 msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
-msgstr ""
+msgstr "Atramų stulpelių galai bus išdėstyti tarpas tarp objekto ir pagrindo. 'Atramų pagrindo saugus atstumas' turi būti didesnis nei parametras 'Pagrindo objekto tarpas', kad to išvengti."
 
 msgid "Exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "Ekspozicijos laikas viršija spausdintuvo profilio ribas."
 
 msgid "Initial exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "Pradinis ekspozicijos laikas viršija spausdintuvo profilio ribas."
 
 msgid "Slicing done"
-msgstr ""
+msgstr "Pjaustymas atliktas"
 
 msgid "Hollowing model"
-msgstr ""
+msgstr "Modelio ištuštinimas"
 
 msgid "Drilling holes into model."
-msgstr ""
+msgstr "Skylių gręžimas į modelį."
 
 msgid "Slicing model"
-msgstr ""
+msgstr "Modelio pjaustymas"
 
 msgid "Generating support points"
-msgstr ""
+msgstr "Atramų taškų generavimas"
 
 msgid "Generating support tree"
-msgstr ""
+msgstr "Atramų medžio generavimas"
 
 msgid "Generating pad"
-msgstr ""
+msgstr "Pagrindo generavimas"
 
 msgid "Slicing supports"
-msgstr ""
+msgstr "Atramų pjaustymas"
 
 msgid "Merging slices and calculating statistics"
-msgstr ""
+msgstr "Pjūvių sujungimas ir statistikos skaičiavimas"
 
 msgid "Rasterizing layers"
-msgstr ""
+msgstr "Sluoksnių rasterizavimas"
 
 msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
-msgstr ""
+msgstr "Pjaustymas turėjo būti sustabdytas dėl vidinės klaidos: Nenuoseklus pjūvio indeksas."
 
 msgid "Visualizing supports"
-msgstr ""
+msgstr "Atramų vizualizavimas"
 
 msgid "No pad can be generated for this model with the current configuration"
-msgstr ""
+msgstr "Šiam modeliui negalima sugeneruoti pagrindo su esama konfigūracija"
 
 msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
-msgstr ""
+msgstr "Yra neišspausdinamų objektų. Pabandykite koreguoti atramų nustatymus, kad objektai taptų spausdinamais."
 
 msgid "Taking a configuration snapshot failed."
-msgstr ""
+msgstr "Konfigūracijos momentinės nuotraukos darymas nepavyko."
 
 msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
-msgstr ""
+msgstr "OrcaSlicer aptiko klaidą darant konfigūracijos momentinę nuotrauką."
 
 msgid "OrcaSlicer error"
-msgstr ""
+msgstr "OrcaSlicer klaida"
 
 msgid "Continue"
-msgstr ""
+msgstr "Tęsti"
 
 msgid "Abort"
-msgstr ""
+msgstr "Nutraukti"
 
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Cosmyx paketo versija %s"
 
 msgid "Model Pictures"
-msgstr ""
+msgstr "Modelio nuotraukos"
 
 msgid "Auxiliaryies"
-msgstr ""
+msgstr "Pagalbiniai elementai"
 
 msgid "nozzle"
-msgstr ""
+msgstr "antgalis"
 
 msgid "Alternate nozzles:"
-msgstr ""
+msgstr "Pakaitiniai antgaliai:"
 
 msgid "All standard"
-msgstr ""
+msgstr "Visi standartiniai"
 
 msgid "Welcome to the %s Configuration Assistant"
-msgstr ""
+msgstr "Sveiki atvykę į %s konfigūracijos asistentą"
 
 msgid "Welcome to the %s Configuration Wizard"
-msgstr ""
+msgstr "Sveiki atvykę į %s konfigūracijos vedlį"
 
 msgid "Welcome"
-msgstr ""
+msgstr "Sveiki atvykę"
 
 msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
-msgstr ""
+msgstr "Sveiki, sveiki atvykę į %s! Šis %s padės jums atlikti pradinę konfigūraciją; tik keli nustatymai ir būsite pasiruošę spausdinti."
 
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
-msgstr ""
+msgstr "Pašalinti vartotojo profilius (prieš tai bus padaryta momentinė nuotrauka)"
 
 msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
-msgstr ""
+msgstr "Atlikti darbalaukio integraciją (nustato šį dvejetainį failą kaip randamą sistemos)."
 
 msgid "%s Family"
-msgstr ""
+msgstr "%s šeima"
 
 msgid "Printer:"
-msgstr ""
+msgstr "Spausdintuvas:"
 
 msgid "Vendor:"
-msgstr ""
+msgstr "Tiekėjas:"
 
 msgid "Profile:"
-msgstr ""
+msgstr "Profilis:"
 
 msgid "(All)"
-msgstr ""
+msgstr "(Visi)"
 
 msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
-msgstr ""
+msgstr "%1% pažymėti <b>*</b> yra <b>nesuderinami</b> su kai kuriais įdiegtais spausdintuvais."
 
 msgid "SLA materials"
-msgstr ""
+msgstr "SLA medžiagos"
 
 msgid "All installed printers are compatible with the selected %1%."
-msgstr ""
+msgstr "Visi įdiegti spausdintuvai yra suderinami su pasirinktu %1%."
 
 msgid "filament"
-msgstr ""
+msgstr "siūlas"
 
 msgid "SLA material"
-msgstr ""
+msgstr "SLA medžiaga"
 
 msgid "Only the following installed printers are compatible with the selected filaments"
-msgstr ""
+msgstr "Tik šie įdiegti spausdintuvai yra suderinami su pasirinktais siūlais"
 
 msgid "Only the following installed printers are compatible with the selected SLA materials"
-msgstr ""
+msgstr "Tik šie įdiegti spausdintuvai yra suderinami su pasirinktomis SLA medžiagomis"
 
 msgid "Custom Printer Setup"
-msgstr ""
+msgstr "Pasirinktinio spausdintuvo sąranka"
 
 msgid "Custom Printer"
-msgstr ""
+msgstr "Pasirinktinis spausdintuvas"
 
 msgid "Define a custom printer profile"
-msgstr ""
+msgstr "Apibrėžti pasirinktinį spausdintuvo profilį"
 
 msgid "Custom profile name:"
-msgstr ""
+msgstr "Pasirinktinio profilio pavadinimas:"
 
 msgid "Firmware Type"
-msgstr ""
+msgstr "Programinės įrangos tipas"
 
 msgid "Firmware"
-msgstr ""
+msgstr "Programinė įranga"
 
 msgid "Choose the type of firmware used by your printer."
-msgstr ""
+msgstr "Pasirinkite savo spausdintuvo naudojamos programinės įrangos tipą."
 
 msgid "Bed Shape and Size"
-msgstr ""
+msgstr "Stalo forma ir dydis"
 
 msgid "Set the shape of your printer's bed."
-msgstr ""
+msgstr "Nustatykite savo spausdintuvo stalo formą."
 
 msgid "Invalid numeric input."
-msgstr ""
+msgstr "Netinkama skaitinė įvestis."
 
 msgid "Filament and Nozzle Diameters"
-msgstr ""
+msgstr "Siūlo ir antgalio skersmuo"
 
 msgid "Print Diameters"
-msgstr ""
+msgstr "Spausdinimo skersmuo"
 
 msgid "Enter the diameter of your printer's hot end nozzle."
-msgstr ""
+msgstr "Įveskite savo spausdintuvo karšto galo antgalio skersmens dydį."
 
 msgid "Nozzle Diameter:"
-msgstr ""
+msgstr "Antgalio skersmuo:"
 
 msgid "Enter the diameter of your filament."
-msgstr ""
+msgstr "Įveskite savo siūlo skersmens dydį."
 
 msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
-msgstr ""
+msgstr "Reikalingas geras tikslumas, todėl naudokite štvirtainius matuoklius ir atlikite kelis matavimus išilgai siūlo, tada apskaičiuokite vidurkį."
 
 msgid "Filament Diameter:"
-msgstr ""
+msgstr "Siūlo skersmuo:"
 
 msgid "Nozzle and Bed Temperatures"
-msgstr ""
+msgstr "Antgalio ir stalo temperatūros"
 
 msgid "Enter the nozzle_temperature needed for extruding your filament."
-msgstr ""
+msgstr "Įveskite reikalingą antgalio temperatūrą siūlui išspausti."
 
 msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
-msgstr ""
+msgstr "Apytikslė taisyklė: 160–230 °C PLA ir 215–250 °C ABS."
 
 msgid "Extrusion Temperature:"
-msgstr ""
+msgstr "Ekstruzijos temperatūra:"
 
 msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
-msgstr ""
+msgstr "Įveskite reikalingą stalo temperatūrą, kad siūlas prikistų prie šildomo stalo."
 
 msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
-msgstr ""
+msgstr "Apytikslė taisyklė: 60 °C PLA ir 110 °C ABS. Palikite nulį, jei neturite šildomo stalo."
 
 msgid "Bed Temperature:"
-msgstr ""
+msgstr "Stalo temperatūra:"
 
 msgid "SLA Materials"
-msgstr ""
+msgstr "SLA medžiagos"
 
 msgid "FFF Technology Printers"
-msgstr ""
+msgstr "FFF technologijos spausdintuvai"
 
 msgid "SLA Technology Printers"
-msgstr ""
+msgstr "SLA technologijos spausdintuvai"
 
 msgid "Following printer profiles has no default filament: %1%Please select one manually."
-msgstr ""
+msgstr "Šiuose spausdintuvo profiliuose nėra numatytojo siūlo: %1%Pasirinkite jį rankiniu būdu."
 
 msgid "Following printer profiles has no default material: %1%Please select one manually."
-msgstr ""
+msgstr "Šiuose spausdintuvo profiliuose nėra numatytosios medžiagos: %1%Pasirinkite ją rankiniu būdu."
 
 msgid "The following FFF printer models have no filament selected:"
-msgstr ""
+msgstr "Šiems FFF spausdintuvo modeliams nepasirinktas siūlas:"
 
 msgid "Do you want to select default filaments for these FFF printer models?"
-msgstr ""
+msgstr "Ar norite pasirinkti numatytuosius siūlus šiems FFF spausdintuvo modeliams?"
 
 msgid "Configuration is edited in ConfigWizard"
-msgstr ""
+msgstr "Konfigūracija redaguojama ConfigWizard programoje"
 
 msgid "All user presets will be deleted."
-msgstr ""
+msgstr "Visi vartotojo išankstiniai nustatymai bus ištrinti."
 
 msgid "A new Printer was installed and it will be activated."
-msgstr ""
+msgstr "Įdiegtas naujas spausdintuvas, kuris bus suaktyvintas."
 
 msgid "Some Printers were uninstalled."
-msgstr ""
+msgstr "Kai kurie spausdintuvai buvo pašalinti."
 
 msgid "A new filament was installed and it will be activated."
-msgstr ""
+msgstr "Įdiegtas naujas siūlas, kuris bus suaktyvintas."
 
 msgid "A new SLA material was installed and it will be activated."
-msgstr ""
+msgstr "Įdiegta nauja SLA medžiaga, kuri bus suaktyvinta."
 
 msgid "Some filaments were uninstalled."
-msgstr ""
+msgstr "Kai kurie siūlai buvo pašalinti."
 
 msgid "Custom printer was installed and it will be activated."
-msgstr ""
+msgstr "Įdiegtas pasirinktinis spausdintuvas, kuris bus suaktyvintas."
 
 msgid "<Back"
-msgstr ""
+msgstr "<Atgal"
 
 msgid "Next>"
-msgstr ""
+msgstr "Toliau>"
 
 msgid "Filament Profiles Selection"
-msgstr ""
+msgstr "Siūlo profilių pasirinkimas"
 
 msgid "Configuration Assistant"
-msgstr ""
+msgstr "Konfigūracijos asistentas"
 
 msgid "Configuration &Assistant"
-msgstr ""
+msgstr "Konfigūracijos &asistentas"
 
 msgid "Configuration Wizard"
-msgstr ""
+msgstr "Konfigūracijos vedlys"
 
 msgid "Configuration &Wizard"
-msgstr ""
+msgstr "Konfigūracijos &vedlys"
 
 msgid "A new vendor was installed and one of its printers will be activated"
 msgid_plural "New vendors were installed and one of theirs printers will be activated"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Įdiegtas naujas tiekėjas ir vienas jo spausdintuvų bus suaktyvintas"
+msgstr[1] "Įdiegtas naujas tiekėjas ir vienas jo spausdintuvų bus suaktyvintas"
 
 msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Darbalaukio integracijos atlikimas nepavyko – boost::filesystem::canonical negrąžino AppImage kelio."
 
 msgid "Performing desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Darbalaukio integracijos atlikimas nepavyko – nepavyko rasti vykdomojo failo."
 
 msgid "Performing desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Darbalaukio integracijos atlikimas nepavyko, nes programos katalogas nerastas."
 
 msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
-msgstr ""
+msgstr "Darbalaukio integracijos atlikimas nepavyko – nepavyko sukurti Gcodeviewer darbalaukio failo. OrcaSlicer darbalaukio failas greičiausiai buvo sukurtas sėkmingai."
 
 msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
-msgstr ""
+msgstr "Atsisiuntimo programos darbalaukio integracijos atlikimas nepavyko – boost::filesystem::canonical negrąžino AppImage kelio."
 
 msgid "Performing downloader desktop integration failed - Could not find executable."
-msgstr ""
+msgstr "Atsisiuntimo programos darbalaukio integracijos atlikimas nepavyko – nepavyko rasti vykdomojo failo."
 
 msgid "Performing downloader desktop integration failed because the application directory was not found."
-msgstr ""
+msgstr "Atsisiuntimo programos darbalaukio integracijos atlikimas nepavyko, nes programos katalogas nerastas."
 
 msgid "Desktop Integration"
-msgstr ""
+msgstr "Darbalaukio integracija"
 
 msgid ""
 "Desktop Integration sets this binary to be searchable by the system.\n"
@@ -20150,231 +20150,231 @@ msgid ""
 msgstr ""
 
 msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
-msgstr ""
+msgstr "Dabartinė kameros temperatūra arba tikslinė kameros temperatūra viršija 45\\u2103. Siekiant išvengti ekstruderio užsikimšimo, žemos temperatūros siūlo (PLA/PETG/TPU) negalima įdėti."
 
 msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
-msgstr ""
+msgstr "Ekstruderio viduje įdėtas žemos temperatūros siūlas (PLA/PETG/TPU). Siekiant išvengti ekstruderio užsikimšimo, draudžiama nustatyti kameros temperatūrą aukščiau 45\\u2103."
 
 msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
-msgstr ""
+msgstr "Kai nustatote kameros temperatūrą žemiau 40\\u2103, kameros temperatūros valdymas nebus suaktyvintas, o tikslinė kameros temperatūra bus automatiškai nustatyta į 0\\u2103."
 
 msgid "The download has failed"
-msgstr ""
+msgstr "Atsisiuntimas nepavyko"
 
 msgid "Can't create file at %1%"
-msgstr ""
+msgstr "Nepavyksta sukurti failo adresu %1%"
 
 msgid "Archive preview"
-msgstr ""
+msgstr "Archyvo peržiūra"
 
 msgid "Movement:"
-msgstr ""
+msgstr "Judėjimas:"
 
 msgid "Movement"
-msgstr ""
+msgstr "Judėjimas"
 
 msgid "Auto Segment"
-msgstr ""
+msgstr "Automatinis segmentavimas"
 
 msgid "Depth ratio"
-msgstr ""
+msgstr "Gylio santykis"
 
 msgid "Prizm"
-msgstr ""
+msgstr "Prizmė"
 
 msgid "connector is out of cut contour"
-msgstr ""
+msgstr "jungtis yra už pjovimo kontūro ribų"
 
 msgid "connectors are out of cut contour"
-msgstr ""
+msgstr "jungtys yra už pjovimo kontūro ribų"
 
 msgid "connector is out of object"
-msgstr ""
+msgstr "jungtis yra už objekto ribų"
 
 msgid "connectors is out of object"
-msgstr ""
+msgstr "jungtys yra už objekto ribų"
 
 msgid ""
 "Invalid state. \n"
 "No one part is selected for keep after cut"
-msgstr ""
+msgstr "Neteisinga būsena. \nNė viena dalis nepasirinkta palikimui po pjovimo"
 
 msgid "Please confirm explosion ratio = 1 and select at least two volumes."
-msgstr ""
+msgstr "Patvirtinkite, kad sprogimo santykis = 1, ir pasirinkite bent du tomus."
 
 msgid "Please select at least two volumes."
-msgstr ""
+msgstr "Pasirinkite bent du tomus."
 
 msgid "(Moving)"
-msgstr ""
+msgstr "(Judama)"
 
 msgid "Point and point assembly"
-msgstr ""
+msgstr "Taško ir taško surinkimas"
 
 msgid ""
 "It is recommended to assemble the objects first,\n"
 "because the objects is restriced to bed \n"
 "and only parts can be lifted."
-msgstr ""
+msgstr "Rekomenduojama pirmiausia surinkti objektus,\nnes objektai apriboti stalui \nir galima kelti tik dalis."
 
 msgid "Face and face assembly"
-msgstr ""
+msgstr "Paviršiaus ir paviršiaus surinkimas"
 
 msgid "Entering Assembly gizmo"
-msgstr ""
+msgstr "Įjungiamas surinkimo įrankis"
 
 msgid "Leaving Assembly gizmo"
-msgstr ""
+msgstr "Išjungiamas surinkimo įrankis"
 
 msgid "Entering Cut gizmo"
-msgstr ""
+msgstr "Įjungiamas pjovimo įrankis"
 
 msgid "Leaving Cut gizmo"
-msgstr ""
+msgstr "Išjungiamas pjovimo įrankis"
 
 msgid "Cut gizmo editing"
-msgstr ""
+msgstr "Pjovimo įrankio redagavimas"
 
 msgid "Add fuzzy skin"
-msgstr ""
+msgstr "Pridėti nelygų paviršių"
 
 msgid "Remove fuzzy skin"
-msgstr ""
+msgstr "Pašalinti nelygų paviršių"
 
 msgid "Reset selection"
-msgstr ""
+msgstr "Iš naujo nustatyti pasirinkimą"
 
 msgid "Entering Paint-on fuzzy skin"
-msgstr ""
+msgstr "Įjungiamas piešimo nelygiame paviršiuje režimas"
 
 msgid "Leaving Paint-on fuzzy skin"
-msgstr ""
+msgstr "Išjungiamas piešimo nelygiame paviršiuje režimas"
 
 msgid "Paint-on fuzzy skin editing"
-msgstr ""
+msgstr "Piešimo nelygiame paviršiuje redagavimas"
 
 msgid "Hollow this object"
-msgstr ""
+msgstr "Ištuštinti šį objektą"
 
 msgid "Preview hollowed and drilled model"
-msgstr ""
+msgstr "Peržiūrėti ištuštintą ir išgręžtą modelį"
 
 msgid "Offset"
-msgstr ""
+msgstr "Poslinkis"
 
 msgid "Closing distance"
-msgstr ""
+msgstr "Uždarymo atstumas"
 
 msgid "Hole diameter"
-msgstr ""
+msgstr "Skylės skersmuo"
 
 msgid "Hole depth"
-msgstr ""
+msgstr "Skylės gylis"
 
 msgid "Remove selected holes"
-msgstr ""
+msgstr "Pašalinti pasirinktas skyles"
 
 msgid "Remove all holes"
-msgstr ""
+msgstr "Pašalinti visas skyles"
 
 msgid "Clipping of view"
-msgstr ""
+msgstr "Vaizdo apkarpymas"
 
 msgid "Show supports"
-msgstr ""
+msgstr "Rodyti atramas"
 
 msgid "Hollow and drill"
-msgstr ""
+msgstr "Ištuštinti ir išgręžti"
 
 msgid "Entering Measure gizmo"
-msgstr ""
+msgstr "Įjungiamas matavimo įrankis"
 
 msgid "Leaving Measure gizmo"
-msgstr ""
+msgstr "Išjungiamas matavimo įrankis"
 
 msgid "Model simplification has been canceled"
-msgstr ""
+msgstr "Modelio supaprastinimas buvo atšauktas"
 
 msgid "Lock supports under new islands"
-msgstr ""
+msgstr "Užrakinti atramas po naujomis salomis"
 
 msgid "Remove all points"
-msgstr ""
+msgstr "Pašalinti visus taškus"
 
 msgid "Apply changes"
-msgstr ""
+msgstr "Taikyti pakeitimus"
 
 msgid "Discard changes"
-msgstr ""
+msgstr "Atmesti pakeitimus"
 
 msgid "Minimal points distance"
-msgstr ""
+msgstr "Minimalus taškų atstumas"
 
 msgid "Support points density"
-msgstr ""
+msgstr "Atramų taškų tankis"
 
 msgid "Manual editing"
-msgstr ""
+msgstr "Rankinis redagavimas"
 
 msgid "SLA Support Points"
-msgstr ""
+msgstr "SLA atramų taškai"
 
 msgid "Do you want to save your manually edited support points?"
-msgstr ""
+msgstr "Ar norite išsaugoti rankiniu būdu redaguotus atramų taškus?"
 
 msgid "Save support points?"
-msgstr ""
+msgstr "Išsaugoti atramų taškus?"
 
 msgid "Autogeneration will erase all manually edited points."
-msgstr ""
+msgstr "Automatinis generavimas ištrins visus rankiniu būdu redaguotus taškus."
 
 msgid "Are you sure you want to do it?"
-msgstr ""
+msgstr "Ar tikrai norite tai padaryti?"
 
 msgid "SLA gizmo keyboard shortcuts"
-msgstr ""
+msgstr "SLA įrankio klaviatūros spartieji klavišai"
 
 msgid "Note: some shortcuts work in (non)editing mode only."
-msgstr ""
+msgstr "Pastaba: kai kurie spartieji klavišai veikia tik (ne)redagavimo režimu."
 
 msgid "Add point"
-msgstr ""
+msgstr "Pridėti tašką"
 
 msgid "Remove point"
-msgstr ""
+msgstr "Pašalinti tašką"
 
 msgid "Move point"
-msgstr ""
+msgstr "Perkelti tašką"
 
 msgid "Add point to selection"
-msgstr ""
+msgstr "Pridėti tašką prie pasirinkimo"
 
 msgid "Remove point from selection"
-msgstr ""
+msgstr "Pašalinti tašką iš pasirinkimo"
 
 msgid "Select by rectangle"
-msgstr ""
+msgstr "Pasirinkti stačiakampiu"
 
 msgid "Deselect by rectangle"
-msgstr ""
+msgstr "Atšaukti pasirinkimą stačiakampiu"
 
 msgid "Select all points"
-msgstr ""
+msgstr "Pasirinkti visus taškus"
 
 msgid "Move clipping plane"
-msgstr ""
+msgstr "Perkelti apkarpymo plokštumą"
 
 msgid "Reset clipping plane"
-msgstr ""
+msgstr "Iš naujo nustatyti apkarpymo plokštumą"
 
 msgid "Switch to editing mode"
-msgstr ""
+msgstr "Perjungti į redagavimo režimą"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calage 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calage 3 SNDT"
 
 msgid ""
 "This calibration model works best with specific infill settings.\n"
@@ -20385,282 +20385,282 @@ msgid ""
 "\n"
 "Yes - Change these settings automatically\n"
 "No  - Do not change these settings for me"
-msgstr ""
+msgstr "Šis kalibravimo modelis geriausiai veikia su konkrečiais užpildo nustatymais.\nOptimaliems kalibravimo rezultatams patariama nustatyti:\n- Užpildo kryptis: %.0f\\u00b0\n- Kieto užpildo kryptis: %.0f\\u00b0\n- Tik viena siena pirmame sluoksnyje: %s\n\nTaip – pakeisti šiuos nustatymus automatiškai\nNe  – nekeisti šių nustatymų"
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calage 1 Nova"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Kalibravimo modeliai dvigubai galvutei"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Kalibravimo modeliai viengubai galvutei"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx Handy Models"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D Models"
 
 msgid "Add Emboss text object"
-msgstr ""
+msgstr "Pridėti iškilų teksto objektą"
 
 msgid "Emboss attribute change"
-msgstr ""
+msgstr "Iškilumo atributo keitimas"
 
 msgid "Add Emboss text Volume"
-msgstr ""
+msgstr "Pridėti iškilų teksto tomą"
 
 msgid "Font doesn't have any shape for given text."
-msgstr ""
+msgstr "Šriftas neturi jokios formos nurodytam tekstui."
 
 msgid "There is no valid surface for text projection."
-msgstr ""
+msgstr "Nėra tinkamo paviršiaus teksto projekcijai."
 
 msgid "An unexpected error occurred"
-msgstr ""
+msgstr "Įvyko nenumatyta klaida"
 
 msgid "Best surface quality"
-msgstr ""
+msgstr "Geriausia paviršiaus kokybė"
 
 msgid "Optimize object rotation for best surface quality."
-msgstr ""
+msgstr "Optimizuoti objekto sukimą geriausiai paviršiaus kokybei."
 
 msgid "Reduced overhang slopes"
-msgstr ""
+msgstr "Sumažinti kabančio sluoksnio šlaitai"
 
 msgid ""
 "Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
 "Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
-msgstr ""
+msgstr "Optimizuoti objekto sukimą, kad reikėtų kuo mažiau kabančių sluoksnių, kuriems reikalingos atramų struktūros.\nPastaba: šis metodas bandys rasti geriausią objekto paviršių kontaktui su spausdinimo staliu, jei pakėlimas nenustatytas."
 
 msgid "Lowest Z height"
-msgstr ""
+msgstr "Mažiausias Z aukštis"
 
 msgid "Rotate the model to have the lowest z height for faster print time."
-msgstr ""
+msgstr "Pasukti modelį, kad turėtų mažiausią z aukštį, siekiant greitesnio spausdinimo laiko."
 
 msgid "Choose SLA archive:"
-msgstr ""
+msgstr "Pasirinkti SLA archyvą:"
 
 msgid "Import file"
-msgstr ""
+msgstr "Importuoti failą"
 
 msgid "Import model and profile"
-msgstr ""
+msgstr "Importuoti modelį ir profilį"
 
 msgid "Import profile only"
-msgstr ""
+msgstr "Importuoti tik profilį"
 
 msgid "Import model only"
-msgstr ""
+msgstr "Importuoti tik modelį"
 
 msgid "Accurate"
-msgstr ""
+msgstr "Tikslus"
 
 msgid "Balanced"
-msgstr ""
+msgstr "Subalansuotas"
 
 msgid "Quick"
-msgstr ""
+msgstr "Greitas"
 
 msgid "3D Models"
-msgstr ""
+msgstr "3D modeliai"
 
 msgid "Click to return"
-msgstr ""
+msgstr "Spustelėkite, kad grįžtumėte"
 
 msgid "Left Arrow"
-msgstr ""
+msgstr "Kairė rodyklė"
 
 msgid "Click to continue"
-msgstr ""
+msgstr "Spustelėkite, kad tęstumėte"
 
 msgid "Right Arrow"
-msgstr ""
+msgstr "Dešinė rodyklė"
 
 msgid "Authorizing..."
-msgstr ""
+msgstr "Autorizuojama..."
 
 msgid "NO RAMMING AT ALL"
-msgstr ""
+msgstr "JOKIO SPAUDIMO"
 
 msgid "Volumetric speed"
-msgstr ""
+msgstr "Tūrinis greitis"
 
 msgid "Search"
-msgstr ""
+msgstr "Ieškoti"
 
 msgid "My Device"
-msgstr ""
+msgstr "Mano įrenginys"
 
 msgid "Other Device"
-msgstr ""
+msgstr "Kitas įrenginys"
 
 msgid "Can't find my devices?"
-msgstr ""
+msgstr "Nerandate savo įrenginių?"
 
 msgid "Modifying the device name"
-msgstr ""
+msgstr "Įrenginio pavadinimo keitimas"
 
 msgid "Bind with Access Code"
-msgstr ""
+msgstr "Susieti su prieigos kodu"
 
 msgid "Step file import parameters"
-msgstr ""
+msgstr "STEP failo importavimo parametrai"
 
 msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
-msgstr ""
+msgstr "Mažesni tiesiniai ir kampiniai nuokrypiai lemia aukštesnės kokybės transformacijas, tačiau padidina apdorojimo laiką."
 
 msgid "View Wiki for more information"
-msgstr ""
+msgstr "Žiūrėkite Wiki daugiau informacijos"
 
 msgid "Linear Deflection"
-msgstr ""
+msgstr "Tiesinis nuokrypis"
 
 msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
-msgstr ""
+msgstr "Įveskite teisingą reikšmę (0,001 < tiesinis nuokrypis < 0,1)"
 
 msgid "Angle Deflection"
-msgstr ""
+msgstr "Kampinis nuokrypis"
 
 msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
-msgstr ""
+msgstr "Įveskite teisingą reikšmę (0,01 < kampinis nuokrypis < 1,0)"
 
 msgid "Split compound and compsolid into multiple objects"
-msgstr ""
+msgstr "Išskaidyti sudurtinį ir sudurtinį kietąjį kūną į kelis objektus"
 
 msgid "Number of triangular facets"
-msgstr ""
+msgstr "Trikampių briaunų skaičius"
 
 msgid "Calculating, please wait..."
-msgstr ""
+msgstr "Skaičiuojama, prašome palaukti..."
 
 msgid "Move over surface"
-msgstr ""
+msgstr "Judėti virš paviršiaus"
 
 msgid "System Information"
-msgstr ""
+msgstr "Sistemos informacija"
 
 msgid "Blacklisted libraries loaded into OrcaSlicer process:"
-msgstr ""
+msgstr "Juodajame sąraše esančios bibliotekos, įkeltos į OrcaSlicer procesą:"
 
 msgid "SIMD is supported:"
-msgstr ""
+msgstr "SIMD palaikomas:"
 
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopijuoti į iškarpinę"
 
 msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
-msgstr ""
+msgstr "Stalo temperatūra, kai įdiegtas Cosmyx Textured Bed. Reikšmė -1 reiškia, kad siūlas nepalaiko spausdinimo ant Cosmyx Textured Bed. Reikšmė 0 reiškia, kad stalas išjungtas."
 
 msgid "Forward"
-msgstr ""
+msgstr "Pirmyn"
 
 msgid "Reload"
-msgstr ""
+msgstr "Perkrauti"
 
 msgid "Tools"
-msgstr ""
+msgstr "Įrankiai"
 
 msgid "View Source"
-msgstr ""
+msgstr "Peržiūrėti šaltinį"
 
 msgid "View Text"
-msgstr ""
+msgstr "Peržiūrėti tekstą"
 
 msgid "Handle Navigation"
-msgstr ""
+msgstr "Tvarkyti naršymą"
 
 msgid "Handle New Windows"
-msgstr ""
+msgstr "Tvarkyti naujus langus"
 
 msgid "Edit Mode"
-msgstr ""
+msgstr "Redagavimo režimas"
 
 msgid "Run Script"
-msgstr ""
+msgstr "Paleisti scenarijų"
 
 msgid "Add user script"
-msgstr ""
+msgstr "Pridėti vartotojo scenarijų"
 
 msgid "Set custom user agent"
-msgstr ""
+msgstr "Nustatyti pasirinktinį vartotojo agentą"
 
 msgid "Clear Selection"
-msgstr ""
+msgstr "Išvalyti pasirinkimą"
 
 msgid "Delete Selection"
-msgstr ""
+msgstr "Ištrinti pasirinkimą"
 
 msgid "Custom Scheme Example"
-msgstr ""
+msgstr "Pasirinktinės schemos pavyzdys"
 
 msgid "Memory File System Example"
-msgstr ""
+msgstr "Atminties failų sistemos pavyzdys"
 
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "Įjungti kontekstinį meniu"
 
 msgid "Enable Dev Tools"
-msgstr ""
+msgstr "Įjungti kūrėjo įrankius"
 
 msgid "An error occurred loading "
-msgstr ""
+msgstr "Įvyko klaida įkeliant "
 
 msgid "%"
-msgstr ""
+msgstr "%"
 
 msgid "Connected to CrealityPrint successfully!"
-msgstr ""
+msgstr "Sėkmingai prisijungta prie CrealityPrint!"
 
 msgid "Could not connect to CrealityPrint"
-msgstr ""
+msgstr "Nepavyko prisijungti prie CrealityPrint"
 
 msgid "Connection to ElegooLink is working correctly."
-msgstr ""
+msgstr "Ryšys su ElegooLink veikia tinkamai."
 
 msgid "Could not connect to ElegooLink"
-msgstr ""
+msgstr "Nepavyko prisijungti prie ElegooLink"
 
 msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "Failas buvo perduotas, tačiau įvyko keletas nežinomų klaidų. Patikrinkite įrenginio puslapį, raskite failą ir bandykite pradėti spausdinimą iš naujo."
 
 msgid "Error code not found"
-msgstr ""
+msgstr "Klaidos kodas nerastas"
 
 msgid "The printer is busy, Please check the device page for the file and try to start printing again."
-msgstr ""
+msgstr "Spausdintuvas užimtas. Patikrinkite įrenginio puslapį, raskite failą ir bandykite pradėti spausdinimą iš naujo."
 
 msgid "The file is lost, please check and try again."
-msgstr ""
+msgstr "Failas dingo, patikrinkite ir bandykite dar kartą."
 
 msgid "The file is corrupted, please check and try again."
-msgstr ""
+msgstr "Failas sugadintas, patikrinkite ir bandykite dar kartą."
 
 msgid "Transmission abnormality, please check and try again."
-msgstr ""
+msgstr "Perdavimo anomalija, patikrinkite ir bandykite dar kartą."
 
 msgid "The file does not match the printer, please check and try again."
-msgstr ""
+msgstr "Failas neatitinka spausdintuvo, patikrinkite ir bandykite dar kartą."
 
 msgid "Start print timeout"
-msgstr ""
+msgstr "Spausdinimo pradžios skirtasis laikas"
 
 msgid "Start print failed"
-msgstr ""
+msgstr "Spausdinimo pradžia nepavyko"
 
 msgid "Connection to ESP3D is working correctly."
-msgstr ""
+msgstr "Ryšys su ESP3D veikia tinkamai."
 
 msgid "Could not connect to ESP3D"
-msgstr ""
+msgstr "Nepavyko prisijungti prie ESP3D"
 
 msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
-msgstr ""
+msgstr "Ryšio skirtasis laikas baigėsi. Patikrinkite, ar spausdintuvo ir kompiuterio tinklas veikia tinkamai, ir patvirtinkite, kad jie yra tame pačiame tinkle."
 
 msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
-msgstr ""
+msgstr "Kompiuterio vardas/IP/URL neparsavamas, patikrinkite ir bandykite dar kartą."
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
-msgstr ""
+msgstr "Failų/duomenų perdavimas nutrauktas. Patikrinkite spausdintuvą ir tinklą, tada bandykite dar kartą."
