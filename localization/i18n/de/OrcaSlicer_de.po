@@ -21756,3 +21756,897 @@ msgstr ""
 
 msgid "Tungsten Carbide"
 msgstr ""
+
+msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
+msgstr "Die ausgewählte 3mf-Datei wurde mit einer neueren Version von %1% gespeichert und ist nicht kompatibel."
+
+msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "Die ausgewählte 3MF-Datei enthält ein mit FDM-Stützen bemaltes Objekt, das mit einer neueren Version von PrusaSlicer erstellt wurde und nicht kompatibel ist."
+
+msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "Die ausgewählte 3MF-Datei enthält ein mit Naht bemaltes Objekt, das mit einer neueren Version von PrusaSlicer erstellt wurde und nicht kompatibel ist."
+
+msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "Die ausgewählte 3MF-Datei enthält ein mehrfarbig bemaltes Objekt, das mit einer neueren Version von PrusaSlicer erstellt wurde und nicht kompatibel ist."
+
+msgid ""
+"Post-processing script %1% failed.\n"
+"\n"
+"The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
+"Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
+msgstr "Nachbearbeitungsskript %1% fehlgeschlagen.\n\nDas Nachbearbeitungsskript soll die G-code-Datei %2% direkt ändern, aber die G-code-Datei wurde gelöscht und wahrscheinlich unter einem neuen Namen gespeichert.\nBitte passen Sie das Nachbearbeitungsskript an, um den G-code direkt zu ändern, und konsultieren Sie das Handbuch, wie die nachbearbeitete G-code-Datei optional umbenannt werden kann.\n"
+
+msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "Betttemperatur für alle Schichten außer der ersten. Ein Wert von -1 bedeutet, dass das Filament den Druck auf dem Cosmyx Textured Bed nicht unterstützt. Ein Wert von 0 bedeutet, dass das Bett ausgeschaltet ist."
+
+msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "Betttemperatur der ersten Schicht. Ein Wert von -1 bedeutet, dass das Filament den Druck auf dem Cosmyx Textured Bed nicht unterstützt. Ein Wert von 0 bedeutet, dass das Bett ausgeschaltet ist."
+
+msgid "Cosmyx Textured Bed"
+msgstr "Cosmyx Textured Bed"
+
+msgid "Hollowing"
+msgstr "Aushöhlen"
+
+msgid "Pad brim size is too small for the current configuration."
+msgstr "Die Randbreite des Sockels ist für die aktuelle Konfiguration zu klein."
+
+msgid "Cannot proceed without support points! Add support points or disable support generation."
+msgstr "Ohne Stützpunkte kann nicht fortgefahren werden! Fügen Sie Stützpunkte hinzu oder deaktivieren Sie die Stützerzeugung."
+
+msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
+msgstr "Die Erhöhung ist für das Objekt zu niedrig. Verwenden Sie die Funktion \"Sockel um Objekt\", um das Objekt ohne Erhöhung zu drucken."
+
+msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
+msgstr "Die Enden der Stützpfeiler werden im Spalt zwischen dem Objekt und dem Sockel platziert. Der 'Sicherheitsabstand der Stützbasis' muss größer sein als der Parameter 'Sockellobjektabstand', um dies zu vermeiden."
+
+msgid "Exposition time is out of printer profile bounds."
+msgstr "Die Belichtungszeit liegt außerhalb der Druckerprofilgrenzen."
+
+msgid "Initial exposition time is out of printer profile bounds."
+msgstr "Die anfängliche Belichtungszeit liegt außerhalb der Druckerprofilgrenzen."
+
+msgid "Slicing done"
+msgstr "Slicing abgeschlossen"
+
+msgid "Hollowing model"
+msgstr "Modell aushöhlen"
+
+msgid "Drilling holes into model."
+msgstr "Löcher in Modell bohren."
+
+msgid "Slicing model"
+msgstr "Modell slicen"
+
+msgid "Generating support points"
+msgstr "Stützpunkte generieren"
+
+msgid "Generating support tree"
+msgstr "Stützbaum generieren"
+
+msgid "Generating pad"
+msgstr "Sockel generieren"
+
+msgid "Slicing supports"
+msgstr "Stützen slicen"
+
+msgid "Merging slices and calculating statistics"
+msgstr "Schichten zusammenführen und Statistiken berechnen"
+
+msgid "Rasterizing layers"
+msgstr "Schichten rastern"
+
+msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
+msgstr "Das Slicing musste aufgrund eines internen Fehlers gestoppt werden: Inkonsistenter Schichtindex."
+
+msgid "Visualizing supports"
+msgstr "Stützen visualisieren"
+
+msgid "No pad can be generated for this model with the current configuration"
+msgstr "Für dieses Modell kann mit der aktuellen Konfiguration kein Sockel erzeugt werden"
+
+msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
+msgstr "Es gibt undruckbare Objekte. Versuchen Sie, die Stützeinstellungen anzupassen, um die Objekte druckbar zu machen."
+
+msgid "Taking a configuration snapshot failed."
+msgstr "Die Aufnahme eines Konfigurationsschnappschusses ist fehlgeschlagen."
+
+msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
+msgstr "OrcaSlicer hat beim Aufnehmen eines Konfigurationsschnappschusses einen Fehler festgestellt."
+
+msgid "OrcaSlicer error"
+msgstr "OrcaSlicer-Fehler"
+
+msgid "Continue"
+msgstr "Weiter"
+
+msgid "Abort"
+msgstr "Abbrechen"
+
+msgid "Cosmyx Bundle Version %s"
+msgstr "Cosmyx Bundle Version %s"
+
+msgid "Model Pictures"
+msgstr "Modellbilder"
+
+msgid "Auxiliaryies"
+msgstr "Hilfsmittel"
+
+msgid "nozzle"
+msgstr "Düse"
+
+msgid "Alternate nozzles:"
+msgstr "Alternative Düsen:"
+
+msgid "All standard"
+msgstr "Alle Standard"
+
+msgid "Welcome to the %s Configuration Assistant"
+msgstr "Willkommen beim %s Konfigurationsassistenten"
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "Willkommen beim %s Konfigurationsassistenten"
+
+msgid "Welcome"
+msgstr "Willkommen"
+
+msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
+msgstr "Hallo, willkommen bei %s! Dieser %s hilft Ihnen bei der Erstkonfiguration; nur wenige Einstellungen und Sie sind bereit zum Drucken."
+
+msgid "Remove user profiles (a snapshot will be taken beforehand)"
+msgstr "Benutzerprofile entfernen (vorher wird ein Schnappschuss erstellt)"
+
+msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
+msgstr "Desktop-Integration durchführen (Macht diese Binärdatei vom System durchsuchbar)."
+
+msgid "%s Family"
+msgstr "%s Familie"
+
+msgid "Printer:"
+msgstr "Drucker:"
+
+msgid "Vendor:"
+msgstr "Hersteller:"
+
+msgid "Profile:"
+msgstr "Profil:"
+
+msgid "(All)"
+msgstr "(Alle)"
+
+msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
+msgstr "%1% die mit <b>*</b> gekennzeichnet sind, sind <b>nicht</b> mit einigen installierten Druckern kompatibel."
+
+msgid "SLA materials"
+msgstr "SLA-Materialien"
+
+msgid "All installed printers are compatible with the selected %1%."
+msgstr "Alle installierten Drucker sind mit dem ausgewählten %1% kompatibel."
+
+msgid "filament"
+msgstr "Filament"
+
+msgid "SLA material"
+msgstr "SLA-Material"
+
+msgid "Only the following installed printers are compatible with the selected filaments"
+msgstr "Nur die folgenden installierten Drucker sind mit den ausgewählten Filamenten kompatibel"
+
+msgid "Only the following installed printers are compatible with the selected SLA materials"
+msgstr "Nur die folgenden installierten Drucker sind mit den ausgewählten SLA-Materialien kompatibel"
+
+msgid "Custom Printer Setup"
+msgstr "Benutzerdefinierte Druckereinrichtung"
+
+msgid "Custom Printer"
+msgstr "Benutzerdefinierter Drucker"
+
+msgid "Define a custom printer profile"
+msgstr "Ein benutzerdefiniertes Druckerprofil definieren"
+
+msgid "Custom profile name:"
+msgstr "Benutzerdefinierter Profilname:"
+
+msgid "Firmware Type"
+msgstr "Firmware-Typ"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "Choose the type of firmware used by your printer."
+msgstr "Wählen Sie den Firmware-Typ Ihres Druckers."
+
+msgid "Bed Shape and Size"
+msgstr "Bettform und -größe"
+
+msgid "Set the shape of your printer's bed."
+msgstr "Legen Sie die Form des Druckbetts fest."
+
+msgid "Invalid numeric input."
+msgstr "Ungültige numerische Eingabe."
+
+msgid "Filament and Nozzle Diameters"
+msgstr "Filament- und Düsendurchmesser"
+
+msgid "Print Diameters"
+msgstr "Druckdurchmesser"
+
+msgid "Enter the diameter of your printer's hot end nozzle."
+msgstr "Geben Sie den Durchmesser der Hotend-Düse Ihres Druckers ein."
+
+msgid "Nozzle Diameter:"
+msgstr "Düsendurchmesser:"
+
+msgid "Enter the diameter of your filament."
+msgstr "Geben Sie den Durchmesser Ihres Filaments ein."
+
+msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
+msgstr "Eine gute Genauigkeit ist erforderlich, verwenden Sie daher einen Messschieber und führen Sie mehrere Messungen entlang des Filaments durch und berechnen Sie dann den Durchschnitt."
+
+msgid "Filament Diameter:"
+msgstr "Filamentdurchmesser:"
+
+msgid "Nozzle and Bed Temperatures"
+msgstr "Düsen- und Betttemperaturen"
+
+msgid "Enter the nozzle_temperature needed for extruding your filament."
+msgstr "Geben Sie die nozzle_temperature ein, die zum Extrudieren Ihres Filaments benötigt wird."
+
+msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
+msgstr "Als Faustregel gilt: 160 bis 230 °C für PLA und 215 bis 250 °C für ABS."
+
+msgid "Extrusion Temperature:"
+msgstr "Extrusionstemperatur:"
+
+msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
+msgstr "Geben Sie die Betttemperatur ein, die erforderlich ist, damit Ihr Filament am Heizbett haftet."
+
+msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
+msgstr "Als Faustregel gilt: 60 °C für PLA und 110 °C für ABS. Lassen Sie null, wenn Sie kein Heizbett haben."
+
+msgid "Bed Temperature:"
+msgstr "Betttemperatur:"
+
+msgid "SLA Materials"
+msgstr "SLA-Materialien"
+
+msgid "FFF Technology Printers"
+msgstr "FFF-Technologiedrucker"
+
+msgid "SLA Technology Printers"
+msgstr "SLA-Technologiedrucker"
+
+msgid "Following printer profiles has no default filament: %1%Please select one manually."
+msgstr "Die folgenden Druckerprofile haben kein Standardfilament: %1%Bitte wählen Sie eines manuell aus."
+
+msgid "Following printer profiles has no default material: %1%Please select one manually."
+msgstr "Die folgenden Druckerprofile haben kein Standardmaterial: %1%Bitte wählen Sie eines manuell aus."
+
+msgid "The following FFF printer models have no filament selected:"
+msgstr "Bei den folgenden FFF-Druckermodellen ist kein Filament ausgewählt:"
+
+msgid "Do you want to select default filaments for these FFF printer models?"
+msgstr "Möchten Sie Standardfilamente für diese FFF-Druckermodelle auswählen?"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "Die Konfiguration wird in ConfigWizard bearbeitet"
+
+msgid "All user presets will be deleted."
+msgstr "Alle Benutzervoreinstellungen werden gelöscht."
+
+msgid "A new Printer was installed and it will be activated."
+msgstr "Ein neuer Drucker wurde installiert und wird aktiviert."
+
+msgid "Some Printers were uninstalled."
+msgstr "Einige Drucker wurden deinstalliert."
+
+msgid "A new filament was installed and it will be activated."
+msgstr "Ein neues Filament wurde installiert und wird aktiviert."
+
+msgid "A new SLA material was installed and it will be activated."
+msgstr "Ein neues SLA-Material wurde installiert und wird aktiviert."
+
+msgid "Some filaments were uninstalled."
+msgstr "Einige Filamente wurden deinstalliert."
+
+msgid "Custom printer was installed and it will be activated."
+msgstr "Ein benutzerdefinierter Drucker wurde installiert und wird aktiviert."
+
+msgid "<Back"
+msgstr "<Zurück"
+
+msgid "Next>"
+msgstr "Weiter>"
+
+msgid "Filament Profiles Selection"
+msgstr "Filamentprofilauswahl"
+
+msgid "Configuration Assistant"
+msgstr "Konfigurationsassistent"
+
+msgid "Configuration &Assistant"
+msgstr "Konfiguration&sassistent"
+
+msgid "Configuration Wizard"
+msgstr "Konfigurationsassistent"
+
+msgid "Configuration &Wizard"
+msgstr "Konfiguration&sassistent"
+
+msgid "A new vendor was installed and one of its printers will be activated"
+msgid_plural "New vendors were installed and one of theirs printers will be activated"
+msgstr[0] "Ein neuer Hersteller wurde installiert und einer seiner Drucker wird aktiviert"
+msgstr[1] "Ein neuer Hersteller wurde installiert und einer seiner Drucker wird aktiviert"
+
+msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
+msgstr "Desktop-Integration fehlgeschlagen – boost::filesystem::canonical hat keinen AppImage-Pfad zurückgegeben."
+
+msgid "Performing desktop integration failed - Could not find executable."
+msgstr "Desktop-Integration fehlgeschlagen – Ausführbare Datei konnte nicht gefunden werden."
+
+msgid "Performing desktop integration failed because the application directory was not found."
+msgstr "Desktop-Integration fehlgeschlagen, da das Anwendungsverzeichnis nicht gefunden wurde."
+
+msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
+msgstr "Desktop-Integration fehlgeschlagen – Gcodeviewer-Desktopd-Datei konnte nicht erstellt werden. Die OrcaSlicer-Desktopd-Datei wurde wahrscheinlich erfolgreich erstellt."
+
+msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
+msgstr "Downloader-Desktop-Integration fehlgeschlagen – boost::filesystem::canonical hat keinen AppImage-Pfad zurückgegeben."
+
+msgid "Performing downloader desktop integration failed - Could not find executable."
+msgstr "Downloader-Desktop-Integration fehlgeschlagen – Ausführbare Datei konnte nicht gefunden werden."
+
+msgid "Performing downloader desktop integration failed because the application directory was not found."
+msgstr "Downloader-Desktop-Integration fehlgeschlagen, da das Anwendungsverzeichnis nicht gefunden wurde."
+
+msgid "Desktop Integration"
+msgstr "Desktop-Integration"
+
+msgid ""
+"Desktop Integration sets this binary to be searchable by the system.\n"
+"\n"
+"Press \"Perform\" to proceed."
+msgstr ""
+
+msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
+msgstr "Die aktuelle Kammertemperatur oder die Zielkammertemperatur überschreitet 45\\u2103. Um ein Verstopfen des Extruders zu vermeiden, ist es nicht erlaubt, Niedrigtemperaturfilament (PLA/PETG/TPU) zu laden."
+
+msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
+msgstr "Niedrigtemperaturfilament (PLA/PETG/TPU) ist im Extruder geladen. Um ein Verstopfen des Extruders zu vermeiden, ist es nicht erlaubt, die Kammertemperatur über 45\\u2103 einzustellen."
+
+msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
+msgstr "Wenn Sie die Kammertemperatur unter 40\\u2103 einstellen, wird die Kammertemperaturregelung nicht aktiviert und die Zielkammertemperatur wird automatisch auf 0\\u2103 gesetzt."
+
+msgid "The download has failed"
+msgstr "Der Download ist fehlgeschlagen"
+
+msgid "Can't create file at %1%"
+msgstr "Datei kann nicht erstellt werden unter %1%"
+
+msgid "Archive preview"
+msgstr "Archivvorschau"
+
+msgid "Movement:"
+msgstr "Bewegung:"
+
+msgid "Movement"
+msgstr "Bewegung"
+
+msgid "Auto Segment"
+msgstr "Automatische Segmentierung"
+
+msgid "Depth ratio"
+msgstr "Tiefenverhältnis"
+
+msgid "Prizm"
+msgstr "Prisma"
+
+msgid "connector is out of cut contour"
+msgstr "Verbindungsstück liegt außerhalb der Schnittkontur"
+
+msgid "connectors are out of cut contour"
+msgstr "Verbindungsstücke liegen außerhalb der Schnittkontur"
+
+msgid "connector is out of object"
+msgstr "Verbindungsstück liegt außerhalb des Objekts"
+
+msgid "connectors is out of object"
+msgstr "Verbindungsstücke liegen außerhalb des Objekts"
+
+msgid ""
+"Invalid state. \n"
+"No one part is selected for keep after cut"
+msgstr "Ungültiger Zustand. \nKein Teil ist zum Behalten nach dem Schnitt ausgewählt"
+
+msgid "Please confirm explosion ratio = 1 and select at least two volumes."
+msgstr "Bitte bestätigen Sie Explosionsverhältnis = 1 und wählen Sie mindestens zwei Volumen aus."
+
+msgid "Please select at least two volumes."
+msgstr "Bitte wählen Sie mindestens zwei Volumen aus."
+
+msgid "(Moving)"
+msgstr "(Bewegt sich)"
+
+msgid "Point and point assembly"
+msgstr "Punkt-zu-Punkt-Montage"
+
+msgid ""
+"It is recommended to assemble the objects first,\n"
+"because the objects is restriced to bed \n"
+"and only parts can be lifted."
+msgstr "Es wird empfohlen, die Objekte zuerst zusammenzubauen,\nda die Objekte auf das Bett beschränkt sind\nund nur Teile angehoben werden können."
+
+msgid "Face and face assembly"
+msgstr "Fläche-zu-Fläche-Montage"
+
+msgid "Entering Assembly gizmo"
+msgstr "Assembly-Gizmo betreten"
+
+msgid "Leaving Assembly gizmo"
+msgstr "Assembly-Gizmo verlassen"
+
+msgid "Entering Cut gizmo"
+msgstr "Schnitt-Gizmo betreten"
+
+msgid "Leaving Cut gizmo"
+msgstr "Schnitt-Gizmo verlassen"
+
+msgid "Cut gizmo editing"
+msgstr "Schnitt-Gizmo bearbeiten"
+
+msgid "Add fuzzy skin"
+msgstr "Raue Oberfläche hinzufügen"
+
+msgid "Remove fuzzy skin"
+msgstr "Raue Oberfläche entfernen"
+
+msgid "Reset selection"
+msgstr "Auswahl zurücksetzen"
+
+msgid "Entering Paint-on fuzzy skin"
+msgstr "Malwerkzeug für raue Oberfläche betreten"
+
+msgid "Leaving Paint-on fuzzy skin"
+msgstr "Malwerkzeug für raue Oberfläche verlassen"
+
+msgid "Paint-on fuzzy skin editing"
+msgstr "Malwerkzeug für raue Oberfläche bearbeiten"
+
+msgid "Hollow this object"
+msgstr "Dieses Objekt aushöhlen"
+
+msgid "Preview hollowed and drilled model"
+msgstr "Ausgehöhltes und gebohrtes Modell in der Vorschau anzeigen"
+
+msgid "Offset"
+msgstr "Versatz"
+
+msgid "Closing distance"
+msgstr "Schließabstand"
+
+msgid "Hole diameter"
+msgstr "Lochdurchmesser"
+
+msgid "Hole depth"
+msgstr "Lochtiefe"
+
+msgid "Remove selected holes"
+msgstr "Ausgewählte Löcher entfernen"
+
+msgid "Remove all holes"
+msgstr "Alle Löcher entfernen"
+
+msgid "Clipping of view"
+msgstr "Ansicht zuschneiden"
+
+msgid "Show supports"
+msgstr "Stützen anzeigen"
+
+msgid "Hollow and drill"
+msgstr "Aushöhlen und bohren"
+
+msgid "Entering Measure gizmo"
+msgstr "Mess-Gizmo betreten"
+
+msgid "Leaving Measure gizmo"
+msgstr "Mess-Gizmo verlassen"
+
+msgid "Model simplification has been canceled"
+msgstr "Modellvereinfachung wurde abgebrochen"
+
+msgid "Lock supports under new islands"
+msgstr "Stützen unter neuen Inseln sperren"
+
+msgid "Remove all points"
+msgstr "Alle Punkte entfernen"
+
+msgid "Apply changes"
+msgstr "Änderungen übernehmen"
+
+msgid "Discard changes"
+msgstr "Änderungen verwerfen"
+
+msgid "Minimal points distance"
+msgstr "Minimaler Punktabstand"
+
+msgid "Support points density"
+msgstr "Stützpunktdichte"
+
+msgid "Manual editing"
+msgstr "Manuelle Bearbeitung"
+
+msgid "SLA Support Points"
+msgstr "SLA-Stützpunkte"
+
+msgid "Do you want to save your manually edited support points?"
+msgstr "Möchten Sie Ihre manuell bearbeiteten Stützpunkte speichern?"
+
+msgid "Save support points?"
+msgstr "Stützpunkte speichern?"
+
+msgid "Autogeneration will erase all manually edited points."
+msgstr "Die automatische Generierung löscht alle manuell bearbeiteten Punkte."
+
+msgid "Are you sure you want to do it?"
+msgstr "Sind Sie sicher, dass Sie dies tun möchten?"
+
+msgid "SLA gizmo keyboard shortcuts"
+msgstr "SLA-Gizmo-Tastenkombinationen"
+
+msgid "Note: some shortcuts work in (non)editing mode only."
+msgstr "Hinweis: Einige Tastenkombinationen funktionieren nur im (Nicht-)Bearbeitungsmodus."
+
+msgid "Add point"
+msgstr "Punkt hinzufügen"
+
+msgid "Remove point"
+msgstr "Punkt entfernen"
+
+msgid "Move point"
+msgstr "Punkt verschieben"
+
+msgid "Add point to selection"
+msgstr "Punkt zur Auswahl hinzufügen"
+
+msgid "Remove point from selection"
+msgstr "Punkt aus Auswahl entfernen"
+
+msgid "Select by rectangle"
+msgstr "Per Rechteck auswählen"
+
+msgid "Deselect by rectangle"
+msgstr "Per Rechteck abwählen"
+
+msgid "Select all points"
+msgstr "Alle Punkte auswählen"
+
+msgid "Move clipping plane"
+msgstr "Schnittebene verschieben"
+
+msgid "Reset clipping plane"
+msgstr "Schnittebene zurücksetzen"
+
+msgid "Switch to editing mode"
+msgstr "In Bearbeitungsmodus wechseln"
+
+msgid "Calage 2 SNDT"
+msgstr "Calage 2 SNDT"
+
+msgid "Calage 3 SNDT"
+msgstr "Calage 3 SNDT"
+
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f\\u00b0\n"
+"- Solid infill direction: %.0f\\u00b0\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr "Dieses Kalibriermodell funktioniert am besten mit bestimmten Fülleinstellungen.\nFür optimale Kalibrierergebnisse wird empfohlen, Folgendes einzustellen:\n- Füllrichtung: %.0f\\u00b0\n- Vollmaterial-Füllrichtung: %.0f\\u00b0\n- Nur eine Wand in der ersten Schicht: %s\n\nJa – Diese Einstellungen automatisch ändern\nNein – Diese Einstellungen nicht für mich ändern"
+
+msgid "Calage 1 Nova"
+msgstr "Calage 1 Nova"
+
+msgid "Calibrations Models Dual Head"
+msgstr "Kalibriermodelle Doppelkopf"
+
+msgid "Calibration Models Single Head"
+msgstr "Kalibriermodelle Einzelkopf"
+
+msgid "Cosmyx Handy Models"
+msgstr "Cosmyx Handliche Modelle"
+
+msgid "Cosmyx 3D Models"
+msgstr "Cosmyx 3D-Modelle"
+
+msgid "Add Emboss text object"
+msgstr "Geprägtes Textobjekt hinzufügen"
+
+msgid "Emboss attribute change"
+msgstr "Prägeattribut ändern"
+
+msgid "Add Emboss text Volume"
+msgstr "Geprägtes Textvolumen hinzufügen"
+
+msgid "Font doesn't have any shape for given text."
+msgstr "Die Schriftart hat keine Form für den angegebenen Text."
+
+msgid "There is no valid surface for text projection."
+msgstr "Es gibt keine gültige Fläche für die Textprojektion."
+
+msgid "An unexpected error occurred"
+msgstr "Ein unerwarteter Fehler ist aufgetreten"
+
+msgid "Best surface quality"
+msgstr "Beste Oberflächenqualität"
+
+msgid "Optimize object rotation for best surface quality."
+msgstr "Objektrotation für beste Oberflächenqualität optimieren."
+
+msgid "Reduced overhang slopes"
+msgstr "Reduzierte Überhangneigungen"
+
+msgid ""
+"Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
+"Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
+msgstr "Objektrotation optimieren, um die Anzahl der Überhänge zu minimieren, die Stützstrukturen benötigen.\nBeachten Sie, dass diese Methode versucht, die beste Fläche des Objekts für den Kontakt mit dem Druckbett zu finden, wenn keine Erhöhung eingestellt ist."
+
+msgid "Lowest Z height"
+msgstr "Niedrigste Z-Höhe"
+
+msgid "Rotate the model to have the lowest z height for faster print time."
+msgstr "Modell drehen, um die niedrigste Z-Höhe für schnellere Druckzeit zu erreichen."
+
+msgid "Choose SLA archive:"
+msgstr "SLA-Archiv auswählen:"
+
+msgid "Import file"
+msgstr "Datei importieren"
+
+msgid "Import model and profile"
+msgstr "Modell und Profil importieren"
+
+msgid "Import profile only"
+msgstr "Nur Profil importieren"
+
+msgid "Import model only"
+msgstr "Nur Modell importieren"
+
+msgid "Accurate"
+msgstr "Genau"
+
+msgid "Balanced"
+msgstr "Ausgewogen"
+
+msgid "Quick"
+msgstr "Schnell"
+
+msgid "3D Models"
+msgstr "3D-Modelle"
+
+msgid "Click to return"
+msgstr "Klicken zum Zurückkehren"
+
+msgid "Left Arrow"
+msgstr "Linkspfeil"
+
+msgid "Click to continue"
+msgstr "Klicken zum Fortfahren"
+
+msgid "Right Arrow"
+msgstr "Rechtspfeil"
+
+msgid "Authorizing..."
+msgstr "Autorisierung läuft..."
+
+msgid "NO RAMMING AT ALL"
+msgstr "KEIN RAMMEN"
+
+msgid "Volumetric speed"
+msgstr "Volumetrische Geschwindigkeit"
+
+msgid "Search"
+msgstr "Suchen"
+
+msgid "My Device"
+msgstr "Mein Gerät"
+
+msgid "Other Device"
+msgstr "Anderes Gerät"
+
+msgid "Can't find my devices?"
+msgstr "Meine Geräte nicht gefunden?"
+
+msgid "Modifying the device name"
+msgstr "Gerätename ändern"
+
+msgid "Bind with Access Code"
+msgstr "Mit Zugangscode verbinden"
+
+msgid "Step file import parameters"
+msgstr "STEP-Datei-Importparameter"
+
+msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
+msgstr "Kleinere lineare und winklige Ablenkungen führen zu qualitativ hochwertigeren Transformationen, erhöhen jedoch die Verarbeitungszeit."
+
+msgid "View Wiki for more information"
+msgstr "Wiki für weitere Informationen anzeigen"
+
+msgid "Linear Deflection"
+msgstr "Lineare Ablenkung"
+
+msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
+msgstr "Bitte einen gültigen Wert eingeben (0,001 < lineare Ablenkung < 0,1)"
+
+msgid "Angle Deflection"
+msgstr "Winkelablenkung"
+
+msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
+msgstr "Bitte einen gültigen Wert eingeben (0,01 < Winkelablenkung < 1,0)"
+
+msgid "Split compound and compsolid into multiple objects"
+msgstr "Verbundkörper und Compsolid in mehrere Objekte aufteilen"
+
+msgid "Number of triangular facets"
+msgstr "Anzahl der dreieckigen Facetten"
+
+msgid "Calculating, please wait..."
+msgstr "Berechnung läuft, bitte warten..."
+
+msgid "Move over surface"
+msgstr "Über Oberfläche bewegen"
+
+msgid "System Information"
+msgstr "Systeminformationen"
+
+msgid "Blacklisted libraries loaded into OrcaSlicer process:"
+msgstr "In den OrcaSlicer-Prozess geladene gesperrte Bibliotheken:"
+
+msgid "SIMD is supported:"
+msgstr "SIMD wird unterstützt:"
+
+msgid "Copy to Clipboard"
+msgstr "In Zwischenablage kopieren"
+
+msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "Betttemperatur wenn das Cosmyx Textured Bed installiert ist. Ein Wert von -1 bedeutet, dass das Filament den Druck auf dem Cosmyx Textured Bed nicht unterstützt. Ein Wert von 0 bedeutet, dass das Bett ausgeschaltet ist."
+
+msgid "Forward"
+msgstr "Vorwärts"
+
+msgid "Reload"
+msgstr "Neu laden"
+
+msgid "Tools"
+msgstr "Werkzeuge"
+
+msgid "View Source"
+msgstr "Quelltext anzeigen"
+
+msgid "View Text"
+msgstr "Text anzeigen"
+
+msgid "Handle Navigation"
+msgstr "Navigation verwalten"
+
+msgid "Handle New Windows"
+msgstr "Neue Fenster verwalten"
+
+msgid "Edit Mode"
+msgstr "Bearbeitungsmodus"
+
+msgid "Run Script"
+msgstr "Skript ausführen"
+
+msgid "Add user script"
+msgstr "Benutzerskript hinzufügen"
+
+msgid "Set custom user agent"
+msgstr "Benutzerdefinierten User-Agent festlegen"
+
+msgid "Clear Selection"
+msgstr "Auswahl löschen"
+
+msgid "Delete Selection"
+msgstr "Auswahl entfernen"
+
+msgid "Custom Scheme Example"
+msgstr "Benutzerdefiniertes Schema-Beispiel"
+
+msgid "Memory File System Example"
+msgstr "Speicherdateisystem-Beispiel"
+
+msgid "Enable Context Menu"
+msgstr "Kontextmenü aktivieren"
+
+msgid "Enable Dev Tools"
+msgstr "Entwicklertools aktivieren"
+
+msgid "An error occurred loading "
+msgstr "Beim Laden ist ein Fehler aufgetreten "
+
+msgid "%"
+msgstr "%"
+
+msgid "Connected to CrealityPrint successfully!"
+msgstr "Erfolgreich mit CrealityPrint verbunden!"
+
+msgid "Could not connect to CrealityPrint"
+msgstr "Verbindung zu CrealityPrint nicht möglich"
+
+msgid "Connection to ElegooLink is working correctly."
+msgstr "Die Verbindung zu ElegooLink funktioniert korrekt."
+
+msgid "Could not connect to ElegooLink"
+msgstr "Verbindung zu ElegooLink nicht möglich"
+
+msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
+msgstr "Die Datei wurde übertragen, aber es sind einige unbekannte Fehler aufgetreten. Bitte überprüfen Sie die Geräteseite für die Datei und versuchen Sie erneut zu drucken."
+
+msgid "Error code not found"
+msgstr "Fehlercode nicht gefunden"
+
+msgid "The printer is busy, Please check the device page for the file and try to start printing again."
+msgstr "Der Drucker ist beschäftigt. Bitte überprüfen Sie die Geräteseite für die Datei und versuchen Sie erneut zu drucken."
+
+msgid "The file is lost, please check and try again."
+msgstr "Die Datei ist verloren gegangen, bitte überprüfen Sie und versuchen Sie es erneut."
+
+msgid "The file is corrupted, please check and try again."
+msgstr "Die Datei ist beschädigt, bitte überprüfen Sie und versuchen Sie es erneut."
+
+msgid "Transmission abnormality, please check and try again."
+msgstr "Übertragungsanomalie, bitte überprüfen Sie und versuchen Sie es erneut."
+
+msgid "The file does not match the printer, please check and try again."
+msgstr "Die Datei passt nicht zum Drucker, bitte überprüfen Sie und versuchen Sie es erneut."
+
+msgid "Start print timeout"
+msgstr "Zeitüberschreitung beim Druckstart"
+
+msgid "Start print failed"
+msgstr "Druckstart fehlgeschlagen"
+
+msgid "Connection to ESP3D is working correctly."
+msgstr "Die Verbindung zu ESP3D funktioniert korrekt."
+
+msgid "Could not connect to ESP3D"
+msgstr "Verbindung zu ESP3D nicht möglich"
+
+msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
+msgstr "Verbindungszeit überschritten. Bitte überprüfen Sie, ob das Drucker- und Computernetzwerk ordnungsgemäß funktionieren, und bestätigen Sie, dass sie sich im selben Netzwerk befinden."
+
+msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
+msgstr "Der Hostname/IP/URL konnte nicht analysiert werden, bitte überprüfen Sie ihn und versuchen Sie es erneut."
+
+msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
+msgstr "Datei-/Datenübertragung unterbrochen. Bitte überprüfen Sie den Drucker und das Netzwerk und versuchen Sie es erneut."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "Eine neue Version von CosmoSlice wurde installiert."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Bitte sichern und löschen Sie den Cosmyx AppData-Ordner."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Möchten Sie OrcaSlicer schließen und Ihren AppData-Ordner öffnen?"
+
+msgid "New Build Detected"
+msgstr "Neuer Build erkannt"
+
+msgid "Don't show again for future builds"
+msgstr "Für zukünftige Builds nicht mehr anzeigen"
+
+msgid "Skip build update notifications"
+msgstr "Build-Update-Benachrichtigungen überspringen"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "Wenn aktiviert, wird das Popup unterdrückt, das angezeigt wird, wenn ein neuer CosmoSlice-Build erkannt wird."

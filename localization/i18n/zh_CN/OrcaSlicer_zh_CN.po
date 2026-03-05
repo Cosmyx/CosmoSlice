@@ -17405,3 +17405,897 @@ msgstr ""
 
 msgid "Tungsten Carbide"
 msgstr ""
+
+msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
+msgstr "所选的 3mf 文件是用较新版本的 %1% 保存的，与当前版本不兼容。"
+
+msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "所选的 3MF 文件包含使用较新版本 PrusaSlicer 绘制 FDM 支撑的对象，与当前版本不兼容。"
+
+msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "所选的 3MF 文件包含使用较新版本 PrusaSlicer 绘制接缝的对象，与当前版本不兼容。"
+
+msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "所选的 3MF 文件包含使用较新版本 PrusaSlicer 绘制多材料的对象，与当前版本不兼容。"
+
+msgid ""
+"Post-processing script %1% failed.\n"
+"\n"
+"The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
+"Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
+msgstr "后处理脚本 %1% 执行失败。\n\n后处理脚本应就地修改 G-code 文件 %2%，但该 G-code 文件已被删除，可能以新名称保存。\n请调整后处理脚本以就地修改 G-code，并查阅手册了解如何选择性地重命名后处理后的 G-code 文件。\n"
+
+msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "除第一层外其他层的热床温度。值为 -1 表示该耗材不支持在 Cosmyx Textured Bed 上打印。值为 0 表示热床已关闭。"
+
+msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "第一层的热床温度。值为 -1 表示该耗材不支持在 Cosmyx Textured Bed 上打印。值为 0 表示热床已关闭。"
+
+msgid "Cosmyx Textured Bed"
+msgstr "Cosmyx Textured Bed"
+
+msgid "Hollowing"
+msgstr "镂空"
+
+msgid "Pad brim size is too small for the current configuration."
+msgstr "当前配置下，底垫边沿尺寸过小。"
+
+msgid "Cannot proceed without support points! Add support points or disable support generation."
+msgstr "没有支撑点无法继续！请添加支撑点或禁用支撑生成。"
+
+msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
+msgstr "对象的抬升高度过低。请使用「对象周围底垫」功能在不抬升的情况下打印对象。"
+
+msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
+msgstr "支撑柱末端将部署在对象与底垫之间的间隙中。「支撑底部安全距离」必须大于「底垫对象间隙」参数，以避免此情况。"
+
+msgid "Exposition time is out of printer profile bounds."
+msgstr "曝光时间超出打印机配置文件的范围。"
+
+msgid "Initial exposition time is out of printer profile bounds."
+msgstr "初始曝光时间超出打印机配置文件的范围。"
+
+msgid "Slicing done"
+msgstr "切片完成"
+
+msgid "Hollowing model"
+msgstr "正在镂空模型"
+
+msgid "Drilling holes into model."
+msgstr "正在向模型钻孔。"
+
+msgid "Slicing model"
+msgstr "正在切片模型"
+
+msgid "Generating support points"
+msgstr "正在生成支撑点"
+
+msgid "Generating support tree"
+msgstr "正在生成支撑树"
+
+msgid "Generating pad"
+msgstr "正在生成底垫"
+
+msgid "Slicing supports"
+msgstr "正在切片支撑"
+
+msgid "Merging slices and calculating statistics"
+msgstr "正在合并切片并计算统计数据"
+
+msgid "Rasterizing layers"
+msgstr "正在栅格化层"
+
+msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
+msgstr "由于内部错误，切片不得不停止：切片索引不一致。"
+
+msgid "Visualizing supports"
+msgstr "正在可视化支撑"
+
+msgid "No pad can be generated for this model with the current configuration"
+msgstr "当前配置无法为此模型生成底垫"
+
+msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
+msgstr "存在无法打印的对象。请尝试调整支撑设置以使对象可打印。"
+
+msgid "Taking a configuration snapshot failed."
+msgstr "拍摄配置快照失败。"
+
+msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
+msgstr "OrcaSlicer 在拍摄配置快照时遇到错误。"
+
+msgid "OrcaSlicer error"
+msgstr "OrcaSlicer 错误"
+
+msgid "Continue"
+msgstr "继续"
+
+msgid "Abort"
+msgstr "中止"
+
+msgid "Cosmyx Bundle Version %s"
+msgstr "Cosmyx 捆绑包版本 %s"
+
+msgid "Model Pictures"
+msgstr "模型图片"
+
+msgid "Auxiliaryies"
+msgstr "辅助工具"
+
+msgid "nozzle"
+msgstr "喷嘴"
+
+msgid "Alternate nozzles:"
+msgstr "备用喷嘴："
+
+msgid "All standard"
+msgstr "全部标准"
+
+msgid "Welcome to the %s Configuration Assistant"
+msgstr "欢迎使用 %s 配置助手"
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "欢迎使用 %s 配置向导"
+
+msgid "Welcome"
+msgstr "欢迎"
+
+msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
+msgstr "您好，欢迎使用 %s！此 %s 将帮助您完成初始配置；只需进行少量设置，您即可开始打印。"
+
+msgid "Remove user profiles (a snapshot will be taken beforehand)"
+msgstr "删除用户配置文件（事先将拍摄快照）"
+
+msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
+msgstr "执行桌面集成（使此二进制文件可被系统搜索到）。"
+
+msgid "%s Family"
+msgstr "%s 系列"
+
+msgid "Printer:"
+msgstr "打印机："
+
+msgid "Vendor:"
+msgstr "制造商："
+
+msgid "Profile:"
+msgstr "配置文件："
+
+msgid "(All)"
+msgstr "（全部）"
+
+msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
+msgstr "标有 <b>*</b> 的 %1% 与某些已安装的打印机<b>不</b>兼容。"
+
+msgid "SLA materials"
+msgstr "SLA 材料"
+
+msgid "All installed printers are compatible with the selected %1%."
+msgstr "所有已安装的打印机均与所选的 %1% 兼容。"
+
+msgid "filament"
+msgstr "耗材"
+
+msgid "SLA material"
+msgstr "SLA 材料"
+
+msgid "Only the following installed printers are compatible with the selected filaments"
+msgstr "只有以下已安装的打印机与所选耗材兼容"
+
+msgid "Only the following installed printers are compatible with the selected SLA materials"
+msgstr "只有以下已安装的打印机与所选 SLA 材料兼容"
+
+msgid "Custom Printer Setup"
+msgstr "自定义打印机设置"
+
+msgid "Custom Printer"
+msgstr "自定义打印机"
+
+msgid "Define a custom printer profile"
+msgstr "定义自定义打印机配置文件"
+
+msgid "Custom profile name:"
+msgstr "自定义配置文件名称："
+
+msgid "Firmware Type"
+msgstr "固件类型"
+
+msgid "Firmware"
+msgstr "固件"
+
+msgid "Choose the type of firmware used by your printer."
+msgstr "选择您的打印机所使用的固件类型。"
+
+msgid "Bed Shape and Size"
+msgstr "热床形状与尺寸"
+
+msgid "Set the shape of your printer's bed."
+msgstr "设置您的打印机热床形状。"
+
+msgid "Invalid numeric input."
+msgstr "无效的数字输入。"
+
+msgid "Filament and Nozzle Diameters"
+msgstr "耗材与喷嘴直径"
+
+msgid "Print Diameters"
+msgstr "打印直径"
+
+msgid "Enter the diameter of your printer's hot end nozzle."
+msgstr "输入您的打印机热端喷嘴直径。"
+
+msgid "Nozzle Diameter:"
+msgstr "喷嘴直径："
+
+msgid "Enter the diameter of your filament."
+msgstr "输入您的耗材直径。"
+
+msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
+msgstr "需要精确测量，请使用游标卡尺沿耗材多点测量，然后计算平均值。"
+
+msgid "Filament Diameter:"
+msgstr "耗材直径："
+
+msgid "Nozzle and Bed Temperatures"
+msgstr "喷嘴与热床温度"
+
+msgid "Enter the nozzle_temperature needed for extruding your filament."
+msgstr "输入挤出耗材所需的喷嘴温度。"
+
+msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
+msgstr "一般而言，PLA 为 160 至 230 °C，ABS 为 215 至 250 °C。"
+
+msgid "Extrusion Temperature:"
+msgstr "挤出温度："
+
+msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
+msgstr "输入使耗材粘附到热床所需的热床温度。"
+
+msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
+msgstr "一般而言，PLA 为 60 °C，ABS 为 110 °C。如果没有加热床，请设置为 0。"
+
+msgid "Bed Temperature:"
+msgstr "热床温度："
+
+msgid "SLA Materials"
+msgstr "SLA 材料"
+
+msgid "FFF Technology Printers"
+msgstr "FFF 技术打印机"
+
+msgid "SLA Technology Printers"
+msgstr "SLA 技术打印机"
+
+msgid "Following printer profiles has no default filament: %1%Please select one manually."
+msgstr "以下打印机配置文件没有默认耗材：%1%请手动选择一个。"
+
+msgid "Following printer profiles has no default material: %1%Please select one manually."
+msgstr "以下打印机配置文件没有默认材料：%1%请手动选择一个。"
+
+msgid "The following FFF printer models have no filament selected:"
+msgstr "以下 FFF 打印机型号未选择耗材："
+
+msgid "Do you want to select default filaments for these FFF printer models?"
+msgstr "您是否要为这些 FFF 打印机型号选择默认耗材？"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "配置正在 ConfigWizard 中编辑"
+
+msgid "All user presets will be deleted."
+msgstr "所有用户预设将被删除。"
+
+msgid "A new Printer was installed and it will be activated."
+msgstr "已安装新打印机，它将被激活。"
+
+msgid "Some Printers were uninstalled."
+msgstr "部分打印机已被卸载。"
+
+msgid "A new filament was installed and it will be activated."
+msgstr "已安装新耗材，它将被激活。"
+
+msgid "A new SLA material was installed and it will be activated."
+msgstr "已安装新 SLA 材料，它将被激活。"
+
+msgid "Some filaments were uninstalled."
+msgstr "部分耗材已被卸载。"
+
+msgid "Custom printer was installed and it will be activated."
+msgstr "已安装自定义打印机，它将被激活。"
+
+msgid "<Back"
+msgstr "<返回"
+
+msgid "Next>"
+msgstr "下一步>"
+
+msgid "Filament Profiles Selection"
+msgstr "耗材配置文件选择"
+
+msgid "Configuration Assistant"
+msgstr "配置助手"
+
+msgid "Configuration &Assistant"
+msgstr "配置助手(&A)"
+
+msgid "Configuration Wizard"
+msgstr "配置向导"
+
+msgid "Configuration &Wizard"
+msgstr "配置向导(&W)"
+
+msgid "A new vendor was installed and one of its printers will be activated"
+msgid_plural "New vendors were installed and one of theirs printers will be activated"
+msgstr[0] "已安装新制造商，其中一台打印机将被激活"
+msgstr[1] "已安装新制造商，其中一台打印机将被激活"
+
+msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
+msgstr "执行桌面集成失败——boost::filesystem::canonical 未返回 AppImage 路径。"
+
+msgid "Performing desktop integration failed - Could not find executable."
+msgstr "执行桌面集成失败——无法找到可执行文件。"
+
+msgid "Performing desktop integration failed because the application directory was not found."
+msgstr "执行桌面集成失败，因为未找到应用程序目录。"
+
+msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
+msgstr "执行桌面集成失败——无法创建 Gcodeviewer 桌面文件。OrcaSlicer 桌面文件可能已成功创建。"
+
+msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
+msgstr "执行下载器桌面集成失败——boost::filesystem::canonical 未返回 AppImage 路径。"
+
+msgid "Performing downloader desktop integration failed - Could not find executable."
+msgstr "执行下载器桌面集成失败——无法找到可执行文件。"
+
+msgid "Performing downloader desktop integration failed because the application directory was not found."
+msgstr "执行下载器桌面集成失败，因为未找到应用程序目录。"
+
+msgid "Desktop Integration"
+msgstr "桌面集成"
+
+msgid ""
+"Desktop Integration sets this binary to be searchable by the system.\n"
+"\n"
+"Press \"Perform\" to proceed."
+msgstr ""
+
+msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
+msgstr "当前腔室温度或目标腔室温度超过 45\\u2103。为避免挤出机堵塞，不允许装载低温耗材（PLA/PETG/TPU）。"
+
+msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
+msgstr "挤出机中已装载低温耗材（PLA/PETG/TPU）。为避免挤出机堵塞，不允许将腔室温度设置超过 45\\u2103。"
+
+msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
+msgstr "当腔室温度设置低于 40\\u2103 时，腔室温度控制将不会启动，目标腔室温度将自动设置为 0\\u2103。"
+
+msgid "The download has failed"
+msgstr "下载失败"
+
+msgid "Can't create file at %1%"
+msgstr "无法在 %1% 处创建文件"
+
+msgid "Archive preview"
+msgstr "存档预览"
+
+msgid "Movement:"
+msgstr "移动："
+
+msgid "Movement"
+msgstr "移动"
+
+msgid "Auto Segment"
+msgstr "自动分段"
+
+msgid "Depth ratio"
+msgstr "深度比"
+
+msgid "Prizm"
+msgstr "棱镜"
+
+msgid "connector is out of cut contour"
+msgstr "连接件超出切割轮廓"
+
+msgid "connectors are out of cut contour"
+msgstr "连接件超出切割轮廓"
+
+msgid "connector is out of object"
+msgstr "连接件超出对象范围"
+
+msgid "connectors is out of object"
+msgstr "连接件超出对象范围"
+
+msgid ""
+"Invalid state. \n"
+"No one part is selected for keep after cut"
+msgstr "无效状态。\n未选择任何部分在切割后保留"
+
+msgid "Please confirm explosion ratio = 1 and select at least two volumes."
+msgstr "请确认爆炸比例 = 1 并选择至少两个体积。"
+
+msgid "Please select at least two volumes."
+msgstr "请至少选择两个体积。"
+
+msgid "(Moving)"
+msgstr "（移动中）"
+
+msgid "Point and point assembly"
+msgstr "点对点装配"
+
+msgid ""
+"It is recommended to assemble the objects first,\n"
+"because the objects is restriced to bed \n"
+"and only parts can be lifted."
+msgstr "建议先装配对象，\n因为对象被限制在热床上，\n只有部件可以抬起。"
+
+msgid "Face and face assembly"
+msgstr "面对面装配"
+
+msgid "Entering Assembly gizmo"
+msgstr "进入装配工具"
+
+msgid "Leaving Assembly gizmo"
+msgstr "退出装配工具"
+
+msgid "Entering Cut gizmo"
+msgstr "进入切割工具"
+
+msgid "Leaving Cut gizmo"
+msgstr "退出切割工具"
+
+msgid "Cut gizmo editing"
+msgstr "切割工具编辑"
+
+msgid "Add fuzzy skin"
+msgstr "添加模糊表面"
+
+msgid "Remove fuzzy skin"
+msgstr "移除模糊表面"
+
+msgid "Reset selection"
+msgstr "重置选择"
+
+msgid "Entering Paint-on fuzzy skin"
+msgstr "进入绘制模糊表面"
+
+msgid "Leaving Paint-on fuzzy skin"
+msgstr "退出绘制模糊表面"
+
+msgid "Paint-on fuzzy skin editing"
+msgstr "绘制模糊表面编辑"
+
+msgid "Hollow this object"
+msgstr "镂空此对象"
+
+msgid "Preview hollowed and drilled model"
+msgstr "预览镂空并钻孔后的模型"
+
+msgid "Offset"
+msgstr "偏移量"
+
+msgid "Closing distance"
+msgstr "闭合距离"
+
+msgid "Hole diameter"
+msgstr "孔径"
+
+msgid "Hole depth"
+msgstr "孔深"
+
+msgid "Remove selected holes"
+msgstr "移除所选孔"
+
+msgid "Remove all holes"
+msgstr "移除所有孔"
+
+msgid "Clipping of view"
+msgstr "视图裁剪"
+
+msgid "Show supports"
+msgstr "显示支撑"
+
+msgid "Hollow and drill"
+msgstr "镂空并钻孔"
+
+msgid "Entering Measure gizmo"
+msgstr "进入测量工具"
+
+msgid "Leaving Measure gizmo"
+msgstr "退出测量工具"
+
+msgid "Model simplification has been canceled"
+msgstr "模型简化已取消"
+
+msgid "Lock supports under new islands"
+msgstr "锁定新孤岛下方的支撑"
+
+msgid "Remove all points"
+msgstr "移除所有点"
+
+msgid "Apply changes"
+msgstr "应用更改"
+
+msgid "Discard changes"
+msgstr "放弃更改"
+
+msgid "Minimal points distance"
+msgstr "最小点间距"
+
+msgid "Support points density"
+msgstr "支撑点密度"
+
+msgid "Manual editing"
+msgstr "手动编辑"
+
+msgid "SLA Support Points"
+msgstr "SLA 支撑点"
+
+msgid "Do you want to save your manually edited support points?"
+msgstr "您是否要保存手动编辑的支撑点？"
+
+msgid "Save support points?"
+msgstr "保存支撑点？"
+
+msgid "Autogeneration will erase all manually edited points."
+msgstr "自动生成将清除所有手动编辑的点。"
+
+msgid "Are you sure you want to do it?"
+msgstr "您确定要执行此操作吗？"
+
+msgid "SLA gizmo keyboard shortcuts"
+msgstr "SLA 工具键盘快捷键"
+
+msgid "Note: some shortcuts work in (non)editing mode only."
+msgstr "注意：部分快捷键仅在（非）编辑模式下有效。"
+
+msgid "Add point"
+msgstr "添加点"
+
+msgid "Remove point"
+msgstr "移除点"
+
+msgid "Move point"
+msgstr "移动点"
+
+msgid "Add point to selection"
+msgstr "将点添加到选择"
+
+msgid "Remove point from selection"
+msgstr "从选择中移除点"
+
+msgid "Select by rectangle"
+msgstr "矩形框选"
+
+msgid "Deselect by rectangle"
+msgstr "矩形取消选择"
+
+msgid "Select all points"
+msgstr "选择所有点"
+
+msgid "Move clipping plane"
+msgstr "移动裁剪平面"
+
+msgid "Reset clipping plane"
+msgstr "重置裁剪平面"
+
+msgid "Switch to editing mode"
+msgstr "切换到编辑模式"
+
+msgid "Calage 2 SNDT"
+msgstr "Calage 2 SNDT"
+
+msgid "Calage 3 SNDT"
+msgstr "Calage 3 SNDT"
+
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f\\u00b0\n"
+"- Solid infill direction: %.0f\\u00b0\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr "此校准模型在特定填充设置下效果最佳。\n为获得最佳校准结果，建议设置：\n- 填充方向：%.0f\\u00b0\n- 实心填充方向：%.0f\\u00b0\n- 第一层仅一个壁：%s\n\n是 - 自动更改这些设置\n否  - 不为我更改这些设置"
+
+msgid "Calage 1 Nova"
+msgstr "Calage 1 Nova"
+
+msgid "Calibrations Models Dual Head"
+msgstr "双头校准模型"
+
+msgid "Calibration Models Single Head"
+msgstr "单头校准模型"
+
+msgid "Cosmyx Handy Models"
+msgstr "Cosmyx 便捷模型"
+
+msgid "Cosmyx 3D Models"
+msgstr "Cosmyx 3D 模型"
+
+msgid "Add Emboss text object"
+msgstr "添加浮雕文字对象"
+
+msgid "Emboss attribute change"
+msgstr "浮雕属性更改"
+
+msgid "Add Emboss text Volume"
+msgstr "添加浮雕文字体积"
+
+msgid "Font doesn't have any shape for given text."
+msgstr "字体没有适用于给定文本的任何字形。"
+
+msgid "There is no valid surface for text projection."
+msgstr "没有可用于文本投影的有效表面。"
+
+msgid "An unexpected error occurred"
+msgstr "发生意外错误"
+
+msgid "Best surface quality"
+msgstr "最佳表面质量"
+
+msgid "Optimize object rotation for best surface quality."
+msgstr "优化对象旋转以获得最佳表面质量。"
+
+msgid "Reduced overhang slopes"
+msgstr "减少悬垂坡度"
+
+msgid ""
+"Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
+"Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
+msgstr "优化对象旋转以将需要支撑结构的悬垂量降至最少。\n注意：如果未设置抬升高度，此方法将尝试找到与打印床接触的最佳表面。"
+
+msgid "Lowest Z height"
+msgstr "最低 Z 高度"
+
+msgid "Rotate the model to have the lowest z height for faster print time."
+msgstr "旋转模型以获得最低的 Z 高度，从而缩短打印时间。"
+
+msgid "Choose SLA archive:"
+msgstr "选择 SLA 存档："
+
+msgid "Import file"
+msgstr "导入文件"
+
+msgid "Import model and profile"
+msgstr "导入模型和配置文件"
+
+msgid "Import profile only"
+msgstr "仅导入配置文件"
+
+msgid "Import model only"
+msgstr "仅导入模型"
+
+msgid "Accurate"
+msgstr "精确"
+
+msgid "Balanced"
+msgstr "均衡"
+
+msgid "Quick"
+msgstr "快速"
+
+msgid "3D Models"
+msgstr "3D 模型"
+
+msgid "Click to return"
+msgstr "点击返回"
+
+msgid "Left Arrow"
+msgstr "左箭头"
+
+msgid "Click to continue"
+msgstr "点击继续"
+
+msgid "Right Arrow"
+msgstr "右箭头"
+
+msgid "Authorizing..."
+msgstr "正在授权..."
+
+msgid "NO RAMMING AT ALL"
+msgstr "完全不冲料"
+
+msgid "Volumetric speed"
+msgstr "体积速度"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "My Device"
+msgstr "我的设备"
+
+msgid "Other Device"
+msgstr "其他设备"
+
+msgid "Can't find my devices?"
+msgstr "找不到我的设备？"
+
+msgid "Modifying the device name"
+msgstr "修改设备名称"
+
+msgid "Bind with Access Code"
+msgstr "通过访问码绑定"
+
+msgid "Step file import parameters"
+msgstr "STEP 文件导入参数"
+
+msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
+msgstr "较小的线性和角度偏差可获得更高质量的转换，但会增加处理时间。"
+
+msgid "View Wiki for more information"
+msgstr "查看 Wiki 获取更多信息"
+
+msgid "Linear Deflection"
+msgstr "线性偏差"
+
+msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
+msgstr "请输入有效值（0.001 < 线性偏差 < 0.1）"
+
+msgid "Angle Deflection"
+msgstr "角度偏差"
+
+msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
+msgstr "请输入有效值（0.01 < 角度偏差 < 1.0）"
+
+msgid "Split compound and compsolid into multiple objects"
+msgstr "将复合体和复合实体拆分为多个对象"
+
+msgid "Number of triangular facets"
+msgstr "三角面片数量"
+
+msgid "Calculating, please wait..."
+msgstr "正在计算，请稍候..."
+
+msgid "Move over surface"
+msgstr "沿表面移动"
+
+msgid "System Information"
+msgstr "系统信息"
+
+msgid "Blacklisted libraries loaded into OrcaSlicer process:"
+msgstr "已加载到 OrcaSlicer 进程中的黑名单库："
+
+msgid "SIMD is supported:"
+msgstr "支持 SIMD："
+
+msgid "Copy to Clipboard"
+msgstr "复制到剪贴板"
+
+msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "安装 Cosmyx Textured Bed 时的热床温度。值为 -1 表示该耗材不支持在 Cosmyx Textured Bed 上打印。值为 0 表示热床已关闭。"
+
+msgid "Forward"
+msgstr "前进"
+
+msgid "Reload"
+msgstr "重新加载"
+
+msgid "Tools"
+msgstr "工具"
+
+msgid "View Source"
+msgstr "查看源代码"
+
+msgid "View Text"
+msgstr "查看文本"
+
+msgid "Handle Navigation"
+msgstr "处理导航"
+
+msgid "Handle New Windows"
+msgstr "处理新窗口"
+
+msgid "Edit Mode"
+msgstr "编辑模式"
+
+msgid "Run Script"
+msgstr "运行脚本"
+
+msgid "Add user script"
+msgstr "添加用户脚本"
+
+msgid "Set custom user agent"
+msgstr "设置自定义用户代理"
+
+msgid "Clear Selection"
+msgstr "清除选择"
+
+msgid "Delete Selection"
+msgstr "删除选择"
+
+msgid "Custom Scheme Example"
+msgstr "自定义方案示例"
+
+msgid "Memory File System Example"
+msgstr "内存文件系统示例"
+
+msgid "Enable Context Menu"
+msgstr "启用上下文菜单"
+
+msgid "Enable Dev Tools"
+msgstr "启用开发者工具"
+
+msgid "An error occurred loading "
+msgstr "加载时发生错误 "
+
+msgid "%"
+msgstr "%"
+
+msgid "Connected to CrealityPrint successfully!"
+msgstr "已成功连接到 CrealityPrint！"
+
+msgid "Could not connect to CrealityPrint"
+msgstr "无法连接到 CrealityPrint"
+
+msgid "Connection to ElegooLink is working correctly."
+msgstr "与 ElegooLink 的连接工作正常。"
+
+msgid "Could not connect to ElegooLink"
+msgstr "无法连接到 ElegooLink"
+
+msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
+msgstr "文件已传输，但发生了一些未知错误。请在设备页面检查文件并重新尝试开始打印。"
+
+msgid "Error code not found"
+msgstr "未找到错误代码"
+
+msgid "The printer is busy, Please check the device page for the file and try to start printing again."
+msgstr "打印机正忙，请在设备页面检查文件并重新尝试开始打印。"
+
+msgid "The file is lost, please check and try again."
+msgstr "文件丢失，请检查后重试。"
+
+msgid "The file is corrupted, please check and try again."
+msgstr "文件已损坏，请检查后重试。"
+
+msgid "Transmission abnormality, please check and try again."
+msgstr "传输异常，请检查后重试。"
+
+msgid "The file does not match the printer, please check and try again."
+msgstr "文件与打印机不匹配，请检查后重试。"
+
+msgid "Start print timeout"
+msgstr "开始打印超时"
+
+msgid "Start print failed"
+msgstr "开始打印失败"
+
+msgid "Connection to ESP3D is working correctly."
+msgstr "与 ESP3D 的连接工作正常。"
+
+msgid "Could not connect to ESP3D"
+msgstr "无法连接到 ESP3D"
+
+msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
+msgstr "连接超时。请检查打印机和计算机网络是否正常运行，并确认它们在同一网络中。"
+
+msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
+msgstr "无法解析主机名/IP/URL，请检查后重试。"
+
+msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
+msgstr "文件/数据传输中断。请检查打印机和网络，然后重试。"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "CosmoSlice 的新版本已安装。"
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "请备份并删除 Cosmyx AppData 文件夹。"
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "是否要关闭 OrcaSlicer 并打开 AppData 文件夹？"
+
+msgid "New Build Detected"
+msgstr "检测到新版本"
+
+msgid "Don't show again for future builds"
+msgstr "不再为未来版本显示"
+
+msgid "Skip build update notifications"
+msgstr "跳过版本更新通知"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "如果启用，将抑制检测到新 CosmoSlice 版本时显示的弹出窗口。"

@@ -21160,3 +21160,897 @@ msgstr ""
 
 msgid "Tungsten Carbide"
 msgstr ""
+
+msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
+msgstr "Seçilen 3mf dosyası, %1% uygulamasının daha yeni bir sürümüyle kaydedilmiş ve uyumlu değil."
+
+msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "Seçilen 3MF, PrusaSlicer'ın daha yeni bir sürümüyle boyanmış FDM destekli nesne içeriyor ve uyumlu değil."
+
+msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "Seçilen 3MF, PrusaSlicer'ın daha yeni bir sürümüyle dikiş boyalı nesne içeriyor ve uyumlu değil."
+
+msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "Seçilen 3MF, PrusaSlicer'ın daha yeni bir sürümüyle çok malzemeli boyanmış nesne içeriyor ve uyumlu değil."
+
+msgid ""
+"Post-processing script %1% failed.\n"
+"\n"
+"The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
+"Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
+msgstr "Son işlem betiği %1% başarısız oldu.\n\nSon işlem betiğinin G-code dosyasını %2% yerinde değiştirmesi bekleniyordu, ancak G-code dosyası silindi ve muhtemelen yeni bir adla kaydedildi.\nLütfen son işlem betiğini G-code'u yerinde değiştirecek şekilde ayarlayın ve son işlenmiş G-code dosyasını isteğe bağlı olarak yeniden adlandırma hakkında kılavuza başvurun.\n"
+
+msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "İlk katman dışındaki katmanlar için tabla sıcaklığı. -1 değeri, filamenti Cosmyx Dokulu Tablada baskıyı desteklemediği anlamına gelir. 0 değeri tablonun kapalı olduğu anlamına gelir."
+
+msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "İlk katmanın tabla sıcaklığı. -1 değeri, filamentin Cosmyx Dokulu Tablada baskıyı desteklemediği anlamına gelir. 0 değeri tablonun kapalı olduğu anlamına gelir."
+
+msgid "Cosmyx Textured Bed"
+msgstr "Cosmyx Dokulu Tabla"
+
+msgid "Hollowing"
+msgstr "İçini Boşaltma"
+
+msgid "Pad brim size is too small for the current configuration."
+msgstr "Ped kenar boyutu mevcut yapılandırma için çok küçük."
+
+msgid "Cannot proceed without support points! Add support points or disable support generation."
+msgstr "Destek noktaları olmadan devam edilemiyor! Destek noktaları ekleyin veya destek oluşturmayı devre dışı bırakın."
+
+msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
+msgstr "Nesne için yükseklik çok düşük. Nesneyi yüksekliksiz yazdırmak için \"Nesne etrafında ped\" özelliğini kullanın."
+
+msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
+msgstr "Destek sütunlarının uçları, nesne ile ped arasındaki boşluğa yerleştirilecek. Bundan kaçınmak için 'Destek tabanı güvenlik mesafesi', 'Ped nesne boşluğu' parametresinden büyük olmalıdır."
+
+msgid "Exposition time is out of printer profile bounds."
+msgstr "Poz süresi yazıcı profil sınırlarının dışında."
+
+msgid "Initial exposition time is out of printer profile bounds."
+msgstr "Başlangıç poz süresi yazıcı profil sınırlarının dışında."
+
+msgid "Slicing done"
+msgstr "Dilimleme tamamlandı"
+
+msgid "Hollowing model"
+msgstr "Model içi boşaltılıyor"
+
+msgid "Drilling holes into model."
+msgstr "Modele delik açılıyor."
+
+msgid "Slicing model"
+msgstr "Model dilimleniyor"
+
+msgid "Generating support points"
+msgstr "Destek noktaları oluşturuluyor"
+
+msgid "Generating support tree"
+msgstr "Destek ağacı oluşturuluyor"
+
+msgid "Generating pad"
+msgstr "Ped oluşturuluyor"
+
+msgid "Slicing supports"
+msgstr "Destekler dilimleniyor"
+
+msgid "Merging slices and calculating statistics"
+msgstr "Dilimler birleştiriliyor ve istatistikler hesaplanıyor"
+
+msgid "Rasterizing layers"
+msgstr "Katmanlar rasterleştiriliyor"
+
+msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
+msgstr "Dahili bir hata nedeniyle dilimleme durduruldu: Tutarsız dilim dizini."
+
+msgid "Visualizing supports"
+msgstr "Destekler görselleştiriliyor"
+
+msgid "No pad can be generated for this model with the current configuration"
+msgstr "Bu model için mevcut yapılandırmayla ped oluşturulamıyor"
+
+msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
+msgstr "Yazdırılamayan nesneler var. Nesneleri yazdırılabilir hale getirmek için destek ayarlarını düzenlemeyi deneyin."
+
+msgid "Taking a configuration snapshot failed."
+msgstr "Yapılandırma anlık görüntüsü alınamadı."
+
+msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
+msgstr "OrcaSlicer, yapılandırma anlık görüntüsü alınırken bir hatayla karşılaştı."
+
+msgid "OrcaSlicer error"
+msgstr "OrcaSlicer hatası"
+
+msgid "Continue"
+msgstr "Devam Et"
+
+msgid "Abort"
+msgstr "İptal Et"
+
+msgid "Cosmyx Bundle Version %s"
+msgstr "Cosmyx Paket Sürümü %s"
+
+msgid "Model Pictures"
+msgstr "Model Resimleri"
+
+msgid "Auxiliaryies"
+msgstr "Yardımcı Öğeler"
+
+msgid "nozzle"
+msgstr "nozul"
+
+msgid "Alternate nozzles:"
+msgstr "Alternatif nozullar:"
+
+msgid "All standard"
+msgstr "Tümü standart"
+
+msgid "Welcome to the %s Configuration Assistant"
+msgstr "%s Yapılandırma Asistanına Hoş Geldiniz"
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "%s Yapılandırma Sihirbazına Hoş Geldiniz"
+
+msgid "Welcome"
+msgstr "Hoş Geldiniz"
+
+msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
+msgstr "Merhaba, %s'a hoş geldiniz! Bu %s, ilk yapılandırmanızda size yardımcı olur; birkaç ayar yapmanız yeterli ve yazdırmaya hazır olacaksınız."
+
+msgid "Remove user profiles (a snapshot will be taken beforehand)"
+msgstr "Kullanıcı profillerini kaldır (öncesinde anlık görüntü alınacak)"
+
+msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
+msgstr "Masaüstü entegrasyonu gerçekleştir (Bu programı sistem tarafından aranabilir yapar)."
+
+msgid "%s Family"
+msgstr "%s Ailesi"
+
+msgid "Printer:"
+msgstr "Yazıcı:"
+
+msgid "Vendor:"
+msgstr "Üretici:"
+
+msgid "Profile:"
+msgstr "Profil:"
+
+msgid "(All)"
+msgstr "(Tümü)"
+
+msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
+msgstr "<b>*</b> ile işaretli %1%, bazı yüklü yazıcılarla <b>uyumlu değildir</b>."
+
+msgid "SLA materials"
+msgstr "SLA malzemeleri"
+
+msgid "All installed printers are compatible with the selected %1%."
+msgstr "Tüm yüklü yazıcılar, seçilen %1% ile uyumludur."
+
+msgid "filament"
+msgstr "filament"
+
+msgid "SLA material"
+msgstr "SLA malzemesi"
+
+msgid "Only the following installed printers are compatible with the selected filaments"
+msgstr "Yalnızca aşağıdaki yüklü yazıcılar seçilen filamentlerle uyumludur"
+
+msgid "Only the following installed printers are compatible with the selected SLA materials"
+msgstr "Yalnızca aşağıdaki yüklü yazıcılar seçilen SLA malzemeleriyle uyumludur"
+
+msgid "Custom Printer Setup"
+msgstr "Özel Yazıcı Kurulumu"
+
+msgid "Custom Printer"
+msgstr "Özel Yazıcı"
+
+msgid "Define a custom printer profile"
+msgstr "Özel yazıcı profili tanımla"
+
+msgid "Custom profile name:"
+msgstr "Özel profil adı:"
+
+msgid "Firmware Type"
+msgstr "Ürün Yazılımı Türü"
+
+msgid "Firmware"
+msgstr "Ürün Yazılımı"
+
+msgid "Choose the type of firmware used by your printer."
+msgstr "Yazıcınızın kullandığı ürün yazılımı türünü seçin."
+
+msgid "Bed Shape and Size"
+msgstr "Tabla Şekli ve Boyutu"
+
+msgid "Set the shape of your printer's bed."
+msgstr "Yazıcınızın tabla şeklini ayarlayın."
+
+msgid "Invalid numeric input."
+msgstr "Geçersiz sayısal giriş."
+
+msgid "Filament and Nozzle Diameters"
+msgstr "Filament ve Nozul Çapları"
+
+msgid "Print Diameters"
+msgstr "Baskı Çapları"
+
+msgid "Enter the diameter of your printer's hot end nozzle."
+msgstr "Yazıcınızın sıcak uç nozulunun çapını girin."
+
+msgid "Nozzle Diameter:"
+msgstr "Nozul Çapı:"
+
+msgid "Enter the diameter of your filament."
+msgstr "Filamentinizin çapını girin."
+
+msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
+msgstr "Yüksek hassasiyet gereklidir; bu nedenle kumpas kullanın ve filament boyunca birden fazla ölçüm yapıp ortalamasını hesaplayın."
+
+msgid "Filament Diameter:"
+msgstr "Filament Çapı:"
+
+msgid "Nozzle and Bed Temperatures"
+msgstr "Nozul ve Tabla Sıcaklıkları"
+
+msgid "Enter the nozzle_temperature needed for extruding your filament."
+msgstr "Filamentinizi ekstrüde etmek için gereken nozul sıcaklığını girin."
+
+msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
+msgstr "Genel kural olarak PLA için 160 ile 230 °C, ABS için 215 ile 250 °C."
+
+msgid "Extrusion Temperature:"
+msgstr "Ekstrüzyon Sıcaklığı:"
+
+msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
+msgstr "Filamentinizin ısıtmalı tablaya yapışması için gereken tabla sıcaklığını girin."
+
+msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
+msgstr "Genel kural olarak PLA için 60 °C, ABS için 110 °C. Isıtmalı tablonuz yoksa sıfır bırakın."
+
+msgid "Bed Temperature:"
+msgstr "Tabla Sıcaklığı:"
+
+msgid "SLA Materials"
+msgstr "SLA Malzemeleri"
+
+msgid "FFF Technology Printers"
+msgstr "FFF Teknolojisi Yazıcılar"
+
+msgid "SLA Technology Printers"
+msgstr "SLA Teknolojisi Yazıcılar"
+
+msgid "Following printer profiles has no default filament: %1%Please select one manually."
+msgstr "Aşağıdaki yazıcı profillerinin varsayılan filamenti yok: %1%Lütfen birini manuel olarak seçin."
+
+msgid "Following printer profiles has no default material: %1%Please select one manually."
+msgstr "Aşağıdaki yazıcı profillerinin varsayılan malzemesi yok: %1%Lütfen birini manuel olarak seçin."
+
+msgid "The following FFF printer models have no filament selected:"
+msgstr "Aşağıdaki FFF yazıcı modellerinde filament seçilmemiş:"
+
+msgid "Do you want to select default filaments for these FFF printer models?"
+msgstr "Bu FFF yazıcı modelleri için varsayılan filamentleri seçmek ister misiniz?"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "Yapılandırma ConfigWizard içinde düzenleniyor"
+
+msgid "All user presets will be deleted."
+msgstr "Tüm kullanıcı ön ayarları silinecek."
+
+msgid "A new Printer was installed and it will be activated."
+msgstr "Yeni bir Yazıcı kuruldu ve etkinleştirilecek."
+
+msgid "Some Printers were uninstalled."
+msgstr "Bazı Yazıcılar kaldırıldı."
+
+msgid "A new filament was installed and it will be activated."
+msgstr "Yeni bir filament kuruldu ve etkinleştirilecek."
+
+msgid "A new SLA material was installed and it will be activated."
+msgstr "Yeni bir SLA malzemesi kuruldu ve etkinleştirilecek."
+
+msgid "Some filaments were uninstalled."
+msgstr "Bazı filamentler kaldırıldı."
+
+msgid "Custom printer was installed and it will be activated."
+msgstr "Özel yazıcı kuruldu ve etkinleştirilecek."
+
+msgid "<Back"
+msgstr "<Geri"
+
+msgid "Next>"
+msgstr "İleri>"
+
+msgid "Filament Profiles Selection"
+msgstr "Filament Profili Seçimi"
+
+msgid "Configuration Assistant"
+msgstr "Yapılandırma Asistanı"
+
+msgid "Configuration &Assistant"
+msgstr "Yapılandırma &Asistanı"
+
+msgid "Configuration Wizard"
+msgstr "Yapılandırma Sihirbazı"
+
+msgid "Configuration &Wizard"
+msgstr "Yapılandırma &Sihirbazı"
+
+msgid "A new vendor was installed and one of its printers will be activated"
+msgid_plural "New vendors were installed and one of theirs printers will be activated"
+msgstr[0] "Yeni bir üretici kuruldu ve yazıcılarından biri etkinleştirilecek"
+msgstr[1] "Yeni bir üretici kuruldu ve yazıcılarından biri etkinleştirilecek"
+
+msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
+msgstr "Masaüstü entegrasyonu gerçekleştirilemedi - boost::filesystem::canonical AppImage yolunu döndürmedi."
+
+msgid "Performing desktop integration failed - Could not find executable."
+msgstr "Masaüstü entegrasyonu gerçekleştirilemedi - Çalıştırılabilir dosya bulunamadı."
+
+msgid "Performing desktop integration failed because the application directory was not found."
+msgstr "Uygulama dizini bulunamadığı için masaüstü entegrasyonu gerçekleştirilemedi."
+
+msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
+msgstr "Masaüstü entegrasyonu gerçekleştirilemedi - Gcodeviewer masaüstü dosyası oluşturulamadı. OrcaSlicer masaüstü dosyası muhtemelen başarıyla oluşturuldu."
+
+msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
+msgstr "İndirici masaüstü entegrasyonu gerçekleştirilemedi - boost::filesystem::canonical AppImage yolunu döndürmedi."
+
+msgid "Performing downloader desktop integration failed - Could not find executable."
+msgstr "İndirici masaüstü entegrasyonu gerçekleştirilemedi - Çalıştırılabilir dosya bulunamadı."
+
+msgid "Performing downloader desktop integration failed because the application directory was not found."
+msgstr "Uygulama dizini bulunamadığı için indirici masaüstü entegrasyonu gerçekleştirilemedi."
+
+msgid "Desktop Integration"
+msgstr "Masaüstü Entegrasyonu"
+
+msgid ""
+"Desktop Integration sets this binary to be searchable by the system.\n"
+"\n"
+"Press \"Perform\" to proceed."
+msgstr ""
+
+msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
+msgstr "Mevcut kabin sıcaklığı veya hedef kabin sıcaklığı 45\\u2103 değerini aşıyor. Ekstrüder tıkanmasını önlemek için düşük sıcaklık filamenti (PLA/PETG/TPU) yüklenmesine izin verilmiyor."
+
+msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
+msgstr "Ekstrüdere düşük sıcaklık filamenti (PLA/PETG/TPU) yüklenmiş. Ekstrüder tıkanmasını önlemek için kabin sıcaklığının 45\\u2103 üzerine ayarlanmasına izin verilmiyor."
+
+msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
+msgstr "Kabin sıcaklığını 40\\u2103 altına ayarladığınızda, kabin sıcaklığı kontrolü etkinleştirilmeyecek ve hedef kabin sıcaklığı otomatik olarak 0\\u2103 olarak ayarlanacak."
+
+msgid "The download has failed"
+msgstr "İndirme başarısız oldu"
+
+msgid "Can't create file at %1%"
+msgstr "%1% konumunda dosya oluşturulamıyor"
+
+msgid "Archive preview"
+msgstr "Arşiv önizlemesi"
+
+msgid "Movement:"
+msgstr "Hareket:"
+
+msgid "Movement"
+msgstr "Hareket"
+
+msgid "Auto Segment"
+msgstr "Otomatik Bölümleme"
+
+msgid "Depth ratio"
+msgstr "Derinlik oranı"
+
+msgid "Prizm"
+msgstr "Prizma"
+
+msgid "connector is out of cut contour"
+msgstr "bağlayıcı kesim konturunun dışında"
+
+msgid "connectors are out of cut contour"
+msgstr "bağlayıcılar kesim konturunun dışında"
+
+msgid "connector is out of object"
+msgstr "bağlayıcı nesnenin dışında"
+
+msgid "connectors is out of object"
+msgstr "bağlayıcılar nesnenin dışında"
+
+msgid ""
+"Invalid state. \n"
+"No one part is selected for keep after cut"
+msgstr "Geçersiz durum. \nKesimden sonra saklamak için hiçbir parça seçilmedi"
+
+msgid "Please confirm explosion ratio = 1 and select at least two volumes."
+msgstr "Lütfen patlama oranı = 1 olduğunu onaylayın ve en az iki hacim seçin."
+
+msgid "Please select at least two volumes."
+msgstr "Lütfen en az iki hacim seçin."
+
+msgid "(Moving)"
+msgstr "(Hareket Ediyor)"
+
+msgid "Point and point assembly"
+msgstr "Nokta ve nokta birleştirme"
+
+msgid ""
+"It is recommended to assemble the objects first,\n"
+"because the objects is restriced to bed \n"
+"and only parts can be lifted."
+msgstr "Önce nesneleri birleştirmeniz önerilir,\nçünkü nesneler tablaya kısıtlıdır \nve yalnızca parçalar kaldırılabilir."
+
+msgid "Face and face assembly"
+msgstr "Yüz ve yüz birleştirme"
+
+msgid "Entering Assembly gizmo"
+msgstr "Birleştirme aracına giriliyor"
+
+msgid "Leaving Assembly gizmo"
+msgstr "Birleştirme aracından çıkılıyor"
+
+msgid "Entering Cut gizmo"
+msgstr "Kesim aracına giriliyor"
+
+msgid "Leaving Cut gizmo"
+msgstr "Kesim aracından çıkılıyor"
+
+msgid "Cut gizmo editing"
+msgstr "Kesim aracı düzenleniyor"
+
+msgid "Add fuzzy skin"
+msgstr "Pürüzlü yüzey ekle"
+
+msgid "Remove fuzzy skin"
+msgstr "Pürüzlü yüzeyi kaldır"
+
+msgid "Reset selection"
+msgstr "Seçimi sıfırla"
+
+msgid "Entering Paint-on fuzzy skin"
+msgstr "Boyama pürüzlü yüzeyine giriliyor"
+
+msgid "Leaving Paint-on fuzzy skin"
+msgstr "Boyama pürüzlü yüzeyinden çıkılıyor"
+
+msgid "Paint-on fuzzy skin editing"
+msgstr "Boyama pürüzlü yüzeyi düzenleniyor"
+
+msgid "Hollow this object"
+msgstr "Bu nesneyi içten boşalt"
+
+msgid "Preview hollowed and drilled model"
+msgstr "İçi boşaltılmış ve delinmiş modeli önizle"
+
+msgid "Offset"
+msgstr "Ofset"
+
+msgid "Closing distance"
+msgstr "Kapanma mesafesi"
+
+msgid "Hole diameter"
+msgstr "Delik çapı"
+
+msgid "Hole depth"
+msgstr "Delik derinliği"
+
+msgid "Remove selected holes"
+msgstr "Seçili delikleri kaldır"
+
+msgid "Remove all holes"
+msgstr "Tüm delikleri kaldır"
+
+msgid "Clipping of view"
+msgstr "Görünümü kırpma"
+
+msgid "Show supports"
+msgstr "Destekleri göster"
+
+msgid "Hollow and drill"
+msgstr "İçini boşalt ve deli"
+
+msgid "Entering Measure gizmo"
+msgstr "Ölçüm aracına giriliyor"
+
+msgid "Leaving Measure gizmo"
+msgstr "Ölçüm aracından çıkılıyor"
+
+msgid "Model simplification has been canceled"
+msgstr "Model basitleştirme iptal edildi"
+
+msgid "Lock supports under new islands"
+msgstr "Yeni adalardaki destekleri kilitle"
+
+msgid "Remove all points"
+msgstr "Tüm noktaları kaldır"
+
+msgid "Apply changes"
+msgstr "Değişiklikleri uygula"
+
+msgid "Discard changes"
+msgstr "Değişiklikleri at"
+
+msgid "Minimal points distance"
+msgstr "Minimum nokta mesafesi"
+
+msgid "Support points density"
+msgstr "Destek noktası yoğunluğu"
+
+msgid "Manual editing"
+msgstr "Manuel düzenleme"
+
+msgid "SLA Support Points"
+msgstr "SLA Destek Noktaları"
+
+msgid "Do you want to save your manually edited support points?"
+msgstr "Manuel olarak düzenlediğiniz destek noktalarını kaydetmek ister misiniz?"
+
+msgid "Save support points?"
+msgstr "Destek noktaları kaydedilsin mi?"
+
+msgid "Autogeneration will erase all manually edited points."
+msgstr "Otomatik oluşturma, manuel olarak düzenlenen tüm noktaları silecek."
+
+msgid "Are you sure you want to do it?"
+msgstr "Bunu yapmak istediğinizden emin misiniz?"
+
+msgid "SLA gizmo keyboard shortcuts"
+msgstr "SLA aracı klavye kısayolları"
+
+msgid "Note: some shortcuts work in (non)editing mode only."
+msgstr "Not: Bazı kısayollar yalnızca (düzenleme dışı) düzenleme modunda çalışır."
+
+msgid "Add point"
+msgstr "Nokta ekle"
+
+msgid "Remove point"
+msgstr "Noktayı kaldır"
+
+msgid "Move point"
+msgstr "Noktayı taşı"
+
+msgid "Add point to selection"
+msgstr "Seçime nokta ekle"
+
+msgid "Remove point from selection"
+msgstr "Seçimden nokta kaldır"
+
+msgid "Select by rectangle"
+msgstr "Dikdörtgenle seç"
+
+msgid "Deselect by rectangle"
+msgstr "Dikdörtgenle seçimi kaldır"
+
+msgid "Select all points"
+msgstr "Tüm noktaları seç"
+
+msgid "Move clipping plane"
+msgstr "Kırpma düzlemini taşı"
+
+msgid "Reset clipping plane"
+msgstr "Kırpma düzlemini sıfırla"
+
+msgid "Switch to editing mode"
+msgstr "Düzenleme moduna geç"
+
+msgid "Calage 2 SNDT"
+msgstr "Calage 2 SNDT"
+
+msgid "Calage 3 SNDT"
+msgstr "Calage 3 SNDT"
+
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f\\u00b0\n"
+"- Solid infill direction: %.0f\\u00b0\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr "Bu kalibrasyon modeli, belirli dolgu ayarlarıyla en iyi şekilde çalışır.\nOptimal kalibrasyon sonuçları için şunları ayarlamanız önerilir:\n- Dolgu yönü: %.0f\\u00b0\n- Katı dolgu yönü: %.0f\\u00b0\n- İlk katmanda yalnızca bir duvar: %s\n\nEvet - Bu ayarları otomatik olarak değiştir\nHayır  - Bu ayarları benim için değiştirme"
+
+msgid "Calage 1 Nova"
+msgstr "Calage 1 Nova"
+
+msgid "Calibrations Models Dual Head"
+msgstr "Çift Kafali Kalibrasyon Modelleri"
+
+msgid "Calibration Models Single Head"
+msgstr "Tek Kafalı Kalibrasyon Modelleri"
+
+msgid "Cosmyx Handy Models"
+msgstr "Cosmyx Kullanışlı Modeller"
+
+msgid "Cosmyx 3D Models"
+msgstr "Cosmyx 3D Modelleri"
+
+msgid "Add Emboss text object"
+msgstr "Kabartma metin nesnesi ekle"
+
+msgid "Emboss attribute change"
+msgstr "Kabartma özniteliği değişikliği"
+
+msgid "Add Emboss text Volume"
+msgstr "Kabartma metin hacmi ekle"
+
+msgid "Font doesn't have any shape for given text."
+msgstr "Yazı tipi, verilen metin için herhangi bir şekle sahip değil."
+
+msgid "There is no valid surface for text projection."
+msgstr "Metin yansıtması için geçerli bir yüzey yok."
+
+msgid "An unexpected error occurred"
+msgstr "Beklenmedik bir hata oluştu"
+
+msgid "Best surface quality"
+msgstr "En iyi yüzey kalitesi"
+
+msgid "Optimize object rotation for best surface quality."
+msgstr "En iyi yüzey kalitesi için nesne döndürmeyi optimize et."
+
+msgid "Reduced overhang slopes"
+msgstr "Azaltılmış çıkıntı eğimleri"
+
+msgid ""
+"Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
+"Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
+msgstr "Destek yapısı gerektiren çıkıntıları en aza indirmek için nesne döndürmeyi optimize et.\nYükseklik ayarlanmamışsa bu yöntemin baskı tablasına temas eden nesnenin en iyi yüzeyini bulmaya çalışacağını unutmayın."
+
+msgid "Lowest Z height"
+msgstr "En düşük Z yüksekliği"
+
+msgid "Rotate the model to have the lowest z height for faster print time."
+msgstr "Daha hızlı baskı süresi için modeli en düşük Z yüksekliğine sahip olacak şekilde döndürün."
+
+msgid "Choose SLA archive:"
+msgstr "SLA arşivini seçin:"
+
+msgid "Import file"
+msgstr "Dosya içe aktar"
+
+msgid "Import model and profile"
+msgstr "Model ve profil içe aktar"
+
+msgid "Import profile only"
+msgstr "Yalnızca profili içe aktar"
+
+msgid "Import model only"
+msgstr "Yalnızca modeli içe aktar"
+
+msgid "Accurate"
+msgstr "Hassas"
+
+msgid "Balanced"
+msgstr "Dengeli"
+
+msgid "Quick"
+msgstr "Hızlı"
+
+msgid "3D Models"
+msgstr "3D Modeller"
+
+msgid "Click to return"
+msgstr "Geri dönmek için tıklayın"
+
+msgid "Left Arrow"
+msgstr "Sol Ok"
+
+msgid "Click to continue"
+msgstr "Devam etmek için tıklayın"
+
+msgid "Right Arrow"
+msgstr "Sağ Ok"
+
+msgid "Authorizing..."
+msgstr "Yetkilendiriliyor..."
+
+msgid "NO RAMMING AT ALL"
+msgstr "HİÇ KOÇBAŞI DARBE YOK"
+
+msgid "Volumetric speed"
+msgstr "Hacimsel hız"
+
+msgid "Search"
+msgstr "Ara"
+
+msgid "My Device"
+msgstr "Cihazım"
+
+msgid "Other Device"
+msgstr "Diğer Cihaz"
+
+msgid "Can't find my devices?"
+msgstr "Cihazlarım bulunamıyor mu?"
+
+msgid "Modifying the device name"
+msgstr "Cihaz adı değiştiriliyor"
+
+msgid "Bind with Access Code"
+msgstr "Erişim Kodu ile Bağla"
+
+msgid "Step file import parameters"
+msgstr "Step dosyası içe aktarma parametreleri"
+
+msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
+msgstr "Daha küçük doğrusal ve açısal sapma değerleri daha yüksek kaliteli dönüşümlerle sonuçlanır ancak işlem süresini artırır."
+
+msgid "View Wiki for more information"
+msgstr "Daha fazla bilgi için Wiki'yi görüntüleyin"
+
+msgid "Linear Deflection"
+msgstr "Doğrusal Sapma"
+
+msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
+msgstr "Lütfen geçerli bir değer girin (0,001 < doğrusal sapma < 0,1)"
+
+msgid "Angle Deflection"
+msgstr "Açısal Sapma"
+
+msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
+msgstr "Lütfen geçerli bir değer girin (0,01 < açısal sapma < 1,0)"
+
+msgid "Split compound and compsolid into multiple objects"
+msgstr "Bileşik ve katı bileşiği birden fazla nesneye böl"
+
+msgid "Number of triangular facets"
+msgstr "Üçgen yüzey sayısı"
+
+msgid "Calculating, please wait..."
+msgstr "Hesaplanıyor, lütfen bekleyin..."
+
+msgid "Move over surface"
+msgstr "Yüzey üzerinde taşı"
+
+msgid "System Information"
+msgstr "Sistem Bilgisi"
+
+msgid "Blacklisted libraries loaded into OrcaSlicer process:"
+msgstr "OrcaSlicer sürecine yüklenen kara listedeki kütüphaneler:"
+
+msgid "SIMD is supported:"
+msgstr "SIMD destekleniyor:"
+
+msgid "Copy to Clipboard"
+msgstr "Panoya Kopyala"
+
+msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "Cosmyx Dokulu Tabla takılıyken tabla sıcaklığı. -1 değeri, filamentin Cosmyx Dokulu Tablada baskıyı desteklemediği anlamına gelir. 0 değeri tablonun kapalı olduğu anlamına gelir."
+
+msgid "Forward"
+msgstr "İleri"
+
+msgid "Reload"
+msgstr "Yenile"
+
+msgid "Tools"
+msgstr "Araçlar"
+
+msgid "View Source"
+msgstr "Kaynağı Görüntüle"
+
+msgid "View Text"
+msgstr "Metni Görüntüle"
+
+msgid "Handle Navigation"
+msgstr "Gezinmeyi Yönet"
+
+msgid "Handle New Windows"
+msgstr "Yeni Pencereleri Yönet"
+
+msgid "Edit Mode"
+msgstr "Düzenleme Modu"
+
+msgid "Run Script"
+msgstr "Betik Çalıştır"
+
+msgid "Add user script"
+msgstr "Kullanıcı betiği ekle"
+
+msgid "Set custom user agent"
+msgstr "Özel kullanıcı aracısı ayarla"
+
+msgid "Clear Selection"
+msgstr "Seçimi Temizle"
+
+msgid "Delete Selection"
+msgstr "Seçimi Sil"
+
+msgid "Custom Scheme Example"
+msgstr "Özel Şema Örneği"
+
+msgid "Memory File System Example"
+msgstr "Bellek Dosya Sistemi Örneği"
+
+msgid "Enable Context Menu"
+msgstr "Bağlam Menüsünü Etkinleştir"
+
+msgid "Enable Dev Tools"
+msgstr "Geliştirici Araçlarını Etkinleştir"
+
+msgid "An error occurred loading "
+msgstr "Yüklenirken bir hata oluştu "
+
+msgid "%"
+msgstr "%"
+
+msgid "Connected to CrealityPrint successfully!"
+msgstr "CrealityPrint'e başarıyla bağlandı!"
+
+msgid "Could not connect to CrealityPrint"
+msgstr "CrealityPrint'e bağlanılamadı"
+
+msgid "Connection to ElegooLink is working correctly."
+msgstr "ElegooLink bağlantısı düzgün çalışıyor."
+
+msgid "Could not connect to ElegooLink"
+msgstr "ElegooLink'e bağlanılamadı"
+
+msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
+msgstr "Dosya aktarıldı, ancak bazı bilinmeyen hatalar oluştu. Lütfen dosya için cihaz sayfasını kontrol edin ve yazdırmayı yeniden başlatmayı deneyin."
+
+msgid "Error code not found"
+msgstr "Hata kodu bulunamadı"
+
+msgid "The printer is busy, Please check the device page for the file and try to start printing again."
+msgstr "Yazıcı meşgul. Lütfen dosya için cihaz sayfasını kontrol edin ve yazdırmayı yeniden başlatmayı deneyin."
+
+msgid "The file is lost, please check and try again."
+msgstr "Dosya kayboldu, lütfen kontrol edip tekrar deneyin."
+
+msgid "The file is corrupted, please check and try again."
+msgstr "Dosya bozuk, lütfen kontrol edip tekrar deneyin."
+
+msgid "Transmission abnormality, please check and try again."
+msgstr "İletim anormalliği, lütfen kontrol edip tekrar deneyin."
+
+msgid "The file does not match the printer, please check and try again."
+msgstr "Dosya yazıcıyla eşleşmiyor, lütfen kontrol edip tekrar deneyin."
+
+msgid "Start print timeout"
+msgstr "Yazdırma başlatma zaman aşımı"
+
+msgid "Start print failed"
+msgstr "Yazdırma başlatma başarısız"
+
+msgid "Connection to ESP3D is working correctly."
+msgstr "ESP3D bağlantısı düzgün çalışıyor."
+
+msgid "Could not connect to ESP3D"
+msgstr "ESP3D'ye bağlanılamadı"
+
+msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
+msgstr "Bağlantı zaman aşımına uğradı. Lütfen yazıcı ve bilgisayar ağının düzgün çalışıp çalışmadığını kontrol edin ve aynı ağda olduklarını doğrulayın."
+
+msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
+msgstr "Ana bilgisayar adı/IP/URL ayrıştırılamadı, lütfen kontrol edip tekrar deneyin."
+
+msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
+msgstr "Dosya/veri aktarımı kesildi. Lütfen yazıcıyı ve ağı kontrol edin, ardından tekrar deneyin."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "CosmoSlice'ın yeni bir sürümü yüklendi."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Lütfen Cosmyx AppData Klasörünü yedekleyin ve silin."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "OrcaSlicer'ı kapatıp AppData klasörünüzyü açmak ister misiniz?"
+
+msgid "New Build Detected"
+msgstr "Yeni Derleme Algılandı"
+
+msgid "Don't show again for future builds"
+msgstr "Gelecekteki derlemeler için tekrar gösterme"
+
+msgid "Skip build update notifications"
+msgstr "Derleme güncelleme bildirimlerini atla"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "Etkinleştirilirse, yeni bir CosmoSlice derlemesi algılandığında gösterilen açılır pencereyi gizler."

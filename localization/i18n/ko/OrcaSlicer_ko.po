@@ -20194,3 +20194,897 @@ msgstr ""
 
 msgid "Tungsten Carbide"
 msgstr ""
+
+msgid "The selected 3mf file has been saved with a newer version of %1% and is not compatible."
+msgstr "선택한 3mf 파일은 %1%의 최신 버전으로 저장되었으며 호환되지 않습니다."
+
+msgid "The selected 3MF contains FDM supports painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "선택한 3MF 파일에는 최신 버전의 PrusaSlicer로 페인팅된 FDM 서포트 객체가 포함되어 있으며 호환되지 않습니다."
+
+msgid "The selected 3MF contains seam painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "선택한 3MF 파일에는 최신 버전의 PrusaSlicer로 페인팅된 시임 객체가 포함되어 있으며 호환되지 않습니다."
+
+msgid "The selected 3MF contains multi-material painted object using a newer version of PrusaSlicer and is not compatible."
+msgstr "선택한 3MF 파일에는 최신 버전의 PrusaSlicer로 페인팅된 다중 재료 객체가 포함되어 있으며 호환되지 않습니다."
+
+msgid ""
+"Post-processing script %1% failed.\n"
+"\n"
+"The post-processing script is expected to change the G-code file %2% in place, but the G-code file was deleted and likely saved under a new name.\n"
+"Please adjust the post-processing script to change the G-code in place and consult the manual on how to optionally rename the post-processed G-code file.\n"
+msgstr "후처리 스크립트 %1%이(가) 실패했습니다.\n\n후처리 스크립트는 G-code 파일 %2%을(를) 제자리에서 수정해야 하지만, G-code 파일이 삭제되어 새로운 이름으로 저장된 것 같습니다.\n후처리 스크립트를 조정하여 G-code를 제자리에서 수정하고, 후처리된 G-code 파일의 선택적 이름 변경 방법에 대해 매뉴얼을 참조하십시오.\n"
+
+msgid "Bed temperature for layers except the initial one. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "첫 번째 레이어를 제외한 레이어의 베드 온도입니다. -1 값은 필라멘트가 Cosmyx Textured Bed에서의 출력을 지원하지 않음을 의미합니다. 0 값은 베드가 꺼져 있음을 의미합니다."
+
+msgid "Bed temperature of the initial layer. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "첫 번째 레이어의 베드 온도입니다. -1 값은 필라멘트가 Cosmyx Textured Bed에서의 출력을 지원하지 않음을 의미합니다. 0 값은 베드가 꺼져 있음을 의미합니다."
+
+msgid "Cosmyx Textured Bed"
+msgstr "Cosmyx Textured Bed"
+
+msgid "Hollowing"
+msgstr "속 비우기"
+
+msgid "Pad brim size is too small for the current configuration."
+msgstr "현재 구성에서 패드 브림 크기가 너무 작습니다."
+
+msgid "Cannot proceed without support points! Add support points or disable support generation."
+msgstr "서포트 포인트 없이는 진행할 수 없습니다! 서포트 포인트를 추가하거나 서포트 생성을 비활성화하십시오."
+
+msgid "Elevation is too low for object. Use the \"Pad around object\" feature to print the object without elevation."
+msgstr "객체에 대한 높이가 너무 낮습니다. \"객체 주변 패드\" 기능을 사용하여 높이 없이 객체를 출력하십시오."
+
+msgid "The endings of the support pillars will be deployed on the gap between the object and the pad. 'Support base safety distance' has to be greater than the 'Pad object gap' parameter to avoid this."
+msgstr "서포트 기둥의 끝부분이 객체와 패드 사이의 간격에 배치됩니다. 이를 방지하려면 '서포트 베이스 안전 거리'가 '패드 객체 간격' 매개변수보다 커야 합니다."
+
+msgid "Exposition time is out of printer profile bounds."
+msgstr "노출 시간이 프린터 프로파일 범위를 벗어났습니다."
+
+msgid "Initial exposition time is out of printer profile bounds."
+msgstr "초기 노출 시간이 프린터 프로파일 범위를 벗어났습니다."
+
+msgid "Slicing done"
+msgstr "슬라이싱 완료"
+
+msgid "Hollowing model"
+msgstr "모델 속 비우기"
+
+msgid "Drilling holes into model."
+msgstr "모델에 구멍 뚫기."
+
+msgid "Slicing model"
+msgstr "모델 슬라이싱"
+
+msgid "Generating support points"
+msgstr "서포트 포인트 생성 중"
+
+msgid "Generating support tree"
+msgstr "서포트 트리 생성 중"
+
+msgid "Generating pad"
+msgstr "패드 생성 중"
+
+msgid "Slicing supports"
+msgstr "서포트 슬라이싱"
+
+msgid "Merging slices and calculating statistics"
+msgstr "슬라이스 병합 및 통계 계산"
+
+msgid "Rasterizing layers"
+msgstr "레이어 래스터화"
+
+msgid "Slicing had to be stopped due to an internal error: Inconsistent slice index."
+msgstr "내부 오류로 인해 슬라이싱을 중단해야 했습니다: 슬라이스 인덱스가 일치하지 않습니다."
+
+msgid "Visualizing supports"
+msgstr "서포트 시각화"
+
+msgid "No pad can be generated for this model with the current configuration"
+msgstr "현재 구성으로 이 모델에 대한 패드를 생성할 수 없습니다."
+
+msgid "There are unprintable objects. Try to adjust support settings to make the objects printable."
+msgstr "출력할 수 없는 객체가 있습니다. 서포트 설정을 조정하여 객체를 출력 가능하게 만드십시오."
+
+msgid "Taking a configuration snapshot failed."
+msgstr "구성 스냅샷을 찍는 데 실패했습니다."
+
+msgid "OrcaSlicer has encountered an error while taking a configuration snapshot."
+msgstr "OrcaSlicer가 구성 스냅샷을 찍는 중 오류가 발생했습니다."
+
+msgid "OrcaSlicer error"
+msgstr "OrcaSlicer 오류"
+
+msgid "Continue"
+msgstr "계속"
+
+msgid "Abort"
+msgstr "중단"
+
+msgid "Cosmyx Bundle Version %s"
+msgstr "Cosmyx 번들 버전 %s"
+
+msgid "Model Pictures"
+msgstr "모델 사진"
+
+msgid "Auxiliaryies"
+msgstr "보조 기능"
+
+msgid "nozzle"
+msgstr "노즐"
+
+msgid "Alternate nozzles:"
+msgstr "대체 노즐:"
+
+msgid "All standard"
+msgstr "모두 표준"
+
+msgid "Welcome to the %s Configuration Assistant"
+msgstr "%s 구성 도우미에 오신 것을 환영합니다."
+
+msgid "Welcome to the %s Configuration Wizard"
+msgstr "%s 구성 마법사에 오신 것을 환영합니다."
+
+msgid "Welcome"
+msgstr "환영합니다"
+
+msgid "Hello, welcome to %s! This %s helps you with the initial configuration; just a few settings and you will be ready to print."
+msgstr "안녕하세요, %s에 오신 것을 환영합니다! 이 %s은(는) 초기 구성을 도와드립니다. 몇 가지 설정만 하면 출력을 시작할 준비가 됩니다."
+
+msgid "Remove user profiles (a snapshot will be taken beforehand)"
+msgstr "사용자 프로파일 제거 (미리 스냅샷이 찍힙니다)"
+
+msgid "Perform desktop integration (Sets this binary to be searchable by the system)."
+msgstr "데스크탑 통합 수행 (이 바이너리를 시스템에서 검색 가능하게 설정합니다)."
+
+msgid "%s Family"
+msgstr "%s 시리즈"
+
+msgid "Printer:"
+msgstr "프린터:"
+
+msgid "Vendor:"
+msgstr "제조사:"
+
+msgid "Profile:"
+msgstr "프로파일:"
+
+msgid "(All)"
+msgstr "(전체)"
+
+msgid "%1% marked with <b>*</b> are <b>not</b> compatible with some installed printers."
+msgstr "<b>*</b>로 표시된 %1%은(는) 일부 설치된 프린터와 <b>호환되지 않습니다</b>."
+
+msgid "SLA materials"
+msgstr "SLA 재료"
+
+msgid "All installed printers are compatible with the selected %1%."
+msgstr "설치된 모든 프린터가 선택한 %1%과(와) 호환됩니다."
+
+msgid "filament"
+msgstr "필라멘트"
+
+msgid "SLA material"
+msgstr "SLA 재료"
+
+msgid "Only the following installed printers are compatible with the selected filaments"
+msgstr "다음 설치된 프린터만 선택한 필라멘트와 호환됩니다."
+
+msgid "Only the following installed printers are compatible with the selected SLA materials"
+msgstr "다음 설치된 프린터만 선택한 SLA 재료와 호환됩니다."
+
+msgid "Custom Printer Setup"
+msgstr "사용자 정의 프린터 설정"
+
+msgid "Custom Printer"
+msgstr "사용자 정의 프린터"
+
+msgid "Define a custom printer profile"
+msgstr "사용자 정의 프린터 프로파일 정의"
+
+msgid "Custom profile name:"
+msgstr "사용자 정의 프로파일 이름:"
+
+msgid "Firmware Type"
+msgstr "펌웨어 유형"
+
+msgid "Firmware"
+msgstr "펌웨어"
+
+msgid "Choose the type of firmware used by your printer."
+msgstr "프린터에서 사용하는 펌웨어 유형을 선택하십시오."
+
+msgid "Bed Shape and Size"
+msgstr "베드 모양 및 크기"
+
+msgid "Set the shape of your printer's bed."
+msgstr "프린터 베드의 모양을 설정하십시오."
+
+msgid "Invalid numeric input."
+msgstr "유효하지 않은 숫자 입력입니다."
+
+msgid "Filament and Nozzle Diameters"
+msgstr "필라멘트 및 노즐 직경"
+
+msgid "Print Diameters"
+msgstr "출력 직경"
+
+msgid "Enter the diameter of your printer's hot end nozzle."
+msgstr "프린터 핫엔드 노즐의 직경을 입력하십시오."
+
+msgid "Nozzle Diameter:"
+msgstr "노즐 직경:"
+
+msgid "Enter the diameter of your filament."
+msgstr "필라멘트의 직경을 입력하십시오."
+
+msgid "Good precision is required, so use a caliper and do multiple measurements along the filament, then compute the average."
+msgstr "정밀도가 중요하므로 캘리퍼를 사용하여 필라멘트를 따라 여러 번 측정한 후 평균을 계산하십시오."
+
+msgid "Filament Diameter:"
+msgstr "필라멘트 직경:"
+
+msgid "Nozzle and Bed Temperatures"
+msgstr "노즐 및 베드 온도"
+
+msgid "Enter the nozzle_temperature needed for extruding your filament."
+msgstr "필라멘트 압출에 필요한 노즐 온도를 입력하십시오."
+
+msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
+msgstr "일반적으로 PLA는 160~230°C, ABS는 215~250°C입니다."
+
+msgid "Extrusion Temperature:"
+msgstr "압출 온도:"
+
+msgid "Enter the bed temperature needed for getting your filament to stick to your heated bed."
+msgstr "필라멘트가 가열 베드에 달라붙도록 필요한 베드 온도를 입력하십시오."
+
+msgid "A rule of thumb is 60 °C for PLA and 110 °C for ABS. Leave zero if you have no heated bed."
+msgstr "일반적으로 PLA는 60°C, ABS는 110°C입니다. 가열 베드가 없는 경우 0으로 두십시오."
+
+msgid "Bed Temperature:"
+msgstr "베드 온도:"
+
+msgid "SLA Materials"
+msgstr "SLA 재료"
+
+msgid "FFF Technology Printers"
+msgstr "FFF 방식 프린터"
+
+msgid "SLA Technology Printers"
+msgstr "SLA 방식 프린터"
+
+msgid "Following printer profiles has no default filament: %1%Please select one manually."
+msgstr "다음 프린터 프로파일에 기본 필라멘트가 없습니다: %1%직접 선택하십시오."
+
+msgid "Following printer profiles has no default material: %1%Please select one manually."
+msgstr "다음 프린터 프로파일에 기본 재료가 없습니다: %1%직접 선택하십시오."
+
+msgid "The following FFF printer models have no filament selected:"
+msgstr "다음 FFF 프린터 모델에 필라멘트가 선택되지 않았습니다:"
+
+msgid "Do you want to select default filaments for these FFF printer models?"
+msgstr "이 FFF 프린터 모델들에 기본 필라멘트를 선택하시겠습니까?"
+
+msgid "Configuration is edited in ConfigWizard"
+msgstr "ConfigWizard에서 구성이 편집됩니다."
+
+msgid "All user presets will be deleted."
+msgstr "모든 사용자 프리셋이 삭제됩니다."
+
+msgid "A new Printer was installed and it will be activated."
+msgstr "새 프린터가 설치되어 활성화됩니다."
+
+msgid "Some Printers were uninstalled."
+msgstr "일부 프린터가 제거되었습니다."
+
+msgid "A new filament was installed and it will be activated."
+msgstr "새 필라멘트가 설치되어 활성화됩니다."
+
+msgid "A new SLA material was installed and it will be activated."
+msgstr "새 SLA 재료가 설치되어 활성화됩니다."
+
+msgid "Some filaments were uninstalled."
+msgstr "일부 필라멘트가 제거되었습니다."
+
+msgid "Custom printer was installed and it will be activated."
+msgstr "사용자 정의 프린터가 설치되어 활성화됩니다."
+
+msgid "<Back"
+msgstr "<뒤로"
+
+msgid "Next>"
+msgstr "다음>"
+
+msgid "Filament Profiles Selection"
+msgstr "필라멘트 프로파일 선택"
+
+msgid "Configuration Assistant"
+msgstr "구성 도우미"
+
+msgid "Configuration &Assistant"
+msgstr "구성 도우미(&A)"
+
+msgid "Configuration Wizard"
+msgstr "구성 마법사"
+
+msgid "Configuration &Wizard"
+msgstr "구성 마법사(&W)"
+
+msgid "A new vendor was installed and one of its printers will be activated"
+msgid_plural "New vendors were installed and one of theirs printers will be activated"
+msgstr[0] "새 제조사가 설치되어 해당 프린터 중 하나가 활성화됩니다."
+msgstr[1] "새 제조사가 설치되어 해당 프린터 중 하나가 활성화됩니다."
+
+msgid "Performing desktop integration failed - boost::filesystem::canonical did not return appimage path."
+msgstr "데스크탑 통합 수행 실패 - boost::filesystem::canonical이 AppImage 경로를 반환하지 않았습니다."
+
+msgid "Performing desktop integration failed - Could not find executable."
+msgstr "데스크탑 통합 수행 실패 - 실행 파일을 찾을 수 없습니다."
+
+msgid "Performing desktop integration failed because the application directory was not found."
+msgstr "응용 프로그램 디렉터리를 찾을 수 없어 데스크탑 통합 수행에 실패했습니다."
+
+msgid "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully."
+msgstr "데스크탑 통합 수행 실패 - Gcodeviewer 데스크탑 파일을 생성할 수 없습니다. OrcaSlicer 데스크탑 파일은 성공적으로 생성되었을 것입니다."
+
+msgid "Performing downloader desktop integration failed - boost::filesystem::canonical did not return appimage path."
+msgstr "다운로더 데스크탑 통합 수행 실패 - boost::filesystem::canonical이 AppImage 경로를 반환하지 않았습니다."
+
+msgid "Performing downloader desktop integration failed - Could not find executable."
+msgstr "다운로더 데스크탑 통합 수행 실패 - 실행 파일을 찾을 수 없습니다."
+
+msgid "Performing downloader desktop integration failed because the application directory was not found."
+msgstr "응용 프로그램 디렉터리를 찾을 수 없어 다운로더 데스크탑 통합 수행에 실패했습니다."
+
+msgid "Desktop Integration"
+msgstr "데스크탑 통합"
+
+msgid ""
+"Desktop Integration sets this binary to be searchable by the system.\n"
+"\n"
+"Press \"Perform\" to proceed."
+msgstr ""
+
+msgid "The current chamber temperature or the target chamber temperature exceeds 45\\u2103. In order to avoid extruder clogging, low temperature filament (PLA/PETG/TPU) is not allowed to be loaded."
+msgstr "현재 챔버 온도 또는 목표 챔버 온도가 45\\u2103를 초과합니다. 익스트루더 막힘을 방지하기 위해 저온 필라멘트(PLA/PETG/TPU)를 장착할 수 없습니다."
+
+msgid "Low temperature filament (PLA/PETG/TPU) is loaded in the extruder. In order to avoid extruder clogging, it is not allowed to set the chamber temperature above 45\\u2103."
+msgstr "익스트루더에 저온 필라멘트(PLA/PETG/TPU)가 장착되어 있습니다. 익스트루더 막힘을 방지하기 위해 챔버 온도를 45\\u2103 이상으로 설정할 수 없습니다."
+
+msgid "When you set the chamber temperature below 40\\u2103, the chamber temperature control will not be activated, and the target chamber temperature will automatically be set to 0\\u2103."
+msgstr "챔버 온도를 40\\u2103 미만으로 설정하면 챔버 온도 제어가 활성화되지 않으며, 목표 챔버 온도가 자동으로 0\\u2103으로 설정됩니다."
+
+msgid "The download has failed"
+msgstr "다운로드에 실패했습니다."
+
+msgid "Can't create file at %1%"
+msgstr "%1%에 파일을 생성할 수 없습니다."
+
+msgid "Archive preview"
+msgstr "아카이브 미리보기"
+
+msgid "Movement:"
+msgstr "이동:"
+
+msgid "Movement"
+msgstr "이동"
+
+msgid "Auto Segment"
+msgstr "자동 세그먼트"
+
+msgid "Depth ratio"
+msgstr "깊이 비율"
+
+msgid "Prizm"
+msgstr "프리즘"
+
+msgid "connector is out of cut contour"
+msgstr "커넥터가 절단 윤곽 외부에 있습니다."
+
+msgid "connectors are out of cut contour"
+msgstr "커넥터들이 절단 윤곽 외부에 있습니다."
+
+msgid "connector is out of object"
+msgstr "커넥터가 객체 외부에 있습니다."
+
+msgid "connectors is out of object"
+msgstr "커넥터들이 객체 외부에 있습니다."
+
+msgid ""
+"Invalid state. \n"
+"No one part is selected for keep after cut"
+msgstr "유효하지 않은 상태입니다. \n절단 후 유지할 부분이 선택되지 않았습니다."
+
+msgid "Please confirm explosion ratio = 1 and select at least two volumes."
+msgstr "분리 비율이 1인지 확인하고 최소 두 개의 볼륨을 선택하십시오."
+
+msgid "Please select at least two volumes."
+msgstr "최소 두 개의 볼륨을 선택하십시오."
+
+msgid "(Moving)"
+msgstr "(이동 중)"
+
+msgid "Point and point assembly"
+msgstr "포인트 대 포인트 조립"
+
+msgid ""
+"It is recommended to assemble the objects first,\n"
+"because the objects is restriced to bed \n"
+"and only parts can be lifted."
+msgstr "객체를 먼저 조립하는 것이 좋습니다.\n객체는 베드에 고정되어 있으며\n일부만 들어올릴 수 있기 때문입니다."
+
+msgid "Face and face assembly"
+msgstr "면 대 면 조립"
+
+msgid "Entering Assembly gizmo"
+msgstr "조립 기즈모 진입"
+
+msgid "Leaving Assembly gizmo"
+msgstr "조립 기즈모 종료"
+
+msgid "Entering Cut gizmo"
+msgstr "절단 기즈모 진입"
+
+msgid "Leaving Cut gizmo"
+msgstr "절단 기즈모 종료"
+
+msgid "Cut gizmo editing"
+msgstr "절단 기즈모 편집"
+
+msgid "Add fuzzy skin"
+msgstr "퍼지 스킨 추가"
+
+msgid "Remove fuzzy skin"
+msgstr "퍼지 스킨 제거"
+
+msgid "Reset selection"
+msgstr "선택 초기화"
+
+msgid "Entering Paint-on fuzzy skin"
+msgstr "페인트 퍼지 스킨 진입"
+
+msgid "Leaving Paint-on fuzzy skin"
+msgstr "페인트 퍼지 스킨 종료"
+
+msgid "Paint-on fuzzy skin editing"
+msgstr "페인트 퍼지 스킨 편집"
+
+msgid "Hollow this object"
+msgstr "이 객체 속 비우기"
+
+msgid "Preview hollowed and drilled model"
+msgstr "속 비우고 구멍 뚫린 모델 미리보기"
+
+msgid "Offset"
+msgstr "오프셋"
+
+msgid "Closing distance"
+msgstr "닫힘 거리"
+
+msgid "Hole diameter"
+msgstr "구멍 직경"
+
+msgid "Hole depth"
+msgstr "구멍 깊이"
+
+msgid "Remove selected holes"
+msgstr "선택한 구멍 제거"
+
+msgid "Remove all holes"
+msgstr "모든 구멍 제거"
+
+msgid "Clipping of view"
+msgstr "뷰 클리핑"
+
+msgid "Show supports"
+msgstr "서포트 표시"
+
+msgid "Hollow and drill"
+msgstr "속 비우기 및 드릴"
+
+msgid "Entering Measure gizmo"
+msgstr "측정 기즈모 진입"
+
+msgid "Leaving Measure gizmo"
+msgstr "측정 기즈모 종료"
+
+msgid "Model simplification has been canceled"
+msgstr "모델 단순화가 취소되었습니다."
+
+msgid "Lock supports under new islands"
+msgstr "새 아일랜드 아래 서포트 잠금"
+
+msgid "Remove all points"
+msgstr "모든 포인트 제거"
+
+msgid "Apply changes"
+msgstr "변경 사항 적용"
+
+msgid "Discard changes"
+msgstr "변경 사항 취소"
+
+msgid "Minimal points distance"
+msgstr "최소 포인트 거리"
+
+msgid "Support points density"
+msgstr "서포트 포인트 밀도"
+
+msgid "Manual editing"
+msgstr "수동 편집"
+
+msgid "SLA Support Points"
+msgstr "SLA 서포트 포인트"
+
+msgid "Do you want to save your manually edited support points?"
+msgstr "수동으로 편집한 서포트 포인트를 저장하시겠습니까?"
+
+msgid "Save support points?"
+msgstr "서포트 포인트를 저장하시겠습니까?"
+
+msgid "Autogeneration will erase all manually edited points."
+msgstr "자동 생성을 하면 수동으로 편집한 모든 포인트가 삭제됩니다."
+
+msgid "Are you sure you want to do it?"
+msgstr "정말 진행하시겠습니까?"
+
+msgid "SLA gizmo keyboard shortcuts"
+msgstr "SLA 기즈모 키보드 단축키"
+
+msgid "Note: some shortcuts work in (non)editing mode only."
+msgstr "참고: 일부 단축키는 (비)편집 모드에서만 작동합니다."
+
+msgid "Add point"
+msgstr "포인트 추가"
+
+msgid "Remove point"
+msgstr "포인트 제거"
+
+msgid "Move point"
+msgstr "포인트 이동"
+
+msgid "Add point to selection"
+msgstr "선택에 포인트 추가"
+
+msgid "Remove point from selection"
+msgstr "선택에서 포인트 제거"
+
+msgid "Select by rectangle"
+msgstr "사각형으로 선택"
+
+msgid "Deselect by rectangle"
+msgstr "사각형으로 선택 해제"
+
+msgid "Select all points"
+msgstr "모든 포인트 선택"
+
+msgid "Move clipping plane"
+msgstr "클리핑 평면 이동"
+
+msgid "Reset clipping plane"
+msgstr "클리핑 평면 초기화"
+
+msgid "Switch to editing mode"
+msgstr "편집 모드로 전환"
+
+msgid "Calage 2 SNDT"
+msgstr "Calage 2 SNDT"
+
+msgid "Calage 3 SNDT"
+msgstr "Calage 3 SNDT"
+
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f\\u00b0\n"
+"- Solid infill direction: %.0f\\u00b0\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr "이 보정 모델은 특정 내부 채우기 설정에서 최적으로 작동합니다.\n최적의 보정 결과를 위해 다음과 같이 설정하는 것이 좋습니다:\n- 내부 채우기 방향: %.0f\\u00b0\n- 솔리드 내부 채우기 방향: %.0f\\u00b0\n- 첫 번째 레이어에 벽 하나만: %s\n\n예 - 자동으로 이 설정 변경\n아니요  - 이 설정을 변경하지 않음"
+
+msgid "Calage 1 Nova"
+msgstr "Calage 1 Nova"
+
+msgid "Calibrations Models Dual Head"
+msgstr "이중 헤드 보정 모델"
+
+msgid "Calibration Models Single Head"
+msgstr "단일 헤드 보정 모델"
+
+msgid "Cosmyx Handy Models"
+msgstr "Cosmyx Handy Models"
+
+msgid "Cosmyx 3D Models"
+msgstr "Cosmyx 3D Models"
+
+msgid "Add Emboss text object"
+msgstr "엠보싱 텍스트 객체 추가"
+
+msgid "Emboss attribute change"
+msgstr "엠보싱 속성 변경"
+
+msgid "Add Emboss text Volume"
+msgstr "엠보싱 텍스트 볼륨 추가"
+
+msgid "Font doesn't have any shape for given text."
+msgstr "해당 텍스트에 대한 글꼴 모양이 없습니다."
+
+msgid "There is no valid surface for text projection."
+msgstr "텍스트 투영을 위한 유효한 표면이 없습니다."
+
+msgid "An unexpected error occurred"
+msgstr "예기치 않은 오류가 발생했습니다."
+
+msgid "Best surface quality"
+msgstr "최고의 표면 품질"
+
+msgid "Optimize object rotation for best surface quality."
+msgstr "최고의 표면 품질을 위해 객체 회전을 최적화합니다."
+
+msgid "Reduced overhang slopes"
+msgstr "오버행 경사 최소화"
+
+msgid ""
+"Optimize object rotation to have minimum amount of overhangs needing support structures.\n"
+"Note that this method will try to find the best surface of the object for touching the print bed if no elevation is set."
+msgstr "서포트 구조물이 필요한 오버행을 최소화하도록 객체 회전을 최적화합니다.\n높이가 설정되지 않은 경우 이 방법은 출력 베드에 닿는 객체의 최적 표면을 찾으려 합니다."
+
+msgid "Lowest Z height"
+msgstr "최저 Z 높이"
+
+msgid "Rotate the model to have the lowest z height for faster print time."
+msgstr "더 빠른 출력 시간을 위해 최저 Z 높이를 갖도록 모델을 회전합니다."
+
+msgid "Choose SLA archive:"
+msgstr "SLA 아카이브 선택:"
+
+msgid "Import file"
+msgstr "파일 가져오기"
+
+msgid "Import model and profile"
+msgstr "모델 및 프로파일 가져오기"
+
+msgid "Import profile only"
+msgstr "프로파일만 가져오기"
+
+msgid "Import model only"
+msgstr "모델만 가져오기"
+
+msgid "Accurate"
+msgstr "정밀"
+
+msgid "Balanced"
+msgstr "균형"
+
+msgid "Quick"
+msgstr "빠름"
+
+msgid "3D Models"
+msgstr "3D 모델"
+
+msgid "Click to return"
+msgstr "클릭하여 돌아가기"
+
+msgid "Left Arrow"
+msgstr "왼쪽 화살표"
+
+msgid "Click to continue"
+msgstr "클릭하여 계속"
+
+msgid "Right Arrow"
+msgstr "오른쪽 화살표"
+
+msgid "Authorizing..."
+msgstr "인증 중..."
+
+msgid "NO RAMMING AT ALL"
+msgstr "램핑 없음"
+
+msgid "Volumetric speed"
+msgstr "부피 속도"
+
+msgid "Search"
+msgstr "검색"
+
+msgid "My Device"
+msgstr "내 장치"
+
+msgid "Other Device"
+msgstr "다른 장치"
+
+msgid "Can't find my devices?"
+msgstr "내 장치를 찾을 수 없습니까?"
+
+msgid "Modifying the device name"
+msgstr "장치 이름 수정"
+
+msgid "Bind with Access Code"
+msgstr "액세스 코드로 연결"
+
+msgid "Step file import parameters"
+msgstr "STEP 파일 가져오기 매개변수"
+
+msgid "Smaller linear and angular deflections result in higher-quality transformations but increase the processing time."
+msgstr "선형 및 각도 편차가 작을수록 더 높은 품질의 변환이 이루어지지만 처리 시간이 늘어납니다."
+
+msgid "View Wiki for more information"
+msgstr "자세한 내용은 Wiki를 참조하십시오."
+
+msgid "Linear Deflection"
+msgstr "선형 편차"
+
+msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
+msgstr "유효한 값을 입력하십시오 (0.001 < 선형 편차 < 0.1)"
+
+msgid "Angle Deflection"
+msgstr "각도 편차"
+
+msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
+msgstr "유효한 값을 입력하십시오 (0.01 < 각도 편차 < 1.0)"
+
+msgid "Split compound and compsolid into multiple objects"
+msgstr "복합체 및 복합 솔리드를 여러 객체로 분할"
+
+msgid "Number of triangular facets"
+msgstr "삼각형 면의 수"
+
+msgid "Calculating, please wait..."
+msgstr "계산 중, 잠시 기다려 주십시오..."
+
+msgid "Move over surface"
+msgstr "표면 위로 이동"
+
+msgid "System Information"
+msgstr "시스템 정보"
+
+msgid "Blacklisted libraries loaded into OrcaSlicer process:"
+msgstr "OrcaSlicer 프로세스에 로드된 블랙리스트 라이브러리:"
+
+msgid "SIMD is supported:"
+msgstr "SIMD 지원:"
+
+msgid "Copy to Clipboard"
+msgstr "클립보드에 복사"
+
+msgid "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off."
+msgstr "Cosmyx Textured Bed가 설치된 경우의 베드 온도입니다. -1 값은 필라멘트가 Cosmyx Textured Bed에서의 출력을 지원하지 않음을 의미합니다. 0 값은 베드가 꺼져 있음을 의미합니다."
+
+msgid "Forward"
+msgstr "앞으로"
+
+msgid "Reload"
+msgstr "새로 고침"
+
+msgid "Tools"
+msgstr "도구"
+
+msgid "View Source"
+msgstr "소스 보기"
+
+msgid "View Text"
+msgstr "텍스트 보기"
+
+msgid "Handle Navigation"
+msgstr "탐색 처리"
+
+msgid "Handle New Windows"
+msgstr "새 창 처리"
+
+msgid "Edit Mode"
+msgstr "편집 모드"
+
+msgid "Run Script"
+msgstr "스크립트 실행"
+
+msgid "Add user script"
+msgstr "사용자 스크립트 추가"
+
+msgid "Set custom user agent"
+msgstr "사용자 정의 사용자 에이전트 설정"
+
+msgid "Clear Selection"
+msgstr "선택 지우기"
+
+msgid "Delete Selection"
+msgstr "선택 삭제"
+
+msgid "Custom Scheme Example"
+msgstr "사용자 정의 스킴 예시"
+
+msgid "Memory File System Example"
+msgstr "메모리 파일 시스템 예시"
+
+msgid "Enable Context Menu"
+msgstr "컨텍스트 메뉴 활성화"
+
+msgid "Enable Dev Tools"
+msgstr "개발자 도구 활성화"
+
+msgid "An error occurred loading "
+msgstr "로딩 중 오류가 발생했습니다 "
+
+msgid "%"
+msgstr "%"
+
+msgid "Connected to CrealityPrint successfully!"
+msgstr "CrealityPrint에 성공적으로 연결되었습니다!"
+
+msgid "Could not connect to CrealityPrint"
+msgstr "CrealityPrint에 연결할 수 없습니다."
+
+msgid "Connection to ElegooLink is working correctly."
+msgstr "ElegooLink 연결이 정상적으로 작동하고 있습니다."
+
+msgid "Could not connect to ElegooLink"
+msgstr "ElegooLink에 연결할 수 없습니다."
+
+msgid "The file has been transferred, but some unknown errors occurred. Please check the device page for the file and try to start printing again."
+msgstr "파일이 전송되었지만 알 수 없는 오류가 발생했습니다. 장치 페이지에서 파일을 확인하고 다시 출력을 시작해 보십시오."
+
+msgid "Error code not found"
+msgstr "오류 코드를 찾을 수 없습니다."
+
+msgid "The printer is busy, Please check the device page for the file and try to start printing again."
+msgstr "프린터가 사용 중입니다. 장치 페이지에서 파일을 확인하고 다시 출력을 시작해 보십시오."
+
+msgid "The file is lost, please check and try again."
+msgstr "파일이 없습니다. 확인 후 다시 시도하십시오."
+
+msgid "The file is corrupted, please check and try again."
+msgstr "파일이 손상되었습니다. 확인 후 다시 시도하십시오."
+
+msgid "Transmission abnormality, please check and try again."
+msgstr "전송 오류가 발생했습니다. 확인 후 다시 시도하십시오."
+
+msgid "The file does not match the printer, please check and try again."
+msgstr "파일이 프린터와 일치하지 않습니다. 확인 후 다시 시도하십시오."
+
+msgid "Start print timeout"
+msgstr "출력 시작 시간 초과"
+
+msgid "Start print failed"
+msgstr "출력 시작 실패"
+
+msgid "Connection to ESP3D is working correctly."
+msgstr "ESP3D 연결이 정상적으로 작동하고 있습니다."
+
+msgid "Could not connect to ESP3D"
+msgstr "ESP3D에 연결할 수 없습니다."
+
+msgid "Connection timed out. Please check if the printer and computer network are functioning properly, and confirm that they are on the same network."
+msgstr "연결 시간이 초과되었습니다. 프린터와 컴퓨터 네트워크가 정상적으로 작동하는지 확인하고, 동일한 네트워크에 있는지 확인하십시오."
+
+msgid "The Hostname/IP/URL could not be parsed, please check it and try again."
+msgstr "호스트명/IP/URL을 파싱할 수 없습니다. 확인 후 다시 시도하십시오."
+
+msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
+msgstr "파일/데이터 전송이 중단되었습니다. 프린터와 네트워크를 확인한 후 다시 시도하십시오."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "CosmoSlice의 새 버전이 설치되었습니다."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Cosmyx AppData 폴더를 백업하고 삭제하세요."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "OrcaSlicer를 닫고 AppData 폴더를 열겠습니까?"
+
+msgid "New Build Detected"
+msgstr "새 빌드 감지됨"
+
+msgid "Don't show again for future builds"
+msgstr "향후 빌드에서 다시 표시하지 않음"
+
+msgid "Skip build update notifications"
+msgstr "빌드 업데이트 알림 건너뛰기"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "활성화하면 새 CosmoSlice 빌드가 감지될 때 표시되는 팝업이 표시되지 않습니다."
