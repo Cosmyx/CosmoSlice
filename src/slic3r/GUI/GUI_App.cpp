@@ -2447,11 +2447,18 @@ bool GUI_App::on_init_inner()
                 msg += wxString::Format(_L("Build: %s \u2192 %s"), stored_build_hash, GIT_COMMIT_HASH) + "\n";
             if (stored_cosmyx_ver != std::string(COSMYX_PATCH_VERSION))
                 msg += wxString::Format(_L("Bundle: %s \u2192 %s"), stored_cosmyx_ver, COSMYX_PATCH_VERSION) + "\n";
-            RichMessageDialog dlg(mainframe, msg, _L("New Build Detected"), wxOK | wxICON_INFORMATION);
+            msg += "\n" + _L("Would you like to Close OrcaSlicer and Open your AppData folder?");
+            RichMessageDialog dlg(mainframe, msg, _L("New Build Detected"), wxYES_NO | wxICON_INFORMATION);
+            dlg.SetButtonLabel(wxID_YES, _L("OK"));
+            dlg.SetButtonLabel(wxID_NO,  _L("Skip"));
             dlg.ShowCheckBox(_L("Don't show again for future builds"));
-            dlg.ShowModal();
+            const int result = dlg.ShowModal();
             if (dlg.IsCheckBoxChecked())
                 app_config->set_bool("skip_build_change_notify", true);
+            if (result == wxID_YES) {
+                wxLaunchDefaultApplication(wxString::FromUTF8(Slic3r::data_dir()));
+                mainframe->Close(false);
+            }
         });
     }
 
