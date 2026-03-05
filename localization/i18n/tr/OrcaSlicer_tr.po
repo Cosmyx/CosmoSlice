@@ -22027,3 +22027,30 @@ msgstr "Ana bilgisayar adı/IP/URL ayrıştırılamadı, lütfen kontrol edip te
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr "Dosya/veri aktarımı kesildi. Lütfen yazıcıyı ve ağı kontrol edin, ardından tekrar deneyin."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "CosmoSlice'ın yeni bir sürümü yüklendi."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Lütfen Cosmyx AppData Klasörünü yedekleyin ve silin."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "OrcaSlicer'ı kapatıp AppData klasörünüzyü açmak ister misiniz?"
+
+msgid "New Build Detected"
+msgstr "Yeni Derleme Algılandı"
+
+msgid "Don't show again for future builds"
+msgstr "Gelecekteki derlemeler için tekrar gösterme"
+
+msgid "Skip build update notifications"
+msgstr "Derleme güncelleme bildirimlerini atla"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "Etkinleştirilirse, yeni bir CosmoSlice derlemesi algılandığında gösterilen açılır pencereyi gizler."

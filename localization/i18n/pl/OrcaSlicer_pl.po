@@ -23009,3 +23009,30 @@ msgstr "Nie można przetworzyć nazwy hosta/adresu IP/URL, sprawdź i spróbuj p
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr "Przesyłanie pliku/danych zostało przerwane. Sprawdź drukarkę i sieć, a następnie spróbuj ponownie."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "Zainstalowano nową wersję CosmoSlice."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Proszę wykonać kopię zapasową i usunąć folder AppData Cosmyx."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Czy chcesz zamknąć OrcaSlicer i otworzyć folder AppData?"
+
+msgid "New Build Detected"
+msgstr "Wykryto nowy build"
+
+msgid "Don't show again for future builds"
+msgstr "Nie pokazuj ponownie dla przyszłych buildów"
+
+msgid "Skip build update notifications"
+msgstr "Pomiń powiadomienia o aktualizacji buildu"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "Jeśli włączone, pomija wyskakujące okienko wyświetlane po wykryciu nowego buildu CosmoSlice."

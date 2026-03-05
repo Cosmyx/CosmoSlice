@@ -17056,3 +17056,30 @@ msgstr ""
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr ""
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr ""
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr ""
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr ""
+
+msgid "New Build Detected"
+msgstr ""
+
+msgid "Don't show again for future builds"
+msgstr ""
+
+msgid "Skip build update notifications"
+msgstr ""
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr ""

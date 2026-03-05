@@ -18645,3 +18645,30 @@ msgstr "ホスト名/IP/URL を解析できませんでした。確認して再�
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr "ファイル/データ転送が中断されました。プリンターとネットワークを確認してから、再試行してください。"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "CosmoSlice の新しいバージョンがインストールされました。"
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Cosmyx の AppData フォルダをバックアップして削除してください。"
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "OrcaSlicer を閉じて AppData フォルダを開きますか？"
+
+msgid "New Build Detected"
+msgstr "新しいビルドを検出しました"
+
+msgid "Don't show again for future builds"
+msgstr "今後のビルドでは表示しない"
+
+msgid "Skip build update notifications"
+msgstr "ビルド更新通知をスキップする"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "有効にすると、新しい CosmoSlice ビルドが検出されたときに表示されるポップアップが抑制されます。"

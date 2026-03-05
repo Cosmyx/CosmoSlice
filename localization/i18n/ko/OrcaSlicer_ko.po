@@ -21061,3 +21061,30 @@ msgstr "호스트명/IP/URL을 파싱할 수 없습니다. 확인 후 다시 시
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr "파일/데이터 전송이 중단되었습니다. 프린터와 네트워크를 확인한 후 다시 시도하십시오."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "CosmoSlice의 새 버전이 설치되었습니다."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Cosmyx AppData 폴더를 백업하고 삭제하세요."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "OrcaSlicer를 닫고 AppData 폴더를 열겠습니까?"
+
+msgid "New Build Detected"
+msgstr "새 빌드 감지됨"
+
+msgid "Don't show again for future builds"
+msgstr "향후 빌드에서 다시 표시하지 않음"
+
+msgid "Skip build update notifications"
+msgstr "빌드 업데이트 알림 건너뛰기"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "활성화하면 새 CosmoSlice 빌드가 감지될 때 표시되는 팝업이 표시되지 않습니다."

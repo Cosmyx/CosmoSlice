@@ -19177,3 +19177,30 @@ msgstr "Värdnamnet/IP/URL kunde inte tolkas, kontrollera och försök igen."
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr "Fil-/dataöverföring avbruten. Kontrollera skrivaren och nätverket och försök igen."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "En ny version av CosmoSlice har installerats."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Säkerhetskopiera och ta bort Cosmyx AppData-mappen."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Vill du stänga OrcaSlicer och öppna din AppData-mapp?"
+
+msgid "New Build Detected"
+msgstr "Ny build upptäckt"
+
+msgid "Don't show again for future builds"
+msgstr "Visa inte igen för framtida builds"
+
+msgid "Skip build update notifications"
+msgstr "Hoppa över build-uppdateringsaviseringar"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "Om aktiverad undertrücks popup-fönstret som visas när en ny CosmoSlice-build detekteras."

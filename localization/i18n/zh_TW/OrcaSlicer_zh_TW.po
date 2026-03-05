@@ -19138,3 +19138,30 @@ msgstr "無法解析主機名稱/IP/URL，請檢查後再試。"
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr "檔案/資料傳輸中斷。請檢查印表機和網路後再試。"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "CosmoSlice 的新版本已安裝。"
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "請備份並刪除 Cosmyx AppData 資料夾。"
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "是否要關閉 OrcaSlicer 並開啟 AppData 資料夾？"
+
+msgid "New Build Detected"
+msgstr "偉測到新版本"
+
+msgid "Don't show again for future builds"
+msgstr "不再為未來版本顯示"
+
+msgid "Skip build update notifications"
+msgstr "略過版本更新通知"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "如果啟用，將抑制偉測到新 CosmoSlice 版本時顯示的彈出視窗。"

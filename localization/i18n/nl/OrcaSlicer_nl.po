@@ -19614,3 +19614,30 @@ msgstr "De hostnaam/IP/URL kon niet worden geparseerd, controleer deze en probee
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr "Bestands-/gegevensoverdracht onderbroken. Controleer de printer en het netwerk en probeer het opnieuw."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "Een nieuwe versie van CosmoSlice is geïnstalleerd."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Maak een back-up en verwijder de Cosmyx AppData-map."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Wilt u OrcaSlicer sluiten en uw AppData-map openen?"
+
+msgid "New Build Detected"
+msgstr "Nieuwe build gedetecteerd"
+
+msgid "Don't show again for future builds"
+msgstr "Niet meer tonen voor toekomstige builds"
+
+msgid "Skip build update notifications"
+msgstr "Build-update meldingen overslaan"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "Indien ingeschakeld, onderdrukt het pop-upvenster dat wordt weergegeven wanneer een nieuwe CosmoSlice-build wordt gedetecteerd."

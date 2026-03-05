@@ -19185,3 +19185,30 @@ msgstr "Az állomásnév/IP-cím/URL nem elemezhető, kérjük, ellenőrizze és
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr "A fájl/adat átvitel megszakadt. Kérjük, ellenőrizze a nyomtatót és a hálózatot, majd próbálja újra."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "A CosmoSlice új verziója telepítve lett."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Kérjük, mentse el és törölje a Cosmyx AppData mappát."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Szeretné bezárni az OrcaSlicer-t és megnyitni az AppData mappát?"
+
+msgid "New Build Detected"
+msgstr "Új build észlelve"
+
+msgid "Don't show again for future builds"
+msgstr "Ne jelenjen meg a jövőbeli buildekhez"
+
+msgid "Skip build update notifications"
+msgstr "Build frissítési értesítések kihagyása"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "Ha engedélyezve van, elnyomja a felugró ablakot, amely akkor jelenik meg, amikor új CosmoSlice buildet észlel."

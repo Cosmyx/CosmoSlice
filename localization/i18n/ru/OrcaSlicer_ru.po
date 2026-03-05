@@ -21017,3 +21017,30 @@ msgstr "Не удалось разобрать имя хоста/IP/URL, пож�
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr "Передача файла/данных прервана. Пожалуйста, проверьте принтер и сеть, затем повторите попытку."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "Была установлена новая версия CosmoSlice."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Пожалуйста, создайте резервную копию и удалите папку AppData Cosmyx."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Хотите закрыть OrcaSlicer и открыть папку AppData?"
+
+msgid "New Build Detected"
+msgstr "Обнаружена новая сборка"
+
+msgid "Don't show again for future builds"
+msgstr "Больше не показывать для будущих сборок"
+
+msgid "Skip build update notifications"
+msgstr "Пропустить уведомления об обновлениях сборки"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "Если включено, подавляет всплывающее окно, отображаемое при обнаружении новой сборки CosmoSlice."

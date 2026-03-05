@@ -20664,3 +20664,30 @@ msgstr "Kompiuterio vardas/IP/URL neparsavamas, patikrinkite ir bandykite dar ka
 
 msgid "File/data transfer interrupted. Please check the printer and network, then try it again."
 msgstr "Failų/duomenų perdavimas nutrauktas. Patikrinkite spausdintuvą ir tinklą, tada bandykite dar kartą."
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "Įdiegta nauja „CosmoSlice“ versija."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Sukurkite atsarginę kopiją ir ištrinkite „Cosmyx“ AppData aplanką."
+
+msgid "Build: %s \\u2192 %s"
+msgstr ""
+
+msgid "Bundle: %s \\u2192 %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Ar norite uždaryti OrcaSlicer ir atidaryti AppData aplanką?"
+
+msgid "New Build Detected"
+msgstr "Aptikta nauja versija"
+
+msgid "Don't show again for future builds"
+msgstr "Nerodyti daugiau būsimoms versijoms"
+
+msgid "Skip build update notifications"
+msgstr "Praleisti versijų atnaujinimo pranešimus"
+
+msgid "If enabled, suppresses the popup shown when a new CosmoSlice build is detected."
+msgstr "Jei įjungta, slopina iššokantį langą, rodomą aptikus naują „CosmoSlice“ versiją."
