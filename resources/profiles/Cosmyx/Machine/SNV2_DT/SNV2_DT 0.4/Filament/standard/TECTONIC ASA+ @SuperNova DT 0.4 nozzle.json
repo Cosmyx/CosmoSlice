@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL30_SNV2_DT_04",
+    "name": "TECTONIC ASA+ @SuperNova DT 0.4 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TECTONIC ASA+ @Cosmyx Common 0.4 nozzle",
+    "compatible_printers": [
+        "Cosmyx SuperNova Double Tete 0.4 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

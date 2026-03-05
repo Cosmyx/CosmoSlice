@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL29_NOVA_DT_06",
+    "name": "KIMYA TPC 91A @Nova DT 0.6",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "KIMYA TPC 91A @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Double Tete 0.6 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL21_NOVA_08",
+    "name": "Cosmyx PA6-CF @Nova 0.8",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PA6-CF @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova 0.8 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

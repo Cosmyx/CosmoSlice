@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL35_SNV2_DT_CERAM_06",
+    "name": "TENET PP-CF15 @SuperNova DT Metal Ceramique 0.6",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TENET PP-CF15 @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx SuperNova Double Tete Metal Ceramique 0.6 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

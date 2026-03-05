@@ -1,0 +1,27 @@
+{
+    "type": "machine",
+    "setting_id": "GM502",
+    "instantiation": "true",
+    "inherits": "Cosmyx Nova 0.2 nozzle",
+    "name": "Cosmyx Nova Haute Temperature 0.2 nozzle",
+    "nozzle_diameter": [
+        "0.2"
+    ],
+    "printer_model": "Cosmyx Nova Haute Temperature",
+    "printer_variant": "0.2",
+    "nozzle_type": "tungsten_carbide",
+    "z_hop": [
+        "0.4"
+    ],
+    "z_hop_types": [
+        "Slope Lift"
+    ],
+    "retract_lift_above": [
+        "1",
+        "1"
+    ],
+    "retract_lift_below": [
+        "600",
+        "600"
+    ]
+}

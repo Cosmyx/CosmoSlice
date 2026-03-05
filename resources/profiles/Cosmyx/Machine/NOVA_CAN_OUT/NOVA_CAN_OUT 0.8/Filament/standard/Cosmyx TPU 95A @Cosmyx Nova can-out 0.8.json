@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL24_NOVA_CAN_OUT_08",
+    "name": "Cosmyx TPU 95A @Cosmyx Nova can-out 0.8",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx TPU 95A @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova 0.8 nozzle can-out"
+    ],
+    "version": "01.07.00.18"
+}

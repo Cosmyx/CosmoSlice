@@ -1,0 +1,34 @@
+{
+    "type": "machine",
+    "setting_id": "GM202",
+    "instantiation": "true",
+    "inherits": "Cosmyx Nova 0.2 nozzle",
+    "name": "Cosmyx SuperNova 0.2 nozzle",
+    "nozzle_diameter": [
+        "0.2"
+    ],
+    "printer_model": "Cosmyx SuperNova",
+    "printer_variant": "0.2",
+    "printable_area": [
+        "0x0",
+        "300x0",
+        "300x300",
+        "0x300"
+    ],
+    "nozzle_type": "cht",
+    "printable_height": "600",
+    "z_hop": [
+        "0.4"
+    ],
+    "z_hop_types": [
+        "Slope Lift"
+    ],
+    "retract_lift_above": [
+        "1",
+        "1"
+    ],
+    "retract_lift_below": [
+        "600",
+        "600"
+    ]
+}

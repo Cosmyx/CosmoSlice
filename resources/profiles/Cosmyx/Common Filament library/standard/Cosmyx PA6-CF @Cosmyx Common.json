@@ -1,0 +1,15 @@
+{
+    "type": "filament",
+    "setting_id": "GFSN05_02",
+    "name": "Cosmyx PA6-CF @Cosmyx Common",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PA6-CF @base",
+    "required_nozzle_HRC": [
+        "91"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ],
+    "version": "20.02.2026.01"
+}

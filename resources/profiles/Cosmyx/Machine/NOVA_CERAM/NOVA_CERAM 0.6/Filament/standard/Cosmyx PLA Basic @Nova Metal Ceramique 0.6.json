@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL23_NOVA_CERAM_06",
+    "name": "Cosmyx PLA Basic @Nova Metal Ceramique 0.6",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PLA Basic @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Metal Ceramique 0.6 nozzle"
+    ],
+    "version": "01.07.00.18"
+}
