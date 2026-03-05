@@ -1096,6 +1096,29 @@ void GUI_App::post_init()
     // Sets window property to mainframe so other instances can indentify it.
     OtherInstanceMessageHandler::init_windows_properties(mainframe, m_instance_hash_int);
 #endif //WIN32
+
+    // Show build-change notification now that mainframe is fully initialized.
+    if (m_pending_build_change_notify) {
+        m_pending_build_change_notify = false;
+        wxString msg = _L("A new version of CosmoSlice has been installed.") + "\n" +
+                       _L("Please Backup and delete the Cosmyx AppData Folder.") + "\n\n";
+        if (m_pending_build_stored_hash != std::string(GIT_COMMIT_HASH))
+            msg += wxString::Format(_L("Build: %s \u2192 %s"), m_pending_build_stored_hash, GIT_COMMIT_HASH) + "\n";
+        if (m_pending_build_stored_cosmyx_ver != std::string(COSMYX_PATCH_VERSION))
+            msg += wxString::Format(_L("Bundle: %s \u2192 %s"), m_pending_build_stored_cosmyx_ver, COSMYX_PATCH_VERSION) + "\n";
+        msg += "\n" + _L("Would you like to Close OrcaSlicer and Open your AppData folder?");
+        RichMessageDialog dlg(mainframe, msg, _L("New Build Detected"), wxYES_NO | wxICON_INFORMATION);
+        dlg.SetButtonLabel(wxID_YES, _L("OK"));
+        dlg.SetButtonLabel(wxID_NO,  _L("Skip"));
+        dlg.ShowCheckBox(_L("Don't show again for future builds"));
+        const int result = dlg.ShowModal();
+        if (dlg.IsCheckBoxChecked())
+            app_config->set_bool("skip_build_change_notify", true);
+        if (result == wxID_YES) {
+            wxLaunchDefaultApplication(wxString::FromUTF8(Slic3r::data_dir()));
+            mainframe->Close(false);
+        }
+    }
 }
 
 wxDEFINE_EVENT(EVT_ENTER_FORCE_UPGRADE, wxCommandEvent);
@@ -2904,26 +2927,9 @@ bool GUI_App::on_init_inner()
     app_config->set("cosmyx_version", COSMYX_PATCH_VERSION);
 
     if (!first_run && (build_hash_changed || cosmyx_ver_changed) && !app_config->get_bool("skip_build_change_notify")) {
-        CallAfter([this, stored_build_hash, stored_cosmyx_ver]() {
-            wxString msg = _L("A new version of CosmoSlice has been installed.") + "\n" +
-                           _L("Please Backup and delete the Cosmyx AppData Folder.") + "\n\n";
-            if (stored_build_hash != std::string(GIT_COMMIT_HASH))
-                msg += wxString::Format(_L("Build: %s \u2192 %s"), stored_build_hash, GIT_COMMIT_HASH) + "\n";
-            if (stored_cosmyx_ver != std::string(COSMYX_PATCH_VERSION))
-                msg += wxString::Format(_L("Bundle: %s \u2192 %s"), stored_cosmyx_ver, COSMYX_PATCH_VERSION) + "\n";
-            msg += "\n" + _L("Would you like to Close OrcaSlicer and Open your AppData folder?");
-            RichMessageDialog dlg(mainframe, msg, _L("New Build Detected"), wxYES_NO | wxICON_INFORMATION);
-            dlg.SetButtonLabel(wxID_YES, _L("OK"));
-            dlg.SetButtonLabel(wxID_NO,  _L("Skip"));
-            dlg.ShowCheckBox(_L("Don't show again for future builds"));
-            const int result = dlg.ShowModal();
-            if (dlg.IsCheckBoxChecked())
-                app_config->set_bool("skip_build_change_notify", true);
-            if (result == wxID_YES) {
-                wxLaunchDefaultApplication(wxString::FromUTF8(Slic3r::data_dir()));
-                mainframe->Close(false);
-            }
-        });
+        m_pending_build_change_notify    = true;
+        m_pending_build_stored_hash      = stored_build_hash;
+        m_pending_build_stored_cosmyx_ver = stored_cosmyx_ver;
     }
 
     SplashScreen * scrn = nullptr;
