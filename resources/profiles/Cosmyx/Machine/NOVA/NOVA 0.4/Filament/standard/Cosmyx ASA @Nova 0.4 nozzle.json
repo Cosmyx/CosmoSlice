@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL20_NOVA_04",
+    "name": "Cosmyx ASA @Nova 0.4 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx ASA @Cosmyx Common 0.4 nozzle",
+    "compatible_printers": [
+        "Cosmyx Nova 0.4 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

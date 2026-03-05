@@ -1,0 +1,12 @@
+{
+    "type": "process",
+    "setting_id": "GP007",
+    "name": "0.10mm Standard @SuperNova DT 0.2 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_cosmyx_0.10_nozzle_0.2",
+    "compatible_printers": [
+        "Cosmyx SuperNova Double Tete 0.2 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

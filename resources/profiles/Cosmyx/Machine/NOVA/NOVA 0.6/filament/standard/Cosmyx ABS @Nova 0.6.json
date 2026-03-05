@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL19_NOVA_06",
+    "name": "Cosmyx ABS @Nova 0.6",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx ABS @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova 0.6 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

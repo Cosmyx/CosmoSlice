@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL15_SNV2_02",
+    "name": "CAPIFIL PLA BLEU @SuperNova 0.2",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "CAPIFIL PLA BLEU @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx SuperNova 0.2 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

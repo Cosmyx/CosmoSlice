@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL21_HT_02",
+    "name": "Cosmyx PA6-CF @Haute Temperature 0.2",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PA6-CF @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Haute Temperature 0.2 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

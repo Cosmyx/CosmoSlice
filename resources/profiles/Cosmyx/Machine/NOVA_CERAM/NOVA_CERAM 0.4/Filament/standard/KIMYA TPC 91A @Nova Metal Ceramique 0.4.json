@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL29_NOVA_CERAM_04",
+    "name": "KIMYA TPC 91A @Nova Metal Ceramique 0.4",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "KIMYA TPC 91A @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Metal Ceramique 0.4 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

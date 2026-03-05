@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL18_SNV2_DT_CERAM_08",
+    "name": "Cosmyx ABS @SuperNova DT Metal Ceramique 0.8 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx ABS @Cosmyx Common 0.8 nozzle",
+    "compatible_printers": [
+        "Cosmyx SuperNova Double Tete Metal Ceramique 0.8 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

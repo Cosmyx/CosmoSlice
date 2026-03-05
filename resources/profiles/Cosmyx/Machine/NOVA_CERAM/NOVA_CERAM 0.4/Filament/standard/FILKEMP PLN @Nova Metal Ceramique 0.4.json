@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL27_NOVA_CERAM_04",
+    "name": "FILKEMP PLN @Nova Metal Ceramique 0.4",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "FILKEMP PLN @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Metal Ceramique 0.4 nozzle"
+    ],
+    "version": "01.07.00.18"
+}
