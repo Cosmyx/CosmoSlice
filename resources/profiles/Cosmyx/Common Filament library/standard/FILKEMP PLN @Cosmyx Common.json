@@ -1,0 +1,41 @@
+{
+    "type": "filament",
+    "filament_id": "MIL05",
+    "name": "FILKEMP PLN @Cosmyx Common",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PLA Basic @Cosmyx Common",
+    "filament_vendor": [
+        "FILKEMP"
+    ],
+    "default_filament_colour": [
+        "#808080"
+    ],
+    "filament_settings_id": [
+        "FILKEMP PLN @Cosmyx Common"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "65"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "65"
+    ],
+    "nozzle_temperature": [
+        "210"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "215"
+    ],
+    "pressure_advance": [
+        "0.04"
+    ],
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "filament_type": [
+        "PLN"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ]
+}

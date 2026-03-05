@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL35_SNV2_04",
+    "name": "TENET PP-CF15 @SuperNova 0.4",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TENET PP-CF15 @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx SuperNova 0.4 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

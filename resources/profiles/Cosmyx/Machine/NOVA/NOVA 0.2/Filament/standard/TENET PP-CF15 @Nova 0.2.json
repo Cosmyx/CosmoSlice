@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL35_NOVA_02",
+    "name": "TENET PP-CF15 @Nova 0.2",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TENET PP-CF15 @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova 0.2 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

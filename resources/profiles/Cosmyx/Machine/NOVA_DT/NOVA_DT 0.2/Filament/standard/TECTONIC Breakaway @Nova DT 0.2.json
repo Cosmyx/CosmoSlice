@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL31_NOVA_DT_02",
+    "name": "TECTONIC Breakaway @Nova DT 0.2",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TECTONIC Breakaway @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Double Tete 0.2 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

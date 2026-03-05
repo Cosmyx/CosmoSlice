@@ -1,0 +1,18 @@
+{
+    "type": "filament",
+    "setting_id": "GFSB00",
+    "name": "Cosmyx ABS @Cosmyx Common",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx ABS @base",
+    "filament_max_volumetric_speed": [
+        "22"
+    ],
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ],
+    "version": "20.02.2026.01"
+}

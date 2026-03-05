@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL32_NOVA_04",
+    "name": "TECTONIC CPE JAUNE @Nova 0.4",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TECTONIC CPE JAUNE @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova 0.4 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

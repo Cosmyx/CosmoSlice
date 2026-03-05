@@ -1,0 +1,49 @@
+{
+    "type": "filament",
+    "filament_id": "MIL09",
+    "name": "TECTONIC CPE ROUGE @Cosmyx Common",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PETG Basic @Cosmyx Common",
+    "default_filament_colour": [
+        "#FF0000"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "filament_max_volumetric_speed": [
+        "21"
+    ],
+    "filament_settings_id": [
+        "TECTONIC CPE ROUGE @Cosmyx Common"
+    ],
+    "filament_type": [
+        "CPE Rouge"
+    ],
+    "filament_vendor": [
+        "TECTONIC"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "90"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "90"
+    ],
+    "is_custom_defined": "0",
+    "nozzle_temperature": [
+        "245"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "245"
+    ],
+    "pressure_advance": [
+        "0.046"
+    ],
+    "version": "20.02.2026.01",
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ]
+}

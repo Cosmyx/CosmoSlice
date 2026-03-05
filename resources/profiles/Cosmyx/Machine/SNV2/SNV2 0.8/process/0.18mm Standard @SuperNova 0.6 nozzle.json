@@ -1,0 +1,12 @@
+{
+    "type": "process",
+    "setting_id": "GP028",
+    "name": "0.18mm Standard @SuperNova 0.6 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_cosmyx_0.18_nozzle_0.6",
+    "compatible_printers": [
+        "Cosmyx SuperNova 0.8 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

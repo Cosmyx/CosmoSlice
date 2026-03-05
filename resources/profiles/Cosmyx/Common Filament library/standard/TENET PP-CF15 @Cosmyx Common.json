@@ -1,0 +1,53 @@
+{
+    "type": "filament",
+    "filament_id": "MIL11",
+    "name": "TENET PP-CF15 @Cosmyx Common",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PA6-CF @Cosmyx Common",
+    "setting_id": "TENCF15COS",
+    "fan_cooling_layer_time": [
+        "80"
+    ],
+    "fan_max_speed": [
+        "80"
+    ],
+    "fan_min_speed": [
+        "15"
+    ],
+    "filament_density": [
+        "1.07"
+    ],
+    "filament_max_volumetric_speed": [
+        "6.8"
+    ],
+    "filament_settings_id": [
+        "TENET PP-CF15 @Cosmyx Common"
+    ],
+    "filament_type": [
+        "PP-CF"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "80"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "80"
+    ],
+    "is_custom_defined": "0",
+    "nozzle_temperature": [
+        "275"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "290"
+    ],
+    "overhang_fan_speed": [
+        "0"
+    ],
+    "version": "20.02.2026.01",
+    "required_nozzle_HRC": [
+        "91"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ]
+}

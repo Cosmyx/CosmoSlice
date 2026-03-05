@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL28_NOVA_CERAM_02",
+    "name": "FORMFUTURA PVA @Nova Metal Ceramique 0.2",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "FORMFUTURA PVA @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Metal Ceramique 0.2 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

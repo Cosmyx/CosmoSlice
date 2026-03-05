@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL27_NOVA_06",
+    "name": "FILKEMP PLN @Nova 0.6",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "FILKEMP PLN @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova 0.6 nozzle"
+    ],
+    "version": "01.07.00.18"
+}
