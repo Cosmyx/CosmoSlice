@@ -1,4 +1,5 @@
 #include "Plater.hpp"
+#include "CosmoLinkHandler.hpp"
 #include "libslic3r/Config.hpp"
 #include "libslic3r_version.h"
 
@@ -3289,9 +3290,12 @@ Plater::priv::priv(Plater *q, MainFrame *main_frame)
         BOOST_LOG_TRIVIAL(trace) << "Received url from other instance event.";
         wxGetApp().mainframe->Raise();
         for (size_t i = 0; i < evt.data.size(); ++i) {
-            wxGetApp().start_download(evt.data[i]);
+            if (is_cosmoslice_url(evt.data[i]))
+                CosmoLinkHandler::handle(evt.data[i]);
+            else
+                wxGetApp().start_download(evt.data[i]);
         }
-       
+
     });
     this->q->Bind(EVT_INSTANCE_GO_TO_FRONT, [this](InstanceGoToFrontEvent &) {
         bring_instance_forward();

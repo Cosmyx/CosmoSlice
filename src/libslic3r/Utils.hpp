@@ -222,6 +222,9 @@ inline bool is_prusaslicer_open(const std::string& url) { return boost::starts_w
 inline bool is_bambustudio_open(const std::string& url) { return boost::starts_with(url, "bambustudio://open") || boost::starts_with(url, "bambustudioopen://"); }
 inline bool is_cura_open(const std::string& url) { return boost::starts_with(url, "cura://open"); }
 inline bool is_supported_open_protocol(const std::string& url) { return is_orca_open(url) || is_prusaslicer_open(url) || is_bambustudio_open(url) || is_cura_open(url); }
+
+// CosmoSlice: native deep-link protocol — handled separately from the download pipeline
+inline bool is_cosmoslice_url(const std::string& url) { return boost::starts_with(url, "cosmoslice://"); }
 inline bool is_printables_link(const std::string& url) {
     const std::regex url_regex("(http|https)://printables.com", std::regex_constants::icase);
     return std::regex_match(url, url_regex);

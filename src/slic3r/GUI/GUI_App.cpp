@@ -8,6 +8,7 @@
 #include "format.hpp"
 #include "libslic3r_version.h"
 #include "Downloader.hpp"
+#include "CosmoLinkHandler.hpp"
 
 // Localization headers: include libslic3r version first so everything in this file
 // uses the slic3r/GUI version (the macros will take precedence over the functions).
@@ -815,7 +816,10 @@ void GUI_App::post_init()
         BOOST_LOG_TRIVIAL(info) << __FUNCTION__ << boost::format(", init with input files, size %1%, input_gcode %2%")
             %this->init_params->input_files.size() %this->init_params->input_gcode;
         const auto first_url = this->init_params->input_files.front();
-        if (this->init_params->input_files.size() == 1 && is_supported_open_protocol(first_url)) {
+        if (this->init_params->input_files.size() == 1 && is_cosmoslice_url(first_url)) {
+            switch_to_3d = true;
+            CosmoLinkHandler::handle(first_url);
+        } else if (this->init_params->input_files.size() == 1 && is_supported_open_protocol(first_url)) {
             switch_to_3d = true;
             start_download(first_url);
             m_open_method = "url";
@@ -2516,6 +2520,7 @@ bool GUI_App::on_init_inner()
             associate_files(L"stp");
         }
         associate_url(L"orcaslicer");
+        associate_url(L"cosmoslice");
 
         if (app_config->get("associate_gcode") == "true")
             associate_files(L"gcode");
@@ -6049,6 +6054,7 @@ void GUI_App::open_preferences(size_t open_on_tab, const std::string& highlight_
                 associate_files(L"stp");
             }
             associate_url(L"orcaslicer");
+            associate_url(L"cosmoslice");
         }
         else {
             if (app_config->get("associate_gcode") == "true")
@@ -6404,7 +6410,11 @@ void GUI_App::MacOpenURL(const wxString& url)
 {
     if (url.empty())
         return;
-    start_download(into_u8(url));
+    const std::string u = into_u8(url);
+    if (is_cosmoslice_url(u))
+        CosmoLinkHandler::handle(u);
+    else
+        start_download(u);
 }
 
 // wxWidgets override to get an event on open files.

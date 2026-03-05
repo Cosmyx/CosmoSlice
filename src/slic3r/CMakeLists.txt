@@ -85,6 +85,10 @@ set(SLIC3R_GUI_SOURCES
     GUI/ConfigWizard_private.hpp
     GUI/ConnectPrinter.cpp
     GUI/ConnectPrinter.hpp
+    GUI/CosmoAddPrinterDialog.cpp
+    GUI/CosmoAddPrinterDialog.hpp
+    GUI/CosmoLinkHandler.cpp
+    GUI/CosmoLinkHandler.hpp
     GUI/CreatePresetsDialog.cpp
     GUI/CreatePresetsDialog.hpp
     GUI/DailyTips.cpp
