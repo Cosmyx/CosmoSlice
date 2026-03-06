@@ -19175,9 +19175,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Pozisyonu ayarla"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -19256,26 +19253,8 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Yayınlama iptal edildi"
 
-#~ msgid "Search"
-#~ msgstr "Ara"
-
-#~ msgid "My Device"
-#~ msgstr "Cihazım"
-
-#~ msgid "Other Device"
-#~ msgstr "Diğer Cihaz"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Cihazlarımı bulamıyor musunuz?"
-
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "hafızaya alınan nozul: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Cihaz adını değiştir"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Erişim Kodu ile Bağla"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "
@@ -19826,9 +19805,6 @@ msgstr ""
 #~ msgstr "Seçimi kaldır"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Ölçek"
-
 #~ msgid "Orca Slicer "
 #~ msgstr "Orca Dilimleyici "
 
@@ -20737,33 +20713,6 @@ msgstr ""
 #~ msgid "wiki"
 #~ msgstr "wiki"
 
-#~ msgid "Movement:"
-#~ msgstr "Hareket:"
-
-#~ msgid "Movement"
-#~ msgstr "Hareket"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Otomatik Segment"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Derinlik oranı"
-
-#~ msgid "Prizm"
-#~ msgstr "Prizma"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "konnektör kesim konturunun dışında"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "konektörler kesim konturunun dışında"
-
-#~ msgid "connector is out of object"
-#~ msgstr "bağlayıcı nesnenin dışında"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "konektörler nesnenin dışında"
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -20800,27 +20749,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "Hata"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "SLA arşivini seçin:"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Modeli ve profili içe aktar"
-
-#~ msgid "Import profile only"
-#~ msgstr "Yalnızca profili içe aktar"
-
-#~ msgid "Import model only"
-#~ msgstr "Yalnızca modeli içe aktar"
-
-#~ msgid "Accurate"
-#~ msgstr "Doğru"
-
-#~ msgid "Balanced"
-#~ msgstr "Dengeli"
-
-#~ msgid "Quick"
-#~ msgstr "Hızlı"
 
 #~ msgid "Print sequence of inner wall and outer wall. "
 #~ msgstr "İç duvar ve dış duvarın yazdırma sırası."

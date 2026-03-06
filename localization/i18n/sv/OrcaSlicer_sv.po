@@ -17355,9 +17355,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Ställ in Position"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -17432,24 +17429,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Publiceringen avbröts"
 
-#~ msgid "Search"
-#~ msgstr "Sök"
-
-#~ msgid "My Device"
-#~ msgstr "Min Enhet"
-
-#~ msgid "Other Device"
-#~ msgstr "Andra Enheter"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Hittar du inte enheter?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "nozzel memorerat: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Ändra enhetens namn"
 
 #~ msgid "the Configuration package is incompatible with the current APP."
 #~ msgstr ""
@@ -17711,9 +17693,6 @@ msgstr ""
 #~ msgstr "Tjocka bridges"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Skala"
-
 #~ msgid "Z-hop when retract"
 #~ msgstr "Z-hopp vid retraktion"
 
@@ -17986,33 +17965,6 @@ msgstr ""
 #~ msgid "The Config cannot be loaded."
 #~ msgstr "Konfigurationen kan inte laddas."
 
-#~ msgid "Movement:"
-#~ msgstr "Rörelse:"
-
-#~ msgid "Movement"
-#~ msgstr "Rörelse"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Automatisk Segment"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Djup förhållande"
-
-#~ msgid "Prizm"
-#~ msgstr "Prizm"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "kontakten är ur konturen"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "kontakterna är utanför skuren kontur"
-
-#~ msgid "connector is out of object"
-#~ msgstr "kontakten är utanför objektet"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "Kontakterna måste vara på objektets yta."
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -18028,27 +17980,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "Undantag"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "Välj SLA arkiv:"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Importera modell och profil"
-
-#~ msgid "Import profile only"
-#~ msgstr "Importera endast profil"
-
-#~ msgid "Import model only"
-#~ msgstr "Importera endast modell"
-
-#~ msgid "Accurate"
-#~ msgstr "Exakt"
-
-#~ msgid "Balanced"
-#~ msgstr "Balanserad"
-
-#~ msgid "Quick"
-#~ msgstr "Snabb"
 
 #~ msgid ""
 #~ "Discribe how long the nozzle will move along the last path when retracting"

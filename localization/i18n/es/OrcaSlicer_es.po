@@ -19078,9 +19078,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Establecer Posición"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -19157,24 +19154,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "La publicación fue cancelada"
 
-#~ msgid "Search"
-#~ msgstr "Buscar"
-
-#~ msgid "My Device"
-#~ msgstr "Mi dispositivo"
-
-#~ msgid "Other Device"
-#~ msgstr "Otro dispositivo"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "¿No puedo encontrar mis dispositivos?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "Boquilla memorizada: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Modificar el nombre del dispositivo"
 
 #~ msgid ""
 #~ "Bed temperature when the Cool Plate Supertack is installed. A value of 0 "
@@ -19727,9 +19709,6 @@ msgstr ""
 #~ msgstr "Deseleccionar"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Escala"
-
 #~ msgid "Lift Z Enforcement"
 #~ msgstr "Forzar elevación Z"
 
@@ -20544,33 +20523,6 @@ msgstr ""
 #~ msgid "Maximum acceleration for travel (M204 T)"
 #~ msgstr "Aceleración máxima para el desplazamiento (M204 T)"
 
-#~ msgid "Movement:"
-#~ msgstr "Movimiento:"
-
-#~ msgid "Movement"
-#~ msgstr "Movimiento"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Auto Despiece"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Relación de profundidad"
-
-#~ msgid "Prizm"
-#~ msgstr "Prisma"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "el conector está fuera del contorno de corte"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "los conectores están fuera del contorno de corte"
-
-#~ msgid "connector is out of object"
-#~ msgstr "el conector está fuera del objeto"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "los conectores están fuera del objeto"
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -20650,27 +20602,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "Excepción"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "Elige el archivo SLA:"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Importar modelo y perfil"
-
-#~ msgid "Import profile only"
-#~ msgstr "Importar perfil solo"
-
-#~ msgid "Import model only"
-#~ msgstr "Importar solo el modelo"
-
-#~ msgid "Accurate"
-#~ msgstr "Precisión"
-
-#~ msgid "Balanced"
-#~ msgstr "Balanceado"
-
-#~ msgid "Quick"
-#~ msgstr "Rápido"
 
 #~ msgid ""
 #~ "Discribe how long the nozzle will move along the last path when retracting"
@@ -21098,9 +21029,6 @@ msgstr ""
 
 #~ msgid "Filaments replace"
 #~ msgstr "Reemplazar filamentos"
-
-#~ msgid "3D Models"
-#~ msgstr "Modelos 3D"
 
 #~ msgid "Initialize failed (Not supported with LAN-only mode)!"
 #~ msgstr "Inicialización fallida (No soportada con el modo Solo Red Local)"
@@ -22032,9 +21960,6 @@ msgstr ""
 
 #~ msgid "Clean"
 #~ msgstr "Limpiar"
-
-#~ msgid "Clipping of view"
-#~ msgstr "Recorte de vista"
 
 #~ msgid ""
 #~ "Desiccant status lower than two bars indicates that desiccant can be "

@@ -17439,9 +17439,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Pozíció beállítása"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -17515,24 +17512,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "A közzététel törlésre került"
 
-#~ msgid "Search"
-#~ msgstr "Keresés"
-
-#~ msgid "My Device"
-#~ msgstr "Saját eszköz"
-
-#~ msgid "Other Device"
-#~ msgstr "Egyéb eszköz"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Nem találod az eszközöket?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "eltárolt fúvóka: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Eszköz nevének módosítása"
 
 #~ msgid "Ramming settings"
 #~ msgstr "Tömörítési beállítások"
@@ -17802,9 +17784,6 @@ msgstr ""
 #~ msgstr "Vastag áthidalások"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Átméretezés"
-
 #~ msgid "Z-hop when retract"
 #~ msgstr "Z-tengely emelés visszahúzáskor"
 
@@ -18069,18 +18048,6 @@ msgstr ""
 
 #~ msgid "The Config cannot be loaded."
 #~ msgstr "A konfiguráció nem tölthető be."
-
-#~ msgid "Movement:"
-#~ msgstr "Mozgatás:"
-
-#~ msgid "Movement"
-#~ msgstr "Mozgás"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Automatikus szegmentálás"
-
-#~ msgid "Prizm"
-#~ msgstr "Prizm"
 
 #~ msgid "Error! Unable to create thread!"
 #~ msgstr "Hiba. Nem sikerült létrehozni a szálat."
