@@ -28,7 +28,7 @@ goto :eof
     set "name=%~n1"
     set "lang=%name:OrcaSlicer_=%"
     if %FULL_MODE%==1 (
-        .\tools\msgmerge.exe -N -o "%file%" "%file%" "%pot_file%"
+        .\tools\msgmerge.exe -N --no-obsolete -o "%file%" "%file%" "%pot_file%"
     )
     if not exist "./resources/i18n/%lang%" mkdir "./resources/i18n/%lang%"
     .\tools\msgfmt.exe --check-format -o "./resources/i18n/%lang%/OrcaSlicer.mo" "%file%"

@@ -7,10 +7,14 @@ from pathlib import Path
 
 
 def write_to_pot(path: Path, data: dict[str, str]):
+    existing = path.read_text(encoding="utf-8") if path.exists() else ""
     with open(path, "a+t") as pot_file:
         for key in data.keys():
+            msgid = data[key]['text']
+            if f'msgid "{msgid}"' in existing:
+                continue
             print(
-                f"\n#: resources/data/hints.ini: [{ key }]\nmsgid \"{ data[key]['text'] }\"\nmsgstr \"\"",
+                f"\n#: resources/data/hints.ini: [{ key }]\nmsgid \"{ msgid }\"\nmsgstr \"\"",
                 file=pot_file,
             )
 

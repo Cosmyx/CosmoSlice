@@ -138,6 +138,8 @@ def _parse_block(block: str) -> Optional[tuple]:
 
     for line in block.splitlines():
         s = line.strip()
+        if s.startswith("#~ "):
+            s = s[3:]
         if not s or s.startswith("#"):
             continue
         if s.startswith("msgctxt "):
