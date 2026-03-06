@@ -19631,7 +19631,7 @@ msgstr ""
 #~ msgstr "Išjungti pasirinkimą"
 
 #~ msgctxt "Verb"
-#, c-format, boost-format
+#~, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Prisijungti nepavyko [%d]!"
 
