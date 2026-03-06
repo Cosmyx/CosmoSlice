@@ -19327,27 +19327,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "A publicação foi cancelada"
 
-#~ msgid "Search"
-#~ msgstr "Buscar"
-
-#~ msgid "My Device"
-#~ msgstr "Meu dispositivo"
-
-#~ msgid "Other Device"
-#~ msgstr "Outro dispositivo"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Não consegue encontrar meus dispositivos?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "bico memorizado: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Modificando o nome do dispositivo"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Vincular com Código de Acesso"
 
 #~ msgid "Ramming settings"
 #~ msgstr "Configurações de moldeamento"

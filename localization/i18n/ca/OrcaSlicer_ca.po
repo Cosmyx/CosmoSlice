@@ -19216,9 +19216,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Establir Posició"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -19300,27 +19297,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "La publicació ha estat cancel·lada"
 
-#~ msgid "Search"
-#~ msgstr "Cercar"
-
-#~ msgid "My Device"
-#~ msgstr "El Meu Dispositiu"
-
-#~ msgid "Other Device"
-#~ msgstr "Un Altre Dispositiu"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "No puc trobar els meus dispositius?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "broquet memoritzat: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Modificant el nom del dispositiu"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Enllaçar amb el codi d'accés"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "
@@ -19757,9 +19736,6 @@ msgstr ""
 #~ msgstr "Desmarcar"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Escalar"
-
 #~ msgid "Lift Z Enforcement"
 #~ msgstr "Forçar elevació Z"
 

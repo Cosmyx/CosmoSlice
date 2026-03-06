@@ -19504,9 +19504,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Задание позиции"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -19586,27 +19583,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Публикация была отменена"
 
-#~ msgid "Search"
-#~ msgstr "Поиск"
-
-#~ msgid "My Device"
-#~ msgstr "Мой принтер"
-
-#~ msgid "Other Device"
-#~ msgstr "Другое устройство"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Не удаётся найти свои принтеры?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "сопло сохранённое: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Изменение имени принтера"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Привязать с помощью кода доступа"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "
@@ -20022,18 +20001,9 @@ msgstr ""
 #~ "затухания < Конечное значение затухания <= 1) "
 
 # если нужно короче то Грань-грань
-#~ msgid "Face and face assembly"
-#~ msgstr "Сборка по граням"
-
 # если нужно короче то Точка-точка
-#~ msgid "Point and point assembly"
-#~ msgstr "Сборка по точкам"
-
 #~ msgid "Unselect"
 #~ msgstr "Отменить выбор"
-
-#~ msgid "Please select at least two volumes."
-#~ msgstr "Выберите хотя бы две модели."
 
 #~ msgid "Initialize failed (Device connection not ready)!"
 #~ msgstr "Ошибка инициализации (подключённое устройство не готово)!"

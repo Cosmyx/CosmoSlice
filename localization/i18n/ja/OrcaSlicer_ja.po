@@ -16996,9 +16996,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "位置を設定"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -17063,21 +17060,6 @@ msgstr ""
 
 #~ msgid "Publish was canceled"
 #~ msgstr "公開は取り消しました"
-
-#~ msgid "My Device"
-#~ msgstr "私のデバイス"
-
-#~ msgid "Other Device"
-#~ msgstr "その他のデバイス"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "デバイスが見つからない？"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "デバイス名を変更"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "アクセスコードと紐付け"
 
 #~ msgid "Ramming settings"
 #~ msgstr "ラミング設定"
@@ -17319,9 +17301,6 @@ msgstr ""
 #~ msgstr "選択解除"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "スケール"
-
 #~ msgid "Z-hop when retract"
 #~ msgstr "リトラクト時にZ方向調整"
 
@@ -17502,15 +17481,6 @@ msgstr ""
 #~ "3mfは古いバージョンのOrca Slicerで作成されています、ジオメトリーデータのみ"
 #~ "読込みます。"
 
-#~ msgid "Movement:"
-#~ msgstr "移動"
-
-#~ msgid "Movement"
-#~ msgstr "移動"
-
-#~ msgid "Auto Segment"
-#~ msgstr "自動分割"
-
 #~ msgid "Edit Text"
 #~ msgstr "テキストを編集"
 
@@ -17519,24 +17489,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "異常"
-
-#~ msgid "Import model and profile"
-#~ msgstr "モデルとプロファイルを取り込む"
-
-#~ msgid "Import profile only"
-#~ msgstr "プロファイルのみ取り込む"
-
-#~ msgid "Import model only"
-#~ msgstr "モデルのみ取り込む"
-
-#~ msgid "Accurate"
-#~ msgstr "緻密"
-
-#~ msgid "Balanced"
-#~ msgstr "バランス"
-
-#~ msgid "Quick"
-#~ msgstr "高速"
 
 #~ msgid ""
 #~ "Discribe how long the nozzle will move along the last path when retracting"

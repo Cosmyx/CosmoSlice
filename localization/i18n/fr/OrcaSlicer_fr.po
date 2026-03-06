@@ -19469,9 +19469,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Définir la Position"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -19556,27 +19553,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "La publication a été annulée"
 
-#~ msgid "Search"
-#~ msgstr "Rechercher"
-
-#~ msgid "My Device"
-#~ msgstr "Mon appareil"
-
-#~ msgid "Other Device"
-#~ msgstr "Autre appareil"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Vous ne trouvez pas d'appareils ?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "buse mémorisée : %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Modification du nom de l'appareil"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Relier avec un code d’accès"
 
 #~ msgid ""
 #~ "Bed temperature when the Cool Plate Supertack is installed. A value of 0 "
@@ -20147,9 +20126,6 @@ msgstr ""
 #~ msgstr "Désélectionner"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Redimensionner"
-
 #~ msgid "Lift Z Enforcement"
 #~ msgstr "Exécution du décalage en Z"
 
@@ -21205,33 +21181,6 @@ msgstr ""
 #~ "Le fichier 3mf a été généré par une ancienne version de Orca Slicer, "
 #~ "chargement des données de géométrie uniquement."
 
-#~ msgid "Movement:"
-#~ msgstr "Mouvement:"
-
-#~ msgid "Movement"
-#~ msgstr "Mouvement"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Segmentation automatique"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Rapport de profondeur"
-
-#~ msgid "Prizm"
-#~ msgstr "Prisme"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "connecteur est hors du contour de la coupe"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "connecteurs sont hors du contour de la coupe"
-
-#~ msgid "connector is out of object"
-#~ msgstr "connecteur est hors de l'objet"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "connecteurs sont hors de l'objet"
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -21271,27 +21220,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "Anomalie"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "Choisissez l'archive SLA:"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Importer modèle et profil"
-
-#~ msgid "Import profile only"
-#~ msgstr "Importer le profil uniquement"
-
-#~ msgid "Import model only"
-#~ msgstr "Importer le modèle uniquement"
-
-#~ msgid "Accurate"
-#~ msgstr "Précis"
-
-#~ msgid "Balanced"
-#~ msgstr "Équilibré"
-
-#~ msgid "Quick"
-#~ msgstr "Rapide"
 
 #~ msgid ""
 #~ "Discribe how long the nozzle will move along the last path when retracting"

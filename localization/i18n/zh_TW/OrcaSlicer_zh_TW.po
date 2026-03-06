@@ -17672,9 +17672,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "設定位置"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -17754,27 +17751,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "發布已取消"
 
-#~ msgid "Search"
-#~ msgstr "搜尋"
-
-#~ msgid "My Device"
-#~ msgstr "我的設備"
-
-#~ msgid "Other Device"
-#~ msgstr "其他設備"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "無法找到我的設備？"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "記憶中的噴嘴：%.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "修改列印設備名稱"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "透過訪問代碼綁定"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "

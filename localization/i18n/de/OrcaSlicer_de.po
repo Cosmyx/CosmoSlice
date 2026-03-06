@@ -19609,9 +19609,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Position setzen"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -19695,27 +19692,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Veröffentlichung wurde abgebrochen"
 
-#~ msgid "Search"
-#~ msgstr "Suche"
-
-#~ msgid "My Device"
-#~ msgstr "Mein Gerät"
-
-#~ msgid "Other Device"
-#~ msgstr "Anderes Gerät"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Kann das Geräte nicht finden?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "Düse gemerkt: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Den Gerätenamen ändern"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Mit Zugangscode verbinden"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "
@@ -20080,9 +20059,6 @@ msgstr ""
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Stützen: Verbreiten von Zweigen auf Ebene %d"
 
-#~ msgid "Scale all"
-#~ msgstr "Alle skalieren"
-
 #~ msgid "Orca Slicer"
 #~ msgstr "Orca Slicer"
 
@@ -20287,9 +20263,6 @@ msgstr ""
 #~ msgstr "Abwählen"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Skalieren"
-
 #~ msgid "Lift Z Enforcement"
 #~ msgstr "Z-Höhe einhalten"
 
@@ -21215,33 +21188,6 @@ msgstr ""
 #~ msgid "wiki"
 #~ msgstr "wiki"
 
-#~ msgid "Movement:"
-#~ msgstr "Bewegung:"
-
-#~ msgid "Movement"
-#~ msgstr "Bewegung"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Automatische Segmentierung"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Tiefenverhältnis"
-
-#~ msgid "Prizm"
-#~ msgstr "Prisma"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "Der Verbinder ist außerhalb des Schnittfläche"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "Verbinder sind außerhalb des Schnittfläche"
-
-#~ msgid "connector is out of object"
-#~ msgstr "Der Verbinder ist außerhalb des Objekts"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "Verbinder sind außerhalb des Objekts"
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -21280,27 +21226,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "Ausnahme"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "SLA-Archiv auswählen:"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Modell und Profil importieren"
-
-#~ msgid "Import profile only"
-#~ msgstr "Nur Profil importieren"
-
-#~ msgid "Import model only"
-#~ msgstr "Importiere nur das Modell"
-
-#~ msgid "Accurate"
-#~ msgstr "Genau"
-
-#~ msgid "Balanced"
-#~ msgstr "Gleichmäßig"
-
-#~ msgid "Quick"
-#~ msgstr "Schnell"
 
 #~ msgid "Print sequence of inner wall and outer wall. "
 #~ msgstr "Druckreihenfolge der Innen- und Außenwand."

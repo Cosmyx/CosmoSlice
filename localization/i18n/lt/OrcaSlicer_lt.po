@@ -18923,9 +18923,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Nustatyti padėtį"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -19060,27 +19057,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Talpinimas atšauktas"
 
-#~ msgid "Search"
-#~ msgstr "Paieška"
-
-#~ msgid "My Device"
-#~ msgstr "Mano įrenginys"
-
-#~ msgid "Other Device"
-#~ msgstr "Kitas įrenginys"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Negalite rasti jūsų įrenginių?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "purkštukas įsimintas: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Modifikuojamas įrenginio pavadinimas"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Susieti su prieigos kodu"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "
@@ -19652,9 +19631,6 @@ msgstr ""
 #~ msgstr "Išjungti pasirinkimą"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Mastelis"
-
 #, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Prisijungti nepavyko [%d]!"

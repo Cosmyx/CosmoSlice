@@ -19352,9 +19352,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Imposta posizione"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -19438,27 +19435,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "La pubblicazione è stata annullata"
 
-#~ msgid "Search"
-#~ msgstr "Cerca"
-
-#~ msgid "My Device"
-#~ msgstr "Il mio dispositivo"
-
-#~ msgid "Other Device"
-#~ msgstr "Altro dispositivo"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Non riesci a trovare i dispositivi?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "ugello memorizzato: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Modifica nome del dispositivo"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Associa con il codice di accesso"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "
@@ -19961,9 +19940,6 @@ msgstr ""
 #~ msgstr "Deseleziona"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Ridimensiona"
-
 #~ msgid "Lift Z Enforcement"
 #~ msgstr "Applicazione dell'ascensore Z"
 
@@ -20679,27 +20655,6 @@ msgstr ""
 #~ "compatibile solo con la modalità relativa. È sempre abilitato sulle "
 #~ "stampanti BambuLab. Il valore predefinito è selezionato"
 
-#~ msgid "Movement"
-#~ msgstr "Movimento"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Segmento automatico"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Rapporto di profondità"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "Connettore fuori dal contorno"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "Connettori fuori dal contorno"
-
-#~ msgid "connector is out of object"
-#~ msgstr "Connettore fuori dall'oggetto"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "I connettori devono trovarsi sulla superficie dell'oggetto."
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -20739,30 +20694,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "Eccezione"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "Seleziona l'archivio SLA:"
-
-#~ msgid "Import file"
-#~ msgstr "Importa file"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Importa modello e profilo"
-
-#~ msgid "Import profile only"
-#~ msgstr "Importa solo profilo"
-
-#~ msgid "Import model only"
-#~ msgstr "Importa solo modello"
-
-#~ msgid "Accurate"
-#~ msgstr "Accurato"
-
-#~ msgid "Balanced"
-#~ msgstr "Bilanciato"
-
-#~ msgid "Quick"
-#~ msgstr "Rapido"
 
 #~ msgid "Print sequence of inner wall and outer wall. "
 #~ msgstr "Stampa la sequenza della parete interna e della parete esterna. "

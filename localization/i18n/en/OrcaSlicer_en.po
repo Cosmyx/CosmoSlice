@@ -16825,9 +16825,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "MicroSD Card Abnormal"
 
-#~ msgid "Can't find my devices?"
-#~ msgstr "Can't find devices?"
-
 #~ msgid ""
 #~ "Bed temperature when the Cool Plate Supertack is installed. A value of 0 "
 #~ "means the filament does not support printing on the Cool Plate SuperTack."
@@ -17103,9 +17100,6 @@ msgstr ""
 #~ "You have changed some preset settings.\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
 #~ "presets?"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "Connectors must be on object surface."
 
 #~ msgid ""
 #~ "Invalid state.\n"

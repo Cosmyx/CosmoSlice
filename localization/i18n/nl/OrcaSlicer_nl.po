@@ -17752,9 +17752,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Positie instellen"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -17830,24 +17827,9 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Het publiceren is geannuleerd"
 
-#~ msgid "Search"
-#~ msgstr "Zoeken"
-
-#~ msgid "My Device"
-#~ msgstr "Mijn apparaat"
-
-#~ msgid "Other Device"
-#~ msgstr "Ander apparaat"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Kun je geen apparaten vinden?"
-
 #, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "mondstuk onthouden: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "De naam van het apparaat wijzigen"
 
 #~ msgid "Ramming settings"
 #~ msgstr "Ramming-instellingen"
@@ -18158,9 +18140,6 @@ msgstr ""
 #~ msgstr "Dikke bruggen"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Schalen"
-
 #~ msgid "Z-hop when retract"
 #~ msgstr "Z-hop tijdens terugtrekken (retraction)"
 
@@ -18456,34 +18435,7 @@ msgstr ""
 #~ msgid "The Config cannot be loaded."
 #~ msgstr "De configuratie kan niet worden geladen."
 
-#~ msgid "Movement:"
-#~ msgstr "Beweging:"
-
-#~ msgid "Movement"
-#~ msgstr "Beweging"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Automatische segmenteren"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Diepteratio"
-
-#~ msgid "Prizm"
-#~ msgstr "Prisma"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "Verbinding ligt buiten knipcontour"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "Verbindingen liggen buiten knipcontour"
-
-#~ msgid "connector is out of object"
-#~ msgstr "Verbinding ligt buiten object"
-
 # Source and destination string both English, but different. Please clarify!
-#~ msgid "connectors is out of object"
-#~ msgstr "Connectors must be on object surface."
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"

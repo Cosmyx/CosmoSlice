@@ -17782,9 +17782,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Nastavení pozice"
 
-#~ msgid "%"
-#~ msgstr "%"
-
 #, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -17858,21 +17855,6 @@ msgstr ""
 
 #~ msgid "Publish was canceled"
 #~ msgstr "Publikování bylo zrušeno"
-
-#~ msgid "Search"
-#~ msgstr "Vyhledávání"
-
-#~ msgid "My Device"
-#~ msgstr "Moje zařízení"
-
-#~ msgid "Other Device"
-#~ msgstr "Jiné zařízení"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Nemohu najít moje zařízení?"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Úprava názvu zařízení"
 
 #~ msgid "Ramming settings"
 #~ msgstr "Nastavení rapidní extruze"
@@ -18191,9 +18173,6 @@ msgstr ""
 #~ msgstr "Zrušení výběru"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Měřítko"
-
 #~ msgid "Lift Z Enforcement"
 #~ msgstr "Vynutit Zvednout Z"
 
@@ -18569,33 +18548,6 @@ msgstr ""
 #~ "absolutní extruze). Čistící věž je kompatibilní pouze s relativním "
 #~ "režimem. Na tiskárnách BambuLab je vždy povolen. Výchozí je zaškrtnuto"
 
-#~ msgid "Movement:"
-#~ msgstr "Přejezd:"
-
-#~ msgid "Movement"
-#~ msgstr "Přejezd"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Automatický segment"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Poměr hloubky"
-
-#~ msgid "Prizm"
-#~ msgstr "Hranol"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "spojka je mimo obrys řezu"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "spojky jsou mimo obrys řezu"
-
-#~ msgid "connector is out of object"
-#~ msgstr "spojka je mimo objekt"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "spojky jsou mimo objekt"
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -18611,27 +18563,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "Výjimka"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "Vyberte SLA archiv:"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Importovat model a profil"
-
-#~ msgid "Import profile only"
-#~ msgstr "Importovat pouze profil"
-
-#~ msgid "Import model only"
-#~ msgstr "Importujte pouze model"
-
-#~ msgid "Accurate"
-#~ msgstr "Přesné"
-
-#~ msgid "Balanced"
-#~ msgstr "Vyvážené"
-
-#~ msgid "Quick"
-#~ msgstr "Rychlé"
 
 #~ msgid ""
 #~ "Discribe how long the nozzle will move along the last path when retracting"
