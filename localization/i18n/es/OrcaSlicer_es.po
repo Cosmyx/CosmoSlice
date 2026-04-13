@@ -19078,7 +19078,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Establecer Posición"
 
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -19138,7 +19137,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "Tarjeta SD Anormal"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "La expulsión del dispositivo %s(%s) ha fallado."
 
@@ -19154,7 +19152,6 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "La publicación fue cancelada"
 
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "Boquilla memorizada: %.2f %s"
 
@@ -19291,7 +19288,6 @@ msgstr ""
 #~ "Espaciado de las líneas de interfaz. Cero significa que la interfaz es "
 #~ "sólida"
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -19460,7 +19456,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Este ajuste especifica el número de perímetros alrededor del soporte"
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Soporte: generando trayectoria en la capa %d"
 
@@ -19476,15 +19471,12 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Soporte: generación de trayectoria"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Soporte: generando polígonos en la capa %d"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Soporte: arreglando huecos en la capa %d"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Soporte: propagando ramas en la capa %d"
 
@@ -19494,7 +19486,6 @@ msgstr ""
 #~ msgid "Stopped."
 #~ msgstr "Detenido."
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Error de conexión [%d]!"
 
@@ -19506,7 +19497,6 @@ msgstr ""
 #~ "Error de inicialización (almacenamiento no disponible, inserte una "
 #~ "tarjeta SD)."
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "¡Fallo al inicializar (%s)!"
 
@@ -19561,7 +19551,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Umbral de refiregeación para voladizos"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -19715,7 +19704,6 @@ msgstr ""
 #~ msgid "Z-hop when retract"
 #~ msgstr "Salto en Z al retraer"
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -19773,7 +19761,6 @@ msgstr ""
 #~ "direcciones alternas en las capas impares, independientemente de su "
 #~ "ángulo de voladizo."
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -20197,7 +20184,6 @@ msgstr ""
 #~ "Solo se va a guardar uno de los resultados con el mismo nombre. ¿Está "
 #~ "seguro que desea sobrescribir el otro resultado?"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "There is already a historical calibration result with the same name: %s. "
 #~ "Only one of the results with the same name is saved. Are you sure you "
@@ -20318,7 +20304,6 @@ msgstr ""
 #~ "leerá automáticamente ninguna información hasta que la impresión haya "
 #~ "finalizado."
 
-#, boost-format
 #~ msgid "Succeed to export G-code to %1%"
 #~ msgstr "Exportación de G-Code a %1% con éxito"
 
@@ -20342,11 +20327,9 @@ msgstr ""
 #~ msgid "Initialize failed (Missing LAN ip of printer)!"
 #~ msgstr "Inicialización fallida (Perdida la IP de red de la impresora)"
 
-#, c-format, boost-format
 #~ msgid "Stopped [%d]!"
 #~ msgstr "Parado [%d]"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "¡La carga ha fallado [%d]!"
 
@@ -20356,7 +20339,6 @@ msgstr ""
 #~ msgid "File not exists."
 #~ msgstr "El archivo no existe."
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
@@ -20544,7 +20526,6 @@ msgstr ""
 #~ msgid "Fliament Tangle Detect"
 #~ msgstr "Detectado Enredo de Filamento"
 
-#, c-format, boost-format
 #~ msgid "This slicer file version %s is newer than %s's version:"
 #~ msgstr "Esta versión de archivo %s es más nueva que la versión %s:"
 
@@ -20562,7 +20543,6 @@ msgstr ""
 #~ "Siempre puede actualizar Bambú Studio si le interesa. El archivo del "
 #~ "laminador estará cargado sin todas las funcionalidades."
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "This slicer file version %s is newer than %s's version.\n"
 #~ "\n"
@@ -20636,7 +20616,6 @@ msgstr ""
 #~ msgid "Filling bed "
 #~ msgstr "Rellenando cama "
 
-#, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "El patrón de relleno %1% no soporta el 100%% de densidad."
 
@@ -20658,7 +20637,6 @@ msgstr ""
 #~ msgid "If enabled, G-code window will be displayed."
 #~ msgstr "Si está activado, se mostrará la ventana de G-Code."
 
-#, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr ""
 #~ "Densidad del relleno interno, el 100%% significa sólido en toda la "
@@ -20672,7 +20650,6 @@ msgstr ""
 #~ "Este ajuste especifica el número de perímetros alrededor del soporte del "
 #~ "árbol"
 
-#, c-format, boost-format
 #~ msgid " doesn't work at 100%% density "
 #~ msgstr " no funciona con una densidad del 100%% "
 
@@ -20700,7 +20677,6 @@ msgstr ""
 #~ msgid "Add/Remove printers"
 #~ msgstr "Añadir/Borrar impresoras"
 
-#, c-format, boost-format
 #~ msgid "%s is not supported by AMS."
 #~ msgstr "%s no está soportado por el AMS."
 
@@ -20745,7 +20721,6 @@ msgstr ""
 #~ msgid "Export the objects as multiple STL."
 #~ msgstr "Exportar los objectos como multiples STL."
 
-#, boost-format
 #~ msgid "The selected preset: %1% was not found."
 #~ msgstr "El ajuste seleccionado: %1% no encontrado."
 
@@ -20837,7 +20812,6 @@ msgstr ""
 #~ msgid "Calibration of extrusion"
 #~ msgstr "Calibración de extrusión"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Bed temperature of other layer is lower than bed temperature of initial "
 #~ "layer for more than %d degrees Celsius.\n"
@@ -21045,14 +21019,12 @@ msgstr ""
 #~ msgid "Missing LAN ip of printer!"
 #~ msgstr "¡IP de red local pérdida!"
 
-#, c-format, boost-format
 #~ msgid "You are going to delete %u files. Are you sure to continue?"
 #~ msgstr "Va a borrar %u archivos. ¿Está seguro de continuar?"
 
 #~ msgid "Printing List"
 #~ msgstr "Imprimiendo Lista"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Disconnected from printer [%s] due to LAN mode disabled. Please reconnect "
 #~ "the printer by logging in with your user account."
@@ -21060,7 +21032,6 @@ msgstr ""
 #~ "Desconectado de la impresora [%s] debido a modo de red deshabilitado. Por "
 #~ "favor, reconéctese la impresora ingresando con su cuenta de usuario."
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Disconnected from printer [%s] due to LAN mode enabled. Please reconnect "
 #~ "the printer by inputting Access Code which can be gotten from printer "
@@ -21105,7 +21076,6 @@ msgstr ""
 #~ "que nos informe del escenario específico en el que se ha producido este "
 #~ "problema."
 
-#, boost-format
 #~ msgid "BambuStudio got an unhandled exception: %1%"
 #~ msgstr ""
 #~ "BambuStudio recibió una notificación de excepción no controlada: %1%."
@@ -21317,7 +21287,6 @@ msgstr ""
 #~ msgid "Export."
 #~ msgstr "Exportar."
 
-#, boost-format
 #~ msgid "Copying directory %1% to %2% failed: %3%"
 #~ msgstr "La copia del directorio %1% a %2% ha fallado: %3%"
 

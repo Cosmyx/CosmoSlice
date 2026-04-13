@@ -16897,14 +16897,12 @@ msgstr ""
 #~ "It has a very big layer height. This results in very apparent layer "
 #~ "lines, low print quality and shorter print time."
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Connection failed [%d]!"
 
 #~ msgid "Initialize failed (Device connection not ready)!"
 #~ msgstr "Initialization failed (Device connection not ready)!"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "Initialization failed (%s)!"
 
@@ -16936,7 +16934,6 @@ msgstr ""
 #~ "walls which have a large overhang degree. Forcing cooling for overhangs "
 #~ "and bridges can achieve better quality for these parts."
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -17052,7 +17049,6 @@ msgstr ""
 #~ "A desiccant status lower than two bars indicates that desiccant may be "
 #~ "inactive. Please change the desiccant. (The higher, the better.)"
 
-#, boost-format
 #~ msgid "Succeed to export G-code to %1%"
 #~ msgstr "Success! G-code exported to %1%"
 
@@ -17072,7 +17068,6 @@ msgstr ""
 #~ msgid "Initialize failed (Missing LAN ip of printer)!"
 #~ msgstr "Initialization failed (Missing LAN IP of printer)!"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "Loading failed [%d]!"
 
@@ -17082,7 +17077,6 @@ msgstr ""
 #~ msgid "Failed to parse model informations."
 #~ msgstr "Failed to parse model information"
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
@@ -17126,7 +17120,6 @@ msgstr ""
 #~ "Yes - Switch to rectilinear pattern automatically\n"
 #~ "No  - Reset density to default non 100% value automatically"
 
-#, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr ""
 #~ "This is the density of internal sparse infill. 100% means that the object "
@@ -17141,7 +17134,6 @@ msgstr ""
 #~ msgid "The 3mf is not compatible, load geometry data only!"
 #~ msgstr "The 3mf is not compatible, loading geometry data only!"
 
-#, c-format, boost-format
 #~ msgid "%s is not supported by AMS."
 #~ msgstr "%s is not supported by the AMS."
 
@@ -17170,7 +17162,6 @@ msgstr ""
 #~ "run at this speed during printing except for during the first several "
 #~ "layers which may be set to have no part cooling."
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Bed temperature of other layer is lower than bed temperature of initial "
 #~ "layer for more than %d degrees Celsius.\n"

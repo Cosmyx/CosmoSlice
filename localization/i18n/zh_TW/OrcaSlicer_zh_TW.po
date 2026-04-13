@@ -17672,7 +17672,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "設定位置"
 
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -17731,7 +17730,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "SD 記憶卡異常"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "退出設備 %s（%s）失敗。"
 
@@ -17751,7 +17749,6 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "發布已取消"
 
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "記憶中的噴嘴：%.2f %s"
 
@@ -17897,7 +17894,6 @@ msgstr ""
 #~ msgid "Spacing of interface lines. Zero means solid interface."
 #~ msgstr "接觸面的線距。0 代表實心接觸面"
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -18045,7 +18041,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around support"
 #~ msgstr "此設定指定支援結構的牆壁數量"
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "支撐：正在產生 %d 層的路徑"
 
@@ -18061,19 +18056,15 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "支撐：正在產生走線路徑"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "支撐：正在產生 %d 層的多邊形"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "支撐：正在修補 %d 層的空洞"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "支撐：正在生長 %d 層的樹枝"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "When the overhang exceeds this specified threshold, force the cooling fan "
 #~ "to run at the 'Overhang Fan Speed' set below. This threshold is expressed "
@@ -18094,7 +18085,6 @@ msgstr ""
 #~ msgid "Stopped."
 #~ msgstr "已經停止。"
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "連接失敗 [%d]！"
 
@@ -18104,7 +18094,6 @@ msgstr ""
 #~ msgid "Initialize failed (Storage unavailable, insert SD card.)!"
 #~ msgstr "初始化失敗（存儲不可用，請插入 SD 卡）！"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "初始化失敗（%s）!"
 
@@ -18150,7 +18139,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "冷卻懸空臨界值"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "

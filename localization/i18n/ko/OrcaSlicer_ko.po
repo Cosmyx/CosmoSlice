@@ -18330,7 +18330,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "위치 설정"
 
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -18388,7 +18387,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "SD 카드 이상"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "%s(%s) 장치를 꺼내지 못했습니다."
 
@@ -18408,7 +18406,6 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "게시가 취소되었습니다"
 
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "기억된 노즐: %.2f %s"
 
@@ -18468,7 +18465,6 @@ msgstr ""
 #~ msgid "Enable this option to use classic mode."
 #~ msgstr "클래식 모드를 사용하려면 이 옵션을 활성화합니다"
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Enable this option to slow down printing in areas where perimeters may "
 #~ "have curled upwards.For example, additional slowdown will be applied when "
@@ -18610,7 +18606,6 @@ msgstr ""
 #~ "출 과다 또는 압출 과소 문제를 일으킬 수 있습니다. 노즐 직경을 기준으로 백"
 #~ "분율로 표시됩니다"
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -18773,7 +18768,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around support"
 #~ msgstr "이 설정은 서포트 주변의 벽 수를 지정합니다"
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "서포트: 레이어 %d에서 툴 경로 생성"
 
@@ -18789,15 +18783,12 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "서포트: 툴 경로 생성"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "서포트: 레이어 %d에서 폴리곤 생성"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "서포트: 레이어 %d의 구멍 수정"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "서포트: 레이어 %d에서 가지 증식"
 
@@ -18807,7 +18798,6 @@ msgstr ""
 #~ msgid "Stopped."
 #~ msgstr "중지됨."
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "[%d] 연결 실패!"
 
@@ -18818,7 +18808,6 @@ msgstr ""
 #~ msgstr ""
 #~ "초기화에 실패했습니다(저장소를 사용할 수 없습니다. SD 카드를 삽입하세요.)!"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "(%s) 초기화 실패!"
 
@@ -18868,7 +18857,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "돌출부 냉각 임계값"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -19000,7 +18988,6 @@ msgstr ""
 #~ msgid "Z-hop when retract"
 #~ msgstr "후퇴 시 Z 올리기"
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -19053,7 +19040,6 @@ msgstr ""
 #~ "부 벽이 교대로 출력되도록 임계값을 0으로 역방향오버행 정도에 관계없이 홀"
 #~ "수 레이어의 방향입니다."
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -19393,7 +19379,6 @@ msgstr ""
 #~ msgstr ""
 #~ "동일한 이름을 가진 결과 중 하나만 저장됩니다. 다른 결과에 덮어쓰겠습니까?"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "There is already a historical calibration result with the same name: %s. "
 #~ "Only one of the results with the same name is saved. Are you sure you "
@@ -19511,7 +19496,6 @@ msgstr ""
 #~ "참고: 출력 중에 새 필라멘트를 삽입하면 출력이 완료될 때까지 AMS가 자동으"
 #~ "로 어떤 정보도 읽지 않습니다."
 
-#, boost-format
 #~ msgid "Succeed to export G-code to %1%"
 #~ msgstr "G코드를 %1%로 내보내기 성공"
 
@@ -19534,19 +19518,15 @@ msgstr ""
 #~ msgid "Initialize failed (Missing LAN ip of printer)!"
 #~ msgstr "초기화 실패 (프린터의 LAN IP 누락)!"
 
-#, c-format, boost-format
 #~ msgid "Stopped [%d]!"
 #~ msgstr "[%d] 중지됨!"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "[%d] 로드 실패!"
 
-#, c-format, boost-format
 #~ msgid "No files [%d]"
 #~ msgstr "파일 없음 [%d]"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]"
 #~ msgstr "로드 실패 [%d]"
 
@@ -19559,7 +19539,6 @@ msgstr ""
 #~ msgid "File not exists."
 #~ msgstr "파일이 존재하지 않습니다."
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
@@ -19778,7 +19757,6 @@ msgstr ""
 #~ msgid "Filling bed "
 #~ msgstr "베드 채우기 "
 
-#, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% 내부 채우기 패턴은 100%% 밀도를 지원하지 않습니다."
 
@@ -19800,7 +19778,6 @@ msgstr ""
 #~ msgid "If enabled, G-code window will be displayed."
 #~ msgstr "활성화된 경우 G코드 창이 표시됩니다."
 
-#, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr ""
 #~ "내부 드문 내부 채우기 밀도, 100은 전체가 꽉찬 내부 채우기임을 의미합니다"
@@ -19811,7 +19788,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around tree support"
 #~ msgstr "이 설정은 트리 서포트의 벽 수를 지정합니다"
 
-#, c-format, boost-format
 #~ msgid " doesn't work at 100%% density "
 #~ msgstr " 100%% 밀도에서 작동하지 않음 "
 
@@ -19848,7 +19824,6 @@ msgstr ""
 #~ msgstr ""
 #~ "객체별로 출력할 때 I3 구조의 장치는 타임랩스 비디오를 생성하지 않습니다."
 
-#, c-format, boost-format
 #~ msgid "%s is not supported by AMS."
 #~ msgstr "%s은(는) AMS에서 지원하지 않습니다."
 
@@ -19887,14 +19862,12 @@ msgstr ""
 #~ msgid "inner-outer-inner/infill"
 #~ msgstr "내벽-외벽-내벽/내부 채우기"
 
-#, c-format, boost-format
 #~ msgid "%%"
 #~ msgstr "%%"
 
 #~ msgid "Export the objects as multiple STL."
 #~ msgstr "객체를 여러개의 STL로 내보내기."
 
-#, boost-format
 #~ msgid "The selected preset: %1% was not found."
 #~ msgstr "선택한 사전 설정: %1%을(를) 찾을 수 없습니다."
 
@@ -19996,7 +19969,6 @@ msgstr ""
 #~ msgid "Calibration of extrusion"
 #~ msgstr "압출 교정"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Bed temperature of other layer is lower than bed temperature of initial "
 #~ "layer for more than %d degrees Celsius.\n"

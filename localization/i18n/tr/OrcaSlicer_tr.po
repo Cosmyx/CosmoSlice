@@ -19681,7 +19681,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Çıkıntı soğutması"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -19814,7 +19813,6 @@ msgstr ""
 #~ msgid "Z-hop when retract"
 #~ msgstr "Geri çekme esnasında Z sıçraması"
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -19869,7 +19867,6 @@ msgstr ""
 #~ "bakılmaksızın tek katmanlar üzerine değişen yönlerde yazdırılması için "
 #~ "Ters Eşiği 0'a ayarlamanız önerilir."
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -20811,7 +20808,6 @@ msgstr ""
 #~ msgid "If enabled, G-code window will be displayed."
 #~ msgstr "Etkinleştirilirse g kodu penceresi görüntülenecektir."
 
-#, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr "Density of internal sparse infill, 100% means solid throughout"
 

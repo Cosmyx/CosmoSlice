@@ -17355,7 +17355,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Ställ in Position"
 
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -17413,7 +17412,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "MicroSD-kortet är onormalt"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "Utmatning av enheten %s(%s) misslyckades."
 
@@ -17429,7 +17427,6 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Publiceringen avbröts"
 
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "nozzel memorerat: %.2f %s"
 
@@ -17497,7 +17494,6 @@ msgstr ""
 #~ msgid "Spacing of interface lines. Zero means solid interface."
 #~ msgstr "Avstånd mellan gränssnitts linjer. 0 betyder solid gränssnitt"
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -17587,7 +17583,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around support"
 #~ msgstr "Denna inställning anger antalet väggar runt supporten"
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Support: generera verktygsbana vid lager %d"
 
@@ -17603,29 +17598,24 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Support: generera verktygsbana"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Support: generera polygoner vid lager %d"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Support: åtgärda hål vid lager %d"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Support: föröka grenar vid lager %d"
 
 #~ msgid "Stopped."
 #~ msgstr "Avbruten."
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Sammankoppling misslyckades [%d]"
 
 #~ msgid "Initialize failed (Device connection not ready)!"
 #~ msgstr "Initieringen misslyckades (Enhets anslutningen är inte klar)!"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "Initieringen misslyckades (%s)!"
 
@@ -17677,7 +17667,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Överhängs kylningens tröskel"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -17805,7 +17794,6 @@ msgstr ""
 #~ "Endast ett av resultaten med samma namn kommer att sparas. Är du säker på "
 #~ "att du vill ersätta de andra resultaten?"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "There is already a historical calibration result with the same name: %s. "
 #~ "Only one of the results with the same name is saved. Are you sure you "
@@ -17893,7 +17881,6 @@ msgstr ""
 #~ "Observera: Om nytt filament sätts in under utskrift kommer AMS inte "
 #~ "automatiskt att läsa av någon information förrän utskriften är avslutad."
 
-#, boost-format
 #~ msgid "Succeed to export G-code to %1%"
 #~ msgstr "Success! G-code exporterades till %1%"
 
@@ -17914,26 +17901,21 @@ msgstr ""
 #~ msgid "Initialize failed (Missing LAN ip of printer)!"
 #~ msgstr "Initieringen misslyckades (skrivarens LAN-IP saknas)!"
 
-#, c-format, boost-format
 #~ msgid "Stopped [%d]!"
 #~ msgstr "Stoppad [%d]!"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "Laddning misslyckad [%d]!"
 
-#, c-format, boost-format
 #~ msgid "No files [%d]"
 #~ msgstr "Inga filer [%d]"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]"
 #~ msgstr "Inläsning misslyckades [%d]"
 
 #~ msgid "Failed to fetching model information from printer."
 #~ msgstr "Det gick inte att hämta modell information från skrivaren."
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
@@ -18001,7 +17983,6 @@ msgstr ""
 #~ msgid "Filling bed "
 #~ msgstr "Fyllning av byggytan"
 
-#, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% ifyllnads mönster stöds ej 100%% densitet."
 
@@ -18015,7 +17996,6 @@ msgstr ""
 #~ "Nej - Återställ automatiskt densiteten till standardvärdet som inte är "
 #~ "100 %."
 
-#, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr ""
 #~ "Densiteten av ifyllnad. 100%% betyder att objektet blir solid rakt igenom"
@@ -18026,7 +18006,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around tree support"
 #~ msgstr "Inställningen bestämmer antal väggar runt tree support"
 
-#, c-format, boost-format
 #~ msgid " doesn't work at 100%% density "
 #~ msgstr " fungerar inte vid 100%% densitet "
 
@@ -18057,7 +18036,6 @@ msgstr ""
 #~ msgid "Add/Remove printers"
 #~ msgstr "Lägg till/Ta bort skrivare"
 
-#, c-format, boost-format
 #~ msgid "%s is not supported by AMS."
 #~ msgstr "%s stöds inte av AMS."
 
@@ -18151,7 +18129,6 @@ msgstr ""
 #~ msgid "Calibration of extrusion"
 #~ msgstr "Kalibrering av extrudering"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Bed temperature of other layer is lower than bed temperature of initial "
 #~ "layer for more than %d degrees Celsius.\n"

@@ -6907,7 +6907,7 @@ msgid ""
 "still want to do this print job, please set this filament's bed temperature "
 "to non-zero."
 msgstr ""
-"La plaque% d : %s n'est pas suggéré pour l'utilisation du filament "
+"La plaque %d : %s n'est pas suggéré pour l'utilisation du filament "
 "d'impression %s(%s). Si vous souhaitez toujours effectuer ce travail "
 "d'impression, veuillez régler la température du plateau de ce filament sur "
 "un nombre différent de zéro."
@@ -19469,7 +19469,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Définir la Position"
 
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -19531,7 +19530,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "Carte SD anormale"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "L'éjection du périphérique %s(%s) a échoué."
 
@@ -19553,7 +19551,6 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "La publication a été annulée"
 
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "buse mémorisée : %.2f %s"
 
@@ -19704,7 +19701,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Espacement des lignes d'interface. Zéro signifie une interface solide"
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -19894,7 +19890,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around support"
 #~ msgstr "Ce paramètre spécifie le nombre de parois autour du support"
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Support : génération du parcours d'impression à la couche %d"
 
@@ -19910,15 +19905,12 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Support : génération du parcours d'impression"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Support : génération des polygones à la couche %d"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Support : Correction des trous dans la couche %d"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Support : propagation des branches à la couche %d"
 
@@ -19928,7 +19920,6 @@ msgstr ""
 #~ msgid "Stopped."
 #~ msgstr "Arrêté."
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "La connexion a échoué [%d] !"
 
@@ -19940,7 +19931,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Échec de l’initialisation (Stockage indisponible, insérer la carte SD.) !"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "L'initialisation a échoué (%s)!"
 
@@ -19996,7 +19986,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Seuil de dépassement de refroidissement"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -20132,7 +20121,6 @@ msgstr ""
 #~ msgid "Z-hop when retract"
 #~ msgstr "Décalage du Z lors de la rétraction"
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -20193,7 +20181,6 @@ msgstr ""
 #~ "s’impriment dans des directions alternées sur les couches impaires, quel "
 #~ "que soit leur degré de surplomb."
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -20289,7 +20276,6 @@ msgstr ""
 #~ "paramètre est supérieur à la valeur par défaut de 0,5 ou si l’option "
 #~ "« surfaces supérieures à une paroi » est activée."
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Enable this option to slow down printing in areas where perimeters may "
 #~ "have curled upwards.For example, additional slowdown will be applied when "
@@ -20391,7 +20377,6 @@ msgstr ""
 #~ "fortement inclinée. Cependant, dans la plupart des cas, elle crée trop de "
 #~ "ponts inutiles."
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "With increasing print speeds (and hence increasing volumetric flow "
 #~ "through the nozzle) and increasing accelerations, it has been observed "
@@ -20435,7 +20420,6 @@ msgstr ""
 #~ "recommandée pour servir de solution de substitution et en cas de "
 #~ "changement d’outil.\n"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Enter the shrinkage percentage that the filament will get after cooling "
 #~ "(94%% if you measure 94mm instead of 100mm). The part will be scaled in Z "
@@ -20709,7 +20693,6 @@ msgstr ""
 #~ "Un seul des résultats portant le même nom sera enregistré. Voulez-vous "
 #~ "vraiment remplacer les autres résultats ?"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "There is already a historical calibration result with the same name: %s. "
 #~ "Only one of the results with the same name is saved. Are you sure you "
@@ -20791,7 +20774,6 @@ msgstr ""
 #~ "Plus de 4 orca/handy utilisent l’accès à distance, vous pouvez en fermer "
 #~ "certains et réessayer."
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Infill area is enlarged slightly to overlap with wall for better bonding. "
 #~ "The percentage value is relative to line width of sparse infill. Set this "
@@ -20953,7 +20935,6 @@ msgstr ""
 #~ "Remarque : si un nouveau filament est inséré pendant l'impression, l'AMS "
 #~ "ne lira automatiquement aucune information avant la fin de l'impression."
 
-#, boost-format
 #~ msgid "Succeed to export G-code to %1%"
 #~ msgstr "Succès! G-code exporté vers %1%"
 
@@ -20979,19 +20960,15 @@ msgstr ""
 #~ msgstr ""
 #~ "Échec de l'initialisation (adresse IP réseau manquante de l'imprimante) !"
 
-#, c-format, boost-format
 #~ msgid "Stopped [%d]!"
 #~ msgstr "Arrêté [%d] !"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "Le chargement a échoué [%d] !"
 
-#, c-format, boost-format
 #~ msgid "No files [%d]"
 #~ msgstr "Aucun fichier [%d]"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]"
 #~ msgstr "Échec du chargement [%d]"
 
@@ -21005,7 +20982,6 @@ msgstr ""
 #~ msgid "File not exists."
 #~ msgstr "Le fichier n'existe pas."
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
@@ -21254,7 +21230,6 @@ msgstr ""
 #~ msgid "Filling bed "
 #~ msgstr "Remplir le plateau"
 
-#, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr ""
 #~ "Le motif de remplissage %1% ne prend pas en charge une densité de 100%%."
@@ -21278,7 +21253,6 @@ msgstr ""
 #~ msgid "If enabled, G-code window will be displayed."
 #~ msgstr "Si activé, la fenêtre avec les commandes G-code sera affichée."
 
-#, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr "Densité du remplissage interne, 100%% signifie plein."
 
@@ -21289,7 +21263,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Ce paramètre spécifie le nombre de murs autour du support arborescent"
 
-#, c-format, boost-format
 #~ msgid " doesn't work at 100%% density "
 #~ msgstr " ne fonctionne pas à une densité de 100%% "
 
@@ -21326,7 +21299,6 @@ msgstr ""
 #~ msgid "Add/Remove printers"
 #~ msgstr "Ajouter/Supprimer des imprimantes"
 
-#, c-format, boost-format
 #~ msgid "%s is not supported by AMS."
 #~ msgstr "%s n'est pas pris en charge par l'AMS."
 
@@ -21459,7 +21431,6 @@ msgstr ""
 #~ msgid "Calibration of extrusion"
 #~ msgstr "Calibration de l'extrusion"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Bed temperature of other layer is lower than bed temperature of initial "
 #~ "layer for more than %d degrees Celsius.\n"

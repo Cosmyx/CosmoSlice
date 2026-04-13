@@ -17439,7 +17439,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Pozíció beállítása"
 
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -17496,7 +17495,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "Hibás MicroSD kártya"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "A(z) %s(%s) eszköz kiadása nem sikerült."
 
@@ -17512,7 +17510,6 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "A közzététel törlésre került"
 
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "eltárolt fúvóka: %.2f %s"
 
@@ -17605,7 +17602,6 @@ msgstr ""
 #~ "Az érintkező réteg vonalai közötti távolság. A nulla szilárd kitöltést "
 #~ "jelent"
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -17679,7 +17675,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around support"
 #~ msgstr "A támasz körüli falak száma"
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Támasz: szerszámút generálása %d. réteg"
 
@@ -17695,15 +17690,12 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Támasz: szerszámút generálása"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Támogatás: poligonok generálása %d. réteg"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Támasz: lyukak javítása %d. réteg"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Támasz: ágak kiterjesztése %d. réteg"
 
@@ -17713,7 +17705,6 @@ msgstr ""
 #~ msgid "Initialize failed (Device connection not ready)!"
 #~ msgstr "Initialization failed (Device connection not ready)!"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "Sikertelen inicializálás (%s)!"
 
@@ -17767,7 +17758,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Túlnyúlás hűtésének küszöbértéke"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -17909,7 +17899,6 @@ msgstr ""
 #~ "Az azonos nevű eredmények közül csak az egyik kerül elmentésre. Biztos, "
 #~ "hogy felül akarod írni a többi eredményt?"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "There is already a historical calibration result with the same name: %s. "
 #~ "Only one of the results with the same name is saved. Are you sure you "
@@ -17989,7 +17978,6 @@ msgstr ""
 #~ "Megjegyzés: ha az új tekercs nyomtatás során kerül behelyezésre, az AMS "
 #~ "nem fogja automatikusan kiolvasni az információkat a nyomtatás végéig."
 
-#, boost-format
 #~ msgid "Succeed to export G-code to %1%"
 #~ msgstr "G-kód sikeresen exportálva ide: %1%"
 
@@ -18010,15 +17998,12 @@ msgstr ""
 #~ msgid "Initialize failed (Missing LAN ip of printer)!"
 #~ msgstr "Az inicializálás sikertelen (hiányzó nyomtató LAN IP-cím)!"
 
-#, c-format, boost-format
 #~ msgid "Stopped [%d]!"
 #~ msgstr "Megállítva [%d]!"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "A betöltés sikertelen [%d]!"
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
@@ -18073,7 +18058,6 @@ msgstr ""
 #~ "egyszerűsítése lehetőséget. További információ a dokumentációban "
 #~ "található."
 
-#, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% kitöltési mintázat nem támogatja a 100%%-os kitöltés."
 
@@ -18086,7 +18070,6 @@ msgstr ""
 #~ "Igen - Váltás a vonalak mintázatra\n"
 #~ "Nem - Sűrűség visszaállítása az alapértelmezett, nem 100%-os értékre"
 
-#, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr ""
 #~ "Ez a belső ritkás kitöltés sűrűsége. A 100%% azt jelenti, hogy az "
@@ -18205,7 +18188,6 @@ msgstr ""
 #~ msgid "Calibration of extrusion"
 #~ msgstr "Extrudálás kalibrálása"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Bed temperature of other layer is lower than bed temperature of initial "
 #~ "layer for more than %d degrees Celsius.\n"

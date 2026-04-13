@@ -19504,7 +19504,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Задание позиции"
 
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -19562,7 +19561,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "Неисправность SD-карты"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "Не удалось извлечь устройство %s(%s)."
 
@@ -19583,7 +19581,6 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Публикация была отменена"
 
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "сопло сохранённое: %.2f %s"
 
