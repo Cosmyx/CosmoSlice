@@ -22232,10 +22232,6 @@ msgstr ""
 #~ msgid "(Sort)"
 #~ msgstr "Ordenar"
 
-#~ msgid ""
-#~ " will be closed before creating a new model. Do you want to continue?"
-#~ msgstr " se cerrará antes de crear un nuevo modelo. ¿Quieres continuar?"
-
 #~ msgid "default value"
 #~ msgstr "Valor por defecto"
 
