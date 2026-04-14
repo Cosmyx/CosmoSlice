@@ -18,7 +18,8 @@ public:
     CosmoAddPrinterDialog(wxWindow*          parent,
                           const std::string& name,
                           const std::string& url,
-                          const std::string& api_key);
+                          const std::string& api_key,
+                          const std::string& webui);
 
     ~CosmoAddPrinterDialog() = default;
 
@@ -26,6 +27,7 @@ private:
     TextInput* m_txt_name    { nullptr };
     TextInput* m_txt_url     { nullptr };
     TextInput* m_txt_api_key { nullptr };
+    TextInput* m_txt_webui   { nullptr };
     Button*    m_btn_add     { nullptr };
     Button*    m_btn_cancel  { nullptr };
 

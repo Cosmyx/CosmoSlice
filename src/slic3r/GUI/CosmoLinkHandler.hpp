@@ -12,7 +12,7 @@ namespace Slic3r { namespace GUI {
 // URL format:  cosmoslice://<command>?<key>=<value>&<key>=<value>...
 //
 // Supported commands:
-//   add-printer  ?url=<host_url>&name=<display_name>&api=<api_key>
+//   add-printer  ?host=<host_url>&name=<display_name>&api=<api_key>[&webui=<ui_url>]
 //
 // New commands can be added by implementing a private handle_<command>() method
 // and registering it in handle().
@@ -28,7 +28,7 @@ private:
     // Values are URL-decoded.
     static std::map<std::string, std::string> parse_query(const std::string& query);
 
-    // cosmoslice://add-printer?url=...&name=...&api=...
+    // cosmoslice://add-printer?host=...&name=...&api=...[&webui=...]
     // Opens CosmoAddPrinterDialog pre-filled with the supplied parameters.
     static bool handle_add_printer(const std::map<std::string, std::string>& params);
 };

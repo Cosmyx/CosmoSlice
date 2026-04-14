@@ -3,10 +3,12 @@
 #include "GUI_App.hpp"
 #include "I18N.hpp"
 #include "NotificationManager.hpp"
+#include "Tab.hpp"
 #include "Widgets/Label.hpp"
 
 #include "libslic3r/Preset.hpp"
 #include "libslic3r/PresetBundle.hpp"
+#include "libslic3r/PrintConfig.hpp"
 
 #include <wx/sizer.h>
 #include <wx/stattext.h>
@@ -23,7 +25,8 @@ static constexpr int FIELD_HEIGHT = 40;
 CosmoAddPrinterDialog::CosmoAddPrinterDialog(wxWindow*          parent,
                                              const std::string& name,
                                              const std::string& url,
-                                             const std::string& api_key)
+                                             const std::string& api_key,
+                                             const std::string& webui)
     : DPIDialog(parent, wxID_ANY, _L("Add Printer via CosmoSlice Link"),
                 wxDefaultPosition, wxDefaultSize,
                 wxCLOSE_BOX | wxCAPTION | wxSYSTEM_MENU)
@@ -66,8 +69,9 @@ CosmoAddPrinterDialog::CosmoAddPrinterDialog(wxWindow*          parent,
     };
 
     make_field(_L("Printer Name:"), name,    m_txt_name);
-    make_field(_L("Printer URL:"),  url,     m_txt_url);
+    make_field(_L("Printer Host:"), url,     m_txt_url);
     make_field(_L("API Key:"),      api_key, m_txt_api_key);
+    make_field(_L("Device UI:"),    webui,   m_txt_webui);
 
     main_sizer->AddSpacer(FromDIP(8));
 
@@ -123,9 +127,10 @@ CosmoAddPrinterDialog::CosmoAddPrinterDialog(wxWindow*          parent,
 
 void CosmoAddPrinterDialog::on_add(wxCommandEvent& /*event*/)
 {
-    const std::string printer_name = m_txt_name->GetTextCtrl()->GetValue().ToUTF8().data();
-    const std::string printer_url  = m_txt_url->GetTextCtrl()->GetValue().ToUTF8().data();
-    const std::string printer_api  = m_txt_api_key->GetTextCtrl()->GetValue().ToUTF8().data();
+    const std::string printer_name  = m_txt_name->GetTextCtrl()->GetValue().ToUTF8().data();
+    const std::string printer_url   = m_txt_url->GetTextCtrl()->GetValue().ToUTF8().data();
+    const std::string printer_api   = m_txt_api_key->GetTextCtrl()->GetValue().ToUTF8().data();
+    const std::string printer_webui = m_txt_webui->GetTextCtrl()->GetValue().ToUTF8().data();
 
     if (printer_name.empty() || printer_url.empty()) {
         BOOST_LOG_TRIVIAL(warning) << "CosmoAddPrinterDialog: name or URL is empty";
@@ -142,11 +147,14 @@ void CosmoAddPrinterDialog::on_add(wxCommandEvent& /*event*/)
     const Preset& current = bundle->printers.get_edited_preset();
 
     PhysicalPrinter new_printer(printer_name, current.config);
+    new_printer.config.set_key_value("host_type", new ConfigOptionEnum<PrintHostType>(htOctoPrint));
     new_printer.config.opt_string("print_host")       = printer_url;
     new_printer.config.opt_string("printhost_apikey") = printer_api;
+    new_printer.config.opt_string("print_host_webui") = printer_webui;
     new_printer.add_preset(current.name);
 
     bundle->physical_printers.save_printer(new_printer);
+    wxGetApp().get_tab(Preset::TYPE_PRINTER)->update_tab_ui();
 
     BOOST_LOG_TRIVIAL(info) << "CosmoLinkHandler: added printer '" << printer_name
                             << "' at " << printer_url;

@@ -76,8 +76,9 @@ bool CosmoLinkHandler::handle_add_printer(const std::map<std::string, std::strin
     CosmoAddPrinterDialog dlg(
         wxGetApp().mainframe,
         get("name"),
-        get("url"),
-        get("api")
+        get("host"),
+        get("api"),
+        get("webui")
     );
     dlg.ShowModal();
     return true;
