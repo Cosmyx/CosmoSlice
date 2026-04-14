@@ -154,7 +154,9 @@ void CosmoAddPrinterDialog::on_add(wxCommandEvent& /*event*/)
     new_printer.add_preset(current.name);
 
     bundle->physical_printers.save_printer(new_printer);
-    wxGetApp().get_tab(Preset::TYPE_PRINTER)->update_tab_ui();
+    Tab* printer_tab = wxGetApp().get_tab(Preset::TYPE_PRINTER);
+    if (printer_tab)
+        printer_tab->update_tab_ui();
 
     BOOST_LOG_TRIVIAL(info) << "CosmoLinkHandler: added printer '" << printer_name
                             << "' at " << printer_url;
