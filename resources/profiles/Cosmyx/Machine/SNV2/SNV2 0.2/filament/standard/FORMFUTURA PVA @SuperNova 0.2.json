@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL27_SNV2_02",
+    "name": "FORMFUTURA PVA @SuperNova 0.2",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "FORMFUTURA PVA @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx SuperNova 0.2 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

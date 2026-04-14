@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL25_NOVA_DT_08",
+    "name": "ENKY TPU 95A @Nova DT 0.8",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "ENKY TPU 95A @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Double Tete 0.8 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

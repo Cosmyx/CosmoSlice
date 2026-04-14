@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL20_NOVA_CERAM_02",
+    "name": "Cosmyx PA6-CF @Nova Metal Ceramique 0.2",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PA6-CF @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Metal Ceramique 0.2 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

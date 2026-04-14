@@ -27,7 +27,7 @@
     "machine_pause_gcode": "PAUSE",
     "machine_tool_change_time": "6.625",
     "purge_in_prime_tower": "0",
-    "version": "20.02.2026.01",
+    "version": "14.04.2026.02",
     "single_extruder_multi_material": "1",
     "extruders_count": "2",
     "machine_max_acceleration_extruding": [
