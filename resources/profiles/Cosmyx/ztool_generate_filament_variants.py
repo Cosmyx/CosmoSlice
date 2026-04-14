@@ -81,6 +81,12 @@ def scan_common_filaments() -> List[FilamentInfo]:
     for file_path in COMMON_FILAMENT_DIR.rglob('*.json'):
         filename = file_path.name
 
+        # Skip HT/ceramics filaments — handled exclusively by their dedicated scripts
+        if (COMMON_FILAMENT_DIR / 'ht') in file_path.parents:
+            continue
+        if (COMMON_FILAMENT_DIR / 'ceramics') in file_path.parents:
+            continue
+
         # Filter: must contain @Cosmyx Common
         if '@Cosmyx Common' not in filename:
             continue
