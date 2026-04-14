@@ -6,7 +6,7 @@ static bool gDarkMode = false;
 static bool operator<(wxColour const &l, wxColour const &r) { return l.GetRGBA() < r.GetRGBA(); }
 
 static std::map<wxColour, wxColour> gDarkColors{
-    {"#009688", "#00675b"}, // rgb(0, 150, 136)    ORCA color
+    {"#9C27B0", "#6A1B9A"}, // rgb(156, 39, 176)   CosmoSlice brand color
     {"#1F8EEA", "#2778D2"}, // rgb(31, 142, 234)   ???
     {"#FF6F00", "#D15B00"}, // rgb(255, 111, 0)    Secondary color
     {"#D01B1B", "#BB2A3A"}, // rgb(208, 27, 27)    ???
@@ -44,8 +44,8 @@ static std::map<wxColour, wxColour> gDarkColors{
     {"#D9D9D9", "#2D2D32"}, // rgb(217, 217, 217)  Sidebar > Toggle button track color
     //{"#F0F0F0", "#4C4C54"},
     // ORCA
-    {"#BFE1DE", "#223C3C"}, // rgb(191, 225, 222)  Dropdown checked item background color > ORCA color with %25 opacity
-    {"#E5F0EE", "#283232"}, // rgb(229, 240, 238)  Combo / Dropdown focused background color > ORCA color with %10 opacity
+    {"#E1BEE7", "#2E1A35"}, // rgb(191, 225, 222)  Dropdown checked item background color > ORCA color with %25 opacity
+    {"#F3E5F5", "#231533"}, // rgb(229, 240, 238)  Combo / Dropdown focused background color > ORCA color with %10 opacity
 };
 
 std::tuple<double, double, double> StateColor::GetLAB(const wxColour& color) {

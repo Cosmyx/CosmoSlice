@@ -1083,7 +1083,7 @@ Sidebar::Sidebar(Plater *parent)
             e.Skip();
             return;
         }
-        p->m_search_bar->SetBorderColor(wxColour("#009688"));
+        p->m_search_bar->SetBorderColor(wxColour("#9C27B0"));
         wxPoint pos = this->p->m_search_bar->ClientToScreen(wxPoint(0, 0));
 #ifndef __WXGTK__
         pos.y += this->p->m_search_bar->GetRect().height;

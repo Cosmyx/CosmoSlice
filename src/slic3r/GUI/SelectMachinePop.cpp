@@ -587,7 +587,7 @@ void SelectMachinePopup::update_other_devices()
     wxBoxSizer* placeholder_sizer = new wxBoxSizer(wxVERTICAL);
 
     m_hyperlink = new wxHyperlinkCtrl(m_placeholder_panel, wxID_ANY, _L("Can't find my devices?"), wxT("https://wiki.bambulab.com/en/software/bambu-studio/failed-to-connect-printer"), wxDefaultPosition, wxDefaultSize, wxHL_DEFAULT_STYLE);
-    m_hyperlink->SetNormalColour(StateColor::darkModeColorFor("#009789"));
+    m_hyperlink->SetNormalColour(StateColor::darkModeColorFor("#9C27B0"));
     placeholder_sizer->Add(m_hyperlink, 0, wxALIGN_CENTER | wxALL, 5);
 
 
@@ -872,9 +872,9 @@ EditDevNameDialog::EditDevNameDialog(Plater *plater /*= nullptr*/)
 
 
     m_button_confirm = new Button(this, _L("Confirm"));
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(156, 39, 176), StateColor::Normal));
     m_button_confirm->SetBackgroundColor(btn_bg_green);
-    m_button_confirm->SetBorderColor(wxColour(0, 150, 136));
+    m_button_confirm->SetBorderColor(wxColour(156, 39, 176));
     m_button_confirm->SetTextColor(wxColour(255, 255, 255));
     m_button_confirm->SetSize(wxSize(FromDIP(72), FromDIP(24)));
     m_button_confirm->SetMinSize(wxSize(FromDIP(72), FromDIP(24)));
