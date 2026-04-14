@@ -1,0 +1,3867 @@
+{
+    "name": "Cosmyx",
+    "url": "http://www.cosmyx.com/Parameters/vendor/Cosmyx.json",
+    "version": "01.07.00.18",
+    "force_update": "0",
+    "description": "Auto-generated Cosmyx configuration file",
+    "machine_model_list": [
+        {
+            "name": "Cosmyx Nova",
+            "sub_path": "Machine/NOVA/Cosmyx Nova.json"
+        },
+        {
+            "name": "Cosmyx Nova Double Tete",
+            "sub_path": "Machine/NOVA_DT/Cosmyx Nova Double Tete.json"
+        },
+        {
+            "name": "Cosmyx Nova Double Tete",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/Cosmyx Nova Double Tete.json"
+        },
+        {
+            "name": "Cosmyx Nova Haute Temperature",
+            "sub_path": "Machine/HT/Cosmyx Nova Haute Temperature.json"
+        },
+        {
+            "name": "Cosmyx Nova Metal Ceramique",
+            "sub_path": "Machine/NOVA_CERAM/Cosmyx Nova Metal Ceramique.json"
+        },
+        {
+            "name": "Cosmyx Nova can-out",
+            "sub_path": "Machine/NOVA_CAN_OUT/Cosmyx Nova can-out.json"
+        },
+        {
+            "name": "Cosmyx SuperNova",
+            "sub_path": "Machine/SNV2/Cosmyx SuperNova.json"
+        },
+        {
+            "name": "Cosmyx SuperNova Double Tete",
+            "sub_path": "Machine/SNV2_DT/Cosmyx SuperNova Double Tete.json"
+        },
+        {
+            "name": "Cosmyx SuperNova Double Tete Metal Ceramique",
+            "sub_path": "Machine/SNV2_DT_CERAM/Cosmyx SuperNova Double Tete Metal Ceramique.json"
+        }
+    ],
+    "process_list": [
+        {
+            "name": "fdm_process_common",
+            "sub_path": "Common Process Library/Common Process/fdm_process_common.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_common",
+            "sub_path": "Common Process Library/Common Process/fdm_process_cosmyx_common.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.06_nozzle_0.2",
+            "sub_path": "Common Process Library/Process 0.2/STANDARD/fdm_process_cosmyx_0.06_nozzle_0.2.json"
+        },
+        {
+            "name": "0.06mm Standard @Cosmyx Nova 0.2 nozzle",
+            "sub_path": "Common Process Library/Process 0.2/STANDARD/0.06mm Standard @Cosmyx Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.06mm Standard @Cosmyx Nova can-out 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/process/0.06mm Standard @Cosmyx Nova can-out 0.2 nozzle.json"
+        },
+        {
+            "name": "0.06mm Standard @Haute Temperature 0.2 nozzle",
+            "sub_path": "Machine/HT/HT 0.2/process/0.06mm Standard @Haute Temperature 0.2 nozzle.json"
+        },
+        {
+            "name": "0.06mm Standard @Metal and Ceramics 0.2 nozzle",
+            "sub_path": "Common Process Library/Process 0.2/CERAM/0.06mm Standard @Metal and Ceramics 0.2 nozzle.json"
+        },
+        {
+            "name": "0.06mm Standard @Nova 0.2 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.2/process/0.06mm Standard @Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.06mm Standard @Nova DT 0.2 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/process/0.06mm Standard @Nova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "0.06mm Standard @Nova Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/process/0.06mm Standard @Nova Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "0.06mm Standard @SuperNova 0.2 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.2/process/0.06mm Standard @SuperNova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.06mm Standard @SuperNova DT 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/process/0.06mm Standard @SuperNova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "0.06mm Standard @SuperNova DT Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/process/0.06mm Standard @SuperNova DT Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.08",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/fdm_process_cosmyx_0.08.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @Cosmyx Nova",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/0.08mm Extra Fine @Cosmyx Nova.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/process/0.08mm Extra Fine @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/process/0.08mm Extra Fine @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @Metal and Ceramics",
+            "sub_path": "Common Process Library/Process 0.4/CERAM/0.08mm Extra Fine @Metal and Ceramics.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/process/0.08mm Extra Fine @Nova 0.4.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/process/0.08mm Extra Fine @Nova DT 0.4.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/process/0.08mm Extra Fine @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/process/0.08mm Extra Fine @SuperNova 0.4.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/process/0.08mm Extra Fine @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/process/0.08mm Extra Fine @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.08_nozzle_0.2",
+            "sub_path": "Common Process Library/Process 0.2/STANDARD/fdm_process_cosmyx_0.08_nozzle_0.2.json"
+        },
+        {
+            "name": "0.08mm Standard @Cosmyx Nova 0.2 nozzle",
+            "sub_path": "Common Process Library/Process 0.2/STANDARD/0.08mm Standard @Cosmyx Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.08mm Standard @Cosmyx Nova can-out 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/process/0.08mm Standard @Cosmyx Nova can-out 0.2 nozzle.json"
+        },
+        {
+            "name": "0.08mm Standard @Haute Temperature 0.2 nozzle",
+            "sub_path": "Machine/HT/HT 0.2/process/0.08mm Standard @Haute Temperature 0.2 nozzle.json"
+        },
+        {
+            "name": "0.08mm Standard @Metal and Ceramics 0.2 nozzle",
+            "sub_path": "Common Process Library/Process 0.2/CERAM/0.08mm Standard @Metal and Ceramics 0.2 nozzle.json"
+        },
+        {
+            "name": "0.08mm Standard @Nova 0.2 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.2/process/0.08mm Standard @Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.08mm Standard @Nova DT 0.2 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/process/0.08mm Standard @Nova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "0.08mm Standard @Nova Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/process/0.08mm Standard @Nova Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "0.08mm Standard @SuperNova 0.2 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.2/process/0.08mm Standard @SuperNova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.08mm Standard @SuperNova DT 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/process/0.08mm Standard @SuperNova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "0.08mm Standard @SuperNova DT Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/process/0.08mm Standard @SuperNova DT Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.10_nozzle_0.2",
+            "sub_path": "Common Process Library/Process 0.2/STANDARD/fdm_process_cosmyx_0.10_nozzle_0.2.json"
+        },
+        {
+            "name": "0.10mm Standard @Cosmyx Nova 0.2 nozzle",
+            "sub_path": "Common Process Library/Process 0.2/STANDARD/0.10mm Standard @Cosmyx Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.10mm Standard @Cosmyx Nova can-out 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/process/0.10mm Standard @Cosmyx Nova can-out 0.2 nozzle.json"
+        },
+        {
+            "name": "0.10mm Standard @Haute Temperature 0.2 nozzle",
+            "sub_path": "Machine/HT/HT 0.2/process/0.10mm Standard @Haute Temperature 0.2 nozzle.json"
+        },
+        {
+            "name": "0.10mm Standard @Metal and Ceramics 0.2 nozzle",
+            "sub_path": "Common Process Library/Process 0.2/CERAM/0.10mm Standard @Metal and Ceramics 0.2 nozzle.json"
+        },
+        {
+            "name": "0.10mm Standard @Nova 0.2 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.2/process/0.10mm Standard @Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.10mm Standard @Nova DT 0.2 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/process/0.10mm Standard @Nova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "0.10mm Standard @Nova Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/process/0.10mm Standard @Nova Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "0.10mm Standard @SuperNova 0.2 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.2/process/0.10mm Standard @SuperNova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.10mm Standard @SuperNova DT 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/process/0.10mm Standard @SuperNova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "0.10mm Standard @SuperNova DT Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/process/0.10mm Standard @SuperNova DT Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.12",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/fdm_process_cosmyx_0.12.json"
+        },
+        {
+            "name": "0.12mm Fine @Cosmyx Nova",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/0.12mm Fine @Cosmyx Nova.json"
+        },
+        {
+            "name": "0.12mm Fine @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/process/0.12mm Fine @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "0.12mm Fine @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/process/0.12mm Fine @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "0.12mm Fine @Metal and Ceramics",
+            "sub_path": "Common Process Library/Process 0.4/CERAM/0.12mm Fine @Metal and Ceramics.json"
+        },
+        {
+            "name": "0.12mm Fine @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/process/0.12mm Fine @Nova 0.4.json"
+        },
+        {
+            "name": "0.12mm Fine @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/process/0.12mm Fine @Nova DT 0.4.json"
+        },
+        {
+            "name": "0.12mm Fine @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/process/0.12mm Fine @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "0.12mm Fine @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/process/0.12mm Fine @SuperNova 0.4.json"
+        },
+        {
+            "name": "0.12mm Fine @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/process/0.12mm Fine @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "0.12mm Fine @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/process/0.12mm Fine @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.12_nozzle_0.2",
+            "sub_path": "Common Process Library/Process 0.2/STANDARD/fdm_process_cosmyx_0.12_nozzle_0.2.json"
+        },
+        {
+            "name": "0.12mm Standard @Cosmyx Nova 0.2 nozzle",
+            "sub_path": "Common Process Library/Process 0.2/STANDARD/0.12mm Standard @Cosmyx Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.12mm Standard @Cosmyx Nova can-out 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/process/0.12mm Standard @Cosmyx Nova can-out 0.2 nozzle.json"
+        },
+        {
+            "name": "0.12mm Standard @Haute Temperature 0.2 nozzle",
+            "sub_path": "Machine/HT/HT 0.2/process/0.12mm Standard @Haute Temperature 0.2 nozzle.json"
+        },
+        {
+            "name": "0.12mm Standard @Metal and Ceramics 0.2 nozzle",
+            "sub_path": "Common Process Library/Process 0.2/CERAM/0.12mm Standard @Metal and Ceramics 0.2 nozzle.json"
+        },
+        {
+            "name": "0.12mm Standard @Nova 0.2 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.2/process/0.12mm Standard @Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.12mm Standard @Nova DT 0.2 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/process/0.12mm Standard @Nova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "0.12mm Standard @Nova Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/process/0.12mm Standard @Nova Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "0.12mm Standard @SuperNova 0.2 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.2/process/0.12mm Standard @SuperNova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.12mm Standard @SuperNova DT 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/process/0.12mm Standard @SuperNova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "0.12mm Standard @SuperNova DT Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/process/0.12mm Standard @SuperNova DT Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.14_nozzle_0.2",
+            "sub_path": "Common Process Library/Process 0.2/STANDARD/fdm_process_cosmyx_0.14_nozzle_0.2.json"
+        },
+        {
+            "name": "0.14mm Standard @Cosmyx Nova 0.2 nozzle",
+            "sub_path": "Common Process Library/Process 0.2/STANDARD/0.14mm Standard @Cosmyx Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.14mm Standard @Cosmyx Nova can-out 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/process/0.14mm Standard @Cosmyx Nova can-out 0.2 nozzle.json"
+        },
+        {
+            "name": "0.14mm Standard @Haute Temperature 0.2 nozzle",
+            "sub_path": "Machine/HT/HT 0.2/process/0.14mm Standard @Haute Temperature 0.2 nozzle.json"
+        },
+        {
+            "name": "0.14mm Standard @Metal and Ceramics 0.2 nozzle",
+            "sub_path": "Common Process Library/Process 0.2/CERAM/0.14mm Standard @Metal and Ceramics 0.2 nozzle.json"
+        },
+        {
+            "name": "0.14mm Standard @Nova 0.2 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.2/process/0.14mm Standard @Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.14mm Standard @Nova DT 0.2 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/process/0.14mm Standard @Nova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "0.14mm Standard @Nova Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/process/0.14mm Standard @Nova Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "0.14mm Standard @SuperNova 0.2 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.2/process/0.14mm Standard @SuperNova 0.2 nozzle.json"
+        },
+        {
+            "name": "0.14mm Standard @SuperNova DT 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/process/0.14mm Standard @SuperNova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "0.14mm Standard @SuperNova DT Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/process/0.14mm Standard @SuperNova DT Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.16",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/fdm_process_cosmyx_0.16.json"
+        },
+        {
+            "name": "0.16mm Optimal @Cosmyx Nova",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/0.16mm Optimal @Cosmyx Nova.json"
+        },
+        {
+            "name": "0.16mm Optimal @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/process/0.16mm Optimal @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "0.16mm Optimal @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/process/0.16mm Optimal @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "0.16mm Optimal @Metal and Ceramics",
+            "sub_path": "Common Process Library/Process 0.4/CERAM/0.16mm Optimal @Metal and Ceramics.json"
+        },
+        {
+            "name": "0.16mm Optimal @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/process/0.16mm Optimal @Nova 0.4.json"
+        },
+        {
+            "name": "0.16mm Optimal @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/process/0.16mm Optimal @Nova DT 0.4.json"
+        },
+        {
+            "name": "0.16mm Optimal @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/process/0.16mm Optimal @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "0.16mm Optimal @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/process/0.16mm Optimal @SuperNova 0.4.json"
+        },
+        {
+            "name": "0.16mm Optimal @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/process/0.16mm Optimal @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "0.16mm Optimal @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/process/0.16mm Optimal @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.18_nozzle_0.6",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/fdm_process_cosmyx_0.18_nozzle_0.6.json"
+        },
+        {
+            "name": "0.18mm Standard @Cosmyx Nova 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/0.18mm Standard @Cosmyx Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.18mm Standard @Cosmyx Nova can-out 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/process/0.18mm Standard @Cosmyx Nova can-out 0.6 nozzle.json"
+        },
+        {
+            "name": "0.18mm Standard @Haute Temperature 0.6 nozzle",
+            "sub_path": "Machine/HT/HT 0.6/process/0.18mm Standard @Haute Temperature 0.6 nozzle.json"
+        },
+        {
+            "name": "0.18mm Standard @Metal and Ceramics 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/CERAM/0.18mm Standard @Metal and Ceramics 0.6 nozzle.json"
+        },
+        {
+            "name": "0.18mm Standard @Nova 0.6 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.6/process/0.18mm Standard @Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.18mm Standard @Nova DT 0.6 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/process/0.18mm Standard @Nova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.18mm Standard @Nova Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/process/0.18mm Standard @Nova Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "0.18mm Standard @SuperNova 0.6 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.6/process/0.18mm Standard @SuperNova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.18mm Standard @SuperNova DT 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/process/0.18mm Standard @SuperNova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.18mm Standard @SuperNova DT Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/process/0.18mm Standard @SuperNova DT Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.20",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/fdm_process_cosmyx_0.20.json"
+        },
+        {
+            "name": "0.20mm Cosmyx Support W @Cosmyx Nova",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/0.20mm Cosmyx Support W @Cosmyx Nova.json"
+        },
+        {
+            "name": "0.20mm Cosmyx Support W @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/process/0.20mm Cosmyx Support W @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "0.20mm Cosmyx Support W @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/process/0.20mm Cosmyx Support W @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "0.20mm Cosmyx Support W @Metal and Ceramics",
+            "sub_path": "Common Process Library/Process 0.4/CERAM/0.20mm Cosmyx Support W @Metal and Ceramics.json"
+        },
+        {
+            "name": "0.20mm Cosmyx Support W @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/process/0.20mm Cosmyx Support W @Nova 0.4.json"
+        },
+        {
+            "name": "0.20mm Cosmyx Support W @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/process/0.20mm Cosmyx Support W @Nova DT 0.4.json"
+        },
+        {
+            "name": "0.20mm Cosmyx Support W @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/process/0.20mm Cosmyx Support W @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "0.20mm Cosmyx Support W @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/process/0.20mm Cosmyx Support W @SuperNova 0.4.json"
+        },
+        {
+            "name": "0.20mm Cosmyx Support W @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/process/0.20mm Cosmyx Support W @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "0.20mm Cosmyx Support W @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/process/0.20mm Cosmyx Support W @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "0.20mm Standard @Cosmyx Nova",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/0.20mm Standard @Cosmyx Nova.json"
+        },
+        {
+            "name": "0.20mm Standard @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/process/0.20mm Standard @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "0.20mm Standard @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/process/0.20mm Standard @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "0.20mm Standard @Metal and Ceramics",
+            "sub_path": "Common Process Library/Process 0.4/CERAM/0.20mm Standard @Metal and Ceramics.json"
+        },
+        {
+            "name": "0.20mm Standard @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/process/0.20mm Standard @Nova 0.4.json"
+        },
+        {
+            "name": "0.20mm Standard @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/process/0.20mm Standard @Nova DT 0.4.json"
+        },
+        {
+            "name": "0.20mm Standard @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/process/0.20mm Standard @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "0.20mm Standard @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/process/0.20mm Standard @SuperNova 0.4.json"
+        },
+        {
+            "name": "0.20mm Standard @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/process/0.20mm Standard @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "0.20mm Standard @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/process/0.20mm Standard @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "0.20mm Strength @Cosmyx Nova",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/0.20mm Strength @Cosmyx Nova.json"
+        },
+        {
+            "name": "0.20mm Strength @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/process/0.20mm Strength @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "0.20mm Strength @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/process/0.20mm Strength @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "0.20mm Strength @Metal and Ceramics",
+            "sub_path": "Common Process Library/Process 0.4/CERAM/0.20mm Strength @Metal and Ceramics.json"
+        },
+        {
+            "name": "0.20mm Strength @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/process/0.20mm Strength @Nova 0.4.json"
+        },
+        {
+            "name": "0.20mm Strength @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/process/0.20mm Strength @Nova DT 0.4.json"
+        },
+        {
+            "name": "0.20mm Strength @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/process/0.20mm Strength @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "0.20mm Strength @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/process/0.20mm Strength @SuperNova 0.4.json"
+        },
+        {
+            "name": "0.20mm Strength @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/process/0.20mm Strength @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "0.20mm Strength @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/process/0.20mm Strength @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.24",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/fdm_process_cosmyx_0.24.json"
+        },
+        {
+            "name": "0.24mm Draft @Cosmyx Nova",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/0.24mm Draft @Cosmyx Nova.json"
+        },
+        {
+            "name": "0.24mm Draft @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/process/0.24mm Draft @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "0.24mm Draft @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/process/0.24mm Draft @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "0.24mm Draft @Metal and Ceramics",
+            "sub_path": "Common Process Library/Process 0.4/CERAM/0.24mm Draft @Metal and Ceramics.json"
+        },
+        {
+            "name": "0.24mm Draft @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/process/0.24mm Draft @Nova 0.4.json"
+        },
+        {
+            "name": "0.24mm Draft @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/process/0.24mm Draft @Nova DT 0.4.json"
+        },
+        {
+            "name": "0.24mm Draft @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/process/0.24mm Draft @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "0.24mm Draft @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/process/0.24mm Draft @SuperNova 0.4.json"
+        },
+        {
+            "name": "0.24mm Draft @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/process/0.24mm Draft @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "0.24mm Draft @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/process/0.24mm Draft @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.24_nozzle_0.6",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/fdm_process_cosmyx_0.24_nozzle_0.6.json"
+        },
+        {
+            "name": "0.24mm Standard @Cosmyx Nova 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/0.24mm Standard @Cosmyx Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Cosmyx Nova can-out 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/process/0.24mm Standard @Cosmyx Nova can-out 0.6 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Haute Temperature 0.6 nozzle",
+            "sub_path": "Machine/HT/HT 0.6/process/0.24mm Standard @Haute Temperature 0.6 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Metal and Ceramics 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/CERAM/0.24mm Standard @Metal and Ceramics 0.6 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Nova 0.6 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.6/process/0.24mm Standard @Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Nova DT 0.6 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/process/0.24mm Standard @Nova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Nova Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/process/0.24mm Standard @Nova Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @SuperNova 0.6 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.6/process/0.24mm Standard @SuperNova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @SuperNova DT 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/process/0.24mm Standard @SuperNova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @SuperNova DT Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/process/0.24mm Standard @SuperNova DT Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.24_nozzle_0.8",
+            "sub_path": "Common Process Library/Process 0.8/STANDARD/fdm_process_cosmyx_0.24_nozzle_0.8.json"
+        },
+        {
+            "name": "0.24mm Standard @Cosmyx Nova 0.8 nozzle",
+            "sub_path": "Common Process Library/Process 0.8/STANDARD/0.24mm Standard @Cosmyx Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Cosmyx Nova can-out 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/process/0.24mm Standard @Cosmyx Nova can-out 0.8 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Haute Temperature 0.8 nozzle",
+            "sub_path": "Machine/HT/HT 0.8/process/0.24mm Standard @Haute Temperature 0.8 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Metal and Ceramics 0.8 nozzle",
+            "sub_path": "Common Process Library/Process 0.8/CERAM/0.24mm Standard @Metal and Ceramics 0.8 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Nova 0.8 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.8/process/0.24mm Standard @Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Nova DT 0.8 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/process/0.24mm Standard @Nova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @Nova Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/process/0.24mm Standard @Nova Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @SuperNova 0.8 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.8/process/0.24mm Standard @SuperNova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @SuperNova DT 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/process/0.24mm Standard @SuperNova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "0.24mm Standard @SuperNova DT Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/process/0.24mm Standard @SuperNova DT Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.28",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/fdm_process_cosmyx_0.28.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @Cosmyx Nova",
+            "sub_path": "Common Process Library/Process 0.4/STANDARD/0.28mm Extra Draft @Cosmyx Nova.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/process/0.28mm Extra Draft @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/process/0.28mm Extra Draft @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @Metal and Ceramics",
+            "sub_path": "Common Process Library/Process 0.4/CERAM/0.28mm Extra Draft @Metal and Ceramics.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/process/0.28mm Extra Draft @Nova 0.4.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/process/0.28mm Extra Draft @Nova DT 0.4.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/process/0.28mm Extra Draft @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/process/0.28mm Extra Draft @SuperNova 0.4.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/process/0.28mm Extra Draft @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/process/0.28mm Extra Draft @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.30_nozzle_0.6",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/fdm_process_cosmyx_0.30_nozzle_0.6.json"
+        },
+        {
+            "name": "0.30mm Standard @Cosmyx Nova 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/0.30mm Standard @Cosmyx Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Standard @Cosmyx Nova can-out 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/process/0.30mm Standard @Cosmyx Nova can-out 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Standard @Haute Temperature 0.6 nozzle",
+            "sub_path": "Machine/HT/HT 0.6/process/0.30mm Standard @Haute Temperature 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Standard @Metal and Ceramics 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/CERAM/0.30mm Standard @Metal and Ceramics 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Standard @Nova 0.6 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.6/process/0.30mm Standard @Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Standard @Nova DT 0.6 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/process/0.30mm Standard @Nova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Standard @Nova Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/process/0.30mm Standard @Nova Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Standard @SuperNova 0.6 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.6/process/0.30mm Standard @SuperNova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Standard @SuperNova DT 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/process/0.30mm Standard @SuperNova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Standard @SuperNova DT Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/process/0.30mm Standard @SuperNova DT Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Strength @Cosmyx Nova 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/0.30mm Strength @Cosmyx Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Strength @Cosmyx Nova can-out 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/process/0.30mm Strength @Cosmyx Nova can-out 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Strength @Haute Temperature 0.6 nozzle",
+            "sub_path": "Machine/HT/HT 0.6/process/0.30mm Strength @Haute Temperature 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Strength @Metal and Ceramics 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/CERAM/0.30mm Strength @Metal and Ceramics 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Strength @Nova 0.6 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.6/process/0.30mm Strength @Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Strength @Nova DT 0.6 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/process/0.30mm Strength @Nova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Strength @Nova Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/process/0.30mm Strength @Nova Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Strength @SuperNova 0.6 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.6/process/0.30mm Strength @SuperNova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Strength @SuperNova DT 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/process/0.30mm Strength @SuperNova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.30mm Strength @SuperNova DT Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/process/0.30mm Strength @SuperNova DT Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.32_nozzle_0.8",
+            "sub_path": "Common Process Library/Process 0.8/STANDARD/fdm_process_cosmyx_0.32_nozzle_0.8.json"
+        },
+        {
+            "name": "0.32mm Standard @Cosmyx Nova 0.8 nozzle",
+            "sub_path": "Common Process Library/Process 0.8/STANDARD/0.32mm Standard @Cosmyx Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.32mm Standard @Cosmyx Nova can-out 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/process/0.32mm Standard @Cosmyx Nova can-out 0.8 nozzle.json"
+        },
+        {
+            "name": "0.32mm Standard @Haute Temperature 0.8 nozzle",
+            "sub_path": "Machine/HT/HT 0.8/process/0.32mm Standard @Haute Temperature 0.8 nozzle.json"
+        },
+        {
+            "name": "0.32mm Standard @Metal and Ceramics 0.8 nozzle",
+            "sub_path": "Common Process Library/Process 0.8/CERAM/0.32mm Standard @Metal and Ceramics 0.8 nozzle.json"
+        },
+        {
+            "name": "0.32mm Standard @Nova 0.8 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.8/process/0.32mm Standard @Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.32mm Standard @Nova DT 0.8 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/process/0.32mm Standard @Nova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "0.32mm Standard @Nova Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/process/0.32mm Standard @Nova Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "0.32mm Standard @SuperNova 0.8 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.8/process/0.32mm Standard @SuperNova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.32mm Standard @SuperNova DT 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/process/0.32mm Standard @SuperNova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "0.32mm Standard @SuperNova DT Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/process/0.32mm Standard @SuperNova DT Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.36_nozzle_0.6",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/fdm_process_cosmyx_0.36_nozzle_0.6.json"
+        },
+        {
+            "name": "0.36mm Standard @Cosmyx Nova 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/0.36mm Standard @Cosmyx Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.36mm Standard @Cosmyx Nova can-out 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/process/0.36mm Standard @Cosmyx Nova can-out 0.6 nozzle.json"
+        },
+        {
+            "name": "0.36mm Standard @Haute Temperature 0.6 nozzle",
+            "sub_path": "Machine/HT/HT 0.6/process/0.36mm Standard @Haute Temperature 0.6 nozzle.json"
+        },
+        {
+            "name": "0.36mm Standard @Metal and Ceramics 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/CERAM/0.36mm Standard @Metal and Ceramics 0.6 nozzle.json"
+        },
+        {
+            "name": "0.36mm Standard @Nova 0.6 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.6/process/0.36mm Standard @Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.36mm Standard @Nova DT 0.6 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/process/0.36mm Standard @Nova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.36mm Standard @Nova Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/process/0.36mm Standard @Nova Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "0.36mm Standard @SuperNova 0.6 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.6/process/0.36mm Standard @SuperNova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.36mm Standard @SuperNova DT 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/process/0.36mm Standard @SuperNova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.36mm Standard @SuperNova DT Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/process/0.36mm Standard @SuperNova DT Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.40_nozzle_0.8",
+            "sub_path": "Common Process Library/Process 0.8/STANDARD/fdm_process_cosmyx_0.40_nozzle_0.8.json"
+        },
+        {
+            "name": "0.40mm Standard @Cosmyx Nova 0.8 nozzle",
+            "sub_path": "Common Process Library/Process 0.8/STANDARD/0.40mm Standard @Cosmyx Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.40mm Standard @Cosmyx Nova can-out 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/process/0.40mm Standard @Cosmyx Nova can-out 0.8 nozzle.json"
+        },
+        {
+            "name": "0.40mm Standard @Haute Temperature 0.8 nozzle",
+            "sub_path": "Machine/HT/HT 0.8/process/0.40mm Standard @Haute Temperature 0.8 nozzle.json"
+        },
+        {
+            "name": "0.40mm Standard @Metal and Ceramics 0.8 nozzle",
+            "sub_path": "Common Process Library/Process 0.8/CERAM/0.40mm Standard @Metal and Ceramics 0.8 nozzle.json"
+        },
+        {
+            "name": "0.40mm Standard @Nova 0.8 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.8/process/0.40mm Standard @Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.40mm Standard @Nova DT 0.8 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/process/0.40mm Standard @Nova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "0.40mm Standard @Nova Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/process/0.40mm Standard @Nova Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "0.40mm Standard @SuperNova 0.8 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.8/process/0.40mm Standard @SuperNova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.40mm Standard @SuperNova DT 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/process/0.40mm Standard @SuperNova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "0.40mm Standard @SuperNova DT Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/process/0.40mm Standard @SuperNova DT Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.42_nozzle_0.6",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/fdm_process_cosmyx_0.42_nozzle_0.6.json"
+        },
+        {
+            "name": "0.42mm Standard @Cosmyx Nova 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/STANDARD/0.42mm Standard @Cosmyx Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.42mm Standard @Cosmyx Nova can-out 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/process/0.42mm Standard @Cosmyx Nova can-out 0.6 nozzle.json"
+        },
+        {
+            "name": "0.42mm Standard @Haute Temperature 0.6 nozzle",
+            "sub_path": "Machine/HT/HT 0.6/process/0.42mm Standard @Haute Temperature 0.6 nozzle.json"
+        },
+        {
+            "name": "0.42mm Standard @Metal and Ceramics 0.6 nozzle",
+            "sub_path": "Common Process Library/Process 0.6/CERAM/0.42mm Standard @Metal and Ceramics 0.6 nozzle.json"
+        },
+        {
+            "name": "0.42mm Standard @Nova 0.6 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.6/process/0.42mm Standard @Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.42mm Standard @Nova DT 0.6 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/process/0.42mm Standard @Nova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.42mm Standard @Nova Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/process/0.42mm Standard @Nova Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "0.42mm Standard @SuperNova 0.6 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.6/process/0.42mm Standard @SuperNova 0.6 nozzle.json"
+        },
+        {
+            "name": "0.42mm Standard @SuperNova DT 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/process/0.42mm Standard @SuperNova DT 0.6 nozzle.json"
+        },
+        {
+            "name": "0.42mm Standard @SuperNova DT Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/process/0.42mm Standard @SuperNova DT Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.48_nozzle_0.8",
+            "sub_path": "Common Process Library/Process 0.8/STANDARD/fdm_process_cosmyx_0.48_nozzle_0.8.json"
+        },
+        {
+            "name": "0.48mm Standard @Cosmyx Nova 0.8 nozzle",
+            "sub_path": "Common Process Library/Process 0.8/STANDARD/0.48mm Standard @Cosmyx Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.48mm Standard @Cosmyx Nova can-out 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/process/0.48mm Standard @Cosmyx Nova can-out 0.8 nozzle.json"
+        },
+        {
+            "name": "0.48mm Standard @Haute Temperature 0.8 nozzle",
+            "sub_path": "Machine/HT/HT 0.8/process/0.48mm Standard @Haute Temperature 0.8 nozzle.json"
+        },
+        {
+            "name": "0.48mm Standard @Metal and Ceramics 0.8 nozzle",
+            "sub_path": "Common Process Library/Process 0.8/CERAM/0.48mm Standard @Metal and Ceramics 0.8 nozzle.json"
+        },
+        {
+            "name": "0.48mm Standard @Nova 0.8 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.8/process/0.48mm Standard @Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.48mm Standard @Nova DT 0.8 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/process/0.48mm Standard @Nova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "0.48mm Standard @Nova Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/process/0.48mm Standard @Nova Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "0.48mm Standard @SuperNova 0.8 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.8/process/0.48mm Standard @SuperNova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.48mm Standard @SuperNova DT 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/process/0.48mm Standard @SuperNova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "0.48mm Standard @SuperNova DT Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/process/0.48mm Standard @SuperNova DT Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "fdm_process_cosmyx_0.56_nozzle_0.8",
+            "sub_path": "Common Process Library/Process 0.8/STANDARD/fdm_process_cosmyx_0.56_nozzle_0.8.json"
+        },
+        {
+            "name": "0.56mm Standard @Cosmyx Nova 0.8 nozzle",
+            "sub_path": "Common Process Library/Process 0.8/STANDARD/0.56mm Standard @Cosmyx Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.56mm Standard @Cosmyx Nova can-out 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/process/0.56mm Standard @Cosmyx Nova can-out 0.8 nozzle.json"
+        },
+        {
+            "name": "0.56mm Standard @Haute Temperature 0.8 nozzle",
+            "sub_path": "Machine/HT/HT 0.8/process/0.56mm Standard @Haute Temperature 0.8 nozzle.json"
+        },
+        {
+            "name": "0.56mm Standard @Metal and Ceramics 0.8 nozzle",
+            "sub_path": "Common Process Library/Process 0.8/CERAM/0.56mm Standard @Metal and Ceramics 0.8 nozzle.json"
+        },
+        {
+            "name": "0.56mm Standard @Nova 0.8 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.8/process/0.56mm Standard @Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.56mm Standard @Nova DT 0.8 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/process/0.56mm Standard @Nova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "0.56mm Standard @Nova Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/process/0.56mm Standard @Nova Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "0.56mm Standard @SuperNova 0.8 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.8/process/0.56mm Standard @SuperNova 0.8 nozzle.json"
+        },
+        {
+            "name": "0.56mm Standard @SuperNova DT 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/process/0.56mm Standard @SuperNova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "0.56mm Standard @SuperNova DT Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/process/0.56mm Standard @SuperNova DT Metal Ceramique 0.8 nozzle.json"
+        }
+    ],
+    "filament_list": [
+        {
+            "name": "fdm_filament_common",
+            "sub_path": "Common Process Library/Process common/fdm_filament_common.json"
+        },
+        {
+            "name": "fdm_filament_abs",
+            "sub_path": "Common Process Library/Process common/fdm_filament_abs.json"
+        },
+        {
+            "name": "Cosmyx ABS @base",
+            "sub_path": "Common Filament library/standard/Cosmyx ABS @base.json"
+        },
+        {
+            "name": "Cosmyx ABS @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/Cosmyx ABS @Cosmyx Common.json"
+        },
+        {
+            "name": "Cosmyx ABS @Cosmyx Common 0.2 nozzle",
+            "sub_path": "Common Filament library/standard/Cosmyx ABS @Cosmyx Common 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Cosmyx Common 0.8 nozzle",
+            "sub_path": "Common Filament library/standard/Cosmyx ABS @Cosmyx Common 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/Cosmyx ABS @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "Cosmyx ABS @Cosmyx Nova can-out 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/Cosmyx ABS @Cosmyx Nova can-out 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/Cosmyx ABS @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "Cosmyx ABS @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/Cosmyx ABS @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "Cosmyx ABS @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/Cosmyx ABS @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "Cosmyx ABS @Cosmyx Nova can-out 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/Cosmyx ABS @Cosmyx Nova can-out 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/Cosmyx ABS @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "Cosmyx ABS @Haute Temperature 0.2 nozzle",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/Cosmyx ABS @Haute Temperature 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/Cosmyx ABS @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "Cosmyx ABS @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/Cosmyx ABS @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "Cosmyx ABS @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/Cosmyx ABS @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "Cosmyx ABS @Haute Temperature 0.8 nozzle",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/Cosmyx ABS @Haute Temperature 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/Cosmyx ABS @Nova 0.2.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova 0.2 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/Cosmyx ABS @Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/Cosmyx ABS @Nova 0.4.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/Cosmyx ABS @Nova 0.6.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/Cosmyx ABS @Nova 0.8.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova 0.8 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/Cosmyx ABS @Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/Cosmyx ABS @Nova DT 0.2.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova DT 0.2 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/Cosmyx ABS @Nova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/Cosmyx ABS @Nova DT 0.4.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/Cosmyx ABS @Nova DT 0.6.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/Cosmyx ABS @Nova DT 0.8.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova DT 0.8 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/Cosmyx ABS @Nova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/Cosmyx ABS @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/Cosmyx ABS @Nova Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/Cosmyx ABS @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/Cosmyx ABS @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/Cosmyx ABS @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "Cosmyx ABS @Nova Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/Cosmyx ABS @Nova Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/Cosmyx ABS @SuperNova 0.2.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova 0.2 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/Cosmyx ABS @SuperNova 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/Cosmyx ABS @SuperNova 0.4.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/Cosmyx ABS @SuperNova 0.6.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/Cosmyx ABS @SuperNova 0.8.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova 0.8 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/Cosmyx ABS @SuperNova 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/Cosmyx ABS @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/Cosmyx ABS @SuperNova DT 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/Cosmyx ABS @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/Cosmyx ABS @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/Cosmyx ABS @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/Cosmyx ABS @SuperNova DT 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/Cosmyx ABS @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/Cosmyx ABS @SuperNova DT Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/Cosmyx ABS @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/Cosmyx ABS @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/Cosmyx ABS @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "Cosmyx ABS @SuperNova DT Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/Cosmyx ABS @SuperNova DT Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "fdm_filament_asa",
+            "sub_path": "Common Process Library/Process common/fdm_filament_asa.json"
+        },
+        {
+            "name": "Cosmyx ASA @base",
+            "sub_path": "Common Filament library/standard/Cosmyx ASA @base.json"
+        },
+        {
+            "name": "Cosmyx ASA @Cosmyx Common 0.4 nozzle",
+            "sub_path": "Common Filament library/standard/Cosmyx ASA @Cosmyx Common 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ASA @Cosmyx Nova can-out 0.4 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/Cosmyx ASA @Cosmyx Nova can-out 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ASA @Haute Temperature 0.4 nozzle",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/Cosmyx ASA @Haute Temperature 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ASA @Nova 0.4 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/Cosmyx ASA @Nova 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ASA @Nova DT 0.4 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/Cosmyx ASA @Nova DT 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ASA @Nova Metal Ceramique 0.4 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/Cosmyx ASA @Nova Metal Ceramique 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ASA @SuperNova 0.4 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/Cosmyx ASA @SuperNova 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ASA @SuperNova DT 0.4 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/Cosmyx ASA @SuperNova DT 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ASA @SuperNova DT Metal Ceramique 0.4 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/Cosmyx ASA @SuperNova DT Metal Ceramique 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx ULTEM @Cosmyx Common",
+            "sub_path": "Common Filament library/ht/Cosmyx ULTEM @Cosmyx Common.json"
+        },
+        {
+            "name": "Cosmyx ULTEM @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/ht/Cosmyx ULTEM @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "Cosmyx ULTEM @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/ht/Cosmyx ULTEM @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "Cosmyx ULTEM @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/ht/Cosmyx ULTEM @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "Cosmyx ULTEM @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/ht/Cosmyx ULTEM @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "TECTONIC ASA+ @Cosmyx Common 0.4 nozzle",
+            "sub_path": "Common Filament library/standard/TECTONIC ASA+ @Cosmyx Common 0.4 nozzle.json"
+        },
+        {
+            "name": "TECTONIC ASA+ @Cosmyx Nova can-out 0.4 nozzle",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/TECTONIC ASA+ @Cosmyx Nova can-out 0.4 nozzle.json"
+        },
+        {
+            "name": "TECTONIC ASA+ @Haute Temperature 0.4 nozzle",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/TECTONIC ASA+ @Haute Temperature 0.4 nozzle.json"
+        },
+        {
+            "name": "TECTONIC ASA+ @Nova 0.4 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/TECTONIC ASA+ @Nova 0.4 nozzle.json"
+        },
+        {
+            "name": "TECTONIC ASA+ @Nova DT 0.4 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/TECTONIC ASA+ @Nova DT 0.4 nozzle.json"
+        },
+        {
+            "name": "TECTONIC ASA+ @Nova Metal Ceramique 0.4 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/TECTONIC ASA+ @Nova Metal Ceramique 0.4 nozzle.json"
+        },
+        {
+            "name": "TECTONIC ASA+ @SuperNova 0.4 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/TECTONIC ASA+ @SuperNova 0.4 nozzle.json"
+        },
+        {
+            "name": "TECTONIC ASA+ @SuperNova DT 0.4 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/TECTONIC ASA+ @SuperNova DT 0.4 nozzle.json"
+        },
+        {
+            "name": "TECTONIC ASA+ @SuperNova DT Metal Ceramique 0.4 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/TECTONIC ASA+ @SuperNova DT Metal Ceramique 0.4 nozzle.json"
+        },
+        {
+            "name": "fdm_filament_pa",
+            "sub_path": "Common Process Library/Process common/fdm_filament_pa.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @base",
+            "sub_path": "Common Filament library/standard/Cosmyx PA6-CF @base.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/Cosmyx PA6-CF @Cosmyx Common.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/Cosmyx PA6-CF @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/Cosmyx PA6-CF @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/Cosmyx PA6-CF @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/Cosmyx PA6-CF @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/Cosmyx PA6-CF @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/Cosmyx PA6-CF @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/Cosmyx PA6-CF @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/Cosmyx PA6-CF @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/Cosmyx PA6-CF @Nova 0.2.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/Cosmyx PA6-CF @Nova 0.4.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/Cosmyx PA6-CF @Nova 0.6.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/Cosmyx PA6-CF @Nova 0.8.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/Cosmyx PA6-CF @Nova DT 0.2.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/Cosmyx PA6-CF @Nova DT 0.4.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/Cosmyx PA6-CF @Nova DT 0.6.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/Cosmyx PA6-CF @Nova DT 0.8.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/Cosmyx PA6-CF @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/Cosmyx PA6-CF @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/Cosmyx PA6-CF @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/Cosmyx PA6-CF @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/Cosmyx PA6-CF @SuperNova 0.2.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/Cosmyx PA6-CF @SuperNova 0.4.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/Cosmyx PA6-CF @SuperNova 0.6.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/Cosmyx PA6-CF @SuperNova 0.8.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/Cosmyx PA6-CF @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/Cosmyx PA6-CF @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/Cosmyx PA6-CF @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/Cosmyx PA6-CF @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/TECTONIC PP-CF15 @Cosmyx Common.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/TECTONIC PP-CF15 @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/TECTONIC PP-CF15 @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/TECTONIC PP-CF15 @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/TECTONIC PP-CF15 @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/TECTONIC PP-CF15 @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/TECTONIC PP-CF15 @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/TECTONIC PP-CF15 @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/TECTONIC PP-CF15 @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/TECTONIC PP-CF15 @Nova 0.2.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/TECTONIC PP-CF15 @Nova 0.4.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/TECTONIC PP-CF15 @Nova 0.6.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/TECTONIC PP-CF15 @Nova 0.8.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/TECTONIC PP-CF15 @Nova DT 0.2.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/TECTONIC PP-CF15 @Nova DT 0.4.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/TECTONIC PP-CF15 @Nova DT 0.6.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/TECTONIC PP-CF15 @Nova DT 0.8.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/TECTONIC PP-CF15 @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/TECTONIC PP-CF15 @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/TECTONIC PP-CF15 @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/TECTONIC PP-CF15 @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/TECTONIC PP-CF15 @SuperNova 0.2.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/TECTONIC PP-CF15 @SuperNova 0.4.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/TECTONIC PP-CF15 @SuperNova 0.6.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/TECTONIC PP-CF15 @SuperNova 0.8.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/TECTONIC PP-CF15 @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/TECTONIC PP-CF15 @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/TECTONIC PP-CF15 @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/TECTONIC PP-CF15 @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/TENET PP-CF15 @Cosmyx Common.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/TENET PP-CF15 @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/TENET PP-CF15 @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/TENET PP-CF15 @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/TENET PP-CF15 @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/TENET PP-CF15 @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/TENET PP-CF15 @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/TENET PP-CF15 @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/TENET PP-CF15 @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/TENET PP-CF15 @Nova 0.2.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/TENET PP-CF15 @Nova 0.4.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/TENET PP-CF15 @Nova 0.6.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/TENET PP-CF15 @Nova 0.8.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/TENET PP-CF15 @Nova DT 0.2.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/TENET PP-CF15 @Nova DT 0.4.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/TENET PP-CF15 @Nova DT 0.6.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/TENET PP-CF15 @Nova DT 0.8.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/TENET PP-CF15 @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/TENET PP-CF15 @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/TENET PP-CF15 @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "TENET PP-CF15 @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/TENET PP-CF15 @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/TENET PP-CF15 @SuperNova 0.2.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/TENET PP-CF15 @SuperNova 0.4.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/TENET PP-CF15 @SuperNova 0.6.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/TENET PP-CF15 @SuperNova 0.8.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/TENET PP-CF15 @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/TENET PP-CF15 @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/TENET PP-CF15 @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/TENET PP-CF15 @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/TENET PP-CF15 @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/TENET PP-CF15 @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/TENET PP-CF15 @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "TENET PP-CF15 @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/TENET PP-CF15 @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "fdm_filament_pet",
+            "sub_path": "Common Process Library/Process common/fdm_filament_pet.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @base",
+            "sub_path": "Common Filament library/standard/Cosmyx PETG Basic @base.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/Cosmyx PETG Basic @Cosmyx Common.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/Cosmyx PETG Basic @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/Cosmyx PETG Basic @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/Cosmyx PETG Basic @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/Cosmyx PETG Basic @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/Cosmyx PETG Basic @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/Cosmyx PETG Basic @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/Cosmyx PETG Basic @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/Cosmyx PETG Basic @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/Cosmyx PETG Basic @Nova 0.2.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/Cosmyx PETG Basic @Nova 0.4.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/Cosmyx PETG Basic @Nova 0.6.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/Cosmyx PETG Basic @Nova 0.8.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/Cosmyx PETG Basic @Nova DT 0.2.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/Cosmyx PETG Basic @Nova DT 0.4.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/Cosmyx PETG Basic @Nova DT 0.6.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/Cosmyx PETG Basic @Nova DT 0.8.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/Cosmyx PETG Basic @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/Cosmyx PETG Basic @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/Cosmyx PETG Basic @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/Cosmyx PETG Basic @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/Cosmyx PETG Basic @SuperNova 0.2.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/Cosmyx PETG Basic @SuperNova 0.4.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/Cosmyx PETG Basic @SuperNova 0.6.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/Cosmyx PETG Basic @SuperNova 0.8.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/Cosmyx PETG Basic @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/Cosmyx PETG Basic @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/Cosmyx PETG Basic @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/Cosmyx PETG Basic @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "ENKY PETG CF @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/ENKY PETG CF @Cosmyx Common.json"
+        },
+        {
+            "name": "ENKY PETG CF @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/ENKY PETG CF @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "ENKY PETG CF @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/ENKY PETG CF @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "ENKY PETG CF @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/ENKY PETG CF @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "ENKY PETG CF @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/ENKY PETG CF @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "ENKY PETG CF @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/ENKY PETG CF @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "ENKY PETG CF @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/ENKY PETG CF @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "ENKY PETG CF @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/ENKY PETG CF @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "ENKY PETG CF @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/ENKY PETG CF @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/ENKY PETG CF @Nova 0.2.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/ENKY PETG CF @Nova 0.4.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/ENKY PETG CF @Nova 0.6.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/ENKY PETG CF @Nova 0.8.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/ENKY PETG CF @Nova DT 0.2.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/ENKY PETG CF @Nova DT 0.4.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/ENKY PETG CF @Nova DT 0.6.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/ENKY PETG CF @Nova DT 0.8.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/ENKY PETG CF @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/ENKY PETG CF @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/ENKY PETG CF @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "ENKY PETG CF @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/ENKY PETG CF @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/ENKY PETG CF @SuperNova 0.2.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/ENKY PETG CF @SuperNova 0.4.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/ENKY PETG CF @SuperNova 0.6.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/ENKY PETG CF @SuperNova 0.8.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/ENKY PETG CF @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/ENKY PETG CF @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/ENKY PETG CF @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/ENKY PETG CF @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/ENKY PETG CF @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/ENKY PETG CF @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/ENKY PETG CF @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "ENKY PETG CF @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/ENKY PETG CF @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/TECTONIC CPE JAUNE @Cosmyx Common.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/TECTONIC CPE JAUNE @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/TECTONIC CPE JAUNE @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/TECTONIC CPE JAUNE @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/TECTONIC CPE JAUNE @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/TECTONIC CPE JAUNE @Nova 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/TECTONIC CPE JAUNE @Nova 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/TECTONIC CPE JAUNE @Nova 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/TECTONIC CPE JAUNE @Nova 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/TECTONIC CPE JAUNE @Nova DT 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/TECTONIC CPE JAUNE @Nova DT 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/TECTONIC CPE JAUNE @Nova DT 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/TECTONIC CPE JAUNE @Nova DT 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/TECTONIC CPE JAUNE @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/TECTONIC CPE JAUNE @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/TECTONIC CPE JAUNE @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/TECTONIC CPE JAUNE @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/TECTONIC CPE JAUNE @SuperNova 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/TECTONIC CPE JAUNE @SuperNova 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/TECTONIC CPE JAUNE @SuperNova 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/TECTONIC CPE JAUNE @SuperNova 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/TECTONIC CPE JAUNE @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/TECTONIC CPE JAUNE @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/TECTONIC CPE JAUNE @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/TECTONIC CPE JAUNE @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/TECTONIC CPE ROUGE @Cosmyx Common.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/TECTONIC CPE ROUGE @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/TECTONIC CPE ROUGE @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/TECTONIC CPE ROUGE @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/TECTONIC CPE ROUGE @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/TECTONIC CPE ROUGE @Nova 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/TECTONIC CPE ROUGE @Nova 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/TECTONIC CPE ROUGE @Nova 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/TECTONIC CPE ROUGE @Nova 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/TECTONIC CPE ROUGE @Nova DT 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/TECTONIC CPE ROUGE @Nova DT 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/TECTONIC CPE ROUGE @Nova DT 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/TECTONIC CPE ROUGE @Nova DT 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/TECTONIC CPE ROUGE @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/TECTONIC CPE ROUGE @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/TECTONIC CPE ROUGE @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/TECTONIC CPE ROUGE @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/TECTONIC CPE ROUGE @SuperNova 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/TECTONIC CPE ROUGE @SuperNova 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/TECTONIC CPE ROUGE @SuperNova 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/TECTONIC CPE ROUGE @SuperNova 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/TECTONIC CPE ROUGE @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/TECTONIC CPE ROUGE @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/TECTONIC CPE ROUGE @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/TECTONIC CPE ROUGE @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "fdm_filament_pla",
+            "sub_path": "Common Process Library/Process common/fdm_filament_pla.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @base",
+            "sub_path": "Common Filament library/standard/Cosmyx PLA Basic @base.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/Cosmyx PLA Basic @Cosmyx Common.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/CAPIFIL PLA BLANC @Cosmyx Common.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/CAPIFIL PLA BLANC @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/CAPIFIL PLA BLANC @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/CAPIFIL PLA BLANC @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/CAPIFIL PLA BLANC @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/CAPIFIL PLA BLANC @Nova 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/CAPIFIL PLA BLANC @Nova 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/CAPIFIL PLA BLANC @Nova 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/CAPIFIL PLA BLANC @Nova 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/CAPIFIL PLA BLANC @Nova DT 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/CAPIFIL PLA BLANC @Nova DT 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/CAPIFIL PLA BLANC @Nova DT 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/CAPIFIL PLA BLANC @Nova DT 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/CAPIFIL PLA BLANC @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/CAPIFIL PLA BLANC @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/CAPIFIL PLA BLANC @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/CAPIFIL PLA BLANC @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/CAPIFIL PLA BLANC @SuperNova 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/CAPIFIL PLA BLANC @SuperNova 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/CAPIFIL PLA BLANC @SuperNova 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/CAPIFIL PLA BLANC @SuperNova 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/CAPIFIL PLA BLANC @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/CAPIFIL PLA BLANC @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/CAPIFIL PLA BLANC @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/CAPIFIL PLA BLANC @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/CAPIFIL PLA BLEU @Cosmyx Common.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/CAPIFIL PLA BLEU @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/CAPIFIL PLA BLEU @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/CAPIFIL PLA BLEU @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/CAPIFIL PLA BLEU @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/CAPIFIL PLA BLEU @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/CAPIFIL PLA BLEU @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/CAPIFIL PLA BLEU @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/CAPIFIL PLA BLEU @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/CAPIFIL PLA BLEU @Nova 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/CAPIFIL PLA BLEU @Nova 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/CAPIFIL PLA BLEU @Nova 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/CAPIFIL PLA BLEU @Nova 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/CAPIFIL PLA BLEU @Nova DT 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/CAPIFIL PLA BLEU @Nova DT 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/CAPIFIL PLA BLEU @Nova DT 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/CAPIFIL PLA BLEU @Nova DT 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/CAPIFIL PLA BLEU @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/CAPIFIL PLA BLEU @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/CAPIFIL PLA BLEU @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/CAPIFIL PLA BLEU @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/CAPIFIL PLA BLEU @SuperNova 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/CAPIFIL PLA BLEU @SuperNova 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/CAPIFIL PLA BLEU @SuperNova 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/CAPIFIL PLA BLEU @SuperNova 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/CAPIFIL PLA BLEU @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/CAPIFIL PLA BLEU @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/CAPIFIL PLA BLEU @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/CAPIFIL PLA BLEU @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/CAPIFIL PLA BLEU @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/CAPIFIL PLA BLEU @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/CAPIFIL PLA BLEU @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA BLEU @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/CAPIFIL PLA BLEU @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/CAPIFIL PLA NOIR @Cosmyx Common.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/CAPIFIL PLA NOIR @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/CAPIFIL PLA NOIR @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/CAPIFIL PLA NOIR @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/CAPIFIL PLA NOIR @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/CAPIFIL PLA NOIR @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/CAPIFIL PLA NOIR @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/CAPIFIL PLA NOIR @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/CAPIFIL PLA NOIR @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/CAPIFIL PLA NOIR @Nova 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/CAPIFIL PLA NOIR @Nova 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/CAPIFIL PLA NOIR @Nova 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/CAPIFIL PLA NOIR @Nova 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/CAPIFIL PLA NOIR @Nova DT 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/CAPIFIL PLA NOIR @Nova DT 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/CAPIFIL PLA NOIR @Nova DT 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/CAPIFIL PLA NOIR @Nova DT 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/CAPIFIL PLA NOIR @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/CAPIFIL PLA NOIR @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/CAPIFIL PLA NOIR @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/CAPIFIL PLA NOIR @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/CAPIFIL PLA NOIR @SuperNova 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/CAPIFIL PLA NOIR @SuperNova 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/CAPIFIL PLA NOIR @SuperNova 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/CAPIFIL PLA NOIR @SuperNova 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/CAPIFIL PLA NOIR @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/CAPIFIL PLA NOIR @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/CAPIFIL PLA NOIR @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/CAPIFIL PLA NOIR @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/CAPIFIL PLA NOIR @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/CAPIFIL PLA NOIR @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/CAPIFIL PLA NOIR @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "CAPIFIL PLA NOIR @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/CAPIFIL PLA NOIR @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/Cosmyx PLA Basic @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/Cosmyx PLA Basic @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/Cosmyx PLA Basic @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/Cosmyx PLA Basic @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/Cosmyx PLA Basic @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/Cosmyx PLA Basic @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/Cosmyx PLA Basic @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/Cosmyx PLA Basic @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/Cosmyx PLA Basic @Nova 0.2.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/Cosmyx PLA Basic @Nova 0.4.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/Cosmyx PLA Basic @Nova 0.6.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/Cosmyx PLA Basic @Nova 0.8.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/Cosmyx PLA Basic @Nova DT 0.2.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/Cosmyx PLA Basic @Nova DT 0.4.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/Cosmyx PLA Basic @Nova DT 0.6.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/Cosmyx PLA Basic @Nova DT 0.8.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/Cosmyx PLA Basic @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/Cosmyx PLA Basic @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/Cosmyx PLA Basic @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/Cosmyx PLA Basic @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/Cosmyx PLA Basic @SuperNova 0.2.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/Cosmyx PLA Basic @SuperNova 0.4.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/Cosmyx PLA Basic @SuperNova 0.6.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/Cosmyx PLA Basic @SuperNova 0.8.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/Cosmyx PLA Basic @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/Cosmyx PLA Basic @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/Cosmyx PLA Basic @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/Cosmyx PLA Basic @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "FILKEMP PLN @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/FILKEMP PLN @Cosmyx Common.json"
+        },
+        {
+            "name": "FILKEMP PLN @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/FILKEMP PLN @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "FILKEMP PLN @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/FILKEMP PLN @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "FILKEMP PLN @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/FILKEMP PLN @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "FILKEMP PLN @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/FILKEMP PLN @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "FILKEMP PLN @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/FILKEMP PLN @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "FILKEMP PLN @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/FILKEMP PLN @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "FILKEMP PLN @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/FILKEMP PLN @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "FILKEMP PLN @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/FILKEMP PLN @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/FILKEMP PLN @Nova 0.2.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/FILKEMP PLN @Nova 0.4.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/FILKEMP PLN @Nova 0.6.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/FILKEMP PLN @Nova 0.8.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/FILKEMP PLN @Nova DT 0.2.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/FILKEMP PLN @Nova DT 0.4.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/FILKEMP PLN @Nova DT 0.6.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/FILKEMP PLN @Nova DT 0.8.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/FILKEMP PLN @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/FILKEMP PLN @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/FILKEMP PLN @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "FILKEMP PLN @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/FILKEMP PLN @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/FILKEMP PLN @SuperNova 0.2.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/FILKEMP PLN @SuperNova 0.4.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/FILKEMP PLN @SuperNova 0.6.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/FILKEMP PLN @SuperNova 0.8.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/FILKEMP PLN @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/FILKEMP PLN @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/FILKEMP PLN @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/FILKEMP PLN @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/FILKEMP PLN @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/FILKEMP PLN @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/FILKEMP PLN @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "FILKEMP PLN @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/FILKEMP PLN @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/FORMFUTURA PVA @Cosmyx Common.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/FORMFUTURA PVA @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/FORMFUTURA PVA @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/FORMFUTURA PVA @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/FORMFUTURA PVA @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/FORMFUTURA PVA @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/FORMFUTURA PVA @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/FORMFUTURA PVA @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/FORMFUTURA PVA @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/FORMFUTURA PVA @Nova 0.2.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/FORMFUTURA PVA @Nova 0.4.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/FORMFUTURA PVA @Nova 0.6.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/FORMFUTURA PVA @Nova 0.8.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/FORMFUTURA PVA @Nova DT 0.2.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/FORMFUTURA PVA @Nova DT 0.4.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/FORMFUTURA PVA @Nova DT 0.6.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/FORMFUTURA PVA @Nova DT 0.8.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/FORMFUTURA PVA @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/FORMFUTURA PVA @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/FORMFUTURA PVA @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/FORMFUTURA PVA @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/FORMFUTURA PVA @SuperNova 0.2.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/FORMFUTURA PVA @SuperNova 0.4.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/FORMFUTURA PVA @SuperNova 0.6.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/FORMFUTURA PVA @SuperNova 0.8.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/FORMFUTURA PVA @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/FORMFUTURA PVA @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/FORMFUTURA PVA @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/FORMFUTURA PVA @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/FORMFUTURA PVA @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/FORMFUTURA PVA @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/FORMFUTURA PVA @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "FORMFUTURA PVA @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/FORMFUTURA PVA @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/TECTONIC Breakaway @Cosmyx Common.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/TECTONIC Breakaway @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/TECTONIC Breakaway @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/TECTONIC Breakaway @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/TECTONIC Breakaway @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/TECTONIC Breakaway @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/TECTONIC Breakaway @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/TECTONIC Breakaway @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/TECTONIC Breakaway @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/TECTONIC Breakaway @Nova 0.2.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/TECTONIC Breakaway @Nova 0.4.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/TECTONIC Breakaway @Nova 0.6.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/TECTONIC Breakaway @Nova 0.8.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/TECTONIC Breakaway @Nova DT 0.2.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/TECTONIC Breakaway @Nova DT 0.4.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/TECTONIC Breakaway @Nova DT 0.6.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/TECTONIC Breakaway @Nova DT 0.8.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/TECTONIC Breakaway @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/TECTONIC Breakaway @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/TECTONIC Breakaway @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/TECTONIC Breakaway @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/TECTONIC Breakaway @SuperNova 0.2.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/TECTONIC Breakaway @SuperNova 0.4.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/TECTONIC Breakaway @SuperNova 0.6.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/TECTONIC Breakaway @SuperNova 0.8.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/TECTONIC Breakaway @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/TECTONIC Breakaway @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/TECTONIC Breakaway @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/TECTONIC Breakaway @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "Zetamix Zirconia @Cosmyx Common",
+            "sub_path": "Common Filament library/ceramics/Zetamix Zirconia @Cosmyx Common.json"
+        },
+        {
+            "name": "Zetamix Zirconia @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/ceramics/Zetamix Zirconia @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Zetamix Zirconia @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/ceramics/Zetamix Zirconia @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Zetamix Zirconia @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/ceramics/Zetamix Zirconia @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Zetamix Zirconia @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/ceramics/Zetamix Zirconia @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "Zetamix Zirconia @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/ceramics/Zetamix Zirconia @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Zetamix Zirconia @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/ceramics/Zetamix Zirconia @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Zetamix Zirconia @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/ceramics/Zetamix Zirconia @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Zetamix Zirconia @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/ceramics/Zetamix Zirconia @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "fdm_filament_tpu",
+            "sub_path": "Common Process Library/Process common/fdm_filament_tpu.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @base",
+            "sub_path": "Common Filament library/standard/Cosmyx TPU 95A @base.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/Cosmyx TPU 95A @Cosmyx Common.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/Cosmyx TPU 95A @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/Cosmyx TPU 95A @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/Cosmyx TPU 95A @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/Cosmyx TPU 95A @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/Cosmyx TPU 95A @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/Cosmyx TPU 95A @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/Cosmyx TPU 95A @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/Cosmyx TPU 95A @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/Cosmyx TPU 95A @Nova 0.2.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/Cosmyx TPU 95A @Nova 0.4.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/Cosmyx TPU 95A @Nova 0.6.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/Cosmyx TPU 95A @Nova 0.8.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/Cosmyx TPU 95A @Nova DT 0.2.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/Cosmyx TPU 95A @Nova DT 0.4.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/Cosmyx TPU 95A @Nova DT 0.6.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/Cosmyx TPU 95A @Nova DT 0.8.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/Cosmyx TPU 95A @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/Cosmyx TPU 95A @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/Cosmyx TPU 95A @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/Cosmyx TPU 95A @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/Cosmyx TPU 95A @SuperNova 0.2.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/Cosmyx TPU 95A @SuperNova 0.4.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/Cosmyx TPU 95A @SuperNova 0.6.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/Cosmyx TPU 95A @SuperNova 0.8.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/Cosmyx TPU 95A @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/Cosmyx TPU 95A @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/Cosmyx TPU 95A @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/Cosmyx TPU 95A @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/KIMYA TPC 91A @Cosmyx Common.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Cosmyx Common",
+            "sub_path": "Common Filament library/standard/ENKY TPU 95A @Cosmyx Common.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/ENKY TPU 95A @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/ENKY TPU 95A @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/ENKY TPU 95A @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/ENKY TPU 95A @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/ENKY TPU 95A @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/ENKY TPU 95A @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/ENKY TPU 95A @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/ENKY TPU 95A @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/ENKY TPU 95A @Nova 0.2.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/ENKY TPU 95A @Nova 0.4.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/ENKY TPU 95A @Nova 0.6.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/ENKY TPU 95A @Nova 0.8.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/ENKY TPU 95A @Nova DT 0.2.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/ENKY TPU 95A @Nova DT 0.4.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/ENKY TPU 95A @Nova DT 0.6.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/ENKY TPU 95A @Nova DT 0.8.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/ENKY TPU 95A @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/ENKY TPU 95A @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/ENKY TPU 95A @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "ENKY TPU 95A @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/ENKY TPU 95A @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/ENKY TPU 95A @SuperNova 0.2.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/ENKY TPU 95A @SuperNova 0.4.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/ENKY TPU 95A @SuperNova 0.6.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/ENKY TPU 95A @SuperNova 0.8.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/ENKY TPU 95A @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/ENKY TPU 95A @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/ENKY TPU 95A @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/ENKY TPU 95A @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/ENKY TPU 95A @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/ENKY TPU 95A @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/ENKY TPU 95A @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "ENKY TPU 95A @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/ENKY TPU 95A @SuperNova DT Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Cosmyx Nova can-out 0.2",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/filament/standard/KIMYA TPC 91A @Cosmyx Nova can-out 0.2.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Cosmyx Nova can-out 0.4",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/filament/standard/KIMYA TPC 91A @Cosmyx Nova can-out 0.4.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Cosmyx Nova can-out 0.6",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/filament/standard/KIMYA TPC 91A @Cosmyx Nova can-out 0.6.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Cosmyx Nova can-out 0.8",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/filament/standard/KIMYA TPC 91A @Cosmyx Nova can-out 0.8.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Haute Temperature 0.2",
+            "sub_path": "Machine/HT/HT 0.2/filament/standard/KIMYA TPC 91A @Haute Temperature 0.2.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Haute Temperature 0.4",
+            "sub_path": "Machine/HT/HT 0.4/filament/standard/KIMYA TPC 91A @Haute Temperature 0.4.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Haute Temperature 0.6",
+            "sub_path": "Machine/HT/HT 0.6/filament/standard/KIMYA TPC 91A @Haute Temperature 0.6.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Haute Temperature 0.8",
+            "sub_path": "Machine/HT/HT 0.8/filament/standard/KIMYA TPC 91A @Haute Temperature 0.8.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova 0.2",
+            "sub_path": "Machine/NOVA/NOVA 0.2/filament/standard/KIMYA TPC 91A @Nova 0.2.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova 0.4",
+            "sub_path": "Machine/NOVA/NOVA 0.4/filament/standard/KIMYA TPC 91A @Nova 0.4.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova 0.6",
+            "sub_path": "Machine/NOVA/NOVA 0.6/filament/standard/KIMYA TPC 91A @Nova 0.6.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova 0.8",
+            "sub_path": "Machine/NOVA/NOVA 0.8/filament/standard/KIMYA TPC 91A @Nova 0.8.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova DT 0.2",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/filament/standard/KIMYA TPC 91A @Nova DT 0.2.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova DT 0.4",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/filament/standard/KIMYA TPC 91A @Nova DT 0.4.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova DT 0.6",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/filament/standard/KIMYA TPC 91A @Nova DT 0.6.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova DT 0.8",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/filament/standard/KIMYA TPC 91A @Nova DT 0.8.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova Metal Ceramique 0.2",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/filament/standard/KIMYA TPC 91A @Nova Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova Metal Ceramique 0.4",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/filament/standard/KIMYA TPC 91A @Nova Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova Metal Ceramique 0.6",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/filament/standard/KIMYA TPC 91A @Nova Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @Nova Metal Ceramique 0.8",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/filament/standard/KIMYA TPC 91A @Nova Metal Ceramique 0.8.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova 0.2",
+            "sub_path": "Machine/SNV2/SNV2 0.2/filament/standard/KIMYA TPC 91A @SuperNova 0.2.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova 0.4",
+            "sub_path": "Machine/SNV2/SNV2 0.4/filament/standard/KIMYA TPC 91A @SuperNova 0.4.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova 0.6",
+            "sub_path": "Machine/SNV2/SNV2 0.6/filament/standard/KIMYA TPC 91A @SuperNova 0.6.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova 0.8",
+            "sub_path": "Machine/SNV2/SNV2 0.8/filament/standard/KIMYA TPC 91A @SuperNova 0.8.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova DT 0.2",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/filament/standard/KIMYA TPC 91A @SuperNova DT 0.2.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova DT 0.4",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/filament/standard/KIMYA TPC 91A @SuperNova DT 0.4.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova DT 0.6",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/filament/standard/KIMYA TPC 91A @SuperNova DT 0.6.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova DT 0.8",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/filament/standard/KIMYA TPC 91A @SuperNova DT 0.8.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova DT Metal Ceramique 0.2",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/filament/standard/KIMYA TPC 91A @SuperNova DT Metal Ceramique 0.2.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova DT Metal Ceramique 0.4",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/filament/standard/KIMYA TPC 91A @SuperNova DT Metal Ceramique 0.4.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova DT Metal Ceramique 0.6",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/filament/standard/KIMYA TPC 91A @SuperNova DT Metal Ceramique 0.6.json"
+        },
+        {
+            "name": "KIMYA TPC 91A @SuperNova DT Metal Ceramique 0.8",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/filament/standard/KIMYA TPC 91A @SuperNova DT Metal Ceramique 0.8.json"
+        }
+    ],
+    "machine_list": [
+        {
+            "name": "fdm_machine_common",
+            "sub_path": "Common Process Library/Common Process/fdm_machine_common.json"
+        },
+        {
+            "name": "fdm_cosmyx_3dp_001_common",
+            "sub_path": "Common Process Library/Common Process/fdm_cosmyx_3dp_001_common.json"
+        },
+        {
+            "name": "Cosmyx Nova 0.4 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.4/Cosmyx Nova 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova 0.2 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.2/Cosmyx Nova 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova 0.2 nozzle can-out",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.2/Cosmyx Nova 0.2 nozzle can-out.json"
+        },
+        {
+            "name": "Cosmyx Nova 0.4 nozzle can-out",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.4/Cosmyx Nova 0.4 nozzle can-out.json"
+        },
+        {
+            "name": "Cosmyx Nova 0.6 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.6/Cosmyx Nova 0.6 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova 0.6 nozzle can-out",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.6/Cosmyx Nova 0.6 nozzle can-out.json"
+        },
+        {
+            "name": "Cosmyx Nova 0.8 nozzle",
+            "sub_path": "Machine/NOVA/NOVA 0.8/Cosmyx Nova 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova 0.8 nozzle can-out",
+            "sub_path": "Machine/NOVA_CAN_OUT/NOVA_CAN_OUT 0.8/Cosmyx Nova 0.8 nozzle can-out.json"
+        },
+        {
+            "name": "Cosmyx Nova Double Tete 0.2 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/Cosmyx Nova Double Tete 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Double Tete 0.4 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.4/Cosmyx Nova Double Tete 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Double Tete 0.6 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.6/Cosmyx Nova Double Tete 0.6 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Double Tete 0.8 nozzle",
+            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.8/Cosmyx Nova Double Tete 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Haute Temperature 0.2 nozzle",
+            "sub_path": "Machine/HT/HT 0.2/Cosmyx Nova Haute Temperature 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Haute Temperature 0.4 nozzle",
+            "sub_path": "Machine/HT/HT 0.4/Cosmyx Nova Haute Temperature 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Haute Temperature 0.6 nozzle",
+            "sub_path": "Machine/HT/HT 0.6/Cosmyx Nova Haute Temperature 0.6 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Haute Temperature 0.8 nozzle",
+            "sub_path": "Machine/HT/HT 0.8/Cosmyx Nova Haute Temperature 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.2/Cosmyx Nova Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Metal Ceramique 0.4 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.4/Cosmyx Nova Metal Ceramique 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.6/Cosmyx Nova Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "Cosmyx Nova Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/NOVA_CERAM/NOVA_CERAM 0.8/Cosmyx Nova Metal Ceramique 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova 0.2 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.2/Cosmyx SuperNova 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova 0.4 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.4/Cosmyx SuperNova 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova 0.6 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.6/Cosmyx SuperNova 0.6 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova 0.8 nozzle",
+            "sub_path": "Machine/SNV2/SNV2 0.8/Cosmyx SuperNova 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova Double Tete 0.4 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.4/Cosmyx SuperNova Double Tete 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova Double Tete 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.2/Cosmyx SuperNova Double Tete 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova Double Tete 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.6/Cosmyx SuperNova Double Tete 0.6 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova Double Tete 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT/SNV2_DT 0.8/Cosmyx SuperNova Double Tete 0.8 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova Double Tete Metal Ceramique 0.4 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.4/Cosmyx SuperNova Double Tete Metal Ceramique 0.4 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova Double Tete Metal Ceramique 0.2 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.2/Cosmyx SuperNova Double Tete Metal Ceramique 0.2 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova Double Tete Metal Ceramique 0.6 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.6/Cosmyx SuperNova Double Tete Metal Ceramique 0.6 nozzle.json"
+        },
+        {
+            "name": "Cosmyx SuperNova Double Tete Metal Ceramique 0.8 nozzle",
+            "sub_path": "Machine/SNV2_DT_CERAM/SNV2_DT_CERAM 0.8/Cosmyx SuperNova Double Tete Metal Ceramique 0.8 nozzle.json"
+        }
+    ]
+}

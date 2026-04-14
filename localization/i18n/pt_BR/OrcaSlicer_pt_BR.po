@@ -19311,7 +19311,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "Cartão SD Anormal"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "A ejeção do dispositivo %s (%s) falhou."
 
@@ -19327,27 +19326,8 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "A publicação foi cancelada"
 
-#~ msgid "Search"
-#~ msgstr "Buscar"
-
-#~ msgid "My Device"
-#~ msgstr "Meu dispositivo"
-
-#~ msgid "Other Device"
-#~ msgstr "Outro dispositivo"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Não consegue encontrar meus dispositivos?"
-
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "bico memorizado: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Modificando o nome do dispositivo"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Vincular com Código de Acesso"
 
 #~ msgid "Ramming settings"
 #~ msgstr "Configurações de moldeamento"
@@ -19485,7 +19465,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Esta configuração especifica a contagem de paredes ao redor do suporte"
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Suporte: gerar caminho da ferramenta na camada %d"
 
@@ -19501,15 +19480,12 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Suporte: gerar caminho da ferramenta"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Suporte: gerar polígonos na camada %d"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Suporte: corrigir buracos na camada %d"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Suporte: propagar ramificações na camada %d"
 
@@ -19569,7 +19545,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Limiar de resfriamento de saliência"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -19643,7 +19618,6 @@ msgstr ""
 #~ "direções alternadas em camadas ímpares, independentemente de seu grau de "
 #~ "saliência."
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"

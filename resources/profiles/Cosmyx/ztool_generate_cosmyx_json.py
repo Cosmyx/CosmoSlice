@@ -28,6 +28,7 @@ EXCLUDE_DIRS = {
 # File to exclude
 EXCLUDE_FILES = {
     'cosmyx.json',
+    'Cosmyx.json',
     'generate_cosmyx_json.py'
 }
 
@@ -181,9 +182,9 @@ def organize_by_type(json_files: List[Dict]) -> Tuple[List[Dict], List[Dict], Li
     return machine_models, machines, processes, filaments, json_files_data
 
 
-def generate_cosmyx_json(base_dir: Path, output_file: str = 'cosmyx.json'):
+def generate_cosmyx_json(base_dir: Path, output_file: str = 'Cosmyx.json'):
     """
-    Generate the cosmyx.json file by scanning all JSON files.
+    Generate the Cosmyx.json file by scanning all JSON files.
     """
     print("=" * 60)
     print("Scanning directory for JSON files...")
@@ -223,8 +224,10 @@ def generate_cosmyx_json(base_dir: Path, output_file: str = 'cosmyx.json'):
         "machine_list": machines
     }
 
-    # Write to file
-    output_path = base_dir / output_file
+    # Write to file (one level up from the script's directory), overwriting if it exists
+    output_path = base_dir.parent / output_file
+    if output_path.exists():
+        print(f"\nOverwriting existing file: {output_path}")
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(cosmyx_data, f, indent=4, ensure_ascii=False)
 

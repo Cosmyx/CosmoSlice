@@ -1,6 +1,6 @@
 {
     "type": "filament",
-    "filament_id": "MIL21_NOVA_06",
+    "filament_id": "MIL20_NOVA_06",
     "name": "Cosmyx PA6-CF @Nova 0.6",
     "from": "system",
     "instantiation": "true",
@@ -8,5 +8,5 @@
     "compatible_printers": [
         "Cosmyx Nova 0.6 nozzle"
     ],
-    "version": "01.07.00.18"
+    "version": "14.04.2026.02"
 }

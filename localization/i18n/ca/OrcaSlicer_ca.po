@@ -19216,10 +19216,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Establir Posició"
 
-#~ msgid "%"
-#~ msgstr "%"
-
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -19278,7 +19274,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "Targeta SD anormal"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "L'expulsió del dispositiu %s( %s ) ha fallat."
 
@@ -19300,27 +19295,8 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "La publicació ha estat cancel·lada"
 
-#~ msgid "Search"
-#~ msgstr "Cercar"
-
-#~ msgid "My Device"
-#~ msgstr "El Meu Dispositiu"
-
-#~ msgid "Other Device"
-#~ msgstr "Un Altre Dispositiu"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "No puc trobar els meus dispositius?"
-
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "broquet memoritzat: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Modificant el nom del dispositiu"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Enllaçar amb el codi d'accés"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "
@@ -19475,7 +19451,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Espaiat de les línies de la interfície. Zero significa interfície sòlida"
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -19640,7 +19615,6 @@ msgstr ""
 #~ "diàmetre s'imprimiran amb parets dobles per a millorar l'estabilitat. "
 #~ "Establiu aquest valor a zero per a cap paret doble."
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Suport: generar trajectòria d'eina a la capa %d"
 
@@ -19656,22 +19630,18 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Suport: generar trajectòria d'eina"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Suport: generar polígons a la capa %d"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Suport: reparar forats a la capa %d"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Suport: propagar branques a la capa %d"
 
 #~ msgid "Orca Slicer"
 #~ msgstr "Orca Slicer"
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Connexió fallida [%d]!"
 
@@ -19684,7 +19654,6 @@ msgstr ""
 #~ "Inicialització fallida (emmagatzematge no disponible, inseriu la targeta "
 #~ "SD.)!"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "Inicialització fallida ( %s )!"
 
@@ -19725,7 +19694,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Llindar de voladís de refrigeració"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -19757,9 +19725,6 @@ msgstr ""
 #~ msgstr "Desmarcar"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Escalar"
-
 #~ msgid "Lift Z Enforcement"
 #~ msgstr "Forçar elevació Z"
 
@@ -19783,7 +19748,6 @@ msgstr ""
 #~ "El vostre objecte sembla massa gran. Es reduirà automàticament per "
 #~ "adaptar-se al llit."
 
-#, fuzzy
 #~| msgid "Shift+"
 #~ msgid "Shift+G"
 #~ msgstr "⌘+Maj+G"
@@ -19927,7 +19891,6 @@ msgstr ""
 #~ msgid "Printer local connection failed, please try again."
 #~ msgstr "La connexió local de la impressora ha fallat, torneu-ho a provar."
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "There is already a historical calibration result with the same name: %s. "
 #~ "Only one of the results with the same name is saved. Are you sure you "
@@ -19944,7 +19907,6 @@ msgstr ""
 #~ "La mida del fitxer supera el límit de pujada de 100 MB. Si us plau, "
 #~ "carregueu el vostre fitxer a través del panell."
 
-#, fuzzy
 #~ msgid "Maximum print speed when purging"
 #~ msgstr "Màxima velocitat d'impressió en purgar"
 
@@ -19966,7 +19928,6 @@ msgstr ""
 #~ msgid "Open Studio"
 #~ msgstr "Obrir Studio"
 
-#, fuzzy
 #~ msgid ""
 #~ "Over 4 systems/handy are using remote access, you can close some and try "
 #~ "again."
@@ -19990,32 +19951,26 @@ msgstr ""
 #~ msgid "MainBoard"
 #~ msgstr "Placa Base"
 
-#, fuzzy
 #~| msgid "Unsaved Changes"
 #~ msgid "Actions For Unsaved Changes"
 #~ msgstr "Canvis no desats"
 
-#, fuzzy
 #~| msgid "Reset scale"
 #~ msgid "Preset Value"
 #~ msgstr "Valor predefinit esquerre"
 
-#, fuzzy
 #~| msgid "Modified G-code"
 #~ msgid "Modified Value"
 #~ msgstr "Valor modificat"
 
-#, fuzzy
 #~| msgid "User Preset"
 #~ msgid "Use Preset Value"
 #~ msgstr "Perfil d'usuari"
 
-#, fuzzy
 #~| msgid "Save file as:"
 #~ msgid "Save Modified Value"
 #~ msgstr "Desa el fitxer com a:"
 
-#, fuzzy
 #~ msgid ""
 #~ "\n"
 #~ "Would you like to save these changed settings(modified value)?"
@@ -20023,7 +19978,6 @@ msgstr ""
 #~ "\n"
 #~ "Voleu desar aquests paràmetres canviats (valor modificat)?"
 
-#, fuzzy
 #~| msgid ""
 #~| "You have changed some preset settings.\n"
 #~| "Would you like to keep these changed settings (new value) after "
@@ -20036,7 +19990,6 @@ msgstr ""
 #~ "Heu canviat algunes opcions de configuració del perfil.\n"
 #~ "Voleu mantenir aquests paràmetres modificats després de canviar el perfil?"
 
-#, fuzzy
 #~ msgid ""
 #~ "\n"
 #~ "Do you want to keep your current modified settings, or use preset "
@@ -20046,7 +19999,6 @@ msgstr ""
 #~ "Voleu mantenir la configuració modificada actual o utilitzar la "
 #~ "configuració predeterminada?"
 
-#, fuzzy
 #~ msgid ""
 #~ "\n"
 #~ "Do you want to save your current modified settings?"
@@ -20113,18 +20065,15 @@ msgstr ""
 #~ msgid "Initialize failed (Missing LAN ip of printer)!"
 #~ msgstr "Inicialització fallida ( Manca la IP LAN de la impressora )!"
 
-#, c-format, boost-format
 #~ msgid "Stopped [%d]!"
 #~ msgstr "Aturat [%d]!"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "La càrrega ha fallat [%d]!"
 
 #~ msgid "Connection lost. Please retry."
 #~ msgstr "S'ha perdut la connexió. Si us plau, torna-ho a intentar."
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "

@@ -17752,10 +17752,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Positie instellen"
 
-#~ msgid "%"
-#~ msgstr "%"
-
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -17814,7 +17810,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "MicroSD Kaart Abnormaal"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "Het uitwerpen van apparaat %s(%s) is mislukt."
 
@@ -17830,24 +17825,8 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Het publiceren is geannuleerd"
 
-#~ msgid "Search"
-#~ msgstr "Zoeken"
-
-#~ msgid "My Device"
-#~ msgstr "Mijn apparaat"
-
-#~ msgid "Other Device"
-#~ msgstr "Ander apparaat"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Kun je geen apparaten vinden?"
-
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "mondstuk onthouden: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "De naam van het apparaat wijzigen"
 
 #~ msgid "Ramming settings"
 #~ msgstr "Ramming-instellingen"
@@ -17938,7 +17917,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Dit is de afstand tussen de interfacelijnen. 0 betekent solide interface."
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -18038,7 +18016,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around support"
 #~ msgstr "Deze instelling specificeert het aantal muren rond de ondersteuning"
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Support: toolpad genereren op laag %d"
 
@@ -18054,29 +18031,24 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Support: toolpath genereren"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Support: genereer polygonen op laag %d"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Support: repareer gaten op laag %d"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Support: verspreid takken op laag %d"
 
 #~ msgid "Stopped."
 #~ msgstr "Gestopt."
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Verbinding mislukt [%d]!"
 
 #~ msgid "Initialize failed (Device connection not ready)!"
 #~ msgstr "Initialization failed (Device connection not ready)!"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "Initialisatie is mislukt (%s)!"
 
@@ -18129,7 +18101,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Drempel voor overhang koeling"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -18158,9 +18129,6 @@ msgstr ""
 #~ msgstr "Dikke bruggen"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Schalen"
-
 #~ msgid "Z-hop when retract"
 #~ msgstr "Z-hop tijdens terugtrekken (retraction)"
 
@@ -18312,7 +18280,6 @@ msgstr ""
 #~ "Slechts één van de resultaten met dezelfde naam wordt opgeslagen. Weet je "
 #~ "zeker dat je de andere resultaten wilt vervangen?"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "There is already a historical calibration result with the same name: %s. "
 #~ "Only one of the results with the same name is saved. Are you sure you "
@@ -18396,7 +18363,6 @@ msgstr ""
 #~ "zal de AMS niet automatisch informatie lezen totdat het afdrukken is "
 #~ "voltooid."
 
-#, boost-format
 #~ msgid "Succeed to export G-code to %1%"
 #~ msgstr "Success! G-code geexporteerd naar %1%"
 
@@ -18416,15 +18382,12 @@ msgstr ""
 #~ msgid "Initialize failed (Missing LAN ip of printer)!"
 #~ msgstr "Initialisatie is mislukt (LAN-IP van de printer ontbreekt)!"
 
-#, c-format, boost-format
 #~ msgid "Stopped [%d]!"
 #~ msgstr "Gestopt [%d]!"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "Laden mislukt [%d]!"
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
@@ -18456,34 +18419,7 @@ msgstr ""
 #~ msgid "The Config cannot be loaded."
 #~ msgstr "De configuratie kan niet worden geladen."
 
-#~ msgid "Movement:"
-#~ msgstr "Beweging:"
-
-#~ msgid "Movement"
-#~ msgstr "Beweging"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Automatische segmenteren"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Diepteratio"
-
-#~ msgid "Prizm"
-#~ msgstr "Prisma"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "Verbinding ligt buiten knipcontour"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "Verbindingen liggen buiten knipcontour"
-
-#~ msgid "connector is out of object"
-#~ msgstr "Verbinding ligt buiten object"
-
 # Source and destination string both English, but different. Please clarify!
-#~ msgid "connectors is out of object"
-#~ msgstr "Connectors must be on object surface."
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -18517,7 +18453,6 @@ msgstr ""
 #~ "functie Simplify mesh? Klik met de rechtermuisknop op het model en "
 #~ "selecteer Model vereenvoudigen. Lees meer in de documentatie."
 
-#, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% het gekozen vulling patroon ondersteund geen 100%% dichtheid."
 
@@ -18531,7 +18466,6 @@ msgstr ""
 #~ "Nee - Zet de dichtheid automatisch terug naar de standaard niet 100% "
 #~ "waarde"
 
-#, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr ""
 #~ "Dit is de dichtheid van de interne vulling. 100%% betekent dat het object "
@@ -18661,7 +18595,6 @@ msgstr ""
 #~ msgid "Calibration of extrusion"
 #~ msgstr "Kalibratie van de extrusie"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Bed temperature of other layer is lower than bed temperature of initial "
 #~ "layer for more than %d degrees Celsius.\n"

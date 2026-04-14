@@ -19352,10 +19352,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Imposta posizione"
 
-#~ msgid "%"
-#~ msgstr "%"
-
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -19416,7 +19412,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "Scheda SD anomala"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "Espulsione del dispositivo %s(%s) non riuscita."
 
@@ -19438,27 +19433,8 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "La pubblicazione è stata annullata"
 
-#~ msgid "Search"
-#~ msgstr "Cerca"
-
-#~ msgid "My Device"
-#~ msgstr "Il mio dispositivo"
-
-#~ msgid "Other Device"
-#~ msgstr "Altro dispositivo"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Non riesci a trovare i dispositivi?"
-
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "ugello memorizzato: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Modifica nome del dispositivo"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Associa con il codice di accesso"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "
@@ -19801,7 +19777,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Questa impostazione specifica il numero di pareti intorno al supporto"
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Supporto: generazione percorso utensile allo strato %d"
 
@@ -19817,22 +19792,18 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Supporto: generazione percorso utensile"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Supporto: generazione poligoni allo strato %d"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Supporto: correzione dei buchi allo strato %d"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Supporto: propagazione rami allo strato %d"
 
 #~ msgid "Stopped."
 #~ msgstr "Interrotto."
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Connessione non riuscita [%d]!"
 
@@ -19840,7 +19811,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Inizializzazione fallita (la connessione del dispositivo non è pronta)!"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "Inizializzazione fallita (%s)!"
 
@@ -19894,7 +19864,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Soglia di sbalzo per il raffreddamento"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -19961,9 +19930,6 @@ msgstr ""
 #~ msgstr "Deseleziona"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Ridimensiona"
-
 #~ msgid "Lift Z Enforcement"
 #~ msgstr "Applicazione dell'ascensore Z"
 
@@ -20017,7 +19983,6 @@ msgstr ""
 #~ "vengano stampate in direzioni alternate sugli strati dispari, "
 #~ "indipendentemente dal loro grado di sporgenza."
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -20360,7 +20325,6 @@ msgstr ""
 #~ "Verrà salvato solo uno dei risultati con lo stesso nome. Si è sicuri di "
 #~ "voler sovrascrivere gli altri risultati?"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "There is already a historical calibration result with the same name: %s. "
 #~ "Only one of the results with the same name is saved. Are you sure you "
@@ -20478,7 +20442,6 @@ msgstr ""
 #~ "Nota: se durante la stampa viene inserito un nuovo filamento, l'AMS non "
 #~ "leggerà automaticamente alcuna informazione fino al termine della stampa."
 
-#, boost-format
 #~ msgid "Succeed to export G-code to %1%"
 #~ msgstr "Successo! G-code esportato in %1%"
 
@@ -20505,15 +20468,12 @@ msgstr ""
 #~ msgstr ""
 #~ "Inizializzazione fallita (indirizzo IP LAN della stampante mancante)!"
 
-#, c-format, boost-format
 #~ msgid "Stopped [%d]!"
 #~ msgstr "Interrotto [%d]!"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "Caricamento non riuscito [%d]!"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]"
 #~ msgstr "Caricamento non riuscito [%d]"
 
@@ -20529,7 +20489,6 @@ msgstr ""
 #~ msgid "File not exists."
 #~ msgstr "Il file non esiste."
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
@@ -20679,27 +20638,6 @@ msgstr ""
 #~ "compatibile solo con la modalità relativa. È sempre abilitato sulle "
 #~ "stampanti BambuLab. Il valore predefinito è selezionato"
 
-#~ msgid "Movement"
-#~ msgstr "Movimento"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Segmento automatico"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Rapporto di profondità"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "Connettore fuori dal contorno"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "Connettori fuori dal contorno"
-
-#~ msgid "connector is out of object"
-#~ msgstr "Connettore fuori dall'oggetto"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "I connettori devono trovarsi sulla superficie dell'oggetto."
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -20739,30 +20677,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "Eccezione"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "Seleziona l'archivio SLA:"
-
-#~ msgid "Import file"
-#~ msgstr "Importa file"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Importa modello e profilo"
-
-#~ msgid "Import profile only"
-#~ msgstr "Importa solo profilo"
-
-#~ msgid "Import model only"
-#~ msgstr "Importa solo modello"
-
-#~ msgid "Accurate"
-#~ msgstr "Accurato"
-
-#~ msgid "Balanced"
-#~ msgstr "Bilanciato"
-
-#~ msgid "Quick"
-#~ msgstr "Rapido"
 
 #~ msgid "Print sequence of inner wall and outer wall. "
 #~ msgstr "Stampa la sequenza della parete interna e della parete esterna. "
@@ -20805,7 +20719,6 @@ msgstr ""
 #~ msgid "Filling bed "
 #~ msgstr "Riempi piano"
 
-#, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "La trama riempimento %1% non supporta il 100%% di densità."
 
@@ -20829,7 +20742,6 @@ msgstr ""
 #~ msgid "If enabled, G-code window will be displayed."
 #~ msgstr "Se abilitato, verrà visualizzata la finestra del G-code."
 
-#, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr ""
 #~ "Questa è la densità del riempimento interno. 100%% significa che "
@@ -20841,7 +20753,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around tree support"
 #~ msgstr "Questa specifica il numero di pareti attorno al supporto ad albero."
 
-#, c-format, boost-format
 #~ msgid " doesn't work at 100%% density "
 #~ msgstr " Non funziona con una densità del 100%%"
 
@@ -20879,7 +20790,6 @@ msgstr ""
 #~ "Quando si stampa per oggetto, le macchine con struttura I3 non "
 #~ "genereranno video timelapse."
 
-#, c-format, boost-format
 #~ msgid "%s is not supported by AMS."
 #~ msgstr "%s non è supportato da AMS."
 
@@ -20924,7 +20834,6 @@ msgstr ""
 #~ msgid "Export the objects as multiple STL."
 #~ msgstr "Esporta gli oggetti come STL multipli."
 
-#, boost-format
 #~ msgid "The selected preset: %1% was not found."
 #~ msgstr "Il preset selezionato: %1% non è stato trovato."
 
@@ -20975,7 +20884,6 @@ msgstr ""
 #~ msgid "Push new filament into the extruder"
 #~ msgstr "Inserisci il nuovo filamento nell'estrusore"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Bed temperature of other layer is lower than bed temperature of initial "
 #~ "layer for more than %d degrees Celsius.\n"

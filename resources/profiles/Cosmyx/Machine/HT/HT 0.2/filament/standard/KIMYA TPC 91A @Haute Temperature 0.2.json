@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL28_HT_02",
+    "name": "KIMYA TPC 91A @Haute Temperature 0.2",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "KIMYA TPC 91A @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Haute Temperature 0.2 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

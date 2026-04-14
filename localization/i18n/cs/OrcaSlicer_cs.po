@@ -17782,10 +17782,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Nastavení pozice"
 
-#~ msgid "%"
-#~ msgstr "%"
-
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -17843,7 +17839,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "SD karta Abnormální"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "Vysunutí zařízení  %s(%s) se nezdařilo."
 
@@ -17858,21 +17853,6 @@ msgstr ""
 
 #~ msgid "Publish was canceled"
 #~ msgstr "Publikování bylo zrušeno"
-
-#~ msgid "Search"
-#~ msgstr "Vyhledávání"
-
-#~ msgid "My Device"
-#~ msgstr "Moje zařízení"
-
-#~ msgid "Other Device"
-#~ msgstr "Jiné zařízení"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Nemohu najít moje zařízení?"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Úprava názvu zařízení"
 
 #~ msgid "Ramming settings"
 #~ msgstr "Nastavení rapidní extruze"
@@ -17962,7 +17942,6 @@ msgstr ""
 #~ msgid "Spacing of interface lines. Zero means solid interface."
 #~ msgstr "Rozestup linek. Nula znamená pevné rozhraní"
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -18048,7 +18027,6 @@ msgstr ""
 #~ "stabilitě tištěny s dvojitými stěnami. Nastavte tuto hodnotu na nulu, "
 #~ "abyste zakázali dvojité stěny."
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Generování dráhy nástroje ve vrstvě %d"
 
@@ -18064,29 +18042,24 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Podpěry: generování dráhy nástroje"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Podpěry: generování polygonů na vrstvě %d"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Podpěry: oprava děr ve vrstvě %d"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Podpěry: šíření větví na vrstvě %d"
 
 #~ msgid "Stopped."
 #~ msgstr "Zastaveno."
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Spojení selhalo [%d]!"
 
 #~ msgid "Initialize failed (Device connection not ready)!"
 #~ msgstr "Inicializace se nezdařila (Připojení zařízení není připraveno)!"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "Inicializace se nezdařila (%s)!"
 
@@ -18130,7 +18103,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Hranice chlazení převisů"
 
-#, fuzzy, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -18191,9 +18163,6 @@ msgstr ""
 #~ msgstr "Zrušení výběru"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Měřítko"
-
 #~ msgid "Lift Z Enforcement"
 #~ msgstr "Vynutit Zvednout Z"
 
@@ -18203,7 +18172,6 @@ msgstr ""
 #~ msgid "Reverse on odd"
 #~ msgstr "Obrátit na lichých"
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -18371,7 +18339,6 @@ msgstr ""
 #~ "Bude uložen pouze jeden z výsledků se stejným názvem. Opravdu chcete "
 #~ "přepsat ostatní výsledky?"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "There is already a historical calibration result with the same name: %s. "
 #~ "Only one of the results with the same name is saved. Are you sure you "
@@ -18463,7 +18430,6 @@ msgstr ""
 #~ "Poznámka: Pokud se během tisku vloží nový filament, AMS nebude "
 #~ "automaticky číst všechny informace, dokud tisk neskončí."
 
-#, boost-format
 #~ msgid "Succeed to export G-code to %1%"
 #~ msgstr "Úspěšný export G-kódu do %1%"
 
@@ -18488,19 +18454,15 @@ msgstr ""
 #~ msgid "Initialize failed (Missing LAN ip of printer)!"
 #~ msgstr "Inicializace se nezdařila (chybějící LAN IP tiskárny)!"
 
-#, c-format, boost-format
 #~ msgid "Stopped [%d]!"
 #~ msgstr "Zastaveno [%d]!"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "Načítání selhalo [%d]!"
 
-#, c-format, boost-format
 #~ msgid "No files [%d]"
 #~ msgstr "Žádné soubory [%d]"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]"
 #~ msgstr "Načítání selhalo [%d]"
 
@@ -18510,7 +18472,6 @@ msgstr ""
 #~ msgid "Failed to parse model informations."
 #~ msgstr "Nepodařilo se zpracovat informace o modelu."
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
@@ -18569,33 +18530,6 @@ msgstr ""
 #~ "absolutní extruze). Čistící věž je kompatibilní pouze s relativním "
 #~ "režimem. Na tiskárnách BambuLab je vždy povolen. Výchozí je zaškrtnuto"
 
-#~ msgid "Movement:"
-#~ msgstr "Přejezd:"
-
-#~ msgid "Movement"
-#~ msgstr "Přejezd"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Automatický segment"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Poměr hloubky"
-
-#~ msgid "Prizm"
-#~ msgstr "Hranol"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "spojka je mimo obrys řezu"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "spojky jsou mimo obrys řezu"
-
-#~ msgid "connector is out of object"
-#~ msgstr "spojka je mimo objekt"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "spojky jsou mimo objekt"
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -18611,27 +18545,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "Výjimka"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "Vyberte SLA archiv:"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Importovat model a profil"
-
-#~ msgid "Import profile only"
-#~ msgstr "Importovat pouze profil"
-
-#~ msgid "Import model only"
-#~ msgstr "Importujte pouze model"
-
-#~ msgid "Accurate"
-#~ msgstr "Přesné"
-
-#~ msgid "Balanced"
-#~ msgstr "Vyvážené"
-
-#~ msgid "Quick"
-#~ msgstr "Rychlé"
 
 #~ msgid ""
 #~ "Discribe how long the nozzle will move along the last path when retracting"
@@ -18665,7 +18578,6 @@ msgstr ""
 #~ msgid "Filling bed "
 #~ msgstr "Vyplňování podložky "
 
-#, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% vzor výplně nepodporuje 100%% hustotu."
 
@@ -18687,7 +18599,6 @@ msgstr ""
 #~ msgid "If enabled, G-code window will be displayed."
 #~ msgstr "Pokud je povoleno, zobrazí se okno s G-kódem."
 
-#, fuzzy, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr "Hustota vnitřní výplně, 100% znamená celistvou v celém rozsahu"
 
@@ -18697,7 +18608,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around tree support"
 #~ msgstr "Toto nastavení určuje počet stěn kolem podpěry stromu"
 
-#, c-format, boost-format
 #~ msgid " doesn't work at 100%% density "
 #~ msgstr " nefunguje při 100%% hustotě "
 
@@ -18734,7 +18644,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Při tisku podle objektu stroje s I3 strukturou nevytvoří časosběrná videa."
 
-#, c-format, boost-format
 #~ msgid "%s is not supported by AMS."
 #~ msgstr "%s není systémem AMS podporován."
 
@@ -18773,14 +18682,12 @@ msgstr ""
 #~ msgid "inner-outer-inner/infill"
 #~ msgstr "vnitřní-vnější-vnitřní/výplň"
 
-#, c-format, boost-format
 #~ msgid "%%"
 #~ msgstr "%%"
 
 #~ msgid "Export the objects as multiple STL."
 #~ msgstr "Exportovat objekty jako více STL souborů."
 
-#, boost-format
 #~ msgid "The selected preset: %1% was not found."
 #~ msgstr "Vybraná předvolba: %1% nebyla nalezena."
 
@@ -18892,7 +18799,6 @@ msgstr ""
 #~ msgid "Calibration of extrusion"
 #~ msgstr "Kalibrace extruze"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Bed temperature of other layer is lower than bed temperature of initial "
 #~ "layer for more than %d degrees Celsius.\n"

@@ -2460,8 +2460,12 @@ bool GUI_App::on_init_inner()
     const bool        build_hash_changed = !stored_build_hash.empty() && stored_build_hash != GIT_COMMIT_HASH;
     const bool        cosmyx_ver_changed = !stored_cosmyx_ver.empty() && stored_cosmyx_ver != COSMYX_PATCH_VERSION;
 
-    app_config->set("build_hash",     GIT_COMMIT_HASH);
-    app_config->set("cosmyx_version", COSMYX_PATCH_VERSION);
+    // Only write these values once — when AppData is first created (empty keys).
+    // They must never be overwritten so the popup keeps appearing until the user migrates.
+    if (stored_build_hash.empty())
+        app_config->set("build_hash",     GIT_COMMIT_HASH);
+    if (stored_cosmyx_ver.empty())
+        app_config->set("cosmyx_version", COSMYX_PATCH_VERSION);
 
     if (!first_run && (build_hash_changed || cosmyx_ver_changed) && !app_config->get_bool("skip_build_change_notify")) {
         m_pending_build_change_notify    = true;

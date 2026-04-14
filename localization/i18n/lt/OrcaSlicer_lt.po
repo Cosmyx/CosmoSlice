@@ -18923,10 +18923,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Nustatyti padėtį"
 
-#~ msgid "%"
-#~ msgstr "%"
-
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -19027,11 +19023,9 @@ msgstr ""
 #~ msgid "Your model needs support! Please make support material enable."
 #~ msgstr "Jūsų modeliui reikia atramų! Prašome įjungti atramų medžiagą."
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "Nepavyko išstumti įrenginio %s(%s)."
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "The 3mf's version %s is newer than %s's version %s, found following keys "
 #~ "unrecognized:"
@@ -19060,27 +19054,8 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Talpinimas atšauktas"
 
-#~ msgid "Search"
-#~ msgstr "Paieška"
-
-#~ msgid "My Device"
-#~ msgstr "Mano įrenginys"
-
-#~ msgid "Other Device"
-#~ msgstr "Kitas įrenginys"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Negalite rasti jūsų įrenginių?"
-
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "purkštukas įsimintas: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Modifikuojamas įrenginio pavadinimas"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Susieti su prieigos kodu"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "
@@ -19414,7 +19389,6 @@ msgstr ""
 #~ "būtų sutaupyta gija ir sutrumpintas spausdinimo laikas. Dėl to objektų "
 #~ "spalvos bus sumaišytos. Jis neveiks, jei nebus įjungtas pirminis bokštas."
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -19652,10 +19626,6 @@ msgstr ""
 #~ msgstr "Išjungti pasirinkimą"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Mastelis"
-
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Prisijungti nepavyko [%d]!"
 
@@ -19665,7 +19635,6 @@ msgstr ""
 #~ msgid "Initialize failed (Storage unavailable, insert SD card.)!"
 #~ msgstr "Inicijavimas nepavyko (Saugykla neprieinama, įdėkite SD kortelę!)"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "Inicijavimas nepavyko (%s)!"
 
@@ -19727,7 +19696,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Iškyšos aušinimo riba"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -19764,7 +19732,6 @@ msgstr ""
 #~ "atspausdintos su dvigubomis sienelėmis dėl stabilumo. Nustatykite šią "
 #~ "vertę lygią nuliui, kad nebūtų dvigubų sienelių."
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Atramos: generuoti įrankių trajektoriją sluoksnyje %d"
 
@@ -19780,15 +19747,12 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Atramos: generuoti įrankių trajektoriją"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Atramos: generuoti daugiakampius sluoksnyje %d"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Atramos: ištaisyti skyles sluoksnyje %d"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Atramos: skleisti šakas sluoksnyje %d"
 

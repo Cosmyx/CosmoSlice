@@ -19609,10 +19609,6 @@ msgstr ""
 #~ msgid "Set Position"
 #~ msgstr "Position setzen"
 
-#~ msgid "%"
-#~ msgstr "%"
-
-#, boost-format
 #~ msgid "%1%"
 #~ msgstr "%1%"
 
@@ -19673,7 +19669,6 @@ msgstr ""
 #~ msgid "SD Card Abnormal"
 #~ msgstr "SD-Karte fehlerhaft"
 
-#, c-format, boost-format
 #~ msgid "Ejecting of device %s(%s) has failed."
 #~ msgstr "Das Auswerfen des Geräts %s(%s) ist fehlgeschlagen."
 
@@ -19695,27 +19690,8 @@ msgstr ""
 #~ msgid "Publish was canceled"
 #~ msgstr "Veröffentlichung wurde abgebrochen"
 
-#~ msgid "Search"
-#~ msgstr "Suche"
-
-#~ msgid "My Device"
-#~ msgstr "Mein Gerät"
-
-#~ msgid "Other Device"
-#~ msgstr "Anderes Gerät"
-
-#~ msgid "Can't find my devices?"
-#~ msgstr "Kann das Geräte nicht finden?"
-
-#, c-format, boost-format
 #~ msgid "nozzle memorized: %.2f %s"
 #~ msgstr "Düse gemerkt: %.2f %s"
-
-#~ msgid "Modifying the device name"
-#~ msgstr "Den Gerätenamen ändern"
-
-#~ msgid "Bind with Access Code"
-#~ msgstr "Mit Zugangscode verbinden"
 
 #~ msgid ""
 #~ "When using support material for the support interface, we recommend the "
@@ -19867,7 +19843,6 @@ msgstr ""
 #~ msgid "Spacing of interface lines. Zero means solid interface."
 #~ msgstr "Abstand der Schnittstellenlinien. Null bedeutet feste Schnittstelle"
 
-#, fuzzy
 #~ msgid ""
 #~ "Minimum thickness of thin features. Model features that are thinner than "
 #~ "this value will not be printed, while features thicker than this value "
@@ -20052,7 +20027,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Diese Einstellung gibt die Anzahl der Wände um die Stützstrukturen an"
 
-#, c-format, boost-format
 #~ msgid "Support: generate toolpath at layer %d"
 #~ msgstr "Stützen: Werkzeugpfad auf Ebene %d erzeugen"
 
@@ -20068,20 +20042,14 @@ msgstr ""
 #~ msgid "Support: generate toolpath"
 #~ msgstr "Stützen: Werkzeugweg generieren"
 
-#, c-format, boost-format
 #~ msgid "Support: generate polygons at layer %d"
 #~ msgstr "Stützen: Polygone auf Ebene %d erzeugen"
 
-#, c-format, boost-format
 #~ msgid "Support: fix holes at layer %d"
 #~ msgstr "Stützen: Löcher in Schicht %d repairieren"
 
-#, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Stützen: Verbreiten von Zweigen auf Ebene %d"
-
-#~ msgid "Scale all"
-#~ msgstr "Alle skalieren"
 
 #~ msgid "Orca Slicer"
 #~ msgstr "Orca Slicer"
@@ -20092,7 +20060,6 @@ msgstr ""
 #~ msgid "Stopped."
 #~ msgstr "Gestoppt."
 
-#, c-format, boost-format
 #~ msgid "Connect failed [%d]!"
 #~ msgstr "Verbindung fehlgeschlagen [%d]!"
 
@@ -20105,7 +20072,6 @@ msgstr ""
 #~ "Initialisierung fehlgeschlagen (Speicher nicht verfügbar, MicroSD-Karte "
 #~ "einlegen.)!"
 
-#, c-format, boost-format
 #~ msgid "Initialize failed (%s)!"
 #~ msgstr "Initialisierung ist fehlgeschlagen (%s)!"
 
@@ -20158,7 +20124,6 @@ msgstr ""
 #~ msgid "Cooling overhang threshold"
 #~ msgstr "Schwellenwert für die Kühlung von Überhängen"
 
-#, c-format
 #~ msgid ""
 #~ "Force cooling fan to be specific speed when overhang degree of printed "
 #~ "part exceeds this value. Expressed as percentage which indicates how much "
@@ -20287,16 +20252,12 @@ msgstr ""
 #~ msgstr "Abwählen"
 
 #~ msgctxt "Verb"
-#~ msgid "Scale"
-#~ msgstr "Skalieren"
-
 #~ msgid "Lift Z Enforcement"
 #~ msgstr "Z-Höhe einhalten"
 
 #~ msgid "Z-hop when retract"
 #~ msgstr "Z-Hop beim Rückzug"
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -20354,7 +20315,6 @@ msgstr ""
 #~ "ungeraden Schichten unabhängig von ihrem Überhangsgrad in abwechselnden "
 #~ "Richtungen gedruckt werden."
 
-#, no-c-format, no-boost-format
 #~ msgid ""
 #~ "Number of mm the overhang need to be for the reversal to be considered "
 #~ "useful. Can be a % of the perimeter width.\n"
@@ -20775,7 +20735,6 @@ msgstr ""
 #~ "Nur eines der Ergebnisse mit dem gleichen Namen wird gespeichert. Sind "
 #~ "Sie sicher, dass Sie die anderen Ergebnisse überschreiben möchten?"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "There is already a historical calibration result with the same name: %s. "
 #~ "Only one of the results with the same name is saved. Are you sure you "
@@ -20990,7 +20949,6 @@ msgstr ""
 #~ "AMS nicht automatisch die Informationen ein, bis der Druckvorgang "
 #~ "abgeschlossen ist."
 
-#, boost-format
 #~ msgid "Succeed to export G-code to %1%"
 #~ msgstr "Erfolgreich G-Code nach %1% exportiert"
 
@@ -21016,19 +20974,15 @@ msgstr ""
 #~ msgid "Initialize failed (Missing LAN ip of printer)!"
 #~ msgstr "Initialisierung fehlgeschlagen (Fehlende LAN IP des Druckers)!"
 
-#, c-format, boost-format
 #~ msgid "Stopped [%d]!"
 #~ msgstr "[%d] gestoppt!"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]!"
 #~ msgstr "Laden fehlgeschlagen [%d]!"
 
-#, c-format, boost-format
 #~ msgid "No files [%d]"
 #~ msgstr "Keine Dateien [%d]"
 
-#, c-format, boost-format
 #~ msgid "Load failed [%d]"
 #~ msgstr "Laden fehlgeschlagen [%d]"
 
@@ -21041,7 +20995,6 @@ msgstr ""
 #~ msgid "File not exists."
 #~ msgstr "Datei existiert nicht."
 
-#, boost-format
 #~ msgid ""
 #~ "You have changed some settings of preset \"%1%\".\n"
 #~ "Would you like to keep these changed settings (new value) after switching "
@@ -21215,33 +21168,6 @@ msgstr ""
 #~ msgid "wiki"
 #~ msgstr "wiki"
 
-#~ msgid "Movement:"
-#~ msgstr "Bewegung:"
-
-#~ msgid "Movement"
-#~ msgstr "Bewegung"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Automatische Segmentierung"
-
-#~ msgid "Depth ratio"
-#~ msgstr "Tiefenverhältnis"
-
-#~ msgid "Prizm"
-#~ msgstr "Prisma"
-
-#~ msgid "connector is out of cut contour"
-#~ msgstr "Der Verbinder ist außerhalb des Schnittfläche"
-
-#~ msgid "connectors are out of cut contour"
-#~ msgstr "Verbinder sind außerhalb des Schnittfläche"
-
-#~ msgid "connector is out of object"
-#~ msgstr "Der Verbinder ist außerhalb des Objekts"
-
-#~ msgid "connectors is out of object"
-#~ msgstr "Verbinder sind außerhalb des Objekts"
-
 #~ msgid ""
 #~ "Invalid state.\n"
 #~ "No one part is selected for keep after cut"
@@ -21280,27 +21206,6 @@ msgstr ""
 
 #~ msgid "Exception"
 #~ msgstr "Ausnahme"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "SLA-Archiv auswählen:"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Modell und Profil importieren"
-
-#~ msgid "Import profile only"
-#~ msgstr "Nur Profil importieren"
-
-#~ msgid "Import model only"
-#~ msgstr "Importiere nur das Modell"
-
-#~ msgid "Accurate"
-#~ msgstr "Genau"
-
-#~ msgid "Balanced"
-#~ msgstr "Gleichmäßig"
-
-#~ msgid "Quick"
-#~ msgstr "Schnell"
 
 #~ msgid "Print sequence of inner wall and outer wall. "
 #~ msgstr "Druckreihenfolge der Innen- und Außenwand."
@@ -21346,7 +21251,6 @@ msgstr ""
 #~ msgid "Filling bed "
 #~ msgstr "Bett füllen"
 
-#, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "Das %1% Füllmuster unterstützt keine 100%% Dichte."
 
@@ -21359,7 +21263,6 @@ msgstr ""
 #~ "Ja - Automatisches auf das geradlinige Muster wechseln\n"
 #~ "Nein - Dichte automatisch auf den Standardwert unter 100% zurücksetzen"
 
-#, c-format, boost-format
 #~ msgid "This slicer file version %s is newer than %s's version:"
 #~ msgstr "Diese Slicer-Dateiversion %s ist neuer als die Version von %s:"
 
@@ -21370,7 +21273,6 @@ msgstr ""
 #~ "Möchten Sie Ihre Software aktualisieren, um alle Funktionen in dieser "
 #~ "Slicer-Datei zu aktivieren?\n"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "This slicer file version %s is newer than %s's version.\n"
 #~ "\n"
@@ -21392,7 +21294,6 @@ msgstr ""
 #~ "Die Schichthöhe darf das Limit in Druckereinstellungen -> Extruder -> "
 #~ "Schichthöhenlimits nicht überschreiten"
 
-#, c-format
 #~ msgid "Density of internal sparse infill, 100% means solid throughout"
 #~ msgstr "Dichte der inneren Füllung, 100%% bedeuten eine solide Füllung"
 
@@ -21410,7 +21311,6 @@ msgstr ""
 #~ msgid "This setting specify the count of walls around tree support"
 #~ msgstr "Diese Einstellung gibt die Anzahl der Wände um die Baumstütze an."
 
-#, c-format, boost-format
 #~ msgid " doesn't work at 100%% density "
 #~ msgstr " doesn't work at 100%% density "
 
@@ -21454,7 +21354,6 @@ msgstr ""
 #~ "Wenn nach Objekt gedruckt wird, werden bei Maschinen mit I3-Struktur "
 #~ "keine Zeitraffervideos erstellt."
 
-#, c-format, boost-format
 #~ msgid "%s is not supported by AMS."
 #~ msgstr "%s wird von AMS nicht unterstützt."
 
@@ -21494,14 +21393,12 @@ msgstr ""
 #~ msgid "inner-outer-inner/infill"
 #~ msgstr "Innen-Außen-Innen/Füllung"
 
-#, c-format, boost-format
 #~ msgid "%%"
 #~ msgstr "%%"
 
 #~ msgid "Export the objects as multiple STL."
 #~ msgstr "Die Objekte als mehrere STL-Dateien exportieren."
 
-#, boost-format
 #~ msgid "The selected preset: %1% was not found."
 #~ msgstr "Die ausgewählte Voreinstellung: %1% wurde nicht gefunden."
 
@@ -21618,7 +21515,6 @@ msgstr ""
 #~ msgid "Calibration of extrusion"
 #~ msgstr "Kalibrierung der Extrusion"
 
-#, c-format, boost-format
 #~ msgid ""
 #~ "Bed temperature of other layer is lower than bed temperature of initial "
 #~ "layer for more than %d degrees Celsius.\n"
