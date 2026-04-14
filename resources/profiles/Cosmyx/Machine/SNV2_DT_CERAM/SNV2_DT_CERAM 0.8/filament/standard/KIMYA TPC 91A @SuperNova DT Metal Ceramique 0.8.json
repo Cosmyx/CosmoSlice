@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL28_SNV2_DT_CERAM_08",
+    "name": "KIMYA TPC 91A @SuperNova DT Metal Ceramique 0.8",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "KIMYA TPC 91A @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx SuperNova Double Tete Metal Ceramique 0.8 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

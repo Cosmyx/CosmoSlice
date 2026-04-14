@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL23_NOVA_CERAM_04",
+    "name": "Cosmyx TPU 95A @Nova Metal Ceramique 0.4",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx TPU 95A @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Metal Ceramique 0.4 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

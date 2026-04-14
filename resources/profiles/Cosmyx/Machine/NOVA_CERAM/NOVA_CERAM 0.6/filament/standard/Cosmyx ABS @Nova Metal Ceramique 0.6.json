@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL18_NOVA_CERAM_06",
+    "name": "Cosmyx ABS @Nova Metal Ceramique 0.6",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx ABS @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Metal Ceramique 0.6 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

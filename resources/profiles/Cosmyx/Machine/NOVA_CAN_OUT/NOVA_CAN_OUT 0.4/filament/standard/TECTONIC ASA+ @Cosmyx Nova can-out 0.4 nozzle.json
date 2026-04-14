@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL29_NOVA_CAN_OUT_04",
+    "name": "TECTONIC ASA+ @Cosmyx Nova can-out 0.4 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TECTONIC ASA+ @Cosmyx Common 0.4 nozzle",
+    "compatible_printers": [
+        "Cosmyx Nova 0.4 nozzle can-out"
+    ],
+    "version": "14.04.2026.02"
+}

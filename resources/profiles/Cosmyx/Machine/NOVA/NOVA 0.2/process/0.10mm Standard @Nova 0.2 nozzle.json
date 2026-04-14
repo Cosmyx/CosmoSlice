@@ -1,0 +1,12 @@
+{
+    "type": "process",
+    "setting_id": "GP007",
+    "name": "0.10mm Standard @Nova 0.2 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_cosmyx_0.10_nozzle_0.2",
+    "compatible_printers": [
+        "Cosmyx Nova 0.2 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}
