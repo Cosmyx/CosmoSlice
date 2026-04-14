@@ -329,7 +329,19 @@ static wxArrayString get_exist_vendor_choices(VendorMap& vendors)
         vendors[users_models.name] = users_models;
     }
 
+    // Pinned vendors shown first in this exact order, then the rest alphabetically
+    static const std::vector<std::string> PINNED_VENDORS = {
+        "Cosmyx",
+    };
+    std::set<std::string> pinned_set(PINNED_VENDORS.begin(), PINNED_VENDORS.end());
+    for (const std::string& name : PINNED_VENDORS) {
+        auto it = vendors.find(name);
+        if (it == vendors.end()) continue;
+        if (it->second.models.empty() || it->second.id.empty()) continue;
+        choices.Add(name);
+    }
     for (const auto& vendor : vendors) {
+        if (pinned_set.count(vendor.first)) continue;
         if (vendor.second.models.empty() || vendor.second.id.empty()) continue;
         choices.Add(vendor.first);
     }
