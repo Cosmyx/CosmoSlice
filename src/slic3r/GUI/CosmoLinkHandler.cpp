@@ -77,27 +77,19 @@ bool CosmoLinkHandler::handle_add_printer(const std::map<std::string, std::strin
         return (it != params.end()) ? it->second : std::string{};
     };
 
-    // Copy params by value so the lambda can safely capture them.
     const std::string name  = get("name");
     const std::string host  = get("host");
     const std::string api   = get("api");
     const std::string webui = get("webui");
-
-    // Defer the dialog via CallAfter so it runs once the event loop is fully
-    // spinning. ShowModal() called synchronously from post_init() (which runs
-    // inside the first wxEVT_IDLE before the main frame has fully settled)
-    // silently fails on Windows.
-    wxGetApp().CallAfter([name, host, api, webui]() {
-        MainFrame* mf = wxGetApp().mainframe;
-        if (mf) {
+    MainFrame* mf = wxGetApp().mainframe;
+    if (mf) {
 #ifdef _WIN32
-            ::SetForegroundWindow(mf->GetHandle());
+        ::SetForegroundWindow(mf->GetHandle());
 #endif
-            mf->Raise();
-        }
-        CosmoAddPrinterDialog dlg(mf, name, host, api, webui);
-        dlg.ShowModal();
-    });
+        mf->Raise();
+    }
+    CosmoAddPrinterDialog dlg(mf, name, host, api, webui);
+    dlg.ShowModal();
     return true;
 }
 
