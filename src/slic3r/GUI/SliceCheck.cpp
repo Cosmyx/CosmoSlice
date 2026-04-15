@@ -117,13 +117,18 @@ void SliceCheckManager::load_all()
 
 void SliceCheckManager::run_pre_checks(wxWindow* parent)
 {
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: run_pre_checks — " << m_checks.size() << " check(s) loaded";
     std::vector<SliceCheck> triggered;
     for (const auto& c : m_checks) {
         if (c.type != SliceCheckType::PRE)     continue;
         if (is_tag_muted(c.tag))               continue;
-        if (c.condition_src.empty() || evaluate_condition(c.condition_src))
+        bool fires = c.condition_src.empty() || evaluate_condition(c.condition_src);
+        BOOST_LOG_TRIVIAL(debug) << "SliceCheck: [" << c.tag << "] \"" << c.title
+                                  << "\" => " << (fires ? "TRIGGERED" : "skipped");
+        if (fires)
             triggered.push_back(c);
     }
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: " << triggered.size() << " check(s) triggered";
     if (triggered.empty()) return;
 
     SliceCheckDialog dlg(parent, triggered);

@@ -1,0 +1,15 @@
+/*
+  Unconditional test check — fires on EVERY slice.
+  Remove this file once the check system is confirmed working.
+*/
+
+TITLE: "Pre-Slice Check System"
+MESSAGE: "The pre-slice check system is working. This test check fires on every slice regardless of settings. Delete resources/profiles/Cosmyx/checks/00_always_test.check once confirmed."
+ICON: info
+TYPE: PRE
+TAG: tips
+
+BUTTONS: ["OK - I'll delete this file"]
+
+ON "OK - I'll delete this file":
+  # no action — just confirms the system is alive
