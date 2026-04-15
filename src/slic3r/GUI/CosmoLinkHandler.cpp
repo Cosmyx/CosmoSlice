@@ -6,6 +6,10 @@
 #include <boost/log/trivial.hpp>
 #include <wx/uri.h>
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 namespace Slic3r { namespace GUI {
 
 bool CosmoLinkHandler::handle(const std::string& url)
@@ -73,8 +77,19 @@ bool CosmoLinkHandler::handle_add_printer(const std::map<std::string, std::strin
         return (it != params.end()) ? it->second : std::string{};
     };
 
+    // Force the main window to the foreground before showing the dialog.
+    // Without this, on Windows the dialog can appear behind the browser
+    // that triggered the cosmoslice:// link.
+    MainFrame* mf = wxGetApp().mainframe;
+    if (mf) {
+#ifdef _WIN32
+        ::SetForegroundWindow(mf->GetHandle());
+#endif
+        mf->Raise();
+    }
+
     CosmoAddPrinterDialog dlg(
-        wxGetApp().mainframe,
+        mf,
         get("name"),
         get("host"),
         get("api"),
