@@ -1,4 +1,5 @@
 #include "Preferences.hpp"
+#include "SliceCheckDialog.hpp"
 #include "OptionsGroup.hpp"
 #include "GUI_App.hpp"
 #include "MainFrame.hpp"
@@ -1352,6 +1353,9 @@ wxWindow* PreferencesDialog::create_general_page()
     sizer_page->Add(title_develop_mode, 0, wxTOP | wxEXPAND, FromDIP(20));
     sizer_page->Add(item_develop_mode, 0, wxTOP, FromDIP(3));
     sizer_page->Add(item_skip_ams_blacklist_check, 0, wxTOP, FromDIP(3));
+
+    // Pre-Slice Checks mute section
+    sizer_page->Add(create_slice_check_prefs_sizer(page), 0, wxEXPAND | wxTOP, FromDIP(20));
 
     page->SetSizer(sizer_page);
     page->Layout();

@@ -335,6 +335,10 @@ set(SLIC3R_GUI_SOURCES
     GUI/PlateSettingsDialog.hpp
     GUI/Preferences.cpp
     GUI/Preferences.hpp
+    GUI/SliceCheck.cpp
+    GUI/SliceCheck.hpp
+    GUI/SliceCheckDialog.cpp
+    GUI/SliceCheckDialog.hpp
     GUI/PresetComboBoxes.cpp
     GUI/PresetComboBoxes.hpp
     GUI/PresetHints.cpp

@@ -64,6 +64,7 @@
 #include "libslic3r/PresetBundle.hpp"
 #include "libslic3r/ProfileTranslator.hpp"
 #include "libslic3r/ClipperUtils.hpp"
+#include "SliceCheck.hpp"
 
 // For stl export
 #include "libslic3r/CSGMesh/ModelToCSGMesh.hpp"
@@ -7226,6 +7227,7 @@ void Plater::priv::on_action_slice_plate(SimpleEvent&)
         Model::setExtruderParams(config, numExtruders);
         Model::setPrintSpeedTable(config, print_config);
         m_slice_all = false;
+        SliceCheckManager::get_instance().run_pre_checks(q);
         q->reslice();
         q->select_view_3D("Preview");
     }
@@ -7249,6 +7251,7 @@ void Plater::priv::on_action_slice_all(SimpleEvent&)
         m_cur_slice_plate = 0;
         //select plate
         q->select_plate(m_cur_slice_plate);
+        SliceCheckManager::get_instance().run_pre_checks(q);
         q->reslice();
         if (!m_is_publishing)
             q->select_view_3D("Preview");
@@ -7289,6 +7292,8 @@ void Plater::priv::on_action_print_plate(SimpleEvent&)
     if (q != nullptr) {
         BOOST_LOG_TRIVIAL(debug) << __FUNCTION__ << ":received print plate event\n" ;
     }
+
+    SliceCheckManager::get_instance().run_post_checks(q);
 
     PresetBundle& preset_bundle = *wxGetApp().preset_bundle;
     if (preset_bundle.use_bbl_network()) {

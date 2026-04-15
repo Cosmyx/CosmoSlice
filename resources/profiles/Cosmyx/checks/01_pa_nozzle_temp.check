@@ -1,0 +1,27 @@
+/*
+  Warn when a PA-family filament is loaded but the nozzle temperature
+  is below the minimum recommended for polyamide materials.
+  PA requires at least 260°C to avoid under-extrusion and delamination.
+*/
+
+TITLE: "PA Material - Nozzle Temperature"
+MESSAGE: "For Polyamide (PA) materials, a minimum nozzle temperature of 260°C is strongly recommended to avoid under-extrusion and layer delamination."
+ICON: warning
+TYPE: PRE
+TAG: filament
+
+WHEN:
+  filament_type[ANY] IN ["PA", "PA-CF", "PA-GF", "PA12-CF", "PA6-CF"]
+  AND nozzle_temperature < 260
+
+BUTTONS: ["Fix & Slice", "Slice Anyway", "Mute Filament Checks"]
+
+ON "Fix & Slice":
+  SET nozzle_temperature MAX(nozzle_temperature, 260)   # don't lower if already above
+  SET nozzle_temperature_initial_layer MAX(nozzle_temperature_initial_layer, 265)
+
+ON "Slice Anyway":
+  # proceed without changes
+
+ON "Mute Filament Checks":
+  SUPPRESS_TAG

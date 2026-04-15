@@ -1,0 +1,27 @@
+/*
+  Warn when a PA-family filament is loaded but the bed temperature
+  is below the minimum recommended for polyamide materials.
+  PA requires at least 85°C bed temperature to prevent warping and adhesion failure.
+*/
+
+TITLE: "PA Material - Bed Temperature"
+MESSAGE: "For Polyamide (PA) materials, a minimum bed temperature of 85°C is strongly recommended to prevent warping and ensure proper first-layer adhesion."
+ICON: warning
+TYPE: PRE
+TAG: filament
+
+WHEN:
+  filament_type[ANY] IN ["PA", "PA-CF", "PA-GF", "PA12-CF", "PA6-CF"]
+  AND bed_temperature < 85
+
+BUTTONS: ["Fix & Slice", "Slice Anyway", "Mute Filament Checks"]
+
+ON "Fix & Slice":
+  SET bed_temperature MAX(bed_temperature, 85)
+  SET bed_temperature_initial_layer MAX(bed_temperature_initial_layer, 90)
+
+ON "Slice Anyway":
+  # proceed without changes
+
+ON "Mute Filament Checks":
+  SUPPRESS_TAG

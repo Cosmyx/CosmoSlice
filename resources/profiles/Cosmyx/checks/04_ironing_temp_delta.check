@@ -1,0 +1,27 @@
+/*
+  Warn when ironing is enabled but the ironing temperature delta is zero
+  (ironing_temperature == 0 means "same as top surface temperature").
+  For best ironing results, a small positive temperature delta (5–15°C above
+  the standard nozzle temperature) significantly improves surface quality.
+*/
+
+TITLE: "Ironing - Temperature Delta"
+MESSAGE: "Ironing is enabled with no additional temperature increase. Setting the ironing temperature 5–15°C above the standard nozzle temperature produces noticeably smoother top surfaces."
+ICON: info
+TYPE: PRE
+TAG: process
+
+WHEN:
+  ironing_type != "no ironing"
+  AND ironing_temperature == 0
+
+BUTTONS: ["Apply Suggested Delta", "Keep As-Is", "Mute Process Checks"]
+
+ON "Apply Suggested Delta":
+  SET ironing_temperature nozzle_temperature + 10   # +10°C above standard nozzle temp
+
+ON "Keep As-Is":
+  # proceed without changes
+
+ON "Mute Process Checks":
+  SUPPRESS_TAG

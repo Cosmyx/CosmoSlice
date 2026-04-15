@@ -1,0 +1,24 @@
+/*
+  Warn when an abrasive filament (carbon-fiber or glass-fiber reinforced)
+  is loaded with a brass nozzle (nozzle_hrc <= 2).
+  Brass nozzles wear extremely quickly with abrasive materials — this is
+  a hardware damage risk that cannot be fixed by adjusting settings.
+*/
+
+TITLE: "Abrasive Filament + Brass Nozzle"
+MESSAGE: "Carbon-fiber and glass-fiber reinforced filaments will rapidly wear a brass nozzle. Switch to a hardened steel nozzle (HRC 50+), or accept significantly reduced nozzle lifespan."
+ICON: error
+TYPE: PRE
+TAG: machine
+
+WHEN:
+  filament_type[ANY] IN ["PA-CF", "PA-GF", "PLA-CF", "PLA-GF", "PETG-CF", "ABS-GF", "PC-CF", "ASA-CF"]
+  AND nozzle_hrc <= 2
+
+BUTTONS: ["I Understand", "Mute Printer Checks"]
+
+ON "I Understand":
+  # no SET lines — user acknowledged the risk, just proceeds
+
+ON "Mute Printer Checks":
+  SUPPRESS_TAG
