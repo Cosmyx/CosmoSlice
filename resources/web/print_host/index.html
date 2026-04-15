@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' 'unsafe-inline' data:; img-src data: 'self';">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="panel">
+  <h1>{TITLE}</h1>
+
+  <div class="row">
+    <label for="fname">{FILENAME_LABEL}</label>
+    <input id="fname" type="text"
+           placeholder="{PLACEHOLDER}"
+           value="{FILENAME}"/>
+  </div>
+
+  <div class="checks">
+    <label><input id="c1" type="checkbox" {C1}/> {AUTO_PRINT_LABEL}</label>
+  </div>
+
+  <div class="btnbar">
+    <button id="cancel" onclick="location.href='app://cancel'">
+      {CANCEL_LABEL}
+    </button>
+    <button id="go" onclick="(function(){
+        var c1 = document.getElementById('c1').checked ? 1 : 0;
+        var f  = document.getElementById('fname').value;
+        location.href = 'app://submit?c1=' + c1 + '&f=' + encodeURIComponent(f);
+    })()">
+      {VALIDATE_LABEL}
+    </button>
+  </div>
+</div>
+</body>
+</html>

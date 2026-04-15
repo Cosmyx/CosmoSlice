@@ -12939,8 +12939,16 @@ void Plater::send_gcode_legacy(int plate_idx, Export3mfProgressFn proFn, bool us
         const auto  host_type     = opt != nullptr ? opt->value : htElegooLink;
         auto        config        = get_app_config();
 
+        const Preset& printer_preset = wxGetApp().preset_bundle->printers.get_edited_preset();
+        const bool    is_cosmyx      = printer_preset.vendor != nullptr &&
+                                       printer_preset.vendor->name == "Cosmyx";
+
         std::unique_ptr<PrintHostSendDialog> pDlg;
-        if (host_type == htElegooLink) {
+        if (is_cosmyx) {
+            pDlg = std::make_unique<CosmyxPrintHostSendDialog>(default_output_file, upload_job.printhost->get_post_upload_actions(), groups,
+                                                               storage_paths, storage_names,
+                                                               config->get_bool("open_device_tab_post_upload"));
+        } else if (host_type == htElegooLink) {
             pDlg = std::make_unique<ElegooPrintHostSendDialog>(default_output_file, upload_job.printhost->get_post_upload_actions(), groups,
                                                                storage_paths, storage_names,
                                                                config->get_bool("open_device_tab_post_upload"));
