@@ -30,6 +30,7 @@
 #include <boost/format.hpp>
 #include <boost/lexical_cast.hpp>
 #include <boost/log/trivial.hpp>
+#include "libslic3r/CosmoLog.hpp"
 #include <boost/nowide/convert.hpp>
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
@@ -2060,6 +2061,17 @@ void GUI_App::init_app_config()
     set_log_path_and_level(log_filename, 3);
 #endif
 
+    // Cosmo log — same session timestamp, separate file in the same log folder.
+    std::stringstream cosmo_buf;
+    cosmo_buf << std::put_time(now_time, "cosmo_%a_%b_%d_%H_%M_%S_");
+    cosmo_buf << get_current_pid() << ".log";
+#if !BBL_RELEASE_TO_PUBLIC
+    set_cosmo_log_path_and_level(cosmo_buf.str(), 5);
+#else
+    set_cosmo_log_path_and_level(cosmo_buf.str(), 3);
+#endif
+    COSMO_LOG(info) << "[GUI_App] CosmoSlice log initialized — version " << COSMYX_PATCH_VERSION;
+
     //BBS: remove GCodeViewer as seperate APP logic
 	if (!app_config)
         app_config = new AppConfig();
@@ -2460,14 +2472,22 @@ bool GUI_App::on_init_inner()
     const bool        build_hash_changed = !stored_build_hash.empty() && stored_build_hash != GIT_COMMIT_HASH;
     const bool        cosmyx_ver_changed = !stored_cosmyx_ver.empty() && stored_cosmyx_ver != COSMYX_PATCH_VERSION;
 
+    COSMO_LOG(info) << "[GUI_App] Version check — stored: " << stored_cosmyx_ver
+                    << "  current: " << COSMYX_PATCH_VERSION
+                    << (first_run ? "  (first run)" : "");
+
     // Only write these values once — when AppData is first created (empty keys).
     // They must never be overwritten so the popup keeps appearing until the user migrates.
     if (stored_build_hash.empty())
         app_config->set("build_hash",     GIT_COMMIT_HASH);
-    if (stored_cosmyx_ver.empty())
+    if (stored_cosmyx_ver.empty()) {
+        COSMO_LOG(info) << "[GUI_App] Storing initial Cosmyx version: " << COSMYX_PATCH_VERSION;
         app_config->set("cosmyx_version", COSMYX_PATCH_VERSION);
+    }
 
     if (!first_run && (build_hash_changed || cosmyx_ver_changed) && !app_config->get_bool("skip_build_change_notify")) {
+        if (cosmyx_ver_changed)
+            COSMO_LOG(info) << "[GUI_App] Cosmyx version updated: " << stored_cosmyx_ver << " -> " << COSMYX_PATCH_VERSION;
         m_pending_build_change_notify    = true;
         m_pending_build_stored_hash      = stored_build_hash;
         m_pending_build_stored_cosmyx_ver = stored_cosmyx_ver;
