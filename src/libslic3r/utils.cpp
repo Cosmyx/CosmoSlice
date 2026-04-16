@@ -93,6 +93,10 @@
 
 namespace Slic3r {
 
+// Channel attribute keyword used to separate Cosmo messages from Orca messages.
+// Must be declared before set_logging_level() which references it.
+BOOST_LOG_ATTRIBUTE_KEYWORD(cosmo_channel, "Channel", std::string)
+
 static boost::log::trivial::severity_level logSeverity = boost::log::trivial::error;
 
 static boost::log::trivial::severity_level level_to_boost(unsigned level)
@@ -169,15 +173,11 @@ unsigned get_logging_level()
 
 boost::shared_ptr<boost::log::sinks::synchronous_sink<boost::log::sinks::text_file_backend>> g_log_sink;
 
-// Channel attribute keyword used to separate Cosmo messages from Orca messages.
-BOOST_LOG_ATTRIBUTE_KEYWORD(cosmo_channel, "Channel", std::string)
-
 // Global channel-severity logger for all Cosmyx-specific additions.
-namespace Slic3r {
+// Already inside namespace Slic3r — no extra namespace wrapper needed.
 boost::log::sources::severity_channel_logger_mt<
     boost::log::trivial::severity_level, std::string
 > g_cosmo_logger;
-}
 
 // Cosmo-dedicated log file sink.
 boost::shared_ptr<boost::log::sinks::synchronous_sink<boost::log::sinks::text_file_backend>> g_cosmo_log_sink;
