@@ -75,7 +75,11 @@ void SliceCheckManager::load_all()
     m_checks.clear();
 
     fs::path profiles_dir = fs::path(Slic3r::resources_dir()) / "profiles";
-    if (!fs::exists(profiles_dir) || !fs::is_directory(profiles_dir)) return;
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: scanning " << profiles_dir.string() << " for vendor check files";
+    if (!fs::exists(profiles_dir) || !fs::is_directory(profiles_dir)) {
+        BOOST_LOG_TRIVIAL(warning) << "SliceCheck: profiles dir not found — no checks loaded";
+        return;
+    }
 
     size_t total = 0;
     for (const auto& vendor_entry : fs::directory_iterator(profiles_dir)) {
@@ -94,13 +98,18 @@ void SliceCheckManager::load_all()
         }
         std::sort(files.begin(), files.end());
 
+        BOOST_LOG_TRIVIAL(info) << "SliceCheck: vendor \"" << vendor_name
+                                 << "\" — found " << files.size() << " .check file(s)";
+
         for (const auto& f : files) {
             try {
                 SliceCheck check = parse_file(f.string());
+                const std::string type_str = (check.type == SliceCheckType::POST) ? "POST" : "PRE";
+                BOOST_LOG_TRIVIAL(info) << "SliceCheck: loaded \"" << check.title
+                                         << "\" [" << check.tag << "/" << type_str
+                                         << "] from " << f.filename().string();
                 m_checks.push_back(std::move(check));
                 ++total;
-                BOOST_LOG_TRIVIAL(debug) << "SliceCheck: loaded " << vendor_name
-                                         << "/" << f.filename().string();
             } catch (const std::exception& ex) {
                 BOOST_LOG_TRIVIAL(warning) << "SliceCheck: skipping "
                                            << vendor_name << "/" << f.filename().string()
@@ -108,7 +117,7 @@ void SliceCheckManager::load_all()
             }
         }
     }
-    BOOST_LOG_TRIVIAL(info) << "SliceCheck: loaded " << total << " check file(s) from all vendors";
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: startup complete — " << total << " check(s) across all vendors";
 }
 
 // ---------------------------------------------------------------------------
@@ -117,37 +126,64 @@ void SliceCheckManager::load_all()
 
 void SliceCheckManager::run_pre_checks(wxWindow* parent)
 {
-    BOOST_LOG_TRIVIAL(info) << "SliceCheck: run_pre_checks — " << m_checks.size() << " check(s) loaded";
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: PRE — evaluating " << m_checks.size() << " check(s)";
     std::vector<SliceCheck> triggered;
     for (const auto& c : m_checks) {
-        if (c.type != SliceCheckType::PRE)     continue;
-        if (is_tag_muted(c.tag))               continue;
+        if (c.type != SliceCheckType::PRE) continue;
+        if (is_tag_muted(c.tag)) {
+            BOOST_LOG_TRIVIAL(info) << "SliceCheck:   [" << c.tag << "] \"" << c.title
+                                     << "\" — skipped (tag muted)";
+            continue;
+        }
+        const std::string cond_preview = c.condition_src.empty() ? "(unconditional)"
+            : c.condition_src.substr(0, std::min(c.condition_src.size(), size_t(80)));
+        BOOST_LOG_TRIVIAL(info) << "SliceCheck:   [" << c.tag << "] \"" << c.title
+                                 << "\" — condition: \"" << cond_preview << "\"";
         bool fires = c.condition_src.empty() || evaluate_condition(c.condition_src);
-        BOOST_LOG_TRIVIAL(debug) << "SliceCheck: [" << c.tag << "] \"" << c.title
-                                  << "\" => " << (fires ? "TRIGGERED" : "skipped");
+        BOOST_LOG_TRIVIAL(info) << "SliceCheck:   [" << c.tag << "] \"" << c.title
+                                 << "\" — " << (fires ? "TRIGGERED" : "skipped (condition false)");
         if (fires)
             triggered.push_back(c);
     }
-    BOOST_LOG_TRIVIAL(info) << "SliceCheck: " << triggered.size() << " check(s) triggered";
-    if (triggered.empty()) return;
-
+    if (triggered.empty()) {
+        BOOST_LOG_TRIVIAL(info) << "SliceCheck: PRE — 0 triggered, proceeding without dialog";
+        return;
+    }
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: PRE — " << triggered.size() << " triggered, showing dialog";
     SliceCheckDialog dlg(parent, triggered);
     dlg.ShowModal();
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: PRE — dialog closed, proceeding to slice";
 }
 
 void SliceCheckManager::run_post_checks(wxWindow* parent)
 {
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: POST — evaluating " << m_checks.size() << " check(s)";
     std::vector<SliceCheck> triggered;
     for (const auto& c : m_checks) {
-        if (c.type != SliceCheckType::POST)    continue;
-        if (is_tag_muted(c.tag))               continue;
-        if (c.condition_src.empty() || evaluate_condition(c.condition_src))
+        if (c.type != SliceCheckType::POST) continue;
+        if (is_tag_muted(c.tag)) {
+            BOOST_LOG_TRIVIAL(info) << "SliceCheck:   [" << c.tag << "] \"" << c.title
+                                     << "\" — skipped (tag muted)";
+            continue;
+        }
+        const std::string cond_preview = c.condition_src.empty() ? "(unconditional)"
+            : c.condition_src.substr(0, std::min(c.condition_src.size(), size_t(80)));
+        BOOST_LOG_TRIVIAL(info) << "SliceCheck:   [" << c.tag << "] \"" << c.title
+                                 << "\" — condition: \"" << cond_preview << "\"";
+        bool fires = c.condition_src.empty() || evaluate_condition(c.condition_src);
+        BOOST_LOG_TRIVIAL(info) << "SliceCheck:   [" << c.tag << "] \"" << c.title
+                                 << "\" — " << (fires ? "TRIGGERED" : "skipped (condition false)");
+        if (fires)
             triggered.push_back(c);
     }
-    if (triggered.empty()) return;
-
+    if (triggered.empty()) {
+        BOOST_LOG_TRIVIAL(info) << "SliceCheck: POST — 0 triggered, proceeding without dialog";
+        return;
+    }
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: POST — " << triggered.size() << " triggered, showing dialog";
     SliceCheckDialog dlg(parent, triggered);
     dlg.ShowModal();
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: POST — dialog closed";
 }
 
 // ---------------------------------------------------------------------------
@@ -157,8 +193,11 @@ void SliceCheckManager::run_post_checks(wxWindow* parent)
 void SliceCheckManager::apply_actions(const std::vector<SliceCheckAction>& actions,
                                        const std::string& check_tag)
 {
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: applying " << actions.size()
+                             << " action(s) for tag \"" << check_tag << "\"";
     for (const auto& action : actions) {
         if (action.suppress_tag) {
+            BOOST_LOG_TRIVIAL(info) << "SliceCheck:   SUPPRESS_TAG \"" << check_tag << "\"";
             set_tag_muted(check_tag, true);
             continue;
         }
@@ -210,8 +249,28 @@ void SliceCheckManager::apply_actions(const std::vector<SliceCheckAction>& actio
                 }
             }
 
+            // Log old value before changing
+            std::string old_val_str;
+            if (const ConfigOption* old_opt = cfg->optptr(action.key)) {
+                if (auto* v = dynamic_cast<const ConfigOptionFloat*>(old_opt))
+                    old_val_str = std::to_string(v->value);
+                else if (auto* v = dynamic_cast<const ConfigOptionInt*>(old_opt))
+                    old_val_str = std::to_string(v->value);
+                else if (auto* v = dynamic_cast<const ConfigOptionString*>(old_opt))
+                    old_val_str = v->value;
+                else if (auto* v = dynamic_cast<const ConfigOptionInts*>(old_opt))
+                    old_val_str = v->values.empty() ? "[]" : std::to_string(v->values[0]);
+                else if (auto* v = dynamic_cast<const ConfigOptionFloats*>(old_opt))
+                    old_val_str = v->values.empty() ? "[]" : std::to_string(v->values[0]);
+            }
+
             change_opt_value(*cfg, action.key, val);
             tab->on_value_change(action.key, val);
+
+            const std::string new_val_str = is_string_value ? str_value : std::to_string(result);
+            BOOST_LOG_TRIVIAL(info) << "SliceCheck:   SET " << action.key
+                                     << " = " << new_val_str
+                                     << "  (was " << old_val_str << ")";
             return true;
         };
 
@@ -221,6 +280,7 @@ void SliceCheckManager::apply_actions(const std::vector<SliceCheckAction>& actio
             BOOST_LOG_TRIVIAL(warning) << "SliceCheck: key not found in any preset: " << action.key;
         }
     }
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: apply complete";
 }
 
 // ===========================================================================
@@ -349,6 +409,7 @@ SliceCheckAction SliceCheckManager::parse_action_line(const std::string& line)
 
 SliceCheck SliceCheckManager::parse_file(const std::string& path)
 {
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: parsing " << path;
     std::ifstream file(path);
     if (!file.is_open())
         throw std::runtime_error("cannot open file");
@@ -475,6 +536,12 @@ SliceCheck SliceCheckManager::parse_file(const std::string& path)
     if (cfg_key_for_tag(check.tag) == nullptr)
         throw std::runtime_error("unknown TAG: " + check.tag + " (must be filament/process/machine/safety/tips)");
 
+    const std::string type_str = (check.type == SliceCheckType::POST) ? "POST" : "PRE";
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: parsed OK — title=\"" << check.title
+                             << "\" tag=" << check.tag
+                             << " type=" << type_str
+                             << " condition=" << (check.condition_src.empty() ? "empty" : "set")
+                             << " buttons=" << check.buttons.size();
     return check;
 }
 
@@ -843,7 +910,11 @@ bool SliceCheckManager::evaluate_condition(const std::string& expr) const
     try {
         CondLexer lexer(expr);
         CondParser parser(lexer, cfg, num_extruders);
-        return parser.parse_expr();
+        bool result = parser.parse_expr();
+        const std::string preview = expr.substr(0, std::min(expr.size(), size_t(80)));
+        BOOST_LOG_TRIVIAL(info) << "SliceCheck: condition eval: \""
+                                 << preview << "\" => " << (result ? "true" : "false");
+        return result;
     } catch (const std::exception& ex) {
         BOOST_LOG_TRIVIAL(warning) << "SliceCheck: condition eval error: " << ex.what()
                                    << " expr: " << expr;

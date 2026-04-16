@@ -7,6 +7,7 @@
 #include "libslic3r/AppConfig.hpp"
 #include "libslic3r/ProfileTranslator.hpp"
 #include "GUI_Utils.hpp"
+#include <boost/log/trivial.hpp>
 
 #include <wx/panel.h>
 #include <wx/stattext.h>
@@ -50,6 +51,7 @@ SliceCheckDialog::SliceCheckDialog(wxWindow* parent, const std::vector<SliceChec
                 wxDefaultPosition, wxSize(FromDIP(480), -1),
                 wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER)
 {
+    BOOST_LOG_TRIVIAL(info) << "SliceCheck: dialog opening with " << checks.size() << " check(s)";
     SetBackgroundColour(*wxWHITE);
     build_ui(checks);
     Fit();
@@ -145,12 +147,17 @@ void SliceCheckDialog::build_ui(const std::vector<SliceCheck>& checks)
             btn->SetMinSize(wxSize(-1, FromDIP(28)));
 
             // Capture by value
-            auto actions = btn_def.actions;
-            auto tag     = check.tag;
-            auto* dlg    = this;
+            auto actions   = btn_def.actions;
+            auto tag       = check.tag;
+            auto btn_label = btn_def.label;
+            auto chk_title = check.title;
+            auto* dlg      = this;
 
-            btn->Bind(wxEVT_BUTTON, [actions, tag, dlg](wxCommandEvent& /*e*/) {
+            btn->Bind(wxEVT_BUTTON, [actions, tag, btn_label, chk_title, dlg](wxCommandEvent& /*e*/) {
+                BOOST_LOG_TRIVIAL(info) << "SliceCheck: button \"" << btn_label
+                                         << "\" clicked on check \"" << chk_title << "\"";
                 SliceCheckManager::apply_actions(actions, tag);
+                BOOST_LOG_TRIVIAL(info) << "SliceCheck: dialog closed";
                 dlg->EndModal(wxID_OK);
             });
 
