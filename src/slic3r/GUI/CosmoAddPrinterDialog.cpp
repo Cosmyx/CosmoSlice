@@ -27,6 +27,7 @@ CosmoAddPrinterDialog::CosmoAddPrinterDialog(wxWindow*          parent,
                wxDefaultPosition, wxDefaultSize,
                wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER)
 {
+    BOOST_LOG_TRIVIAL(info) << "[CosmoLink] CosmoAddPrinterDialog constructor start (parent=" << (parent ? "valid" : "null") << ")";
     auto* main_sizer = new wxBoxSizer(wxVERTICAL);
 
     // ---- Header -------------------------------------------------------
@@ -41,17 +42,21 @@ CosmoAddPrinterDialog::CosmoAddPrinterDialog(wxWindow*          parent,
 
     m_choice_preset = new wxChoice(this, wxID_ANY);
     {
+        BOOST_LOG_TRIVIAL(info) << "[CosmoLink] Dialog: loading printer presets (preset_bundle=" << (wxGetApp().preset_bundle ? "valid" : "null") << ")";
         const PresetCollection& printers = wxGetApp().preset_bundle->printers;
         const std::string& current_name  = printers.get_edited_preset().name;
+        BOOST_LOG_TRIVIAL(info) << "[CosmoLink] Dialog: current preset='" << current_name << "'";
         int sel = 0, idx = 0;
         for (const Preset& p : printers.get_presets()) {
             if (!p.is_visible || p.is_default)
                 continue;
+            BOOST_LOG_TRIVIAL(info) << "[CosmoLink] Dialog: adding preset '" << p.name << "'";
             m_choice_preset->Append(wxString::FromUTF8(p.name));
             if (p.name == current_name)
                 sel = idx;
             ++idx;
         }
+        BOOST_LOG_TRIVIAL(info) << "[CosmoLink] Dialog: " << idx << " preset(s) loaded, selection=" << sel;
         if (m_choice_preset->GetCount() > 0)
             m_choice_preset->SetSelection(sel);
     }
@@ -87,6 +92,7 @@ CosmoAddPrinterDialog::CosmoAddPrinterDialog(wxWindow*          parent,
 
     SetSizerAndFit(main_sizer);
     CentreOnParent();
+    BOOST_LOG_TRIVIAL(info) << "[CosmoLink] CosmoAddPrinterDialog constructor complete";
 }
 
 // ---------------------------------------------------------------------------

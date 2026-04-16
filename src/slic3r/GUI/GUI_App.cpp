@@ -707,11 +707,14 @@ static void register_win32_device_notification_event()
     });
 
 	wxWindow::MSWRegisterMessageHandler(WM_COPYDATA, [](wxWindow* win, WXUINT /* nMsg */, WXWPARAM wParam, WXLPARAM lParam) {
+		BOOST_LOG_TRIVIAL(info) << "[CosmoLink] WM_COPYDATA received";
 		COPYDATASTRUCT* copy_data_structure = { 0 };
 		copy_data_structure = (COPYDATASTRUCT*)lParam;
 		if (copy_data_structure->dwData == 1) {
 			LPCWSTR arguments = (LPCWSTR)copy_data_structure->lpData;
-			Slic3r::GUI::wxGetApp().other_instance_message_handler()->handle_message(boost::nowide::narrow(arguments));
+			std::string msg = boost::nowide::narrow(arguments);
+			BOOST_LOG_TRIVIAL(info) << "[CosmoLink] WM_COPYDATA message='" << msg << "'";
+			Slic3r::GUI::wxGetApp().other_instance_message_handler()->handle_message(msg);
 		}
 		return true;
 		});
@@ -811,12 +814,16 @@ void GUI_App::post_init()
     m_open_method = "double_click";
     bool switch_to_3d = false;
 
+    BOOST_LOG_TRIVIAL(info) << "[CosmoLink] post_init() called. input_files count=" << this->init_params->input_files.size();
+
     if (!this->init_params->input_files.empty()) {
 
         BOOST_LOG_TRIVIAL(info) << __FUNCTION__ << boost::format(", init with input files, size %1%, input_gcode %2%")
             %this->init_params->input_files.size() %this->init_params->input_gcode;
         const auto first_url = this->init_params->input_files.front();
+        BOOST_LOG_TRIVIAL(info) << "[CosmoLink] post_init: first input file = '" << first_url << "'";
         if (this->init_params->input_files.size() == 1 && is_cosmoslice_url(first_url)) {
+            BOOST_LOG_TRIVIAL(info) << "[CosmoLink] post_init: detected cosmoslice URL, calling handler";
             switch_to_3d = true;
             CosmoLinkHandler::handle(first_url);
         } else if (this->init_params->input_files.size() == 1 && is_supported_open_protocol(first_url)) {
