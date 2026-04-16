@@ -173,9 +173,11 @@ boost::shared_ptr<boost::log::sinks::synchronous_sink<boost::log::sinks::text_fi
 BOOST_LOG_ATTRIBUTE_KEYWORD(cosmo_channel, "Channel", std::string)
 
 // Global channel-severity logger for all Cosmyx-specific additions.
+namespace Slic3r {
 boost::log::sources::severity_channel_logger_mt<
     boost::log::trivial::severity_level, std::string
-> Slic3r::g_cosmo_logger;
+> g_cosmo_logger;
+}
 
 // Cosmo-dedicated log file sink.
 boost::shared_ptr<boost::log::sinks::synchronous_sink<boost::log::sinks::text_file_backend>> g_cosmo_log_sink;
