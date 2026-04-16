@@ -117,9 +117,14 @@ void set_logging_level(unsigned int level)
 {
     logSeverity = level_to_boost(level);
 
+    // Always let Cosmo-channel messages through the global gate — their severity
+    // is controlled independently at the cosmo sink level.  Orca messages are still
+    // gated by logSeverity as before.
     boost::log::core::get()->set_filter
     (
-        boost::log::trivial::severity >= logSeverity
+        boost::log::trivial::severity >= logSeverity ||
+        (boost::log::expressions::has_attr(cosmo_channel) &&
+         cosmo_channel == std::string("cosmo"))
     );
 }
 
@@ -390,7 +395,7 @@ void set_log_path_and_level(const std::string& file, unsigned int level)
 	return;
 }
 
-void set_cosmo_log_path_and_level(const std::string& file, unsigned int level)
+void set_cosmo_log_path_and_level(const std::string& file)
 {
 #ifdef __APPLE__
 	if (!is_macos_support_boost_add_file_log()) {

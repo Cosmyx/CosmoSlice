@@ -2481,14 +2481,11 @@ void GUI_App::init_app_config()
 #endif
 
     // Cosmo log — same session timestamp, separate file in the same log folder.
+    // Always trace-level: we want full visibility into all Cosmyx additions in every build.
     std::stringstream cosmo_buf;
     cosmo_buf << std::put_time(now_time, "cosmo_%a_%b_%d_%H_%M_%S_");
     cosmo_buf << get_current_pid() << ".log";
-#if !BBL_RELEASE_TO_PUBLIC
-    set_cosmo_log_path_and_level(cosmo_buf.str(), 5);
-#else
-    set_cosmo_log_path_and_level(cosmo_buf.str(), 3);
-#endif
+    set_cosmo_log_path_and_level(cosmo_buf.str());
     COSMO_LOG(info) << "[GUI_App] CosmoSlice log initialized — version " << COSMYX_PATCH_VERSION;
 
     //BBS: remove GCodeViewer as seperate APP logic
