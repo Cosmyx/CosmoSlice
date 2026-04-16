@@ -216,7 +216,8 @@ void Tab::create_preset_tab()
                     m_preset_bundle->physical_printers.unselect_printer();
 
                 // select preset
-                std::string preset_name = m_presets_choice->GetString(selection).ToUTF8().data();
+                std::string preset_name = Slic3r::ProfileTranslator::instance().untranslate(
+                    m_presets_choice->GetString(selection).ToUTF8().data());
                 select_preset(Preset::remove_suffix_modified(preset_name));
             }
         });
