@@ -1,4 +1,5 @@
 #include "libslic3r/Config.hpp"
+#include "libslic3r/CosmoLog.hpp"
 #include "libslic3r/libslic3r.h"
 #include "libslic3r/PresetBundle.hpp"
 #include "libslic3r/Model.hpp"
@@ -624,6 +625,7 @@ wxMenu* MenuFactory::append_submenu_add_handy_model(wxMenu* menu, ModelVolumeTyp
 
 // Cosmyx: unified submenu combining all Cosmyx 3D models with nested categories
 wxMenu* MenuFactory::append_submenu_cosmyx_models(wxMenu* menu, ModelVolumeType type) {
+    COSMO_LOG(info) << "[GUI_Factories] Building Cosmyx 3D Models submenu";
     auto cosmyx_main_menu = new wxMenu;
 
     // Create nested submenu for Dual Head Calibration Models
@@ -652,6 +654,7 @@ wxMenu* MenuFactory::append_submenu_cosmyx_models(wxMenu* menu, ModelVolumeType 
                 else
                     return;
 
+                COSMO_LOG(debug) << "[GUI_Factories] Loading Cosmyx model: " << file_name;
                 input_files.push_back(
                     boost::filesystem::path(Slic3r::resources_dir()) / "handy_models" / file_name);
                 plater()->load_files(input_files, LoadStrategy::LoadModel);
@@ -825,6 +828,7 @@ wxMenu* MenuFactory::append_submenu_cosmyx_models(wxMenu* menu, ModelVolumeType 
                 else
                     return;
 
+                COSMO_LOG(debug) << "[GUI_Factories] Loading Cosmyx model: " << file_name;
                 input_files.push_back(
                     boost::filesystem::path(Slic3r::resources_dir()) / "handy_models" / file_name);
                 plater()->load_files(input_files, LoadStrategy::LoadModel);
@@ -876,6 +880,7 @@ wxMenu* MenuFactory::append_submenu_cosmyx_models(wxMenu* menu, ModelVolumeType 
                 else
                     return;
 
+                COSMO_LOG(debug) << "[GUI_Factories] Loading Cosmyx model: " << file_name;
                 input_files.push_back(
                     boost::filesystem::path(Slic3r::resources_dir()) / "handy_models" / file_name);
                 plater()->load_files(input_files, LoadStrategy::LoadModel);

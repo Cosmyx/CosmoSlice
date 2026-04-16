@@ -6,6 +6,7 @@
 #include "libslic3r/PrintConfig.hpp"
 #include "libslic3r/ProfileTranslator.hpp"
 #include "libslic3r/Utils.hpp"
+#include "libslic3r/CosmoLog.hpp"
 #include "libslic3r/Model.hpp"
 #include "libslic3r/GCode/GCodeProcessor.hpp"
 
@@ -3937,6 +3938,7 @@ void TabFilament::build()
         line.append_option(optgroup->get_option("textured_plate_temp"));
         optgroup->append_line(line);
 
+        COSMO_LOG(debug) << "[Tab] Adding Cosmyx Textured Bed settings section";
         line = { L("Cosmyx Textured Bed"),
                  L("Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off.") };
         line.append_option(optgroup->get_option("cosmyx_textured_bed_temp_initial_layer"));
