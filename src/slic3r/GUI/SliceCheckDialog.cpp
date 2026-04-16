@@ -149,7 +149,7 @@ void SliceCheckDialog::build_ui(const std::vector<SliceCheck>& checks)
             auto tag     = check.tag;
             auto* dlg    = this;
 
-            btn->Bind(wxEVT_LEFT_DOWN, [actions, tag, dlg](wxMouseEvent& /*e*/) {
+            btn->Bind(wxEVT_BUTTON, [actions, tag, dlg](wxCommandEvent& /*e*/) {
                 SliceCheckManager::apply_actions(actions, tag);
                 dlg->EndModal(wxID_OK);
             });
