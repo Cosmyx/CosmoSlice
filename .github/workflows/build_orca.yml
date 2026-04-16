@@ -187,14 +187,6 @@ jobs:
           name: CosmoSlice_Mac_${{ env.cosmyx_patch_ver }}
           path: ${{ github.workspace }}/OrcaSlicer_Mac_universal_${{ env.ver }}.dmg
 
-      - name: Upload OrcaSlicer_profile_validator DMG mac
-        if: inputs.os == 'macos-14'
-        uses: actions/upload-artifact@v4
-        with:
-          name: OrcaSlicer_profile_validator_Mac_universal_DMG_${{ env.ver }}
-          path: ${{ github.workspace }}/OrcaSlicer_profile_validator_Mac_universal_${{ env.ver }}.dmg
-          if-no-files-found: ignore
-
       - name: Deploy Mac release
         if: github.ref == 'refs/heads/main' && inputs.os == 'macos-14'
         uses: WebFreak001/deploy-nightly@v3.2.0
@@ -274,13 +266,6 @@ jobs:
         with:
           name: PDB
           path: ${{ github.workspace }}/build/src/Release/Debug_PDB_${{ env.ver }}_for_developers_only.7z
-
-      - name: Upload OrcaSlicer_profile_validator Win
-        if: inputs.os == 'windows-latest'
-        uses: actions/upload-artifact@v4
-        with:
-          name: OrcaSlicer_profile_validator_Windows_${{ env.ver }}
-          path: ${{ github.workspace }}/build/src/Release/OrcaSlicer_profile_validator.exe
 
       - name: Deploy Windows release portable
         if: github.ref == 'refs/heads/main' && inputs.os == 'windows-latest'
@@ -368,15 +353,6 @@ jobs:
         with:
           name: CosmoSlice_Linux_Ubuntu${{ env.ubuntu-ver }}_${{ env.cosmyx_patch_ver }}
           path: './build/OrcaSlicer_Linux_AppImage${{ env.ubuntu-ver-str }}_${{ env.ver }}.AppImage'
-
-      - name: Upload OrcaSlicer_profile_validator Ubuntu
-        if: ${{ ! env.ACT && inputs.os == 'ubuntu-20.04' || inputs.os == 'ubuntu-24.04' }}
-        env:
-          ubuntu-ver: ${{ (inputs.os == 'ubuntu-20.04' && '2004') || (inputs.os == 'ubuntu-24.04' && '2404') || '' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: OrcaSlicer_profile_validator_Linux_ubuntu_${{ env.ubuntu-ver }}_${{ env.ver }}
-          path: './build/src/Release/OrcaSlicer_profile_validator'
 
       - name: Deploy Ubuntu release
         if: ${{ ! env.ACT && github.ref == 'refs/heads/main' && (inputs.os == 'ubuntu-20.04' || inputs.os == 'ubuntu-24.04') }}
