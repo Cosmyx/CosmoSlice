@@ -15,7 +15,7 @@ namespace Slic3r { namespace GUI {
 
 bool CosmoLinkHandler::handle(const std::string& url)
 {
-    BOOST_LOG_TRIVIAL(info) << "[CosmoLink] handle() called with URL: " << url;
+    BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] handle() called with URL: " << url;
 
     static const std::string prefix = "cosmoslice://";
     if (url.size() <= prefix.size()) {
@@ -35,7 +35,7 @@ bool CosmoLinkHandler::handle(const std::string& url)
         query   = rest.substr(qpos + 1);
     }
 
-    BOOST_LOG_TRIVIAL(info) << "[CosmoLink] command='" << command << "' query='" << query << "'";
+    BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] command='" << command << "' query='" << query << "'";
 
     const auto params = parse_query(query);
 
@@ -77,7 +77,7 @@ std::map<std::string, std::string> CosmoLinkHandler::parse_query(const std::stri
 
 bool CosmoLinkHandler::handle_add_printer(const std::map<std::string, std::string>& params)
 {
-    BOOST_LOG_TRIVIAL(info) << "[CosmoLink] handle_add_printer() called";
+    BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] handle_add_printer() called";
 
     auto get = [&](const std::string& key) -> std::string {
         const auto it = params.find(key);
@@ -89,7 +89,7 @@ bool CosmoLinkHandler::handle_add_printer(const std::map<std::string, std::strin
     const std::string api   = get("api");
     const std::string webui = get("webui");
 
-    BOOST_LOG_TRIVIAL(info) << "[CosmoLink] name='" << name << "' host='" << host << "'";
+    BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] name='" << name << "' host='" << host << "'";
 
     MainFrame* mf = wxGetApp().mainframe;
     if (mf) {
@@ -99,13 +99,13 @@ bool CosmoLinkHandler::handle_add_printer(const std::map<std::string, std::strin
         mf->Raise();
     }
 
-    BOOST_LOG_TRIVIAL(info) << "[CosmoLink] About to create dialog (parent=" << (mf ? "valid" : "null") << ")";
+    BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] About to create dialog (parent=" << (mf ? "valid" : "null") << ")";
 
     try {
         CosmoAddPrinterDialog dlg(mf, name, host, api, webui);
-        BOOST_LOG_TRIVIAL(info) << "[CosmoLink] Dialog created, calling ShowModal()";
+        BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] Dialog created, calling ShowModal()";
         dlg.ShowModal();
-        BOOST_LOG_TRIVIAL(info) << "[CosmoLink] ShowModal() returned";
+        BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] ShowModal() returned";
     } catch (const std::exception& ex) {
         BOOST_LOG_TRIVIAL(error) << "[CosmoLink] Exception in dialog: " << ex.what();
         wxMessageBox(wxString::FromUTF8(std::string("CosmoLink dialog error: ") + ex.what()),

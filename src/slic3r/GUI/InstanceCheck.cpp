@@ -62,12 +62,12 @@ namespace instance_check_internal
 	};
 	static CommandLineAnalysis process_command_line(int argc, char** argv)
 	{
-		BOOST_LOG_TRIVIAL(info) << "[CosmoLink] process_command_line: argc=" << argc;
+		BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] process_command_line: argc=" << argc;
 		CommandLineAnalysis ret;
 		std::vector<std::string> arguments { argv[0] };
         for (int i = 1; i < argc; ++i) {
 			const std::string token = argv[i];
-			BOOST_LOG_TRIVIAL(info) << "[CosmoLink] process_command_line: argv[" << i << "] = '" << token << "'";
+			BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] process_command_line: argv[" << i << "] = '" << token << "'";
 			// Processing of boolean command line arguments shall match DynamicConfig::read_cli().
 			if (token == "--single-instance")
 				ret.should_send = true;
@@ -75,14 +75,14 @@ namespace instance_check_internal
 				ret.should_send = false;
 			else {
 				if (boost::starts_with(token, "cosmoslice://")) {
-					BOOST_LOG_TRIVIAL(info) << "[CosmoLink] process_command_line: cosmoslice:// URL detected -> should_send=true";
+					BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] process_command_line: cosmoslice:// URL detected -> should_send=true";
 					ret.should_send = true;
 				}
 				arguments.emplace_back(token);
 			}
 		}
 		ret.cl_string = escape_strings_cstyle(arguments);
-		BOOST_LOG_TRIVIAL(info) << "[CosmoLink] process_command_line: should_send="
+		BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] process_command_line: should_send="
 			<< (ret.should_send.has_value() ? (*ret.should_send ? "true" : "false") : "unset")
 			<< " cl_string='" << ret.cl_string << "'";
 		return ret;
@@ -119,20 +119,20 @@ namespace instance_check_internal
 		other_hash += (other_major << 32);
 
 		if (my_instance_hash == other_hash) {
-			BOOST_LOG_TRIVIAL(info) << "[CosmoLink] EnumWindowsProc: found matching CosmoSlice window (hwnd=" << hwnd << ")";
+			BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] EnumWindowsProc: found matching CosmoSlice window (hwnd=" << hwnd << ")";
 			l_bambu_studio_hwnd = hwnd;
 			ShowWindow(hwnd, SW_SHOWMAXIMIZED);
 			SetForegroundWindow(hwnd);
 			return false; // stop enumeration
 		}
-		BOOST_LOG_TRIVIAL(info) << "[CosmoLink] EnumWindowsProc: wxWindowNR found but hash mismatch (mine=" << my_instance_hash << " other=" << other_hash << ")";
+		BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] EnumWindowsProc: wxWindowNR found but hash mismatch (mine=" << my_instance_hash << " other=" << other_hash << ")";
 		return true;
 	}
 	static bool send_message(const std::string& message, const std::string &version)
 	{
-		BOOST_LOG_TRIVIAL(info) << "[CosmoLink] send_message: starting EnumWindows to find running instance";
+		BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] send_message: starting EnumWindows to find running instance";
 		if (!EnumWindows(EnumWindowsProc, 0)) {
-			BOOST_LOG_TRIVIAL(info) << "[CosmoLink] send_message: running instance found, sending WM_COPYDATA. message='" << message << "'";
+			BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] send_message: running instance found, sending WM_COPYDATA. message='" << message << "'";
 			std::wstring wstr = boost::nowide::widen(message);
 			std::unique_ptr<LPWSTR> command_line_args = std::make_unique<LPWSTR>(const_cast<LPWSTR>(wstr.c_str()));
 
@@ -141,10 +141,10 @@ namespace instance_check_internal
 			data_to_send.cbData = sizeof(TCHAR) * (wcslen(*command_line_args.get()) + 1);
 			data_to_send.lpData = *command_line_args.get();
 			SendMessage(l_bambu_studio_hwnd, WM_COPYDATA, 0, (LPARAM)&data_to_send);
-			BOOST_LOG_TRIVIAL(info) << "[CosmoLink] send_message: WM_COPYDATA sent";
+			BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] send_message: WM_COPYDATA sent";
 			return true;
 		}
-		BOOST_LOG_TRIVIAL(info) << "[CosmoLink] send_message: no running instance found by EnumWindows";
+		BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] send_message: no running instance found by EnumWindows";
 		return false;
 	}
 
@@ -338,21 +338,21 @@ bool instance_check(int argc, char** argv, bool app_config_single_instance)
 
 	std::string lock_name 	= std::to_string(hashed_path);
 	GUI::wxGetApp().set_instance_hash(hashed_path);
-	BOOST_LOG_TRIVIAL(info) << "[CosmoLink] instance_check: hash=" << lock_name;
+	BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] instance_check: hash=" << lock_name;
 	instance_check_internal::CommandLineAnalysis cla = instance_check_internal::process_command_line(argc, argv);
 	if (! cla.should_send.has_value())
 		cla.should_send = app_config_single_instance;
-	BOOST_LOG_TRIVIAL(info) << "[CosmoLink] instance_check: final should_send=" << (*cla.should_send ? "true" : "false");
+	BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] instance_check: final should_send=" << (*cla.should_send ? "true" : "false");
 #ifdef _WIN32
 	GUI::wxGetApp().init_single_instance_checker(lock_name + ".lock", data_dir() + "\\cache\\");
 	bool another_running = GUI::wxGetApp().single_instance_checker()->IsAnotherRunning();
-	BOOST_LOG_TRIVIAL(info) << "[CosmoLink] instance_check: IsAnotherRunning=" << (another_running ? "true" : "false");
+	BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] instance_check: IsAnotherRunning=" << (another_running ? "true" : "false");
 	if (cla.should_send.value() && another_running) {
 #else // mac & linx
 	// get_lock() creates the lockfile therefore *cla.should_send is checked after
 	if (instance_check_internal::get_lock(lock_name + ".lock", data_dir() + "/cache/") && *cla.should_send) {
 #endif
-		BOOST_LOG_TRIVIAL(info) << "[CosmoLink] instance_check: forwarding to running instance then exiting";
+		BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] instance_check: forwarding to running instance then exiting";
 		instance_check_internal::send_message(cla.cl_string, lock_name);
 		BOOST_LOG_TRIVIAL(error) << "Instance check: Another instance found. This instance will terminate. Lock file of current running instance is located at " << data_dir() <<
 #ifdef _WIN32
@@ -363,7 +363,7 @@ bool instance_check(int argc, char** argv, bool app_config_single_instance)
 			<< lock_name << ".lock";
 		return true;
 	}
-	BOOST_LOG_TRIVIAL(info) << "[CosmoLink] instance_check: this is the only instance, continuing startup";
+	BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] instance_check: this is the only instance, continuing startup";
 	
 	return false;
 }
@@ -490,7 +490,7 @@ namespace MessageHandlerInternal
 
 void OtherInstanceMessageHandler::handle_message(const std::string& message)
 {
-	BOOST_LOG_TRIVIAL(info) << "[CosmoLink] handle_message() called. message=" << message;
+	BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] handle_message() called. message=" << message;
 
 	std::vector<std::string> args;
 	bool parsed = unescape_strings_cstyle(message, args);
@@ -525,7 +525,7 @@ void OtherInstanceMessageHandler::handle_message(const std::string& message)
 	}
 	if (!downloads.empty())
 	{
-		BOOST_LOG_TRIVIAL(info) << "[CosmoLink] handle_message: posting " << downloads.size() << " download(s) to event handler (handler=" << (m_callback_evt_handler ? "valid" : "null") << ")";
+		BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] handle_message: posting " << downloads.size() << " download(s) to event handler (handler=" << (m_callback_evt_handler ? "valid" : "null") << ")";
 		wxPostEvent(m_callback_evt_handler, StartDownloadOtherInstanceEvent(GUI::EVT_START_DOWNLOAD_OTHER_INSTANCE, std::vector<std::string>(std::move(downloads))));
 	}
 }

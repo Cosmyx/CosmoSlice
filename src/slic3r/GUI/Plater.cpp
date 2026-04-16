@@ -3287,10 +3287,10 @@ Plater::priv::priv(Plater *q, MainFrame *main_frame)
     });
     
     this->q->Bind(EVT_START_DOWNLOAD_OTHER_INSTANCE, [](StartDownloadOtherInstanceEvent& evt) {
-        BOOST_LOG_TRIVIAL(info) << "[CosmoLink] EVT_START_DOWNLOAD_OTHER_INSTANCE fired, " << evt.data.size() << " URL(s)";
+        BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] EVT_START_DOWNLOAD_OTHER_INSTANCE fired, " << evt.data.size() << " URL(s)";
         wxGetApp().mainframe->Raise();
         for (size_t i = 0; i < evt.data.size(); ++i) {
-            BOOST_LOG_TRIVIAL(info) << "[CosmoLink] URL[" << i << "] = '" << evt.data[i] << "'";
+            BOOST_LOG_TRIVIAL(warning) << "[CosmoLink] URL[" << i << "] = '" << evt.data[i] << "'";
             if (is_cosmoslice_url(evt.data[i]))
                 CosmoLinkHandler::handle(evt.data[i]);
             else
