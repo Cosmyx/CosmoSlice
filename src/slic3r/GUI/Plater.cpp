@@ -1267,8 +1267,18 @@ void Sidebar::update_all_preset_comboboxes()
         auto print_btn_type = MainFrame::PrintSelectType::eExportGcode;
         wxString url = cfg.opt_string("print_host_webui").empty() ? cfg.opt_string("print_host") : cfg.opt_string("print_host_webui");
         wxString apikey;
-        if(url.empty())
-            url = wxString::Format("file://%s/web/orca/missing_connection.html", from_u8(resources_dir()));
+        if(url.empty()) {
+            auto printer_name = wxString::FromUTF8(preset_bundle.printers.get_edited_preset().name);
+            // Basic URL encoding for the printer name query parameter
+            printer_name.Replace("%",  "%25");
+            printer_name.Replace(" ",  "%20");
+            printer_name.Replace("&",  "%26");
+            printer_name.Replace("+",  "%2B");
+            printer_name.Replace("=",  "%3D");
+            printer_name.Replace("?",  "%3F");
+            printer_name.Replace("#",  "%23");
+            url = wxString::Format("file://%s/web/orca/missing_connection.html?printer=%s", from_u8(resources_dir()), printer_name);
+        }
         else {
             if (!url.Lower().starts_with("http"))
                 url = wxString::Format("http://%s", url);
