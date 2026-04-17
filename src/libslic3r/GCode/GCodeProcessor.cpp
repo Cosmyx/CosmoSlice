@@ -1745,6 +1745,31 @@ void GCodeProcessor::process_gcode_line(const GCodeReader::GCodeLine& line, bool
             process_T(line); // Select Tool
             break;
         default:
+            // Scan for TR= / TL= temperature parameters used in custom macros
+            // (e.g. "PREHEAT B=60 TL=215 TR=200") which OrcaSlicer would otherwise ignore.
+            // TL= maps to extruder 0, TR= maps to extruder 1 (matching first_layer_temperature[0/1]).
+            {
+                const std::string& raw = line.raw();
+                auto scan_temp_param = [&](const char* key, size_t extruder_idx) {
+                    if (extruder_idx >= m_extruder_temps.size())
+                        return;
+                    size_t pos = raw.find(key);
+                    while (pos != std::string::npos) {
+                        // Require word boundary before the key (space, tab, or line start)
+                        if (pos == 0 || raw[pos - 1] == ' ' || raw[pos - 1] == '\t') {
+                            const char* val_ptr = raw.c_str() + pos + strlen(key);
+                            char* end_ptr;
+                            float temp = strtof(val_ptr, &end_ptr);
+                            if (end_ptr != val_ptr)
+                                m_extruder_temps[extruder_idx] = temp;
+                            break;
+                        }
+                        pos = raw.find(key, pos + 1);
+                    }
+                };
+                scan_temp_param("TL=", 0);
+                scan_temp_param("TR=", 1);
+            }
             break;
         }
     }
