@@ -53,7 +53,6 @@
 #include <boost/log/sources/record_ostream.hpp>
 #include <boost/log/support/date_time.hpp>
 #include <boost/log/sources/severity_channel_logger.hpp>
-#include <boost/log/expressions/keyword.hpp>
 #include "CosmoLog.hpp"
 
 #include <boost/locale.hpp>
@@ -93,10 +92,6 @@
 
 namespace Slic3r {
 
-// Channel attribute keyword used to separate Cosmo messages from Orca messages.
-// Must be declared before set_logging_level() which references it.
-BOOST_LOG_ATTRIBUTE_KEYWORD(cosmo_channel, "Channel", std::string)
-
 static boost::log::trivial::severity_level logSeverity = boost::log::trivial::error;
 
 static boost::log::trivial::severity_level level_to_boost(unsigned level)
@@ -122,13 +117,13 @@ void set_logging_level(unsigned int level)
     logSeverity = level_to_boost(level);
 
     // Always let Cosmo-channel messages through the global gate — their severity
-    // is controlled independently at the cosmo sink level.  Orca messages are still
+    // is controlled independently at the cosmo sink.  Orca messages are still
     // gated by logSeverity as before.
+    // Uses runtime attr<> accessor (not a keyword) to avoid static-init issues.
     boost::log::core::get()->set_filter
     (
         boost::log::trivial::severity >= logSeverity ||
-        (boost::log::expressions::has_attr(cosmo_channel) &&
-         cosmo_channel == std::string("cosmo"))
+        boost::log::expressions::attr<std::string>("Channel") == std::string("cosmo")
     );
 }
 
@@ -379,9 +374,10 @@ void set_log_path_and_level(const std::string& file, unsigned int level)
 	);
 
 	// Exclude Cosmo-channel messages from the Orca log so the two files stay separate.
+	// attr<string>("Channel") evaluates to false when Channel is absent (regular BOOST_LOG_TRIVIAL
+	// messages have no Channel), so negating it correctly passes all Orca messages through.
 	g_log_sink->set_filter(
-		!boost::log::expressions::has_attr(cosmo_channel) ||
-		 cosmo_channel != std::string("cosmo")
+		!(boost::log::expressions::attr<std::string>("Channel") == std::string("cosmo"))
 	);
 
 	logging::add_common_attributes();
@@ -419,8 +415,9 @@ void set_cosmo_log_path_and_level(const std::string& file)
 	);
 
 	// Include ONLY Cosmo-channel messages in this sink.
-	// The global severity filter (set_logging_level) still applies on top of this.
-	g_cosmo_log_sink->set_filter(cosmo_channel == std::string("cosmo"));
+	g_cosmo_log_sink->set_filter(
+		boost::log::expressions::attr<std::string>("Channel") == std::string("cosmo")
+	);
 }
 
 void flush_logs()
