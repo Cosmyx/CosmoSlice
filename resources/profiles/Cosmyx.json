@@ -14,10 +14,6 @@
             "sub_path": "Machine/NOVA_DT/Cosmyx Nova Double Tete.json"
         },
         {
-            "name": "Cosmyx Nova Double Tete",
-            "sub_path": "Machine/NOVA_DT/NOVA_DT 0.2/Cosmyx Nova Double Tete.json"
-        },
-        {
             "name": "Cosmyx Nova Haute Temperature",
             "sub_path": "Machine/HT/Cosmyx Nova Haute Temperature.json"
         },
