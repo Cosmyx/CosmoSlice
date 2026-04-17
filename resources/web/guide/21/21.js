@@ -147,7 +147,14 @@ function HandleModelList( pVal )
 	// {
 	// 	$("input[nozzel='0.4'][vendor='Custom']").prop("checked", true);
 	// }
-	
+
+	// Pin specific vendors to the top in this order
+	var pinnedVendors = ["Cosmyx"];
+	pinnedVendors.slice().reverse().forEach(function(v) {
+		var block = $(".OneVendorBlock[vendor='" + v + "']");
+		if (block.length) $('#Content').prepend(block);
+	});
+
 	TranslatePage();
 }
 
@@ -300,6 +307,13 @@ function FilterModelList(keyword) {
 	// {
 	// 	$("input[nozzel='0.4'][vendor='Custom']").prop("checked", true);
 	// }
+
+	// Pin specific vendors to the top in this order
+	var pinnedVendors = ["Cosmyx"];
+	pinnedVendors.slice().reverse().forEach(function(v) {
+		var block = $(".OneVendorBlock[vendor='" + v + "']");
+		if (block.length) $('#Content').prepend(block);
+	});
 
 	TranslatePage();
 }
