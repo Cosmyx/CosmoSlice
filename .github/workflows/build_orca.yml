@@ -244,8 +244,6 @@ jobs:
         if: inputs.os == 'windows-latest'
         uses: azure/trusted-signing-action@v0.5.0
         with:
-          azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
           endpoint: ${{ secrets.AZURE_TRUSTED_SIGNING_ENDPOINT }}
           trusted-signing-account-name: ${{ secrets.AZURE_CODE_SIGNING_NAME }}
           certificate-profile-name: ${{ secrets.AZURE_CERT_PROFILE_NAME }}
@@ -266,8 +264,6 @@ jobs:
         if: inputs.os == 'windows-latest'
         uses: azure/trusted-signing-action@v0.5.0
         with:
-          azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
           endpoint: ${{ secrets.AZURE_TRUSTED_SIGNING_ENDPOINT }}
           trusted-signing-account-name: ${{ secrets.AZURE_CODE_SIGNING_NAME }}
           certificate-profile-name: ${{ secrets.AZURE_CERT_PROFILE_NAME }}
