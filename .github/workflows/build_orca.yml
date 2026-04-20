@@ -232,13 +232,20 @@ jobs:
           WindowsSDKVersion: '10.0.26100.0\'
         run: .\build_release_vs2022.bat slicer
 
+      - name: Azure Login
+        if: inputs.os == 'windows-latest'
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
       - name: Sign Windows executables and DLLs with Azure Trusted Signing
         if: inputs.os == 'windows-latest'
         uses: azure/trusted-signing-action@v0.5.0
         with:
           azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           endpoint: ${{ secrets.AZURE_TRUSTED_SIGNING_ENDPOINT }}
           trusted-signing-account-name: ${{ secrets.AZURE_CODE_SIGNING_NAME }}
           certificate-profile-name: ${{ secrets.AZURE_CERT_PROFILE_NAME }}
@@ -261,7 +268,6 @@ jobs:
         with:
           azure-tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           azure-client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          azure-subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           endpoint: ${{ secrets.AZURE_TRUSTED_SIGNING_ENDPOINT }}
           trusted-signing-account-name: ${{ secrets.AZURE_CODE_SIGNING_NAME }}
           certificate-profile-name: ${{ secrets.AZURE_CERT_PROFILE_NAME }}
