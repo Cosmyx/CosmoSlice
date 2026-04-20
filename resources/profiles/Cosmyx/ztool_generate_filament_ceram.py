@@ -36,7 +36,8 @@ class FilamentInfo:
     file_path: Path
     name: str  # Full name with @Cosmyx Common
     inherits: str
-    nozzle_specific: Optional[str] = None  # e.g., "0.4"
+    nozzle_specific: Optional[str] = None  # e.g., "0.4" (from filename)
+    compatible_nozzles: Optional[List[str]] = None  # from compatible_printers whitelist
 
 
 @dataclass
@@ -59,6 +60,21 @@ class GenerationResult:
 
 
 # ==================== UTILITY FUNCTIONS ====================
+
+def parse_compatible_nozzles(compatible_printers: list) -> Optional[List[str]]:
+    """
+    Parse compatible_printers to determine nozzle size restrictions.
+
+    Returns:
+        None if all nozzle sizes are allowed (e.g. ["Cosmyx Machines"] or empty list),
+        or a list of allowed nozzle size strings (e.g. ["0.4"]) when restricted.
+    """
+    if any(cp.strip() == "Cosmyx Machines" for cp in compatible_printers):
+        return None
+    nozzle_pattern = re.compile(r'Cosmyx Machines (\d+\.\d+)$')
+    nozzles = [m.group(1) for cp in compatible_printers if (m := nozzle_pattern.match(cp.strip()))]
+    return nozzles if nozzles else None
+
 
 def scan_common_filaments() -> List[FilamentInfo]:
     """
@@ -91,18 +107,21 @@ def scan_common_filaments() -> List[FilamentInfo]:
             name = data.get('name', filename.replace('.json', ''))
             inherits = data.get('inherits', '')
 
-            # Check if nozzle-specific
+            # Check if nozzle-specific (from filename)
             nozzle_specific = None
             for nozzle in NOZZLE_SIZES:
                 if f'{nozzle} nozzle' in filename:
                     nozzle_specific = nozzle
                     break
 
+            compatible_nozzles = parse_compatible_nozzles(data.get('compatible_printers', []))
+
             filaments.append(FilamentInfo(
                 file_path=file_path,
                 name=name,
                 inherits=inherits,
-                nozzle_specific=nozzle_specific
+                nozzle_specific=nozzle_specific,
+                compatible_nozzles=compatible_nozzles,
             ))
 
         except json.JSONDecodeError as e:
@@ -313,9 +332,14 @@ def generate_all_variants() -> GenerationResult:
 
                 machine_info = machines[machine_type][nozzle_size]
 
-                # Skip if nozzle-specific source doesn't match
+                # Skip if nozzle-specific source doesn't match (filename-based)
                 if source_filament.nozzle_specific:
                     if source_filament.nozzle_specific != nozzle_size:
+                        continue
+
+                # Skip if compatible_printers restricts to specific nozzles (whitelist)
+                if source_filament.compatible_nozzles is not None:
+                    if nozzle_size not in source_filament.compatible_nozzles:
                         continue
 
                 # Transform name
