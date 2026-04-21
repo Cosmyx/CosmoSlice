@@ -11,7 +11,6 @@
 #include <boost/format.hpp>
 #include <boost/lexical_cast.hpp>
 #include <boost/log/trivial.hpp>
-#include "CosmoLog.hpp"
 #include <boost/thread.hpp>
 #include <float.h>
 
@@ -824,7 +823,6 @@ void PrintConfigDef::init_fff_params()
     def->max = 300;
     def->set_default_value(new ConfigOptionInts{45});
 
-    COSMO_LOG(debug) << "[PrintConfig] Registering cosmyx_textured_bed_temp";
     def = this->add("cosmyx_textured_bed_temp", coInts);
     def->label = L("Other layers");
     def->full_label = L("Bed temperature");
@@ -836,7 +834,6 @@ void PrintConfigDef::init_fff_params()
     def->max = 165;
     def->set_default_value(new ConfigOptionInts{ -1 });
 
-    COSMO_LOG(debug) << "[PrintConfig] Registering cosmyx_textured_bed_temp_initial_layer";
     def = this->add("cosmyx_textured_bed_temp_initial_layer", coInts);
     def->label = L("Initial layer");
     def->full_label = L("Initial layer bed temperature");
