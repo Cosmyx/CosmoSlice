@@ -22,6 +22,7 @@ jobs:
   build_orca:
     name: Build OrcaSlicer
     runs-on: ${{ inputs.os }}
+    environment: azure-signing
     permissions:
       id-token: write
       contents: read
