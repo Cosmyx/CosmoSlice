@@ -414,6 +414,8 @@ void set_cosmo_log_path_and_level(const std::string& file)
 		)
 	);
 
+	logging::add_common_attributes();
+
 	// Include ONLY Cosmo-channel messages in this sink.
 	g_cosmo_log_sink->set_filter(
 		boost::log::expressions::attr<std::string>("Channel") == std::string("cosmo")
