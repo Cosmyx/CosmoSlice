@@ -6,6 +6,7 @@
 #include "PresetBundle.hpp"
 #include "AppConfig.hpp"
 #include "ProfileTranslator.hpp"
+#include "CosmoLog.hpp"
 
 #ifdef _MSC_VER
     #define WIN32_LEAN_AND_MEAN
@@ -357,7 +358,8 @@ void Preset::normalize(DynamicPrintConfig &config)
                 static_cast<ConfigOptionStrings*>(opt)->values.resize(n, std::string());
         }
 
-       // Initialize ironing_temperature from nozzle_temperature if not explicitly set in preset
+        // Initialize ironing_temperature from nozzle_temperature if not explicitly set in preset
+        COSMO_LOG(debug) << "[Preset] Normalizing ironing_temperature from nozzle_temperature";
         if (config.option("nozzle_temperature") != nullptr &&
             config.option("ironing_temperature") != nullptr) {
             auto* nozzle_temp = dynamic_cast<const ConfigOptionInts*>(config.option("nozzle_temperature"));
