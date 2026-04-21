@@ -168,12 +168,6 @@ unsigned get_logging_level()
 
 boost::shared_ptr<boost::log::sinks::synchronous_sink<boost::log::sinks::text_file_backend>> g_log_sink;
 
-// Global channel-severity logger for all Cosmyx-specific additions.
-// Already inside namespace Slic3r — no extra namespace wrapper needed.
-boost::log::sources::severity_channel_logger_mt<
-    boost::log::trivial::severity_level, std::string
-> g_cosmo_logger;
-
 // Cosmo-dedicated log file sink.
 boost::shared_ptr<boost::log::sinks::synchronous_sink<boost::log::sinks::text_file_backend>> g_cosmo_log_sink;
 
