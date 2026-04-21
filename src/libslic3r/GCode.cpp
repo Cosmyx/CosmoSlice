@@ -16,6 +16,7 @@
 #include "Print.hpp"
 #include "Utils.hpp"
 #include "ClipperUtils.hpp"
+#include "CosmoLog.hpp"
 #include "libslic3r.h"
 #include "LocalesUtils.hpp"
 #include "libslic3r/format.hpp"
@@ -6517,6 +6518,7 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
         gcode += buf;
 
         // Ironing temperature control
+        COSMO_LOG(debug) << "[GCode] Ironing temperature control activated";
         int ironing_temp = EXTRUDER_CONFIG(ironing_temperature);
         if (ironing_temp > 0 && m_writer.extruder() != nullptr) {
             bool transitioning_to_ironing = (path.role() == erIroning && old_role != erIroning);

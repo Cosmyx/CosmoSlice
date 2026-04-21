@@ -3893,6 +3893,7 @@ void TabFilament::build()
         line.append_option(optgroup->get_option("nozzle_temperature", 0));
         optgroup->append_line(line);
 
+        COSMO_LOG(debug) << "[Tab] Adding ironing_temperature option";
         optgroup->append_single_option_line("ironing_temperature");
 
         optgroup = page->new_optgroup(L("Bed temperature"), L"param_bed_temp");
