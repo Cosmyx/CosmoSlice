@@ -1424,7 +1424,7 @@ void PresetCollection::load_project_embedded_presets(std::vector<Preset*>& proje
                 //continue;
             }
             preset->config.apply(std::move(config));
-            Preset::normalize(preset->config);
+            Preset::normalize(preset->config, preset->name);
             // Report configuration fields, which are misplaced into a wrong group.
             std::string incorrect_keys = Preset::remove_invalid_keys(preset->config, default_preset.config);
             if (!incorrect_keys.empty()) {
