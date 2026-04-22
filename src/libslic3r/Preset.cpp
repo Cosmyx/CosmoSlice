@@ -317,7 +317,7 @@ std::string Preset::remove_suffix_modified(const std::string &name)
 }
 
 // Update new extruder fields at the printer profile.
-void Preset::normalize(DynamicPrintConfig &config, const std::string& preset_name = "")
+void Preset::normalize(DynamicPrintConfig &config, const std::string& preset_name)
 {
     size_t n = 1;
     if (config.option("single_extruder_multi_material") == nullptr || config.opt_bool("single_extruder_multi_material")) {
