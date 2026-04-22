@@ -31,7 +31,7 @@ body:
   - type: input
     id: summary
     attributes:
-      label: Addition Name
+      label: Summary
       description: Short summary of the changes
     validations:
       required: true
