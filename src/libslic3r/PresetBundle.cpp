@@ -873,7 +873,7 @@ bool PresetBundle::import_json_presets(PresetsConfigSubstitutions &            s
         inherit_preset     = collection->find_preset(inherits_value, false, true); // pointer maybe wrong after insert, redo find
         if (inherit_preset) preset.base_id = inherit_preset->setting_id;
         BOOST_LOG_TRIVIAL(info) << __FUNCTION__ << " " << __LINE__ << preset.name << " have filament_id: " << preset.filament_id << " and base_id: " << preset.base_id;
-        Preset::normalize(preset.config);
+        Preset::normalize(preset.config, preset.name);
         // Report configuration fields, which are misplaced into a wrong group.
         const Preset &default_preset = collection->default_preset_for(new_config);
         std::string   incorrect_keys = Preset::remove_invalid_keys(preset.config, default_preset.config);
@@ -2385,7 +2385,7 @@ ConfigSubstitutions PresetBundle::load_config_file(const std::string &path, Forw
         BOOST_LOG_TRIVIAL(debug) << __FUNCTION__ << boost::format(" enter, gcodefile %1%, compatibility_rule %2%")%path %compatibility_rule;
 		config.apply(FullPrintConfig::defaults());
         ConfigSubstitutions config_substitutions = config.load_from_gcode_file(path, compatibility_rule);
-        Preset::normalize(config);
+        Preset::normalize(config, boost::filesystem::path(path).filename().string());
 		load_config_file_config(path, true, std::move(config));
 		return config_substitutions;
 	}
@@ -2973,7 +2973,7 @@ std::pair<PresetsConfigSubstitutions, size_t> PresetBundle::load_vendor_configs_
                                              << "\" contains invalid \"renamed_from\" key, which is being ignored.";
                 }
             }
-            Preset::normalize(config);
+            Preset::normalize(config, preset_name);
         }
         catch(nlohmann::detail::parse_error &err) {
             ++m_errors;

@@ -4031,7 +4031,7 @@ std::vector<size_t> Plater::priv::load_files(const std::vector<fs::path>& input_
 
                 if (load_config) {
                     if (!config.empty()) {
-                        Preset::normalize(config);
+                        Preset::normalize(config, boost::filesystem::path(filename.string()).filename().string());
                         PresetBundle *preset_bundle = wxGetApp().preset_bundle;
 
                         auto choise = wxGetApp().app_config->get("no_warn_when_modified_gcodes");
