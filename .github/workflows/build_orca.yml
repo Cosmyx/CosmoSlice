@@ -258,7 +258,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: CosmoSlice_Windows_${{ env.cosmyx_patch_ver }}
-          path: ${{ github.workspace }}/build/OrcaSlicer*.exe
+          path: ${{ github.workspace }}/build/CosmoSlice*.exe
 
       - name: Upload artifacts Win PDB
         if: inputs.os == 'windows-latest'
