@@ -24,6 +24,10 @@ jobs:
     name: Build OrcaSlicer
     needs: resolve_artifact_name
     runs-on: ${{ inputs.os }}
+    environment: azure-signing
+    permissions:
+      id-token: write
+      contents: read
     env:
       date:
       ver:
@@ -228,11 +232,47 @@ jobs:
           WindowsSDKVersion: '10.0.26100.0\'
         run: .\build_release_vs2022.bat slicer
 
+      - name: Azure Login
+        if: inputs.os == 'windows-latest'
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Sign Windows executables and DLLs with Azure Trusted Signing
+        if: inputs.os == 'windows-latest'
+        uses: azure/trusted-signing-action@v0.5.0
+        with:
+          endpoint: ${{ secrets.AZURE_TRUSTED_SIGNING_ENDPOINT }}
+          trusted-signing-account-name: ${{ secrets.AZURE_CODE_SIGNING_NAME }}
+          certificate-profile-name: ${{ secrets.AZURE_CERT_PROFILE_NAME }}
+          files-folder: ${{ github.workspace }}/build/OrcaSlicer
+          files-folder-filter: exe,dll
+          files-folder-recurse: true
+          file-digest: SHA256
+          timestamp-rfc3161: http://timestamp.acs.microsoft.com
+          timestamp-digest: SHA256
+
       - name: Create installer Win
         if: inputs.os == 'windows-latest'
         working-directory: ${{ github.workspace }}/build
         run: |
           cpack -G NSIS
+
+      - name: Sign Windows installer with Azure Trusted Signing
+        if: inputs.os == 'windows-latest'
+        uses: azure/trusted-signing-action@v0.5.0
+        with:
+          endpoint: ${{ secrets.AZURE_TRUSTED_SIGNING_ENDPOINT }}
+          trusted-signing-account-name: ${{ secrets.AZURE_CODE_SIGNING_NAME }}
+          certificate-profile-name: ${{ secrets.AZURE_CERT_PROFILE_NAME }}
+          files-folder: ${{ github.workspace }}/build
+          files-folder-filter: exe
+          files-folder-recurse: false
+          file-digest: SHA256
+          timestamp-rfc3161: http://timestamp.acs.microsoft.com
+          timestamp-digest: SHA256
 
       - name: Pack app
         if: inputs.os == 'windows-latest'
