@@ -13,7 +13,7 @@ set(BBL_INTERNAL_TESTING "0")
 endif()
 set(SoftFever_VERSION "2.3.1")
 
-set(COSMYX_PATCH_VERSION "CSDEV-V1.1")
+set(COSMYX_PATCH_VERSION "CSDEV-V1.2")
 
 string(REGEX MATCH "^([0-9]+)\\.([0-9]+)\\.([0-9]+)"
        SoftFever_VERSION_MATCH ${SoftFever_VERSION})
