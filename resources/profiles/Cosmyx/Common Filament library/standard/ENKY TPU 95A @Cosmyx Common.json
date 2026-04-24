@@ -1,0 +1,30 @@
+{
+    "type": "filament",
+    "filament_id": "MIL04",
+    "name": "ENKY TPU 95A @Cosmyx Common",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "KIMYA TPC 91A @Cosmyx Common",
+    "filament_settings_id": [
+        "ENKY TPU 95A @Cosmyx Common"
+    ],
+    "filament_type": [
+        "TPU"
+    ],
+    "filament_vendor": [
+        "ENKY"
+    ],
+    "is_custom_defined": "0",
+    "nozzle_temperature": [
+        "210"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "220"
+    ],
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ]
+}

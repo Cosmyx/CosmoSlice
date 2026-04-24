@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL19_HT_04",
+    "name": "Cosmyx ASA @Haute Temperature 0.4 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx ASA @Cosmyx Common 0.4 nozzle",
+    "compatible_printers": [
+        "Cosmyx Nova Haute Temperature 0.4 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

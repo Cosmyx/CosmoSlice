@@ -1,0 +1,18 @@
+{
+    "type": "filament",
+    "setting_id": "GFSU00",
+    "name": "Cosmyx TPU 95A @Cosmyx Common",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx TPU 95A @base",
+    "filament_max_volumetric_speed": [
+        "3.6"
+    ],
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ],
+    "version": "14.04.2026.02"
+}

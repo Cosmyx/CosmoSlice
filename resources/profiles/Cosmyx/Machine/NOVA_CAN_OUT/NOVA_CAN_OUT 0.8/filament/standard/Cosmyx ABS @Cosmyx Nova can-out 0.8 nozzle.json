@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL17_NOVA_CAN_OUT_08",
+    "name": "Cosmyx ABS @Cosmyx Nova can-out 0.8 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx ABS @Cosmyx Common 0.8 nozzle",
+    "compatible_printers": [
+        "Cosmyx Nova 0.8 nozzle can-out"
+    ],
+    "version": "14.04.2026.02"
+}

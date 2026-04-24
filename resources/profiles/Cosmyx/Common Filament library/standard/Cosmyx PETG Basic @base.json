@@ -1,0 +1,57 @@
+{
+    "type": "filament",
+    "filament_id": "GFG00",
+    "name": "Cosmyx PETG Basic @base",
+    "from": "system",
+    "instantiation": "false",
+    "inherits": "fdm_filament_pet",
+    "filament_flow_ratio": [
+        "0.95"
+    ],
+    "overhang_fan_speed": [
+        "90"
+    ],
+    "overhang_fan_threshold": [
+        "10%"
+    ],
+    "fan_max_speed": [
+        "40"
+    ],
+    "fan_min_speed": [
+        "10"
+    ],
+    "filament_max_volumetric_speed": [
+        "8"
+    ],
+    "fan_cooling_layer_time": [
+        "30"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "90"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "90"
+    ],
+    "filament_vendor": [
+        "Cosmyx"
+    ],
+    "filament_cost": [
+        "24.99"
+    ],
+    "filament_density": [
+        "1.25"
+    ],
+    "nozzle_temperature_range_low": [
+        "240"
+    ],
+    "nozzle_temperature_range_high": [
+        "270"
+    ],
+    "filament_start_gcode": [],
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ]
+}

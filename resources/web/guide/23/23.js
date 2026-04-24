@@ -69,15 +69,15 @@ function SortUI()
 	{
 		let sModel=ModelList[n];	
 		/* ORCA use label tag to allow checkbox to toggle when user ckicked to text */
-		HtmlMode+='<label><input type="checkbox" mode="'+sModel['model']+'"  nozzle="'+sModel['nozzle_selected']+'"   onChange="MachineClick()" /><span>'+sModel['model']+'</span></label>';
+		HtmlMode+='<label><input type="checkbox" mode="'+sModel['model']+'"  nozzle="'+sModel['nozzle_selected']+'"   onChange="MachineClick()" /><span>'+(sModel['display_name'] || sModel['model'])+'</span></label>';
 	}
 	
 	$('#MachineList .CValues').append(HtmlMode);	
 	$('#MachineList .CValues input').prop("checked",true);
-	//if(nMode<=1)
-	//{
-	//	$('#MachineList').hide();
-	//}
+	if(nMode<=1)
+	{
+		$('#MachineList').hide();
+	}
 	
 	//Filament - Create sorted array with generic vendor first
 	let FilamentArray=new Array();
@@ -171,7 +171,8 @@ function SortUI()
 	        if(pFila.length==0)
 		    {
 				/* ORCA use label tag to allow checkbox to toggle when user ckicked to text */
-			    let HtmlFila='<label class="MItem"><input type="checkbox" onChange="UpdateStats()" vendor="'+fVendor+'"  filatype="'+fType+'" filalist="'+fWholeName+';'+'"  model="'+fModel+'" name="'+fShortName+'" /><span>'+fShortName+'</span></label>';
+			    let fDisplayName=OneFila['display_name'] || fShortName;
+			    let HtmlFila='<label class="MItem"><input type="checkbox" vendor="'+fVendor+'"  filatype="'+fType+'" filalist="'+fWholeName+';'+'"  model="'+fModel+'" name="'+fShortName+'" /><span>'+fDisplayName+'</span></label>';
 			
 			    $("#ItemBlockArea").append(HtmlFila);
 		    } 
@@ -238,8 +239,6 @@ function SortUI()
 	//------
 	if(SelectNumber==0)
 		ChooseDefaultFilament();
-
-	UpdateStats();
 }
 
 
@@ -405,29 +404,9 @@ function SortFilament()
 			else
 				$(OneNode).hide();
 		}
-		else{
+		else
 			$(OneNode).hide();
-			//alert(fName) //debug non common filament type
-		}
-			
 	}
-
-	UpdateStats();
-}
-
-function UpdateStats()
-{
-	let $i             = $("#ItemBlockArea");
-	let $allItems      = $i.find(".MItem");
-	let $visibleItems  = $i.find(".MItem:visible");
-	let $filteredItems = $visibleItems.filter(function() { return $(this).css('position') !== 'absolute'});
-	let visibleCount   = Math.min($filteredItems.length, $visibleItems.length);
-	
-	$(".list-item-count").text(
-		$i.find("input:checked").length + " / " + 
-		$allItems.length +
-		($allItems.length > visibleCount ? (" [" + visibleCount + "]") : "") // filtered items
-	);
 }
 
 function ChooseDefaultFilament()
@@ -474,17 +453,14 @@ function ChooseDefaultFilament()
 
 function SelectAllFilament( nShow )
 {
-	// ORCA add ability to only select / unselect filted items
-	if (document.querySelector('.cbr-filter-bar').value) {
-		$('#ItemBlockArea .MItem:visible input')
-		.filter(function() {return $(this).closest('.MItem').css('position') !== 'absolute'})
-		.prop("checked", nShow != 0);
+	if( nShow==0 )
+	{
+		$('#ItemBlockArea .MItem:visible input').prop("checked",false);
 	}
-	else {
-		$('#ItemBlockArea .MItem:visible input').prop("checked",nShow!=0);
+	else
+	{
+		$('#ItemBlockArea .MItem:visible input').prop("checked",true);
 	}
-
-	UpdateStats();
 }
 
 function ShowNotice( nShow )
@@ -516,14 +492,14 @@ function ResponseFilamentResult()
 	let FilaArray=new Array();
 	for(let n=0;n<nAll;n++)
 	{
-		let strFilalist=FilaSelectedList[n].getAttribute("filalist");
-		if(strFilalist) {
-			let filaNames = strFilalist.split(';');
-			for(let i=0; i<filaNames.length; i++) {
-				let fname = filaNames[i].trim();
-				if(fname !== '')
-					FilaArray.push(fname);
-			}
+		let sName=FilaSelectedList[n].getAttribute("name");
+		
+	    for( let key in m_ProfileItem['filament'] )
+	    {
+			let FName=GetFilamentShortname(key);
+			
+			if(FName==sName)
+				FilaArray.push(key);
 		}
 	}
 	

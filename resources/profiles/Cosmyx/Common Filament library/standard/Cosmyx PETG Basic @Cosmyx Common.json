@@ -1,0 +1,18 @@
+{
+    "type": "filament",
+    "setting_id": "GFSG00_01",
+    "name": "Cosmyx PETG Basic @Cosmyx Common",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PETG Basic @base",
+    "filament_max_volumetric_speed": [
+        "13"
+    ],
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ],
+    "version": "14.04.2026.02"
+}

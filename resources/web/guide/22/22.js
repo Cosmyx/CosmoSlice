@@ -61,40 +61,27 @@ function SortUI()
 	{
 		let sModel=ModelList[n];	
 		/* ORCA use label tag to allow checkbox to toggle when user ckicked to text */
-		HtmlMode+='<label><input type="checkbox" mode="'+sModel['model']+'"  nozzle="'+sModel['nozzle_selected']+'"   onChange="MachineClick()" /><span>'+sModel['model']+'</span></label>';
+		HtmlMode+='<label><input type="checkbox" mode="'+sModel['model']+'"  nozzle="'+sModel['nozzle_selected']+'"   onChange="MachineClick()" />'+(sModel['display_name'] || sModel['model'])+'</label>';
 	}
 	
 	$('#MachineList .CValues').append(HtmlMode);	
 	$('#MachineList .CValues input').prop("checked",true);
-	//if(nMode<=1)
-	//{
-	//	$('#MachineList').hide();
-	//}
-	
-	//Filament - Create sorted array with generic vendor first
-	let FilamentArray=new Array();
-	let GenericFilamentArray=new Array();
-	for( let key in m_ProfileItem['filament'] )
+	if(nMode<=1)
 	{
-		let OneFila=m_ProfileItem['filament'][key];
-		if(OneFila['vendor'].toLowerCase() === 'generic')
-			GenericFilamentArray.push({key: key, data: OneFila});
-		else
-			FilamentArray.push({key: key, data: OneFila});
+		$('#MachineList').hide();
 	}
-	// Combine arrays with generic filaments first
-	let SortedFilamentArray = GenericFilamentArray.concat(FilamentArray);
 	
+	//Filament
 	let HtmlFilament='';
 	let SelectNumber=0;
 
 	var TypeHtmlArray={};
     var VendorHtmlArray={};
-	for( let n=0; n<SortedFilamentArray.length; n++ )
+	var GenericFilamentHtmlArray={};
+	var NonGenericFilamentHtmlArray={};
+	for( let key in m_ProfileItem['filament'] )
 	{
-		let filamentItem = SortedFilamentArray[n];
-		let key = filamentItem.key;
-		let OneFila = filamentItem.data;
+		let OneFila=m_ProfileItem['filament'][key];
 		
 		//alert(JSON.stringify(OneFila));
 		
@@ -145,7 +132,7 @@ function SortUI()
 		    if(!TypeHtmlArray.hasOwnProperty(LowType))
 		    {
 				/* ORCA use label tag to allow checkbox to toggle when user ckicked to text */
-			    let HtmlType='<label><input type="checkbox" filatype="'+fType+'" onChange="FilaClick()"   /><span>'+fType+'</span></label>';
+			    let HtmlType='<label><input type="checkbox" filatype="'+fType+'" onChange="FilaClick()"   />'+fType+'</label>';
 			
 				TypeHtmlArray[LowType]=HtmlType;
 		    }
@@ -155,7 +142,7 @@ function SortUI()
 			if(!VendorHtmlArray.hasOwnProperty(lowVendor))
 		    {
 				/* ORCA use label tag to allow checkbox to toggle when user ckicked to text */
-			    let HtmlVendor='<label><input type="checkbox" vendor="'+fVendor+'"  onChange="VendorClick()" /><span>'+fVendor+'</span></label>';
+			    let HtmlVendor='<label><input type="checkbox" vendor="'+fVendor+'"  onChange="VendorClick()" />'+fVendor+'</label>';
 				
 				VendorHtmlArray[lowVendor]=HtmlVendor;
 		    }
@@ -165,9 +152,15 @@ function SortUI()
 	        if(pFila.length==0)
 		    {
 				/* ORCA use label tag to allow checkbox to toggle when user ckicked to text */
-			    let HtmlFila='<label class="MItem"><input type="checkbox" onChange="UpdateStats()" vendor="'+fVendor+'"  filatype="'+fType+'" filalist="'+fWholeName+';'+'"  model="'+fModel+'" name="'+fShortName+'" /><span>'+fShortName+'</span></label>';
+			    let fDisplayName=OneFila['display_name'] || fShortName;
+			    let HtmlFila='<label class="MItem"><input type="checkbox" vendor="'+fVendor+'"  filatype="'+fType+'" filalist="'+fWholeName+';'+'"  model="'+fModel+'" name="'+fShortName+'" />'+fDisplayName+'</label>';
 			
-			    $("#ItemBlockArea").append(HtmlFila);
+			    // Separate generic and non-generic filaments
+			    if(fVendor.toLowerCase() === 'generic') {
+				    GenericFilamentHtmlArray[fShortName] = HtmlFila;
+			    } else {
+				    NonGenericFilamentHtmlArray[fShortName] = HtmlFila;
+			    }
 		    } 
 			else
 			{
@@ -193,6 +186,14 @@ function SortUI()
 //				$("#ItemBlockArea input[vendor='"+fVendor+"'][model='"+fModel+"'][filatype='"+fType+"'][name='"+key+"']").prop("checked",false);			
 		}
 	} 
+	
+	// Append filaments in order: generic first, then non-generic
+	for(let key in GenericFilamentHtmlArray) {
+		$("#ItemBlockArea").append(GenericFilamentHtmlArray[key]);
+	}
+	for(let key in NonGenericFilamentHtmlArray) {
+		$("#ItemBlockArea").append(NonGenericFilamentHtmlArray[key]);
+	}
 
 	//Sort TypeArray
 	let TypeAdvNum=FilamentPriority.length;
@@ -237,11 +238,9 @@ function SortUI()
 	//--If Need Install Network Plugin
 	if(m_ProfileItem["network_plugin_install"]!='1' || (m_ProfileItem["network_plugin_install"]=='1' && m_ProfileItem["network_plugin_compability"]=='0') )
 	{
-		$("#AcceptBtn").hide();
-		$("#GotoNetPluginBtn").show();
+		$("#AcceptBtn").show();
+		$("#GotoNetPluginBtn").hide();
 	}
-
-	UpdateStats();
 }
 
 
@@ -407,28 +406,9 @@ function SortFilament()
 			else
 				$(OneNode).hide();
 		}
-		else{
+		else
 			$(OneNode).hide();
-			//alert(fName) //debug non common filament type
-		}
 	}
-
-	UpdateStats();
-}
-
-function UpdateStats()
-{
-	let $i             = $("#ItemBlockArea");
-	let $allItems      = $i.find(".MItem");
-	let $visibleItems  = $i.find(".MItem:visible");
-	let $filteredItems = $visibleItems.filter(function() { return $(this).css('position') !== 'absolute'});
-	let visibleCount   = Math.min($filteredItems.length, $visibleItems.length);
-	
-	$(".list-item-count").text(
-		$i.find("input:checked").length + " / " + 
-		$allItems.length +
-		($allItems.length > visibleCount ? (" [" + visibleCount + "]") : "") // filtered items
-	);
 }
 
 function ChooseDefaultFilament()
@@ -492,20 +472,17 @@ function ChooseDefaultFilament()
 	}
 	
 	ShowNotice(0);
-
-	UpdateStats();
 }
 
 function SelectAllFilament( nShow )
 {
-	// ORCA add ability to only select / unselect filted items
-	if (document.querySelector('.cbr-filter-bar').value) {
-		$('#ItemBlockArea .MItem:visible input')
-		.filter(function() {return $(this).closest('.MItem').css('position') !== 'absolute'})
-		.prop("checked", nShow != 0);
+	if( nShow==0 )
+	{
+		$('#ItemBlockArea input').prop("checked",false);
 	}
-	else {
-		$('#ItemBlockArea .MItem:visible input').prop("checked",nShow!=0);
+	else
+	{
+		$('#ItemBlockArea input').prop("checked",true);
 	}
 }
 
@@ -538,14 +515,14 @@ function ResponseFilamentResult()
 	let FilaArray=new Array();
 	for(let n=0;n<nAll;n++)
 	{
-		let strFilalist=FilaSelectedList[n].getAttribute("filalist");
-		if(strFilalist) {
-			let filaNames = strFilalist.split(';');
-			for(let i=0; i<filaNames.length; i++) {
-				let fname = filaNames[i].trim();
-				if(fname !== '')
-					FilaArray.push(fname);
-			}
+		let sName=FilaSelectedList[n].getAttribute("name");
+		
+	    for( let key in m_ProfileItem['filament'] )
+	    {
+			let FName=GetFilamentShortname(key);
+			
+			if(FName==sName)
+				FilaArray.push(key);
 		}
 	}
 	

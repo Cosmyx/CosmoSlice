@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL16_HT_02",
+    "name": "Cosmyx ABS @Haute Temperature 0.2 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx ABS @Cosmyx Common 0.2 nozzle",
+    "compatible_printers": [
+        "Cosmyx Nova Haute Temperature 0.2 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

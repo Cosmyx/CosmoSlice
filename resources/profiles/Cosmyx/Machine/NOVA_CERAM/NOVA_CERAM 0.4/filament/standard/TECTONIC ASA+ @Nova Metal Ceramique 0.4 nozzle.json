@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL29_NOVA_CERAM_04",
+    "name": "TECTONIC ASA+ @Nova Metal Ceramique 0.4 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TECTONIC ASA+ @Cosmyx Common 0.4 nozzle",
+    "compatible_printers": [
+        "Cosmyx Nova Metal Ceramique 0.4 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

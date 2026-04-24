@@ -1,0 +1,61 @@
+{
+    "type": "filament",
+    "filament_id": "MIL10",
+    "name": "TECTONIC PP-CF15 @Cosmyx Common",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PA6-CF @Cosmyx Common",
+    "default_filament_colour": [
+        "#808080"
+    ],
+    "fan_max_speed": [
+        "70"
+    ],
+    "fan_min_speed": [
+        "70"
+    ],
+    "filament_settings_id": [
+        "TECTONIC PP-CF15 @Cosmyx Common"
+    ],
+    "filament_vendor": [
+        "TECTONIC"
+    ],
+    "is_custom_defined": "0",
+    "nozzle_temperature": [
+        "290"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "295"
+    ],
+    "overhang_fan_speed": [
+        "70"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "1"
+    ],
+    "fan_cooling_layer_time": [
+        "80"
+    ],
+    "filament_density": [
+        "1.07"
+    ],
+    "filament_max_volumetric_speed": [
+        "6.8"
+    ],
+    "filament_type": [
+        "PP-CF"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "80"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "80"
+    ],
+    "version": "14.04.2026.02",
+    "required_nozzle_HRC": [
+        "91"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ]
+}
