@@ -6,6 +6,7 @@
 #include "libslic3r/PrintConfig.hpp"
 #include "libslic3r/ProfileTranslator.hpp"
 #include "libslic3r/Utils.hpp"
+#include "libslic3r/CosmoLog.hpp"
 #include "libslic3r/Model.hpp"
 #include "libslic3r/GCode/GCodeProcessor.hpp"
 #include "WipeTowerDialog.hpp"
@@ -3475,6 +3476,7 @@ void TabFilament::build()
         line.append_option(optgroup->get_option("nozzle_temperature"));
         optgroup->append_line(line);
 
+        COSMO_LOG(debug) << "[Tab] Adding ironing_temperature option";
         optgroup->append_single_option_line("ironing_temperature");
 
         optgroup = page->new_optgroup(L("Bed temperature"), L"param_bed_temp");
@@ -3514,6 +3516,7 @@ void TabFilament::build()
         line.append_option(optgroup->get_option("textured_plate_temp"));
         optgroup->append_line(line);
 
+        COSMO_LOG(debug) << "[Tab] Adding Cosmyx Textured Bed settings section";
         line = { L("Cosmyx Textured Bed"),
                  L("Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off.") };
         line.append_option(optgroup->get_option("cosmyx_textured_bed_temp_initial_layer"));

@@ -6,6 +6,7 @@
 #include "PresetBundle.hpp"
 #include "AppConfig.hpp"
 #include "ProfileTranslator.hpp"
+#include "CosmoLog.hpp"
 
 #ifdef _MSC_VER
     #define WIN32_LEAN_AND_MEAN
@@ -316,7 +317,7 @@ std::string Preset::remove_suffix_modified(const std::string &name)
 }
 
 // Update new extruder fields at the printer profile.
-void Preset::normalize(DynamicPrintConfig &config)
+void Preset::normalize(DynamicPrintConfig &config, const std::string& preset_name)
 {
     size_t n = 1;
     if (config.option("single_extruder_multi_material") == nullptr || config.opt_bool("single_extruder_multi_material")) {
@@ -357,7 +358,8 @@ void Preset::normalize(DynamicPrintConfig &config)
                 static_cast<ConfigOptionStrings*>(opt)->values.resize(n, std::string());
         }
 
-       // Initialize ironing_temperature from nozzle_temperature if not explicitly set in preset
+        // Initialize ironing_temperature from nozzle_temperature if not explicitly set in preset
+        COSMO_LOG(debug) << "[Preset] Normalizing ironing_temperature from nozzle_temperature for preset: " << preset_name;
         if (config.option("nozzle_temperature") != nullptr &&
             config.option("ironing_temperature") != nullptr) {
             auto* nozzle_temp = dynamic_cast<const ConfigOptionInts*>(config.option("nozzle_temperature"));
@@ -1231,7 +1233,7 @@ void PresetCollection::load_presets(
                     }
                     BOOST_LOG_TRIVIAL(info) << __FUNCTION__ << " load preset: " << name << " and filament_id: " << preset.filament_id << " and base_id: " << preset.base_id;
                     preset.config.apply(std::move(config));
-                    Preset::normalize(preset.config);
+                    Preset::normalize(preset.config, name);
                     // Report configuration fields, which are misplaced into a wrong group.
                     std::string incorrect_keys = Preset::remove_invalid_keys(preset.config, default_preset.config);
                     if (!incorrect_keys.empty()) {
@@ -1422,7 +1424,7 @@ void PresetCollection::load_project_embedded_presets(std::vector<Preset*>& proje
                 //continue;
             }
             preset->config.apply(std::move(config));
-            Preset::normalize(preset->config);
+            Preset::normalize(preset->config, preset->name);
             // Report configuration fields, which are misplaced into a wrong group.
             std::string incorrect_keys = Preset::remove_invalid_keys(preset->config, default_preset.config);
             if (!incorrect_keys.empty()) {
@@ -1754,7 +1756,7 @@ bool PresetCollection::load_user_preset(std::string name, std::map<std::string, 
             new_config = default_preset.config;
         }
         new_config.apply(std::move(cloud_config));
-        Preset::normalize(new_config);
+        Preset::normalize(new_config, name);
         // Report configuration fields, which are misplaced into a wrong group.
         std::string incorrect_keys = Preset::remove_invalid_keys(new_config, default_preset.config);
         if (!incorrect_keys.empty()) {

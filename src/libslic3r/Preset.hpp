@@ -356,7 +356,7 @@ public:
 	static void                             update_suffix_modified(const std::string& new_suffix_modified);
     static const std::string&               suffix_modified();
     static std::string                      remove_suffix_modified(const std::string& name);
-    static void                             normalize(DynamicPrintConfig &config);
+    static void                             normalize(DynamicPrintConfig &config, const std::string& preset_name = "");
     // Report configuration fields, which are misplaced into a wrong group, remove them from the config.
     static std::string                      remove_invalid_keys(DynamicPrintConfig &config, const DynamicPrintConfig &default_config);
 
