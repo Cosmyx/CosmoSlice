@@ -66,6 +66,7 @@ jobs:
       force-build: ${{ github.event_name == 'schedule' }}
     secrets: inherit
   flatpak:
+    if: false
     name: "Flatpak"
     container:
       image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-47
