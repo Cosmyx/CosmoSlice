@@ -324,16 +324,7 @@ enum LayerSeq {
     flsCustomize
 };
 
-enum NozzleType {
-    ntUndefine = 0,
-    ntHardenedSteel,
-    ntStainlessSteel,
-    ntBrass,
-    ntTungstenCarbide,
-    ntCHT,
-    ntE3D,
-    ntCount
-};
+// NozzleType defined in CommonDefs.hpp
 
 static std::unordered_map<NozzleType, std::string>NozzleTypeEumnToStr = {
     {NozzleType::ntUndefine,        "undefine"},

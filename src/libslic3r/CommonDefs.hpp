@@ -14,8 +14,9 @@ namespace Slic3r
         ntUndefine = 0,
         ntHardenedSteel,
         ntStainlessSteel,
-        ntTungstenCarbide,
         ntBrass,
+        ntTungstenCarbide,
+        ntCHT,
         ntE3D,
         ntCount
     };
