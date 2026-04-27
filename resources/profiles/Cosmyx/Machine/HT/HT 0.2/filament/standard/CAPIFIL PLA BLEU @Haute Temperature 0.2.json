@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL14_HT_02",
+    "name": "CAPIFIL PLA BLEU @Haute Temperature 0.2",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "CAPIFIL PLA BLEU @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Haute Temperature 0.2 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

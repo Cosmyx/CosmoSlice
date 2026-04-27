@@ -345,6 +345,8 @@ set(lisbslic3r_sources
     PresetBundle.hpp
     Preset.cpp
     Preset.hpp
+    ProfileTranslator.cpp
+    ProfileTranslator.hpp
     PrincipalComponents2D.cpp
     PrincipalComponents2D.hpp
     PrintApply.cpp

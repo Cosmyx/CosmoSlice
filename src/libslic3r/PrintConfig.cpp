@@ -14,6 +14,7 @@
 #include <boost/format.hpp>
 #include <boost/lexical_cast.hpp>
 #include <boost/log/trivial.hpp>
+#include "CosmoLog.hpp"
 #include <boost/thread.hpp>
 #include <float.h>
 
@@ -450,7 +451,8 @@ static const t_config_enum_values s_keys_map_BedType = {
     { "Engineering Plate",  btEP  },
     { "High Temp Plate",    btPEI  },
     { "Textured PEI Plate", btPTE },
-    { "Textured Cool Plate", btPCT }
+    { "Textured Cool Plate", btPCT },
+    { "Cosmyx Textured Bed", btCosmyx }
 };
 CONFIG_OPTION_ENUM_DEFINE_STATIC_MAPS(BedType)
 
@@ -465,8 +467,10 @@ static t_config_enum_values s_keys_map_NozzleType {
     { "undefine",       int(NozzleType::ntUndefine) },
     { "hardened_steel", int(NozzleType::ntHardenedSteel) },
     { "stainless_steel", int(NozzleType::ntStainlessSteel)},
+    { "brass",          int(NozzleType::ntBrass) },
     { "tungsten_carbide", int(NozzleType::ntTungstenCarbide)},
-    { "brass",          int(NozzleType::ntBrass) }
+    { "cht",            int(NozzleType::ntCHT) },
+    { "E3D",            int(NozzleType::ntE3D) }
 };
 CONFIG_OPTION_ENUM_DEFINE_STATIC_MAPS(NozzleType)
 
@@ -990,6 +994,28 @@ void PrintConfigDef::init_fff_params()
     def->max = 300;
     def->set_default_value(new ConfigOptionInts{45});
 
+    def = this->add("cosmyx_textured_bed_temp", coInts);
+    def->label = L("Other layers");
+    def->full_label = L("Bed temperature");
+    def->tooltip = L("Bed temperature for layers except the initial one. "
+                     "A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. "
+                     "A value of 0 means the bed is off.");
+    def->sidetext = u8"\u2103" /* °C */;
+    def->min = -1;
+    def->max = 165;
+    def->set_default_value(new ConfigOptionInts{ -1 });
+
+    def = this->add("cosmyx_textured_bed_temp_initial_layer", coInts);
+    def->label = L("Initial layer");
+    def->full_label = L("Initial layer bed temperature");
+    def->tooltip = L("Bed temperature of the initial layer. "
+                     "A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. "
+                     "A value of 0 means the bed is off.");
+    def->sidetext = u8"\u2103" /* °C */;
+    def->min = -1;
+    def->max = 165;
+    def->set_default_value(new ConfigOptionInts{ -1 });
+
     def = this->add("curr_bed_type", coEnum);
     def->label = L("Bed type");
     def->tooltip = L("Bed types supported by the printer.");
@@ -1002,12 +1028,14 @@ void PrintConfigDef::init_fff_params()
     def->enum_values.emplace_back("Textured PEI Plate");
     def->enum_values.emplace_back("Textured Cool Plate");
     def->enum_values.emplace_back("SuperTack Plate");
+    def->enum_values.emplace_back("Cosmyx Textured Bed");
     def->enum_labels.emplace_back(L("Smooth Cool Plate"));
     def->enum_labels.emplace_back(L("Engineering Plate"));
     def->enum_labels.emplace_back(L("Smooth High Temp Plate"));
     def->enum_labels.emplace_back(L("Textured PEI Plate"));
     def->enum_labels.emplace_back(L("Textured Cool Plate"));
     def->enum_labels.emplace_back(L("Cool Plate (SuperTack)"));
+    def->enum_labels.emplace_back(L("Cosmyx Textured Bed"));
     def->set_default_value(new ConfigOptionEnum<BedType>(btPC));
 
     // Orca: allow profile maker to set default bed type in machine profile
@@ -3490,11 +3518,15 @@ void PrintConfigDef::init_fff_params()
     def->enum_values.push_back("stainless_steel");
     def->enum_values.push_back("tungsten_carbide");
     def->enum_values.push_back("brass");
+    def->enum_values.push_back("tungsten_carbide");
+    def->enum_values.push_back("cht");
     def->enum_labels.push_back(L("Undefine"));
     def->enum_labels.push_back(L("Hardened steel"));
     def->enum_labels.push_back(L("Stainless steel"));
     def->enum_labels.push_back(L("Tungsten carbide"));
     def->enum_labels.push_back(L("Brass"));
+    def->enum_labels.push_back(L("Tungsten Carbide"));
+    def->enum_labels.push_back(L("CHT"));
     def->mode = comAdvanced;
     def->nullable = true;
     def->set_default_value(new ConfigOptionEnumsGenericNullable({ ntUndefine }));
@@ -6156,6 +6188,15 @@ void PrintConfigDef::init_fff_params()
     def->min = 0;
     def->max = max_temp;
     def->set_default_value(new ConfigOptionInts { 240 });
+
+    COSMO_LOG(debug) << "[PrintConfig] Registering ironing_temperature";
+    def = this->add("ironing_temperature", coInts);
+    def->label = L("Ironing temperature");
+    def->tooltip = L("Sets the extrusion temperature for the ironing pass. If unset in the filament profile, the global printing temperature is used by default.");
+    def->sidetext = u8"\u2103" /* °C */;	// degrees Celsius
+    def->min = 0;
+    def->max = max_temp;
+    def->set_default_value(new ConfigOptionInts { 0 });
 
     def = this->add("head_wrap_detect_zone", coPoints);
     def->label = "Head wrap detect zone"; //do not need translation

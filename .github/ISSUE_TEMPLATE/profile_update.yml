@@ -1,0 +1,52 @@
+name: Profile Update or Addition
+description: Add, update, or delete a profile (Filament, Process, Machine)
+labels: ["profile"]
+body:
+  - type: input
+    id: profile_name
+    attributes:
+      label: Profile Name
+    validations:
+      required: true
+  - type: dropdown
+    id: work_type
+    attributes:
+      label: Work Action
+      options:
+        - Addition
+        - Delete
+        - Update
+    validations:
+      required: true
+  - type: dropdown
+    id: profile_type
+    attributes:
+      label: Type
+      options:
+        - Filament
+        - Process
+        - Machine
+    validations:
+      required: true
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Short summary of the changes
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Explanation
+      description: Detailed explanation of the changes
+    validations:
+      required: true
+  - type: textarea
+    id: json_data
+    attributes:
+      label: JSON of the Profile
+      description: Paste the JSON content if this is an edit, new settings, or a new profile
+      render: json
+    validations:
+      required: false

@@ -1,140 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   version="1.1"
-   id="svg2"
-   width="1024"
-   height="1024"
-   viewBox="0 0 1024 1024"
-   sodipodi:docname="OrcaSlicer_gray.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs6">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient619">
-      <stop
-         style="stop-color:#434343;stop-opacity:1;"
-         offset="0"
-         id="stop615" />
-      <stop
-         style="stop-color:#616161;stop-opacity:1;"
-         offset="1"
-         id="stop617" />
-    </linearGradient>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath16">
-      <path
-         d="M 0,792 H 612 V 0 H 0 Z"
-         id="path14" />
-    </clipPath>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient619"
-       id="linearGradient621"
-       x1="1.0009738"
-       y1="0.50097728"
-       x2="1024"
-       y2="1024.9971"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0000697,0,0,1.0000572,-0.06245207,-0.06244275)" />
-  </defs>
-  <sodipodi:namedview
-     id="namedview4"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="695.79307"
-     inkscape:cy="981.46421"
-     inkscape:window-width="1350"
-     inkscape:window-height="1237"
-     inkscape:window-x="120"
-     inkscape:window-y="83"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="background"
-     transform="matrix(0.99895749,0,0,0.99799215,-0.93372196,0.06231743)">
-    <rect
-       style="fill:url(#linearGradient621);fill-opacity:1;stroke-width:1.00007"
-       id="rect457"
-       width="1025.0686"
-       height="1026.0602"
-       x="0.93469638"
-       y="-0.062442806"
-       rx="2.0001395"
-       ry="2.0001287"
-       inkscape:export-filename="..\..\..\a\OrcaSlicer\OrcaSlicer\resources\images\BambuStudio_192px_grayscale.png"
-       inkscape:export-xdpi="18"
-       inkscape:export-ydpi="18" />
-  </g>
-  <g
-     id="g8"
-     inkscape:groupmode="layer"
-     inkscape:label="OrcaS"
-     transform="matrix(1.3333333,0,0,-1.3333333,0,1056)">
-    <g
-       id="g10"
-       transform="translate(76.258954,16.062441)">
-      <g
-         id="g12"
-         clip-path="url(#clipPath16)">
-        <g
-           id="g18"
-           transform="translate(59.7287,115.3517)">
-          <path
-             d="m 0,0 c 53.332,-53.285 126.698,-86.317 207.744,-86.646 164.049,-0.664 298.355,134.38 297.699,299.337 -0.324,81.496 -33.176,155.271 -86.17,208.899 z"
-             style="fill:#292826;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path20" />
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 417 417" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g id="Page-1" serif:id="Page 1" transform="matrix(4.16667,0,0,4.16667,0,0)">
+        <rect x="0" y="0" width="100" height="100" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="0" y="0" width="100" height="100"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g id="Logo-simple" serif:id="Logo simple">
+                <g transform="matrix(73.2843,-73.2843,-73.2843,-73.2843,13.3579,86.6421)">
+                    <path d="M0.636,0.443C0.561,0.519 0.439,0.519 0.364,0.443L0.057,0.136C-0.019,0.061 -0.019,-0.061 0.057,-0.136L0.364,-0.443C0.439,-0.519 0.561,-0.519 0.636,-0.443L0.943,-0.136C1.019,-0.061 1.019,0.061 0.943,0.136L0.636,0.443Z" style="fill:url(#_Linear2);fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,27.5,92.5)">
+                    <path d="M0,-85L45,-85C56.046,-85 65,-76.046 65,-65L65,-20C65,-8.954 56.046,0 45,0L0,0C-11.046,0 -20,-8.954 -20,-20L-20,-65C-20,-76.046 -11.046,-85 0,-85Z" style="fill:none;fill-rule:nonzero;stroke:url(#_Linear3);stroke-width:4px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,50.52,36.89)">
+                    <path d="M0,1.45C2.23,-0.55 4.69,-2.27 7.32,-3.69C9.98,-5.23 12.84,-6.39 15.82,-7.14C18.6,-7.77 21.14,-7.59 21.68,-5.55C21.89,-4.33 21.77,-3.07 21.31,-1.91C21.01,-1.05 20.65,-0.21 20.23,0.61L20.54,0.75C22.22,-1.41 23.74,-3.74 23.98,-6.31C24.11,-7.88 23.26,-9.37 21.83,-10.06C20.26,-10.78 18.54,-11.11 16.81,-10.99C15,-10.92 13.21,-10.69 11.44,-10.29C15.51,-11.89 19.93,-12.31 24.22,-11.48L24.34,-12C20.37,-14.14 15.98,-15.39 11.48,-15.66C-2.5,-16.63 -14.51,-9.32 -15.52,2.77C-16.05,8.6 -13.71,14.31 -9.23,18.08L-8.63,17.75C-9.71,14.14 -6.53,7.52 0.02,1.43L0,1.43L0,1.45Z" style="fill:white;fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,58.52,79.62)">
+                    <path d="M0,-34.73L-0.6,-34.4C0.52,-30.75 -2.7,-23.99 -9.35,-17.82C-11.51,-15.89 -13.88,-14.2 -16.42,-12.81C-19.07,-11.25 -21.92,-10.07 -24.89,-9.31C-27.67,-8.66 -30.21,-8.82 -30.76,-10.86C-30.98,-12.08 -30.86,-13.34 -30.42,-14.5C-30.12,-15.36 -29.76,-16.21 -29.36,-17.02L-29.68,-17.16C-31.35,-14.99 -32.85,-12.65 -33.06,-10.09C-33.18,-8.51 -32.31,-7.03 -30.89,-6.35C-29.31,-5.64 -27.59,-5.33 -25.86,-5.46C-24.1,-5.53 -22.34,-5.77 -20.63,-6.17C-24.65,-4.6 -29.03,-4.17 -33.28,-4.95L-33.39,-4.43C-29.41,-2.32 -25.01,-1.09 -20.51,-0.86C-6.52,0.02 5.44,-7.36 6.37,-19.47C6.86,-25.3 4.48,-31.01 -0.02,-34.75L0,-34.73" style="fill:white;fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,48.56,44.3)">
+                    <path d="M0,10.46C0.46,10.44 0.9,10.31 1.31,10.09C2.09,9.65 2.8,9.09 3.4,8.43C4.46,7.3 5.31,5.98 5.9,4.54C7.14,1.28 7.26,-1.64 6.03,-2.63C4.89,-3.55 2.9,-2.57 0.97,-0.39C1.09,-0.42 1.19,-0.46 1.32,-0.49C1.93,-0.61 2.55,-0.58 3.15,-0.44C3.71,-0.29 4.17,0.13 4.35,0.68C4.06,0.27 3.6,0.02 3.1,0.01C2.64,0.03 2.2,0.16 1.79,0.38C1.01,0.82 0.3,1.38 -0.3,2.04C-1.18,2.98 -1.91,4.04 -2.48,5.19C-2.5,5.24 -2.52,5.28 -2.54,5.32L-2.54,5.34C-3.99,8.83 -4.2,12.04 -2.89,13.09C-1.75,14.01 0.24,13.03 2.18,10.85C2.05,10.88 1.94,10.93 1.8,10.95C1.19,11.07 0.57,11.04 -0.03,10.9C-0.59,10.75 -1.05,10.33 -1.23,9.78C-0.94,10.19 -0.48,10.44 0.03,10.45L0.01,10.45L0,10.46Z" style="fill:white;fill-rule:nonzero;"/>
+                </g>
+            </g>
+            <g id="Logo-CosmoSlice-darkmode" serif:id="Logo CosmoSlice darkmode">
+            </g>
+            <g id="Logo-CosmoSlice-lightmode" serif:id="Logo CosmoSlice lightmode">
+            </g>
+            <g id="Calque-6" serif:id="Calque 6">
+            </g>
         </g>
-        <g
-           id="g22"
-           transform="translate(479.0017,536.9419)">
-          <path
-             d="m 0,0 -419.273,-421.59 c 0.298,-0.298 0.606,-0.587 0.906,-0.884 146.894,74.925 348.023,206.579 486.003,316.297 C 52.756,-65.97 29.506,-29.859 0,0"
-             style="fill:#009789;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path24" />
-        </g>
-        <g
-           id="g26"
-           transform="translate(397.0372,747)">
-          <path
-             d="m 0,0 c -163.742,0 -296.482,-133.473 -296.482,-298.121 0,-81.979 32.915,-156.223 86.172,-210.117 l 419.273,421.59 C 155.364,-33.096 81.529,0 0,0"
-             style="fill:#292826;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path28" />
-        </g>
-        <g
-           id="g30"
-           transform="translate(397.0372,747)">
-          <path
-             d="m 0,0 c -56.714,0 -109.702,-16.022 -154.751,-43.796 -24.127,6.312 -54.061,11.37 -88.437,11.157 -59.938,-0.372 -108.713,-16.603 -141.822,-31.784 -8.218,-3.768 -6.898,-15.967 1.941,-17.829 21.801,-4.593 50.498,-14.324 78.883,-35.28 17.931,-13.238 31.574,-27.883 41.856,-41.597 -21.794,-41.504 -34.152,-88.793 -34.152,-138.992 0,-29.952 4.412,-58.865 12.586,-86.137 12.54,27.79 25.699,46.391 29.916,52.184 27.229,37.41 56.015,56.883 98.542,85.651 31.328,21.193 74.856,46.047 199.916,97.449 0,0 39.121,11.017 91.587,42.212 20.912,12.433 36.823,24.17 41.863,42.526 0.355,1.293 0.677,2.57 0.973,3.83 C 129.175,-22.506 67.208,0 0,0"
-             style="fill:#262523;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path32" />
-        </g>
-        <g
-           id="g34"
-           transform="translate(446.5563,646.8041)">
-          <path
-             d="m 0,0 c 10.875,-19.229 -10.891,-52.305 -48.616,-73.879 -37.725,-21.573 -77.124,-23.474 -88,-4.245 -10.875,19.229 10.891,52.305 48.617,73.879 C -50.274,17.328 -10.875,19.229 0,0"
-             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path36" />
-        </g>
-      </g>
     </g>
-  </g>
+    <defs>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1,0,0,-1,0,-1.36455e-08)"><stop offset="0" style="stop-color:rgb(15,16,16);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(29,24,25);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear3" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(76.1127,-76.1127,76.1127,76.1127,-15.5563,-4.4436)"><stop offset="0" style="stop-color:rgb(85,19,99);stop-opacity:1"/><stop offset="0.6" style="stop-color:rgb(178,0,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(60,60,150);stop-opacity:1"/></linearGradient>
+    </defs>
 </svg>

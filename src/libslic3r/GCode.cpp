@@ -16,6 +16,7 @@
 #include "Print.hpp"
 #include "Utils.hpp"
 #include "ClipperUtils.hpp"
+#include "CosmoLog.hpp"
 #include "libslic3r.h"
 #include "LocalesUtils.hpp"
 #include "libslic3r/format.hpp"
@@ -2117,8 +2118,17 @@ void GCode::do_export(Print* print, const char* path, GCodeProcessorResult* resu
         std::vector<int> conflict_filament;
         for(auto extruder_id : m_initial_layer_extruders){
             int cur_bed_temp = bed_temp_opt->get_at(extruder_id);
-            if (cur_bed_temp == 0) {
+            int unsupported_sentinel = (m_config.curr_bed_type == btCosmyx) ? -1 : 0;
+            if (cur_bed_temp == unsupported_sentinel) {
                 conflict_filament.push_back(extruder_id);
+                if (bed_type_keys_map != nullptr) {
+                    for (auto item : *bed_type_keys_map) {
+                        if (item.second == m_config.curr_bed_type) {
+                            m_processor.result().bed_match_result = BedMatchResult(false, item.first, extruder_id);
+                            break;
+                        }
+                    }
+                }
             }
         }
 
@@ -6505,9 +6515,33 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
     assert(is_decimal_separator_point());
 
     if (path.role() != m_last_processor_extrusion_role) {
+        ExtrusionRole old_role = m_last_processor_extrusion_role;
         m_last_processor_extrusion_role = path.role();
         sprintf(buf, ";%s%s\n", GCodeProcessor::reserved_tag(GCodeProcessor::ETags::Role).c_str(), ExtrusionEntity::role_to_string(m_last_processor_extrusion_role).c_str());
         gcode += buf;
+
+        // Ironing temperature control
+        COSMO_LOG(debug) << "[GCode] Ironing temperature control activated";
+        int ironing_temp = EXTRUDER_CONFIG(ironing_temperature);
+        if (ironing_temp > 0 && m_writer.extruder() != nullptr) {
+            bool transitioning_to_ironing = (path.role() == erIroning && old_role != erIroning);
+            bool transitioning_from_ironing = (path.role() != erIroning && old_role == erIroning);
+
+            if (transitioning_to_ironing) {
+                // Set ironing temperature (no wait - already generated moves)
+                gcode += m_writer.set_temperature(ironing_temp, false, m_writer.extruder()->id());
+                gcode += "; ironing temperature\n";
+            }
+            else if (transitioning_from_ironing) {
+                // Restore normal temperature (no wait)
+                int restore_temp = this->on_first_layer() ?
+                    m_config.nozzle_temperature_initial_layer.get_at(m_writer.extruder()->id()) :
+                    m_config.nozzle_temperature.get_at(m_writer.extruder()->id());
+
+                gcode += m_writer.set_temperature(restore_temp, false, m_writer.extruder()->id());
+                gcode += "; restore printing temperature\n";
+            }
+        }
     }
 
     if (last_was_wipe_tower || m_last_width != path.width) {

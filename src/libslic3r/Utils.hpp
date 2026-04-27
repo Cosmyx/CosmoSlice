@@ -192,6 +192,9 @@ bool makedir(const std::string path);
 std::string debug_out_path(const char *name, ...);
 // smaller level means less log. level=5 means saving all logs.
 void set_log_path_and_level(const std::string& file, unsigned int level);
+// Initialize the Cosmyx-dedicated log file (cosmo_*.log) in the same log folder.
+// Always captures all severity levels — no build-type gate.
+void set_cosmo_log_path_and_level(const std::string& file);
 void flush_logs();
 
 // A special type for strings encoded in the local Windows 8-bit code page.

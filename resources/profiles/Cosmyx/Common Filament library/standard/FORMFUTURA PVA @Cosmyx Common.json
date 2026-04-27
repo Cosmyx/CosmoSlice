@@ -1,0 +1,52 @@
+{
+    "type": "filament",
+    "filament_id": "MIL12",
+    "name": "FORMFUTURA PVA @Cosmyx Common",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PLA Basic @Cosmyx Common",
+    "default_filament_colour": [
+        "#FFFFFF"
+    ],
+    "fan_max_speed": [
+        "0"
+    ],
+    "fan_min_speed": [
+        "0"
+    ],
+    "filament_is_support": [
+        "1"
+    ],
+    "filament_settings_id": [
+        "FORMFUTURA PVA @Cosmyx Common"
+    ],
+    "filament_soluble": [
+        "1"
+    ],
+    "filament_type": [
+        "PVA"
+    ],
+    "filament_vendor": [
+        "Formfutura"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "65"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "65"
+    ],
+    "is_custom_defined": "0",
+    "nozzle_temperature_range_high": [
+        "220"
+    ],
+    "overhang_fan_speed": [
+        "0"
+    ],
+    "version": "14.04.2026.02",
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ]
+}

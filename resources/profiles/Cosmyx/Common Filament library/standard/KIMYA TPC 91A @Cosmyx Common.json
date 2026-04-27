@@ -1,0 +1,70 @@
+{
+    "type": "filament",
+    "setting_id": "TPC91COSN",
+    "instantiation": "true",
+    "default_filament_colour": [
+        "#004040"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "fan_max_speed": [
+        "10"
+    ],
+    "fan_min_speed": [
+        "10"
+    ],
+    "filament_deretraction_speed": [
+        "25"
+    ],
+    "filament_max_volumetric_speed": [
+        "5"
+    ],
+    "filament_retraction_length": [
+        "0.8"
+    ],
+    "filament_settings_id": [
+        "KIMYA TPC 91A @Cosmyx Common"
+    ],
+    "filament_type": [
+        "TPC"
+    ],
+    "filament_vendor": [
+        "KIMYA"
+    ],
+    "filament_wipe": [
+        "0"
+    ],
+    "from": "User",
+    "cosmyx_textured_bed_temp": [
+        "80"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "80"
+    ],
+    "inherits": "Cosmyx TPU 95A @Cosmyx Common",
+    "is_custom_defined": "0",
+    "name": "KIMYA TPC 91A @Cosmyx Common",
+    "nozzle_temperature": [
+        "234"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "234"
+    ],
+    "overhang_fan_speed": [
+        "40"
+    ],
+    "overhang_fan_threshold": [
+        "25%"
+    ],
+    "pressure_advance": [
+        "0.096"
+    ],
+    "version": "14.04.2026.02",
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ]
+}

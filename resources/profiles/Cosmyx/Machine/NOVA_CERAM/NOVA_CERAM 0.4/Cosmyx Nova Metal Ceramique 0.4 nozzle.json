@@ -1,0 +1,27 @@
+{
+    "type": "machine",
+    "setting_id": "GM401",
+    "instantiation": "true",
+    "inherits": "Cosmyx Nova 0.4 nozzle",
+    "name": "Cosmyx Nova Metal Ceramique 0.4 nozzle",
+    "nozzle_diameter": [
+        "0.4"
+    ],
+    "printer_model": "Cosmyx Nova Metal Ceramique",
+    "printer_variant": "0.4",
+    "nozzle_type": "brass",
+    "z_hop": [
+        "0.4"
+    ],
+    "z_hop_types": [
+        "Slope Lift"
+    ],
+    "retract_lift_above": [
+        "1",
+        "1"
+    ],
+    "retract_lift_below": [
+        "600",
+        "600"
+    ]
+}

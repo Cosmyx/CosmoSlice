@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL33_NOVA_DT_04",
+    "name": "TECTONIC PP-CF15 @Nova DT 0.4",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TECTONIC PP-CF15 @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx Nova Double Tete 0.4 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

@@ -1,0 +1,39 @@
+name: Enhancement Request
+description: Suggest a new feature or improvement
+labels: ["enhancement"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Short title for this enhancement
+    validations:
+      required: true
+  - type: dropdown
+    id: criticality
+    attributes:
+      label: Critical Point
+      description: Rate the importance (0 = Non-critical, 5 = ULTRA critical)
+      options:
+        - "0 - Non-critical"
+        - "1 - Low"
+        - "2 - Medium"
+        - "3 - High"
+        - "4 - Very High"
+        - "5 - ULTRA critical"
+    validations:
+      required: true
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Short summary of the addition
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Explanation
+      description: Detailed explanation of the addition and its benefits
+    validations:
+      required: true

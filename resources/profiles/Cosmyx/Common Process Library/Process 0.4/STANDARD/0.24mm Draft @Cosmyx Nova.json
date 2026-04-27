@@ -1,0 +1,12 @@
+{
+    "type": "process",
+    "setting_id": "GP005",
+    "name": "0.24mm Draft @Cosmyx Nova",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_cosmyx_0.24",
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ],
+    "version": "14.04.2026.02"
+}
