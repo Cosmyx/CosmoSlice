@@ -140,7 +140,6 @@ jobs:
         with:
           name: ${{ github.sha }}-tests
   flatpak:
-    if: false
     name: "Flatpak"
     container:
       image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-49
