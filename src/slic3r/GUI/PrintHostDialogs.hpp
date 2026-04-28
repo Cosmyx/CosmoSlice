@@ -180,6 +180,22 @@ private:
     BedType m_BedType;
 };
 
+class CosmyxPrintHostSendDialog : public PrintHostSendDialog
+{
+public:
+    CosmyxPrintHostSendDialog(const boost::filesystem::path& path,
+                               PrintHostPostUploadActions     post_actions,
+                               const wxArrayString&           groups,
+                               const wxArrayString&           storage_paths,
+                               const wxArrayString&           storage_names,
+                               bool                           switch_to_device_tab);
+
+    virtual void init() override;
+
+private:
+    wxString m_web_filename;
+};
+
 wxDECLARE_EVENT(EVT_PRINTHOST_PROGRESS, PrintHostQueueDialog::Event);
 wxDECLARE_EVENT(EVT_PRINTHOST_ERROR, PrintHostQueueDialog::Event);
 wxDECLARE_EVENT(EVT_PRINTHOST_CANCEL, PrintHostQueueDialog::Event);
