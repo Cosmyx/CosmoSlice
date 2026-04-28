@@ -65,6 +65,7 @@
 #include "libslic3r/I18N.hpp"
 #include "libslic3r/PresetBundle.hpp"
 #include "libslic3r/ProfileTranslator.hpp"
+#include "SliceCheck.hpp"
 #include "libslic3r/Thread.hpp"
 #include "libslic3r/miniz_extension.hpp"
 #include "libslic3r/Utils.hpp"
@@ -2710,6 +2711,7 @@ bool GUI_App::on_init_inner()
         translator.load_translations((boost::filesystem::path(Slic3r::data_dir()) / PRESET_SYSTEM_DIR).string(), lang);
         translator.load_translations((boost::filesystem::path(Slic3r::resources_dir()) / "profiles").string(), lang);
     }
+    SliceCheckManager::get_instance().load_all();
 
     BOOST_LOG_TRIVIAL(info) << "create the main window";
     mainframe = new MainFrame();
