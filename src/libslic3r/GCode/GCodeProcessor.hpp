@@ -114,6 +114,17 @@ class Print;
 
     using ConflictResultOpt = std::optional<ConflictResult>;
 
+    struct BedMatchResult
+    {
+        bool match;
+        std::string bed_type_name;
+        int extruder_id;
+        BedMatchResult(): match(true), bed_type_name(""), extruder_id(-1) {}
+        BedMatchResult(bool _match, const std::string& _bed_type_name="", int _extruder_id=-1)
+            : match(_match), bed_type_name(_bed_type_name), extruder_id(_extruder_id)
+        {}
+    };
+
     struct GCodeCheckResult
     {
         int error_code = 0;   // 0 means succeed, 0b 0001 multi extruder printable area error, 0b 0010 multi extruder printable height error,
@@ -151,6 +162,7 @@ class Print;
         };
         ConflictResultOpt conflict_result;
         GCodeCheckResult  gcode_check_result;
+        BedMatchResult  bed_match_result;
         FilamentPrintableResult filament_printable_reuslt;
         float initial_layer_time;
 
@@ -281,6 +293,7 @@ class Print;
             warnings = other.warnings;
             bed_type = other.bed_type;
             gcode_check_result = other.gcode_check_result;
+            bed_match_result = other.bed_match_result;
             limit_filament_maps = other.limit_filament_maps;
             filament_printable_reuslt = other.filament_printable_reuslt;
             layer_filaments = other.layer_filaments;
