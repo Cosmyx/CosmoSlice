@@ -4652,8 +4652,11 @@ void GCodeProcessor::process_VG1(const GCodeReader::GCodeLine& line)
     // do not save the move
 }
 
-void GCodeProcessor::process_G2_G3(const GCodeReader::GCodeLine& line, bool clockwise)
+void GCodeProcessor::process_G2_G3(const GCodeReader::GCodeLine& line)
 {
+    const std::string_view cmd = line.cmd();
+    bool clockwise = (::atoi(&cmd[1]) == 2);
+
     enum class EFitting { None, IJ, R };
     std::string_view axis_pos_I;
     std::string_view axis_pos_J;

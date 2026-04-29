@@ -920,7 +920,7 @@ class Print;
             const std::optional<unsigned int>& remaining_internal_g1_lines = std::nullopt);
 
         // Arc Move
-        void process_G2_G3(const GCodeReader::GCodeLine& line, bool clockwise);
+        void process_G2_G3(const GCodeReader::GCodeLine& line);
 
         void process_VG1(const GCodeReader::GCodeLine& line);
 

@@ -2114,8 +2114,10 @@ void GCode::do_export(Print* print, const char* path, GCodeProcessorResult* resu
     m_processor.result().long_retraction_when_cut = activate_long_retraction_when_cut;
    
     {   //BBS:check bed and filament compatible
-        const ConfigOptionInts *bed_temp_opt = m_config.option<ConfigOptionInts>(get_bed_temp_1st_layer_key(m_config.curr_bed_type));
-        std::vector<int> conflict_filament;
+        const ConfigOptionDef *bed_type_def = print_config_def.get("curr_bed_type");
+        assert(bed_type_def != nullptr);
+        const t_config_enum_values *bed_type_keys_map = bed_type_def->enum_keys_map;
+        const ConfigOptionInts *bed_temp_opt = m_config.option<ConfigOptionInts>(get_bed_temp_key(m_config.curr_bed_type));
         for(auto extruder_id : m_initial_layer_extruders){
             int cur_bed_temp = bed_temp_opt->get_at(extruder_id);
             int unsupported_sentinel = (m_config.curr_bed_type == btCosmyx) ? -1 : 0;
@@ -2127,9 +2129,9 @@ void GCode::do_export(Print* print, const char* path, GCodeProcessorResult* resu
                     }
                 }
             }
+            if (m_processor.result().bed_match_result.match == false)
+                break;
         }
-
-        m_processor.result().filament_printable_reuslt = FilamentPrintableResult(conflict_filament, bed_type_to_gcode_string(m_config.curr_bed_type));
     }
     // check gcode is valid in machine printabele area and multi_extruder printabele area
     int extruder_size = m_print->config().nozzle_diameter.values.size();
@@ -6520,22 +6522,22 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
         // Ironing temperature control
         COSMO_LOG(debug) << "[GCode] Ironing temperature control activated";
         int ironing_temp = EXTRUDER_CONFIG(ironing_temperature);
-        if (ironing_temp > 0 && m_writer.extruder() != nullptr) {
+        if (ironing_temp > 0 && m_writer.filament() != nullptr) {
             bool transitioning_to_ironing = (path.role() == erIroning && old_role != erIroning);
             bool transitioning_from_ironing = (path.role() != erIroning && old_role == erIroning);
 
             if (transitioning_to_ironing) {
                 // Set ironing temperature (no wait - already generated moves)
-                gcode += m_writer.set_temperature(ironing_temp, false, m_writer.extruder()->id());
+                gcode += m_writer.set_temperature(ironing_temp, false, m_writer.filament()->id());
                 gcode += "; ironing temperature\n";
             }
             else if (transitioning_from_ironing) {
                 // Restore normal temperature (no wait)
                 int restore_temp = this->on_first_layer() ?
-                    m_config.nozzle_temperature_initial_layer.get_at(m_writer.extruder()->id()) :
-                    m_config.nozzle_temperature.get_at(m_writer.extruder()->id());
+                    m_config.nozzle_temperature_initial_layer.get_at(m_writer.filament()->id()) :
+                    m_config.nozzle_temperature.get_at(m_writer.filament()->id());
 
-                gcode += m_writer.set_temperature(restore_temp, false, m_writer.extruder()->id());
+                gcode += m_writer.set_temperature(restore_temp, false, m_writer.filament()->id());
                 gcode += "; restore printing temperature\n";
             }
         }
