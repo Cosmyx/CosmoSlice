@@ -1682,8 +1682,8 @@ void GCodeProcessor::register_commands()
     std::unordered_map<std::string, CommandProcessor::command_handler_t> command_handler_list = {
         {"G0", [this](const GCodeReader::GCodeLine& line) { process_G0(line); }}, // Move
         {"G1", [this](const GCodeReader::GCodeLine& line) { process_G1(line); }}, // Move
-        {"G2", [this](const GCodeReader::GCodeLine& line) { process_G2_G3(line, true); }}, // Move
-        {"G3", [this](const GCodeReader::GCodeLine& line) { process_G2_G3(line, false); }}, // Move
+        {"G2", [this](const GCodeReader::GCodeLine& line) { process_G2_G3(line); }}, // Move
+        {"G3", [this](const GCodeReader::GCodeLine& line) { process_G2_G3(line); }}, // Move
         {"G4", [this](const GCodeReader::GCodeLine& line) { process_G4(line); }}, // Delay
 
         {"G10", [this](const GCodeReader::GCodeLine& line) { process_G10(line); }}, // Retract
