@@ -279,8 +279,8 @@ PrinterPicker::PrinterPicker(wxWindow *parent, const VendorProfile &vendor, wxSt
             const auto &variant = model.variants[i];
 
             const auto label = model.technology == ptFFF
-                from_u8((boost::format("%1% %2% %3%") % variant.name % _utf8("mm") % _utf8(L("nozzle"))).str())
-                from_u8(ProfileTranslator::instance().translate(model.name));
+                ? from_u8((boost::format("%1% %2% %3%") % variant.name % _utf8("mm") % _utf8(L("nozzle"))).str())
+                : from_u8(ProfileTranslator::instance().translate(model.name));
 
             if (i == 1) {
                 auto *alt_label = new wxStaticText(variants_panel, wxID_ANY, _L("Alternate nozzles:"));
