@@ -5639,12 +5639,6 @@ msgstr "匯出目前已切片的檔案"
 msgid "Export all plate sliced file"
 msgstr "匯出所有列印板已切片的檔案"
 
-msgid "Export all G-code files"
-msgstr "匯出所有 G-code 檔案"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "選擇目錄以匯出所有 G-code 檔案"
-
 msgid "Export G-code"
 msgstr "匯出 G-code"
 
@@ -14000,14 +13994,6 @@ msgid ""
 "Filament-specific override for ironing speed. This allows you to customize "
 "the print speed of ironing lines for each filament type."
 msgstr "特定於線材的熨燙速度優先。這允許您自訂每種線材類型的熨燙線的列印速度。"
-
-msgid "Ironing temperature"
-msgstr "熨平溫度"
-
-msgid ""
-"Sets the extrusion temperature for the ironing pass. If unset in the "
-"filament profile, the global printing temperature is used by default."
-msgstr "設定熨平過程的擠出溫度。如果在耗材設定檔中未設定，則預設使用全域列印溫度。"
 
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "

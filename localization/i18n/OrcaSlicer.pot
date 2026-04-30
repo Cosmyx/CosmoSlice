@@ -5400,12 +5400,6 @@ msgstr ""
 msgid "Export all plate sliced file"
 msgstr ""
 
-msgid "Export all G-code files"
-msgstr ""
-
-msgid "Choose a directory to export all G-code files"
-msgstr ""
-
 msgid "Export G-code"
 msgstr ""
 
@@ -19053,10 +19047,4 @@ msgstr ""
 
 #: resources/data/hints.ini: [hint:Avoid warping]
 msgid "Avoid warping\nDid you know that when printing materials that are prone to warping such as ABS, appropriately increasing the heatbed temperature can reduce the probability of warping?"
-msgstr ""
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
 msgstr ""

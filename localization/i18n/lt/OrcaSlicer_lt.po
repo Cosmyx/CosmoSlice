@@ -5841,12 +5841,6 @@ msgstr "Eksportuoti dabartinį sluoksniuotą failą"
 msgid "Export all plate sliced file"
 msgstr "Eksportuoti visų sluoksniuotų plokščių failą"
 
-msgid "Export all G-code files"
-msgstr "Eksportuoti visus G-kodo failus"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "Pasirinkite katalogą, į kurį eksportuoti visus G-kodo failus"
-
 msgid "Export G-code"
 msgstr "Eksportuoti G-kodą"
 
@@ -15032,14 +15026,6 @@ msgstr ""
 "Filament-specific override for ironing speed. This allows you to customize "
 "the print speed of ironing lines for each filament type."
 
-msgid "Ironing temperature"
-msgstr "Lyginimo temperatūra"
-
-msgid ""
-"Sets the extrusion temperature for the ironing pass. If unset in the "
-"filament profile, the global printing temperature is used by default."
-msgstr "Nustato ekstruzijos temperatūrą lyginimo perėjimui. Jei nenustatyta filamento profilyje, pagal nutylėjimą naudojama bendra spausdinimo temperatūra."
-
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."
@@ -24176,9 +24162,3 @@ msgstr ""
 #, c-format, boost-format
 #~ msgid "Support: propagate branches at layer %d"
 #~ msgstr "Atramos: skleisti šakas sluoksnyje %d"
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
-msgstr ""

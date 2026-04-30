@@ -5878,12 +5878,6 @@ msgstr "Exportar el fitxer laminat actual"
 msgid "Export all plate sliced file"
 msgstr "Exportar el fitxer laminat actual"
 
-msgid "Export all G-code files"
-msgstr "Exportar tots els fitxers G-code"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "Trieu un directori per exportar tots els fitxers G-code"
-
 msgid "Export G-code"
 msgstr "Exportar el Codi-G"
 
@@ -15223,14 +15217,6 @@ msgstr ""
 "Substitució específica del filament per a la velocitat de planxat. Permet "
 "personalitzar la velocitat d'impressió de les línies de planxat per a cada "
 "tipus de filament."
-
-msgid "Ironing temperature"
-msgstr "Temperatura de planxat"
-
-msgid ""
-"Sets the extrusion temperature for the ironing pass. If unset in the "
-"filament profile, the global printing temperature is used by default."
-msgstr "Estableix la temperatura d'extrusió per a la passada de planxat. Si no s'estableix al perfil de filament, s'utilitza la temperatura d'impressió global per defecte."
 
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
@@ -24617,9 +24603,3 @@ msgstr ""
 
 #~ msgid "End end: "
 #~ msgstr "Final: "
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
-msgstr ""

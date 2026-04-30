@@ -5828,12 +5828,6 @@ msgstr "Huidig sliced bestand exporteren"
 msgid "Export all plate sliced file"
 msgstr "Exporteer alle plate sliced bestanden"
 
-msgid "Export all G-code files"
-msgstr "Exporteer alle G-code bestanden"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "Kies een map om alle G-code bestanden te exporteren"
-
 msgid "Export G-code"
 msgstr "Exporteer G-code"
 
@@ -15035,14 +15029,6 @@ msgstr ""
 "Filament-specific override for ironing speed. This allows you to customize "
 "the print speed of ironing lines for each filament type."
 
-msgid "Ironing temperature"
-msgstr "Strijktemperatuur"
-
-msgid ""
-"Sets the extrusion temperature for the ironing pass. If unset in the "
-"filament profile, the global printing temperature is used by default."
-msgstr "Stelt de extrusietemperatuur in voor de strijkbeurt. Als dit niet is ingesteld in het filamentprofiel, wordt standaard de algemene afdruktemperatuur gebruikt."
-
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."
@@ -24058,9 +24044,3 @@ msgstr ""
 
 #~ msgid "Orient the model"
 #~ msgstr "Oriënteer het model"
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
-msgstr ""

@@ -5797,12 +5797,6 @@ msgstr "Exportera aktuell beredd fil"
 msgid "Export all plate sliced file"
 msgstr "Exportera alla beredda filer"
 
-msgid "Export all G-code files"
-msgstr "Exportera alla G-kodfiler"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "Välj en mapp för att exportera alla G-kodfiler"
-
 msgid "Export G-code"
 msgstr "Exportera G-kod"
 
@@ -14875,14 +14869,6 @@ msgstr ""
 "Filament-specific override for ironing speed. This allows you to customize "
 "the print speed of ironing lines for each filament type."
 
-msgid "Ironing temperature"
-msgstr "Stryktemperatur"
-
-msgid ""
-"Sets the extrusion temperature for the ironing pass. If unset in the "
-"filament profile, the global printing temperature is used by default."
-msgstr "Ställer in extruderingstemperaturen för strykpasset. Om den inte är inställd i filamentprofilen används den globala utskriftstemperaturen som standard."
-
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
 "look. This setting controls the fuzzy position."
@@ -23780,9 +23766,3 @@ msgstr ""
 
 #~ msgid "Orient the model"
 #~ msgstr "Orientera modellen"
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
-msgstr ""

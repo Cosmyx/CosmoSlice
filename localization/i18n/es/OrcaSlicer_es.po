@@ -5919,12 +5919,6 @@ msgstr "Exportar la cama activa laminada a un archivo"
 msgid "Export all plate sliced file"
 msgstr "Exportar todas las camas laminadas a un archivo"
 
-msgid "Export all G-code files"
-msgstr "Exportar todos los archivos G-Code"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "Elija un directorio para exportar todos los archivos G-Code"
-
 msgid "Export G-code"
 msgstr "Exportar G-Code"
 
@@ -15287,14 +15281,6 @@ msgstr ""
 "Sobrescritura específica por filamento para la velocidad de alisado. Esto "
 "permite personalizar la velocidad de impresión de las líneas de alisado para "
 "cada tipo de filamento."
-
-msgid "Ironing temperature"
-msgstr "Temperatura de alisado"
-
-msgid ""
-"Sets the extrusion temperature for the ironing pass. If unset in the "
-"filament profile, the global printing temperature is used by default."
-msgstr "Establece la temperatura de extrusión para el paso de alisado. Si no se establece en el perfil del filamento, se utiliza la temperatura de impresión global de forma predeterminada."
 
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
@@ -26937,9 +26923,3 @@ msgstr ""
 
 #~ msgid "preparing, export 3MF failed!"
 #~ msgstr "Preparando; ¡Error al exportar 3MF!"
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
-msgstr ""

@@ -5910,12 +5910,6 @@ msgstr "Esporta il file elaborato corrente"
 msgid "Export all plate sliced file"
 msgstr "Esporta tutti i piatti elaborati"
 
-msgid "Export all G-code files"
-msgstr "Esporta tutti i file G-code"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "Scegli una cartella per esportare tutti i file G-code"
-
 msgid "Export G-code"
 msgstr "Esporta G-code"
 
@@ -15310,14 +15304,6 @@ msgstr ""
 "Sostituzione specifica del filamento per la velocità di stiratura. Permette "
 "di personalizzare la velocità di stampa delle linee di stiratura per ogni "
 "tipo di filamento."
-
-msgid "Ironing temperature"
-msgstr "Temperatura di stiratura"
-
-msgid ""
-"Sets the extrusion temperature for the ironing pass. If unset in the "
-"filament profile, the global printing temperature is used by default."
-msgstr "Imposta la temperatura di estrusione per il passaggio di stiratura. Se non impostata nel profilo del filamento, viene utilizzata per impostazione predefinita la temperatura di stampa globale."
 
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
@@ -25469,9 +25455,3 @@ msgstr ""
 #~ "inferiore a quella del primo layer di oltre questa soglia. Una "
 #~ "temperatura del piano troppo bassa degli altri layer può causare il "
 #~ "distacco dell'oggetto dal piatto."
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
-msgstr ""

@@ -5858,12 +5858,6 @@ msgstr "Aktuális szeletelt fájl exportálása"
 msgid "Export all plate sliced file"
 msgstr "Az összes szeletelt tálca exportálása"
 
-msgid "Export all G-code files"
-msgstr "Az összes G-kód fájl exportálása"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "Válasszon mappát az összes G-kód fájl exportálásához"
-
 msgid "Export G-code"
 msgstr "G-kód exportálása"
 
@@ -15102,14 +15096,6 @@ msgstr ""
 "Filament-specifikus felülbírálás a vasalási sebességhez. Lehetővé teszi a "
 "vasalási vonalak nyomtatási sebességének külön beállítását minden "
 "filamenttípushoz."
-
-msgid "Ironing temperature"
-msgstr "Vasalási hőmérséklet"
-
-msgid ""
-"Sets the extrusion temperature for the ironing pass. If unset in the "
-"filament profile, the global printing temperature is used by default."
-msgstr "Beállítja az extrudálási hőmérsékletet a vasalási menethez. Ha nincs beállítva a filament profilban, alapértelmezés szerint a globális nyomtatási hőmérséklet lesz használva."
 
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "

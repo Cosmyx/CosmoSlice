@@ -6022,12 +6022,6 @@ msgstr "Экспортировать текущий нарезанный фай�
 msgid "Export all plate sliced file"
 msgstr "Экспорт всех нарезанных столов в файл"
 
-msgid "Export all G-code files"
-msgstr "Экспортировать все файлы G-кода"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "Выберите папку для экспорта всех файлов G-кода"
-
 msgid "Export G-code"
 msgstr "Экспорт в G-код"
 
@@ -15493,14 +15487,6 @@ msgid ""
 msgstr ""
 "Замещение общего ограничения скорости разглаживания. Позволяет ограничить "
 "скорость движения при разглаживании отдельно для каждого материала."
-
-msgid "Ironing temperature"
-msgstr "Температура разглаживания"
-
-msgid ""
-"Sets the extrusion temperature for the ironing pass. If unset in the "
-"filament profile, the global printing temperature is used by default."
-msgstr "Устанавливает температуру экструзии для прохода разглаживания. Если не задано в профиле филамента, по умолчанию используется глобальная температура печати."
 
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
@@ -25024,9 +25010,3 @@ msgstr ""
 
 #~ msgid "Right click to reset value to system default."
 #~ msgstr "Правая кнопка мыши - сброс значения до системного по умолчанию."
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
-msgstr ""

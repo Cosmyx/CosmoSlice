@@ -5692,12 +5692,6 @@ msgstr "현재 슬라이스 파일 내보내기"
 msgid "Export all plate sliced file"
 msgstr "모든 플레이트의 슬라이스 파일 내보내기"
 
-msgid "Export all G-code files"
-msgstr "모든 G-code 파일 내보내기"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "모든 G-code 파일을 내보낼 디렉토리 선택"
-
 msgid "Export G-code"
 msgstr "Gcode 내보내기"
 
@@ -23763,9 +23757,3 @@ msgstr ""
 #~ "유효한 값을 입력하십시오:\n"
 #~ "시작 > 10 단계 >= 0\n"
 #~ "끝 > 시작 + 단계)"
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
-msgstr ""

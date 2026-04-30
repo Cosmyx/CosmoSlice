@@ -5683,12 +5683,6 @@ msgstr "Eksportuj bieżący plik cięcia"
 msgid "Export all plate sliced file"
 msgstr "Eksportuj wszystkie pliki po pocięciu płyt"
 
-msgid "Export all G-code files"
-msgstr "Eksportuj wszystkie pliki G-code"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "Wybierz katalog do eksportu wszystkich plików G-code"
-
 msgid "Export G-code"
 msgstr "Eksportuj plik G-code"
 
@@ -25527,9 +25521,3 @@ msgstr ""
 #~ "Proszę podać poprawne wartości:\n"
 #~ "start > 10 kroków >= 0\n"
 #~ "koniec > start + krok)"
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
-msgstr ""

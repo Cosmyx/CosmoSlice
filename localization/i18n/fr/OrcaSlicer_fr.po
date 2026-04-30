@@ -5928,12 +5928,6 @@ msgstr "Exporter le fichier découpé actuel"
 msgid "Export all plate sliced file"
 msgstr "Exporter tous les fichiers découpés du plateau"
 
-msgid "Export all G-code files"
-msgstr "Exporter tous les fichiers G-code"
-
-msgid "Choose a directory to export all G-code files"
-msgstr "Choisir un dossier pour exporter tous les fichiers G-code"
-
 msgid "Export G-code"
 msgstr "Exporter le G-code"
 
@@ -15425,14 +15419,6 @@ msgstr ""
 "Remplacement spécifique au filament pour la vitesse de lissage. Cela vous "
 "permet de personnaliser la vitesse d'impression des lignes de lissage pour "
 "chaque type de filament."
-
-msgid "Ironing temperature"
-msgstr "Température de lissage"
-
-msgid ""
-"Sets the extrusion temperature for the ironing pass. If unset in the "
-"filament profile, the global printing temperature is used by default."
-msgstr "Définit la température d'extrusion pour la passe de lissage. Si elle n'est pas définie dans le profil du filament, la température d'impression globale est utilisée par défaut."
 
 msgid ""
 "Randomly jitter while printing the wall, so that the surface has a rough "
@@ -26285,9 +26271,3 @@ msgstr ""
 #~ "Veuillez saisir des valeurs valides :\n"
 #~ "Début > 10 intervalles >= 0\n"
 #~ "Fin > Début + Intervalle"
-
-msgid "CHT"
-msgstr ""
-
-msgid "Tungsten Carbide"
-msgstr ""
