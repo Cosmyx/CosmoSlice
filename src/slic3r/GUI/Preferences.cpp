@@ -1674,7 +1674,7 @@ void PreferencesDialog::create_items()
     sizer_page->Add(g_sizer, 0, wxEXPAND);
 
     //////////////////////////
-    //// ASSOCIATE TAB 
+    //// ASSOCIATE TAB
     /////////////////////////////////////
 #ifdef _WIN32
     m_pref_tabs->AppendItem(_L("Associate"));
@@ -1685,45 +1685,32 @@ void PreferencesDialog::create_items()
     //// ASSOCIATE > Extensions
     g_sizer->Add(create_item_title(_L("Associate files to OrcaSlicer")), 1, wxEXPAND);
 
-    sizer_page->Add(title_general_settings, 0, wxEXPAND, 0);
-    sizer_page->Add(item_language, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_region, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_currency, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_default_page, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_camera_navigation_style, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_single_instance, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_mouse_zoom_settings, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_use_free_camera_settings, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(swap_pan_rotate, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(reverse_mouse_zoom, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(camera_orbit_mult, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_show_splash_screen, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_hints, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_skip_build_notify, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_calc_in_long_retract, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_multi_machine, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_step_mesh_setting, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_auto_arrange, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(title_presets, 0, wxTOP | wxEXPAND, FromDIP(20));
-    sizer_page->Add(item_calc_mode, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_user_sync, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_system_sync, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_remember_printer_config, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_save_presets, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(title_network, 0, wxTOP | wxEXPAND, FromDIP(20));
-    sizer_page->Add(item_check_stable_version_only, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_stealth_mode, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_enable_plugin, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_legacy_network_plugin, 0, wxTOP, FromDIP(3));
-#ifdef _WIN32
-    sizer_page->Add(title_associate_file, 0, wxTOP| wxEXPAND, FromDIP(20));
-    sizer_page->Add(item_associate_3mf, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_associate_stl, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(item_associate_step, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(title_associate_url, 0, wxTOP| wxEXPAND, FromDIP(20));
-    sizer_page->Add(associate_url_prusaslicer, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(associate_url_bambustudio, 0, wxTOP, FromDIP(3));
-    sizer_page->Add(associate_url_cura, 0, wxTOP, FromDIP(3));
+    auto item_associate_3mf    = create_item_checkbox(_L("Associate 3MF files to OrcaSlicer"), _L("If enabled, sets OrcaSlicer as default application to open 3MF files.") , "associate_3mf");
+    g_sizer->Add(item_associate_3mf);
+
+    auto item_associate_drc = create_item_checkbox(_L("Associate DRC files to OrcaSlicer"), _L("If enabled, sets OrcaSlicer as default application to open DRC files."), "associate_drc");
+    g_sizer->Add(item_associate_drc);
+
+    auto item_associate_stl    = create_item_checkbox(_L("Associate STL files to OrcaSlicer"), _L("If enabled, sets OrcaSlicer as default application to open STL files.") , "associate_stl");
+    g_sizer->Add(item_associate_stl);
+
+    auto item_associate_step   = create_item_checkbox(_L("Associate STEP files to OrcaSlicer"), _L("If enabled, sets OrcaSlicer as default application to open STEP files."), "associate_step");
+    g_sizer->Add(item_associate_step);
+
+    //// ASSOCIATE > WebLinks
+    g_sizer->Add(create_item_title(_L("Associate web links to OrcaSlicer")), 1, wxEXPAND);
+
+    auto associate_url_prusa   = create_item_link_association(L"prusaslicer", "Printables.com");
+    g_sizer->Add(associate_url_prusa);
+
+    auto associate_url_bambu   = create_item_link_association(L"bambustudio", "Makerworld.com");
+    g_sizer->Add(associate_url_bambu);
+
+    auto associate_url_cura    = create_item_link_association(L"cura", "Thingiverse.com");
+    g_sizer->Add(associate_url_cura);
+
+    g_sizer->AddSpacer(FromDIP(10));
+    sizer_page->Add(g_sizer, 0, wxEXPAND);
 #endif // _WIN32
 
     //////////////////////////
