@@ -6186,7 +6186,6 @@ void PrintConfigDef::init_fff_params()
     def->max = max_temp;
     def->set_default_value(new ConfigOptionInts { 240 });
 
-    COSMO_LOG(debug) << "[PrintConfig] Registering ironing_temperature";
     def = this->add("ironing_temperature", coInts);
     def->label = L("Ironing temperature");
     def->tooltip = L("Sets the extrusion temperature for the ironing pass. If unset in the filament profile, the global printing temperature is used by default.");
