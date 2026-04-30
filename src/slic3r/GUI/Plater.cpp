@@ -259,7 +259,8 @@ static std::map<BedType, std::string> bed_type_thumbnails = {
     {BedType::btPEI,       "bed_high_templ"     },
     {BedType::btPTE,       "bed_pei"            },
     {BedType::btPCT,       "bed_pei_cool"       },
-    {BedType::btSuperTack, "bed_cool_supertack" }
+    {BedType::btSuperTack, "bed_cool_supertack" },
+    {BedType::btCosmyx,    "bed_pei"            }
 };
 
 enum SlicedInfoIdx
@@ -3972,40 +3973,47 @@ void Sidebar::update_printer_thumbnail()
     auto& preset_bundle = wxGetApp().preset_bundle;
     Preset & selected_preset = preset_bundle->printers.get_edited_preset();
     std::string printer_type    = selected_preset.get_current_printer_type(preset_bundle);
-    if (printer_thumbnails.find(printer_type) != printer_thumbnails.end()) // Use known cache first
-        p->image_printer->SetBitmap(create_scaled_bitmap(printer_thumbnails[printer_type], this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
-    else {
-        try {
-            // No cache, try dedicated printer preview
-            p->image_printer->SetBitmap(create_scaled_bitmap("printer_preview_" + printer_type, this, 48));
-            // Success, cache it
-            printer_thumbnails[printer_type] = "printer_preview_" + printer_type;
-            return;
-        } catch (...) {}
 
-        // Orca: try to use the printer model cover as the thumbnail
-        const auto model_name = selected_preset.config.opt_string("printer_model");
-        std::string cover_file = model_name + "_cover.png";
-        for (auto vendor_profile : preset_bundle->vendors) {
-            for (auto vendor_model : vendor_profile.second.models) {
-                if (vendor_model.name == model_name) {
-                    // Try to find the printer cover
-                    boost::filesystem::path cover_path = boost::filesystem::absolute(boost::filesystem::path(resources_dir()) /
-                                                                                     "/profiles/" / vendor_profile.second.id / cover_file)
-                                                             .make_preferred();
-                    if (boost::filesystem::exists(cover_path)) {
-                        try {
-                            p->image_printer->SetBitmap(create_scaled_bitmap(cover_path.string(), this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
-                            printer_thumbnails[printer_type] = cover_path.string(); // Cache the path so we don't look up again
-                            return;
-                        } catch (...) {}
-                    }
+    // Cache hit — guard against empty/stale entries
+    auto cache_it = printer_thumbnails.find(printer_type);
+    if (cache_it != printer_thumbnails.end()) {
+        if (!cache_it->second.empty()) {
+            try {
+                p->image_printer->SetBitmap(create_scaled_bitmap(cache_it->second, this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
+                return;
+            } catch (...) {}
+        }
+        printer_thumbnails.erase(cache_it); // stale or empty — fall through to rebuild
+    }
+
+    // Try dedicated printer preview image
+    try {
+        p->image_printer->SetBitmap(create_scaled_bitmap("printer_preview_" + printer_type, this, 48));
+        printer_thumbnails[printer_type] = "printer_preview_" + printer_type;
+        return;
+    } catch (...) {}
+
+    // Orca: try to use the printer model cover as the thumbnail
+    const auto model_name = selected_preset.config.opt_string("printer_model");
+    std::string cover_file = model_name + "_cover.png";
+    for (auto vendor_profile : preset_bundle->vendors) {
+        for (auto vendor_model : vendor_profile.second.models) {
+            if (vendor_model.name == model_name) {
+                boost::filesystem::path cover_path = boost::filesystem::absolute(boost::filesystem::path(resources_dir()) /
+                                                                                 "/profiles/" / vendor_profile.second.id / cover_file)
+                                                         .make_preferred();
+                if (boost::filesystem::exists(cover_path)) {
+                    try {
+                        p->image_printer->SetBitmap(create_scaled_bitmap(cover_path.string(), this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
+                        printer_thumbnails[printer_type] = cover_path.string();
+                        return;
+                    } catch (...) {}
                 }
             }
         }
-        p->image_printer->SetBitmap(create_scaled_bitmap("printer_placeholder", this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
-        printer_thumbnails[printer_type] = "printer_placeholder"; // Avoid unnecessary try
     }
+    p->image_printer->SetBitmap(create_scaled_bitmap("printer_placeholder", this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
+    printer_thumbnails[printer_type] = "printer_placeholder";
 }
 
 void Sidebar::auto_calc_flushing_volumes(const int filament_idx, const int extruder_id) {
