@@ -1940,8 +1940,6 @@ bool PresetCollection::load_user_preset(std::string name, std::map<std::string, 
             new_config.apply(std::move(cloud_config));
             extend_default_config_length(new_config, true, default_preset.config);
         }
-        Preset::normalize(new_config);
-        new_config.apply(std::move(cloud_config));
         Preset::normalize(new_config, name);
         // Report configuration fields, which are misplaced into a wrong group.
         std::string incorrect_keys = Preset::remove_invalid_keys(new_config, default_preset.config);

@@ -2904,12 +2904,14 @@ void GCodeProcessor::process_gcode_line(const GCodeReader::GCodeLine& line, bool
                         case '0': { process_M140(line); break; } // Set bed temperature
                         default: break;
                         }
+                        break;
                     case '9':
                         switch (cmd[3]) {
                         case '0': { process_M190(line); break; } // Wait bed temperature
                         case '1': { process_M191(line); break; } // Wait chamber temperature
                         default: break;
-                    }
+                        }
+                        break;
                     default:
                         break;
                     }
@@ -2958,6 +2960,25 @@ void GCodeProcessor::process_gcode_line(const GCodeReader::GCodeLine& line, bool
                         default: break;
                         }
                         break;
+                    case '7':
+                        switch (cmd[3]) {
+                        case '2': { process_M572(line); break; } // RepRapFirmware/Duet: Set pressure advance
+                        default: break;
+                        }
+                        break;
+                    default:
+                        break;
+                    }
+                    break;
+                case '6':
+                    switch (cmd[2]) {
+                    case '2':
+                        switch (cmd[3]) {
+                        case '2': { process_M622(line); break; }
+                        case '3': { process_M623(line); break; }
+                        default: break;
+                        }
+                        break;
                     default:
                         break;
                     }
@@ -2974,8 +2995,27 @@ void GCodeProcessor::process_gcode_line(const GCodeReader::GCodeLine& line, bool
                         break;
                     }
                     break;
+                case '9':
+                    switch (cmd[2]) {
+                    case '0':
+                        switch (cmd[3]) {
+                        case '0': { process_M900(line); break; } // Marlin: Set pressure advance
+                        default: break;
+                        }
+                        break;
+                    default:
+                        break;
+                    }
+                    break;
                 default:
                     break;
+                }
+                break;
+            case 5:
+                // M1020 (Select Tool)
+                if (cmd[0] == 'M' || cmd[0] == 'm') {
+                    if ((cmd[1] == '1') && (cmd[2] == '0') && (cmd[3] == '2') && (cmd[4] == '0'))
+                        process_M1020(line);
                 }
                 break;
             default:
@@ -2985,6 +3025,10 @@ void GCodeProcessor::process_gcode_line(const GCodeReader::GCodeLine& line, bool
         case 't':
         case 'T':
             process_T(line); // Select Tool
+            break;
+        case 's':
+        case 'S':
+            if (cmd == "SYNC" || cmd == "sync") { process_SYNC(line); }
             break;
         default:
             // Scan for TR= / TL= temperature parameters used in custom macros
