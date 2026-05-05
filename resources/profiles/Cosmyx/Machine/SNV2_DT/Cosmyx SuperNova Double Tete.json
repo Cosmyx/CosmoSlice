@@ -1,7 +1,7 @@
 {
     "type": "machine_model",
     "name": "Cosmyx SuperNova Double Tete",
-    "model_id": "BL-P001",
+    "model_id": "COSMYX-SNV2-DT",
     "url": "http://www.cosmyx.com/Parameters/printer_model/Cosmyx SuperNova_dualhead.json",
     "nozzle_diameter": "0.4;0.2;0.6;0.8",
     "machine_tech": "FFF",

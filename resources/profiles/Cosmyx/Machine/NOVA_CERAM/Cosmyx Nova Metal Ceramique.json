@@ -1,7 +1,7 @@
 {
     "type": "machine_model",
     "name": "Cosmyx Nova Metal Ceramique",
-    "model_id": "BL-P004",
+    "model_id": "COSMYX-NOVA-CERAM",
     "url": "http://www.cosmyx.com/Parameters/printer_model/Cosmyx Nova Metal Ceramique.json",
     "nozzle_diameter": "0.4;0.2;0.6;0.8",
     "machine_tech": "FFF",

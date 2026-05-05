@@ -1,7 +1,7 @@
 {
     "type": "machine_model",
     "name": "Cosmyx Nova Haute Temperature",
-    "model_id": "BL-P005",
+    "model_id": "COSMYX-NOVA-HT",
     "url": "http://www.cosmyx.com/Parameters/printer_model/Cosmyx Nova Haute Temperature.json",
     "nozzle_diameter": "0.4;0.2;0.6;0.8",
     "machine_tech": "FFF",
