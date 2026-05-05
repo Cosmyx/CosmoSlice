@@ -467,9 +467,10 @@ static t_config_enum_values s_keys_map_NozzleType {
     { "undefine",       int(NozzleType::ntUndefine) },
     { "hardened_steel", int(NozzleType::ntHardenedSteel) },
     { "stainless_steel",int(NozzleType::ntStainlessSteel) },
-    { "brass",          int(NozzleType::ntBrass) },
+    { "brass",           int(NozzleType::ntBrass) },
+    { "E3D",             int(NozzleType::ntE3D) },
     { "tungsten_carbide",int(NozzleType::ntTungstenCarbide) },
-    { "cht",int(NozzleType::ntCHT) }
+    { "cht",             int(NozzleType::ntCHT) }
 };
 CONFIG_OPTION_ENUM_DEFINE_STATIC_MAPS(NozzleType)
 
@@ -3517,12 +3518,14 @@ void PrintConfigDef::init_fff_params()
     def->enum_values.push_back("stainless_steel");
     def->enum_values.push_back("tungsten_carbide");
     def->enum_values.push_back("brass");
+    def->enum_values.push_back("E3D");
     def->enum_values.push_back("cht");
     def->enum_labels.push_back(L("Undefine"));
     def->enum_labels.push_back(L("Hardened steel"));
     def->enum_labels.push_back(L("Stainless steel"));
     def->enum_labels.push_back(L("Tungsten carbide"));
     def->enum_labels.push_back(L("Brass"));
+    def->enum_labels.push_back(L("E3D"));
     def->enum_labels.push_back(L("CHT"));
     def->mode = comAdvanced;
     def->nullable = true;
