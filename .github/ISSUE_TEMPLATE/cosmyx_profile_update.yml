@@ -1,4 +1,4 @@
-name: Profile Update or Addition
+name: "[COSMYX] Profile Update or Addition"
 description: Add, update, or delete a profile (Filament, Process, Machine)
 labels: ["profile"]
 body:
