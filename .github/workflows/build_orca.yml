@@ -31,7 +31,7 @@ jobs:
     name: Build OrcaSlicer
     needs: resolve_artifact_name
     runs-on: ${{ inputs.os }}
-    # Permissions requises pour la signature Azure (OIDC)
+    environment: azure-signing
     permissions:
       id-token: write
       contents: read
