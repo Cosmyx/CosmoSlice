@@ -370,7 +370,7 @@ jobs:
           path: ${{ github.workspace }}/build/OrcaSlicer*.exe
 
       - name: Upload artifacts Win PDB
-        if: runner.os == 'Windows' && !vars.SELF_HOSTED
+        if: false
         uses: actions/upload-artifact@v6
         with:
           name: PDB
