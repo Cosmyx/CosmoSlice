@@ -250,7 +250,7 @@ jobs:
           path: ${{ github.workspace }}/OrcaSlicer_Mac_universal_${{ env.ver }}.dmg
 
       - name: Upload OrcaSlicer_profile_validator DMG mac
-        if: runner.os == 'macOS' && inputs.macos-combine-only && !vars.SELF_HOSTED
+        if: false
         uses: actions/upload-artifact@v6
         with:
           name: OrcaSlicer_profile_validator_Mac_universal_DMG_${{ env.ver }}
@@ -377,7 +377,7 @@ jobs:
           path: ${{ github.workspace }}/build/src/Release/Debug_PDB_${{ env.ver }}_for_developers_only.7z
 
       - name: Upload OrcaSlicer_profile_validator Win
-        if: runner.os == 'Windows' && !vars.SELF_HOSTED
+        if: false
         uses: actions/upload-artifact@v6
         with:
           name: OrcaSlicer_profile_validator_Windows_${{ env.ver }}
@@ -458,7 +458,7 @@ jobs:
           path: './build/OrcaSlicer_Linux_AppImage${{ env.ubuntu-ver-str }}_${{ env.ver }}.AppImage'
 
       - name: Upload OrcaSlicer_profile_validator Ubuntu
-        if: ${{ ! env.ACT && runner.os == 'Linux' && !vars.SELF_HOSTED }}
+        if: false
         uses: actions/upload-artifact@v6
         with:
           name: OrcaSlicer_profile_validator_Linux_ubuntu_${{ env.ubuntu-ver }}_${{ env.ver }}
