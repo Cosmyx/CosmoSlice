@@ -218,7 +218,7 @@ jobs:
       uses: actions/upload-artifact@v6
       with:
         name: OrcaSlicer-Linux-flatpak_${{ env.ver }}_${{ matrix.variant.arch }}.flatpak
-        path: '/__w/OrcaSlicer/OrcaSlicer/OrcaSlicer-Linux-flatpak_${{ env.ver }}_${{ matrix.variant.arch }}.flatpak'
+        path: '${{ github.workspace }}/OrcaSlicer-Linux-flatpak_${{ env.ver }}_${{ matrix.variant.arch }}.flatpak'
     - name: Deploy Flatpak to nightly release
       if: false
       uses: WebFreak001/deploy-nightly@v3.2.0
