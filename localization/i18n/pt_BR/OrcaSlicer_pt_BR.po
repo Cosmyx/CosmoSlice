@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Orca Slicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 23:26+0800\n"
+"POT-Creation-Date: 2026-05-12 09:58+0200\n"
 "PO-Revision-Date: 2026-03-08 21:15-0300\n"
 "Last-Translator: Alexandre Folle de Menezes\n"
 "Language-Team: Portuguese, Brazilian\n"
@@ -1647,9 +1647,6 @@ msgstr ""
 "O arquivo de configuração \"%1%\" foi carregado, mas alguns valores não "
 "foram reconhecidos."
 
-msgid "Based on PrusaSlicer and BambuStudio"
-msgstr "Baseado no PrusaSlicer e Bambu Studio"
-
 msgid "STEP files"
 msgstr "Arquivos STEP"
 
@@ -1724,6 +1721,32 @@ msgstr "OrcaSlicer encontrou uma exceção não tratada: %1%"
 
 msgid "Untitled"
 msgstr "Sem título"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr ""
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr ""
+
+#, c-format, boost-format
+msgid "Build: %s → %s"
+msgstr ""
+
+#, c-format, boost-format
+msgid "Bundle: %s → %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr ""
+
+msgid "New Build Detected"
+msgstr ""
+
+msgid "Skip"
+msgstr "Pular"
+
+msgid "Don't show again for future builds"
+msgstr ""
 
 msgid "Reloading network plug-in..."
 msgstr "Recarregando o plug-in de rede..."
@@ -2145,6 +2168,59 @@ msgstr ""
 msgid "Suggestion"
 msgstr "Sugestão"
 
+msgid "Calage 1 SNDT"
+msgstr ""
+
+msgid "Calage 2 SNDT"
+msgstr ""
+
+msgid "Calage 3 SNDT"
+msgstr ""
+
+msgid "Cube Bicolore"
+msgstr ""
+
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill "
+"direction' and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f°\n"
+"- Solid infill direction: %.0f°\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calage 1 Nova"
+msgstr ""
+
+msgid "Cosmyx Cube"
+msgstr ""
+
+msgid "Control Tension Belt"
+msgstr ""
+
+msgid "Support Bobine"
+msgstr ""
+
+msgid "Calibrations Models Dual Head"
+msgstr ""
+
+msgid "Calibration Models Single Head"
+msgstr ""
+
+msgid "Cosmyx Handy Models"
+msgstr ""
+
 msgid "Text"
 msgstr "Texto"
 
@@ -2307,6 +2383,9 @@ msgstr "Adicionar Primitivo"
 
 msgid "Add Handy models"
 msgstr "Adicionar Modelos Úteis"
+
+msgid "Cosmyx 3D Models"
+msgstr ""
 
 msgid "Add Models"
 msgstr "Adicionar Modelos"
@@ -3451,23 +3530,31 @@ msgstr ""
 msgid "About %s"
 msgstr "Sobre %s"
 
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "OrcaSlicer é baseado no Bambu Studio, PrusaSlicer e SuperSlicer."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+#, c-format, boost-format
+msgid "Cosmyx Bundle Version %s"
 msgstr ""
-"Bambu Studio é originalmente baseado no PrusaSlicer pela PrusaResearch."
-
-msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
-msgstr ""
-"PrusaSlicer é originalmente baseado no Slic3r por Alessandro Ranellucci."
 
 msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
+"Open-source slicing stands on a tradition of collaboration and attribution. "
+"Slic3r, created by Alessandro Ranellucci and the RepRap community, laid the "
+"foundation. PrusaSlicer by Prusa Research built on that work, Bambu Studio "
+"forked from PrusaSlicer, and SuperSlicer extended it with community-driven "
+"enhancements. Each project carried the work of its predecessors forward, "
+"crediting those who came before."
 msgstr ""
-"Slic3r foi criado por Alessandro Ranellucci com a ajuda de muitos outros "
-"colaboradores."
+
+msgid ""
+"OrcaSlicer began in that same spirit, drawing from PrusaSlicer, BambuStudio, "
+"SuperSlicer, and CuraSlicer. But it has since grown far beyond its origins — "
+"introducing advanced calibration tools, precise wall and seam control and "
+"hundreds of other features."
+msgstr ""
+
+msgid ""
+"Today, OrcaSlicer is the most widely used and actively developed open-source "
+"slicer in the 3D printing community. Many of its innovations have been "
+"adopted by other slicers, making it a driving force for the entire industry."
+msgstr ""
 
 msgid "Version"
 msgstr "Versão"
@@ -5492,7 +5579,7 @@ msgstr "Volume:"
 msgid "Size:"
 msgstr "Tamanho:"
 
-#, boost-format
+#, c-format, boost-format
 msgid ""
 "Conflicts of G-code paths have been found at layer %d, Z = %.2lfmm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -5724,6 +5811,9 @@ msgstr "Imprimir placa"
 msgid "Export G-code file"
 msgstr "Exportar arquivo G-code"
 
+msgid "Export all G-code files"
+msgstr ""
+
 msgid "Send"
 msgstr "Enviar"
 
@@ -5756,9 +5846,6 @@ msgstr "Mostrar Pasta de Configuração"
 
 msgid "Show Tip of the Day"
 msgstr "Mostrar Dica do Dia"
-
-msgid "Check for Updates"
-msgstr "Verificar atualizações"
 
 msgid "Open Network Test"
 msgstr "Abrir Teste de Rede"
@@ -6602,9 +6689,6 @@ msgstr "O nome não pode ficar vazio."
 msgid "The name is not allowed to start with space character."
 msgstr "O nome não pode começar com um espaço."
 
-msgid "The name is not allowed to end with space character."
-msgstr "O nome não pode terminar com um espaço."
-
 msgid "The name is not allowed to exceed 32 characters."
 msgstr "O nome não pode exceder 32 caracteres."
 
@@ -6965,9 +7049,6 @@ msgstr "Informação %s"
 #, c-format, boost-format
 msgid "%s information"
 msgstr "Informação %s"
-
-msgid "Skip"
-msgstr "Pular"
 
 msgid "Newer 3MF version"
 msgstr "Nova versão 3MF"
@@ -7918,6 +7999,9 @@ msgstr "Fatiando Placa %d"
 
 msgid "Please resolve the slicing errors and publish again."
 msgstr "Por favor, resolva os erros de fatiamento e publique novamente."
+
+msgid "Choose a directory to export all G-code files"
+msgstr ""
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -9974,8 +10058,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add "
-"Primitive\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add Primitive"
+"\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "Ao gravar um timelapse sem o cabeçote aparecer, é recomendável adicionar uma "
 "\"Torre de Limpeza para Timelapse\" \n"
@@ -10249,6 +10333,15 @@ msgid ""
 msgstr ""
 "Temperatura da mesa quando a Placa PEI Texturizada está instalado. O valor 0 "
 "significa que o filamento não suporta impressão na Placa PEI Texturizada."
+
+msgid "Cosmyx Textured Bed"
+msgstr ""
+
+msgid ""
+"Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
+"means the filament does not support printing on the Cosmyx Textured Bed. A "
+"value of 0 means the bed is off."
+msgstr ""
 
 msgid "Volumetric speed limitation"
 msgstr "Limitação de velocidade volumétrica"
@@ -12516,6 +12609,24 @@ msgid ""
 msgstr ""
 "Temperatura da mesa na primeira camada. O valor 0 significa que o filamento "
 "não suporta a impressão na Placa PEI Texturizada."
+
+msgid ""
+"Bed temperature for layers except the initial one. A value of -1 means the "
+"filament does not support printing on the Cosmyx Textured Bed. A value of 0 "
+"means the bed is off."
+msgstr ""
+
+msgid "Initial layer"
+msgstr ""
+
+msgid "Initial layer bed temperature"
+msgstr ""
+
+msgid ""
+"Bed temperature of the initial layer. A value of -1 means the filament does "
+"not support printing on the Cosmyx Textured Bed. A value of 0 means the bed "
+"is off."
+msgstr ""
 
 msgid "Bed types supported by the printer."
 msgstr "Tipos de placa suportadas pela impressora."
@@ -14935,8 +15046,8 @@ msgid "mm/s² or %"
 msgstr "mm/s² ou %"
 
 msgid ""
-"Acceleration of sparse infill. If the value is expressed as a percentage "
-"(e.g. 100%), it will be calculated based on the default acceleration."
+"Acceleration of sparse infill. If the value is expressed as a percentage (e."
+"g. 100%), it will be calculated based on the default acceleration."
 msgstr ""
 "Aceleração do preenchimento esparso. Se o valor for expresso como uma "
 "porcentagem (por exemplo, 100%), será calculado com base na aceleração "
@@ -15060,10 +15171,10 @@ msgstr "Velocidade total do ventilador na camada"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
-"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
-"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" will be ignored if lower than "
+"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "A velocidade do ventilador aumentará linearmente de zero na camada "
 "\"close_fan_the_first_x_layers\" para o máximo na camada "
@@ -15260,10 +15371,10 @@ msgstr ""
 "tempo, a largura da extrusão para uma camada específica também não deve ser "
 "inferior a um determinado nível. Geralmente, é igual a 15-25%% da altura da "
 "camada. Portanto, a espessura máxima da camada fuzzy com uma largura de "
-"perímetro de 0,4 mm e uma altura de camada de 0,2 mm será 0,4-"
-"(0,2*0,25)=±0,35 mm! Se você inserir um parâmetro maior que esse, o erro "
-"Flow::spacing() será exibido e o modelo não será fatiado. Você pode escolher "
-"este número até que o erro se repita."
+"perímetro de 0,4 mm e uma altura de camada de 0,2 mm será 0,4-(0,2*0,25)="
+"±0,35 mm! Se você inserir um parâmetro maior que esse, o erro Flow::"
+"spacing() será exibido e o modelo não será fatiado. Você pode escolher este "
+"número até que o erro se repita."
 
 msgid "Displacement"
 msgstr "Deslocamento"
@@ -15457,6 +15568,12 @@ msgstr "Aço inoxidável"
 
 msgid "Tungsten carbide"
 msgstr "Carbeto de tungstênio"
+
+msgid "E3D"
+msgstr ""
+
+msgid "CHT"
+msgstr ""
 
 msgid "Nozzle HRC"
 msgstr "Bico HRC"
@@ -17029,8 +17146,8 @@ msgid "Role base wipe speed"
 msgstr "Velocidade de limpeza baseada na função"
 
 msgid ""
-"The wipe speed is determined by the speed of the current extrusion role. "
-"e.g. if a wipe action is executed immediately following an outer wall "
+"The wipe speed is determined by the speed of the current extrusion role. e."
+"g. if a wipe action is executed immediately following an outer wall "
 "extrusion, the speed of the outer wall extrusion will be utilized for the "
 "wipe action."
 msgstr ""
@@ -17948,8 +18065,8 @@ msgstr "Ativar controle de temperatura"
 
 msgid ""
 "Enable this option for automated chamber temperature control. This option "
-"activates the emitting of an M191 command before the "
-"\"machine_start_gcode\"\n"
+"activates the emitting of an M191 command before the \"machine_start_gcode"
+"\"\n"
 " which sets the chamber temperature and waits until it is reached. In "
 "addition, it emits an M141 command at the end of the print to turn off the "
 "chamber heater, if present.\n"
@@ -17959,8 +18076,8 @@ msgid ""
 "heater is installed."
 msgstr ""
 "Habilite esta opção para controle automatizado da temperatura da câmara. "
-"Esta opção ativa a emissão de um comando M191 antes do "
-"\"machine_start_gcode\"\n"
+"Esta opção ativa a emissão de um comando M191 antes do \"machine_start_gcode"
+"\"\n"
 "que define a temperatura da câmara e aguarda até que ela seja atingida. Além "
 "disso, emite um comando M141 no final da impressão para desligar o aquecedor "
 "da câmara, se presente.\n"
@@ -18013,6 +18130,14 @@ msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one."
 msgstr "Temperatura do bico para camadas após a inicial."
+
+msgid "Ironing temperature"
+msgstr ""
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr ""
 
 msgid "Detect thin walls"
 msgstr "Detectar paredes finas"
@@ -18934,11 +19059,11 @@ msgid "Debug level"
 msgstr "Nível de depuração"
 
 msgid ""
-"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, "
-"5:trace\n"
+"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 msgstr ""
-"Define o nível do log de depuração. 0:fatal, 1:error, 2:warning, 3:info, "
-"4:debug, 5:trace\n"
+"Define o nível do log de depuração. 0:fatal, 1:error, 2:warning, 3:info, 4:"
+"debug, 5:trace\n"
 
 msgid "Enable timelapse for print"
 msgstr "Habilitar timelapse para impressão"
@@ -19480,8 +19605,8 @@ msgstr "O arquivo fornecido não pôde ser lido porque está vazio"
 msgid ""
 "Unknown file format. Input file must have .stl, .obj, .amf(.xml) extension."
 msgstr ""
-"Formato de arquivo desconhecido. O arquivo de entrada deve ter "
-"extensão .stl, .obj, .amf(.xml)."
+"Formato de arquivo desconhecido. O arquivo de entrada deve ter extensão ."
+"stl, .obj, .amf(.xml)."
 
 msgid "Unknown file format. Input file must have .3mf or .zip.amf extension."
 msgstr ""
@@ -20725,8 +20850,8 @@ msgstr ""
 "Você deseja reescrevê-lo?"
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you "
-"selected\".\n"
+"We would rename the presets as \"Vendor Type Serial @printer you selected"
+"\".\n"
 "To add preset for more printers, please go to printer selection"
 msgstr ""
 "Renomearíamos as predefinições como \"Fornecedor Tipo Serial @ impressora "
@@ -22769,6 +22894,33 @@ msgstr ""
 "Você sabia que ao imprimir materiais propensos ao empenamento, como ABS, "
 "aumentar adequadamente a temperatura da mesa aquecida pode reduzir a "
 "probabilidade de empenamento?"
+
+#~ msgid "Based on PrusaSlicer and BambuStudio"
+#~ msgstr "Baseado no PrusaSlicer e Bambu Studio"
+
+#~ msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "OrcaSlicer é baseado no Bambu Studio, PrusaSlicer e SuperSlicer."
+
+#~ msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+#~ msgstr ""
+#~ "Bambu Studio é originalmente baseado no PrusaSlicer pela PrusaResearch."
+
+#~ msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
+#~ msgstr ""
+#~ "PrusaSlicer é originalmente baseado no Slic3r por Alessandro Ranellucci."
+
+#~ msgid ""
+#~ "Slic3r was created by Alessandro Ranellucci with the help of many other "
+#~ "contributors."
+#~ msgstr ""
+#~ "Slic3r foi criado por Alessandro Ranellucci com a ajuda de muitos outros "
+#~ "colaboradores."
+
+#~ msgid "Check for Updates"
+#~ msgstr "Verificar atualizações"
+
+#~ msgid "The name is not allowed to end with space character."
+#~ msgstr "O nome não pode terminar com um espaço."
 
 #~ msgid "BambuStudio warning"
 #~ msgstr "Aviso do Bambu Studio"

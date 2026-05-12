@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 23:26+0800\n"
+"POT-Creation-Date: 2026-05-12 09:58+0200\n"
 "PO-Revision-Date: 2025-03-15 10:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1647,9 +1647,6 @@ msgstr ""
 "Ha estat carregat el fitxer de configuració \"%1%\", però alguns valors no "
 "s'han pogut reconèixer."
 
-msgid "Based on PrusaSlicer and BambuStudio"
-msgstr "Basat en PrusaSlicer i BambuStudio"
-
 msgid "STEP files"
 msgstr "Fitxers STEP"
 
@@ -1725,6 +1722,32 @@ msgstr "OrcaSlicer ha tingut una excepció no gestionada: %1%"
 
 msgid "Untitled"
 msgstr "Sense títol"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr ""
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr ""
+
+#, c-format, boost-format
+msgid "Build: %s → %s"
+msgstr ""
+
+#, c-format, boost-format
+msgid "Bundle: %s → %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr ""
+
+msgid "New Build Detected"
+msgstr ""
+
+msgid "Skip"
+msgstr "Omet"
+
+msgid "Don't show again for future builds"
+msgstr ""
 
 msgid "Reloading network plug-in..."
 msgstr "Recarregant el connector de xarxa..."
@@ -2149,6 +2172,59 @@ msgstr ""
 msgid "Suggestion"
 msgstr "Suggeriment"
 
+msgid "Calage 1 SNDT"
+msgstr ""
+
+msgid "Calage 2 SNDT"
+msgstr ""
+
+msgid "Calage 3 SNDT"
+msgstr ""
+
+msgid "Cube Bicolore"
+msgstr ""
+
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill "
+"direction' and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f°\n"
+"- Solid infill direction: %.0f°\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calage 1 Nova"
+msgstr ""
+
+msgid "Cosmyx Cube"
+msgstr ""
+
+msgid "Control Tension Belt"
+msgstr ""
+
+msgid "Support Bobine"
+msgstr ""
+
+msgid "Calibrations Models Dual Head"
+msgstr ""
+
+msgid "Calibration Models Single Head"
+msgstr ""
+
+msgid "Cosmyx Handy Models"
+msgstr ""
+
 msgid "Text"
 msgstr "Text"
 
@@ -2311,6 +2387,9 @@ msgstr "Afegir primitiva"
 
 msgid "Add Handy models"
 msgstr "Afegir models Handy"
+
+msgid "Cosmyx 3D Models"
+msgstr ""
 
 msgid "Add Models"
 msgstr "Afegir models"
@@ -3456,21 +3535,31 @@ msgstr ""
 msgid "About %s"
 msgstr "Sobre %s"
 
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "OrcaSlicer es basa en BambuStudio, PrusaSlicer i SuperSlicer."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr "BambuStudio es basa originalment en PrusaSlicer de PrusaResearch."
-
-msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
-msgstr "PrusaSlicer està originalment basat en Slic3r d'Alessandro Ranellucci."
+#, c-format, boost-format
+msgid "Cosmyx Bundle Version %s"
+msgstr ""
 
 msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
+"Open-source slicing stands on a tradition of collaboration and attribution. "
+"Slic3r, created by Alessandro Ranellucci and the RepRap community, laid the "
+"foundation. PrusaSlicer by Prusa Research built on that work, Bambu Studio "
+"forked from PrusaSlicer, and SuperSlicer extended it with community-driven "
+"enhancements. Each project carried the work of its predecessors forward, "
+"crediting those who came before."
 msgstr ""
-"Slic3r va ser creat per Alessandro Ranellucci amb l'ajuda de molts altres "
-"col·laboradors."
+
+msgid ""
+"OrcaSlicer began in that same spirit, drawing from PrusaSlicer, BambuStudio, "
+"SuperSlicer, and CuraSlicer. But it has since grown far beyond its origins — "
+"introducing advanced calibration tools, precise wall and seam control and "
+"hundreds of other features."
+msgstr ""
+
+msgid ""
+"Today, OrcaSlicer is the most widely used and actively developed open-source "
+"slicer in the 3D printing community. Many of its innovations have been "
+"adopted by other slicers, making it a driving force for the entire industry."
+msgstr ""
 
 msgid "Version"
 msgstr "Versió"
@@ -4066,8 +4155,8 @@ msgid ""
 "be opened during copy check. The output G-code is at %1%.tmp."
 msgstr ""
 "La còpia del codi-G temporal ha finalitzat, però el codi exportat no s'ha "
-"pogut obrir durant la verificació de la còpia. El codi-G de sortida és a "
-"%1%.tmp."
+"pogut obrir durant la verificació de la còpia. El codi-G de sortida és a %1%."
+"tmp."
 
 #, boost-format
 msgid "G-code file exported to %1%"
@@ -5494,7 +5583,7 @@ msgstr "Volum:"
 msgid "Size:"
 msgstr "Mida:"
 
-#, fuzzy, boost-format
+#, fuzzy, c-format, boost-format
 msgid ""
 "Conflicts of G-code paths have been found at layer %d, Z = %.2lfmm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -5671,8 +5760,8 @@ msgid ""
 "You can find it in \"Setting > Setting > LAN only > Access Code\"\n"
 "on the printer, as shown in the figure:"
 msgstr ""
-"Podeu trobar-lo a \"Configuració > Configuració > Només LAN > Codi "
-"d'accés\"\n"
+"Podeu trobar-lo a \"Configuració > Configuració > Només LAN > Codi d'accés"
+"\"\n"
 "a la impressora, com es mostra a la figura:"
 
 msgid "Invalid input."
@@ -5726,6 +5815,9 @@ msgstr "Imprimir placa d'impressió"
 msgid "Export G-code file"
 msgstr "Exportar el fitxer del Codi-G"
 
+msgid "Export all G-code files"
+msgstr ""
+
 msgid "Send"
 msgstr "Enviar"
 
@@ -5758,9 +5850,6 @@ msgstr "Mostra la Carpeta Configuració"
 
 msgid "Show Tip of the Day"
 msgstr "Mostra Consell del dia"
-
-msgid "Check for Updates"
-msgstr "Cerca actualitzacions"
 
 msgid "Open Network Test"
 msgstr "Obrir Test de Xarxa"
@@ -6611,9 +6700,6 @@ msgstr "No es permet que el nom estigui buit."
 msgid "The name is not allowed to start with space character."
 msgstr "No es permet que el nom comenci amb caràcter d'espai."
 
-msgid "The name is not allowed to end with space character."
-msgstr "No es permet que el nom acabi amb caràcter d'espai."
-
 msgid "The name is not allowed to exceed 32 characters."
 msgstr "El nom no pot superar els 32 caràcters."
 
@@ -6974,9 +7060,6 @@ msgstr "%s informació"
 #, c-format, boost-format
 msgid "%s information"
 msgstr "%s informació"
-
-msgid "Skip"
-msgstr "Omet"
 
 msgid "Newer 3MF version"
 msgstr "Nova versió 3MF"
@@ -7931,6 +8014,9 @@ msgstr "Laminant Base %d"
 
 msgid "Please resolve the slicing errors and publish again."
 msgstr "Resoleu els errors de laminat i torneu a publicar."
+
+msgid "Choose a directory to export all G-code files"
+msgstr ""
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -9992,8 +10078,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add "
-"Primitive\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add Primitive"
+"\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "Quan graveu timelapse sense capçal d'impressió, es recomana afegir una "
 "\"Torre de Purga Timelapse\" \n"
@@ -10268,6 +10354,15 @@ msgid ""
 msgstr ""
 "Temperatura del llit quan s'instal·la la placa PEI amb Textura. El valor 0 "
 "significa que el filament no admet imprimir a la placa PEI amb Textura"
+
+msgid "Cosmyx Textured Bed"
+msgstr ""
+
+msgid ""
+"Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
+"means the filament does not support printing on the Cosmyx Textured Bed. A "
+"value of 0 means the bed is off."
+msgstr ""
 
 msgid "Volumetric speed limitation"
 msgstr "Limitació de la velocitat volumètrica"
@@ -12543,6 +12638,24 @@ msgstr ""
 "Temperatura del llit en la capa inicial. El valor 0 significa que el "
 "filament no admet imprimir a la Base PEI amb Textura"
 
+msgid ""
+"Bed temperature for layers except the initial one. A value of -1 means the "
+"filament does not support printing on the Cosmyx Textured Bed. A value of 0 "
+"means the bed is off."
+msgstr ""
+
+msgid "Initial layer"
+msgstr ""
+
+msgid "Initial layer bed temperature"
+msgstr ""
+
+msgid ""
+"Bed temperature of the initial layer. A value of -1 means the filament does "
+"not support printing on the Cosmyx Textured Bed. A value of 0 means the bed "
+"is off."
+msgstr ""
+
 msgid "Bed types supported by the printer."
 msgstr "Tipus de llit suportats per la impressora"
 
@@ -13544,9 +13657,8 @@ msgstr ""
 "reducció de coixins a les superfícies superiors, així com una separació "
 "reduïda de la capa de pont externa dels seus perímetres circumdants.\n"
 "\n"
-"En general, es recomana establir això com a mínim com a \"Només pont "
-"extern\", tret que es detectin problemes específics amb el model en "
-"rodanxes.\n"
+"En general, es recomana establir això com a mínim com a \"Només pont extern"
+"\", tret que es detectin problemes específics amb el model en rodanxes.\n"
 "\n"
 "Opcions:\n"
 "1. Desactivat: no genera segones capes de pont. Aquest és el valor "
@@ -14982,8 +15094,8 @@ msgid "mm/s² or %"
 msgstr "mm/s o %"
 
 msgid ""
-"Acceleration of sparse infill. If the value is expressed as a percentage "
-"(e.g. 100%), it will be calculated based on the default acceleration."
+"Acceleration of sparse infill. If the value is expressed as a percentage (e."
+"g. 100%), it will be calculated based on the default acceleration."
 msgstr ""
 "Acceleració del farciment poc dens. Si el valor s'expressa en percentatge "
 "( per exemple, 100% ), es calcularà a partir de l'acceleració predeterminada."
@@ -15106,15 +15218,15 @@ msgstr "Velocitat màxima del ventilador a la capa"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
-"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
-"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" will be ignored if lower than "
+"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "La velocitat del ventilador augmentarà linealment de zero a la capa "
-"\"close_fan_the_first_x_layers\" al màxim a la capa "
-"\"full_fan_speed_layer\". S'ignorarà \"full_fan_speed_layer\" si és inferior "
-"a \"close_fan_the_first_x_layers\", en aquest cas el ventilador funcionarà a "
+"\"close_fan_the_first_x_layers\" al màxim a la capa \"full_fan_speed_layer"
+"\". S'ignorarà \"full_fan_speed_layer\" si és inferior a "
+"\"close_fan_the_first_x_layers\", en aquest cas el ventilador funcionarà a "
 "la velocitat màxima permesa a la capa \"close_fan_the_first_x_layers\" + 1."
 
 msgid "layer"
@@ -15307,9 +15419,9 @@ msgstr ""
 "inferior a un cert nivell. Normalment equival al 15-25%% de l'alçada de la "
 "capa. Per tant, el gruix màxim de pell difusa amb una amplada de perímetre "
 "de 0.4 mm i una alçada de capa de 0.2 mm serà 0.4-(0.2*0.25)=±0.35mm! Si "
-"introduïu un paràmetre superior a aquest, es mostrarà l'error "
-"Flow::spacing() i el model no es tallarà. Podeu triar aquest número fins que "
-"es repeteixi l'error."
+"introduïu un paràmetre superior a aquest, es mostrarà l'error Flow::"
+"spacing() i el model no es tallarà. Podeu triar aquest número fins que es "
+"repeteixi l'error."
 
 msgid "Displacement"
 msgstr "Desplaçament"
@@ -15502,6 +15614,12 @@ msgstr "Acer inoxidable"
 
 msgid "Tungsten carbide"
 msgstr "Carbur de tungstè"
+
+msgid "E3D"
+msgstr ""
+
+msgid "CHT"
+msgstr ""
 
 msgid "Nozzle HRC"
 msgstr "HRC del Broquet"
@@ -17088,8 +17206,8 @@ msgid "Role base wipe speed"
 msgstr "Velocitat de neteja basada en l'acció"
 
 msgid ""
-"The wipe speed is determined by the speed of the current extrusion role. "
-"e.g. if a wipe action is executed immediately following an outer wall "
+"The wipe speed is determined by the speed of the current extrusion role. e."
+"g. if a wipe action is executed immediately following an outer wall "
 "extrusion, the speed of the outer wall extrusion will be utilized for the "
 "wipe action."
 msgstr ""
@@ -18008,8 +18126,8 @@ msgstr "Activar el control de temperatura"
 
 msgid ""
 "Enable this option for automated chamber temperature control. This option "
-"activates the emitting of an M191 command before the "
-"\"machine_start_gcode\"\n"
+"activates the emitting of an M191 command before the \"machine_start_gcode"
+"\"\n"
 " which sets the chamber temperature and waits until it is reached. In "
 "addition, it emits an M141 command at the end of the print to turn off the "
 "chamber heater, if present.\n"
@@ -18073,6 +18191,14 @@ msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one."
 msgstr "Temperatura del broquet per les capes després de l'inicial"
+
+msgid "Ironing temperature"
+msgstr ""
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr ""
 
 #, fuzzy
 msgid "Detect thin walls"
@@ -18485,9 +18611,8 @@ msgid ""
 "0 to disable."
 msgstr ""
 "Temperatura del broquet quan l'eina no s'utilitza actualment en "
-"configuracions multieina. Només s'utilitza quan la \"Prevenció de "
-"supuració\" està activa a la configuració d'impressió. Establiu a 0 per "
-"desactivar."
+"configuracions multieina. Només s'utilitza quan la \"Prevenció de supuració"
+"\" està activa a la configuració d'impressió. Establiu a 0 per desactivar."
 
 msgid "X-Y hole compensation"
 msgstr "Compensació de forat( contorn intern ) X-Y"
@@ -19010,11 +19135,11 @@ msgid "Debug level"
 msgstr "Nivell de depuració"
 
 msgid ""
-"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, "
-"5:trace\n"
+"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 msgstr ""
-"Defineix el nivell de registre de depuració. 0:fatal, 1:error, 2:warning, "
-"3:info, 4:debug, 5:tracejar\n"
+"Defineix el nivell de registre de depuració. 0:fatal, 1:error, 2:warning, 3:"
+"info, 4:debug, 5:tracejar\n"
 
 msgid "Enable timelapse for print"
 msgstr "Activa el timelapse per a la impressió"
@@ -19561,8 +19686,8 @@ msgstr "El fitxer subministrat no s'ha pogut llegir perquè està buit"
 msgid ""
 "Unknown file format. Input file must have .stl, .obj, .amf(.xml) extension."
 msgstr ""
-"Format de fitxer desconegut. El fitxer d'entrada ha de tenir "
-"extensió .stl, .obj, .amf( .xml )."
+"Format de fitxer desconegut. El fitxer d'entrada ha de tenir extensió .stl, ."
+"obj, .amf( .xml )."
 
 msgid "Unknown file format. Input file must have .3mf or .zip.amf extension."
 msgstr ""
@@ -20814,8 +20939,8 @@ msgstr ""
 "Vols reescriure'l?"
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you "
-"selected\".\n"
+"We would rename the presets as \"Vendor Type Serial @printer you selected"
+"\".\n"
 "To add preset for more printers, please go to printer selection"
 msgstr ""
 "Canviaríem el nom dels perfils seleccionats com a \"Proveïdor Tipus "
@@ -22270,8 +22395,8 @@ msgid ""
 "Warning: The brim type is not set to \"painted\", the brim ears will not "
 "take effect!"
 msgstr ""
-"Advertència: el tipus de Vora d'Adherència no està configurat com a "
-"\"pintat\", les orelles de la Vora d'Adherència no tindran efecte!"
+"Advertència: el tipus de Vora d'Adherència no està configurat com a \"pintat"
+"\", les orelles de la Vora d'Adherència no tindran efecte!"
 
 msgid "Set the brim type of this object to \"painted\""
 msgstr "Estableix el tipus de vora d'aquest objecte a \"pintat\""
@@ -22868,6 +22993,32 @@ msgstr ""
 "augmentar adequadament la temperatura del llit pot reduir la probabilitat de "
 "deformació?"
 
+#~ msgid "Based on PrusaSlicer and BambuStudio"
+#~ msgstr "Basat en PrusaSlicer i BambuStudio"
+
+#~ msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "OrcaSlicer es basa en BambuStudio, PrusaSlicer i SuperSlicer."
+
+#~ msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+#~ msgstr "BambuStudio es basa originalment en PrusaSlicer de PrusaResearch."
+
+#~ msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
+#~ msgstr ""
+#~ "PrusaSlicer està originalment basat en Slic3r d'Alessandro Ranellucci."
+
+#~ msgid ""
+#~ "Slic3r was created by Alessandro Ranellucci with the help of many other "
+#~ "contributors."
+#~ msgstr ""
+#~ "Slic3r va ser creat per Alessandro Ranellucci amb l'ajuda de molts altres "
+#~ "col·laboradors."
+
+#~ msgid "Check for Updates"
+#~ msgstr "Cerca actualitzacions"
+
+#~ msgid "The name is not allowed to end with space character."
+#~ msgstr "No es permet que el nom acabi amb caràcter d'espai."
+
 #~ msgid ""
 #~ "Zero first layer height is invalid.\n"
 #~ "\n"
@@ -23225,8 +23376,8 @@ msgstr ""
 #~ "No AMS filaments. Please select a printer in 'Device' page to load AMS "
 #~ "info."
 #~ msgstr ""
-#~ "Sense filaments AMS. Seleccioneu una impressora a la pàgina "
-#~ "\"Dispositiu\" per carregar informació AMS."
+#~ "Sense filaments AMS. Seleccioneu una impressora a la pàgina \"Dispositiu"
+#~ "\" per carregar informació AMS."
 
 #~ msgid ""
 #~ "Sync filaments with AMS will drop all current selected filament presets "

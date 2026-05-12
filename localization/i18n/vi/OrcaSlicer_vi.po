@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Orca Slicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 23:26+0800\n"
+"POT-Creation-Date: 2026-05-12 09:58+0200\n"
 "PO-Revision-Date: 2025-10-02 17:43+0700\n"
 "Last-Translator: \n"
 "Language-Team: hainguyen.ts13@gmail.com\n"
@@ -1611,9 +1611,6 @@ msgid ""
 msgstr ""
 "File cấu hình \"%1%\" đã được tải, nhưng một số giá trị không được nhận diện."
 
-msgid "Based on PrusaSlicer and BambuStudio"
-msgstr "Dựa trên PrusaSlicer và BambuStudio"
-
 msgid "STEP files"
 msgstr "STEP files"
 
@@ -1688,6 +1685,32 @@ msgstr "OrcaSlicer gặp ngoại lệ không xử lý được: %1%"
 
 msgid "Untitled"
 msgstr "Không tiêu đề"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr ""
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr ""
+
+#, c-format, boost-format
+msgid "Build: %s → %s"
+msgstr ""
+
+#, c-format, boost-format
+msgid "Bundle: %s → %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr ""
+
+msgid "New Build Detected"
+msgstr ""
+
+msgid "Skip"
+msgstr "Bỏ qua"
+
+msgid "Don't show again for future builds"
+msgstr ""
 
 msgid "Reloading network plug-in..."
 msgstr "Reloading network plug-in..."
@@ -2103,6 +2126,59 @@ msgstr ""
 msgid "Suggestion"
 msgstr "Suggestion"
 
+msgid "Calage 1 SNDT"
+msgstr ""
+
+msgid "Calage 2 SNDT"
+msgstr ""
+
+msgid "Calage 3 SNDT"
+msgstr ""
+
+msgid "Cube Bicolore"
+msgstr ""
+
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill "
+"direction' and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f°\n"
+"- Solid infill direction: %.0f°\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calage 1 Nova"
+msgstr ""
+
+msgid "Cosmyx Cube"
+msgstr ""
+
+msgid "Control Tension Belt"
+msgstr ""
+
+msgid "Support Bobine"
+msgstr ""
+
+msgid "Calibrations Models Dual Head"
+msgstr ""
+
+msgid "Calibration Models Single Head"
+msgstr ""
+
+msgid "Cosmyx Handy Models"
+msgstr ""
+
 msgid "Text"
 msgstr "Chữ"
 
@@ -2265,6 +2341,9 @@ msgstr "Thêm hình nguyên thủy"
 
 msgid "Add Handy models"
 msgstr "Thêm model tiện dụng"
+
+msgid "Cosmyx 3D Models"
+msgstr ""
 
 msgid "Add Models"
 msgstr "Thêm model"
@@ -3381,21 +3460,31 @@ msgstr ""
 msgid "About %s"
 msgstr "Giới thiệu %s"
 
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "OrcaSlicer dựa trên BambuStudio, PrusaSlicer, và SuperSlicer."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr "BambuStudio ban đầu dựa trên PrusaSlicer của PrusaResearch."
-
-msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
-msgstr "PrusaSlicer ban đầu dựa trên Slic3r của Alessandro Ranellucci."
+#, c-format, boost-format
+msgid "Cosmyx Bundle Version %s"
+msgstr ""
 
 msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
+"Open-source slicing stands on a tradition of collaboration and attribution. "
+"Slic3r, created by Alessandro Ranellucci and the RepRap community, laid the "
+"foundation. PrusaSlicer by Prusa Research built on that work, Bambu Studio "
+"forked from PrusaSlicer, and SuperSlicer extended it with community-driven "
+"enhancements. Each project carried the work of its predecessors forward, "
+"crediting those who came before."
 msgstr ""
-"Slic3r được tạo ra bởi Alessandro Ranellucci với sự trợ giúp của nhiều người "
-"đóng góp khác."
+
+msgid ""
+"OrcaSlicer began in that same spirit, drawing from PrusaSlicer, BambuStudio, "
+"SuperSlicer, and CuraSlicer. But it has since grown far beyond its origins — "
+"introducing advanced calibration tools, precise wall and seam control and "
+"hundreds of other features."
+msgstr ""
+
+msgid ""
+"Today, OrcaSlicer is the most widely used and actively developed open-source "
+"slicer in the 3D printing community. Many of its innovations have been "
+"adopted by other slicers, making it a driving force for the entire industry."
+msgstr ""
 
 msgid "Version"
 msgstr "Phiên bản"
@@ -5377,7 +5466,7 @@ msgstr "Thể tích:"
 msgid "Size:"
 msgstr "Kích thước:"
 
-#, boost-format
+#, c-format, boost-format
 msgid ""
 "Conflicts of G-code paths have been found at layer %d, Z = %.2lfmm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -5606,6 +5695,9 @@ msgstr "In plate"
 msgid "Export G-code file"
 msgstr "Xuất file G-code"
 
+msgid "Export all G-code files"
+msgstr ""
+
 msgid "Send"
 msgstr "Gửi"
 
@@ -5638,9 +5730,6 @@ msgstr "Hiện thư mục cấu hình"
 
 msgid "Show Tip of the Day"
 msgstr "Hiện mẹo trong ngày"
-
-msgid "Check for Updates"
-msgstr "Kiểm tra cập nhật"
 
 msgid "Open Network Test"
 msgstr "Mở kiểm tra mạng"
@@ -6463,9 +6552,6 @@ msgstr "Tên không được để trống."
 msgid "The name is not allowed to start with space character."
 msgstr "Tên không được bắt đầu bằng ký tự khoảng trắng."
 
-msgid "The name is not allowed to end with space character."
-msgstr "Tên không được kết thúc bằng ký tự khoảng trắng."
-
 msgid "The name is not allowed to exceed 32 characters."
 msgstr "The name is not allowed to exceed 32 characters."
 
@@ -6820,9 +6906,6 @@ msgstr "%s thông tin"
 #, c-format, boost-format
 msgid "%s information"
 msgstr "%s thông tin"
-
-msgid "Skip"
-msgstr "Bỏ qua"
 
 #, fuzzy
 msgid "Newer 3MF version"
@@ -7754,6 +7837,9 @@ msgstr "Đang slice bản %d"
 
 msgid "Please resolve the slicing errors and publish again."
 msgstr "Vui lòng giải quyết các lỗi slice và xuất bản lại."
+
+msgid "Choose a directory to export all G-code files"
+msgstr ""
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -9722,8 +9808,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add "
-"Primitive\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add Primitive"
+"\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "Khi ghi timelapse không có đầu công cụ, khuyến nghị thêm \"Timelapse Wipe "
 "Tower\" \n"
@@ -9988,6 +10074,15 @@ msgid ""
 msgstr ""
 "Nhiệt độ bàn khi bản Textured PEI được lắp. Giá trị 0 có nghĩa là filament "
 "không hỗ trợ in trên bản Textured PEI."
+
+msgid "Cosmyx Textured Bed"
+msgstr ""
+
+msgid ""
+"Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
+"means the filament does not support printing on the Cosmyx Textured Bed. A "
+"value of 0 means the bed is off."
+msgstr ""
 
 msgid "Volumetric speed limitation"
 msgstr "Giới hạn tốc độ thể tích"
@@ -12009,8 +12104,8 @@ msgstr ""
 "Orca Slicer có thể tải file G-code lên máy chủ máy in. Trường này nên chứa "
 "tên máy chủ, địa chỉ IP hoặc URL của phiên bản máy chủ máy in. Máy chủ in "
 "đằng sau HAProxy với xác thực cơ bản được bật có thể được truy cập bằng cách "
-"đặt tên người dùng và mật khẩu vào URL theo định dạng sau: https://"
-"username:password@your-octopi-address/"
+"đặt tên người dùng và mật khẩu vào URL theo định dạng sau: https://username:"
+"password@your-octopi-address/"
 
 msgid "Device UI"
 msgstr "Giao diện thiết bị"
@@ -12192,6 +12287,24 @@ msgid ""
 msgstr ""
 "Nhiệt độ bàn của lớp đầu tiên. Giá trị 0 có nghĩa là filament không hỗ trợ "
 "in trên bản Textured PEI."
+
+msgid ""
+"Bed temperature for layers except the initial one. A value of -1 means the "
+"filament does not support printing on the Cosmyx Textured Bed. A value of 0 "
+"means the bed is off."
+msgstr ""
+
+msgid "Initial layer"
+msgstr ""
+
+msgid "Initial layer bed temperature"
+msgstr ""
+
+msgid ""
+"Bed temperature of the initial layer. A value of -1 means the filament does "
+"not support printing on the Cosmyx Textured Bed. A value of 0 means the bed "
+"is off."
+msgstr ""
 
 msgid "Bed types supported by the printer."
 msgstr "Loại bàn in được hỗ trợ bởi máy in."
@@ -14491,8 +14604,8 @@ msgid "mm/s² or %"
 msgstr "mm/s² hoặc %"
 
 msgid ""
-"Acceleration of sparse infill. If the value is expressed as a percentage "
-"(e.g. 100%), it will be calculated based on the default acceleration."
+"Acceleration of sparse infill. If the value is expressed as a percentage (e."
+"g. 100%), it will be calculated based on the default acceleration."
 msgstr ""
 "Gia tốc của infill thưa. Nếu giá trị được biểu thị dưới dạng phần trăm (ví "
 "dụ 100%), nó sẽ được tính dựa trên gia tốc mặc định."
@@ -14612,14 +14725,14 @@ msgstr "Tốc độ quạt đầy tại lớp"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
-"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
-"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" will be ignored if lower than "
+"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "Tốc độ quạt sẽ được tăng tuyến tính từ không tại lớp "
-"\"close_fan_the_first_x_layers\" đến tối đa tại lớp "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" sẽ bị bỏ qua nếu thấp hơn "
+"\"close_fan_the_first_x_layers\" đến tối đa tại lớp \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" sẽ bị bỏ qua nếu thấp hơn "
 "\"close_fan_the_first_x_layers\", trong trường hợp đó quạt sẽ chạy ở tốc độ "
 "tối đa được phép tại lớp \"close_fan_the_first_x_layers\" + 1."
 
@@ -14991,6 +15104,12 @@ msgstr "Thép không gỉ"
 
 msgid "Tungsten carbide"
 msgstr "Tungsten carbide"
+
+msgid "E3D"
+msgstr ""
+
+msgid "CHT"
+msgstr ""
 
 msgid "Nozzle HRC"
 msgstr "HRC đầu phun"
@@ -16496,8 +16615,8 @@ msgid "Role base wipe speed"
 msgstr "Tốc độ lau dựa trên vai trò"
 
 msgid ""
-"The wipe speed is determined by the speed of the current extrusion role. "
-"e.g. if a wipe action is executed immediately following an outer wall "
+"The wipe speed is determined by the speed of the current extrusion role. e."
+"g. if a wipe action is executed immediately following an outer wall "
 "extrusion, the speed of the outer wall extrusion will be utilized for the "
 "wipe action."
 msgstr ""
@@ -17381,8 +17500,8 @@ msgstr "Kích hoạt điều khiển nhiệt độ"
 
 msgid ""
 "Enable this option for automated chamber temperature control. This option "
-"activates the emitting of an M191 command before the "
-"\"machine_start_gcode\"\n"
+"activates the emitting of an M191 command before the \"machine_start_gcode"
+"\"\n"
 " which sets the chamber temperature and waits until it is reached. In "
 "addition, it emits an M141 command at the end of the print to turn off the "
 "chamber heater, if present.\n"
@@ -17439,6 +17558,14 @@ msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one."
 msgstr "Nhiệt độ đầu phun cho các lớp sau lớp đầu tiên."
+
+msgid "Ironing temperature"
+msgstr ""
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr ""
 
 #, fuzzy
 msgid "Detect thin walls"
@@ -18330,11 +18457,11 @@ msgid "Debug level"
 msgstr "Mức gỡ lỗi"
 
 msgid ""
-"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, "
-"5:trace\n"
+"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 msgstr ""
-"Đặt mức ghi log gỡ lỗi. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, "
-"5:trace\n"
+"Đặt mức ghi log gỡ lỗi. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 
 msgid "Enable timelapse for print"
 msgstr "Bật timelapse cho in"
@@ -18875,13 +19002,13 @@ msgstr "File được cung cấp không thể đọc được vì nó trống"
 msgid ""
 "Unknown file format. Input file must have .stl, .obj, .amf(.xml) extension."
 msgstr ""
-"Định dạng file không xác định. File đầu vào phải có phần mở "
-"rộng .stl, .obj, .amf(.xml)."
+"Định dạng file không xác định. File đầu vào phải có phần mở rộng .stl, ."
+"obj, .amf(.xml)."
 
 msgid "Unknown file format. Input file must have .3mf or .zip.amf extension."
 msgstr ""
-"Định dạng file không xác định. File đầu vào phải có phần mở rộng .3mf "
-"hoặc .zip.amf."
+"Định dạng file không xác định. File đầu vào phải có phần mở rộng .3mf hoặc ."
+"zip.amf."
 
 msgid "load_obj: failed to parse"
 msgstr "load_obj: phân tích thất bại"
@@ -20095,8 +20222,8 @@ msgstr ""
 "Bạn có muốn viết lại nó không?"
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you "
-"selected\".\n"
+"We would rename the presets as \"Vendor Type Serial @printer you selected"
+"\".\n"
 "To add preset for more printers, please go to printer selection"
 msgstr ""
 "Chúng tôi sẽ đổi tên cài đặt sẵn thành \"Nhà cung cấp Loại Serial @máy in "
@@ -22076,6 +22203,31 @@ msgstr ""
 "Tránh cong vênh\n"
 "Bạn có biết rằng khi in vật liệu dễ cong vênh như ABS, tăng nhiệt độ bàn "
 "nóng một cách thích hợp có thể giảm xác suất cong vênh không?"
+
+#~ msgid "Based on PrusaSlicer and BambuStudio"
+#~ msgstr "Dựa trên PrusaSlicer và BambuStudio"
+
+#~ msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "OrcaSlicer dựa trên BambuStudio, PrusaSlicer, và SuperSlicer."
+
+#~ msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+#~ msgstr "BambuStudio ban đầu dựa trên PrusaSlicer của PrusaResearch."
+
+#~ msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
+#~ msgstr "PrusaSlicer ban đầu dựa trên Slic3r của Alessandro Ranellucci."
+
+#~ msgid ""
+#~ "Slic3r was created by Alessandro Ranellucci with the help of many other "
+#~ "contributors."
+#~ msgstr ""
+#~ "Slic3r được tạo ra bởi Alessandro Ranellucci với sự trợ giúp của nhiều "
+#~ "người đóng góp khác."
+
+#~ msgid "Check for Updates"
+#~ msgstr "Kiểm tra cập nhật"
+
+#~ msgid "The name is not allowed to end with space character."
+#~ msgstr "Tên không được kết thúc bằng ký tự khoảng trắng."
 
 #~ msgid ""
 #~ "Zero first layer height is invalid.\n"

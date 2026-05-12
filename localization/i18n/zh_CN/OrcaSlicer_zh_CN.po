@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 23:39+0800\n"
+"POT-Creation-Date: 2026-05-12 09:58+0200\n"
 "PO-Revision-Date: 2026-02-28 00:59\n"
 "Last-Translator: Handle <mail@bysb.net>\n"
 "Language-Team: \n"
@@ -1592,9 +1592,6 @@ msgid ""
 "Configuration file \"%1%\" was loaded, but some values were not recognized."
 msgstr "配置文件“%1%”已被加载，但部分数值未被识别。"
 
-msgid "Based on PrusaSlicer and BambuStudio"
-msgstr "基于PrusaSlicer和BambuStudio"
-
 msgid "STEP files"
 msgstr "STEP 文件"
 
@@ -1669,6 +1666,32 @@ msgstr "OrcaSlicer 捕捉到一个未处理的异常：%1%"
 
 msgid "Untitled"
 msgstr "未命名"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr ""
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr ""
+
+#, c-format, boost-format
+msgid "Build: %s → %s"
+msgstr ""
+
+#, c-format, boost-format
+msgid "Bundle: %s → %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr ""
+
+msgid "New Build Detected"
+msgstr ""
+
+msgid "Skip"
+msgstr "跳过"
+
+msgid "Don't show again for future builds"
+msgstr ""
 
 msgid "Reloading network plug-in..."
 msgstr "正在重新加载网络插件..."
@@ -2070,6 +2093,59 @@ msgstr ""
 msgid "Suggestion"
 msgstr "建议"
 
+msgid "Calage 1 SNDT"
+msgstr ""
+
+msgid "Calage 2 SNDT"
+msgstr ""
+
+msgid "Calage 3 SNDT"
+msgstr ""
+
+msgid "Cube Bicolore"
+msgstr ""
+
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill "
+"direction' and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f°\n"
+"- Solid infill direction: %.0f°\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calage 1 Nova"
+msgstr ""
+
+msgid "Cosmyx Cube"
+msgstr ""
+
+msgid "Control Tension Belt"
+msgstr ""
+
+msgid "Support Bobine"
+msgstr ""
+
+msgid "Calibrations Models Dual Head"
+msgstr ""
+
+msgid "Calibration Models Single Head"
+msgstr ""
+
+msgid "Cosmyx Handy Models"
+msgstr ""
+
 msgid "Text"
 msgstr "文字浮雕"
 
@@ -2232,6 +2308,9 @@ msgstr "添加标准模型"
 
 msgid "Add Handy models"
 msgstr "添加实用模型"
+
+msgid "Cosmyx 3D Models"
+msgstr ""
 
 msgid "Add Models"
 msgstr "添加模型"
@@ -3288,19 +3367,31 @@ msgstr "本软件使用开源组件，其版权和其他所有权属于各自的
 msgid "About %s"
 msgstr "关于 %s"
 
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "OrcaSlicer 基于 BambuStudio、PrusaSlicer 以及 SuperSlicer 开发。"
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr "BambuStudio 基于 PrusaResearch 的 PrusaSlicer 开发而来。"
-
-msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
-msgstr "PrusaSlicer 最初是基于 Alessandro Ranellucci 的 Slic3r。"
+#, c-format, boost-format
+msgid "Cosmyx Bundle Version %s"
+msgstr ""
 
 msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
-msgstr "Slic3r 由 Alessandro Ranellucci 在其他众多贡献者的帮助下创建。"
+"Open-source slicing stands on a tradition of collaboration and attribution. "
+"Slic3r, created by Alessandro Ranellucci and the RepRap community, laid the "
+"foundation. PrusaSlicer by Prusa Research built on that work, Bambu Studio "
+"forked from PrusaSlicer, and SuperSlicer extended it with community-driven "
+"enhancements. Each project carried the work of its predecessors forward, "
+"crediting those who came before."
+msgstr ""
+
+msgid ""
+"OrcaSlicer began in that same spirit, drawing from PrusaSlicer, BambuStudio, "
+"SuperSlicer, and CuraSlicer. But it has since grown far beyond its origins — "
+"introducing advanced calibration tools, precise wall and seam control and "
+"hundreds of other features."
+msgstr ""
+
+msgid ""
+"Today, OrcaSlicer is the most widely used and actively developed open-source "
+"slicer in the 3D printing community. Many of its innovations have been "
+"adopted by other slicers, making it a driving force for the entire industry."
+msgstr ""
 
 msgid "Version"
 msgstr "版本"
@@ -4086,6 +4177,7 @@ msgstr ""
 "seam_slope_start_height需要小于layer_height。\n"
 "重置为0。"
 
+#, fuzzy, c-format, boost-format
 msgid ""
 "Lock depth should smaller than skin depth.\n"
 "Reset to 50% of skin depth."
@@ -5202,7 +5294,7 @@ msgstr "体积："
 msgid "Size:"
 msgstr "尺寸："
 
-#, boost-format
+#, c-format, boost-format
 msgid ""
 "Conflicts of G-code paths have been found at layer %d, Z = %.2lfmm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -5418,6 +5510,9 @@ msgstr "打印单盘"
 msgid "Export G-code file"
 msgstr "导出G-code文件"
 
+msgid "Export all G-code files"
+msgstr ""
+
 msgid "Send"
 msgstr "发送"
 
@@ -5450,9 +5545,6 @@ msgstr "打开配置文件夹"
 
 msgid "Show Tip of the Day"
 msgstr "展示每日小贴士"
-
-msgid "Check for Updates"
-msgstr "检查更新"
 
 msgid "Open Network Test"
 msgstr "打开网络测试"
@@ -6078,8 +6170,8 @@ msgid ""
 "The .gcode.3mf file contains no G-code data. Please slice it with Orca "
 "Slicer and export a new .gcode.3mf file."
 msgstr ""
-".gcode.3mf文件中不包含G-code数据。请使用Orca Slicer进行切片并导出新"
-"的.gcode.3mf文件。"
+".gcode.3mf文件中不包含G-code数据。请使用Orca Slicer进行切片并导出新的."
+"gcode.3mf文件。"
 
 #, c-format, boost-format
 msgid "File '%s' was lost! Please download it again."
@@ -6258,9 +6350,6 @@ msgstr "名称不允许为空。"
 
 msgid "The name is not allowed to start with space character."
 msgstr "名称不允许以空格开头。"
-
-msgid "The name is not allowed to end with space character."
-msgstr "名称不允许以空格结尾。"
 
 msgid "The name is not allowed to exceed 32 characters."
 msgstr "名称不得超过 32 个字符。"
@@ -6599,9 +6688,6 @@ msgstr "%s 信息"
 #, c-format, boost-format
 msgid "%s information"
 msgstr "%s 信息"
-
-msgid "Skip"
-msgstr "跳过"
 
 msgid "Newer 3MF version"
 msgstr "较新的 3MF 版本"
@@ -7470,6 +7556,9 @@ msgstr "正在切片盘%d"
 
 msgid "Please resolve the slicing errors and publish again."
 msgstr "请解决切片错误后再重新发布。"
+
+msgid "Choose a directory to export all G-code files"
+msgstr ""
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -9313,8 +9402,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add "
-"Primitive\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add Primitive"
+"\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "在录制无工具头延时摄影视频时，建议添加“延时摄影擦料塔”\n"
 "右键单击打印板的空白位置，选择“添加标准模型”->“延时摄影擦料塔”。"
@@ -9563,6 +9652,15 @@ msgid ""
 "Bed temperature when the Textured PEI Plate is installed. A value of 0 means "
 "the filament does not support printing on the Textured PEI Plate."
 msgstr "安装纹理PEI热床时的热床温度。0值表示这个耗材丝不支持纹理PEI热床"
+
+msgid "Cosmyx Textured Bed"
+msgstr ""
+
+msgid ""
+"Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
+"means the filament does not support printing on the Cosmyx Textured Bed. A "
+"value of 0 means the bed is off."
+msgstr ""
 
 msgid "Volumetric speed limitation"
 msgstr "体积流量限制"
@@ -11051,8 +11149,8 @@ msgid ""
 "or printer damage. If you still want to print, you can enable the option in "
 "Preferences."
 msgstr ""
-"同时打印高温和低温耗材可能会导致喷嘴堵塞或打印机损坏。如果您仍想打印，可以在"
-"“首选项”中启用该选项。"
+"同时打印高温和低温耗材可能会导致喷嘴堵塞或打印机损坏。如果您仍想打印，可以"
+"在“首选项”中启用该选项。"
 
 msgid ""
 "Printing different-temp filaments together may cause nozzle clogging or "
@@ -11599,6 +11697,24 @@ msgid ""
 "Bed temperature of the first layer. A value of 0 means the filament does not "
 "support printing on the Textured PEI Plate."
 msgstr "首层热床温度。0值表示这个耗材丝不支持纹理PEI热床"
+
+msgid ""
+"Bed temperature for layers except the initial one. A value of -1 means the "
+"filament does not support printing on the Cosmyx Textured Bed. A value of 0 "
+"means the bed is off."
+msgstr ""
+
+msgid "Initial layer"
+msgstr ""
+
+msgid "Initial layer bed temperature"
+msgstr ""
+
+msgid ""
+"Bed temperature of the initial layer. A value of -1 means the filament does "
+"not support printing on the Cosmyx Textured Bed. A value of 0 means the bed "
+"is off."
+msgstr ""
 
 msgid "Bed types supported by the printer."
 msgstr "打印机所支持的热床类型"
@@ -13672,8 +13788,8 @@ msgid "mm/s² or %"
 msgstr "mm/s² 或 %"
 
 msgid ""
-"Acceleration of sparse infill. If the value is expressed as a percentage "
-"(e.g. 100%), it will be calculated based on the default acceleration."
+"Acceleration of sparse infill. If the value is expressed as a percentage (e."
+"g. 100%), it will be calculated based on the default acceleration."
 msgstr ""
 "稀疏填充的加速度。如果该值表示为百分比（例如100%），则将根据默认加速度进行计"
 "算。"
@@ -13786,10 +13902,10 @@ msgstr "满速风扇在"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
-"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
-"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" will be ignored if lower than "
+"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "风扇速度将从“禁用第一层”的零转速，线性上升到“全风扇速度层”的最大转速。\n"
 "如果低于“禁用风扇第一层”，则“全风扇速度第一层”将被忽略，在这种情况下，风扇将"
@@ -14125,6 +14241,12 @@ msgstr "不锈钢"
 
 msgid "Tungsten carbide"
 msgstr "碳化钨"
+
+msgid "E3D"
+msgstr ""
+
+msgid "CHT"
+msgstr ""
 
 msgid "Nozzle HRC"
 msgstr "喷嘴洛氏硬度"
@@ -15509,8 +15631,8 @@ msgid "Role base wipe speed"
 msgstr "自动擦拭速度"
 
 msgid ""
-"The wipe speed is determined by the speed of the current extrusion role. "
-"e.g. if a wipe action is executed immediately following an outer wall "
+"The wipe speed is determined by the speed of the current extrusion role. e."
+"g. if a wipe action is executed immediately following an outer wall "
 "extrusion, the speed of the outer wall extrusion will be utilized for the "
 "wipe action."
 msgstr ""
@@ -16322,8 +16444,8 @@ msgstr "激活温度控制"
 
 msgid ""
 "Enable this option for automated chamber temperature control. This option "
-"activates the emitting of an M191 command before the "
-"\"machine_start_gcode\"\n"
+"activates the emitting of an M191 command before the \"machine_start_gcode"
+"\"\n"
 " which sets the chamber temperature and waits until it is reached. In "
 "addition, it emits an M141 command at the end of the print to turn off the "
 "chamber heater, if present.\n"
@@ -16370,6 +16492,14 @@ msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one."
 msgstr "除首层外的其它层的喷嘴温度"
+
+msgid "Ironing temperature"
+msgstr ""
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr ""
 
 msgid "Detect thin walls"
 msgstr "检查薄壁"
@@ -17196,11 +17326,11 @@ msgid "Debug level"
 msgstr "调试等级"
 
 msgid ""
-"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, "
-"5:trace\n"
+"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 msgstr ""
-"设置调试日志的等级。0:fatal， 1:error， 2:warning， 3:info， 4:debug， "
-"5:trace\n"
+"设置调试日志的等级。0:fatal， 1:error， 2:warning， 3:info， 4:debug， 5:"
+"trace\n"
 
 msgid "Enable timelapse for print"
 msgstr "为打印启用延时摄影"
@@ -17932,10 +18062,10 @@ msgid ""
 msgstr ""
 "请从我们的wiki中找到动态流量校准的详细信息。\n"
 "\n"
-"通常情况下，校准是不必要的。当您开始单色/单耗材打印，并在打印开始菜单中勾选了"
-"“动态流量校准”选项时，打印机将按照旧的方式在打印前校准耗材；当您开始多色/多耗"
-"材打印时，打印机将在每次换耗材时使用默认的补偿参数，这在大多数情况下会产生良"
-"好的效果。\n"
+"通常情况下，校准是不必要的。当您开始单色/单耗材打印，并在打印开始菜单中勾选"
+"了“动态流量校准”选项时，打印机将按照旧的方式在打印前校准耗材；当您开始多色/多"
+"耗材打印时，打印机将在每次换耗材时使用默认的补偿参数，这在大多数情况下会产生"
+"良好的效果。\n"
 "\n"
 "有些情况可能导致校准结果不可靠，例如打印板的附着力不足。清洗构建或者使用胶水"
 "可以增强打印板的附着力。您可以在我们的wiki上找到更多相关信息。\n"
@@ -18849,8 +18979,8 @@ msgstr ""
 "你想重写预设吗"
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you "
-"selected\".\n"
+"We would rename the presets as \"Vendor Type Serial @printer you selected"
+"\".\n"
 "To add preset for more printers, please go to printer selection"
 msgstr ""
 "我们将会把预设重命名为“供应商类型名 @ 您选择的打印机”\n"
@@ -19745,8 +19875,8 @@ msgid ""
 "to this wiki: Printing Tips for High Temp / Engineering materials."
 msgstr ""
 "打印此耗材时，可能有喷嘴堵塞、渗漏、翘曲和层间强度低的风险。为了获得更好的结"
-"果，请参考此英文wiki：Printing Tips for High Temp / Engineering materials"
-"（“高温/工程材料的打印技巧”）"
+"果，请参考此英文wiki：Printing Tips for High Temp / Engineering "
+"materials（“高温/工程材料的打印技巧”）"
 
 msgid ""
 "To get better transparent or translucent results with the corresponding "
@@ -19814,8 +19944,8 @@ msgid ""
 "wiki: PVA Printing Guide."
 msgstr ""
 "这是一种水溶性支撑耗材，通常只用作支撑结构，不用于模型本体。打印此类耗材需要"
-"满足较多条件，为了获得更好的打印质量，请参考这个英文wiki：PVA Printing Guide"
-"（“PVA打印指南”）"
+"满足较多条件，为了获得更好的打印质量，请参考这个英文wiki：PVA Printing "
+"Guide（“PVA打印指南”）"
 
 msgid ""
 "This is a non-water-soluble support filament, and usually it is only for the "
@@ -20675,6 +20805,29 @@ msgid ""
 msgstr ""
 "避免翘曲\n"
 "您知道吗？打印ABS这类易翘曲材料时，适当提高热床温度可以降低翘曲的概率。"
+
+#~ msgid "Based on PrusaSlicer and BambuStudio"
+#~ msgstr "基于PrusaSlicer和BambuStudio"
+
+#~ msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "OrcaSlicer 基于 BambuStudio、PrusaSlicer 以及 SuperSlicer 开发。"
+
+#~ msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+#~ msgstr "BambuStudio 基于 PrusaResearch 的 PrusaSlicer 开发而来。"
+
+#~ msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
+#~ msgstr "PrusaSlicer 最初是基于 Alessandro Ranellucci 的 Slic3r。"
+
+#~ msgid ""
+#~ "Slic3r was created by Alessandro Ranellucci with the help of many other "
+#~ "contributors."
+#~ msgstr "Slic3r 由 Alessandro Ranellucci 在其他众多贡献者的帮助下创建。"
+
+#~ msgid "Check for Updates"
+#~ msgstr "检查更新"
+
+#~ msgid "The name is not allowed to end with space character."
+#~ msgstr "名称不允许以空格结尾。"
 
 #~ msgid "BambuStudio warning"
 #~ msgstr "BambuStudio 警告"
