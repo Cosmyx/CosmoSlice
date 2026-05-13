@@ -1757,30 +1757,30 @@ msgid "Untitled"
 msgstr "Без названия"
 
 msgid "A new version of CosmoSlice has been installed."
-msgstr ""
+msgstr "Установлена новая версия CosmoSlice."
 
 msgid "Please Backup and delete the Cosmyx AppData Folder."
-msgstr ""
+msgstr "Пожалуйста, создайте резервную копию и удалите папку AppData Cosmyx."
 
 #, c-format, boost-format
 msgid "Build: %s → %s"
-msgstr ""
+msgstr "Сборка: %s → %s"
 
 #, c-format, boost-format
 msgid "Bundle: %s → %s"
-msgstr ""
+msgstr "Пакет: %s → %s"
 
 msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
-msgstr ""
+msgstr "Хотите закрыть OrcaSlicer и открыть папку AppData?"
 
 msgid "New Build Detected"
-msgstr ""
+msgstr "Обнаружена новая версия"
 
 msgid "Skip"
 msgstr "Пропустить"
 
 msgid "Don't show again for future builds"
-msgstr ""
+msgstr "Больше не показывать для будущих версий"
 
 msgid "Reloading network plug-in..."
 msgstr "Перезагрузка сетевого плагина..."
@@ -2204,16 +2204,16 @@ msgid "Suggestion"
 msgstr "Рекомендация"
 
 msgid "Calage 1 SNDT"
-msgstr ""
+msgstr "Калибровка 1 SNDT"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Калибровка 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Калибровка 3 SNDT"
 
 msgid "Cube Bicolore"
-msgstr ""
+msgstr "Двухцветный куб"
 
 msgid ""
 "This calibration model works best with infill directions set to 0 degrees. "
@@ -2236,25 +2236,25 @@ msgid ""
 msgstr ""
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Калибровка 1 Nova"
 
 msgid "Cosmyx Cube"
-msgstr ""
+msgstr "Cosmyx Cube"
 
 msgid "Control Tension Belt"
-msgstr ""
+msgstr "Контроль натяжения ремня"
 
 msgid "Support Bobine"
-msgstr ""
+msgstr "Подставка под катушку"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Калибровочные модели двойная головка"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Калибровочные модели одиночная головка"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Вспомогательные модели Cosmyx"
 
 msgid "Text"
 msgstr "Текст"
@@ -2423,7 +2423,7 @@ msgid "Add Handy models"
 msgstr "Добавить тестовую модель"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "3D модели Cosmyx"
 
 msgid "Add Models"
 msgstr "Добавить модель"
@@ -3609,7 +3609,7 @@ msgstr "О программе %s"
 
 #, c-format, boost-format
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Версия пакета Cosmyx %s"
 
 msgid ""
 "Open-source slicing stands on a tradition of collaboration and attribution. "
@@ -5958,7 +5958,7 @@ msgid "Export G-code file"
 msgstr "Экспорт в G-код"
 
 msgid "Export all G-code files"
-msgstr ""
+msgstr "Экспортировать все файлы G-code"
 
 # ??????? Используется в двух местах или уже исправили? – Судя по коду,
 # вызывается аж в четырёх местах (Felix) UPD: уже в 5
@@ -8185,7 +8185,7 @@ msgid "Please resolve the slicing errors and publish again."
 msgstr "Пожалуйста, устраните ошибки нарезки и попробуйте опубликовать снова."
 
 msgid "Choose a directory to export all G-code files"
-msgstr ""
+msgstr "Выберите папку для экспорта всех файлов G-code"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -10517,7 +10517,7 @@ msgstr ""
 "это покрытие."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Текстурированный стол Cosmyx"
 
 msgid ""
 "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
@@ -12823,10 +12823,10 @@ msgid ""
 msgstr ""
 
 msgid "Initial layer"
-msgstr ""
+msgstr "Начальный слой"
 
 msgid "Initial layer bed temperature"
-msgstr ""
+msgstr "Температура стола для начального слоя"
 
 msgid ""
 "Bed temperature of the initial layer. A value of -1 means the filament does "
@@ -15892,10 +15892,10 @@ msgid "Tungsten carbide"
 msgstr "Карбид вольфрама"
 
 msgid "E3D"
-msgstr ""
+msgstr "E3D"
 
 msgid "CHT"
-msgstr ""
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "Твёрдость сопла (HRC)"
@@ -18649,7 +18649,7 @@ msgid "Nozzle temperature for layers after the initial one."
 msgstr "Температура при печати последующих слоёв."
 
 msgid "Ironing temperature"
-msgstr ""
+msgstr "Температура выглаживания"
 
 msgid ""
 "Sets the extrusion temperature for the ironing pass. If unset in the "

@@ -1687,30 +1687,30 @@ msgid "Untitled"
 msgstr "Không tiêu đề"
 
 msgid "A new version of CosmoSlice has been installed."
-msgstr ""
+msgstr "Đã cài đặt phiên bản mới của CosmoSlice."
 
 msgid "Please Backup and delete the Cosmyx AppData Folder."
-msgstr ""
+msgstr "Vui lòng sao lưu và xóa thư mục AppData của Cosmyx."
 
 #, c-format, boost-format
 msgid "Build: %s → %s"
-msgstr ""
+msgstr "Bản dựng: %s → %s"
 
 #, c-format, boost-format
 msgid "Bundle: %s → %s"
-msgstr ""
+msgstr "Gói: %s → %s"
 
 msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
-msgstr ""
+msgstr "Bạn có muốn đóng OrcaSlicer và mở thư mục AppData của bạn không?"
 
 msgid "New Build Detected"
-msgstr ""
+msgstr "Phát hiện phiên bản dựng mới"
 
 msgid "Skip"
 msgstr "Bỏ qua"
 
 msgid "Don't show again for future builds"
-msgstr ""
+msgstr "Không hiển thị lại cho các bản dựng trong tương lai"
 
 msgid "Reloading network plug-in..."
 msgstr "Reloading network plug-in..."
@@ -2127,16 +2127,16 @@ msgid "Suggestion"
 msgstr "Suggestion"
 
 msgid "Calage 1 SNDT"
-msgstr ""
+msgstr "Hiệu chỉnh 1 SNDT"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Hiệu chỉnh 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Hiệu chỉnh 3 SNDT"
 
 msgid "Cube Bicolore"
-msgstr ""
+msgstr "Khối lập phương hai màu"
 
 msgid ""
 "This calibration model works best with infill directions set to 0 degrees. "
@@ -2159,25 +2159,25 @@ msgid ""
 msgstr ""
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Hiệu chỉnh 1 Nova"
 
 msgid "Cosmyx Cube"
-msgstr ""
+msgstr "Cosmyx Cube"
 
 msgid "Control Tension Belt"
-msgstr ""
+msgstr "Kiểm soát độ căng dây đai"
 
 msgid "Support Bobine"
-msgstr ""
+msgstr "Giá đỡ cuộn dây"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Mô hình hiệu chỉnh đầu kép"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Mô hình hiệu chỉnh đầu đơn"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Mô hình tiện dụng Cosmyx"
 
 msgid "Text"
 msgstr "Chữ"
@@ -2343,7 +2343,7 @@ msgid "Add Handy models"
 msgstr "Thêm model tiện dụng"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Mô hình 3D Cosmyx"
 
 msgid "Add Models"
 msgstr "Thêm model"
@@ -3462,7 +3462,7 @@ msgstr "Giới thiệu %s"
 
 #, c-format, boost-format
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Phiên bản gói Cosmyx %s"
 
 msgid ""
 "Open-source slicing stands on a tradition of collaboration and attribution. "
@@ -5696,7 +5696,7 @@ msgid "Export G-code file"
 msgstr "Xuất file G-code"
 
 msgid "Export all G-code files"
-msgstr ""
+msgstr "Xuất tất cả các tệp G-code"
 
 msgid "Send"
 msgstr "Gửi"
@@ -7839,7 +7839,7 @@ msgid "Please resolve the slicing errors and publish again."
 msgstr "Vui lòng giải quyết các lỗi slice và xuất bản lại."
 
 msgid "Choose a directory to export all G-code files"
-msgstr ""
+msgstr "Chọn thư mục để xuất tất cả các tệp G-code"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -10076,7 +10076,7 @@ msgstr ""
 "không hỗ trợ in trên bản Textured PEI."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Bàn in có kết cấu Cosmyx"
 
 msgid ""
 "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
@@ -12295,10 +12295,10 @@ msgid ""
 msgstr ""
 
 msgid "Initial layer"
-msgstr ""
+msgstr "Lớp đầu tiên"
 
 msgid "Initial layer bed temperature"
-msgstr ""
+msgstr "Nhiệt độ bàn in lớp đầu tiên"
 
 msgid ""
 "Bed temperature of the initial layer. A value of -1 means the filament does "
@@ -15106,10 +15106,10 @@ msgid "Tungsten carbide"
 msgstr "Tungsten carbide"
 
 msgid "E3D"
-msgstr ""
+msgstr "E3D"
 
 msgid "CHT"
-msgstr ""
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "HRC đầu phun"
@@ -17560,7 +17560,7 @@ msgid "Nozzle temperature for layers after the initial one."
 msgstr "Nhiệt độ đầu phun cho các lớp sau lớp đầu tiên."
 
 msgid "Ironing temperature"
-msgstr ""
+msgstr "Nhiệt độ là phẳng"
 
 msgid ""
 "Sets the extrusion temperature for the ironing pass. If unset in the "

@@ -1664,7 +1664,7 @@ msgid "New Build Detected"
 msgstr ""
 
 msgid "Skip"
-msgstr ""
+msgstr "Skip"
 
 msgid "Don't show again for future builds"
 msgstr ""
@@ -2050,16 +2050,16 @@ msgid "Suggestion"
 msgstr ""
 
 msgid "Calage 1 SNDT"
-msgstr ""
+msgstr "Calibration 1 SNDT"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calibration 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calibration 3 SNDT"
 
 msgid "Cube Bicolore"
-msgstr ""
+msgstr "Bicolor Cube"
 
 msgid ""
 "This calibration model works best with infill directions set to 0 degrees. "
@@ -2082,7 +2082,7 @@ msgid ""
 msgstr ""
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calibration 1 Nova"
 
 msgid "Cosmyx Cube"
 msgstr ""
@@ -2091,7 +2091,7 @@ msgid "Control Tension Belt"
 msgstr ""
 
 msgid "Support Bobine"
-msgstr ""
+msgstr "Spool Support"
 
 msgid "Calibrations Models Dual Head"
 msgstr ""

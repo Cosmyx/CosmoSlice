@@ -1729,30 +1729,30 @@ msgid "Untitled"
 msgstr "Sin título"
 
 msgid "A new version of CosmoSlice has been installed."
-msgstr ""
+msgstr "Se ha instalado una nueva versión de CosmoSlice."
 
 msgid "Please Backup and delete the Cosmyx AppData Folder."
-msgstr ""
+msgstr "Por favor, realice una copia de seguridad y elimine la carpeta AppData de Cosmyx."
 
 #, c-format, boost-format
 msgid "Build: %s → %s"
-msgstr ""
+msgstr "Build: %s → %s"
 
 #, c-format, boost-format
 msgid "Bundle: %s → %s"
-msgstr ""
+msgstr "Paquete: %s → %s"
 
 msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
-msgstr ""
+msgstr "¿Le gustaría cerrar OrcaSlicer y abrir su carpeta AppData?"
 
 msgid "New Build Detected"
-msgstr ""
+msgstr "Nueva versión detectada"
 
 msgid "Skip"
 msgstr "Saltar"
 
 msgid "Don't show again for future builds"
-msgstr ""
+msgstr "No mostrar de nuevo para futuras versiones"
 
 msgid "Reloading network plug-in..."
 msgstr "Recargando el complemento de red..."
@@ -2184,16 +2184,16 @@ msgid "Suggestion"
 msgstr "Sugerencia"
 
 msgid "Calage 1 SNDT"
-msgstr ""
+msgstr "Calibración 1 SNDT"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calibración 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calibración 3 SNDT"
 
 msgid "Cube Bicolore"
-msgstr ""
+msgstr "Cubo Bicolor"
 
 msgid ""
 "This calibration model works best with infill directions set to 0 degrees. "
@@ -2216,25 +2216,25 @@ msgid ""
 msgstr ""
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calibración 1 Nova"
 
 msgid "Cosmyx Cube"
-msgstr ""
+msgstr "Cosmyx Cube"
 
 msgid "Control Tension Belt"
-msgstr ""
+msgstr "Control de tensión de la correa"
 
 msgid "Support Bobine"
-msgstr ""
+msgstr "Soporte de bobina"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Modelos de calibración cabezal doble"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Modelos de calibración cabezal único"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Modelos prácticos Cosmyx"
 
 msgid "Text"
 msgstr "Texto"
@@ -2401,7 +2401,7 @@ msgid "Add Handy models"
 msgstr "Añadir Modelos Prácticos"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Modelos 3D Cosmyx"
 
 msgid "Add Models"
 msgstr "Añadir Modelos"
@@ -3560,7 +3560,7 @@ msgstr "Acerca de %s"
 
 #, c-format, boost-format
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Versión del paquete Cosmyx %s"
 
 msgid ""
 "Open-source slicing stands on a tradition of collaboration and attribution. "
@@ -5855,7 +5855,7 @@ msgid "Export G-code file"
 msgstr "Exportar archivo G-Code"
 
 msgid "Export all G-code files"
-msgstr ""
+msgstr "Exportar todos los archivos G-code"
 
 msgid "Send"
 msgstr "Enviar"
@@ -8062,7 +8062,7 @@ msgid "Please resolve the slicing errors and publish again."
 msgstr "Por favor, resuelva los errores de laminado y publique de nuevo."
 
 msgid "Choose a directory to export all G-code files"
-msgstr ""
+msgstr "Elegir un directorio para exportar todos los archivos G-code"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -10421,7 +10421,7 @@ msgstr ""
 "PEI Texturizada."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cama texturada Cosmyx"
 
 msgid ""
 "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
@@ -12708,10 +12708,10 @@ msgid ""
 msgstr ""
 
 msgid "Initial layer"
-msgstr ""
+msgstr "Capa inicial"
 
 msgid "Initial layer bed temperature"
-msgstr ""
+msgstr "Temperatura de la cama para la capa inicial"
 
 msgid ""
 "Bed temperature of the initial layer. A value of -1 means the filament does "
@@ -15678,10 +15678,10 @@ msgid "Tungsten carbide"
 msgstr "Carburo de tungsteno"
 
 msgid "E3D"
-msgstr ""
+msgstr "E3D"
 
 msgid "CHT"
-msgstr ""
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "Dureza HRC de la boquilla"
@@ -18270,7 +18270,7 @@ msgid "Nozzle temperature for layers after the initial one."
 msgstr "Temperatura de la boquilla después de la primera capa."
 
 msgid "Ironing temperature"
-msgstr ""
+msgstr "Temperatura de planchado"
 
 msgid ""
 "Sets the extrusion temperature for the ironing pass. If unset in the "

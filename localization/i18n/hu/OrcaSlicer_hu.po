@@ -1711,30 +1711,30 @@ msgid "Untitled"
 msgstr "Névtelen"
 
 msgid "A new version of CosmoSlice has been installed."
-msgstr ""
+msgstr "A CosmoSlice új verziója telepítve."
 
 msgid "Please Backup and delete the Cosmyx AppData Folder."
-msgstr ""
+msgstr "Kérjük, mentse el és törölje a Cosmyx AppData mappát."
 
 #, c-format, boost-format
 msgid "Build: %s → %s"
-msgstr ""
+msgstr "Build: %s → %s"
 
 #, c-format, boost-format
 msgid "Bundle: %s → %s"
-msgstr ""
+msgstr "Csomag: %s → %s"
 
 msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
-msgstr ""
+msgstr "Szeretné bezárni az OrcaSlicert és megnyitni az AppData mappát?"
 
 msgid "New Build Detected"
-msgstr ""
+msgstr "Új verzió észlelve"
 
 msgid "Skip"
 msgstr "Kihagyás"
 
 msgid "Don't show again for future builds"
-msgstr ""
+msgstr "Ne mutasd újra a jövőbeli verziókhoz"
 
 msgid "Reloading network plug-in..."
 msgstr "Hálózati bővítmény újratöltése..."
@@ -2154,16 +2154,16 @@ msgid "Suggestion"
 msgstr "Javaslat"
 
 msgid "Calage 1 SNDT"
-msgstr ""
+msgstr "Kalibráció 1 SNDT"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Kalibráció 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Kalibráció 3 SNDT"
 
 msgid "Cube Bicolore"
-msgstr ""
+msgstr "Kétszínű kocka"
 
 msgid ""
 "This calibration model works best with infill directions set to 0 degrees. "
@@ -2186,25 +2186,25 @@ msgid ""
 msgstr ""
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Kalibráció 1 Nova"
 
 msgid "Cosmyx Cube"
-msgstr ""
+msgstr "Cosmyx Cube"
 
 msgid "Control Tension Belt"
-msgstr ""
+msgstr "Szíjfeszesség szabályozó"
 
 msgid "Support Bobine"
-msgstr ""
+msgstr "Orsótartó"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Kalibrálási modellek két fej"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Kalibrálási modellek egy fej"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx hasznos modellek"
 
 msgid "Text"
 msgstr "Szöveg"
@@ -2375,7 +2375,7 @@ msgid "Add Handy models"
 msgstr "Hasznos modellek hozzáadása"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D modellek"
 
 msgid "Add Models"
 msgstr "Modellek hozzáadása"
@@ -3524,7 +3524,7 @@ msgstr "%s névjegye"
 
 #, c-format, boost-format
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Cosmyx csomag verziója %s"
 
 msgid ""
 "Open-source slicing stands on a tradition of collaboration and attribution. "
@@ -5793,7 +5793,7 @@ msgid "Export G-code file"
 msgstr "G-kód fájl exportálása"
 
 msgid "Export all G-code files"
-msgstr ""
+msgstr "Összes G-code fájl exportálása"
 
 msgid "Send"
 msgstr "Küldés"
@@ -7960,7 +7960,7 @@ msgid "Please resolve the slicing errors and publish again."
 msgstr "Kérlek, orvosold a szeletelési hibákat, és próbáld meg újra."
 
 msgid "Choose a directory to export all G-code files"
-msgstr ""
+msgstr "Válasszon könyvtárat az összes G-code fájl exportálásához"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -10281,7 +10281,7 @@ msgstr ""
 "nyomtatást"
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx textúrált nyomtatóágy"
 
 msgid ""
 "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
@@ -12568,10 +12568,10 @@ msgid ""
 msgstr ""
 
 msgid "Initial layer"
-msgstr ""
+msgstr "Első réteg"
 
 msgid "Initial layer bed temperature"
-msgstr ""
+msgstr "Nyomtatóágy hőmérséklete az első réteghez"
 
 msgid ""
 "Bed temperature of the initial layer. A value of -1 means the filament does "
@@ -15489,10 +15489,10 @@ msgid "Tungsten carbide"
 msgstr "Volfrám-karbid"
 
 msgid "E3D"
-msgstr ""
+msgstr "E3D"
 
 msgid "CHT"
-msgstr ""
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "Fúvóka HRC értéke"
@@ -18052,7 +18052,7 @@ msgid "Nozzle temperature for layers after the initial one."
 msgstr "Fúvóka hőmérséklete az első réteg után"
 
 msgid "Ironing temperature"
-msgstr ""
+msgstr "Vasalási hőmérséklet"
 
 msgid ""
 "Sets the extrusion temperature for the ironing pass. If unset in the "

@@ -1694,30 +1694,30 @@ msgid "Untitled"
 msgstr "제목 없음"
 
 msgid "A new version of CosmoSlice has been installed."
-msgstr ""
+msgstr "새 버전의 CosmoSlice가 설치되었습니다."
 
 msgid "Please Backup and delete the Cosmyx AppData Folder."
-msgstr ""
+msgstr "Cosmyx AppData 폴더를 백업하고 삭제하세요."
 
 #, c-format, boost-format
 msgid "Build: %s → %s"
-msgstr ""
+msgstr "빌드: %s → %s"
 
 #, c-format, boost-format
 msgid "Bundle: %s → %s"
-msgstr ""
+msgstr "번들: %s → %s"
 
 msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
-msgstr ""
+msgstr "OrcaSlicer를 닫고 AppData 폴더를 열겠습니까?"
 
 msgid "New Build Detected"
-msgstr ""
+msgstr "새 빌드 감지됨"
 
 msgid "Skip"
 msgstr "건너뛰기"
 
 msgid "Don't show again for future builds"
-msgstr ""
+msgstr "향후 빌드에서 다시 표시하지 않음"
 
 msgid "Reloading network plug-in..."
 msgstr "네트워크 플러그인 재로드 중..."
@@ -2132,16 +2132,16 @@ msgid "Suggestion"
 msgstr "제안"
 
 msgid "Calage 1 SNDT"
-msgstr ""
+msgstr "캘리브레이션 1 SNDT"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "캘리브레이션 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "캘리브레이션 3 SNDT"
 
 msgid "Cube Bicolore"
-msgstr ""
+msgstr "바이컬러 큐브"
 
 msgid ""
 "This calibration model works best with infill directions set to 0 degrees. "
@@ -2164,25 +2164,25 @@ msgid ""
 msgstr ""
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "캘리브레이션 1 Nova"
 
 msgid "Cosmyx Cube"
-msgstr ""
+msgstr "Cosmyx Cube"
 
 msgid "Control Tension Belt"
-msgstr ""
+msgstr "벨트 장력 제어"
 
 msgid "Support Bobine"
-msgstr ""
+msgstr "스풀 지지대"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "캘리브레이션 모델 듀얼 헤드"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "캘리브레이션 모델 단일 헤드"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx 편리한 모델"
 
 msgid "Text"
 msgstr "텍스트"
@@ -2348,7 +2348,7 @@ msgid "Add Handy models"
 msgstr "핸디 모델 추가"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D 모델"
 
 msgid "Add Models"
 msgstr "모델 추가"
@@ -3458,7 +3458,7 @@ msgstr "%s 정보"
 
 #, c-format, boost-format
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Cosmyx 번들 버전 %s"
 
 msgid ""
 "Open-source slicing stands on a tradition of collaboration and attribution. "
@@ -5629,7 +5629,7 @@ msgid "Export G-code file"
 msgstr "Gcode 파일 내보내기"
 
 msgid "Export all G-code files"
-msgstr ""
+msgstr "모든 G-code 파일 내보내기"
 
 msgid "Send"
 msgstr "전송"
@@ -7731,7 +7731,7 @@ msgid "Please resolve the slicing errors and publish again."
 msgstr "슬라이싱 오류를 해결하고 다시 시도하세요."
 
 msgid "Choose a directory to export all G-code files"
-msgstr ""
+msgstr "모든 G-code 파일을 내보낼 디렉토리 선택"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -9841,7 +9841,7 @@ msgstr ""
 "레이트에 출력하는 것을 지원하지 않음을 의미합니다."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx 텍스처 베드"
 
 msgid ""
 "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
@@ -11966,10 +11966,10 @@ msgid ""
 msgstr ""
 
 msgid "Initial layer"
-msgstr ""
+msgstr "초기 레이어"
 
 msgid "Initial layer bed temperature"
-msgstr ""
+msgstr "초기 레이어 베드 온도"
 
 msgid ""
 "Bed temperature of the initial layer. A value of -1 means the filament does "
@@ -14591,10 +14591,10 @@ msgid "Tungsten carbide"
 msgstr ""
 
 msgid "E3D"
-msgstr ""
+msgstr "E3D"
 
 msgid "CHT"
-msgstr ""
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "노즐 HRC"
@@ -16934,7 +16934,7 @@ msgid "Nozzle temperature for layers after the initial one."
 msgstr "초기 레이어 이후의 노즐 온도"
 
 msgid "Ironing temperature"
-msgstr ""
+msgstr "다림질 온도"
 
 msgid ""
 "Sets the extrusion temperature for the ironing pass. If unset in the "

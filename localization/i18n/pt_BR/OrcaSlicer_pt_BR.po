@@ -1723,30 +1723,30 @@ msgid "Untitled"
 msgstr "Sem título"
 
 msgid "A new version of CosmoSlice has been installed."
-msgstr ""
+msgstr "Uma nova versão do CosmoSlice foi instalada."
 
 msgid "Please Backup and delete the Cosmyx AppData Folder."
-msgstr ""
+msgstr "Por favor, faça backup e exclua a pasta AppData do Cosmyx."
 
 #, c-format, boost-format
 msgid "Build: %s → %s"
-msgstr ""
+msgstr "Build: %s → %s"
 
 #, c-format, boost-format
 msgid "Bundle: %s → %s"
-msgstr ""
+msgstr "Pacote: %s → %s"
 
 msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
-msgstr ""
+msgstr "Gostaria de fechar o OrcaSlicer e abrir sua pasta AppData?"
 
 msgid "New Build Detected"
-msgstr ""
+msgstr "Nova versão detectada"
 
 msgid "Skip"
 msgstr "Pular"
 
 msgid "Don't show again for future builds"
-msgstr ""
+msgstr "Não mostrar novamente para builds futuros"
 
 msgid "Reloading network plug-in..."
 msgstr "Recarregando o plug-in de rede..."
@@ -2169,16 +2169,16 @@ msgid "Suggestion"
 msgstr "Sugestão"
 
 msgid "Calage 1 SNDT"
-msgstr ""
+msgstr "Calibração 1 SNDT"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calibração 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calibração 3 SNDT"
 
 msgid "Cube Bicolore"
-msgstr ""
+msgstr "Cubo Bicolor"
 
 msgid ""
 "This calibration model works best with infill directions set to 0 degrees. "
@@ -2201,25 +2201,25 @@ msgid ""
 msgstr ""
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calibração 1 Nova"
 
 msgid "Cosmyx Cube"
-msgstr ""
+msgstr "Cosmyx Cube"
 
 msgid "Control Tension Belt"
-msgstr ""
+msgstr "Controle de tensão da correia"
 
 msgid "Support Bobine"
-msgstr ""
+msgstr "Suporte de bobina"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Modelos de calibração cabeçote duplo"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Modelos de calibração cabeçote único"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Modelos úteis Cosmyx"
 
 msgid "Text"
 msgstr "Texto"
@@ -2385,7 +2385,7 @@ msgid "Add Handy models"
 msgstr "Adicionar Modelos Úteis"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Modelos 3D Cosmyx"
 
 msgid "Add Models"
 msgstr "Adicionar Modelos"
@@ -3532,7 +3532,7 @@ msgstr "Sobre %s"
 
 #, c-format, boost-format
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Versão do pacote Cosmyx %s"
 
 msgid ""
 "Open-source slicing stands on a tradition of collaboration and attribution. "
@@ -5812,7 +5812,7 @@ msgid "Export G-code file"
 msgstr "Exportar arquivo G-code"
 
 msgid "Export all G-code files"
-msgstr ""
+msgstr "Exportar todos os arquivos G-code"
 
 msgid "Send"
 msgstr "Enviar"
@@ -8001,7 +8001,7 @@ msgid "Please resolve the slicing errors and publish again."
 msgstr "Por favor, resolva os erros de fatiamento e publique novamente."
 
 msgid "Choose a directory to export all G-code files"
-msgstr ""
+msgstr "Escolha um diretório para exportar todos os arquivos G-code"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -10335,7 +10335,7 @@ msgstr ""
 "significa que o filamento não suporta impressão na Placa PEI Texturizada."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Mesa texturizada Cosmyx"
 
 msgid ""
 "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
@@ -12617,10 +12617,10 @@ msgid ""
 msgstr ""
 
 msgid "Initial layer"
-msgstr ""
+msgstr "Camada inicial"
 
 msgid "Initial layer bed temperature"
-msgstr ""
+msgstr "Temperatura da mesa para a camada inicial"
 
 msgid ""
 "Bed temperature of the initial layer. A value of -1 means the filament does "
@@ -15570,10 +15570,10 @@ msgid "Tungsten carbide"
 msgstr "Carbeto de tungstênio"
 
 msgid "E3D"
-msgstr ""
+msgstr "E3D"
 
 msgid "CHT"
-msgstr ""
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "Bico HRC"
@@ -18132,7 +18132,7 @@ msgid "Nozzle temperature for layers after the initial one."
 msgstr "Temperatura do bico para camadas após a inicial."
 
 msgid "Ironing temperature"
-msgstr ""
+msgstr "Temperatura de alisamento"
 
 msgid ""
 "Sets the extrusion temperature for the ironing pass. If unset in the "

@@ -1708,30 +1708,30 @@ msgid "Untitled"
 msgstr "Be pavadinimo"
 
 msgid "A new version of CosmoSlice has been installed."
-msgstr ""
+msgstr "Įdiegta nauja CosmoSlice versija."
 
 msgid "Please Backup and delete the Cosmyx AppData Folder."
-msgstr ""
+msgstr "Sukurkite atsarginę kopiją ir ištrinkite Cosmyx AppData aplanką."
 
 #, c-format, boost-format
 msgid "Build: %s → %s"
-msgstr ""
+msgstr "Versija: %s → %s"
 
 #, c-format, boost-format
 msgid "Bundle: %s → %s"
-msgstr ""
+msgstr "Paketas: %s → %s"
 
 msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
-msgstr ""
+msgstr "Ar norite uždaryti OrcaSlicer ir atidaryti AppData aplanką?"
 
 msgid "New Build Detected"
-msgstr ""
+msgstr "Aptikta nauja versija"
 
 msgid "Skip"
 msgstr "Praleisti"
 
 msgid "Don't show again for future builds"
-msgstr ""
+msgstr "Nerodyti dar kartą būsimoms versijoms"
 
 msgid "Reloading network plug-in..."
 msgstr "Reloading network plug-in..."
@@ -2156,16 +2156,16 @@ msgid "Suggestion"
 msgstr "Suggestion"
 
 msgid "Calage 1 SNDT"
-msgstr ""
+msgstr "Kalibravimas 1 SNDT"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Kalibravimas 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Kalibravimas 3 SNDT"
 
 msgid "Cube Bicolore"
-msgstr ""
+msgstr "Dviejų spalvų kubas"
 
 msgid ""
 "This calibration model works best with infill directions set to 0 degrees. "
@@ -2188,25 +2188,25 @@ msgid ""
 msgstr ""
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Kalibravimas 1 Nova"
 
 msgid "Cosmyx Cube"
-msgstr ""
+msgstr "Cosmyx Cube"
 
 msgid "Control Tension Belt"
-msgstr ""
+msgstr "Diržo įtampos kontrolė"
 
 msgid "Support Bobine"
-msgstr ""
+msgstr "Ritinėlio laikiklis"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Kalibravimo modeliai dvi galvos"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Kalibravimo modeliai viena galva"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Cosmyx patogūs modeliai"
 
 msgid "Text"
 msgstr "Teskstas"
@@ -2372,7 +2372,7 @@ msgid "Add Handy models"
 msgstr "Pridėti patogius modelius"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Cosmyx 3D modeliai"
 
 msgid "Add Models"
 msgstr "Pridėti modelius"
@@ -3523,7 +3523,7 @@ msgstr "Apie %s"
 
 #, c-format, boost-format
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Cosmyx paketo versija %s"
 
 msgid ""
 "Open-source slicing stands on a tradition of collaboration and attribution. "
@@ -5778,7 +5778,7 @@ msgid "Export G-code file"
 msgstr "Eksportuoti G-kodo failą"
 
 msgid "Export all G-code files"
-msgstr ""
+msgstr "Eksportuoti visus G-code failus"
 
 msgid "Send"
 msgstr "Siųsti"
@@ -7952,7 +7952,7 @@ msgid "Please resolve the slicing errors and publish again."
 msgstr "Prašome sutvarkyti sluoksniavimo klaidas ir publikuoti dar kartą."
 
 msgid "Choose a directory to export all G-code files"
-msgstr ""
+msgstr "Pasirinkite katalogą, kad eksportuotumėte visus G-code failus"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -10257,7 +10257,7 @@ msgstr ""
 "reiškia, kad gija nepalaiko spausdinimo ant tekstūruotos PEI plokštės."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Cosmyx tekstūruotas stalas"
 
 msgid ""
 "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
@@ -12524,10 +12524,10 @@ msgid ""
 msgstr ""
 
 msgid "Initial layer"
-msgstr ""
+msgstr "Pradinis sluoksnis"
 
 msgid "Initial layer bed temperature"
-msgstr ""
+msgstr "Stalo temperatūra pirmajam sluoksniui"
 
 msgid ""
 "Bed temperature of the initial layer. A value of -1 means the filament does "
@@ -15424,10 +15424,10 @@ msgid "Tungsten carbide"
 msgstr "Tungsten carbide"
 
 msgid "E3D"
-msgstr ""
+msgstr "E3D"
 
 msgid "CHT"
-msgstr ""
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "Purkštuko HRC"
@@ -17951,7 +17951,7 @@ msgid "Nozzle temperature for layers after the initial one."
 msgstr "Po pradinio sluoksnio esančių sluoksnių purkštuko temperatūra."
 
 msgid "Ironing temperature"
-msgstr ""
+msgstr "Lyginimo temperatūra"
 
 msgid ""
 "Sets the extrusion temperature for the ironing pass. If unset in the "

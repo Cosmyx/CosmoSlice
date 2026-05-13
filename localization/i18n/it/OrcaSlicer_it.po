@@ -1735,30 +1735,30 @@ msgid "Untitled"
 msgstr "Senza titolo"
 
 msgid "A new version of CosmoSlice has been installed."
-msgstr ""
+msgstr "È stata installata una nuova versione di CosmoSlice."
 
 msgid "Please Backup and delete the Cosmyx AppData Folder."
-msgstr ""
+msgstr "Esegui il backup ed elimina la cartella AppData di Cosmyx."
 
 #, c-format, boost-format
 msgid "Build: %s → %s"
-msgstr ""
+msgstr "Build: %s → %s"
 
 #, c-format, boost-format
 msgid "Bundle: %s → %s"
-msgstr ""
+msgstr "Bundle: %s → %s"
 
 msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
-msgstr ""
+msgstr "Vuoi chiudere OrcaSlicer e aprire la tua cartella AppData?"
 
 msgid "New Build Detected"
-msgstr ""
+msgstr "Nuova build rilevata"
 
 msgid "Skip"
 msgstr "Salta"
 
 msgid "Don't show again for future builds"
-msgstr ""
+msgstr "Non mostrare più per le future build"
 
 msgid "Reloading network plug-in..."
 msgstr "Ricaricamento plug-in di rete..."
@@ -2182,16 +2182,16 @@ msgid "Suggestion"
 msgstr "Suggerimento"
 
 msgid "Calage 1 SNDT"
-msgstr ""
+msgstr "Calibrazione 1 SNDT"
 
 msgid "Calage 2 SNDT"
-msgstr ""
+msgstr "Calibrazione 2 SNDT"
 
 msgid "Calage 3 SNDT"
-msgstr ""
+msgstr "Calibrazione 3 SNDT"
 
 msgid "Cube Bicolore"
-msgstr ""
+msgstr "Cubo Bicolore"
 
 msgid ""
 "This calibration model works best with infill directions set to 0 degrees. "
@@ -2214,25 +2214,25 @@ msgid ""
 msgstr ""
 
 msgid "Calage 1 Nova"
-msgstr ""
+msgstr "Calibrazione 1 Nova"
 
 msgid "Cosmyx Cube"
-msgstr ""
+msgstr "Cosmyx Cube"
 
 msgid "Control Tension Belt"
-msgstr ""
+msgstr "Controllo tensione cinghia"
 
 msgid "Support Bobine"
-msgstr ""
+msgstr "Supporto bobina"
 
 msgid "Calibrations Models Dual Head"
-msgstr ""
+msgstr "Modelli di calibrazione testa doppia"
 
 msgid "Calibration Models Single Head"
-msgstr ""
+msgstr "Modelli di calibrazione testa singola"
 
 msgid "Cosmyx Handy Models"
-msgstr ""
+msgstr "Modelli utili Cosmyx"
 
 msgid "Text"
 msgstr "Testo"
@@ -2399,7 +2399,7 @@ msgid "Add Handy models"
 msgstr "Aggiungi modelli utili"
 
 msgid "Cosmyx 3D Models"
-msgstr ""
+msgstr "Modelli 3D Cosmyx"
 
 msgid "Add Models"
 msgstr "Aggiungi modelli"
@@ -3556,7 +3556,7 @@ msgstr "Informazioni su %s"
 
 #, c-format, boost-format
 msgid "Cosmyx Bundle Version %s"
-msgstr ""
+msgstr "Versione bundle Cosmyx %s"
 
 msgid ""
 "Open-source slicing stands on a tradition of collaboration and attribution. "
@@ -5848,7 +5848,7 @@ msgid "Export G-code file"
 msgstr "Esporta file G-code"
 
 msgid "Export all G-code files"
-msgstr ""
+msgstr "Esporta tutti i file G-code"
 
 msgid "Send"
 msgstr "Invia"
@@ -8035,7 +8035,7 @@ msgid "Please resolve the slicing errors and publish again."
 msgstr "Risolvi gli errori di elaborazone e pubblica nuovamente."
 
 msgid "Choose a directory to export all G-code files"
-msgstr ""
+msgstr "Scegli una directory per esportare tutti i file G-code"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -10383,7 +10383,7 @@ msgstr ""
 "stampa sul Piatto PEI ruvido."
 
 msgid "Cosmyx Textured Bed"
-msgstr ""
+msgstr "Piano texturizzato Cosmyx"
 
 msgid ""
 "Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
@@ -12709,10 +12709,10 @@ msgid ""
 msgstr ""
 
 msgid "Initial layer"
-msgstr ""
+msgstr "Layer iniziale"
 
 msgid "Initial layer bed temperature"
-msgstr ""
+msgstr "Temperatura del piano per il layer iniziale"
 
 msgid ""
 "Bed temperature of the initial layer. A value of -1 means the filament does "
@@ -15705,10 +15705,10 @@ msgid "Tungsten carbide"
 msgstr "Carburo di tungsteno"
 
 msgid "E3D"
-msgstr ""
+msgstr "E3D"
 
 msgid "CHT"
-msgstr ""
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "HRC ugello"
@@ -18313,7 +18313,7 @@ msgid "Nozzle temperature for layers after the initial one."
 msgstr "Temperatura dell'ugello per gli strati successivi a quello iniziale."
 
 msgid "Ironing temperature"
-msgstr ""
+msgstr "Temperatura di stiratura"
 
 msgid ""
 "Sets the extrusion temperature for the ironing pass. If unset in the "
