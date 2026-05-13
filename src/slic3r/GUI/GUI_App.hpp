@@ -236,6 +236,9 @@ private:
     bool            m_initialized { false };
     bool            m_post_initialized { false };
     bool            m_app_conf_exists{ false };
+    bool            m_pending_build_change_notify { false };
+    std::string     m_pending_build_stored_hash;
+    std::string     m_pending_build_stored_cosmyx_ver;
     EAppMode        m_app_mode{ EAppMode::Editor };
     bool            m_is_recreating_gui{ false };
 #ifdef __linux__

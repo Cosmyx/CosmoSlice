@@ -1366,9 +1366,6 @@ void PreferencesDialog::create_items()
     auto item_downloads        = create_item_downloads(_L("Downloads folder") + ": ", _L("Target folder for downloaded items"));
     g_sizer->Add(item_downloads);
 
-    //// GENERAL > Project
-    g_sizer->Add(create_item_title(_L("Project")), 1, wxEXPAND);
-
     std::vector<wxString> projectLoadSettingsBehaviourOptions = {_L("Load All"), _L("Ask When Relevant"), _L("Always Ask"), _L("Load Geometry Only")};
     std::vector<string>   projectLoadSettingsConfigOptions    = { OPTION_PROJECT_LOAD_BEHAVIOUR_LOAD_ALL, OPTION_PROJECT_LOAD_BEHAVIOUR_ASK_WHEN_RELEVANT, OPTION_PROJECT_LOAD_BEHAVIOUR_ALWAYS_ASK, OPTION_PROJECT_LOAD_BEHAVIOUR_LOAD_GEOMETRY };
     auto item_project_load     = create_item_combobox(_L("Load behaviour"), _L("Should printer/filament/process settings be loaded when opening a 3MF file?"), SETTING_PROJECT_LOAD_BEHAVIOUR, projectLoadSettingsBehaviourOptions, projectLoadSettingsConfigOptions);
@@ -1677,7 +1674,7 @@ void PreferencesDialog::create_items()
     sizer_page->Add(g_sizer, 0, wxEXPAND);
 
     //////////////////////////
-    //// ASSOCIATE TAB 
+    //// ASSOCIATE TAB
     /////////////////////////////////////
 #ifdef _WIN32
     m_pref_tabs->AppendItem(_L("Associate"));

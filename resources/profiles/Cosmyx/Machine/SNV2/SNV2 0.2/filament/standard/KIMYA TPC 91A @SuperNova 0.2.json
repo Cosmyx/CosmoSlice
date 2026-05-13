@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL28_SNV2_02",
+    "name": "KIMYA TPC 91A @SuperNova 0.2",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "KIMYA TPC 91A @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx SuperNova 0.2 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

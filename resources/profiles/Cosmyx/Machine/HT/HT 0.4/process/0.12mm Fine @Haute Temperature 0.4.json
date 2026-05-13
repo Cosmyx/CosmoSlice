@@ -1,0 +1,12 @@
+{
+    "type": "process",
+    "setting_id": "GP002",
+    "name": "0.12mm Fine @Haute Temperature 0.4",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_cosmyx_0.12",
+    "compatible_printers": [
+        "Cosmyx Nova Haute Temperature 0.4 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

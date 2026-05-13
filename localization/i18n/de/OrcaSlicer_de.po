@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Orca Slicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 23:26+0800\n"
+"POT-Creation-Date: 2026-05-12 09:58+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -1589,7 +1589,9 @@ msgid "Assemble"
 msgstr "Zusammenbauen"
 
 msgid "Please confirm explosion ratio = 1 and select at least two volumes."
-msgstr "Bitte bestätigen Sie das Explosionsverhältnis = 1 und wählen Sie mindestens zwei Volumen aus."
+msgstr ""
+"Bitte bestätigen Sie das Explosionsverhältnis = 1 und wählen Sie mindestens "
+"zwei Volumen aus."
 
 msgid "Please select at least two volumes."
 msgstr "Bitte wählen Sie mindestens zwei Volumen aus."
@@ -1649,9 +1651,6 @@ msgid ""
 msgstr ""
 "Konfigurationsdatei \"%1%\" wurde geladen, aber einige Werte wurden nicht "
 "erkannt."
-
-msgid "Based on PrusaSlicer and BambuStudio"
-msgstr "Basierend auf PrusaSlicer und BambuStudio"
 
 msgid "STEP files"
 msgstr "SETP Dateien"
@@ -1727,6 +1726,32 @@ msgstr "OrcaSlicer hat eine unbehandelte Ausnahme erzeugt: %1%"
 
 msgid "Untitled"
 msgstr "Unbenannt"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "Eine neue Version von CosmoSlice wurde installiert."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Bitte sichern und löschen Sie den Cosmyx AppData-Ordner."
+
+#, c-format, boost-format
+msgid "Build: %s → %s"
+msgstr "Build: %s → %s"
+
+#, c-format, boost-format
+msgid "Bundle: %s → %s"
+msgstr "Bundle: %s → %s"
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Möchten Sie OrcaSlicer schließen und Ihren AppData-Ordner öffnen?"
+
+msgid "New Build Detected"
+msgstr "Neue Version erkannt"
+
+msgid "Skip"
+msgstr "Überspringen"
+
+msgid "Don't show again for future builds"
+msgstr "Für zukünftige Builds nicht mehr anzeigen"
 
 msgid "Reloading network plug-in..."
 msgstr "Netzwerk-Plugin wird neu geladen..."
@@ -1944,6 +1969,9 @@ msgstr "Sprache"
 msgid "*"
 msgstr "*"
 
+msgid "Changing application language"
+msgstr "Anwendungssprache ändern"
+
 msgid "The uploads are still ongoing"
 msgstr "Die Uploads sind noch nicht abgeschlossen."
 
@@ -2152,6 +2180,59 @@ msgstr ""
 msgid "Suggestion"
 msgstr "Vorschlag"
 
+msgid "Calage 1 SNDT"
+msgstr "Kalibrierung 1 SNDT"
+
+msgid "Calage 2 SNDT"
+msgstr "Kalibrierung 2 SNDT"
+
+msgid "Calage 3 SNDT"
+msgstr "Kalibrierung 3 SNDT"
+
+msgid "Cube Bicolore"
+msgstr "Zweifarbiger Würfel"
+
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill "
+"direction' and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f°\n"
+"- Solid infill direction: %.0f°\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calage 1 Nova"
+msgstr "Kalibrierung 1 Nova"
+
+msgid "Cosmyx Cube"
+msgstr "Cosmyx Cube"
+
+msgid "Control Tension Belt"
+msgstr "Riemenspannungsregler"
+
+msgid "Support Bobine"
+msgstr "Spulenhalterung"
+
+msgid "Calibrations Models Dual Head"
+msgstr "Kalibrierungsmodelle Doppelkopf"
+
+msgid "Calibration Models Single Head"
+msgstr "Kalibrierungsmodelle Einzelkopf"
+
+msgid "Cosmyx Handy Models"
+msgstr "Cosmyx Hilfsmodelle"
+
 msgid "Text"
 msgstr "Text"
 
@@ -2316,6 +2397,9 @@ msgstr "Primitiv hinzufügen"
 
 msgid "Add Handy models"
 msgstr "Modelle hinzufügen"
+
+msgid "Cosmyx 3D Models"
+msgstr "Cosmyx 3D-Modelle"
 
 msgid "Add Models"
 msgstr "Modelle hinzufügen"
@@ -2695,9 +2779,6 @@ msgid ""
 msgstr ""
 "\"%s\" wird nach dieser Unterteilung über 1 Million Flächen haben, was die "
 "Slicing-Zeit erhöhen kann. Möchten Sie fortfahren?"
-
-msgid "BambuStudio warning"
-msgstr "BambuStudio Warnung"
 
 #, c-format, boost-format
 msgid "\"%s\" part's mesh contains errors. Please repair it first."
@@ -3355,7 +3436,8 @@ msgid "Bad input data for EmbossUpdateJob."
 msgstr "Schlechter Eingabewert für EmbossUpdateJob."
 
 msgid "Created text volume is empty. Change text or font."
-msgstr "Erstelltes Textvolumen ist leer. Ändern Sie den Text oder die Schriftart."
+msgstr ""
+"Erstelltes Textvolumen ist leer. Ändern Sie den Text oder die Schriftart."
 
 msgid "Bad input data for CreateSurfaceVolumeJob."
 msgstr "Schlechter Eingabewert für CreateSurfaceVolumeJob."
@@ -3387,9 +3469,9 @@ msgid ""
 "The heated bed's thermal preconditioning helps optimize the first layer "
 "print quality. Printing will start once preconditioning is complete."
 msgstr ""
-"Die thermische Vorkonditionierung des beheizten Betts hilft,"
-"die Druckqualität der ersten Schicht zu optimieren. Der Druck beginnt,"
-"sobald die Vorkonditionierung abgeschlossen ist."
+"Die thermische Vorkonditionierung des beheizten Betts hilft,die "
+"Druckqualität der ersten Schicht zu optimieren. Der Druck beginnt,sobald die "
+"Vorkonditionierung abgeschlossen ist."
 
 #, c-format, boost-format
 msgid "Remaining time: %dmin%ds"
@@ -3479,21 +3561,31 @@ msgstr ""
 msgid "About %s"
 msgstr "Über %s"
 
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "OrcaSlicer basiert auf BambuStudio, PrusaSlicer und SuperSlicer."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr "BambuStudio basiert ursprünglich auf PrusaSlicer von PrusaResearch."
-
-msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
-msgstr "PrusaSlicer basiert ursprünglich auf Slic3r von Alessandro Ranellucci."
+#, c-format, boost-format
+msgid "Cosmyx Bundle Version %s"
+msgstr "Cosmyx Bundle-Version %s"
 
 msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
+"Open-source slicing stands on a tradition of collaboration and attribution. "
+"Slic3r, created by Alessandro Ranellucci and the RepRap community, laid the "
+"foundation. PrusaSlicer by Prusa Research built on that work, Bambu Studio "
+"forked from PrusaSlicer, and SuperSlicer extended it with community-driven "
+"enhancements. Each project carried the work of its predecessors forward, "
+"crediting those who came before."
 msgstr ""
-"Slic3r wurde von Alessandro Ranellucci mit Hilfe vieler anderer Mitwirkender "
-"entwickelt."
+
+msgid ""
+"OrcaSlicer began in that same spirit, drawing from PrusaSlicer, BambuStudio, "
+"SuperSlicer, and CuraSlicer. But it has since grown far beyond its origins — "
+"introducing advanced calibration tools, precise wall and seam control and "
+"hundreds of other features."
+msgstr ""
+
+msgid ""
+"Today, OrcaSlicer is the most widely used and actively developed open-source "
+"slicer in the 3D printing community. Many of its innovations have been "
+"adopted by other slicers, making it a driving force for the entire industry."
+msgstr ""
 
 msgid "Version"
 msgstr "Version"
@@ -4271,13 +4363,10 @@ msgstr ""
 "Auf 0,1 zurückgesetzt"
 
 msgid ""
-"Zero first layer height is invalid.\n"
+"Zero initial layer height is invalid.\n"
 "\n"
 "The first layer height will be reset to 0.2."
 msgstr ""
-"Eine erste Schichthöhe von Null ist ungültig.\n"
-"\n"
-"Die erste Schichthöhe wird auf 0,2 zurückgesetzt."
 
 msgid ""
 "This setting is only used for model size tunning with small value in some "
@@ -4838,8 +4927,14 @@ msgstr "Drucker-Einstellungen"
 msgid "parameter name"
 msgstr "Parametername"
 
+msgid "layers"
+msgstr "Schichten"
+
 msgid "Range"
 msgstr "Reichweite"
+
+msgid "Empty string"
+msgstr ""
 
 msgid "Value is out of range."
 msgstr "Wert ist außerhalb der Reichweite."
@@ -5616,13 +5711,6 @@ msgid "The prime tower extends beyond the plate boundary."
 msgstr "Der Prime-Turm ragt über die Begrenzung der Druckplatte hinaus."
 
 msgid ""
-"Prime tower position exceeded build plate boundaries and was repositioned to "
-"the nearest valid edge."
-msgstr ""
-"Die Position des Prime-Turms überschritt die Grenzen der Druckplatte und "
-"wurde an den nächstgelegenen gültigen Rand verschoben."
-
-msgid ""
 "Partial flushing volume set to 0. Multi-color printing may cause color "
 "mixing in models. Please readjust flushing settings."
 msgstr ""
@@ -5779,6 +5867,9 @@ msgstr "Aktuelle Platte drucken"
 msgid "Export G-code file"
 msgstr "G-Code als Datei exportieren"
 
+msgid "Export all G-code files"
+msgstr "Alle G-Code-Dateien exportieren"
+
 msgid "Send"
 msgstr "Senden"
 
@@ -5811,9 +5902,6 @@ msgstr "Konfigurationsordner anzeigen"
 
 msgid "Show Tip of the Day"
 msgstr "Tipp des Tages anzeigen"
-
-msgid "Check for Update"
-msgstr "Nach Updates suchen"
 
 msgid "Open Network Test"
 msgstr "Netzwerktest öffnen"
@@ -6088,26 +6176,29 @@ msgstr "Pression Advance"
 msgid "Pass 1"
 msgstr "Durchgang 1"
 
-msgid "Flow rate test - Pass 1"
-msgstr "Durchflussratentests - Teil 1"
+msgid "Flow ratio test - Pass 1"
+msgstr ""
 
 msgid "Pass 2"
 msgstr "Durchgang 2"
 
-msgid "Flow rate test - Pass 2"
-msgstr "Durchflussratentests - Teil 1"
+msgid "Flow ratio test - Pass 2"
+msgstr ""
 
 msgid "YOLO (Recommended)"
 msgstr "YOLO (Empfohlen)"
 
-msgid "Orca YOLO flowrate calibration, 0.01 step"
-msgstr "Orca YOLO Durchflusskalibrierung, 0.01 Schritt"
+msgid "Orca YOLO flowratio calibration, 0.01 step"
+msgstr ""
 
 msgid "YOLO (perfectionist version)"
 msgstr "YOLO (Perfektionisten-Version)"
 
-msgid "Orca YOLO flowrate calibration, 0.005 step"
-msgstr "Orca YOLO Durchflusskalibrierung, 0.005 Schritt"
+msgid "Orca YOLO flowratio calibration, 0.005 step"
+msgstr ""
+
+msgid "Flow ratio"
+msgstr "Flussverhältnis"
 
 msgid "Retraction test"
 msgstr "Rückzugslängen Test"
@@ -6667,9 +6758,6 @@ msgstr "Der Name darf nicht leer sein."
 msgid "The name is not allowed to start with space character."
 msgstr "Der Name darf nicht mit einem Leerzeichen beginnen."
 
-msgid "The name is not allowed to end with space character."
-msgstr "Der Name darf nicht mit einem Leerzeichen enden."
-
 msgid "The name is not allowed to exceed 32 characters."
 msgstr "Der Name darf 32 Zeichen nicht überschreiten."
 
@@ -7036,9 +7124,6 @@ msgstr "%s Info"
 msgid "%s information"
 msgstr "%s Information"
 
-msgid "Skip"
-msgstr "Überspringen"
-
 #, fuzzy
 msgid "Newer 3MF version"
 msgstr "Neuere 3mf-Version"
@@ -7303,8 +7388,8 @@ msgstr "Pausierungs-Empfindlichkeit:"
 msgid "Spaghetti Detection"
 msgstr "Spaghettierkennung"
 
-msgid "Detect spaghetti failure(scattered lose filament)."
-msgstr "Spaghetti-Fehler erkennen (verstreutes loses Filament)."
+msgid "Detect spaghetti failures (scattered lose filament)."
+msgstr ""
 
 msgid "Purge Chute Pile-Up Detection"
 msgstr "Erkennung von Abfallstau im Reinigungsrutsche"
@@ -8003,6 +8088,9 @@ msgstr "Slicen der Druckplatte %d"
 msgid "Please resolve the slicing errors and publish again."
 msgstr "Bitte beheben Sie die Slicing-Fehler und veröffentlichen Sie erneut."
 
+msgid "Choose a directory to export all G-code files"
+msgstr "Verzeichnis zum Exportieren aller G-Code-Dateien wählen"
+
 msgid ""
 "The network plug-in was not detected. Network related features are "
 "unavailable."
@@ -8402,9 +8490,6 @@ msgid "Switching application language while some presets are modified."
 msgstr ""
 "Umschalten der Anwendungssprache, während einige Profile geändert werden."
 
-msgid "Changing application language"
-msgstr "Anwendungssprache ändern"
-
 msgid "Asia-Pacific"
 msgstr "Asien-Pazifik"
 
@@ -8613,14 +8698,13 @@ msgstr "Nach Hersteller"
 msgid "Optimize filaments area height for..."
 msgstr "Optimieren der Filamentbereichshöhe für..."
 
-msgid "(Requires restart)"
-msgstr "(Erfordert Neustart)"
-
 msgid "filaments"
 msgstr "Filamente"
 
 msgid "Optimizes filament area maximum height by chosen filament count."
-msgstr "Optimiert die maximale Höhe des Filamentbereichs anhand der gewählten Filamentanzahl."
+msgstr ""
+"Optimiert die maximale Höhe des Filamentbereichs anhand der gewählten "
+"Filamentanzahl."
 
 msgid "Features"
 msgstr "Funktionen"
@@ -8634,6 +8718,9 @@ msgid ""
 msgstr ""
 "Wenn diese Option aktiviert ist, können Sie eine Aufgabe gleichzeitig an "
 "mehrere Geräte senden und mehrere Geräte verwalten."
+
+msgid "(Requires restart)"
+msgstr "(Erfordert Neustart)"
 
 msgid "Pop up to select filament grouping mode"
 msgstr "Popup zum Auswählen des Filament-Gruppierungsmodus"
@@ -8994,14 +9081,14 @@ msgstr "Synchronisierung der Einstellungen"
 msgid "View control settings"
 msgstr "Ansicht-Steuerungseinstellungen"
 
-msgid "Rotate of view"
+msgid "Rotate view"
 msgstr "Drehen der Ansicht"
 
-msgid "Move of view"
+msgid "Pan view"
 msgstr "Pan-Ansicht"
 
-msgid "Zoom of view"
-msgstr "Zoom der Ansicht"
+msgid "Zoom view"
+msgstr "Ansicht zoomen"
 
 msgid "Other"
 msgstr "Sonstiges"
@@ -9925,11 +10012,9 @@ msgstr ""
 "Sie den Reinigungsturm deaktivieren möchten?"
 
 msgid ""
-"Enabling both precise Z height and the prime tower may cause the size of "
-"prime tower to increase. Do you still want to enable?"
+"Enabling both precise Z height and the prime tower may cause slicing errors. "
+"Do you still want to enable?"
 msgstr ""
-"Die Aktivierung sowohl der präzisen Z-Höhe als auch des Reinigungsturms kann "
-"die Größe des Reinigungsturms erhöhen. Möchten Sie trotzdem aktivieren?"
 
 msgid ""
 "A prime tower is required for clumping detection. There may be flaws on the "
@@ -9938,6 +10023,11 @@ msgstr ""
 "Reinigungsturm ist für die Erkennung von Klumpen erforderlich. Ohne "
 "Reinigungsturm kann es zu Fehlern am Modell kommen. Möchten Sie die "
 "Klumpenerkennung trotzdem aktivieren?"
+
+msgid ""
+"Enabling both precise Z height and the prime tower may cause slicing errors. "
+"Do you still want to enable precise Z height?"
+msgstr ""
 
 msgid ""
 "A prime tower is required for smooth timelapse. There may be flaws on the "
@@ -10348,6 +10438,15 @@ msgstr ""
 "Betttemperatur, wenn die texturierte PEI-Platte installiert ist. 0 bedeutet, "
 "dass das Filament nicht auf der texturierten PEI-Platte unterstützt wird."
 
+msgid "Cosmyx Textured Bed"
+msgstr "Cosmyx Texturbett"
+
+msgid ""
+"Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
+"means the filament does not support printing on the Cosmyx Textured Bed. A "
+"value of 0 means the bed is off."
+msgstr ""
+
 msgid "Volumetric speed limitation"
 msgstr "Volumetrische Geschwindigkeitsbegrenzung"
 
@@ -10752,8 +10851,8 @@ msgstr ""
 "Sie können die geänderten Profilwerte verwerfen oder wählen, ob Sie die "
 "geänderten Werte in das neue Projekt übertragen möchten."
 
-msgid "Extruders count"
-msgstr "Anzahl der Extruder"
+msgid "Extruder count"
+msgstr ""
 
 msgid "Capabilities"
 msgstr "Fähigkeiten"
@@ -10930,6 +11029,9 @@ msgid ""
 msgstr ""
 "Die Farbe wurde ausgewählt, Sie können OK wählen \n"
 "um fortzufahren oder sie manuell anzupassen."
+
+msgid "—> "
+msgstr ""
 
 msgid ""
 "Synchronizing AMS filaments will discard your modified but unsaved filament "
@@ -11212,11 +11314,8 @@ msgstr ""
 
 msgid ""
 "Missing BambuSource component registered for media playing! Please re-"
-"install BambuStudio or seek after-sales help."
+"install OrcaSlicer or seek community help."
 msgstr ""
-"Fehlendes BambuSource-Komponente für das Abspielen von Medien registriert! "
-"Bitte installieren Sie BambuStudio erneut oder suchen Sie nach "
-"Kundendiensthilfe."
 
 msgid ""
 "Using a BambuSource from a different install, video play may not work "
@@ -11280,15 +11379,6 @@ msgstr "Liste der Tastaturkürzel anzeigen"
 
 msgid "Global shortcuts"
 msgstr "Globale Tastaturkürzel"
-
-msgid "Pan view"
-msgstr "Pan-Ansicht"
-
-msgid "Rotate view"
-msgstr "Drehen der Ansicht"
-
-msgid "Zoom view"
-msgstr "Ansicht zoomen"
 
 msgid ""
 "Auto orients selected objects or all objects. If there are selected objects, "
@@ -12012,6 +12102,10 @@ msgstr ""
 "\" "
 
 msgid ""
+"Enabling both precise Z height and the prime tower may cause slicing errors."
+msgstr ""
+
+msgid ""
 "A prime tower is required for clumping detection; otherwise, there may be "
 "flaws on the model."
 msgstr ""
@@ -12207,6 +12301,11 @@ msgstr ""
 "Durchmesser der Spitze des Stützbaums."
 
 msgid ""
+"The Hollow base pattern is not supported by this support type; Rectilinear "
+"will be used instead."
+msgstr ""
+
+msgid ""
 "Support enforcers are used but support is not enabled. Please enable support."
 msgstr ""
 "Stützerzwinger werden verwendet, aber die Stützstrukturen sind nicht "
@@ -12387,9 +12486,6 @@ msgstr ""
 "Die erste Schicht wird um den Wert der Elefantenfußkompensation verkleinert, "
 "dann werden die nächsten Schichten linear weniger verkleinert, bis zur "
 "Schicht, die durch diesen Wert angegeben ist."
-
-msgid "layers"
-msgstr "Schichten"
 
 msgid ""
 "Slicing height for each layer. Smaller layer height means more accurate and "
@@ -12607,47 +12703,65 @@ msgid "First layer bed temperature"
 msgstr "Druckbettemperatur für die erste Schicht"
 
 msgid ""
-"Bed temperature of the first layer. A value of 0 means the filament does "
-"not support printing on the Cool Plate SuperTack."
+"Bed temperature of the first layer. A value of 0 means the filament does not "
+"support printing on the Cool Plate SuperTack."
 msgstr ""
 "Dies ist die Betttemperatur der ersten Schicht. Ein Wert von 0 bedeutet, "
 "dass das Filament auf der kalten Druckplatte SuperTack nicht unterstützt "
 
 msgid ""
-"Bed temperature of the first layer. A value of 0 means the filament does "
-"not support printing on the Cool Plate."
+"Bed temperature of the first layer. A value of 0 means the filament does not "
+"support printing on the Cool Plate."
 msgstr ""
 "Dies ist die Betttemperatur der ersten Schicht. Ein Wert von 0 bedeutet, "
 "dass das Filament auf der kalten Druckplatte nicht unterstützt wird."
 
 msgid ""
-"Bed temperature of the first layer. A value of 0 means the filament does "
-"not support printing on the Textured Cool Plate."
+"Bed temperature of the first layer. A value of 0 means the filament does not "
+"support printing on the Textured Cool Plate."
 msgstr ""
 "Dies ist die Betttemperatur der ersten Schicht. Ein Wert von 0 bedeutet, "
 "dass das Filament auf der strukturierten kalten Druckplatte nicht "
 "unterstützt wird."
 
 msgid ""
-"Bed temperature of the first layer. A value of 0 means the filament does "
-"not support printing on the Engineering Plate."
+"Bed temperature of the first layer. A value of 0 means the filament does not "
+"support printing on the Engineering Plate."
 msgstr ""
 "Dies ist die Betttemperatur der ersten Schicht. Ein Wert von 0 bedeutet, "
 "dass das Filament auf der technischen Druckplatte nicht unterstützt wird."
 
 msgid ""
-"Bed temperature of the first layer. A value of 0 means the filament does "
-"not support printing on the High Temp Plate."
+"Bed temperature of the first layer. A value of 0 means the filament does not "
+"support printing on the High Temp Plate."
 msgstr ""
 "Dies ist die Betttemperatur der ersten Schicht. Ein Wert von 0 bedeutet, "
 "dass das Filament auf der Hochtemperatur-Druckplatte nicht unterstützt wird."
 
 msgid ""
-"Bed temperature of the first layer. A value of 0 means the filament does "
-"not support printing on the Textured PEI Plate."
+"Bed temperature of the first layer. A value of 0 means the filament does not "
+"support printing on the Textured PEI Plate."
 msgstr ""
 "Druckbetttemperatur der ersten Schicht. 0 bedeutet, dass das Filament nicht "
 "auf der texturierten PEI-Platte unterstützt wird."
+
+msgid ""
+"Bed temperature for layers except the initial one. A value of -1 means the "
+"filament does not support printing on the Cosmyx Textured Bed. A value of 0 "
+"means the bed is off."
+msgstr ""
+
+msgid "Initial layer"
+msgstr "Erste Schicht"
+
+msgid "Initial layer bed temperature"
+msgstr "Druckbetttemperatur erste Schicht"
+
+msgid ""
+"Bed temperature of the initial layer. A value of -1 means the filament does "
+"not support printing on the Cosmyx Textured Bed. A value of 0 means the bed "
+"is off."
+msgstr ""
 
 msgid "Bed types supported by the printer."
 msgstr "Vom Drucker unterstützte Druckbettypen"
@@ -14111,9 +14225,6 @@ msgstr "Nur als visuelle Hilfe auf der UI verwendet"
 msgid "Extruder offset"
 msgstr "Extruder-Versatz"
 
-msgid "Flow ratio"
-msgstr "Flussverhältnis"
-
 msgid ""
 "The material may have volumetric change after switching between molten and "
 "crystalline states. This setting changes all extrusion flow of this filament "
@@ -14517,12 +14628,11 @@ msgstr "Adaptive volumetrische Geschwindigkeit"
 msgid ""
 "When enabled, the extrusion flow is limited by the smaller of the fitted "
 "value (calculated from line width and layer height) and the user-defined "
-"maximum flow. When disabled, only the user-defined maximum flow is applied."
+"maximum flow. When disabled, only the user-defined maximum flow is applied.\n"
+"\n"
+"Note: Experimental and incomplete feature imported from BBS. Functional for "
+"some profiles that already have the variable saved."
 msgstr ""
-"Wenn aktiviert, wird der Extrusionsfluss durch den kleineren der angepassten "
-"Wert (berechnet aus Linienbreite und Schichthöhe) und den vom Benutzer "
-"definierten maximalen Fluss begrenzt. Wenn deaktiviert, wird nur der vom "
-"Benutzer definierte maximale Fluss angewendet."
 
 msgid "Max volumetric speed multinomial coefficients"
 msgstr "Maximale volumetrische Geschwindigkeits-Multinomial-Koeffizienten"
@@ -15618,6 +15728,12 @@ msgstr "Edelstahl"
 
 msgid "Tungsten carbide"
 msgstr "Wolframkarbid"
+
+msgid "E3D"
+msgstr "E3D"
+
+msgid "CHT"
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "Düse HRC"
@@ -17572,6 +17688,22 @@ msgstr ""
 "Werkzeugwechselbefehl (z.B. T0) wird während des gesamten Drucks "
 "übersprungen. Dies ist nützlich für den manuellen Mehrmaterialdruck, bei dem "
 
+msgid "Wipe tower type"
+msgstr ""
+
+msgid ""
+"Choose the wipe tower implementation for multi-material prints. Type 1 is "
+"recommended for Bambu and Qidi printers with a filament cutter. Type 2 "
+"offers better compatibility with multi-tool and MMU printers and provide "
+"overall better compatibility."
+msgstr ""
+
+msgid "Type 1"
+msgstr ""
+
+msgid "Type 2"
+msgstr ""
+
 msgid "Purge in prime tower"
 msgstr "Reinige im Reinigungsturm"
 
@@ -18173,6 +18305,14 @@ msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one."
 msgstr "Düsentemperatur nach der ersten Schicht"
+
+msgid "Ironing temperature"
+msgstr "Bügeltemperatur"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr ""
 
 #, fuzzy
 msgid "Detect thin walls"
@@ -20505,7 +20645,8 @@ msgstr "Input Shaper Typ"
 msgid ""
 "Please ensure the selected type is compatible with your firmware version."
 msgstr ""
-"Bitte stellen Sie sicher, dass der ausgewählte Typ mit Ihrer Firmware-Version kompatibel ist."
+"Bitte stellen Sie sicher, dass der ausgewählte Typ mit Ihrer Firmware-"
+"Version kompatibel ist."
 
 msgid ""
 "Marlin version => 2.1.2\n"
@@ -20522,7 +20663,8 @@ msgid ""
 "Check your firmware documentation for supported shaper types."
 msgstr ""
 "RepRap-Firmware Version => 3.4.0\n"
-"Überprüfen Sie die Dokumentation Ihrer Firmware auf unterstützte Shaper-Typen."
+"Überprüfen Sie die Dokumentation Ihrer Firmware auf unterstützte Shaper-"
+"Typen."
 
 msgid "Frequency (Start / End): "
 msgstr "Frequenz (Start / Ende): "
@@ -20611,7 +20753,9 @@ msgid "Cornering settings"
 msgstr "Eckeneinstellungen"
 
 msgid "Note: Lower values = sharper corners but slower speeds."
-msgstr "Hinweis: Niedrigere Werte = schärfere Ecken, aber langsamere Geschwindigkeiten."
+msgstr ""
+"Hinweis: Niedrigere Werte = schärfere Ecken, aber langsamere "
+"Geschwindigkeiten."
 
 msgid ""
 "Marlin 2 Junction Deviation detected:\n"
@@ -22445,14 +22589,15 @@ msgstr "Bambu Network Plug-in erforderlich"
 msgid ""
 "The Bambu Network Plug-in is corrupted or incompatible. Please reinstall it."
 msgstr ""
-"Das Bambu Netzwerk Plug-in ist beschädigt oder inkompatibel. Bitte installieren Sie es erneut."
+"Das Bambu Netzwerk Plug-in ist beschädigt oder inkompatibel. Bitte "
+"installieren Sie es erneut."
 
 msgid ""
 "The Bambu Network Plug-in is required for cloud features, printer discovery, "
 "and remote printing."
 msgstr ""
-"Das Bambu Netzwerk Plug-in ist erforderlich für Cloud-Funktionen, Druckerentdeckung und Fernbedienungsdruck."
-
+"Das Bambu Netzwerk Plug-in ist erforderlich für Cloud-Funktionen, "
+"Druckerentdeckung und Fernbedienungsdruck."
 
 #, c-format, boost-format
 msgid "Error: %s"
@@ -22498,7 +22643,8 @@ msgstr "Das Bambu Netzwerk-Plug-in wurde erfolgreich installiert."
 msgid ""
 "A restart is required to load the new plug-in. Would you like to restart now?"
 msgstr ""
-"Ein Neustart ist erforderlich, um das neue Plug-in zu laden. Möchten Sie jetzt neu starten?"
+"Ein Neustart ist erforderlich, um das neue Plug-in zu laden. Möchten Sie "
+"jetzt neu starten?"
 
 msgid "Restart Now"
 msgstr "Jetzt neu starten"
@@ -22526,13 +22672,15 @@ msgid "Linear Deflection"
 msgstr "Lineare Ablenkung"
 
 msgid "Please input a valid value (0.001 < linear deflection < 0.1)"
-msgstr "Bitte geben Sie einen gültigen Wert ein (0,001 < lineare Ablenkung < 0,1)"
+msgstr ""
+"Bitte geben Sie einen gültigen Wert ein (0,001 < lineare Ablenkung < 0,1)"
 
 msgid "Angle Deflection"
 msgstr "Winkelabweichung"
 
 msgid "Please input a valid value (0.01 < angle deflection < 1.0)"
-msgstr "Bitte geben Sie einen gültigen Wert ein (0,01 < Winkelabweichung < 1,0)"
+msgstr ""
+"Bitte geben Sie einen gültigen Wert ein (0,01 < Winkelabweichung < 1,0)"
 
 msgid "Split compound and compsolid into multiple objects"
 msgstr "Teile Verbund- und Komposid-Objekte in mehrere Objekte auf"
@@ -22967,6 +23115,105 @@ msgstr ""
 "Wussten Sie, dass beim Drucken von Materialien, die zu Verwerfungen neigen, "
 "wie z.B. ABS, durch eine entsprechende Erhöhung der Heizbetttemperatur die "
 "Wahrscheinlichkeit von Verwerfungen verringert werden kann?"
+
+#~ msgid "Based on PrusaSlicer and BambuStudio"
+#~ msgstr "Basierend auf PrusaSlicer und BambuStudio"
+
+#~ msgid "BambuStudio warning"
+#~ msgstr "BambuStudio Warnung"
+
+#~ msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "OrcaSlicer basiert auf BambuStudio, PrusaSlicer und SuperSlicer."
+
+#~ msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+#~ msgstr "BambuStudio basiert ursprünglich auf PrusaSlicer von PrusaResearch."
+
+#~ msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
+#~ msgstr ""
+#~ "PrusaSlicer basiert ursprünglich auf Slic3r von Alessandro Ranellucci."
+
+#~ msgid ""
+#~ "Slic3r was created by Alessandro Ranellucci with the help of many other "
+#~ "contributors."
+#~ msgstr ""
+#~ "Slic3r wurde von Alessandro Ranellucci mit Hilfe vieler anderer "
+#~ "Mitwirkender entwickelt."
+
+#~ msgid ""
+#~ "Zero first layer height is invalid.\n"
+#~ "\n"
+#~ "The first layer height will be reset to 0.2."
+#~ msgstr ""
+#~ "Eine erste Schichthöhe von Null ist ungültig.\n"
+#~ "\n"
+#~ "Die erste Schichthöhe wird auf 0,2 zurückgesetzt."
+
+#~ msgid ""
+#~ "Prime tower position exceeded build plate boundaries and was repositioned "
+#~ "to the nearest valid edge."
+#~ msgstr ""
+#~ "Die Position des Prime-Turms überschritt die Grenzen der Druckplatte und "
+#~ "wurde an den nächstgelegenen gültigen Rand verschoben."
+
+#~ msgid "Check for Update"
+#~ msgstr "Nach Updates suchen"
+
+#~ msgid "Flow rate test - Pass 1"
+#~ msgstr "Durchflussratentests - Teil 1"
+
+#~ msgid "Flow rate test - Pass 2"
+#~ msgstr "Durchflussratentests - Teil 1"
+
+#~ msgid "Orca YOLO flowrate calibration, 0.01 step"
+#~ msgstr "Orca YOLO Durchflusskalibrierung, 0.01 Schritt"
+
+#~ msgid "Orca YOLO flowrate calibration, 0.005 step"
+#~ msgstr "Orca YOLO Durchflusskalibrierung, 0.005 Schritt"
+
+#~ msgid "The name is not allowed to end with space character."
+#~ msgstr "Der Name darf nicht mit einem Leerzeichen enden."
+
+#~ msgid "Detect spaghetti failure(scattered lose filament)."
+#~ msgstr "Spaghetti-Fehler erkennen (verstreutes loses Filament)."
+
+#~ msgid "Rotate of view"
+#~ msgstr "Drehen der Ansicht"
+
+#~ msgid "Move of view"
+#~ msgstr "Pan-Ansicht"
+
+#~ msgid "Zoom of view"
+#~ msgstr "Zoom der Ansicht"
+
+#~ msgid ""
+#~ "Enabling both precise Z height and the prime tower may cause the size of "
+#~ "prime tower to increase. Do you still want to enable?"
+#~ msgstr ""
+#~ "Die Aktivierung sowohl der präzisen Z-Höhe als auch des Reinigungsturms "
+#~ "kann die Größe des Reinigungsturms erhöhen. Möchten Sie trotzdem "
+#~ "aktivieren?"
+
+#~ msgid "Extruders count"
+#~ msgstr "Anzahl der Extruder"
+
+#~ msgid ""
+#~ "Missing BambuSource component registered for media playing! Please re-"
+#~ "install BambuStudio or seek after-sales help."
+#~ msgstr ""
+#~ "Fehlendes BambuSource-Komponente für das Abspielen von Medien "
+#~ "registriert! Bitte installieren Sie BambuStudio erneut oder suchen Sie "
+#~ "nach Kundendiensthilfe."
+
+#~ msgid ""
+#~ "When enabled, the extrusion flow is limited by the smaller of the fitted "
+#~ "value (calculated from line width and layer height) and the user-defined "
+#~ "maximum flow. When disabled, only the user-defined maximum flow is "
+#~ "applied."
+#~ msgstr ""
+#~ "Wenn aktiviert, wird der Extrusionsfluss durch den kleineren der "
+#~ "angepassten Wert (berechnet aus Linienbreite und Schichthöhe) und den vom "
+#~ "Benutzer definierten maximalen Fluss begrenzt. Wenn deaktiviert, wird nur "
+#~ "der vom Benutzer definierte maximale Fluss angewendet."
 
 #~ msgid "Auto-refill"
 #~ msgstr "Automatisches Nachfüllen"

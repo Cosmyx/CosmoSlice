@@ -307,6 +307,7 @@ enum BedType {
     btPTE,
     btPCT,
     btSuperTack,
+    btCosmyx,
     btCount
 };
 
@@ -329,7 +330,8 @@ static std::unordered_map<NozzleType, std::string>NozzleTypeEumnToStr = {
     {NozzleType::ntStainlessSteel,  "stainless_steel"},
     {NozzleType::ntTungstenCarbide, "tungsten_carbide"},
     {NozzleType::ntBrass,           "brass"},
-    {NozzleType::ntE3D,             "E3D"}
+    {NozzleType::ntE3D,             "E3D"},
+    {NozzleType::ntCHT,  "cht"}
 };
 
 static std::unordered_map<std::string, NozzleType>NozzleTypeStrToEumn = {
@@ -338,7 +340,8 @@ static std::unordered_map<std::string, NozzleType>NozzleTypeStrToEumn = {
     {"stainless_steel", NozzleType::ntStainlessSteel},
     {"tungsten_carbide", NozzleType::ntTungstenCarbide},
     {"brass", NozzleType::ntBrass},
-    {"E3D", NozzleType::ntE3D}
+    {"E3D", NozzleType::ntE3D},
+    {"cht", NozzleType::ntCHT}
 };
 
 // BBS
@@ -427,6 +430,9 @@ static std::string bed_type_to_gcode_string(const BedType type)
     case btPTE:
         type_str = "textured_plate";
         break;
+    case btCosmyx:
+        type_str = "cosmyx_textured_bed";
+        break;
     default:
         type_str = "unknown";
         break;
@@ -455,6 +461,9 @@ static std::string get_bed_temp_key(const BedType type)
     if (type == btPTE)
         return "textured_plate_temp";
 
+    if (type == btCosmyx)
+        return "cosmyx_textured_bed_temp";
+
     return "";
 }
 
@@ -477,6 +486,9 @@ static std::string get_bed_temp_1st_layer_key(const BedType type)
 
     if (type == btPTE)
         return "textured_plate_temp_initial_layer";
+
+    if (type == btCosmyx)
+        return "cosmyx_textured_bed_temp_initial_layer";
 
     return "";
 }
@@ -1435,6 +1447,8 @@ PRINT_CONFIG_CLASS_DERIVED_DEFINE(
     ((ConfigOptionInts,               eng_plate_temp_initial_layer))
     ((ConfigOptionInts,               hot_plate_temp_initial_layer)) // hot is short for high temperature
     ((ConfigOptionInts,               textured_plate_temp_initial_layer))
+    ((ConfigOptionInts,               cosmyx_textured_bed_temp))
+    ((ConfigOptionInts,               cosmyx_textured_bed_temp_initial_layer))
     ((ConfigOptionBools,              enable_overhang_bridge_fan))
     ((ConfigOptionInts,               overhang_fan_speed))
     ((ConfigOptionEnumsGeneric,       overhang_fan_threshold))
@@ -1504,6 +1518,7 @@ PRINT_CONFIG_CLASS_DERIVED_DEFINE(
     // BBS
     ((ConfigOptionInts,               nozzle_temperature_range_low))
     ((ConfigOptionInts,               nozzle_temperature_range_high))
+    ((ConfigOptionInts,               ironing_temperature))
     ((ConfigOptionFloats,             wipe_distance))
     ((ConfigOptionBool,               enable_prime_tower))
     ((ConfigOptionBool,               prime_tower_enable_framework))

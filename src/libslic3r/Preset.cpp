@@ -5,6 +5,8 @@
 #include "Preset.hpp"
 #include "PresetBundle.hpp"
 #include "AppConfig.hpp"
+#include "ProfileTranslator.hpp"
+#include "CosmoLog.hpp"
 
 #ifdef _MSC_VER
     #define WIN32_LEAN_AND_MEAN
@@ -367,7 +369,7 @@ std::string Preset::remove_suffix_modified(const std::string &name)
 }
 
 // Update new extruder fields at the printer profile.
-void Preset::normalize(DynamicPrintConfig &config)
+void Preset::normalize(DynamicPrintConfig &config, const std::string& preset_name)
 {
     size_t n = 1;
     if (config.option("single_extruder_multi_material") == nullptr || config.opt_bool("single_extruder_multi_material")) {
@@ -408,6 +410,32 @@ void Preset::normalize(DynamicPrintConfig &config)
             assert(opt == nullptr || opt->type() == coStrings);
             if (opt != nullptr && opt->type() == coStrings)
                 static_cast<ConfigOptionStrings*>(opt)->values.resize(n, std::string());
+        }
+
+        // Initialize ironing_temperature from nozzle_temperature if not explicitly set in preset
+        COSMO_LOG(debug) << "[Preset] Normalizing ironing_temperature from nozzle_temperature for preset: " << preset_name;
+        if (config.option("nozzle_temperature") != nullptr &&
+            config.option("ironing_temperature") != nullptr) {
+            auto* nozzle_temp = dynamic_cast<const ConfigOptionInts*>(config.option("nozzle_temperature"));
+            auto* ironing_temp = dynamic_cast<ConfigOptionInts*>(config.option("ironing_temperature"));
+
+            if (nozzle_temp != nullptr && ironing_temp != nullptr) {
+                // Get the default value to check against (0 or default from FullPrintConfig)
+                const auto &defaults_config = FullPrintConfig::defaults();
+                auto* default_ironing_temp = dynamic_cast<const ConfigOptionInts*>(defaults_config.option("ironing_temperature"));
+
+                for (size_t i = 0; i < ironing_temp->values.size(); ++i) {
+                    if (i < nozzle_temp->values.size()) {
+                        int default_value = (default_ironing_temp != nullptr && i < default_ironing_temp->values.size()) ?
+                            default_ironing_temp->values[i] : 0;
+
+                        // If ironing_temperature is at default value (0 or 200), copy from nozzle_temperature
+                        if (ironing_temp->values[i] == default_value || ironing_temp->values[i] == 0 || ironing_temp->values[i] == 200) {
+                            ironing_temp->values[i] = nozzle_temp->values[i];
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -650,8 +678,9 @@ void Preset::reload(Preset const &parent)
 // Return a label of this preset, consisting of a name and a "(modified)" suffix, if this preset is dirty.
 std::string Preset::label(bool no_alias) const
 {
+    const std::string& base = (no_alias || this->alias.empty()) ? this->name : this->alias;
     return (this->is_dirty ? g_suffix_modified : "")
-        + ((no_alias || this->alias.empty()) ? this->name : this->alias);
+        + ProfileTranslator::instance().translate(base);
 }
 
 bool is_compatible_with_print(const PresetWithVendorProfile &preset, const PresetWithVendorProfile &active_print, const PresetWithVendorProfile &active_printer)
@@ -965,7 +994,7 @@ static std::vector<std::string> s_Preset_filament_options {/*"filament_colour", 
     "filament_tower_interface_print_temp",
     "nozzle_temperature", "nozzle_temperature_initial_layer",
     // BBS
-    "cool_plate_temp", "textured_cool_plate_temp", "eng_plate_temp", "hot_plate_temp", "textured_plate_temp", "cool_plate_temp_initial_layer", "textured_cool_plate_temp_initial_layer", "eng_plate_temp_initial_layer", "hot_plate_temp_initial_layer", "textured_plate_temp_initial_layer", "supertack_plate_temp_initial_layer", "supertack_plate_temp",
+    "cool_plate_temp", "textured_cool_plate_temp", "eng_plate_temp", "hot_plate_temp", "textured_plate_temp", "cool_plate_temp_initial_layer", "textured_cool_plate_temp_initial_layer", "eng_plate_temp_initial_layer", "hot_plate_temp_initial_layer", "textured_plate_temp_initial_layer", "supertack_plate_temp_initial_layer", "supertack_plate_temp", "cosmyx_textured_bed_temp", "cosmyx_textured_bed_temp_initial_layer",
     // "bed_type",
     //BBS:temperature_vitrification
     "temperature_vitrification", "reduce_fan_stop_start_freq","dont_slow_down_outer_wall", "slow_down_for_layer_cooling", "fan_min_speed",
@@ -982,6 +1011,7 @@ static std::vector<std::string> s_Preset_filament_options {/*"filament_colour", 
     "filament_wipe_distance", "additional_cooling_fan_speed",
     "nozzle_temperature_range_low", "nozzle_temperature_range_high",
     "filament_extruder_variant",
+    "nozzle_temperature_range_low", "nozzle_temperature_range_high", "ironing_temperature",
     //SoftFever
     "enable_pressure_advance", "pressure_advance","adaptive_pressure_advance","adaptive_pressure_advance_model","adaptive_pressure_advance_overhangs", "adaptive_pressure_advance_bridges","chamber_temperature", "filament_shrink","filament_shrinkage_compensation_z", "support_material_interface_fan_speed","internal_bridge_fan_speed", "filament_notes" /*,"filament_seam_gap"*/,
     "ironing_fan_speed",
@@ -1329,8 +1359,8 @@ void PresetCollection::load_presets(
                         extend_default_config_length(preset.config, true, default_preset.config);
                     }
                     BOOST_LOG_TRIVIAL(info) << __FUNCTION__ << " load preset: " << name << " and filament_id: " << preset.filament_id << " and base_id: " << preset.base_id;
-
-                    Preset::normalize(preset.config);
+                    preset.config.apply(std::move(config));
+                    Preset::normalize(preset.config, name);
                     // Report configuration fields, which are misplaced into a wrong group.
                     std::string incorrect_keys = Preset::remove_invalid_keys(preset.config, default_preset.config);
                     if (!incorrect_keys.empty()) {
@@ -1567,9 +1597,8 @@ void PresetCollection::load_project_embedded_presets(std::vector<Preset*>& proje
                 BOOST_LOG_TRIVIAL(error) << boost::format("can not find parent for config %1%!")%preset->file;
                 continue;
             }
-            preset->config.update_diff_values_to_child_config(config, extruder_id_name, extruder_variant_name, *key_set1, *key_set2);
-            //preset->config.apply(std::move(config));
-            Preset::normalize(preset->config);
+            preset->config.apply(std::move(config));
+            Preset::normalize(preset->config, preset->name);
             // Report configuration fields, which are misplaced into a wrong group.
             std::string incorrect_keys = Preset::remove_invalid_keys(preset->config, default_preset.config);
             if (!incorrect_keys.empty()) {
@@ -1911,7 +1940,7 @@ bool PresetCollection::load_user_preset(std::string name, std::map<std::string, 
             new_config.apply(std::move(cloud_config));
             extend_default_config_length(new_config, true, default_preset.config);
         }
-        Preset::normalize(new_config);
+        Preset::normalize(new_config, name);
         // Report configuration fields, which are misplaced into a wrong group.
         std::string incorrect_keys = Preset::remove_invalid_keys(new_config, default_preset.config);
         if (!incorrect_keys.empty()) {

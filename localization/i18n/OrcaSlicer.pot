@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 23:26+0800\n"
+"POT-Creation-Date: 2026-05-12 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1574,9 +1574,6 @@ msgid ""
 "Configuration file \"%1%\" was loaded, but some values were not recognized."
 msgstr ""
 
-msgid "Based on PrusaSlicer and BambuStudio"
-msgstr ""
-
 msgid "STEP files"
 msgstr ""
 
@@ -1646,6 +1643,32 @@ msgid "OrcaSlicer got an unhandled exception: %1%"
 msgstr ""
 
 msgid "Untitled"
+msgstr ""
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr ""
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr ""
+
+#, possible-c-format, possible-boost-format
+msgid "Build: %s → %s"
+msgstr ""
+
+#, possible-c-format, possible-boost-format
+msgid "Bundle: %s → %s"
+msgstr ""
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr ""
+
+msgid "New Build Detected"
+msgstr ""
+
+msgid "Skip"
+msgstr ""
+
+msgid "Don't show again for future builds"
 msgstr ""
 
 msgid "Reloading network plug-in..."
@@ -2026,6 +2049,59 @@ msgstr ""
 msgid "Suggestion"
 msgstr ""
 
+msgid "Calage 1 SNDT"
+msgstr ""
+
+msgid "Calage 2 SNDT"
+msgstr ""
+
+msgid "Calage 3 SNDT"
+msgstr ""
+
+msgid "Cube Bicolore"
+msgstr ""
+
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill "
+"direction' and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+#, possible-c-format, possible-boost-format
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f°\n"
+"- Solid infill direction: %.0f°\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calage 1 Nova"
+msgstr ""
+
+msgid "Cosmyx Cube"
+msgstr ""
+
+msgid "Control Tension Belt"
+msgstr ""
+
+msgid "Support Bobine"
+msgstr ""
+
+msgid "Calibrations Models Dual Head"
+msgstr ""
+
+msgid "Calibration Models Single Head"
+msgstr ""
+
+msgid "Cosmyx Handy Models"
+msgstr ""
+
 msgid "Text"
 msgstr ""
 
@@ -2187,6 +2263,9 @@ msgid "Add Primitive"
 msgstr ""
 
 msgid "Add Handy models"
+msgstr ""
+
+msgid "Cosmyx 3D Models"
 msgstr ""
 
 msgid "Add Models"
@@ -3235,18 +3314,30 @@ msgstr ""
 msgid "About %s"
 msgstr ""
 
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr ""
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr ""
-
-msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
+#, possible-c-format, possible-boost-format
+msgid "Cosmyx Bundle Version %s"
 msgstr ""
 
 msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
+"Open-source slicing stands on a tradition of collaboration and attribution. "
+"Slic3r, created by Alessandro Ranellucci and the RepRap community, laid the "
+"foundation. PrusaSlicer by Prusa Research built on that work, Bambu Studio "
+"forked from PrusaSlicer, and SuperSlicer extended it with community-driven "
+"enhancements. Each project carried the work of its predecessors forward, "
+"crediting those who came before."
+msgstr ""
+
+msgid ""
+"OrcaSlicer began in that same spirit, drawing from PrusaSlicer, BambuStudio, "
+"SuperSlicer, and CuraSlicer. But it has since grown far beyond its origins — "
+"introducing advanced calibration tools, precise wall and seam control and "
+"hundreds of other features."
+msgstr ""
+
+msgid ""
+"Today, OrcaSlicer is the most widely used and actively developed open-source "
+"slicer in the 3D printing community. Many of its innovations have been "
+"adopted by other slicers, making it a driving force for the entire industry."
 msgstr ""
 
 msgid "Version"
@@ -5040,7 +5131,7 @@ msgstr ""
 msgid "Size:"
 msgstr ""
 
-#, possible-boost-format
+#, possible-c-format, possible-boost-format
 msgid ""
 "Conflicts of G-code paths have been found at layer %d, Z = %.2lfmm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -5248,6 +5339,9 @@ msgstr ""
 msgid "Export G-code file"
 msgstr ""
 
+msgid "Export all G-code files"
+msgstr ""
+
 msgid "Send"
 msgstr ""
 
@@ -5279,9 +5373,6 @@ msgid "Show Configuration Folder"
 msgstr ""
 
 msgid "Show Tip of the Day"
-msgstr ""
-
-msgid "Check for Updates"
 msgstr ""
 
 msgid "Open Network Test"
@@ -6076,9 +6167,6 @@ msgstr ""
 msgid "The name is not allowed to start with space character."
 msgstr ""
 
-msgid "The name is not allowed to end with space character."
-msgstr ""
-
 msgid "The name is not allowed to exceed 32 characters."
 msgstr ""
 
@@ -6407,9 +6495,6 @@ msgstr ""
 
 #, possible-c-format, possible-boost-format
 msgid "%s information"
-msgstr ""
-
-msgid "Skip"
 msgstr ""
 
 msgid "Newer 3MF version"
@@ -7259,6 +7344,9 @@ msgid "Slicing Plate %d"
 msgstr ""
 
 msgid "Please resolve the slicing errors and publish again."
+msgstr ""
+
+msgid "Choose a directory to export all G-code files"
 msgstr ""
 
 msgid ""
@@ -9003,8 +9091,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add "
-"Primitive\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add Primitive"
+"\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 
 msgid ""
@@ -9240,6 +9328,15 @@ msgstr ""
 msgid ""
 "Bed temperature when the Textured PEI Plate is installed. A value of 0 means "
 "the filament does not support printing on the Textured PEI Plate."
+msgstr ""
+
+msgid "Cosmyx Textured Bed"
+msgstr ""
+
+msgid ""
+"Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
+"means the filament does not support printing on the Cosmyx Textured Bed. A "
+"value of 0 means the bed is off."
 msgstr ""
 
 msgid "Volumetric speed limitation"
@@ -11171,6 +11268,24 @@ msgid ""
 "support printing on the Textured PEI Plate."
 msgstr ""
 
+msgid ""
+"Bed temperature for layers except the initial one. A value of -1 means the "
+"filament does not support printing on the Cosmyx Textured Bed. A value of 0 "
+"means the bed is off."
+msgstr ""
+
+msgid "Initial layer"
+msgstr ""
+
+msgid "Initial layer bed temperature"
+msgstr ""
+
+msgid ""
+"Bed temperature of the initial layer. A value of -1 means the filament does "
+"not support printing on the Cosmyx Textured Bed. A value of 0 means the bed "
+"is off."
+msgstr ""
+
 msgid "Bed types supported by the printer."
 msgstr ""
 
@@ -12913,8 +13028,8 @@ msgid "mm/s² or %"
 msgstr ""
 
 msgid ""
-"Acceleration of sparse infill. If the value is expressed as a percentage "
-"(e.g. 100%), it will be calculated based on the default acceleration."
+"Acceleration of sparse infill. If the value is expressed as a percentage (e."
+"g. 100%), it will be calculated based on the default acceleration."
 msgstr ""
 
 msgid ""
@@ -13019,10 +13134,10 @@ msgstr ""
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
-"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
-"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" will be ignored if lower than "
+"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 
 msgid "layer"
@@ -13309,6 +13424,12 @@ msgid "Stainless steel"
 msgstr ""
 
 msgid "Tungsten carbide"
+msgstr ""
+
+msgid "E3D"
+msgstr ""
+
+msgid "CHT"
 msgstr ""
 
 msgid "Nozzle HRC"
@@ -14549,8 +14670,8 @@ msgid "Role base wipe speed"
 msgstr ""
 
 msgid ""
-"The wipe speed is determined by the speed of the current extrusion role. "
-"e.g. if a wipe action is executed immediately following an outer wall "
+"The wipe speed is determined by the speed of the current extrusion role. e."
+"g. if a wipe action is executed immediately following an outer wall "
 "extrusion, the speed of the outer wall extrusion will be utilized for the "
 "wipe action."
 msgstr ""
@@ -15266,8 +15387,8 @@ msgstr ""
 
 msgid ""
 "Enable this option for automated chamber temperature control. This option "
-"activates the emitting of an M191 command before the "
-"\"machine_start_gcode\"\n"
+"activates the emitting of an M191 command before the \"machine_start_gcode"
+"\"\n"
 " which sets the chamber temperature and waits until it is reached. In "
 "addition, it emits an M141 command at the end of the print to turn off the "
 "chamber heater, if present.\n"
@@ -15301,6 +15422,14 @@ msgid ""
 msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one."
+msgstr ""
+
+msgid "Ironing temperature"
+msgstr ""
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
 msgstr ""
 
 msgid "Detect thin walls"
@@ -16023,8 +16152,8 @@ msgid "Debug level"
 msgstr ""
 
 msgid ""
-"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, "
-"5:trace\n"
+"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 msgstr ""
 
 msgid "Enable timelapse for print"
@@ -17557,8 +17686,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you "
-"selected\".\n"
+"We would rename the presets as \"Vendor Type Serial @printer you selected"
+"\".\n"
 "To add preset for more printers, please go to printer selection"
 msgstr ""
 

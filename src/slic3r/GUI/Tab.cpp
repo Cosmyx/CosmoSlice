@@ -4,7 +4,9 @@
 #include "PresetHints.hpp"
 #include "libslic3r/PresetBundle.hpp"
 #include "libslic3r/PrintConfig.hpp"
+#include "libslic3r/ProfileTranslator.hpp"
 #include "libslic3r/Utils.hpp"
+#include "libslic3r/CosmoLog.hpp"
 #include "libslic3r/Model.hpp"
 #include "libslic3r/GCode/GCodeProcessor.hpp"
 
@@ -215,7 +217,8 @@ void Tab::create_preset_tab()
                     m_preset_bundle->physical_printers.unselect_printer();
 
                 // select preset
-                std::string preset_name = m_presets_choice->GetString(selection).ToUTF8().data();
+                std::string preset_name = Slic3r::ProfileTranslator::instance().untranslate(
+                    m_presets_choice->GetString(selection).ToUTF8().data());
                 select_preset(Preset::remove_suffix_modified(preset_name));
             }
         });
@@ -2238,8 +2241,8 @@ void Tab::update_preset_description_line()
         }
         else if (!preset.alias.empty())
         {
-            description_line += "\n\n\t" + _(L("full profile name"))     + ": \n\t\t" + preset.name;
-            description_line += "\n\t"   + _(L("symbolic profile name")) + ": \n\t\t" + preset.alias;
+            description_line += "\n\n\t" + _(L("full profile name"))     + ": \n\t\t" + Slic3r::ProfileTranslator::instance().translate(preset.name);
+            description_line += "\n\t"   + _(L("symbolic profile name")) + ": \n\t\t" + Slic3r::ProfileTranslator::instance().translate(preset.alias);
         }
     }
 
@@ -3890,6 +3893,9 @@ void TabFilament::build()
         line.append_option(optgroup->get_option("nozzle_temperature", 0));
         optgroup->append_line(line);
 
+        COSMO_LOG(debug) << "[Tab] Adding ironing_temperature option";
+        optgroup->append_single_option_line("ironing_temperature");
+
         optgroup = page->new_optgroup(L("Bed temperature"), L"param_bed_temp");
         line = { L("Cool Plate (SuperTack)"),
                  L("Bed temperature when the Cool Plate SuperTack is installed. A value of 0 means the filament does not support printing on the Cool Plate SuperTack.") };
@@ -3931,6 +3937,13 @@ void TabFilament::build()
         line.label_path = "material_temperatures#bed";
         line.append_option(optgroup->get_option("textured_plate_temp_initial_layer"));
         line.append_option(optgroup->get_option("textured_plate_temp"));
+        optgroup->append_line(line);
+
+        COSMO_LOG(debug) << "[Tab] Adding Cosmyx Textured Bed settings section";
+        line = { L("Cosmyx Textured Bed"),
+                 L("Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 means the filament does not support printing on the Cosmyx Textured Bed. A value of 0 means the bed is off.") };
+        line.append_option(optgroup->get_option("cosmyx_textured_bed_temp_initial_layer"));
+        line.append_option(optgroup->get_option("cosmyx_textured_bed_temp"));
         optgroup->append_line(line);
 
         optgroup->m_on_change = [this](t_config_option_key opt_key, boost::any value)
@@ -4211,7 +4224,8 @@ void TabFilament::toggle_options()
 
         const std::vector<std::string> bed_temp_keys = {"supertack_plate_temp_initial_layer", "cool_plate_temp_initial_layer",
                                                         "textured_cool_plate_temp_initial_layer", "eng_plate_temp_initial_layer",
-                                                        "textured_plate_temp_initial_layer", "hot_plate_temp_initial_layer"};
+                                                        "textured_plate_temp_initial_layer", "hot_plate_temp_initial_layer",
+                                                        "cosmyx_textured_bed_temp_initial_layer"};
 
         bool support_multi_bed_types = std::find(bed_temp_keys.begin(), bed_temp_keys.end(), bed_temp_1st_layer_key) ==
                                            bed_temp_keys.end() ||

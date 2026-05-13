@@ -1,0 +1,24 @@
+{
+    "type": "filament",
+    "setting_id": "GFSB00_01",
+    "name": "Cosmyx ABS @Cosmyx Common 0.8 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx ABS @base",
+    "filament_max_volumetric_speed": [
+        "22"
+    ],
+    "nozzle_temperature": [
+        "260"
+    ],
+    "slow_down_min_speed": [
+        "10"
+    ],
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ],
+    "version": "14.04.2026.02"
+}

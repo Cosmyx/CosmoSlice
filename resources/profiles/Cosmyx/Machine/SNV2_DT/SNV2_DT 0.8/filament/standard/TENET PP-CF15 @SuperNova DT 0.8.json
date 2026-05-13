@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "MIL34_SNV2_DT_08",
+    "name": "TENET PP-CF15 @SuperNova DT 0.8",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TENET PP-CF15 @Cosmyx Common",
+    "compatible_printers": [
+        "Cosmyx SuperNova Double Tete 0.8 nozzle"
+    ],
+    "version": "14.04.2026.02"
+}

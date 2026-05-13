@@ -1,0 +1,15 @@
+{
+    "name": "Cosmyx ASA @Cosmyx Common 0.4 nozzle",
+    "type": "filament",
+    "instantiation": "true",
+    "from": "system",
+    "inherits": "Cosmyx ASA @base",
+    "setting_id": "GFSB01_02",
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ],
+    "version": "14.04.2026.02"
+}

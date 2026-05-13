@@ -30,6 +30,7 @@
 #include <boost/format.hpp>
 #include <boost/lexical_cast.hpp>
 #include <boost/log/trivial.hpp>
+#include "libslic3r/CosmoLog.hpp"
 #include <boost/nowide/convert.hpp>
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
@@ -64,6 +65,7 @@
 #include "libslic3r/Model.hpp"
 #include "libslic3r/I18N.hpp"
 #include "libslic3r/PresetBundle.hpp"
+#include "libslic3r/ProfileTranslator.hpp"
 #include "libslic3r/Thread.hpp"
 #include "libslic3r/miniz_extension.hpp"
 #include "libslic3r/Utils.hpp"
@@ -1023,7 +1025,7 @@ void GUI_App::post_init()
             bool        sys_preset  = app_config->get("sync_system_preset") == "true";
             this->preset_updater->sync(http_url, language, network_ver, sys_preset ? preset_bundle : nullptr);
 
-            this->check_new_version_sf();
+            //this->check_new_version_sf();
             if (is_user_login() && !app_config->get_stealth_mode()) {
               // this->check_privacy_version(0);
               request_user_handle(0);
@@ -1095,6 +1097,29 @@ void GUI_App::post_init()
     // Sets window property to mainframe so other instances can indentify it.
     OtherInstanceMessageHandler::init_windows_properties(mainframe, m_instance_hash_int);
 #endif //WIN32
+
+    // Show build-change notification now that mainframe is fully initialized.
+    if (m_pending_build_change_notify) {
+        m_pending_build_change_notify = false;
+        wxString msg = _L("A new version of CosmoSlice has been installed.") + "\n" +
+                       _L("Please Backup and delete the Cosmyx AppData Folder.") + "\n\n";
+        if (m_pending_build_stored_hash != std::string(GIT_COMMIT_HASH))
+            msg += wxString::Format(_L("Build: %s \u2192 %s"), m_pending_build_stored_hash, GIT_COMMIT_HASH) + "\n";
+        if (m_pending_build_stored_cosmyx_ver != std::string(COSMYX_PATCH_VERSION))
+            msg += wxString::Format(_L("Bundle: %s \u2192 %s"), m_pending_build_stored_cosmyx_ver, COSMYX_PATCH_VERSION) + "\n";
+        msg += "\n" + _L("Would you like to Close OrcaSlicer and Open your AppData folder?");
+        RichMessageDialog dlg(mainframe, msg, _L("New Build Detected"), wxYES_NO | wxICON_INFORMATION);
+        dlg.SetButtonLabel(wxID_YES, _L("OK"));
+        dlg.SetButtonLabel(wxID_NO,  _L("Skip"));
+        dlg.ShowCheckBox(_L("Don't show again for future builds"));
+        const int result = dlg.ShowModal();
+        if (dlg.IsCheckBoxChecked())
+            app_config->set_bool("skip_build_change_notify", true);
+        if (result == wxID_YES) {
+            wxLaunchDefaultApplication(wxString::FromUTF8(Slic3r::data_dir()));
+            mainframe->Close(false);
+        }
+    }
 }
 
 wxDEFINE_EVENT(EVT_ENTER_FORCE_UPGRADE, wxCommandEvent);
@@ -2386,7 +2411,7 @@ void GUI_App::init_app_config()
     SetAppName(SLIC3R_APP_KEY);
 //	SetAppName(SLIC3R_APP_KEY "-alpha");
 //  SetAppName(SLIC3R_APP_KEY "-beta");
-//	SetAppDisplayName(SLIC3R_APP_NAME);
+	SetAppDisplayName(SLIC3R_APP_NAME);
 
 	// Set the Slic3r data directory at the Slic3r XS module.
 	// Unix: ~/ .Slic3r
@@ -2412,22 +2437,21 @@ void GUI_App::init_app_config()
         else{
             boost::filesystem::path data_dir_path;
             #ifndef __linux__
-                std::string data_dir = wxStandardPaths::Get().GetUserDataDir().ToUTF8().data();
-                //BBS create folder if not exists
-                data_dir_path = boost::filesystem::path(data_dir);
-                set_data_dir(data_dir);
+                // Place config under vendor subfolder: AppData/Roaming/Cosmyx/OrcaSlicer
+                boost::filesystem::path base(wxStandardPaths::Get().GetUserDataDir().ToUTF8().data());
+                data_dir_path = base.parent_path() / SLIC3R_APP_VENDOR / SLIC3R_APP_KEY;
+                set_data_dir(data_dir_path.string());
             #else
                 // Since version 2.3, config dir on Linux is in ${XDG_CONFIG_HOME}.
                 // https://github.com/prusa3d/PrusaSlicer/issues/2911
                 wxString dir;
                 if (! wxGetEnv(wxS("XDG_CONFIG_HOME"), &dir) || dir.empty() )
                     dir = wxFileName::GetHomeDir() + wxS("/.config");
-                data_dir_path = boost::filesystem::path((dir + "/" + GetAppName()).ToUTF8().data());
-                migrate_flatpak_legacy_datadir(data_dir_path);
-                set_data_dir(data_dir_path.string());
+                set_data_dir((dir + "/" + SLIC3R_APP_VENDOR + "/" + GetAppName()).ToUTF8().data());
+                data_dir_path = boost::filesystem::path(data_dir());
             #endif
             if (!boost::filesystem::exists(data_dir_path)){
-                boost::filesystem::create_directory(data_dir_path);
+                boost::filesystem::create_directories(data_dir_path);
             }
         }
 
@@ -2456,7 +2480,13 @@ void GUI_App::init_app_config()
     set_log_path_and_level(log_filename, 3);
 #endif
 
-    BOOST_LOG_TRIVIAL(info) << boost::format("gui mode, Current OrcaSlicer Version %1% build %2%") % SoftFever_VERSION % GIT_COMMIT_HASH;
+    // Cosmo log — same session timestamp, separate file in the same log folder.
+    // Always trace-level: we want full visibility into all Cosmyx additions in every build.
+    std::stringstream cosmo_buf;
+    cosmo_buf << std::put_time(now_time, "cosmo_%a_%b_%d_%H_%M_%S_");
+    cosmo_buf << get_current_pid() << ".log";
+    set_cosmo_log_path_and_level(cosmo_buf.str());
+    COSMO_LOG(info) << "[GUI_App] CosmoSlice log initialized — version " << COSMYX_PATCH_VERSION;
 
     //BBS: remove GCodeViewer as seperate APP logic
 	if (!app_config)
@@ -2891,6 +2921,35 @@ bool GUI_App::on_init_inner()
         app_config->set("version", SLIC3R_VERSION);
     }
 
+    // Check if this is a new build by comparing stored values with current compile-time constants.
+    // Ignore on first run (keys not present yet).
+    const std::string stored_build_hash  = app_config->get("build_hash");
+    const std::string stored_cosmyx_ver  = app_config->get("cosmyx_version");
+    const bool        first_run          = stored_build_hash.empty() && stored_cosmyx_ver.empty();
+    const bool        build_hash_changed = !stored_build_hash.empty() && stored_build_hash != GIT_COMMIT_HASH;
+    const bool        cosmyx_ver_changed = !stored_cosmyx_ver.empty() && stored_cosmyx_ver != COSMYX_PATCH_VERSION;
+
+    COSMO_LOG(info) << "[GUI_App] Version check — stored: " << stored_cosmyx_ver
+                    << "  current: " << COSMYX_PATCH_VERSION
+                    << (first_run ? "  (first run)" : "");
+
+    // Only write these values once — when AppData is first created (empty keys).
+    // They must never be overwritten so the popup keeps appearing until the user migrates.
+    if (stored_build_hash.empty())
+        app_config->set("build_hash",     GIT_COMMIT_HASH);
+    if (stored_cosmyx_ver.empty()) {
+        COSMO_LOG(info) << "[GUI_App] Storing initial Cosmyx version: " << COSMYX_PATCH_VERSION;
+        app_config->set("cosmyx_version", COSMYX_PATCH_VERSION);
+    }
+
+    if (!first_run && (build_hash_changed || cosmyx_ver_changed) && !app_config->get_bool("skip_build_change_notify")) {
+        if (cosmyx_ver_changed)
+            COSMO_LOG(info) << "[GUI_App] Cosmyx version updated: " << stored_cosmyx_ver << " -> " << COSMYX_PATCH_VERSION;
+        m_pending_build_change_notify    = true;
+        m_pending_build_stored_hash      = stored_build_hash;
+        m_pending_build_stored_cosmyx_ver = stored_cosmyx_ver;
+    }
+
     SplashScreen * scrn = nullptr;
     if (app_config->get("show_splash_screen") == "true") {
         // make a bitmap with dark grey banner on the left side
@@ -2940,6 +2999,7 @@ bool GUI_App::on_init_inner()
 #endif // __WXMSW__
 
         preset_updater = new PresetUpdater();
+        #if 0
         Bind(EVT_SLIC3R_VERSION_ONLINE, [this](const wxCommandEvent& evt) {
             if (this->plater_ != nullptr) {
                 // this->plater_->get_notification_manager()->push_notification(NotificationType::NewAppAvailable);
@@ -2986,6 +3046,8 @@ bool GUI_App::on_init_inner()
                 }
             }
             });
+
+        #endif
 
         Bind(EVT_ENTER_FORCE_UPGRADE, [this](const wxCommandEvent& evt) {
                 wxString      version_str = wxString::FromUTF8(this->app_config->get("upgrade", "version"));
@@ -3102,6 +3164,14 @@ bool GUI_App::on_init_inner()
 
     // Let the libslic3r know the callback, which will translate messages on demand.
     Slic3r::I18N::set_translate_callback(libslic3r_translate_callback);
+
+    {
+        std::string lang = into_u8(current_language_code());
+        auto& translator = Slic3r::ProfileTranslator::instance();
+        translator.clear();
+        translator.load_translations((boost::filesystem::path(Slic3r::data_dir()) / PRESET_SYSTEM_DIR).string(), lang);
+        translator.load_translations((boost::filesystem::path(Slic3r::resources_dir()) / "profiles").string(), lang);
+    }
 
     BOOST_LOG_TRIVIAL(info) << "create the main window";
     mainframe = new MainFrame();
@@ -4127,6 +4197,15 @@ void GUI_App::recreate_GUI(const wxString &msg_name)
     old_main_frame->SetClientObject(new ClientData);
 
     switch_window_pools();
+
+    {
+        std::string lang = into_u8(current_language_code());
+        auto& translator = Slic3r::ProfileTranslator::instance();
+        translator.clear();
+        translator.load_translations((boost::filesystem::path(Slic3r::data_dir()) / PRESET_SYSTEM_DIR).string(), lang);
+        translator.load_translations((boost::filesystem::path(Slic3r::resources_dir()) / "profiles").string(), lang);
+    }
+
     mainframe = new MainFrame();
     if (is_editor())
         // hide settings tabs after first Layout

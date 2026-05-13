@@ -1,0 +1,38 @@
+{
+    "name": "Cosmyx ASA @base",
+    "type": "filament",
+    "instantiation": "false",
+    "from": "system",
+    "inherits": "fdm_filament_asa",
+    "filament_vendor": [
+        "Cosmyx"
+    ],
+    "filament_density": [
+        "1.05"
+    ],
+    "filament_cost": [
+        "31.99"
+    ],
+    "filament_id": "GFB01",
+    "nozzle_temperature_initial_layer": [
+        "270"
+    ],
+    "nozzle_temperature": [
+        "270"
+    ],
+    "filament_flow_ratio": [
+        "0.95"
+    ],
+    "fan_max_speed": [
+        "50"
+    ],
+    "filament_max_volumetric_speed": [
+        "18"
+    ],
+    "required_nozzle_HRC": [
+        "1"
+    ],
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ]
+}

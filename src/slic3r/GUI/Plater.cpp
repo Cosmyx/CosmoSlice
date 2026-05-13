@@ -65,6 +65,7 @@
 #include "libslic3r/SLAPrint.hpp"
 #include "libslic3r/Utils.hpp"
 #include "libslic3r/PresetBundle.hpp"
+#include "libslic3r/ProfileTranslator.hpp"
 #include "libslic3r/ClipperUtils.hpp"
 #include "libslic3r/ObjColorUtils.hpp"
 // For stl export
@@ -258,7 +259,8 @@ static std::map<BedType, std::string> bed_type_thumbnails = {
     {BedType::btPEI,       "bed_high_templ"     },
     {BedType::btPTE,       "bed_pei"            },
     {BedType::btPCT,       "bed_pei_cool"       },
-    {BedType::btSuperTack, "bed_cool_supertack" }
+    {BedType::btSuperTack, "bed_cool_supertack" },
+    {BedType::btCosmyx,    "bed_cosmyx"         }
 };
 
 enum SlicedInfoIdx
@@ -586,9 +588,8 @@ void Sidebar::priv::layout_printer(bool isBBL, bool isDual)
 
     extruder_dual_sizer->Show(isDual);
 
-    // NEEDFIX requires AMS check or any type of ???
-    // Single nozzle & non ams
-    panel_nozzle_dia->Show(!isDual && preset_bundle.get_printer_extruder_count() < 2);
+    // Show nozzle panel for all non-dual machines (multi-head non-BBL included)
+    panel_nozzle_dia->Show(!isDual);
     extruder_single_sizer->Show(false);
 }
 
@@ -2402,8 +2403,18 @@ void Sidebar::update_all_preset_comboboxes()
         auto print_btn_type = MainFrame::PrintSelectType::eExportGcode;
         wxString url = cfg.opt_string("print_host_webui").empty() ? cfg.opt_string("print_host") : cfg.opt_string("print_host_webui");
         wxString apikey;
-        if(url.empty())
-            url = wxString::Format("file://%s/web/orca/missing_connection.html", from_u8(resources_dir()));
+        if(url.empty()) {
+            auto printer_name = wxString::FromUTF8(preset_bundle.printers.get_edited_preset().name);
+            // Basic URL encoding for the printer name query parameter
+            printer_name.Replace("%",  "%25");
+            printer_name.Replace(" ",  "%20");
+            printer_name.Replace("&",  "%26");
+            printer_name.Replace("+",  "%2B");
+            printer_name.Replace("=",  "%3D");
+            printer_name.Replace("?",  "%3F");
+            printer_name.Replace("#",  "%23");
+            url = wxString::Format("file://%s/web/orca/missing_connection.html?printer=%s", from_u8(resources_dir()), printer_name);
+        }
         else {
             if (!url.Lower().starts_with("http"))
                 url = wxString::Format("http://%s", url);
@@ -3961,40 +3972,47 @@ void Sidebar::update_printer_thumbnail()
     auto& preset_bundle = wxGetApp().preset_bundle;
     Preset & selected_preset = preset_bundle->printers.get_edited_preset();
     std::string printer_type    = selected_preset.get_current_printer_type(preset_bundle);
-    if (printer_thumbnails.find(printer_type) != printer_thumbnails.end()) // Use known cache first
-        p->image_printer->SetBitmap(create_scaled_bitmap(printer_thumbnails[printer_type], this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
-    else {
-        try {
-            // No cache, try dedicated printer preview
-            p->image_printer->SetBitmap(create_scaled_bitmap("printer_preview_" + printer_type, this, 48));
-            // Success, cache it
-            printer_thumbnails[printer_type] = "printer_preview_" + printer_type;
-            return;
-        } catch (...) {}
 
-        // Orca: try to use the printer model cover as the thumbnail
-        const auto model_name = selected_preset.config.opt_string("printer_model");
-        std::string cover_file = model_name + "_cover.png";
-        for (auto vendor_profile : preset_bundle->vendors) {
-            for (auto vendor_model : vendor_profile.second.models) {
-                if (vendor_model.name == model_name) {
-                    // Try to find the printer cover
-                    boost::filesystem::path cover_path = boost::filesystem::absolute(boost::filesystem::path(resources_dir()) /
-                                                                                     "/profiles/" / vendor_profile.second.id / cover_file)
-                                                             .make_preferred();
-                    if (boost::filesystem::exists(cover_path)) {
-                        try {
-                            p->image_printer->SetBitmap(create_scaled_bitmap(cover_path.string(), this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
-                            printer_thumbnails[printer_type] = cover_path.string(); // Cache the path so we don't look up again
-                            return;
-                        } catch (...) {}
-                    }
+    // Cache hit — guard against empty/stale entries
+    auto cache_it = printer_thumbnails.find(printer_type);
+    if (cache_it != printer_thumbnails.end()) {
+        if (!cache_it->second.empty()) {
+            try {
+                p->image_printer->SetBitmap(create_scaled_bitmap(cache_it->second, this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
+                return;
+            } catch (...) {}
+        }
+        printer_thumbnails.erase(cache_it); // stale or empty — fall through to rebuild
+    }
+
+    // Try dedicated printer preview image
+    try {
+        p->image_printer->SetBitmap(create_scaled_bitmap("printer_preview_" + printer_type, this, 48));
+        printer_thumbnails[printer_type] = "printer_preview_" + printer_type;
+        return;
+    } catch (...) {}
+
+    // Orca: try to use the printer model cover as the thumbnail
+    const auto model_name = selected_preset.config.opt_string("printer_model");
+    std::string cover_file = model_name + "_cover.png";
+    for (auto vendor_profile : preset_bundle->vendors) {
+        for (auto vendor_model : vendor_profile.second.models) {
+            if (vendor_model.name == model_name) {
+                boost::filesystem::path cover_path = boost::filesystem::absolute(boost::filesystem::path(resources_dir()) /
+                                                                                 "/profiles/" / vendor_profile.second.id / cover_file)
+                                                         .make_preferred();
+                if (boost::filesystem::exists(cover_path)) {
+                    try {
+                        p->image_printer->SetBitmap(create_scaled_bitmap(cover_path.string(), this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
+                        printer_thumbnails[printer_type] = cover_path.string();
+                        return;
+                    } catch (...) {}
                 }
             }
         }
-        p->image_printer->SetBitmap(create_scaled_bitmap("printer_placeholder", this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
-        printer_thumbnails[printer_type] = "printer_placeholder"; // Avoid unnecessary try
     }
+    p->image_printer->SetBitmap(create_scaled_bitmap("printer_placeholder", this, PRINTER_THUMBNAIL_SIZE.GetHeight()));
+    printer_thumbnails[printer_type] = "printer_placeholder";
 }
 
 void Sidebar::auto_calc_flushing_volumes(const int filament_idx, const int extruder_id) {
@@ -4260,6 +4278,11 @@ struct Plater::priv
     int m_cur_slice_plate;
     //BBS: m_slice_all in .gcode.3mf file case, set true when slice all
     bool m_slice_all_only_has_gcode{ false };
+
+    // Export-all-gcode state
+    bool     m_export_all_gcode { false };
+    int      m_cur_export_plate { 0 };
+    fs::path m_export_all_dir;
 
     bool m_need_update{false};
     //BBS: add popup object table logic
@@ -4620,6 +4643,8 @@ struct Plater::priv
     void on_action_send_gcode(SimpleEvent&);
     void on_action_export_sliced_file(SimpleEvent&);
     void on_action_export_all_sliced_file(SimpleEvent&);
+    void on_action_export_all_gcode(SimpleEvent&);
+    void start_next_export_gcode();
     void on_action_select_sliced_plate(wxCommandEvent& evt);
     //BBS: change dark/light mode
     void on_change_color_mode(SimpleEvent& evt);
@@ -5161,6 +5186,7 @@ Plater::priv::priv(Plater *q, MainFrame *main_frame)
         q->Bind(EVT_GLTOOLBAR_SEND_GCODE, &priv::on_action_send_gcode, this);
         q->Bind(EVT_GLTOOLBAR_EXPORT_SLICED_FILE, &priv::on_action_export_sliced_file, this);
         q->Bind(EVT_GLTOOLBAR_EXPORT_ALL_SLICED_FILE, &priv::on_action_export_all_sliced_file, this);
+        q->Bind(EVT_GLTOOLBAR_EXPORT_ALL_GCODE, &priv::on_action_export_all_gcode, this);
         q->Bind(EVT_GLTOOLBAR_SEND_TO_PRINTER, &priv::on_action_export_to_sdcard, this);
         q->Bind(EVT_GLTOOLBAR_SEND_TO_PRINTER_ALL, &priv::on_action_export_to_sdcard_all, this);
         q->Bind(EVT_GLTOOLBAR_PRINT_MULTI_MACHINE, &priv::on_action_send_to_multi_machine, this);
@@ -6110,7 +6136,7 @@ std::vector<size_t> Plater::priv::load_files(const std::vector<fs::path>& input_
 
                 if (load_config) {
                     if (!config.empty()) {
-                        Preset::normalize(config);
+                        Preset::normalize(config, boost::filesystem::path(filename.string()).filename().string());
                         PresetBundle *preset_bundle = wxGetApp().preset_bundle;
 
                         {
@@ -9171,7 +9197,8 @@ void Plater::priv::on_select_preset(wxCommandEvent &evt)
     //     wx_name = combo->get_preset_item_name(selection); }
 
     std::string preset_name = wxGetApp().preset_bundle->get_preset_name_by_alias(preset_type,
-        Preset::remove_suffix_modified(wx_name.ToUTF8().data()));
+        ProfileTranslator::instance().untranslate(
+            Preset::remove_suffix_modified(combo->GetString(selection).ToUTF8().data())));
 
     if (preset_type == Preset::TYPE_FILAMENT) {
         wxGetApp().preset_bundle->set_filament_preset(idx, preset_name);
@@ -9640,7 +9667,7 @@ void Plater::priv::on_process_completed(SlicingProcessCompletedEvent &evt)
                 platform_flavor() != PlatformFlavor::LinuxOnChromium);
             wxGetApp().removable_drive_manager()->set_exporting_finished(true);
         }else
-        if (exporting_status == ExportingStatus::EXPORTING_TO_LOCAL && !has_error)
+        if (exporting_status == ExportingStatus::EXPORTING_TO_LOCAL && !has_error && !m_export_all_gcode)
             notification_manager->push_exporting_finished_notification(last_output_path, last_output_dir_path, false);
 
         // BBS, Generate calibration thumbnail for current plate
@@ -9658,9 +9685,23 @@ void Plater::priv::on_process_completed(SlicingProcessCompletedEvent &evt)
             *plate_bbox_data = generate_first_layer_bbox();
         }
     }
-
+    bool was_exporting = (exporting_status != ExportingStatus::NOT_EXPORTING);
     exporting_status = ExportingStatus::NOT_EXPORTING;
 
+    // Export-all-gcode chaining: trigger next plate export or finish
+    if (m_export_all_gcode && was_exporting && !has_error) {
+        if (m_cur_export_plate < partplate_list.get_plate_count() - 1) {
+            m_cur_export_plate++;
+            start_next_export_gcode();
+            return;
+        } else {
+            m_export_all_gcode = false;
+            notification_manager->push_exporting_finished_notification(
+                m_export_all_dir.string(), m_export_all_dir.string(), false);
+        }
+    } else if (m_export_all_gcode && has_error) {
+        m_export_all_gcode = false;
+    }
 
     // BBS stop publishing if error occur
     //if (m_is_publishing) {
@@ -9987,6 +10028,55 @@ void Plater::priv::on_action_export_all_sliced_file(SimpleEvent &)
         BOOST_LOG_TRIVIAL(debug) << __FUNCTION__ << ":received export all sliced file event\n";
         q->export_gcode_3mf(true);
     }
+}
+
+void Plater::priv::on_action_export_all_gcode(SimpleEvent&)
+{
+    if (!q) return;
+
+    wxDirDialog dlg(q, _L("Choose a directory to export all G-code files"),
+        wxGetApp().app_config->get_last_output_dir("", false),
+        wxDD_DEFAULT_STYLE | wxDD_DIR_MUST_EXIST);
+    if (dlg.ShowModal() != wxID_OK) return;
+
+    m_export_all_dir = fs::path(dlg.GetPath().ToUTF8().data());
+    m_export_all_gcode = true;
+    m_cur_export_plate = 0;
+    start_next_export_gcode();
+}
+
+void Plater::priv::start_next_export_gcode()
+{
+    // Find next plate with a valid slice result
+    while (m_cur_export_plate < partplate_list.get_plate_count()) {
+        PartPlate* plate = partplate_list.get_plate(m_cur_export_plate);
+        if (plate && plate->is_slice_result_valid())
+            break;
+        m_cur_export_plate++;
+    }
+
+    if (m_cur_export_plate >= partplate_list.get_plate_count()) {
+        m_export_all_gcode = false;
+        notification_manager->push_exporting_finished_notification(
+            m_export_all_dir.string(), m_export_all_dir.string(), false);
+        return;
+    }
+
+    // Switch to this plate so the background process has the correct plate context
+    q->select_plate(m_cur_export_plate);
+
+    // Expose {plate_count} to the filename_format placeholder parser
+    if (background_process.fff_print())
+        background_process.fff_print()->set_plate_count(partplate_list.get_plate_count());
+
+    // Let filename_format resolve naturally — users can use {plate_number} / {plate_count}
+    fs::path project_path = m_export_all_dir / (std::string(m_project_name.mb_str(wxConvUTF8)) + ".3mf");
+    fs::path output_path  = fs::path(background_process.output_filepath_for_project(project_path));
+
+    last_output_path = output_path.string();
+    last_output_dir_path = m_export_all_dir.string();
+    exporting_status = ExportingStatus::EXPORTING_TO_LOCAL;
+    export_gcode(output_path, false);
 }
 
 void Plater::priv::on_action_export_to_sdcard(SimpleEvent&)
@@ -10421,14 +10511,8 @@ void Plater::priv::set_project_name(const wxString& project_name)
     BOOST_LOG_TRIVIAL(trace) << __FUNCTION__ << __LINE__ << " project is:" << project_name;
     m_project_name = project_name;
     //update topbar title
-#ifdef __APPLE__
-    wxGetApp().mainframe->SetTitle(m_project_name);
-    if (!m_project_name.IsEmpty())
-        wxGetApp().mainframe->update_title_colour_after_set_title();
-#else
-    wxGetApp().mainframe->SetTitle(m_project_name + " - OrcaSlicer");
+    wxGetApp().mainframe->SetTitle(m_project_name + " - " + SLIC3R_APP_NAME);
     wxGetApp().mainframe->topbar()->SetTitle(m_project_name);
-#endif
 }
 
 void Plater::priv::update_title_dirty_status()
@@ -14484,6 +14568,8 @@ void Plater::export_gcode(bool prefer_removable)
         unsigned int state = this->p->update_restart_background_process(false, false);
         if (state & priv::UPDATE_BACKGROUND_PROCESS_INVALID)
             return;
+         if (this->p->background_process.fff_print())
+            this->p->background_process.fff_print()->set_plate_count(this->p->partplate_list.get_plate_count());
         default_output_file = this->p->background_process.output_filepath_for_project("");
     } catch (const Slic3r::PlaceholderParserError &ex) {
         // Show the error with monospaced font.
@@ -14644,6 +14730,11 @@ void Plater::export_gcode_3mf(bool export_all)
         appconfig.update_last_output_dir(output_path.parent_path().string(), false);
         p->notification_manager->push_exporting_finished_notification(output_path.string(), p->last_output_dir_path, on_removable);
     }
+}
+
+void Plater::export_gcode_all()
+{
+    wxPostEvent(this, SimpleEvent(EVT_GLTOOLBAR_EXPORT_ALL_GCODE));
 }
 
 void Plater::send_gcode_finish(wxString name)

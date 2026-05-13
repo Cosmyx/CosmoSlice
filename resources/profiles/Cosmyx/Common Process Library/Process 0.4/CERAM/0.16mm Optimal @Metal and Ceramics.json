@@ -1,0 +1,19 @@
+{
+    "type": "process",
+    "setting_id": "GP003",
+    "name": "0.16mm Optimal @Metal and Ceramics",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_cosmyx_0.16",
+    "compatible_printers": [
+        "Cosmyx Machines"
+    ],
+    "version": "14.04.2026.02",
+    "overhang_reverse": "1",
+    "overhang_reverse_threshold": "0%",
+    "sparse_infill_density": "92%",
+    "top_shell_layers": "6",
+    "wall_loops": "5",
+    "bottom_shell_layers": "6",
+    "brim_type": "outer_and_inner"
+}

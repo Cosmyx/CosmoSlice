@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Orca Slicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 23:26+0800\n"
+"POT-Creation-Date: 2026-05-12 09:58+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jakub Hencl\n"
 "Language-Team: \n"
@@ -1614,9 +1614,6 @@ msgstr ""
 "Konfigurační soubor \"%1%\" byl načten, ale některé hodnoty nebyly "
 "rozpoznány."
 
-msgid "Based on PrusaSlicer and BambuStudio"
-msgstr "Založeno na PrusaSliceru a BambuStudio"
-
 msgid "STEP files"
 msgstr "STEP soubory"
 
@@ -1691,6 +1688,32 @@ msgstr "OrcaSlicer narazil na neošetřenou výjimku: %1%"
 
 msgid "Untitled"
 msgstr "Bez názvu"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "Byla nainstalována nová verze CosmoSlice."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Prosím zálohujte a odstraňte složku AppData Cosmyx."
+
+#, c-format, boost-format
+msgid "Build: %s → %s"
+msgstr "Build: %s → %s"
+
+#, c-format, boost-format
+msgid "Bundle: %s → %s"
+msgstr "Balíček: %s → %s"
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Chcete zavřít OrcaSlicer a otevřít složku AppData?"
+
+msgid "New Build Detected"
+msgstr "Zjištěna nová verze"
+
+msgid "Skip"
+msgstr "Přeskočit"
+
+msgid "Don't show again for future builds"
+msgstr "Nezobrazovat znovu pro budoucí sestavení"
 
 msgid "Reloading network plug-in..."
 msgstr "Znovunačítání síťového plug-inu..."
@@ -2111,6 +2134,59 @@ msgstr ""
 msgid "Suggestion"
 msgstr "Suggestion"
 
+msgid "Calage 1 SNDT"
+msgstr "Kalibrace 1 SNDT"
+
+msgid "Calage 2 SNDT"
+msgstr "Kalibrace 2 SNDT"
+
+msgid "Calage 3 SNDT"
+msgstr "Kalibrace 3 SNDT"
+
+msgid "Cube Bicolore"
+msgstr "Dvoubarevná kostka"
+
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill "
+"direction' and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f°\n"
+"- Solid infill direction: %.0f°\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calage 1 Nova"
+msgstr "Kalibrace 1 Nova"
+
+msgid "Cosmyx Cube"
+msgstr "Cosmyx Cube"
+
+msgid "Control Tension Belt"
+msgstr "Kontrola napnutí pásu"
+
+msgid "Support Bobine"
+msgstr "Držák cívky"
+
+msgid "Calibrations Models Dual Head"
+msgstr "Kalibrační modely dva extrudéry"
+
+msgid "Calibration Models Single Head"
+msgstr "Kalibrační modely jeden extrudér"
+
+msgid "Cosmyx Handy Models"
+msgstr "Cosmyx užitečné modely"
+
 msgid "Text"
 msgstr "Text"
 
@@ -2273,6 +2349,9 @@ msgstr "Přidat primitiv"
 
 msgid "Add Handy models"
 msgstr "Přidat užitečné modely"
+
+msgid "Cosmyx 3D Models"
+msgstr "Cosmyx 3D modely"
 
 msgid "Add Models"
 msgstr "Přidat modely"
@@ -3405,20 +3484,31 @@ msgstr ""
 msgid "About %s"
 msgstr "O %s"
 
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "OrcaSlicer je založen na BambuStudio, PrusaSlicer a SuperSlicer."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr "BambuStudio je původně založen na PrusaSliceru od PrusaResearch."
-
-msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
-msgstr "PrusaSlicer původně vychází ze Slic3r od Alessandra Ranellucciho."
+#, c-format, boost-format
+msgid "Cosmyx Bundle Version %s"
+msgstr "Verze balíčku Cosmyx %s"
 
 msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
+"Open-source slicing stands on a tradition of collaboration and attribution. "
+"Slic3r, created by Alessandro Ranellucci and the RepRap community, laid the "
+"foundation. PrusaSlicer by Prusa Research built on that work, Bambu Studio "
+"forked from PrusaSlicer, and SuperSlicer extended it with community-driven "
+"enhancements. Each project carried the work of its predecessors forward, "
+"crediting those who came before."
 msgstr ""
-"Slic3r vytvořil Alessandro Ranellucci s pomocí mnoha dalších přispěvatelů."
+
+msgid ""
+"OrcaSlicer began in that same spirit, drawing from PrusaSlicer, BambuStudio, "
+"SuperSlicer, and CuraSlicer. But it has since grown far beyond its origins — "
+"introducing advanced calibration tools, precise wall and seam control and "
+"hundreds of other features."
+msgstr ""
+
+msgid ""
+"Today, OrcaSlicer is the most widely used and actively developed open-source "
+"slicer in the 3D printing community. Many of its innovations have been "
+"adopted by other slicers, making it a driving force for the entire industry."
+msgstr ""
 
 msgid "Version"
 msgstr "Verze"
@@ -5404,7 +5494,7 @@ msgstr "Objem:"
 msgid "Size:"
 msgstr "Velikost:"
 
-#, boost-format
+#, c-format, boost-format
 msgid ""
 "Conflicts of G-code paths have been found at layer %d, Z = %.2lfmm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -5633,6 +5723,9 @@ msgstr "Tisková deska"
 msgid "Export G-code file"
 msgstr "Exportovat G-code soubor"
 
+msgid "Export all G-code files"
+msgstr "Exportovat všechny G-code soubory"
+
 msgid "Send"
 msgstr "Odeslat"
 
@@ -5665,9 +5758,6 @@ msgstr "Zobrazit složku s konfigurací"
 
 msgid "Show Tip of the Day"
 msgstr "Zobrazit tip dne"
-
-msgid "Check for Updates"
-msgstr "Zkontrolovat aktualizace"
 
 msgid "Open Network Test"
 msgstr "Otevřít test sítě"
@@ -6502,9 +6592,6 @@ msgstr "Název nesmí být prázdný."
 msgid "The name is not allowed to start with space character."
 msgstr "Název nesmí začínat mezerou."
 
-msgid "The name is not allowed to end with space character."
-msgstr "Název nesmí končit mezerou."
-
 msgid "The name is not allowed to exceed 32 characters."
 msgstr "The name is not allowed to exceed 32 characters."
 
@@ -6859,9 +6946,6 @@ msgstr "%s info"
 #, c-format, boost-format
 msgid "%s information"
 msgstr "Informace o %s"
-
-msgid "Skip"
-msgstr "Přeskočit"
 
 msgid "Newer 3MF version"
 msgstr "Newer 3MF version"
@@ -7799,6 +7883,9 @@ msgstr "Slicing desky %d"
 
 msgid "Please resolve the slicing errors and publish again."
 msgstr "Nejprve prosím opravte chyby při řezu a publikujte znovu."
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Vyberte adresář pro export všech G-code souborů"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -9770,8 +9857,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add "
-"Primitive\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add Primitive"
+"\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "Při záznamu časosběru bez tiskové hlavy je doporučeno přidat „Časosběr věž "
 "na očištění trysky“.\n"
@@ -10042,6 +10129,15 @@ msgid ""
 msgstr ""
 "Teplota desky při použití Texturované PEI podložky. Hodnota 0 znamená, že "
 "filament nepodporuje tisk na Texturované PEI podložce."
+
+msgid "Cosmyx Textured Bed"
+msgstr "Cosmyx texturovaná podložka"
+
+msgid ""
+"Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
+"means the filament does not support printing on the Cosmyx Textured Bed. A "
+"value of 0 means the bed is off."
+msgstr ""
 
 msgid "Volumetric speed limitation"
 msgstr "Omezení objemové rychlosti"
@@ -12259,6 +12355,24 @@ msgid ""
 msgstr ""
 "Teplota desky pro počáteční vrstvu. Hodnota 0 znamená, že filament "
 "nepodporuje tisk na Texturované PEI podložce."
+
+msgid ""
+"Bed temperature for layers except the initial one. A value of -1 means the "
+"filament does not support printing on the Cosmyx Textured Bed. A value of 0 "
+"means the bed is off."
+msgstr ""
+
+msgid "Initial layer"
+msgstr "První vrstva"
+
+msgid "Initial layer bed temperature"
+msgstr "Teplota podložky pro první vrstvu"
+
+msgid ""
+"Bed temperature of the initial layer. A value of -1 means the filament does "
+"not support printing on the Cosmyx Textured Bed. A value of 0 means the bed "
+"is off."
+msgstr ""
 
 msgid "Bed types supported by the printer."
 msgstr "Typy desek podporované tiskárnou."
@@ -14580,8 +14694,8 @@ msgid "mm/s² or %"
 msgstr "mm/s² nebo %"
 
 msgid ""
-"Acceleration of sparse infill. If the value is expressed as a percentage "
-"(e.g. 100%), it will be calculated based on the default acceleration."
+"Acceleration of sparse infill. If the value is expressed as a percentage (e."
+"g. 100%), it will be calculated based on the default acceleration."
 msgstr ""
 "Akcelerace řídké výplně. Pokud je hodnota vyjádřena v procentech (např. 100 "
 "%), bude vypočtena na základě výchozí akcelerace."
@@ -14701,10 +14815,10 @@ msgstr "Plná rychlost ventilátoru na vrstvě"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
-"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
-"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" will be ignored if lower than "
+"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "Rychlost ventilátoru bude lineárně zvyšována od nuly na vrstvě \"zavřít "
 "ventilátor na prvních x vrstvách\" až po maximum na vrstvě "
@@ -15083,6 +15197,12 @@ msgstr "Nerezová ocel"
 
 msgid "Tungsten carbide"
 msgstr "Tungsten carbide"
+
+msgid "E3D"
+msgstr "E3D"
+
+msgid "CHT"
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "HRC trysky"
@@ -16603,8 +16723,8 @@ msgid "Role base wipe speed"
 msgstr "Rychlost vytírání podle role"
 
 msgid ""
-"The wipe speed is determined by the speed of the current extrusion role. "
-"e.g. if a wipe action is executed immediately following an outer wall "
+"The wipe speed is determined by the speed of the current extrusion role. e."
+"g. if a wipe action is executed immediately following an outer wall "
 "extrusion, the speed of the outer wall extrusion will be utilized for the "
 "wipe action."
 msgstr ""
@@ -17034,8 +17154,8 @@ msgid ""
 "Use \"Even-odd\" for 3DLabPrint airplane models. Use \"Close holes\" to "
 "close all holes in the model."
 msgstr ""
-"Použijte \"Sudý-lichý\" pro modely letadel 3DLabPrint. Použijte \"Zavřít "
-"díry\" pro uzavření všech otvorů v modelu."
+"Použijte \"Sudý-lichý\" pro modely letadel 3DLabPrint. Použijte \"Zavřít díry"
+"\" pro uzavření všech otvorů v modelu."
 
 msgid "Regular"
 msgstr "Obvyklý"
@@ -17495,8 +17615,8 @@ msgstr "Aktivovat kontrolu teploty"
 
 msgid ""
 "Enable this option for automated chamber temperature control. This option "
-"activates the emitting of an M191 command before the "
-"\"machine_start_gcode\"\n"
+"activates the emitting of an M191 command before the \"machine_start_gcode"
+"\"\n"
 " which sets the chamber temperature and waits until it is reached. In "
 "addition, it emits an M141 command at the end of the print to turn off the "
 "chamber heater, if present.\n"
@@ -17556,6 +17676,14 @@ msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one."
 msgstr "Teplota trysky pro vrstvy po úvodní vrstvě."
+
+msgid "Ironing temperature"
+msgstr "Teplota žehlení"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr ""
 
 #, fuzzy
 msgid "Detect thin walls"
@@ -18454,11 +18582,11 @@ msgid "Debug level"
 msgstr "Úroveň ladění"
 
 msgid ""
-"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, "
-"5:trace\n"
+"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 msgstr ""
-"Nastaví úroveň logování pro ladění. 0:fatal, 1:error, 2:warning, 3:info, "
-"4:debug, 5:trace\n"
+"Nastaví úroveň logování pro ladění. 0:fatal, 1:error, 2:warning, 3:info, 4:"
+"debug, 5:trace\n"
 
 msgid "Enable timelapse for print"
 msgstr "Povolit časosběr pro tisk"
@@ -18993,8 +19121,8 @@ msgstr "Zadaný soubor nelze načíst, protože je prázdný."
 msgid ""
 "Unknown file format. Input file must have .stl, .obj, .amf(.xml) extension."
 msgstr ""
-"Neznámý formát souboru. Vstupní soubor musí mít příponu .stl, .obj "
-"nebo .amf(.xml)."
+"Neznámý formát souboru. Vstupní soubor musí mít příponu .stl, .obj nebo ."
+"amf(.xml)."
 
 msgid "Unknown file format. Input file must have .3mf or .zip.amf extension."
 msgstr ""
@@ -20208,8 +20336,8 @@ msgstr ""
 "Chcete to přepsat?"
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you "
-"selected\".\n"
+"We would rename the presets as \"Vendor Type Serial @printer you selected"
+"\".\n"
 "To add preset for more printers, please go to printer selection"
 msgstr ""
 "Předvolby přejmenujeme na „Výrobce Typ Sériové číslo @tiskárna, kterou jste "
@@ -22185,6 +22313,30 @@ msgstr ""
 "Zamezte kroucení\n"
 "Víte, že při tisku materiálů náchylných ke kroucení, jako je ABS, může "
 "vhodné zvýšení teploty vyhřívané desky snížit pravděpodobnost kroucení?"
+
+#~ msgid "Based on PrusaSlicer and BambuStudio"
+#~ msgstr "Založeno na PrusaSliceru a BambuStudio"
+
+#~ msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "OrcaSlicer je založen na BambuStudio, PrusaSlicer a SuperSlicer."
+
+#~ msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+#~ msgstr "BambuStudio je původně založen na PrusaSliceru od PrusaResearch."
+
+#~ msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
+#~ msgstr "PrusaSlicer původně vychází ze Slic3r od Alessandra Ranellucciho."
+
+#~ msgid ""
+#~ "Slic3r was created by Alessandro Ranellucci with the help of many other "
+#~ "contributors."
+#~ msgstr ""
+#~ "Slic3r vytvořil Alessandro Ranellucci s pomocí mnoha dalších přispěvatelů."
+
+#~ msgid "Check for Updates"
+#~ msgstr "Zkontrolovat aktualizace"
+
+#~ msgid "The name is not allowed to end with space character."
+#~ msgstr "Název nesmí končit mezerou."
 
 #~ msgid "Key 19"
 #~ msgstr "Klávesa 19"

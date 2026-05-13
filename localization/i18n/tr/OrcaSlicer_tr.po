@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Orca Slicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 23:26+0800\n"
+"POT-Creation-Date: 2026-05-12 09:58+0200\n"
 "PO-Revision-Date: 2026-03-19 04:34+0300\n"
 "Last-Translator: GlauTech\n"
 "Language-Team: \n"
@@ -1633,9 +1633,6 @@ msgid ""
 "Configuration file \"%1%\" was loaded, but some values were not recognized."
 msgstr "\"%1%\" yapılandırma dosyası yüklendi ancak bazı değerler tanınamadı."
 
-msgid "Based on PrusaSlicer and BambuStudio"
-msgstr "PrusaSlicer ve BambuStudio'ya dayanmaktadır"
-
 msgid "STEP files"
 msgstr "STEP dosyaları"
 
@@ -1710,6 +1707,32 @@ msgstr "OrcaSlicer'da işlenmeyen bir istisna oluştu: %1%"
 
 msgid "Untitled"
 msgstr "İsimsiz"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "CosmoSlice'ın yeni bir sürümü yüklendi."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Lütfen Cosmyx AppData klasörünü yedekleyin ve silin."
+
+#, c-format, boost-format
+msgid "Build: %s → %s"
+msgstr "Derleme: %s → %s"
+
+#, c-format, boost-format
+msgid "Bundle: %s → %s"
+msgstr "Paket: %s → %s"
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "OrcaSlicer'ı kapatıp AppData klasörünüzü açmak ister misiniz?"
+
+msgid "New Build Detected"
+msgstr "Yeni derleme algılandı"
+
+msgid "Skip"
+msgstr "Atla"
+
+msgid "Don't show again for future builds"
+msgstr "Gelecekteki yapılar için tekrar gösterme"
 
 msgid "Reloading network plug-in..."
 msgstr "Ağ eklentisi yeniden yükleniyor..."
@@ -2127,6 +2150,59 @@ msgstr ""
 msgid "Suggestion"
 msgstr "Telkin"
 
+msgid "Calage 1 SNDT"
+msgstr "Kalibrasyon 1 SNDT"
+
+msgid "Calage 2 SNDT"
+msgstr "Kalibrasyon 2 SNDT"
+
+msgid "Calage 3 SNDT"
+msgstr "Kalibrasyon 3 SNDT"
+
+msgid "Cube Bicolore"
+msgstr "İki renkli küp"
+
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill "
+"direction' and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f°\n"
+"- Solid infill direction: %.0f°\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calage 1 Nova"
+msgstr "Kalibrasyon 1 Nova"
+
+msgid "Cosmyx Cube"
+msgstr "Cosmyx Cube"
+
+msgid "Control Tension Belt"
+msgstr "Kayış gerginlik kontrolü"
+
+msgid "Support Bobine"
+msgstr "Makara tutacağı"
+
+msgid "Calibrations Models Dual Head"
+msgstr "Kalibrasyon modelleri çift kafa"
+
+msgid "Calibration Models Single Head"
+msgstr "Kalibrasyon modelleri tek kafa"
+
+msgid "Cosmyx Handy Models"
+msgstr "Cosmyx kullanışlı modeller"
+
 msgid "Text"
 msgstr "Metin"
 
@@ -2289,6 +2365,9 @@ msgstr "Şekil ekle"
 
 msgid "Add Handy models"
 msgstr "Pratik model ekle"
+
+msgid "Cosmyx 3D Models"
+msgstr "Cosmyx 3D Modelleri"
 
 msgid "Add Models"
 msgstr "Model ekle"
@@ -3422,25 +3501,31 @@ msgstr ""
 msgid "About %s"
 msgstr "Hakkında %s"
 
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "OrcaSlicer, BambuStudio, PrusaSlicer ve SuperSlicer'ı temel alır."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr ""
-"BambuStudio orijinal olarak PrusaResearch'ün PrusaSlicer'ını temel "
-"almaktadır."
-
-msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
-msgstr ""
-"PrusaSlicer orijinal olarak Alessandro Ranellucci'nin Slic3r'sine "
-"dayanmaktadır."
+#, c-format, boost-format
+msgid "Cosmyx Bundle Version %s"
+msgstr "Cosmyx paket sürümü %s"
 
 msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
+"Open-source slicing stands on a tradition of collaboration and attribution. "
+"Slic3r, created by Alessandro Ranellucci and the RepRap community, laid the "
+"foundation. PrusaSlicer by Prusa Research built on that work, Bambu Studio "
+"forked from PrusaSlicer, and SuperSlicer extended it with community-driven "
+"enhancements. Each project carried the work of its predecessors forward, "
+"crediting those who came before."
 msgstr ""
-"Slic3r, Alessandro Ranellucci tarafından diğer birçok katkıda bulunanların "
-"yardımıyla yaratıldı."
+
+msgid ""
+"OrcaSlicer began in that same spirit, drawing from PrusaSlicer, BambuStudio, "
+"SuperSlicer, and CuraSlicer. But it has since grown far beyond its origins — "
+"introducing advanced calibration tools, precise wall and seam control and "
+"hundreds of other features."
+msgstr ""
+
+msgid ""
+"Today, OrcaSlicer is the most widely used and actively developed open-source "
+"slicer in the 3D printing community. Many of its innovations have been "
+"adopted by other slicers, making it a driving force for the entire industry."
+msgstr ""
 
 msgid "Version"
 msgstr "Sürüm"
@@ -5440,7 +5525,7 @@ msgstr "Hacim:"
 msgid "Size:"
 msgstr "Boyut:"
 
-#, boost-format
+#, c-format, boost-format
 msgid ""
 "Conflicts of G-code paths have been found at layer %d, Z = %.2lfmm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -5670,6 +5755,9 @@ msgstr "Plakayı Yazdır"
 msgid "Export G-code file"
 msgstr "G-kod dosyasını dışa aktar"
 
+msgid "Export all G-code files"
+msgstr "Tüm G-code dosyalarını dışa aktar"
+
 msgid "Send"
 msgstr "Gönder"
 
@@ -5702,9 +5790,6 @@ msgstr "Yapılandırma Klasörünü Göster"
 
 msgid "Show Tip of the Day"
 msgstr "Günün İpucunu Göster"
-
-msgid "Check for Updates"
-msgstr "Güncellemeleri Kontrol Et"
 
 msgid "Open Network Test"
 msgstr "Ağ Testini Aç"
@@ -6542,9 +6627,6 @@ msgstr "Ad alanı boş bırakılamaz."
 msgid "The name is not allowed to start with space character."
 msgstr "Adın boşluk karakteriyle başlamasına izin verilmez."
 
-msgid "The name is not allowed to end with space character."
-msgstr "Adın boşluk karakteriyle bitmesine izin verilmez."
-
 msgid "The name is not allowed to exceed 32 characters."
 msgstr "Adın 32 karakteri aşmasına izin verilmez."
 
@@ -6903,9 +6985,6 @@ msgstr "%s bilgi"
 #, c-format, boost-format
 msgid "%s information"
 msgstr "%s bilgisi"
-
-msgid "Skip"
-msgstr "Atla"
 
 #, fuzzy
 msgid "Newer 3MF version"
@@ -7853,6 +7932,9 @@ msgstr "Plaka %d dilimleniyor"
 
 msgid "Please resolve the slicing errors and publish again."
 msgstr "Lütfen dilimleme hatalarını giderip tekrar yayınlayın."
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Tüm G-code dosyalarını dışa aktarmak için bir dizin seçin"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -9882,8 +9964,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add "
-"Primitive\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add Primitive"
+"\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "Araç başlığı olmadan timelapse kaydederken, bir \"Timelapse Wipe Tower\" "
 "eklenmesi önerilir.\n"
@@ -10153,6 +10235,15 @@ msgid ""
 msgstr ""
 "Textured PEI Plate takıldığın da yatak sıcaklığı. 0 Değeri, filamentin "
 "Textured PEI Plate üzerine yazdırmayı desteklemediği anlamına gelir."
+
+msgid "Cosmyx Textured Bed"
+msgstr "Cosmyx dokulu tabla"
+
+msgid ""
+"Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
+"means the filament does not support printing on the Cosmyx Textured Bed. A "
+"value of 0 means the bed is off."
+msgstr ""
 
 msgid "Volumetric speed limitation"
 msgstr "Hacimsel Hız Sınırlaması"
@@ -11789,8 +11880,8 @@ msgid ""
 "Please select \"By object\" print sequence to print multiple objects in "
 "spiral vase mode."
 msgstr ""
-"Birden fazla nesneyi spiral vazo modunda yazdırmak için lütfen \"Nesneye "
-"göre\" yazdırma sırasını seçin."
+"Birden fazla nesneyi spiral vazo modunda yazdırmak için lütfen \"Nesneye göre"
+"\" yazdırma sırasını seçin."
 
 msgid ""
 "The spiral vase mode does not work when an object contains more than one "
@@ -12396,6 +12487,24 @@ msgid ""
 msgstr ""
 "İlk katmanın yatak sıcaklığı. 0 Değeri, filamentin Dokulu PEI Plaka üzerine "
 "yazdırmayı desteklemediği anlamına gelir."
+
+msgid ""
+"Bed temperature for layers except the initial one. A value of -1 means the "
+"filament does not support printing on the Cosmyx Textured Bed. A value of 0 "
+"means the bed is off."
+msgstr ""
+
+msgid "Initial layer"
+msgstr "İlk katman"
+
+msgid "Initial layer bed temperature"
+msgstr "İlk katman tabla sıcaklığı"
+
+msgid ""
+"Bed temperature of the initial layer. A value of -1 means the filament does "
+"not support printing on the Cosmyx Textured Bed. A value of 0 means the bed "
+"is off."
+msgstr ""
 
 msgid "Bed types supported by the printer."
 msgstr "Yazıcının desteklediği yatak türleri."
@@ -14752,8 +14861,8 @@ msgid "mm/s² or %"
 msgstr "mm/s² veya %"
 
 msgid ""
-"Acceleration of sparse infill. If the value is expressed as a percentage "
-"(e.g. 100%), it will be calculated based on the default acceleration."
+"Acceleration of sparse infill. If the value is expressed as a percentage (e."
+"g. 100%), it will be calculated based on the default acceleration."
 msgstr ""
 "Seyrek dolgunun hızlandırılması. Değer yüzde olarak ifade edilirse (örn. "
 "%100), varsayılan ivmeye göre hesaplanacaktır."
@@ -14873,17 +14982,16 @@ msgstr "Maksimum fan hızı"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
-"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
-"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" will be ignored if lower than "
+"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "Fan hızı, \"close_fan_the_first_x_layers\" katmanında sıfırdan "
 "\"ful_fan_speed_layer\" katmanında maksimuma doğrusal olarak artırılacaktır. "
 "\"full_fan_speed_layer\", \"close_fan_the_first_x_layers\" değerinden "
-"düşükse göz ardı edilecektir; bu durumda fan, "
-"\"close_fan_the_first_x_layers\" + 1 katmanında izin verilen maksimum hızda "
-"çalışacaktır."
+"düşükse göz ardı edilecektir; bu durumda fan, \"close_fan_the_first_x_layers"
+"\" + 1 katmanında izin verilen maksimum hızda çalışacaktır."
 
 msgid "layer"
 msgstr "katman"
@@ -15264,6 +15372,12 @@ msgstr "Paslanmaz çelik"
 
 msgid "Tungsten carbide"
 msgstr "Tungsten karbür"
+
+msgid "E3D"
+msgstr "E3D"
+
+msgid "CHT"
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "Nozul HRC"
@@ -16818,8 +16932,8 @@ msgid "Role base wipe speed"
 msgstr "Otomatik temizleme hızı"
 
 msgid ""
-"The wipe speed is determined by the speed of the current extrusion role. "
-"e.g. if a wipe action is executed immediately following an outer wall "
+"The wipe speed is determined by the speed of the current extrusion role. e."
+"g. if a wipe action is executed immediately following an outer wall "
 "extrusion, the speed of the outer wall extrusion will be utilized for the "
 "wipe action."
 msgstr ""
@@ -17721,8 +17835,8 @@ msgstr "Sıcaklık kontrolünü etkinleştirin"
 
 msgid ""
 "Enable this option for automated chamber temperature control. This option "
-"activates the emitting of an M191 command before the "
-"\"machine_start_gcode\"\n"
+"activates the emitting of an M191 command before the \"machine_start_gcode"
+"\"\n"
 " which sets the chamber temperature and waits until it is reached. In "
 "addition, it emits an M141 command at the end of the print to turn off the "
 "chamber heater, if present.\n"
@@ -17785,6 +17899,14 @@ msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one."
 msgstr "İlk katmandan sonraki katmanlar için nozul sıcaklığı."
+
+msgid "Ironing temperature"
+msgstr "Ütüleme sıcaklığı"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr ""
 
 #, fuzzy
 msgid "Detect thin walls"
@@ -18703,8 +18825,8 @@ msgid "Debug level"
 msgstr "Hata ayıklama düzeyi"
 
 msgid ""
-"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, "
-"5:trace\n"
+"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 msgstr ""
 "Hata ayıklama günlüğü düzeyini ayarlar. 0:önemli, 1:hata, 2:uyarı, 3:bilgi, "
 "4:hata ayıklama, 5:izleme\n"
@@ -20493,8 +20615,8 @@ msgstr ""
 "Yeniden yazmak ister misin?"
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you "
-"selected\".\n"
+"We would rename the presets as \"Vendor Type Serial @printer you selected"
+"\".\n"
 "To add preset for more printers, please go to printer selection"
 msgstr ""
 "Ön ayarları şu şekilde yeniden adlandırırdık: \"Satıcı Türü Seçtiğiniz Seri "
@@ -22522,6 +22644,35 @@ msgstr ""
 "ABS gibi bükülmeye yatkın malzemelere baskı yaparken, ısıtma yatağı "
 "sıcaklığının uygun şekilde arttırılmasının bükülme olasılığını "
 "azaltabileceğini biliyor muydunuz?"
+
+#~ msgid "Based on PrusaSlicer and BambuStudio"
+#~ msgstr "PrusaSlicer ve BambuStudio'ya dayanmaktadır"
+
+#~ msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "OrcaSlicer, BambuStudio, PrusaSlicer ve SuperSlicer'ı temel alır."
+
+#~ msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+#~ msgstr ""
+#~ "BambuStudio orijinal olarak PrusaResearch'ün PrusaSlicer'ını temel "
+#~ "almaktadır."
+
+#~ msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
+#~ msgstr ""
+#~ "PrusaSlicer orijinal olarak Alessandro Ranellucci'nin Slic3r'sine "
+#~ "dayanmaktadır."
+
+#~ msgid ""
+#~ "Slic3r was created by Alessandro Ranellucci with the help of many other "
+#~ "contributors."
+#~ msgstr ""
+#~ "Slic3r, Alessandro Ranellucci tarafından diğer birçok katkıda "
+#~ "bulunanların yardımıyla yaratıldı."
+
+#~ msgid "Check for Updates"
+#~ msgstr "Güncellemeleri Kontrol Et"
+
+#~ msgid "The name is not allowed to end with space character."
+#~ msgstr "Adın boşluk karakteriyle bitmesine izin verilmez."
 
 #~ msgid "BambuStudio warning"
 #~ msgstr "BambuStudio uyarısı"

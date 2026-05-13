@@ -61,7 +61,7 @@ function SortUI()
 	{
 		let sModel=ModelList[n];	
 		/* ORCA use label tag to allow checkbox to toggle when user ckicked to text */
-		HtmlMode+='<label><input type="checkbox" mode="'+sModel['model']+'"  nozzle="'+sModel['nozzle_selected']+'"   onChange="MachineClick()" /><span>'+sModel['model']+'</span></label>';
+		HtmlMode+='<label><input type="checkbox" mode="'+sModel['model']+'"  nozzle="'+sModel['nozzle_selected']+'"   onChange="MachineClick()" />'+(sModel['display_name'] || sModel['model'])+'</label>';
 	}
 	
 	$('#MachineList .CValues').append(HtmlMode);	
@@ -165,7 +165,8 @@ function SortUI()
 	        if(pFila.length==0)
 		    {
 				/* ORCA use label tag to allow checkbox to toggle when user ckicked to text */
-			    let HtmlFila='<label class="MItem"><input type="checkbox" onChange="UpdateStats()" vendor="'+fVendor+'"  filatype="'+fType+'" filalist="'+fWholeName+';'+'"  model="'+fModel+'" name="'+fShortName+'" /><span>'+fShortName+'</span></label>';
+			    let fDisplayName=OneFila['display_name'] || fShortName;
+			    let HtmlFila='<label class="MItem"><input type="checkbox" vendor="'+fVendor+'"  filatype="'+fType+'" filalist="'+fWholeName+';'+'"  model="'+fModel+'" name="'+fShortName+'" />'+fDisplayName+'</label>';
 			
 			    $("#ItemBlockArea").append(HtmlFila);
 		    } 
@@ -237,8 +238,8 @@ function SortUI()
 	//--If Need Install Network Plugin
 	if(m_ProfileItem["network_plugin_install"]!='1' || (m_ProfileItem["network_plugin_install"]=='1' && m_ProfileItem["network_plugin_compability"]=='0') )
 	{
-		$("#AcceptBtn").hide();
-		$("#GotoNetPluginBtn").show();
+		$("#AcceptBtn").show();
+		$("#GotoNetPluginBtn").hide();
 	}
 
 	UpdateStats();

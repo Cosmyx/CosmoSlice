@@ -32,9 +32,6 @@ on:
      - 'scripts/flatpak/**'
 
 
-  schedule:
-      - cron: '0 17 * * *' # run once a day at 1 AM Singapore time (UTC+8)
-
   workflow_dispatch: # allows for manual dispatch
     inputs:
       build-deps-only:
@@ -165,11 +162,17 @@ jobs:
       date:
       ver:
       ver_pure:
+      cosmyx_patch_ver:
     steps:
     - name: "Remove unneeded stuff to free disk space"
       run:
         rm -rf /usr/local/lib/android/* /usr/share/dotnet/* /opt/ghc1/* "/usr/local/share/boost1/*" /opt/hostedtoolcache1/*
     - uses: actions/checkout@v6
+    - name: Read CosmoSlice patch version
+      shell: bash
+      run: |
+        patch_version=$(grep 'set(COSMYX_PATCH_VERSION' version.inc | cut -d '"' -f2)
+        echo "cosmyx_patch_ver=$patch_version" >> "$GITHUB_ENV"
     - name: Get the version and date
       run: |
         ver_pure=$(grep 'set(SoftFever_VERSION' version.inc | cut -d '"' -f2)
@@ -220,10 +223,10 @@ jobs:
     - name: Upload artifacts Flatpak
       uses: actions/upload-artifact@v6
       with:
-        name: OrcaSlicer-Linux-flatpak_${{ env.ver }}_${{ matrix.variant.arch }}.flatpak
-        path: '/__w/OrcaSlicer/OrcaSlicer/OrcaSlicer-Linux-flatpak_${{ env.ver }}_${{ matrix.variant.arch }}.flatpak'
+        name: CosmoSlice-${{ env.cosmyx_patch_ver }}-Orca-${{ env.ver_pure }}-Linux-flatpak-${{ matrix.variant.arch }}
+        path: '${{ github.workspace }}/OrcaSlicer-Linux-flatpak_${{ env.ver }}_${{ matrix.variant.arch }}.flatpak'
     - name: Deploy Flatpak to nightly release
-      if: github.repository == 'OrcaSlicer/OrcaSlicer' && github.ref == 'refs/heads/main'
+      if: false
       uses: WebFreak001/deploy-nightly@v3.2.0
       with:
         upload_url: https://uploads.github.com/repos/OrcaSlicer/OrcaSlicer/releases/137995723/assets{?name,label}

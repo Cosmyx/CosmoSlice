@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 23:26+0800\n"
+"POT-Creation-Date: 2026-05-12 09:58+0200\n"
 "PO-Revision-Date: 2025-10-25 23:01+0300\n"
 "Last-Translator: Gintaras Kučinskas <sharanchius@gmail.com>\n"
 "Language-Team: \n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && (n%100<11 || n%100>19) ? 0 : "
-"n%10>=2 && n%10<=9 && (n%100<11 || n%100>19) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && (n%100<11 || n%100>19) ? 0 : n"
+"%10>=2 && n%10<=9 && (n%100<11 || n%100>19) ? 1 : 2);\n"
 "X-Generator: Poedit 3.6\n"
 
 msgid "right"
@@ -1631,9 +1631,6 @@ msgstr ""
 "Konfigūracijos failas „%1%“ buvo įkeltas, tačiau kai kurios reikšmės nebuvo "
 "atpažintos."
 
-msgid "Based on PrusaSlicer and BambuStudio"
-msgstr "Remiantis „PrusaSlicer“ ir „BambuStudio“"
-
 msgid "STEP files"
 msgstr "STEP files"
 
@@ -1709,6 +1706,32 @@ msgstr "OrcaSlicer susidūrė su neapdorota klaida: %1%"
 
 msgid "Untitled"
 msgstr "Be pavadinimo"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "Įdiegta nauja CosmoSlice versija."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Sukurkite atsarginę kopiją ir ištrinkite Cosmyx AppData aplanką."
+
+#, c-format, boost-format
+msgid "Build: %s → %s"
+msgstr "Versija: %s → %s"
+
+#, c-format, boost-format
+msgid "Bundle: %s → %s"
+msgstr "Paketas: %s → %s"
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Ar norite uždaryti OrcaSlicer ir atidaryti AppData aplanką?"
+
+msgid "New Build Detected"
+msgstr "Aptikta nauja versija"
+
+msgid "Skip"
+msgstr "Praleisti"
+
+msgid "Don't show again for future builds"
+msgstr "Nerodyti dar kartą būsimoms versijoms"
 
 msgid "Reloading network plug-in..."
 msgstr "Reloading network plug-in..."
@@ -2132,6 +2155,59 @@ msgstr ""
 msgid "Suggestion"
 msgstr "Suggestion"
 
+msgid "Calage 1 SNDT"
+msgstr "Kalibravimas 1 SNDT"
+
+msgid "Calage 2 SNDT"
+msgstr "Kalibravimas 2 SNDT"
+
+msgid "Calage 3 SNDT"
+msgstr "Kalibravimas 3 SNDT"
+
+msgid "Cube Bicolore"
+msgstr "Dviejų spalvų kubas"
+
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill "
+"direction' and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f°\n"
+"- Solid infill direction: %.0f°\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calage 1 Nova"
+msgstr "Kalibravimas 1 Nova"
+
+msgid "Cosmyx Cube"
+msgstr "Cosmyx Cube"
+
+msgid "Control Tension Belt"
+msgstr "Diržo įtampos kontrolė"
+
+msgid "Support Bobine"
+msgstr "Ritinėlio laikiklis"
+
+msgid "Calibrations Models Dual Head"
+msgstr "Kalibravimo modeliai dvi galvos"
+
+msgid "Calibration Models Single Head"
+msgstr "Kalibravimo modeliai viena galva"
+
+msgid "Cosmyx Handy Models"
+msgstr "Cosmyx patogūs modeliai"
+
 msgid "Text"
 msgstr "Teskstas"
 
@@ -2294,6 +2370,9 @@ msgstr "Pridėti paprastą figūrą"
 
 msgid "Add Handy models"
 msgstr "Pridėti patogius modelius"
+
+msgid "Cosmyx 3D Models"
+msgstr "Cosmyx 3D modeliai"
 
 msgid "Add Models"
 msgstr "Pridėti modelius"
@@ -3442,22 +3521,31 @@ msgstr ""
 msgid "About %s"
 msgstr "Apie %s"
 
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "OrcaSlicer sukurtas remiantis BambuStudio, PrusaSlicer ir SuperSlicer."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr ""
-"Pradinė BambuStudio programos kūrimo bazė buvo PrusaSlicer iš PrusaResearch."
-
-msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
-msgstr ""
-"Pradinė PrusaSlicer programos kūrimo bazė buvo Slic3r, kurį sukūrė "
-"Alessandro Ranellucci."
+#, c-format, boost-format
+msgid "Cosmyx Bundle Version %s"
+msgstr "Cosmyx paketo versija %s"
 
 msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
-msgstr "Slic3r sukūrė Alessandro Ranellucci su daugelio kitų kūrėjų pagalba."
+"Open-source slicing stands on a tradition of collaboration and attribution. "
+"Slic3r, created by Alessandro Ranellucci and the RepRap community, laid the "
+"foundation. PrusaSlicer by Prusa Research built on that work, Bambu Studio "
+"forked from PrusaSlicer, and SuperSlicer extended it with community-driven "
+"enhancements. Each project carried the work of its predecessors forward, "
+"crediting those who came before."
+msgstr ""
+
+msgid ""
+"OrcaSlicer began in that same spirit, drawing from PrusaSlicer, BambuStudio, "
+"SuperSlicer, and CuraSlicer. But it has since grown far beyond its origins — "
+"introducing advanced calibration tools, precise wall and seam control and "
+"hundreds of other features."
+msgstr ""
+
+msgid ""
+"Today, OrcaSlicer is the most widely used and actively developed open-source "
+"slicer in the 3D printing community. Many of its innovations have been "
+"adopted by other slicers, making it a driving force for the entire industry."
+msgstr ""
 
 msgid "Version"
 msgstr "Versija"
@@ -5460,7 +5548,7 @@ msgstr "Tūris:"
 msgid "Size:"
 msgstr "Dydis:"
 
-#, boost-format
+#, c-format, boost-format
 msgid ""
 "Conflicts of G-code paths have been found at layer %d, Z = %.2lfmm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -5689,6 +5777,9 @@ msgstr "Spausdinti plokštę"
 msgid "Export G-code file"
 msgstr "Eksportuoti G-kodo failą"
 
+msgid "Export all G-code files"
+msgstr "Eksportuoti visus G-code failus"
+
 msgid "Send"
 msgstr "Siųsti"
 
@@ -5721,9 +5812,6 @@ msgstr "Rodyti konfigūravimo katalogą"
 
 msgid "Show Tip of the Day"
 msgstr "Rodyti dienos patarimą"
-
-msgid "Check for Updates"
-msgstr "Tikrinti atnaujinimus"
 
 msgid "Open Network Test"
 msgstr "Atidaryti tinklo testą"
@@ -6563,9 +6651,6 @@ msgstr "Neleidžiama, kad pavadinimas būtų tuščias."
 msgid "The name is not allowed to start with space character."
 msgstr "Neleidžiama, kad pavadinimas prasidėtų tarpo simboliu."
 
-msgid "The name is not allowed to end with space character."
-msgstr "Neleidžiama, kad pavadinimas baigtųsi tarpo simboliu."
-
 msgid "The name is not allowed to exceed 32 characters."
 msgstr "The name is not allowed to exceed 32 characters."
 
@@ -6925,9 +7010,6 @@ msgstr "%s info"
 #, c-format, boost-format
 msgid "%s information"
 msgstr "%s informacija"
-
-msgid "Skip"
-msgstr "Praleisti"
 
 #, fuzzy
 msgid "Newer 3MF version"
@@ -7868,6 +7950,9 @@ msgstr "Sluoksniuojama plokštė %d"
 
 msgid "Please resolve the slicing errors and publish again."
 msgstr "Prašome sutvarkyti sluoksniavimo klaidas ir publikuoti dar kartą."
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Pasirinkite katalogą, kad eksportuotumėte visus G-code failus"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -9887,8 +9972,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add "
-"Primitive\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add Primitive"
+"\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "Įrašant pakadrinį vaizdo įrašą be spausdinimo galvutės judesių, "
 "rekomenduojama naudoti „Pakadrinio valymo bokštą“.\n"
@@ -10170,6 +10255,15 @@ msgid ""
 msgstr ""
 "Pagrindo temperatūra, kai sumontuota tekstūruota PEI plokštė. Reikšmė 0 "
 "reiškia, kad gija nepalaiko spausdinimo ant tekstūruotos PEI plokštės."
+
+msgid "Cosmyx Textured Bed"
+msgstr "Cosmyx tekstūruotas stalas"
+
+msgid ""
+"Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
+"means the filament does not support printing on the Cosmyx Textured Bed. A "
+"value of 0 means the bed is off."
+msgstr ""
 
 msgid "Volumetric speed limitation"
 msgstr "Tūrinio greičio ribojimas"
@@ -11463,8 +11557,8 @@ msgid ""
 msgstr ""
 "Įterptinės programinės įrangos versija yra nenormali. Prieš spausdinant "
 "reikia pataisyti ir atnaujinti. Ar norite atnaujinti dabar? Taip pat galite "
-"atnaujinti vėliau spausdintuve arba atnaujinti kitą kartą paleisdami "
-"\"Orca\"."
+"atnaujinti vėliau spausdintuve arba atnaujinti kitą kartą paleisdami \"Orca"
+"\"."
 
 msgid "Extension Board"
 msgstr "Išplėtimo plokštė"
@@ -11876,8 +11970,8 @@ msgid ""
 "The prime tower is currently only supported for the Marlin, RepRap/Sprinter, "
 "RepRapFirmware and Repetier G-code flavors."
 msgstr ""
-"Pagrindinis bokštas šiuo metu palaikomas tik \"Marlin\", \"RepRap/"
-"Sprinter\", \"RepRapFirmware\" ir \"Repetier\" G-kodo tipuose."
+"Pagrindinis bokštas šiuo metu palaikomas tik \"Marlin\", \"RepRap/Sprinter"
+"\", \"RepRapFirmware\" ir \"Repetier\" G-kodo tipuose."
 
 msgid "The prime tower is not supported in \"By object\" print."
 msgstr "Pirminis bokštas nepalaikomas spausdinant \"Pagal objektą\"."
@@ -12422,6 +12516,24 @@ msgid ""
 msgstr ""
 "Pirmojo sluoksnio temperatūra. 0 reiškia, kad gija nepalaiko spausdinimo ant "
 "tekstūruotos PEI plokštės."
+
+msgid ""
+"Bed temperature for layers except the initial one. A value of -1 means the "
+"filament does not support printing on the Cosmyx Textured Bed. A value of 0 "
+"means the bed is off."
+msgstr ""
+
+msgid "Initial layer"
+msgstr "Pradinis sluoksnis"
+
+msgid "Initial layer bed temperature"
+msgstr "Stalo temperatūra pirmajam sluoksniui"
+
+msgid ""
+"Bed temperature of the initial layer. A value of -1 means the filament does "
+"not support printing on the Cosmyx Textured Bed. A value of 0 means the bed "
+"is off."
+msgstr ""
 
 msgid "Bed types supported by the printer."
 msgstr "Spausdintuvo palaikomi pagrindo tipai."
@@ -14795,8 +14907,8 @@ msgid "mm/s² or %"
 msgstr "mm/s² arba %"
 
 msgid ""
-"Acceleration of sparse infill. If the value is expressed as a percentage "
-"(e.g. 100%), it will be calculated based on the default acceleration."
+"Acceleration of sparse infill. If the value is expressed as a percentage (e."
+"g. 100%), it will be calculated based on the default acceleration."
 msgstr ""
 "Retų užpildų pagreitis. Jei reikšmė išreikšta procentais (pvz., 100 %), ji "
 "bus apskaičiuota pagal numatytąjį pagreitį."
@@ -14918,10 +15030,10 @@ msgstr "Visas ventiliatoriaus greitis sluoksnyje"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
-"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
-"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" will be ignored if lower than "
+"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "Ventiliatoriaus greitis bus didinamas tiesiškai nuo nulio sluoksnyje "
 "\"close_fan_the_first_x_layers\" iki maksimalaus sluoksnyje "
@@ -15310,6 +15422,12 @@ msgstr "Nerūdijantis plienas"
 
 msgid "Tungsten carbide"
 msgstr "Tungsten carbide"
+
+msgid "E3D"
+msgstr "E3D"
+
+msgid "CHT"
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "Purkštuko HRC"
@@ -16860,8 +16978,8 @@ msgid "Role base wipe speed"
 msgstr "Vaidmens pagrindo nuvalymo greitis"
 
 msgid ""
-"The wipe speed is determined by the speed of the current extrusion role. "
-"e.g. if a wipe action is executed immediately following an outer wall "
+"The wipe speed is determined by the speed of the current extrusion role. e."
+"g. if a wipe action is executed immediately following an outer wall "
 "extrusion, the speed of the outer wall extrusion will be utilized for the "
 "wipe action."
 msgstr ""
@@ -17768,8 +17886,8 @@ msgstr "Suaktyvinti temperatūros reguliavimą"
 
 msgid ""
 "Enable this option for automated chamber temperature control. This option "
-"activates the emitting of an M191 command before the "
-"\"machine_start_gcode\"\n"
+"activates the emitting of an M191 command before the \"machine_start_gcode"
+"\"\n"
 " which sets the chamber temperature and waits until it is reached. In "
 "addition, it emits an M141 command at the end of the print to turn off the "
 "chamber heater, if present.\n"
@@ -17831,6 +17949,14 @@ msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one."
 msgstr "Po pradinio sluoksnio esančių sluoksnių purkštuko temperatūra."
+
+msgid "Ironing temperature"
+msgstr "Lyginimo temperatūra"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr ""
 
 #, fuzzy
 msgid "Detect thin walls"
@@ -18747,8 +18873,8 @@ msgid "Debug level"
 msgstr "Derinimo lygis"
 
 msgid ""
-"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, "
-"5:trace\n"
+"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 msgstr ""
 "Nustato derinimo žurnalizavimo lygį. 0: mirtinas, 1: klaida, 2: įspėjimas, "
 "3: informacija, 4: derinimas, 5: sekimas\n"
@@ -19291,13 +19417,13 @@ msgstr "Pateikto failo nepavyko perskaityti, nes jis tuščias"
 msgid ""
 "Unknown file format. Input file must have .stl, .obj, .amf(.xml) extension."
 msgstr ""
-"Nežinomas failo formatas. Įvesties failo plėtinys turi "
-"būti .stl, .obj, .amf(.xml)."
+"Nežinomas failo formatas. Įvesties failo plėtinys turi būti .stl, .obj, ."
+"amf(.xml)."
 
 msgid "Unknown file format. Input file must have .3mf or .zip.amf extension."
 msgstr ""
-"Nežinomas failo formatas. Įvesties failo plėtinys turi būti .3mf "
-"arba .zip.amf."
+"Nežinomas failo formatas. Įvesties failo plėtinys turi būti .3mf arba .zip."
+"amf."
 
 msgid "load_obj: failed to parse"
 msgstr "load_obj: nepavyko apdoroti"
@@ -20526,8 +20652,8 @@ msgstr ""
 "Ar norite jį perrašyti?"
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you "
-"selected\".\n"
+"We would rename the presets as \"Vendor Type Serial @printer you selected"
+"\".\n"
 "To add preset for more printers, please go to printer selection"
 msgstr ""
 "Būtų galima pervadinti iš anksto nustatytus nustatymus į \"Pardavėjo tipo "
@@ -21377,9 +21503,9 @@ msgid ""
 "quality but much longer print time."
 msgstr ""
 "Palyginti su numatytuoju 0,4 mm purkštuko profiliu, jo sluoksnio aukštis "
-"mažesnis, greitis ir pagreitis mažesni, o retas užpildymo raštas yra "
-"\"Gyroid\". Taigi, dėl jo mažiau matomų sluoksnio linijų ir daug geresnė "
-"spausdinimo kokybė, tačiau daug ilgesnis spausdinimo laikas."
+"mažesnis, greitis ir pagreitis mažesni, o retas užpildymo raštas yra \"Gyroid"
+"\". Taigi, dėl jo mažiau matomų sluoksnio linijų ir daug geresnė spausdinimo "
+"kokybė, tačiau daug ilgesnis spausdinimo laikas."
 
 msgid ""
 "Compared with the default profile of a 0.4 mm nozzle, it has a smaller layer "
@@ -22539,6 +22665,35 @@ msgstr ""
 "Ar žinojote, kad spausdinant medžiagas, kurios linkusios deformuotis, "
 "pavyzdžiui, ABS, tinkamai padidinus kaitinimo pagrindo temperatūrą galima "
 "sumažinti deformavimosi tikimybę."
+
+#~ msgid "Based on PrusaSlicer and BambuStudio"
+#~ msgstr "Remiantis „PrusaSlicer“ ir „BambuStudio“"
+
+#~ msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr ""
+#~ "OrcaSlicer sukurtas remiantis BambuStudio, PrusaSlicer ir SuperSlicer."
+
+#~ msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+#~ msgstr ""
+#~ "Pradinė BambuStudio programos kūrimo bazė buvo PrusaSlicer iš "
+#~ "PrusaResearch."
+
+#~ msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
+#~ msgstr ""
+#~ "Pradinė PrusaSlicer programos kūrimo bazė buvo Slic3r, kurį sukūrė "
+#~ "Alessandro Ranellucci."
+
+#~ msgid ""
+#~ "Slic3r was created by Alessandro Ranellucci with the help of many other "
+#~ "contributors."
+#~ msgstr ""
+#~ "Slic3r sukūrė Alessandro Ranellucci su daugelio kitų kūrėjų pagalba."
+
+#~ msgid "Check for Updates"
+#~ msgstr "Tikrinti atnaujinimus"
+
+#~ msgid "The name is not allowed to end with space character."
+#~ msgstr "Neleidžiama, kad pavadinimas baigtųsi tarpo simboliu."
 
 #~ msgid ""
 #~ "Zero first layer height is invalid.\n"

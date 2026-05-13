@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: orcaslicerua\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20 23:26+0800\n"
+"POT-Creation-Date: 2026-05-12 09:58+0200\n"
 "PO-Revision-Date: 2025-03-07 09:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: Ukrainian\n"
@@ -1628,9 +1628,6 @@ msgstr ""
 "Файл конфігурації “%1%” був завантажений, але деякі значення не були "
 "розпізнані."
 
-msgid "Based on PrusaSlicer and BambuStudio"
-msgstr ""
-
 msgid "STEP files"
 msgstr ""
 
@@ -1705,6 +1702,32 @@ msgstr "Невідома помилка OrcaSlicer : %1%"
 
 msgid "Untitled"
 msgstr "Без назви"
+
+msgid "A new version of CosmoSlice has been installed."
+msgstr "Встановлено нову версію CosmoSlice."
+
+msgid "Please Backup and delete the Cosmyx AppData Folder."
+msgstr "Будь ласка, створіть резервну копію та видаліть папку AppData Cosmyx."
+
+#, c-format, boost-format
+msgid "Build: %s → %s"
+msgstr "Збірка: %s → %s"
+
+#, c-format, boost-format
+msgid "Bundle: %s → %s"
+msgstr "Пакет: %s → %s"
+
+msgid "Would you like to Close OrcaSlicer and Open your AppData folder?"
+msgstr "Бажаєте закрити OrcaSlicer і відкрити папку AppData?"
+
+msgid "New Build Detected"
+msgstr "Виявлено нову версію"
+
+msgid "Skip"
+msgstr "Пропустити"
+
+msgid "Don't show again for future builds"
+msgstr "Не показувати знову для майбутніх збірок"
 
 msgid "Reloading network plug-in..."
 msgstr ""
@@ -2108,6 +2131,59 @@ msgstr ""
 msgid "Suggestion"
 msgstr ""
 
+msgid "Calage 1 SNDT"
+msgstr "Калібрування 1 SNDT"
+
+msgid "Calage 2 SNDT"
+msgstr "Калібрування 2 SNDT"
+
+msgid "Calage 3 SNDT"
+msgstr "Калібрування 3 SNDT"
+
+msgid "Cube Bicolore"
+msgstr "Двоколірний куб"
+
+msgid ""
+"This calibration model works best with infill directions set to 0 degrees. "
+"For optimal calibration results, it is advisable to set both 'Infill "
+"direction' and 'Solid infill direction' to 0.\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"This calibration model works best with specific infill settings.\n"
+"For optimal calibration results, it is advisable to set:\n"
+"- Infill direction: %.0f°\n"
+"- Solid infill direction: %.0f°\n"
+"- Only one wall on first layer: %s\n"
+"\n"
+"Yes - Change these settings automatically\n"
+"No  - Do not change these settings for me"
+msgstr ""
+
+msgid "Calage 1 Nova"
+msgstr "Калібрування 1 Nova"
+
+msgid "Cosmyx Cube"
+msgstr "Cosmyx Cube"
+
+msgid "Control Tension Belt"
+msgstr "Контроль натягу ременя"
+
+msgid "Support Bobine"
+msgstr "Підставка під котушку"
+
+msgid "Calibrations Models Dual Head"
+msgstr "Калібрувальні моделі подвійна голівка"
+
+msgid "Calibration Models Single Head"
+msgstr "Калібрувальні моделі одиночна голівка"
+
+msgid "Cosmyx Handy Models"
+msgstr "Допоміжні моделі Cosmyx"
+
 msgid "Text"
 msgstr "Текст"
 
@@ -2270,6 +2346,9 @@ msgstr "Додати примітив"
 
 msgid "Add Handy models"
 msgstr "Додати тестову модель"
+
+msgid "Cosmyx 3D Models"
+msgstr "3D моделі Cosmyx"
 
 msgid "Add Models"
 msgstr "Додати модель"
@@ -3376,29 +3455,39 @@ msgid ""
 "This software uses open source components whose copyright and other "
 "proprietary rights belong to their respective owners"
 msgstr ""
-"Це програмне забезпечення використовує компоненти з відкритим вихідним "
-"кодом,авторські права та інші\n"
+"Це програмне забезпечення використовує компоненти з відкритим вихідним кодом,"
+"авторські права та інші\n"
 "права власності належать їх відповідним власникам"
 
 #, c-format, boost-format
 msgid "About %s"
 msgstr "Про %s"
 
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "OrcaSlicer базується на BambuStudio, PrusaSlicer та SuperSlicer."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr "BambuStudio спочатку базується на PrusaSlicer від PrusaResearch."
-
-msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
-msgstr "PrusaSlicer спочатку базується на Slic3r від Алессандро Ранеллуччі."
+#, c-format, boost-format
+msgid "Cosmyx Bundle Version %s"
+msgstr "Версія пакета Cosmyx %s"
 
 msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
+"Open-source slicing stands on a tradition of collaboration and attribution. "
+"Slic3r, created by Alessandro Ranellucci and the RepRap community, laid the "
+"foundation. PrusaSlicer by Prusa Research built on that work, Bambu Studio "
+"forked from PrusaSlicer, and SuperSlicer extended it with community-driven "
+"enhancements. Each project carried the work of its predecessors forward, "
+"crediting those who came before."
 msgstr ""
-"Slic3r був створений Алессандро Ранеллуччі за допомогою багатьох інших\n"
-"учасники."
+
+msgid ""
+"OrcaSlicer began in that same spirit, drawing from PrusaSlicer, BambuStudio, "
+"SuperSlicer, and CuraSlicer. But it has since grown far beyond its origins — "
+"introducing advanced calibration tools, precise wall and seam control and "
+"hundreds of other features."
+msgstr ""
+
+msgid ""
+"Today, OrcaSlicer is the most widely used and actively developed open-source "
+"slicer in the 3D printing community. Many of its innovations have been "
+"adopted by other slicers, making it a driving force for the entire industry."
+msgstr ""
 
 msgid "Version"
 msgstr "Версія"
@@ -5318,7 +5407,7 @@ msgstr "Об'єм:"
 msgid "Size:"
 msgstr "Розмір:"
 
-#, fuzzy, boost-format
+#, fuzzy, c-format, boost-format
 msgid ""
 "Conflicts of G-code paths have been found at layer %d, Z = %.2lfmm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -5531,6 +5620,9 @@ msgstr "Друкувати пластину"
 msgid "Export G-code file"
 msgstr "Експорт файлу G-коду"
 
+msgid "Export all G-code files"
+msgstr "Експортувати всі файли G-code"
+
 msgid "Send"
 msgstr "Надіслати"
 
@@ -5563,9 +5655,6 @@ msgstr "Показати папку конфігурації"
 
 msgid "Show Tip of the Day"
 msgstr "Показати пораду дня"
-
-msgid "Check for Updates"
-msgstr ""
 
 msgid "Open Network Test"
 msgstr "Відкритий мережевий тест"
@@ -6417,9 +6506,6 @@ msgstr "Ім'я не може бути порожнім."
 msgid "The name is not allowed to start with space character."
 msgstr "Ім'я не може починатися з пробілу."
 
-msgid "The name is not allowed to end with space character."
-msgstr "Ім'я не може закінчуватися пробілом."
-
 msgid "The name is not allowed to exceed 32 characters."
 msgstr ""
 
@@ -6772,9 +6858,6 @@ msgstr "%s інфо"
 #, c-format, boost-format
 msgid "%s information"
 msgstr "%s інформація"
-
-msgid "Skip"
-msgstr "Пропустити"
 
 #, fuzzy
 msgid "Newer 3MF version"
@@ -7688,6 +7771,9 @@ msgstr "Пластина для нарізки %d"
 
 msgid "Please resolve the slicing errors and publish again."
 msgstr "Виправте помилки нарізки та опублікуйте знову."
+
+msgid "Choose a directory to export all G-code files"
+msgstr "Виберіть папку для експорту всіх файлів G-code"
 
 msgid ""
 "The network plug-in was not detected. Network related features are "
@@ -9572,8 +9658,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add "
-"Primitive\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add Primitive"
+"\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "При записі таймлапсу без інструментальної головки рекомендується додати "
 "“Timelapse Wipe Tower” \n"
@@ -9846,6 +9932,15 @@ msgid ""
 msgstr ""
 "Температура шару під час встановлення пластини Текстурована PEI пластина. "
 "Значення 0 означає Філамент не підтримує друк на Текстурованій PEI пластині"
+
+msgid "Cosmyx Textured Bed"
+msgstr "Текстурований стіл Cosmyx"
+
+msgid ""
+"Bed temperature when the Cosmyx Textured Bed is installed. A value of -1 "
+"means the filament does not support printing on the Cosmyx Textured Bed. A "
+"value of 0 means the bed is off."
+msgstr ""
 
 msgid "Volumetric speed limitation"
 msgstr "Об'ємне обмеження швидкості"
@@ -12005,6 +12100,24 @@ msgid ""
 msgstr ""
 "Температура столу першого шару. Значення 0 означає, що філамент не підтримує "
 "друк на Текстурованій Пластині PEI"
+
+msgid ""
+"Bed temperature for layers except the initial one. A value of -1 means the "
+"filament does not support printing on the Cosmyx Textured Bed. A value of 0 "
+"means the bed is off."
+msgstr ""
+
+msgid "Initial layer"
+msgstr "Початковий шар"
+
+msgid "Initial layer bed temperature"
+msgstr "Температура столу для початкового шару"
+
+msgid ""
+"Bed temperature of the initial layer. A value of -1 means the filament does "
+"not support printing on the Cosmyx Textured Bed. A value of 0 means the bed "
+"is off."
+msgstr ""
 
 msgid "Bed types supported by the printer."
 msgstr "Типи ліжок, які підтримує принтер"
@@ -14238,8 +14351,8 @@ msgstr ""
 "знайдено, лінія заповнення з'єднується з сегментом периметра лише з одного "
 "боку, і довжина взятого сегменту периметра обмежена цим параметром, але не "
 "більше anchor_length_max.\n"
-"Встановіть цей параметр рівним нулю, щоб вимкнути периметри "
-"прив'язки.пов'язані з однією лінією заповнення."
+"Встановіть цей параметр рівним нулю, щоб вимкнути периметри прив'язки."
+"пов'язані з однією лінією заповнення."
 
 msgid "0 (no open anchors)"
 msgstr "0 (немає відкритих прив'язок)"
@@ -14306,8 +14419,8 @@ msgid "mm/s² or %"
 msgstr "мм/с² або %"
 
 msgid ""
-"Acceleration of sparse infill. If the value is expressed as a percentage "
-"(e.g. 100%), it will be calculated based on the default acceleration."
+"Acceleration of sparse infill. If the value is expressed as a percentage (e."
+"g. 100%), it will be calculated based on the default acceleration."
 msgstr ""
 "Прискорення заповнення. Якщо значення виражено у відсотках (наприклад, "
 "100%), воно буде розраховане на основі прискорення за умовчанням."
@@ -14428,10 +14541,10 @@ msgstr "Повна швидкість вентилятора на шарі"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
-"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
-"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" will be ignored if lower than "
+"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "Швидкість вентилятора лінійно збільшується від нуля на "
 "рівні«close_fan_the_first_x_layers» до максимуму на рівні "
@@ -14780,6 +14893,12 @@ msgstr "Нержавіюча сталь"
 
 msgid "Tungsten carbide"
 msgstr ""
+
+msgid "E3D"
+msgstr "E3D"
+
+msgid "CHT"
+msgstr "CHT"
 
 msgid "Nozzle HRC"
 msgstr "HRC Сопла"
@@ -16295,8 +16414,8 @@ msgid "Role base wipe speed"
 msgstr "Швидкість протирання залежно від типу"
 
 msgid ""
-"The wipe speed is determined by the speed of the current extrusion role. "
-"e.g. if a wipe action is executed immediately following an outer wall "
+"The wipe speed is determined by the speed of the current extrusion role. e."
+"g. if a wipe action is executed immediately following an outer wall "
 "extrusion, the speed of the outer wall extrusion will be utilized for the "
 "wipe action."
 msgstr ""
@@ -16312,8 +16431,8 @@ msgid ""
 "To minimize the visibility of the seam in a closed loop extrusion, a small "
 "inward movement is executed before the extruder leaves the loop."
 msgstr ""
-"Щоб звести до мінімуму видимість шва при екструзії із замкнутим "
-"контуром,Невеликий рух усередину виконується до виходу екструдера з контуру."
+"Щоб звести до мінімуму видимість шва при екструзії із замкнутим контуром,"
+"Невеликий рух усередину виконується до виходу екструдера з контуру."
 
 msgid "Wipe before external loop"
 msgstr "Протирати перед зовнішнім контуром"
@@ -16808,8 +16927,8 @@ msgid ""
 "Only create support for critical regions including sharp tail, cantilever, "
 "etc."
 msgstr ""
-"Створювати підтримку тільки для критичних областей, включаючи гострий "
-"хвіст,консоль і т.д."
+"Створювати підтримку тільки для критичних областей, включаючи гострий хвіст,"
+"консоль і т.д."
 
 msgid "Ignore small overhangs"
 msgstr ""
@@ -17168,8 +17287,8 @@ msgstr "Увімкнути контроль температури"
 
 msgid ""
 "Enable this option for automated chamber temperature control. This option "
-"activates the emitting of an M191 command before the "
-"\"machine_start_gcode\"\n"
+"activates the emitting of an M191 command before the \"machine_start_gcode"
+"\"\n"
 " which sets the chamber temperature and waits until it is reached. In "
 "addition, it emits an M141 command at the end of the print to turn off the "
 "chamber heater, if present.\n"
@@ -17230,6 +17349,14 @@ msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one."
 msgstr "Температура сопла для шарів після першого"
+
+msgid "Ironing temperature"
+msgstr "Температура прасування"
+
+msgid ""
+"Sets the extrusion temperature for the ironing pass. If unset in the "
+"filament profile, the global printing temperature is used by default."
+msgstr ""
 
 #, fuzzy
 msgid "Detect thin walls"
@@ -17349,9 +17476,9 @@ msgstr ""
 "Залежно від тривалості операції витирання, швидкості та тривалості "
 "втягування екструдера/нитки, може знадобитися рух накату для нитки.\n"
 "\n"
-"Якщо встановити значення у параметрі \"Кількість втягування перед "
-"витиранням\" нижче, надлишкове втягування буде виконано перед витиранням, "
-"інакше воно буде виконано після нього."
+"Якщо встановити значення у параметрі \"Кількість втягування перед витиранням"
+"\" нижче, надлишкове втягування буде виконано перед витиранням, інакше воно "
+"буде виконано після нього."
 
 msgid ""
 "The wiping tower can be used to clean up the residue on the nozzle and "
@@ -18102,8 +18229,8 @@ msgid "Debug level"
 msgstr "Рівень налагодження"
 
 msgid ""
-"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, "
-"5:trace\n"
+"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 msgstr ""
 "Встановлює рівень реєстрації налагодження. 0: непереборний, 1: помилка, 2: "
 "попередження, 3: інформація, 4: налагодження, 5: трасування\n"
@@ -18633,13 +18760,13 @@ msgstr "Наданий файл не вдалося прочитати, оскі
 msgid ""
 "Unknown file format. Input file must have .stl, .obj, .amf(.xml) extension."
 msgstr ""
-"Невідомий формат файлу: вхідний файл повинен мати розширення .stl, .obj "
-"або .amf (.xml)."
+"Невідомий формат файлу: вхідний файл повинен мати розширення .stl, .obj або ."
+"amf (.xml)."
 
 msgid "Unknown file format. Input file must have .3mf or .zip.amf extension."
 msgstr ""
-"Невідомий формат файлу: вхідний файл повинен мати розширення .3mf "
-"або .zip.amf."
+"Невідомий формат файлу: вхідний файл повинен мати розширення .3mf або .zip."
+"amf."
 
 msgid "load_obj: failed to parse"
 msgstr "помилка завантаження файлу OBJ: не вдалося розпізнати формат"
@@ -19822,8 +19949,8 @@ msgstr ""
 "Чи бажаєте ви їх перезаписати?"
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you "
-"selected\".\n"
+"We would rename the presets as \"Vendor Type Serial @printer you selected"
+"\".\n"
 "To add preset for more printers, please go to printer selection"
 msgstr ""
 "Ми б перейменували попередні налаштування на «Вибраний вами серійний "
@@ -21730,6 +21857,25 @@ msgstr ""
 "Чи знаєте ви, що при друку матеріалами, схильними до деформації, такими як "
 "ABS, відповідне підвищення температури гарячого ліжка може зменшити "
 "ймовірність деформації?"
+
+#~ msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "OrcaSlicer базується на BambuStudio, PrusaSlicer та SuperSlicer."
+
+#~ msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+#~ msgstr "BambuStudio спочатку базується на PrusaSlicer від PrusaResearch."
+
+#~ msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
+#~ msgstr "PrusaSlicer спочатку базується на Slic3r від Алессандро Ранеллуччі."
+
+#~ msgid ""
+#~ "Slic3r was created by Alessandro Ranellucci with the help of many other "
+#~ "contributors."
+#~ msgstr ""
+#~ "Slic3r був створений Алессандро Ранеллуччі за допомогою багатьох інших\n"
+#~ "учасники."
+
+#~ msgid "The name is not allowed to end with space character."
+#~ msgstr "Ім'я не може закінчуватися пробілом."
 
 #~ msgid ""
 #~ "Zero first layer height is invalid.\n"

@@ -1629,7 +1629,8 @@ StringObjectException Print::validate(StringObjectException *warning, Polygons* 
 	        const ConfigOptionInts* bed_temp_opt = m_config.option<ConfigOptionInts>(get_bed_temp_key(m_config.curr_bed_type));
 	        for (unsigned int extruder_id : extruders) {
 	            int curr_bed_temp = bed_temp_opt->get_at(extruder_id);
-	            if (curr_bed_temp == 0 && bed_type_keys_map != nullptr) {
+	            int unsupported_sentinel = (m_config.curr_bed_type == btCosmyx) ? -1 : 0;
+	            if (curr_bed_temp == unsupported_sentinel && bed_type_keys_map != nullptr) {
 	                std::string bed_type_name;
 	                for (auto item : *bed_type_keys_map) {
 	                    if (item.second == m_config.curr_bed_type) {
@@ -2841,8 +2842,10 @@ int Print::get_hrc_by_nozzle_type(const NozzleType&type)
             nozzle_type_to_hrc = {
                 {"hardened_steel",55},
                 {"stainless_steel",20},
-                {"tungsten_carbide", 85},
+                {"tungsten_carbide", 90},
                 {"brass",2},
+                {"E3D", 65},
+                {"cht", 65},
                 {"undefine",0}
             };
         }
@@ -3442,6 +3445,7 @@ std::string Print::output_filename(const std::string &filename_base) const
     config.set_key_value("num_extruders", new ConfigOptionInt((int) m_config.nozzle_diameter.size()));
     config.set_key_value("plate_name", new ConfigOptionString(get_plate_name()));
     config.set_key_value("plate_number", new ConfigOptionString(get_plate_number_formatted()));
+    config.set_key_value("plate_count", new ConfigOptionInt(get_plate_count()));
     config.set_key_value("model_name", new ConfigOptionString(get_model_name()));
 
     return this->PrintBase::output_filename(m_config.filename_format.value, ".gcode", filename_base, &config);
