@@ -1,0 +1,70 @@
+name: Debug Azure signing
+
+# Throwaway diagnostic workflow: exercises the exact Trusted Signing path used
+# by build_orca.yml (same environment, same OIDC login, same action) against a
+# single dummy binary, so signing problems can be reproduced in seconds instead
+# of after a two-hour build. Delete once signing is working.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # required for Azure OIDC login
+
+jobs:
+  probe:
+    name: Probe Trusted Signing
+    runs-on: windows-2022
+    # Must match build_orca.yml so the OIDC token carries the same subject.
+    environment: azure-signing
+
+    steps:
+      - name: Stage a dummy binary to sign
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path "${{ github.workspace }}/probe" | Out-Null
+          Copy-Item C:\Windows\System32\notepad.exe "${{ github.workspace }}/probe/probe.exe"
+          Get-ChildItem "${{ github.workspace }}/probe"
+
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      # Role definition names are not secrets, so this prints usable output even
+      # though the client id itself is masked. Best-effort: the service
+      # principal may lack the Graph permission needed to resolve itself.
+      - name: List role assignments of the signing identity
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          az account show -o json
+          $spId = az ad sp show --id "${{ secrets.AZURE_CLIENT_ID }}" --query id -o tsv
+          if ($LASTEXITCODE -eq 0 -and $spId) {
+            az role assignment list --assignee-object-id $spId --all --include-inherited -o table
+          } else {
+            Write-Host "Could not resolve the service principal via Graph; check role assignments in the portal instead."
+          }
+
+      - name: Sign the dummy binary
+        # azure/trusted-signing-action is deprecated; this is its successor.
+        # Note the renamed account input: signing-account-name.
+        uses: Azure/artifact-signing-action@v2.0.0
+        with:
+          endpoint: ${{ secrets.AZURE_TRUSTED_SIGNING_ENDPOINT }}
+          signing-account-name: ${{ secrets.AZURE_CODE_SIGNING_NAME }}
+          certificate-profile-name: ${{ secrets.AZURE_CERT_PROFILE_NAME }}
+          files-folder: ${{ github.workspace }}/probe
+          files-folder-filter: exe
+          files-folder-recurse: false
+          file-digest: SHA256
+          timestamp-rfc3161: http://timestamp.acs.microsoft.com
+          timestamp-digest: SHA256
+          # The service returns a bare "Failed" with no error body; trace logging
+          # is the only way to surface why. The correlation id is what Microsoft
+          # support needs to look the request up on their side.
+          trace: true
+          correlation-id: orcaslicer-probe-${{ github.run_id }}-${{ github.run_attempt }}
