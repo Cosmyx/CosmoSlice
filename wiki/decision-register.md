@@ -48,11 +48,12 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   about 2000 lines per language.
 - **Decision.** `scripts/i18n/rename_msgids.py` (`just i18n-rename`) applies a frozen JSON mapping
   (`[{old, new}]`) in place. In the pot only the msgid lines change. In a .po, the msgid lines change and, when the
-  entry has a non-empty translation, it gets `#, fuzzy` (merged into an existing flag line) and `#| msgid "<old>"`
-  (kept as it is if the entry already had a previous msgid). New msgids are laid out the gettext way
-  (`scripts/i18n/po.py`, 79 columns). Idempotent; fails when a catalogue has neither the old nor the new msgid, or
-  both (duplicate); the mapping is rejected on identity, duplicates and chains. Obsolete `#~` entries and headers
-  are never touched. `--check` reports without writing.
+  entry has a non-empty translation, it gets `#, fuzzy` (merged into an existing flag line) and `#| msgid "<old>"`,
+  preceded by `#| msgctxt "<ctx>"` when the entry has a context (kept as it is if the entry already had a previous
+  msgid). New msgids are laid out the gettext way (`scripts/i18n/po.py`, 79 columns). Idempotent; fails when a
+  catalogue has neither the old nor the new msgid, or both (duplicate); the mapping is rejected on identity,
+  duplicates and chains. Every catalogue is computed before any is written, so a failure leaves none half-renamed.
+  Obsolete `#~` entries and headers are never touched. `--check` reports without writing.
 - **Reason.** Translators get gettext's own "previous msgid" signal for exactly the renamed entries, and nothing else
   in the 21 catalogues moves.
 - **Reverting.** Run the tool with the mapping's old and new swapped, then drop the fuzzy flags it added.

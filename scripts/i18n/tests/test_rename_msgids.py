@@ -176,3 +176,27 @@ def test_catalogue_discovery_order(tmp_path: Path) -> None:
         "a/x_a.po",
         "b/x_b.po",
     ]
+
+
+def test_previous_msgctxt_is_kept_before_previous_msgid() -> None:
+    text = 'msgctxt "menu"\nmsgid "OrcaSlicer is great"\nmsgstr "Super"\n'
+    out = rm.rename_text(text, pairs(MAPPING[:1])).text
+    assert out == (
+        '#, fuzzy\n#| msgctxt "menu"\n#| msgid "OrcaSlicer is great"\nmsgctxt "menu"\n'
+        'msgid "CosmoSlice is great"\nmsgstr "Super"\n'
+    )
+
+
+def test_no_catalogue_is_written_when_a_later_one_fails(tmp_path: Path) -> None:
+    catalogs = tmp_path / "i18n"
+    (catalogs / "fr").mkdir(parents=True)
+    (catalogs / "OrcaSlicer.pot").write_bytes(POT.encode("utf-8"))
+    # The .po has neither the old nor the new msgid of the second pair: the rename fails on it.
+    broken = 'msgid "OrcaSlicer is great"\nmsgstr ""\n'
+    (catalogs / "fr" / "OrcaSlicer_fr.po").write_bytes(broken.encode("utf-8"))
+    mapping = tmp_path / "map.json"
+    mapping.write_text(json.dumps(MAPPING), encoding="utf-8")
+
+    assert rm.main(["--mapping", str(mapping), "--catalogs", str(catalogs)]) == 2
+    assert (catalogs / "OrcaSlicer.pot").read_bytes() == POT.encode("utf-8")
+    assert (catalogs / "fr" / "OrcaSlicer_fr.po").read_bytes() == broken.encode("utf-8")

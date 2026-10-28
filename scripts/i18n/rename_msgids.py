@@ -4,9 +4,11 @@
     python3 scripts/i18n/rename_msgids.py [--mapping FILE] [--catalogs DIR] [--check]
 
 For each pair, the entry whose msgid is `old` gets msgid `new`, laid out the gettext way. In a .po, an entry with a
-non-empty translation is also marked `fuzzy` and gets `#| msgid "<old>"` (unless it already carries a previous
-msgid), so translators see exactly what changed. Every other byte of every file is left as it is: no re-wrapping,
-no reordering, no header change, LF kept.
+non-empty translation is also marked `fuzzy` and gets `#| msgid "<old>"`, preceded by `#| msgctxt` when it has a
+context (unless it already carries a previous msgid), so translators see exactly what changed. Every other byte of
+every file is left as it is: no re-wrapping, no reordering, no header change, LF kept.
+
+Every catalogue is computed before any is written, so a failure leaves no file half-renamed.
 
 The tool is idempotent: a pair whose `new` msgid is present and whose `old` is gone is already applied. It fails
 when, in any catalogue, neither the old nor the new msgid exists, or when both exist (the rename would create a
@@ -86,7 +88,11 @@ def _edit_entry(lines: list[str], entry: po.Entry, new: str) -> tuple[int, int, 
         has_previous = any(line.startswith("#|") for _, line in entry.comments)
         if not has_previous:
             insert_at = first_field - entry.start
-            new_block[insert_at:insert_at] = po.render_field("msgid", entry.msgid, prefix="#| ")
+            previous_lines = po.render_field("msgid", entry.msgid, prefix="#| ")
+            if entry.msgctxt is not None:
+                # gettext order: the previous context comes before the previous msgid.
+                previous_lines = po.render_field("msgctxt", entry.msgctxt, prefix="#| ") + previous_lines
+            new_block[insert_at:insert_at] = previous_lines
         if not entry.is_fuzzy:
             flag_index = next((n - entry.start for n, line in entry.comments if line.startswith("#,")), None)
             if flag_index is not None:
@@ -145,22 +151,23 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         pairs = load_mapping(args.mapping)
-        changed: list[Path] = []
+        # Compute every catalogue first, write only once all succeeded: a failure leaves no file half-renamed.
+        changed: list[tuple[Path, Result]] = []
         for path in discover_catalogs(args.catalogs):
             text = path.read_bytes().decode("utf-8")
             try:
                 result = rename_text(text, pairs)
             except RenameError as exc:
                 raise RenameError(f"{path}: {exc}") from exc
-            if result.text == text:
-                continue
-            changed.append(path)
-            print(f"{path.relative_to(args.catalogs).as_posix()}: {result.renamed} renamed, {result.fuzzied} fuzzy")
-            if not args.check:
-                path.write_bytes(result.text.encode("utf-8"))
+            if result.text != text:
+                changed.append((path, result))
     except RenameError as exc:
         print(f"rename_msgids: {exc}", file=sys.stderr)
         return 2
+    for path, result in changed:
+        print(f"{path.relative_to(args.catalogs).as_posix()}: {result.renamed} renamed, {result.fuzzied} fuzzy")
+        if not args.check:
+            path.write_bytes(result.text.encode("utf-8"))
     if args.check and changed:
         print(f"rename_msgids: {len(changed)} catalogue(s) not renamed yet", file=sys.stderr)
         return 1
