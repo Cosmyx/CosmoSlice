@@ -16,6 +16,14 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ## 2026-10
 
+### resources
+
+- The home page and setup guide logo, the macOS app icon and the macOS document icons (.3mf/.obj/.amf, .stl,
+  .gcode) now show the CosmoSlice logo instead of Orca's; the .3mf/.obj/.amf icon was a broken file before. They are
+  rendered from `resources/images/OrcaSlicer.svg` by `just -f scripts/brand_assets/justfile derive`, and `just ci`
+  fails when one drifts. The .stl and .gcode icons are the app icon until dedicated document icons are provided.
+  MR: pending. D-010, D-011, D-012.
+
 ### tooling
 
 - `just lint` now checks the Python modules below `scripts/` (only the legacy upstream scripts are skipped).

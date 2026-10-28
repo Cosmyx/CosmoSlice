@@ -62,7 +62,73 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   text change would not give full coverage.
 - **Reverting.** Not applicable: closing the gap means adding the suites.
 
+## D-010 Brand assets rendered by a pinned resvg and a stdlib ICNS writer
+
+- **Context.** Logos and icons derived from the CosmoSlice SVG must come from a recipe and be byte-identical on every
+  host. `sips`/`iconutil` exist only on macOS, a host `rsvg-convert` is unpinned, and `cairosvg` needs native cairo.
+- **Decision.** `resvg` 0.48.1 is built with `cargo install --locked` in a digest-pinned `rust:1.90-slim-bookworm`
+  stage of the shared CI image (`tools/docker/ci/Dockerfile`); only its binary is copied into the final stage, and it
+  always runs `linux/amd64` through `tools/docker/run.py`. `scripts/brand_assets/derive.py` renders each PNG with
+  `resvg -w N -h N` and writes ICNS files with `scripts/brand_assets/icns.py` (stdlib): entries in a fixed order
+  (`icp4` 16, `icp5` 32, `icp6` 64, `ic07` 128, `ic08` 256, `ic09` 512, `ic10` 1024, `ic11` 32, `ic12` 64, `ic13` 256,
+  `ic14` 512), PNG payloads only, no table of contents, no info chunk, no timestamp. Outputs are rewritten in place
+  and only when their bytes change. Recipes: `just -f scripts/brand_assets/justfile derive|check|stable`; `check`
+  runs in `just ci`. The module lives in `scripts/`, not `resources/`, which is installed whole.
+- **Reason.** One pinned renderer and one deterministic container format give the same bytes on every host and in CI.
+- **Reverting.** Remove `scripts/brand_assets/` and the `resvg` stage and `COPY` line of the CI Dockerfile; the
+  derived binaries then become hand-maintained files again.
+
+## D-011 Source of truth for the visible logos, and temporary document icons
+
+- **Context.** The Orca logo was still shown by `resources/web/image/logo.png` (home page, setup guide),
+  `resources/Icon.icns` (the macOS bundle icon: `CFBundleIconFile` in `cmake/modules/MacOSXBundleInfo.plist.in`,
+  `resources/` copied into `Contents/Resources`), and `resources/images/stl.icns` and `gcode.icns` (document icons).
+  `resources/images/OrcaSlicer.icns` (.3mf/.obj/.amf document icon) was corrupt: no `icns` header, first 5072 bytes zero.
+- **Decision.** `resources/images/OrcaSlicer.svg` is the single source of every derived app-icon variant, listed in
+  `scripts/brand_assets/derived-assets.toml`: `logo.png` at 154 px (the size of the file it replaces), and
+  `Icon.icns`, `images/OrcaSlicer.icns`, `images/stl.icns`, `images/gcode.icns`. File names are unchanged, so no C++,
+  CMake or HTML changes. **User decision (2026-10-28), temporary:** until dedicated document icons are provided
+  (asset request A2 in Open issues), `stl.icns` and `gcode.icns` use the same icon as the app; when the A2 sources
+  arrive only their manifest `source` changes. Tests (`scripts/brand_assets/tests/`) require every output to equal a
+  fresh render, no file under `resources/` to match the hashes of the replaced Orca files, and every `.icns` under
+  `resources/` to be a valid container.
+- **Reason.** One source means one place to change the brand; deriving by recipe keeps the binaries reviewable as
+  "output of this source".
+- **Reverting.** Restore the five binaries from git history and drop their manifest entries and the denylist test.
+
+## D-012 Scope of the visible-logos change, and what is asked for instead of drawn
+
+- **Context.** Several Orca or Bambu images remain in the tree; some are composed designs that cannot be derived
+  from the app icon, and project rules forbid drawing a missing asset.
+- **Decision.** In scope: the five files of D-011. Asked for, not drawn: the bed texture
+  `resources/profiles/Custom/orcaslicer_bed_texture.svg` (A1) and dedicated .stl/.gcode document icon sources (A2),
+  specified in Open issues. Out of scope, on purpose: `resources/images/logo2.png` (not referenced), the embossed
+  model `OrcaCube_v2.3mf`, the flatpak screenshots, the dead `src/dev-utils/platform/osx/Info.plist.in`, the
+  single-size `.ico` files, the "grayscale" PNG that is coloured, and `resources/web/homepage/img/3d_text.png`
+  (Bambu wordmark). Already CosmoSlice and untouched: `OrcaSlicer.svg`, `_about*`, `_gradient*`, `_gray`,
+  `studio_logo`, `splash_logo*`, `OrcaSlicer*.png`, `OrcaSlicer.ico`, `OrcaSlicerTitle.ico`, `OrcaSlicer-mac_256px.*`.
+  No golden is added: no suite exists (D-009).
+- **Reason.** Only files that are both visible and derivable from the existing source change here; the rest needs a
+  new asset or is not seen by users.
+- **Reverting.** Not applicable: it only bounds the change.
+
 ## Open issues
 
+- **Asset request A1, bed texture** (D-012): `resources/profiles/Custom/orcaslicer_bed_texture.svg` (name kept; used
+  by the MyKlipper, MyMarlin, MyRRF and MyToolChanger profiles) still shows Orca. Needed: plain SVG 1.1, width and
+  height 180.62mm, viewBox `0 0 512 512`, transparent background, NanoSVG-compatible (path, rect, circle, polygon,
+  solid fills, gradients tolerated; no clipPath, mask, filter, `<text>` or embedded image); the CosmoSlice icon and
+  wordmark lockup at the bottom centre, within x 185.9-326.5 and y 441.3-493.7; four L-shaped corner brackets
+  (19.42-unit arms, about 8.5 outer radius, 0.85 stroke); legible on light and dark beds; colours at the user's call.
+  When it lands, add its old hash to the denylist of `scripts/brand_assets/tests/test_visible_logos.py`.
+- **Asset request A2, document icons** (D-011, optional improvement): `scripts/brand_assets/sources/stl-document.svg`
+  and `gcode-document.svg` (viewBox `0 0 1024 1024`; Apple document page with a folded corner, the CosmoSlice tile
+  centred, about 410 px wide at y 290-700, an "STL" / "GCODE" grey label with text outlined to paths). Then point the
+  `stl.icns` and `gcode.icns` manifest entries at them and run `just -f scripts/brand_assets/justfile derive`.
+  Alternative: finished `.icns` files with 16-1024 px entries.
+- **CI job runs `just ci`** (follow-up): the GitHub workflows do not run `just ci` yet, so the brand-asset `check` and
+  tests only gate locally until a CI job calls it.
+- **Icon.icns chain not verified on a build** (D-011): `CFBundleIconFile` = `Icon.icns` is read from the CMake and
+  packaging scripts; check the icon of the next CI DMG. Finder and LaunchServices may show the old icon from cache.
 - **No golden suite** (D-009): wx dialogs need a build; the setup-guide HTML goldens are a follow-up workstream.
 - **Merge request links**: CHANGELOG lines of this branch carry `MR: pending` until the request is opened.
