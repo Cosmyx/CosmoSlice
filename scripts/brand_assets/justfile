@@ -1,0 +1,23 @@
+# Brand assets derived from the CosmoSlice SVG (derived-assets.toml). Rendering runs in the pinned CI image.
+# Tests and lint come from the root justfile: `just test brand_assets`, `just lint`.
+
+set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
+
+python := if os_family() == "windows" { "python" } else { "python3" }
+docker := python + " " + quote(justfile_directory() / ".." / ".." / "tools" / "docker" / "run.py") + " --"
+
+# List the brand asset recipes
+default:
+    @just --justfile "{{justfile()}}" --list
+
+# Re-render every derived asset and rewrite those whose bytes changed
+derive:
+    {{docker}} python scripts/brand_assets/derive.py write
+
+# Fail when a committed derived asset differs from a fresh render
+check:
+    {{docker}} python scripts/brand_assets/derive.py check
+
+# Render every derived asset twice and fail if the two runs differ
+stable:
+    {{docker}} python scripts/brand_assets/derive.py stable
