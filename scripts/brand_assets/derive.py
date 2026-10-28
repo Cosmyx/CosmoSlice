@@ -90,8 +90,11 @@ def _entry(raw: object, root: Path) -> Entry:
 def load_manifest(manifest: Path = MANIFEST, root: Path = REPO_ROOT) -> list[Entry]:
     """Validated entries of the manifest, in file order."""
     data = tomllib.loads(manifest.read_text(encoding="utf-8"))
+    derived = data.get("derived", [])
+    if not isinstance(derived, list):
+        raise ValueError(f"{manifest.name}: derived must be an array of tables ([[derived]])")
     entries = []
-    for index, raw in enumerate(data.get("derived", [])):
+    for index, raw in enumerate(derived):
         try:
             entries.append(_entry(raw, root))
         except ValueError as error:

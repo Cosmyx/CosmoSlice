@@ -37,10 +37,14 @@ def test_entry_table_is_fixed():
     assert icns.REQUIRED_SIZES == (16, 32, 64, 128, 256, 512, 1024)
 
 
-# Pixel size of every OSType slot written, as macOS iconutil reads it (iconutil -c iconset names each slot's file).
+# Apple's icon slot table (pixel size of each OSType, as macOS iconutil reads it), written out on its own rather
+# than copied from icns.ENTRIES, so a wrong size in the writer cannot also be the expected value.
 APPLE_SLOT_SIZES = {
     "icp4": 16,
     "icp5": 32,
+    "icp6": 48,
+    "ic04": 16,
+    "ic05": 32,
     "ic07": 128,
     "ic08": 256,
     "ic09": 512,
@@ -52,8 +56,10 @@ APPLE_SLOT_SIZES = {
 }
 
 
-def test_entry_sizes_match_apple_slots():
-    assert dict(icns.ENTRIES) == APPLE_SLOT_SIZES
+@pytest.mark.parametrize(("kind", "size"), icns.ENTRIES)
+def test_entry_size_matches_apple_slot(kind, size):
+    assert kind in APPLE_SLOT_SIZES, f"{kind} is not an Apple icon slot"
+    assert APPLE_SLOT_SIZES[kind] == size, kind
 
 
 def test_icp6_is_never_written():

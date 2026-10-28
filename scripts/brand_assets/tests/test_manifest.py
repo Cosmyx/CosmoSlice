@@ -97,3 +97,13 @@ def test_loader_rejects_an_entry_that_is_not_a_table(tmp_path):
     manifest = write_manifest(tmp_path, 'derived = ["src.svg"]\n')
     with pytest.raises(ValueError, match="entry 1: must be a table"):
         derive.load_manifest(manifest, tmp_path)
+
+
+@pytest.mark.parametrize(
+    "body",
+    ['derived = "src.svg"\n', "derived = 3\n", '[derived]\nsource = "src.svg"\n'],
+    ids=["string", "integer", "single-table"],
+)
+def test_loader_rejects_a_derived_key_that_is_not_an_array(tmp_path, body):
+    with pytest.raises(ValueError, match=r"derived must be an array of tables \(\[\[derived\]\]\)"):
+        derive.load_manifest(write_manifest(tmp_path, body), tmp_path)
