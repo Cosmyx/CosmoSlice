@@ -103,10 +103,10 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   from the app icon, and project rules forbid drawing a missing asset.
 - **Decision.** In scope: the five files of D-011. Asked for, not drawn: the bed texture
   `resources/profiles/Custom/orcaslicer_bed_texture.svg` (A1) and dedicated .stl/.gcode document icon sources (A2),
-  specified in Open issues. Out of scope, on purpose: `resources/images/logo2.png` (not referenced), the embossed
-  model `OrcaCube_v2.3mf`, the flatpak screenshots, the dead `src/dev-utils/platform/osx/Info.plist.in`, the
-  single-size `.ico` files, the "grayscale" PNG that is coloured, and `resources/web/homepage/img/3d_text.png`
-  (Bambu wordmark). Already CosmoSlice and untouched: `OrcaSlicer.svg`, `_about*`, `_gradient*`, `_gray`,
+  specified in Open issues (A1 has since been provided, see Resolved issues). Out of scope, on purpose:
+  `resources/images/logo2.png` (not referenced), the embossed model `OrcaCube_v2.3mf`, the flatpak screenshots, the
+  dead `src/dev-utils/platform/osx/Info.plist.in`, the single-size `.ico` files, the "grayscale" PNG that is
+  coloured, and `resources/web/homepage/img/3d_text.png` (Bambu wordmark). Already CosmoSlice and untouched: `OrcaSlicer.svg`, `_about*`, `_gradient*`, `_gray`,
   `studio_logo`, `splash_logo*`, `OrcaSlicer*.png`, `OrcaSlicer.ico`, `OrcaSlicerTitle.ico`, `OrcaSlicer-mac_256px.*`.
   No golden is added: no suite exists (D-009).
 - **Reason.** Only files that are both visible and derivable from the existing source change here; the rest needs a
@@ -115,13 +115,6 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
 
 ## Open issues
 
-- **Asset request A1, bed texture** (D-012): `resources/profiles/Custom/orcaslicer_bed_texture.svg` (name kept; used
-  by the MyKlipper, MyMarlin, MyRRF and MyToolChanger profiles) still shows Orca. Needed: plain SVG 1.1, width and
-  height 180.62mm, viewBox `0 0 512 512`, transparent background, NanoSVG-compatible (path, rect, circle, polygon,
-  solid fills, gradients tolerated; no clipPath, mask, filter, `<text>` or embedded image); the CosmoSlice icon and
-  wordmark lockup at the bottom centre, within x 185.9-326.5 and y 441.3-493.7; four L-shaped corner brackets
-  (19.42-unit arms, about 8.5 outer radius, 0.85 stroke); legible on light and dark beds; colours at the user's call.
-  When it lands, add its old hash to the denylist of `scripts/brand_assets/tests/test_visible_logos.py`.
 - **Asset request A2, document icons** (D-011, optional improvement): `scripts/brand_assets/sources/stl-document.svg`
   and `gcode-document.svg` (viewBox `0 0 1024 1024`; Apple document page with a folded corner, the CosmoSlice tile
   centred, about 410 px wide at y 290-700, an "STL" / "GCODE" grey label with text outlined to paths). Then point the
@@ -134,4 +127,20 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   Also check the 16 and 32 px list-view icons in Finder: `icp4`/`icp5` hold PNG payloads, while `iconutil` writes
   ARGB `ic04`/`ic05` for those sizes.
 - **No golden suite** (D-009): wx dialogs need a build; the setup-guide HTML goldens are a follow-up workstream.
+- **Nova bed texture not NanoSVG-safe**: `resources/profiles/cosmyx/Nova-bed_texture.svg` (cosmyx profile pack)
+  colours its shapes through a `<style>` sheet with classes, which NanoSVG ignores, so the bed may show them unfilled
+  or black. Not checked on a build; fix it in the profile pack (inline `style` or `fill` attributes), then drop it
+  from `KNOWN_UNSAFE` in `scripts/brand_assets/tests/test_bed_texture.py` (a test fails once it is safe).
 - **Merge request links**: CHANGELOG lines of this branch carry `MR: pending` until the request is opened.
+
+## Resolved issues
+
+- **Asset request A1, bed texture** (D-012), resolved 2026-10-28: the user provided the CosmoSlice bed texture, now
+  `resources/profiles/Custom/orcaslicer_bed_texture.svg` (name kept, so the MyKlipper, MyMarlin, MyRRF and
+  MyToolChanger profiles need no change). On the user's request one change was made to the file as provided: its
+  `<clipPath id="_clip1">` element was removed and the `<g clip-path="url(#_clip1)">` that used it became a plain
+  `<g>`. NanoSVG, which draws the bed, has no clipPath support and draws the rect inside it as an opaque black square
+  behind the logo; the clip region was the whole 100x100 logo box and the logo lies inside it, so removing it changes
+  nothing in a browser. The Orca texture's hash is in the denylist of
+  `scripts/brand_assets/tests/test_visible_logos.py`, and `scripts/brand_assets/tests/test_bed_texture.py` keeps
+  every SVG bed texture of the profiles NanoSVG-safe (the cosmyx Nova texture is excluded there, with its reason).

@@ -18,6 +18,8 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ### resources
 
+- The 3D bed of the Custom printers (MyKlipper, MyMarlin, MyRRF, MyToolChanger) shows the CosmoSlice logo
+  instead of Orca's. MR: pending. D-012.
 - The home page and setup guide logo, the macOS app icon and the macOS document icons (.3mf/.obj/.amf, .stl,
   .gcode) now show the CosmoSlice logo instead of Orca's; the .3mf/.obj/.amf icon was a broken file before. They are
   rendered from `resources/images/OrcaSlicer.svg` by `just -f scripts/brand_assets/justfile derive`, and `just ci`

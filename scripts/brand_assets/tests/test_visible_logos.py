@@ -6,8 +6,9 @@ from the git blobs (no git at test time):
     git show <rev>:<path> | shasum -a 256        # and `| wc -c` for the size
 
 with <rev> = a6f1ed8ab4 (last Orca version) for every path, except resources/images/OrcaSlicer.icns, whose last
-Orca version is b56bbbff4e (d317226e47 replaced it by a corrupt file). Files still waiting for a CosmoSlice
-asset (bed texture, logo2.png) are not listed, otherwise the suite would be red on pending assets.
+Orca version is b56bbbff4e (d317226e47 replaced it by a corrupt file), and resources/profiles/Custom/
+orcaslicer_bed_texture.svg, read at dd9a17e13d (the Orca texture, unchanged since a6f1ed8ab4). Files still waiting
+for a CosmoSlice asset (logo2.png) are not listed, otherwise the suite would be red on pending assets.
 """
 
 import hashlib
@@ -26,6 +27,7 @@ ORCA_DENYLIST: dict[tuple[str, int], str] = {
     ("5f7172b793925880162cf08c4c2779b251fc126329e7bcf01afbf8d3f2a0b3d9", 9658): "Orca web/image/logo.png",
     ("f3b752c2c164b3d0f58a5af9c96684b16ce4c95f0417c9b8ae88412c5d185ef2", 387692): "Orca images/stl.icns",
     ("6dbb6884d436d79342d426f59747a260e13beebeea46f22149df37936e59031e", 403221): "Orca images/gcode.icns",
+    ("093d33cee2003307456a7b7b18f4a7522f4b9a68ef80256218dd0997079860fd", 4736): "Orca Custom bed texture",
 }
 DENYLIST_SIZES = {size for _, size in ORCA_DENYLIST}
 
@@ -36,6 +38,9 @@ VISIBLE_LOGOS: dict[str, str] = {
     "resources/images/OrcaSlicer.icns": "macOS document icon of .obj, .amf and .3mf files",
     "resources/images/stl.icns": "macOS document icon of .stl files (app icon until A2 lands, D-011)",
     "resources/images/gcode.icns": "macOS document icon of .gcode files (app icon until A2 lands, D-011)",
+    "resources/profiles/Custom/orcaslicer_bed_texture.svg": (
+        "3D bed of the Custom printers (MyKlipper, MyMarlin, MyRRF, MyToolChanger `bed_texture`)"
+    ),
 }
 
 
