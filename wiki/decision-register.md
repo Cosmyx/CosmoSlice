@@ -108,7 +108,9 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   dead `src/dev-utils/platform/osx/Info.plist.in`, the single-size `.ico` files, the "grayscale" PNG that is
   coloured, and `resources/web/homepage/img/3d_text.png` (Bambu wordmark). Already CosmoSlice and untouched: `OrcaSlicer.svg`, `_about*`, `_gradient*`, `_gray`,
   `studio_logo`, `splash_logo*`, `OrcaSlicer*.png`, `OrcaSlicer.ico`, `OrcaSlicerTitle.ico`, `OrcaSlicer-mac_256px.*`.
-  No golden is added: no suite exists (D-009).
+  No golden is added: no suite exists (D-009). A bed texture is stretched over the bounding box of the printable_area,
+  so its viewBox must have the aspect ratio of every bed that uses it, within 5% (not be square): the Nova artwork
+  is 4.5% narrower than its 300x200 bed, which does not show.
 - **Reason.** Only files that are both visible and derivable from the existing source change here; the rest needs a
   new asset or is not seen by users.
 - **Reverting.** Not applicable: it only bounds the change.
@@ -127,10 +129,12 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   Also check the 16 and 32 px list-view icons in Finder: `icp4`/`icp5` hold PNG payloads, while `iconutil` writes
   ARGB `ic04`/`ic05` for those sizes.
 - **No golden suite** (D-009): wx dialogs need a build; the setup-guide HTML goldens are a follow-up workstream.
-- **Nova bed texture not NanoSVG-safe**: `resources/profiles/cosmyx/Nova-bed_texture.svg` (cosmyx profile pack)
-  colours its shapes through a `<style>` sheet with classes, which NanoSVG ignores, so the bed may show them unfilled
-  or black. Not checked on a build; fix it in the profile pack (inline `style` or `fill` attributes), then drop it
-  from `KNOWN_UNSAFE` in `scripts/brand_assets/tests/test_bed_texture.py` (a test fails once it is safe).
+- **Nova Double Tete bed logo squeezed** (D-012): the `Cosmyx Nova Double Tete` machine model reuses
+  `resources/profiles/cosmyx/Nova-bed_texture.svg` (drawn for the 300x200 Nova bed), but its printable_area is
+  156x200 (x 68-224), and the texture is stretched over that box, so the logo is about half as wide as it should be.
+  Needs a dedicated texture from Cosmyx with the aspect ratio of a 156x200 bed (SVG, NanoSVG-safe: inline styles, no
+  `<style>`, clipPath, mask, filter or text), or a decision that the bed area is wrong. Excluded in `KNOWN_STRETCHED`
+  of `scripts/brand_assets/tests/test_bed_texture.py`, which fails once it is no longer needed.
 - **Merge request links**: CHANGELOG lines of this branch carry `MR: pending` until the request is opened.
 
 ## Resolved issues
@@ -143,4 +147,13 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   behind the logo; the clip region was the whole 100x100 logo box and the logo lies inside it, so removing it changes
   nothing in a browser. The Orca texture's hash is in the denylist of
   `scripts/brand_assets/tests/test_visible_logos.py`, and `scripts/brand_assets/tests/test_bed_texture.py` keeps
-  every SVG bed texture of the profiles NanoSVG-safe (the cosmyx Nova texture is excluded there, with its reason).
+  every SVG bed texture of the profiles NanoSVG-safe.
+- **Nova bed texture not NanoSVG-safe** (D-012), resolved 2026-10-28 on the user's decision:
+  `resources/profiles/cosmyx/Nova-bed_texture.svg` (cosmyx profile pack, used by the Nova, Nova Metal Ceramique,
+  Nova Haute Temperature, Nova Double Tete and Nova can-out machine models) coloured its 77 shapes through a
+  `<style>` sheet with classes. NanoSVG, which draws the bed, has no stylesheet support, so every shape was drawn
+  opaque black instead of white, blue (`#335AFA`) and red (`#DA0000`). Each `class="stN"` was replaced by the inline
+  `style` of its class and the `<style>` element removed, nothing else changed (paths, viewBox, ids, order): the
+  resolved fill and stroke of every shape are identical, and NanoSVG now reads 75 white, 1 blue and 1 red shape. The
+  file now passes the NanoSVG check of `scripts/brand_assets/tests/test_bed_texture.py` without an exclusion.
+  Reverting: restore the file from git history and put it back in `KNOWN_UNSAFE`.
