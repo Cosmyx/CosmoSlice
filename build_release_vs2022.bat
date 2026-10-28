@@ -48,8 +48,19 @@ echo "building deps.."
 
 echo on
 cmake ../ -G "Visual Studio 17 2022" -A x64 -DDESTDIR="%DEPS%" -DCMAKE_BUILD_TYPE=%build_type% -DDEP_DEBUG=%debug% -DORCA_INCLUDE_DEBUG_INFO=%debuginfo%
+@echo off
+if errorlevel 1 (
+    echo "deps configure failed"
+    exit /b 1
+)
+
+echo on
 cmake --build . --config %build_type% --target deps -- -m
 @echo off
+if errorlevel 1 (
+    echo "deps build failed"
+    exit /b 1
+)
 
 if "%1"=="deps" exit /b 0
 
@@ -61,9 +72,25 @@ cd %build_dir%
 
 echo on
 cmake .. -G "Visual Studio 17 2022" -A x64 -DBBL_RELEASE_TO_PUBLIC=1 -DORCA_TOOLS=ON %SIG_FLAG% -DCMAKE_PREFIX_PATH="%DEPS%/usr/local" -DCMAKE_INSTALL_PREFIX="./OrcaSlicer" -DCMAKE_BUILD_TYPE=%build_type% -DWIN10SDK_PATH="%WindowsSdkDir%Include\%WindowsSDKVersion%\"
+@echo off
+if errorlevel 1 (
+    echo "slicer configure failed"
+    exit /b 1
+)
+
+echo on
 cmake --build . --config %build_type% --target ALL_BUILD -- -m
 @echo off
+if errorlevel 1 (
+    echo "slicer build failed"
+    exit /b 1
+)
+
 cd ..
 call scripts/run_gettext.bat
 cd %build_dir%
 cmake --build . --target install --config %build_type%
+if errorlevel 1 (
+    echo "slicer install failed"
+    exit /b 1
+)

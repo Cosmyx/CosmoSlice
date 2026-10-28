@@ -51,23 +51,23 @@ jobs:
           cmakeVersion: "~3.28.0"  # use most recent 3.28.x version
 
       - name: setup dev on Windows
-        if: inputs.os == 'windows-latest'
+        if: inputs.os == 'windows-2022'
         uses: microsoft/setup-msbuild@v2
 
       - name: Get the date on Ubuntu and macOS
-        if: inputs.os != 'windows-latest'
+        if: inputs.os != 'windows-2022'
         run: echo "date=$(date +'%Y%m%d')" >> $GITHUB_ENV
         shell: bash
 
       - name: Get the date on Windows
-        if: inputs.os == 'windows-latest'
+        if: inputs.os == 'windows-2022'
         run: echo "date=$(Get-Date -Format 'yyyyMMdd')" | Out-File -Append -FilePath $env:GITHUB_ENV -Encoding utf8
         shell: pwsh
 
 
       # Build Dependencies
       - name: Build on Windows
-        if: inputs.os == 'windows-latest'
+        if: inputs.os == 'windows-2022'
         working-directory: ${{ github.workspace }}
         run: |
             choco install strawberryperl
@@ -126,7 +126,7 @@ jobs:
       #     path: ${{ github.workspace }}/deps/build/OrcaSlicer_dep*.tar.gz
 
       - name: Upload Windows artifacts
-        if: inputs.os == 'windows-latest'
+        if: inputs.os == 'windows-2022'
         uses: actions/upload-artifact@v4
         with:
           name: OrcaSlicer_dep_win64_${{ env.date }}
@@ -144,7 +144,11 @@ jobs:
   build_orca:
     name: Build OrcaSlicer
     needs: [build_deps]
-    if: ${{ !cancelled() && !inputs.build-deps-only && inputs.force-build || (inputs.valid-cache == true && needs.build_deps.result == 'skipped') || (inputs.valid-cache != true && success()) }}
+    # `&&` binds tighter than `||`, so the previous condition let this job start
+    # during a deps-only run, and also after a failed `build_deps` on a forced
+    # build. Run only when deps are known good: either restored from cache
+    # (build_deps skipped) or freshly built (build_deps succeeded).
+    if: ${{ !cancelled() && !inputs.build-deps-only && contains(fromJSON('["success", "skipped"]'), needs.build_deps.result) }}
     uses: ./.github/workflows/build_orca.yml
     with:
       cache-key: ${{ inputs.cache-key }}
