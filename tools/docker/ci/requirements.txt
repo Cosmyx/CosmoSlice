@@ -1,0 +1,7 @@
+# Exact pins for the CI image, transitive dependencies included (installed with --no-deps).
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.1.1
+ruff==0.6.9

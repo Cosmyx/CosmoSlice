@@ -1,0 +1,21 @@
+# Configuration of the repository's Python tooling (pytest, ruff), run in the CI image through `just`.
+# This is not a Python package: the slicer itself is C++ and built by CMake.
+
+[tool.pytest.ini_options]
+minversion = "9.0"
+addopts = ["--import-mode=importlib", "-ra", "--strict-markers", "--strict-config", "-p", "no:cacheprovider"]
+xfail_strict = true
+filterwarnings = ["error"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+# Legacy upstream scripts are kept as they are (upstream merges); only the modules below scripts/ and tools/
+# written for CosmoSlice are linted.
+extend-exclude = ["scripts/*.py", "scripts/flatpak", "scripts/linux.d"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.ruff.format]
+line-ending = "lf"

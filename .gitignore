@@ -39,3 +39,8 @@ src/OrcaSlicer-doc/
 resources/profiles/user/default
 *.code-workspace
 deps_src/build/
+
+# Python tooling caches
+__pycache__/
+.pytest_cache/
+.ruff_cache/
