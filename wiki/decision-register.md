@@ -4,6 +4,22 @@ Every decision taken while working on CosmoSlice is recorded here with its numbe
 code is the way it is. Numbers are never reused. An entry gives the context, the decision, the reason, and what
 reverting it would take. Problems found but not fixed go to [Open issues](#open-issues).
 
+## D-004 In-place msgid rename tool
+
+- **Context.** Renaming a msgid with the usual gettext tools is destructive here: `run_gettext.sh --full` /
+  `gettext_make_pot` regenerate from `list.txt` and would drop about 276 msgids, and a plain `msgmerge` re-wraps
+  about 2000 lines per language.
+- **Decision.** `scripts/i18n/rename_msgids.py` (`just i18n-rename`) applies a frozen JSON mapping
+  (`[{old, new}]`) in place. In the pot only the msgid lines change. In a .po, the msgid lines change and, when the
+  entry has a non-empty translation, it gets `#, fuzzy` (merged into an existing flag line) and `#| msgid "<old>"`
+  (kept as it is if the entry already had a previous msgid). New msgids are laid out the gettext way
+  (`scripts/i18n/po.py`, 79 columns). Idempotent; fails when a catalogue has neither the old nor the new msgid, or
+  both (duplicate); the mapping is rejected on identity, duplicates and chains. Obsolete `#~` entries and headers
+  are never touched. `--check` reports without writing.
+- **Reason.** Translators get gettext's own "previous msgid" signal for exactly the renamed entries, and nothing else
+  in the 21 catalogues moves.
+- **Reverting.** Run the tool with the mapping's old and new swapped, then drop the fuzzy flags it added.
+
 ## D-007 Tooling: root justfile, pinned CI image, Python tests and lint in Docker
 
 - **Context.** The repository had no task runner and no Python test or lint setup; scripts were run by hand.

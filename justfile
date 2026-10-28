@@ -33,6 +33,10 @@ fmt:
     {{docker}} -- ruff format scripts tools
     {{docker}} -- ruff check --fix scripts tools
 
+# Rename msgids in place in the pot and every .po from the frozen mapping (scripts/i18n/data/cosmoslice_rename.json)
+i18n-rename *args:
+    {{python}} scripts/i18n/rename_msgids.py {{args}}
+
 # Append msgids found in src/ but missing from the pot and every .po (wraps scripts/update_pot.py)
 i18n-update-pot:
     {{python}} scripts/update_pot.py --update-po
