@@ -6,3 +6,34 @@
 # output = "resources/..."          # repository-relative POSIX path of the generated file (kept name)
 # format = "png"                    # "png" (needs size, in px, square) or "icns" (every macOS icon size)
 # size = 154
+
+# Home page and setup guide header logo, same size as the Orca file it replaces.
+[[derived]]
+source = "resources/images/OrcaSlicer.svg"
+output = "resources/web/image/logo.png"
+format = "png"
+size = 154
+
+# macOS app bundle icon (CFBundleIconFile).
+[[derived]]
+source = "resources/images/OrcaSlicer.svg"
+output = "resources/Icon.icns"
+format = "icns"
+
+# macOS document icon of .obj, .amf and .3mf files.
+[[derived]]
+source = "resources/images/OrcaSlicer.svg"
+output = "resources/images/OrcaSlicer.icns"
+format = "icns"
+
+# macOS document icons of .stl and .gcode files: the app icon until dedicated document sources are provided
+# (D-011, asset request A2). Only the source changes then.
+[[derived]]
+source = "resources/images/OrcaSlicer.svg"
+output = "resources/images/stl.icns"
+format = "icns"
+
+[[derived]]
+source = "resources/images/OrcaSlicer.svg"
+output = "resources/images/gcode.icns"
+format = "icns"
