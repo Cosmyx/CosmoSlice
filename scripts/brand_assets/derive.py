@@ -17,11 +17,16 @@ import subprocess
 import sys
 import tempfile
 import tomllib
-from collections.abc import Callable, Iterable
+from collections.abc import Callable, Iterable, Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
 
-import icns
+if __package__:
+    # Imported as the `brand_assets` package (tests): no bare module name lands in sys.modules.
+    from . import icns
+else:
+    # Run as a script: the module folder is sys.path[0].
+    import icns
 
 MODULE_DIR = Path(__file__).resolve().parent
 MANIFEST = MODULE_DIR / "derived-assets.toml"
@@ -34,6 +39,10 @@ Renderer = Callable[[Path, int], bytes]
 
 class ResvgMissingError(RuntimeError):
     """resvg is not on PATH: the command was run outside the CI image."""
+
+
+class RenderError(RuntimeError):
+    """resvg failed on a source; the message carries the source path and resvg's stderr."""
 
 
 @dataclass(frozen=True)
@@ -55,7 +64,9 @@ def _relative_posix(value: object, field: str) -> str:
     return path.as_posix()
 
 
-def _entry(raw: dict, root: Path) -> Entry:
+def _entry(raw: object, root: Path) -> Entry:
+    if not isinstance(raw, Mapping):
+        raise ValueError("must be a table ([[derived]])")
     unknown = sorted(set(raw) - KEYS)
     if unknown:
         raise ValueError(f"unknown keys {unknown}")
@@ -73,7 +84,7 @@ def _entry(raw: dict, root: Path) -> Entry:
         raise ValueError(f"icns output '{output}' takes no size (it holds every icon size)")
     if not (root / source).is_file():
         raise ValueError(f"source '{source}' does not exist")
-    return Entry(source, output, fmt, size)
+    return Entry(source, output, fmt, size if isinstance(size, int) else None)
 
 
 def load_manifest(manifest: Path = MANIFEST, root: Path = REPO_ROOT) -> list[Entry]:
@@ -102,18 +113,27 @@ def find_resvg() -> str:
     return path
 
 
-def resvg_renderer(resvg: str | None = None) -> Renderer:
-    """Renderer that rasterises an SVG to a square PNG of `size` px with the pinned resvg."""
-    binary = resvg or find_resvg()
+def resvg_renderer(command: Sequence[str] | None = None) -> Renderer:
+    """Renderer that rasterises an SVG to a square PNG of `size` px with the pinned resvg.
+
+    `command` replaces the resvg invocation (its arguments are appended); RenderError when it fails.
+    """
+    base = list(command) if command is not None else [find_resvg()]
 
     def render(source: Path, size: int) -> bytes:
         with tempfile.TemporaryDirectory() as tmp:
             out = Path(tmp) / "out.png"
-            subprocess.run(
-                [binary, "-w", str(size), "-h", str(size), str(source), str(out)],
-                check=True,
-                capture_output=True,
-            )
+            try:
+                subprocess.run(
+                    [*base, "-w", str(size), "-h", str(size), str(source), str(out)],
+                    check=True,
+                    capture_output=True,
+                )
+            except subprocess.CalledProcessError as error:
+                stderr = error.stderr.decode("utf-8", errors="replace").strip() if error.stderr else ""
+                raise RenderError(
+                    f"resvg failed on {source} at {size} px (exit status {error.returncode}): {stderr or 'no output'}"
+                ) from error
             return out.read_bytes()
 
     return render
@@ -123,7 +143,8 @@ def render_entry(entry: Entry, root: Path, render: Renderer) -> bytes:
     """Bytes of one output, freshly rendered from its source."""
     source = root / entry.source
     if entry.format == "png":
-        assert entry.size is not None
+        if entry.size is None:
+            raise ValueError(f"png output '{entry.output}' has no size")
         return render(source, entry.size)
     return icns.write_icns({size: render(source, size) for size in icns.REQUIRED_SIZES})
 

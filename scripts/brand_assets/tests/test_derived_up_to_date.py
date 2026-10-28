@@ -6,8 +6,8 @@ it never skips.
 
 from pathlib import Path
 
-import derive
 import pytest
+from brand_assets import derive
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 ENTRIES = derive.load_manifest(derive.MANIFEST, REPO_ROOT)

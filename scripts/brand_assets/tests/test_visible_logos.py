@@ -13,8 +13,8 @@ asset (bed texture, logo2.png) are not listed, otherwise the suite would be red 
 import hashlib
 from pathlib import Path
 
-import icns
 import pytest
+from brand_assets import icns
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 RESOURCES = REPO_ROOT / "resources"

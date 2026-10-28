@@ -2,12 +2,13 @@
 
 import os
 import struct
+import subprocess
+import sys
 import zlib
 from pathlib import Path
 
-import derive
-import icns
 import pytest
+from brand_assets import derive, icns
 
 
 def fake_png(size: int, salt: bytes = b"") -> bytes:
@@ -97,3 +98,34 @@ def test_resvg_renders_a_square_png(tmp_path):
     data = render(source, 48)
     assert icns.png_size(data) == (48, 48)
     assert render(source, 48) == data
+
+
+def test_render_entry_rejects_png_without_size(tmp_path):
+    root, _ = setup_tree(tmp_path)
+    entry = derive.Entry("logo.svg", "out/logo.png", "png", None)
+    with pytest.raises(ValueError, match=r"out/logo\.png.*size"):
+        derive.render_entry(entry, root, fake_renderer)
+
+
+def test_resvg_failure_reports_stderr_and_source(tmp_path):
+    source = tmp_path / "broken.svg"
+    source.write_text("<svg", encoding="utf-8")
+    # Stand-in for resvg: any command that writes to stderr and exits non-zero (the extra arguments are ignored).
+    failing = [sys.executable, "-c", "import sys; sys.stderr.write('resvg: unexpected end of stream'); sys.exit(3)"]
+    render = derive.resvg_renderer(failing)
+    with pytest.raises(derive.RenderError) as caught:
+        render(source, 16)
+    message = str(caught.value)
+    assert "resvg: unexpected end of stream" in message
+    assert str(source) in message
+    assert "exit status 3" in message
+    assert isinstance(caught.value.__cause__, subprocess.CalledProcessError)
+
+
+def test_modules_are_imported_under_their_package_name():
+    # Every suite runs in one pytest session: bare module names would clash with other modules called derive/icns.
+    assert derive.__name__ == "brand_assets.derive"
+    assert icns.__name__ == "brand_assets.icns"
+    assert derive.icns is icns
+    assert "derive" not in sys.modules
+    assert "icns" not in sys.modules

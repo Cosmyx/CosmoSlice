@@ -2,8 +2,8 @@
 
 from pathlib import Path, PurePosixPath
 
-import derive
 import pytest
+from brand_assets import derive
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 
@@ -91,3 +91,9 @@ def test_loader_rejects_duplicate_outputs(tmp_path):
     entry = '[[derived]]\nsource = "src.svg"\noutput = "out.png"\nformat = "png"\nsize = 8\n'
     with pytest.raises(ValueError, match="duplicate"):
         derive.load_manifest(write_manifest(tmp_path, entry * 2), tmp_path)
+
+
+def test_loader_rejects_an_entry_that_is_not_a_table(tmp_path):
+    manifest = write_manifest(tmp_path, 'derived = ["src.svg"]\n')
+    with pytest.raises(ValueError, match="entry 1: must be a table"):
+        derive.load_manifest(manifest, tmp_path)

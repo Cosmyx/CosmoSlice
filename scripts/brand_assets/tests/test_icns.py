@@ -3,8 +3,8 @@
 import struct
 import zlib
 
-import icns
 import pytest
+from brand_assets import icns
 
 EXPECTED_ORDER = [
     ("icp4", 16),
