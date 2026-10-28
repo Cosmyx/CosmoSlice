@@ -18,6 +18,8 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ### tooling
 
+- `just lint` now checks the Python modules below `scripts/` (only the legacy upstream scripts are skipped).
+  MR: pending. D-007.
 - `just i18n-rename`: renames msgids in place in the pot and every .po from a frozen mapping, marking changed
   translations fuzzy with the previous msgid, without re-wrapping the catalogues. MR: pending. D-004.
 - Repository-wide `just` task runner with a pinned Docker CI image for Python tests, lint and i18n checks, and LF

@@ -12,7 +12,16 @@ line-length = 120
 target-version = "py312"
 # Legacy upstream scripts are kept as they are (upstream merges); only the modules below scripts/ and tools/
 # written for CosmoSlice are linted.
-extend-exclude = ["scripts/*.py", "scripts/flatpak", "scripts/linux.d"]
+# Files are listed by name: in ruff globs `*` also crosses `/`, so "scripts/*.py" would exclude every module.
+extend-exclude = [
+    "scripts/HintsToPot.py",
+    "scripts/generate_presets_vendors.py",
+    "scripts/orca_extra_profile_check.py",
+    "scripts/orca_filament_lib.py",
+    "scripts/update_pot.py",
+    "scripts/flatpak",
+    "scripts/linux.d",
+]
 
 [tool.ruff.lint]
 select = ["E", "W", "F", "I", "B", "UP", "SIM", "RUF"]
