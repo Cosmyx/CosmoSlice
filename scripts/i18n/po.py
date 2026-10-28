@@ -157,10 +157,32 @@ def parse(text: str) -> tuple[list[str], list[Entry]]:
         start = i
         while i < len(lines) and lines[i].strip():
             i += 1
-        entry = _parse_block(lines, start, i)
-        if entry.fields:
-            entries.append(entry)
+        for sub_start, sub_end in _split_entries(lines, start, i):
+            entry = _parse_block(lines, sub_start, sub_end)
+            if entry.fields:
+                entries.append(entry)
     return lines, entries
+
+
+_ENTRY_START = re.compile(r"^(?:#~ )?(?:msgctxt|msgid)\s")
+
+
+def _split_entries(lines: list[str], start: int, end: int) -> list[tuple[int, int]]:
+    """Split a blank-line separated block that holds several entries (no blank line between them)."""
+    spans: list[tuple[int, int]] = []
+    current = start
+    seen_msgstr = False
+    for n in range(start, end):
+        line = lines[n]
+        starts_entry = line.startswith("#") and not line.startswith("#~") or _ENTRY_START.match(line)
+        if seen_msgstr and starts_entry:
+            spans.append((current, n))
+            current = n
+            seen_msgstr = False
+        if re.match(r"^(?:#~ )?msgstr", line):
+            seen_msgstr = True
+    spans.append((current, end))
+    return spans
 
 
 def _parse_block(lines: list[str], start: int, end: int) -> Entry:

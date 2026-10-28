@@ -1,0 +1,567 @@
+{
+  "_comment": "Entries that keep the upstream product name on purpose (D-005, D-006). Keyed by file and exact literal source text (between the quotes); count is the number of occurrences in that file. The reason starts with its category. msgids lists the translatable msgids (decoded) that keep the name.",
+  "msgids": [
+    {
+      "msgid": "CosmoSlice is based on OrcaSlicer, PrusaSlicer and BambuStudio",
+      "reason": "credit: CosmoSlice is based on OrcaSlicer (D-005)"
+    },
+    {
+      "msgid": "CosmoSlice is based on OrcaSlicer, which is based on BambuStudio, PrusaSlicer, and SuperSlicer.",
+      "reason": "credit: CosmoSlice is based on OrcaSlicer (D-005)"
+    },
+    {
+      "msgid": "If you would like to try Orca Slicer Beta, you may click to",
+      "reason": "kept-name: the link opens upstream beta releases (D-005)"
+    },
+    {
+      "msgid": "Orca Cube",
+      "reason": "kept-name: built-in model name, compared in GUI_Factories.cpp (D-005)"
+    },
+    {
+      "msgid": "Orca String Hell",
+      "reason": "kept-name: built-in model name, compared in GUI_Factories.cpp (D-005)"
+    },
+    {
+      "msgid": "Orca Tolerance Test",
+      "reason": "kept-name: built-in model name, compared in GUI_Factories.cpp (D-005)"
+    },
+    {
+      "msgid": "Orca YOLO flowrate calibration, 0.005 step",
+      "reason": "kept-name: Orca YOLO calibration name, persisted in projects (D-005)"
+    },
+    {
+      "msgid": "Orca YOLO flowrate calibration, 0.01 step",
+      "reason": "kept-name: Orca YOLO calibration name, persisted in projects (D-005)"
+    },
+    {
+      "msgid": "Test OrcaSlicer (GitHub)",
+      "reason": "kept-name: network test of the upstream GitHub server (D-005)"
+    },
+    {
+      "msgid": "Test OrcaSlicer (GitHub):",
+      "reason": "kept-name: network test of the upstream GitHub server (D-005)"
+    },
+    {
+      "msgid": "This project was created with an OrcaSlicer 2.3.1-alpha and uses infill rotation template settings that may not work properly with your current infill pattern. This could result in weak support or print quality issues.",
+      "reason": "kept-name: refers to an OrcaSlicer release that created the project (D-005)"
+    }
+  ],
+  "cpp_literals": [
+    {
+      "path": "src/OrcaSlicer.cpp",
+      "literal": " G-code conflicts detected after slicing. Please make sure the 3mf file can be successfully sliced in the latest Orca Slicer.",
+      "count": 1,
+      "reason": "cli: CLI error text written to result.json for automation, not shown in the GUI"
+    },
+    {
+      "path": "src/OrcaSlicer.cpp",
+      "literal": "Failed slicing the model. Please verify the slicing of all plates on Orca Slicer before uploading.",
+      "count": 1,
+      "reason": "cli: CLI error text written to result.json for automation, not shown in the GUI"
+    },
+    {
+      "path": "src/OrcaSlicer.cpp",
+      "literal": "Filaments are not compatible with the plate type. Please verify the slicing of all plates in Orca Slicer before uploading.",
+      "count": 1,
+      "reason": "cli: CLI error text written to result.json for automation, not shown in the GUI"
+    },
+    {
+      "path": "src/OrcaSlicer.cpp",
+      "literal": "Object conflicts were detected when using print-by-object mode. Please verify the slicing of all plates in Orca Slicer before uploading.",
+      "count": 1,
+      "reason": "cli: CLI error text written to result.json for automation, not shown in the GUI"
+    },
+    {
+      "path": "src/OrcaSlicer.cpp",
+      "literal": "Object conflicts were detected. Please verify the slicing of all plates in Orca Slicer before uploading.",
+      "count": 1,
+      "reason": "cli: CLI error text written to result.json for automation, not shown in the GUI"
+    },
+    {
+      "path": "src/OrcaSlicer.cpp",
+      "literal": "One of the plate is empty or has no object fully inside it. Please check that the 3mf contains no empty plate in Orca Slicer before uploading.",
+      "count": 1,
+      "reason": "cli: CLI error text written to result.json for automation, not shown in the GUI"
+    },
+    {
+      "path": "src/OrcaSlicer.cpp",
+      "literal": "Some slicing parameters cannot work with Spiral Vase mode. Please solve the issue in Orca Slicer before uploading.",
+      "count": 1,
+      "reason": "cli: CLI error text written to result.json for automation, not shown in the GUI"
+    },
+    {
+      "path": "src/OrcaSlicer.cpp",
+      "literal": "The temperature difference of the filaments used is too large. Please verify the slicing of all plates in Orca Slicer before uploading.",
+      "count": 1,
+      "reason": "cli: CLI error text written to result.json for automation, not shown in the GUI"
+    },
+    {
+      "path": "src/OrcaSlicer.cpp",
+      "literal": "There are some incorrect slicing parameters in the 3mf. Please verify the slicing of all plates in Orca Slicer before uploading.",
+      "count": 1,
+      "reason": "cli: CLI error text written to result.json for automation, not shown in the GUI"
+    },
+    {
+      "path": "src/OrcaSlicer_app_msvc.cpp",
+      "literal": "OrcaSlicer.dll",
+      "count": 1,
+      "reason": "internal: Windows launcher DLL/window names and console diagnostics"
+    },
+    {
+      "path": "src/OrcaSlicer_app_msvc.cpp",
+      "literal": "OrcaSlicer.dll was not loaded, error=%d\\n",
+      "count": 1,
+      "reason": "internal: Windows launcher DLL/window names and console diagnostics"
+    },
+    {
+      "path": "src/OrcaSlicer_app_msvc.cpp",
+      "literal": "OrcaSlicer_opengl_version_check",
+      "count": 2,
+      "reason": "internal: Windows launcher DLL/window names and console diagnostics"
+    },
+    {
+      "path": "src/OrcaSlicer_app_msvc.cpp",
+      "literal": "could not locate the function orcaslicer_main in OrcaSlicer.dll\\n",
+      "count": 1,
+      "reason": "internal: Windows launcher DLL/window names and console diagnostics"
+    },
+    {
+      "path": "src/dev-utils/OrcaSlicer_profile_validator.cpp",
+      "literal": "Orca Profile Validator\\nUsage",
+      "count": 1,
+      "reason": "dev-tool: developer utility, not part of the application"
+    },
+    {
+      "path": "src/libslic3r/AppConfig.cpp",
+      "literal": "https://api.github.com/repos/OrcaSlicer/orcaslicer-profiles/releases/tags",
+      "count": 1,
+      "reason": "url: link to upstream documentation or repository"
+    },
+    {
+      "path": "src/libslic3r/Config.cpp",
+      "literal": "; OrcaSlicer",
+      "count": 1,
+      "reason": "compared: matched against file or device content written by other versions"
+    },
+    {
+      "path": "src/libslic3r/Format/bbs_3mf.cpp",
+      "literal": "OrcaSlicer-",
+      "count": 1,
+      "reason": "compared: matched against file or device content written by other versions"
+    },
+    {
+      "path": "src/libslic3r/GCode.cpp",
+      "literal": "Orca-PA-Calibration-Test",
+      "count": 1,
+      "reason": "compared: calibration object name matched in G-code"
+    },
+    {
+      "path": "src/libslic3r/GCode/GCodeProcessor.cpp",
+      "literal": "generated by OrcaSlicer",
+      "count": 1,
+      "reason": "compared: matched against file or device content written by other versions"
+    },
+    {
+      "path": "src/libslic3r/PresetBundle.cpp",
+      "literal": "OrcaFilamentLibrary",
+      "count": 1,
+      "reason": "persisted: system vendor name of the filament library"
+    },
+    {
+      "path": "src/libslic3r/libslic3r.h",
+      "literal": "OrcaSlicerGcodeViewer",
+      "count": 1,
+      "reason": "persisted: GCODEVIEWER_APP_KEY names the viewer configuration folder"
+    },
+    {
+      "path": "src/slic3r/GUI/AboutDialog.cpp",
+      "literal": "CosmoSlice is based on OrcaSlicer, PrusaSlicer and BambuStudio",
+      "count": 1,
+      "reason": "credit: CosmoSlice is based on OrcaSlicer (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/AboutDialog.cpp",
+      "literal": "CosmoSlice is based on OrcaSlicer, which is based on BambuStudio, PrusaSlicer, and SuperSlicer.",
+      "count": 1,
+      "reason": "credit: CosmoSlice is based on OrcaSlicer (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/AboutDialog.cpp",
+      "literal": "OrcaSlicer_192px.png",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/AboutDialog.cpp",
+      "literal": "OrcaSlicer_about",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/AboutDialog.cpp",
+      "literal": "OrcaSlicer_about_dark",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/ConfigWizard.cpp",
+      "literal": "ConfigWizard: Internal error in BundleMap: ORCA_DEFAULT_BUNDLE not loaded",
+      "count": 1,
+      "reason": "internal: developer error naming an identifier"
+    },
+    {
+      "path": "src/slic3r/GUI/ConfigWizard.cpp",
+      "literal": "OrcaSlicer_192px_transparent.png",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/CreatePresetsDialog.cpp",
+      "literal": "Orca Arena Printer",
+      "count": 2,
+      "reason": "kept-name: Orca Arena printer model name (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/CreatePresetsDialog.cpp",
+      "literal": "Orca Arena X1 Carbon",
+      "count": 1,
+      "reason": "kept-name: Orca Arena printer model name (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "%1%/applications/OrcaSlicer%2%.desktop",
+      "count": 3,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "%1%/applications/OrcaSlicerGcodeViewer%2%.desktop",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "%1%/applications/OrcaSlicerURLProtocol-%2%%3%.desktop",
+      "count": 3,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "%1%/images/%2%OrcaSlicer%3%.png",
+      "count": 3,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "%1%/images/%2%OrcaSlicer-gcodeviewer%3%.png",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "%1%/images/OrcaSlicer-gcodeviewer_192px.png",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "%1%/images/OrcaSlicer.png",
+      "count": 2,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "Icon=OrcaSlicer%2%\\n",
+      "count": 1,
+      "reason": "linux-desktop: .desktop entry fields, renamed in a follow-up together with the file names"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "Icon=OrcaSlicer-gcodeviewer%2%\\n",
+      "count": 1,
+      "reason": "linux-desktop: .desktop entry fields, renamed in a follow-up together with the file names"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "Name=OrcaSlicer URL Protocol %1% %2%\\n",
+      "count": 1,
+      "reason": "linux-desktop: .desktop entry fields, renamed in a follow-up together with the file names"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "Name=OrcaSlicer%1%\\n",
+      "count": 1,
+      "reason": "linux-desktop: .desktop entry fields, renamed in a follow-up together with the file names"
+    },
+    {
+      "path": "src/slic3r/GUI/DesktopIntegrationDialog.cpp",
+      "literal": "xdg-mime default OrcaSlicerURLProtocol-%1%%2%.desktop x-scheme-handler/%1%",
+      "count": 2,
+      "reason": "linux-desktop: .desktop entry fields, renamed in a follow-up together with the file names"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_App.cpp",
+      "literal": " Orca.Slicer.1",
+      "count": 3,
+      "reason": "persisted: Windows registry ProgID and its description"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_App.cpp",
+      "literal": "OrcaSlicer",
+      "count": 2,
+      "reason": "persisted: Windows registry ProgID and its description"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_App.cpp",
+      "literal": "OrcaSlicer ",
+      "count": 2,
+      "reason": "compared: parsed from a downloaded release file"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_App.cpp",
+      "literal": "X-Orca-Sig",
+      "count": 1,
+      "reason": "external: HTTP header names expected by the update server"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_App.cpp",
+      "literal": "X-Orca-Ts",
+      "count": 1,
+      "reason": "external: HTTP header names expected by the update server"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_App.hpp",
+      "literal": "OrcaSlicer",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_App.hpp",
+      "literal": "OrcaSlicer-gcodeviewer",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_Factories.cpp",
+      "literal": "Orca Cube",
+      "count": 2,
+      "reason": "kept-name: built-in model name, compared in GUI_Factories.cpp (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_Factories.cpp",
+      "literal": "Orca String Hell",
+      "count": 2,
+      "reason": "kept-name: built-in model name, compared in GUI_Factories.cpp (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_Factories.cpp",
+      "literal": "Orca Tolerance Test",
+      "count": 2,
+      "reason": "kept-name: built-in model name, compared in GUI_Factories.cpp (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_Factories.cpp",
+      "literal": "orca/OrcaCube_v2.3mf",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_Factories.cpp",
+      "literal": "orca/OrcaToleranceTest.stl",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/GUI_Factories.cpp",
+      "literal": "orca/Orca_stringhell.3mf",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/InstanceCheck.cpp",
+      "literal": "/com/softfever3d/OrcaSlicer/InstanceCheck/Object",
+      "count": 2,
+      "reason": "internal: single-instance detection key (see Open issues)"
+    },
+    {
+      "path": "src/slic3r/GUI/InstanceCheck.cpp",
+      "literal": "OrcaSlicer",
+      "count": 1,
+      "reason": "internal: single-instance detection key (see Open issues)"
+    },
+    {
+      "path": "src/slic3r/GUI/MainFrame.cpp",
+      "literal": "Orca YOLO flowrate calibration, 0.005 step",
+      "count": 2,
+      "reason": "kept-name: Orca YOLO calibration name, persisted in projects (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/MainFrame.cpp",
+      "literal": "Orca YOLO flowrate calibration, 0.01 step",
+      "count": 2,
+      "reason": "kept-name: Orca YOLO calibration name, persisted in projects (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/MainFrame.cpp",
+      "literal": "OrcaSlicer-mac_256px.ico",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/MainFrame.cpp",
+      "literal": "OrcaSlicer_128px.png",
+      "count": 2,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/MainFrame.cpp",
+      "literal": "https://github.com/SoftFever/OrcaSlicer/wiki/Calibration",
+      "count": 2,
+      "reason": "url: link to upstream documentation or repository"
+    },
+    {
+      "path": "src/slic3r/GUI/Mouse3DHandlerMac.mm",
+      "literal": "\\013OrcaSlicer",
+      "count": 1,
+      "reason": "external: client name registered with the 3Dconnexion driver"
+    },
+    {
+      "path": "src/slic3r/GUI/MsgDialog.cpp",
+      "literal": "If you would like to try Orca Slicer Beta, you may click to",
+      "count": 1,
+      "reason": "kept-name: the link opens upstream beta releases (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/MsgDialog.cpp",
+      "literal": "OrcaSlicer",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/MsgDialog.cpp",
+      "literal": "OrcaSlicer_192px_grayscale.png",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/NetworkTestDialog.cpp",
+      "literal": "OrcaSlicer(GitHub)",
+      "count": 2,
+      "reason": "kept-name: network test of the upstream GitHub server (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/NetworkTestDialog.cpp",
+      "literal": "Test OrcaSlicer (GitHub)",
+      "count": 1,
+      "reason": "kept-name: network test of the upstream GitHub server (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/NetworkTestDialog.cpp",
+      "literal": "Test OrcaSlicer (GitHub):",
+      "count": 1,
+      "reason": "kept-name: network test of the upstream GitHub server (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/NetworkTestDialog.cpp",
+      "literal": "https://github.com/SoftFever/OrcaSlicer",
+      "count": 2,
+      "reason": "url: link to upstream documentation or repository"
+    },
+    {
+      "path": "src/slic3r/GUI/OptionsGroup.cpp",
+      "literal": "https://github.com/SoftFever/OrcaSlicer/wiki/%s",
+      "count": 1,
+      "reason": "url: link to upstream documentation or repository"
+    },
+    {
+      "path": "src/slic3r/GUI/Plater.cpp",
+      "literal": "%1%/images/OrcaSlicerTitle.ico",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/Plater.cpp",
+      "literal": "Orca YOLO Flow Calibration",
+      "count": 1,
+      "reason": "kept-name: Orca YOLO calibration name, persisted in projects (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/Plater.cpp",
+      "literal": "Orca-LinearFlow.3mf",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/Plater.cpp",
+      "literal": "Orca-LinearFlow_fine.3mf",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/Plater.cpp",
+      "literal": "This project was created with an OrcaSlicer 2.3.1-alpha and uses ",
+      "count": 1,
+      "reason": "kept-name: refers to an OrcaSlicer release that created the project (D-005)"
+    },
+    {
+      "path": "src/slic3r/GUI/Plater.cpp",
+      "literal": "https://github.com/SoftFever/OrcaSlicer/wiki/bed-types",
+      "count": 1,
+      "reason": "url: link to upstream documentation or repository"
+    },
+    {
+      "path": "src/slic3r/GUI/ReleaseNote.cpp",
+      "literal": "OrcaSlicer",
+      "count": 3,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/SelectMachine.cpp",
+      "literal": "OrcaSlicer",
+      "count": 1,
+      "reason": "compared: matched against file or device content written by other versions"
+    },
+    {
+      "path": "src/slic3r/GUI/SendSystemInfoDialog.cpp",
+      "literal": "/images/OrcaSlicer_192px.png\\\" />",
+      "count": 1,
+      "reason": "persisted: key or asset of the system-info JSON report"
+    },
+    {
+      "path": "src/slic3r/GUI/SendSystemInfoDialog.cpp",
+      "literal": "OrcaSlicerVersion",
+      "count": 1,
+      "reason": "persisted: key or asset of the system-info JSON report"
+    },
+    {
+      "path": "src/slic3r/GUI/StepMeshDialog.cpp",
+      "literal": "https://github.com/SoftFever/OrcaSlicer/wiki/stl-transformation",
+      "count": 1,
+      "reason": "url: link to upstream documentation or repository"
+    },
+    {
+      "path": "src/slic3r/GUI/UpdateDialogs.cpp",
+      "literal": "OrcaSlicer",
+      "count": 1,
+      "reason": "asset: icon or file name on disk"
+    },
+    {
+      "path": "src/slic3r/GUI/Widgets/LabeledStaticBox.cpp",
+      "literal": "Orca",
+      "count": 1,
+      "reason": "internal: text used only to measure the label height"
+    },
+    {
+      "path": "src/slic3r/Utils/Obico.cpp",
+      "literal": "o/authorize?response_type=token&client_id=OrcaSlicer&hide_navbar=true",
+      "count": 1,
+      "reason": "external: client identifier registered with a third-party service"
+    },
+    {
+      "path": "src/slic3r/Utils/SimplyPrint.cpp",
+      "literal": "SimplyPrint Orca Plugin",
+      "count": 1,
+      "reason": "external: client identifier registered with a third-party service"
+    }
+  ]
+}

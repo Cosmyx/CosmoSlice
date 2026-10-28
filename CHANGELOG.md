@@ -16,8 +16,21 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ## 2026-10
 
+### gui
+
+- Dialogs, messages, tooltips, preferences and hints say CosmoSlice instead of OrcaSlicer; the About dialog credits
+  OrcaSlicer, and names that refer to upstream or are stored in files are kept. MR: pending. D-001, D-002, D-003,
+  D-005, D-006.
+
+### i18n
+
+- The 76 renamed msgids are renamed in the pot and every .po; existing translations are kept but marked fuzzy with the
+  previous msgid until each language is updated (`just i18n-status <lang>`). MR: pending. D-004.
+
 ### tooling
 
+- `just i18n-check` validates every catalogue and guards against the upstream product name in user-visible text;
+  `just i18n-status` lists what each language still has to translate. MR: pending. D-006.
 - `just lint` now checks the Python modules below `scripts/` (only the legacy upstream scripts are skipped).
   MR: pending. D-007.
 - `just i18n-rename`: renames msgids in place in the pot and every .po from a frozen mapping, marking changed

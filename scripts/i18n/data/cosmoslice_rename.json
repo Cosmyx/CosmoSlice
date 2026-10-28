@@ -1,0 +1,306 @@
+[
+  {
+    "old": "The jerk setting exceeds the printer's maximum jerk (machine_max_jerk_x/machine_max_jerk_y).\nOrca will automatically cap the jerk speed to ensure it doesn't surpass the printer's capabilities.\nYou can adjust the maximum jerk setting in your printer's configuration to get higher speeds.",
+    "new": "The jerk setting exceeds the printer's maximum jerk (machine_max_jerk_x/machine_max_jerk_y).\nCosmoSlice will automatically cap the jerk speed to ensure it doesn't surpass the printer's capabilities.\nYou can adjust the maximum jerk setting in your printer's configuration to get higher speeds."
+  },
+  {
+    "old": "Junction deviation setting exceeds the printer's maximum value (machine_max_junction_deviation).\nOrca will automatically cap the junction deviation to ensure it doesn't surpass the printer's capabilities.\nYou can adjust the machine_max_junction_deviation value in your printer's configuration to get higher limits.",
+    "new": "Junction deviation setting exceeds the printer's maximum value (machine_max_junction_deviation).\nCosmoSlice will automatically cap the junction deviation to ensure it doesn't surpass the printer's capabilities.\nYou can adjust the machine_max_junction_deviation value in your printer's configuration to get higher limits."
+  },
+  {
+    "old": "The acceleration setting exceeds the printer's maximum acceleration (machine_max_acceleration_extruding).\nOrca will automatically cap the acceleration speed to ensure it doesn't surpass the printer's capabilities.\nYou can adjust the machine_max_acceleration_extruding value in your printer's configuration to get higher speeds.",
+    "new": "The acceleration setting exceeds the printer's maximum acceleration (machine_max_acceleration_extruding).\nCosmoSlice will automatically cap the acceleration speed to ensure it doesn't surpass the printer's capabilities.\nYou can adjust the machine_max_acceleration_extruding value in your printer's configuration to get higher speeds."
+  },
+  {
+    "old": "The travel acceleration setting exceeds the printer's maximum travel acceleration (machine_max_acceleration_travel).\nOrca will automatically cap the travel acceleration speed to ensure it doesn't surpass the printer's capabilities.\nYou can adjust the machine_max_acceleration_travel value in your printer's configuration to get higher speeds.",
+    "new": "The travel acceleration setting exceeds the printer's maximum travel acceleration (machine_max_acceleration_travel).\nCosmoSlice will automatically cap the travel acceleration speed to ensure it doesn't surpass the printer's capabilities.\nYou can adjust the machine_max_acceleration_travel value in your printer's configuration to get higher speeds."
+  },
+  {
+    "old": "Orca Slicer can upload G-code files to a printer host. This field should contain the hostname, IP address or URL of the printer host instance. Print host behind HAProxy with basic auth enabled can be accessed by putting the user name and password into the URL in the following format: https://username:password@your-octopi-address/",
+    "new": "CosmoSlice can upload G-code files to a printer host. This field should contain the hostname, IP address or URL of the printer host instance. Print host behind HAProxy with basic auth enabled can be accessed by putting the user name and password into the URL in the following format: https://username:password@your-octopi-address/"
+  },
+  {
+    "old": "Orca Slicer can upload G-code files to a printer host. This field should contain the API Key or the password required for authentication.",
+    "new": "CosmoSlice can upload G-code files to a printer host. This field should contain the API Key or the password required for authentication."
+  },
+  {
+    "old": "This option sets the min point for the allowed bed mesh area. Due to the probe's XY offset, most printers are unable to probe the entire bed. To ensure the probe point does not go outside the bed area, the minimum and maximum points of the bed mesh should be set appropriately. OrcaSlicer ensures that adaptive_bed_mesh_min/adaptive_bed_mesh_max values do not exceed these min/max points. This information can usually be obtained from your printer manufacturer. The default setting is (-99999, -99999), which means there are no limits, thus allowing probing across the entire bed.",
+    "new": "This option sets the min point for the allowed bed mesh area. Due to the probe's XY offset, most printers are unable to probe the entire bed. To ensure the probe point does not go outside the bed area, the minimum and maximum points of the bed mesh should be set appropriately. CosmoSlice ensures that adaptive_bed_mesh_min/adaptive_bed_mesh_max values do not exceed these min/max points. This information can usually be obtained from your printer manufacturer. The default setting is (-99999, -99999), which means there are no limits, thus allowing probing across the entire bed."
+  },
+  {
+    "old": "This option sets the max point for the allowed bed mesh area. Due to the probe's XY offset, most printers are unable to probe the entire bed. To ensure the probe point does not go outside the bed area, the minimum and maximum points of the bed mesh should be set appropriately. OrcaSlicer ensures that adaptive_bed_mesh_min/adaptive_bed_mesh_max values do not exceed these min/max points. This information can usually be obtained from your printer manufacturer. The default setting is (99999, 99999), which means there are no limits, thus allowing probing across the entire bed.",
+    "new": "This option sets the max point for the allowed bed mesh area. Due to the probe's XY offset, most printers are unable to probe the entire bed. To ensure the probe point does not go outside the bed area, the minimum and maximum points of the bed mesh should be set appropriately. CosmoSlice ensures that adaptive_bed_mesh_min/adaptive_bed_mesh_max values do not exceed these min/max points. This information can usually be obtained from your printer manufacturer. The default setting is (99999, 99999), which means there are no limits, thus allowing probing across the entire bed."
+  },
+  {
+    "old": "After a tool change, the exact position of the newly loaded filament inside the nozzle may not be known, and the filament pressure is likely not yet stable. Before purging the print head into an infill or a sacrificial object, Orca Slicer will always prime this amount of material into the wipe tower to produce successive infill or sacrificial object extrusions reliably.",
+    "new": "After a tool change, the exact position of the newly loaded filament inside the nozzle may not be known, and the filament pressure is likely not yet stable. Before purging the print head into an infill or a sacrificial object, CosmoSlice will always prime this amount of material into the wipe tower to produce successive infill or sacrificial object extrusions reliably."
+  },
+  {
+    "old": "Connect an infill line to an internal perimeter with a short segment of an additional perimeter. If expressed as percentage (example: 15%) it is calculated over infill extrusion width. Orca Slicer tries to connect two close infill lines to a short perimeter segment. If no such perimeter segment shorter than infill_anchor_max is found, the infill line is connected to a perimeter segment at just one side and the length of the perimeter segment taken is limited to this parameter, but no longer than anchor_length_max.\nSet this parameter to zero to disable anchoring perimeters connected to a single infill line.",
+    "new": "Connect an infill line to an internal perimeter with a short segment of an additional perimeter. If expressed as percentage (example: 15%) it is calculated over infill extrusion width. CosmoSlice tries to connect two close infill lines to a short perimeter segment. If no such perimeter segment shorter than infill_anchor_max is found, the infill line is connected to a perimeter segment at just one side and the length of the perimeter segment taken is limited to this parameter, but no longer than anchor_length_max.\nSet this parameter to zero to disable anchoring perimeters connected to a single infill line."
+  },
+  {
+    "old": "Connect an infill line to an internal perimeter with a short segment of an additional perimeter. If expressed as percentage (example: 15%) it is calculated over infill extrusion width. Orca Slicer tries to connect two close infill lines to a short perimeter segment. If no such perimeter segment shorter than this parameter is found, the infill line is connected to a perimeter segment at just one side and the length of the perimeter segment taken is limited to infill_anchor, but no longer than this parameter.\nIf set to 0, the old algorithm for infill connection will be used, it should create the same result as with 1000 & 0.",
+    "new": "Connect an infill line to an internal perimeter with a short segment of an additional perimeter. If expressed as percentage (example: 15%) it is calculated over infill extrusion width. CosmoSlice tries to connect two close infill lines to a short perimeter segment. If no such perimeter segment shorter than this parameter is found, the infill line is connected to a perimeter segment at just one side and the length of the perimeter segment taken is limited to infill_anchor, but no longer than this parameter.\nIf set to 0, the old algorithm for infill connection will be used, it should create the same result as with 1000 & 0."
+  },
+  {
+    "old": "Orca Slicer can upload G-code files to a printer host. This field must contain the kind of the host.",
+    "new": "CosmoSlice can upload G-code files to a printer host. This field must contain the kind of the host."
+  },
+  {
+    "old": "If you want to process the output G-code through custom scripts, just list their absolute paths here. Separate multiple scripts with a semicolon. Scripts will be passed the absolute path to the G-code file as the first argument, and they can access the Orca Slicer config settings by reading environment variables.",
+    "new": "If you want to process the output G-code through custom scripts, just list their absolute paths here. Separate multiple scripts with a semicolon. Scripts will be passed the absolute path to the G-code file as the first argument, and they can access the CosmoSlice config settings by reading environment variables."
+  },
+  {
+    "old": "To reduce the waiting time after tool change, Orca can preheat the next tool while the current tool is still in use. This setting specifies the time in seconds to preheat the next tool. Orca will insert a M104 command to preheat the tool in advance.",
+    "new": "To reduce the waiting time after tool change, CosmoSlice can preheat the next tool while the current tool is still in use. This setting specifies the time in seconds to preheat the next tool. CosmoSlice will insert a M104 command to preheat the tool in advance."
+  },
+  {
+    "old": "Position of the extruder at the beginning of the custom G-code block. If the custom G-code travels somewhere else, it should write to this variable so OrcaSlicer knows where it travels from when it gets control back.",
+    "new": "Position of the extruder at the beginning of the custom G-code block. If the custom G-code travels somewhere else, it should write to this variable so CosmoSlice knows where it travels from when it gets control back."
+  },
+  {
+    "old": "Retraction state at the beginning of the custom G-code block. If the custom G-code moves the extruder axis, it should write to this variable so OrcaSlicer de-retracts correctly when it gets control back.",
+    "new": "Retraction state at the beginning of the custom G-code block. If the custom G-code moves the extruder axis, it should write to this variable so CosmoSlice de-retracts correctly when it gets control back."
+  },
+  {
+    "old": "OrcaSlicer has encountered an error while taking a configuration snapshot.",
+    "new": "CosmoSlice has encountered an error while taking a configuration snapshot."
+  },
+  {
+    "old": "OrcaSlicer error",
+    "new": "CosmoSlice error"
+  },
+  {
+    "old": "Orca Slicer is licensed under ",
+    "new": "CosmoSlice is licensed under "
+  },
+  {
+    "old": "Orca Slicer is based on PrusaSlicer and BambuStudio",
+    "new": "CosmoSlice is based on OrcaSlicer, PrusaSlicer and BambuStudio"
+  },
+  {
+    "old": "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer.",
+    "new": "CosmoSlice is based on OrcaSlicer, which is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+  },
+  {
+    "old": "\n\nOrca has detected that your user presets synchronization function is not enabled, which may result in unsuccessful Filament settings on the Device page.\nClick \"Sync user presets\" to enable the synchronization function.",
+    "new": "\n\nCosmoSlice has detected that your user presets synchronization function is not enabled, which may result in unsuccessful Filament settings on the Device page.\nClick \"Sync user presets\" to enable the synchronization function."
+  },
+  {
+    "old": "Performing desktop integration failed - could not create Gcodeviewer desktop file. OrcaSlicer desktop file was probably created successfully.",
+    "new": "Performing desktop integration failed - could not create Gcodeviewer desktop file. CosmoSlice desktop file was probably created successfully."
+  },
+  {
+    "old": "The configuration may be generated by a newer version of OrcaSlicer.",
+    "new": "The configuration may be generated by a newer version of CosmoSlice."
+  },
+  {
+    "old": "OrcaSlicer will terminate because of running out of memory. It may be a bug. It will be appreciated if you report the issue to our team.",
+    "new": "CosmoSlice will terminate because of running out of memory. It may be a bug. It will be appreciated if you report the issue to our team."
+  },
+  {
+    "old": "OrcaSlicer will terminate because of a localization error. It will be appreciated if you report the specific scenario this issue happened.",
+    "new": "CosmoSlice will terminate because of a localization error. It will be appreciated if you report the specific scenario this issue happened."
+  },
+  {
+    "old": "OrcaSlicer got an unhandled exception: %1%",
+    "new": "CosmoSlice got an unhandled exception: %1%"
+  },
+  {
+    "old": "Would you like to Close OrcaSlicer and Open your AppData folder?",
+    "new": "Would you like to Close CosmoSlice and Open your AppData folder?"
+  },
+  {
+    "old": "Orca Slicer requires the Microsoft WebView2 Runtime to operate certain features.\nClick Yes to install it now.",
+    "new": "CosmoSlice requires the Microsoft WebView2 Runtime to operate certain features.\nClick Yes to install it now."
+  },
+  {
+    "old": "The Orca Slicer needs an upgrade",
+    "new": "CosmoSlice needs an upgrade"
+  },
+  {
+    "old": "The OrcaSlicer configuration file may be corrupted and cannot be parsed.\nOrcaSlicer has attempted to recreate the configuration file.\nPlease note, application settings will be lost, but printer profiles will not be affected.",
+    "new": "The CosmoSlice configuration file may be corrupted and cannot be parsed.\nCosmoSlice has attempted to recreate the configuration file.\nPlease note, application settings will be lost, but printer profiles will not be affected."
+  },
+  {
+    "old": "The version of Orca Slicer is too low and needs to be updated to the latest version before it can be used normally.",
+    "new": "The version of CosmoSlice is too low and needs to be updated to the latest version before it can be used normally."
+  },
+  {
+    "old": "Orca Slicer GUI initialization failed",
+    "new": "CosmoSlice GUI initialization failed"
+  },
+  {
+    "old": "The .gcode.3mf file contains no G-code data. Please slice it with Orca Slicer and export a new .gcode.3mf file.",
+    "new": "The .gcode.3mf file contains no G-code data. Please slice it with CosmoSlice and export a new .gcode.3mf file."
+  },
+  {
+    "old": "Another virtual camera is running.\nOrca Slicer supports only a single virtual camera.\nDo you want to stop this virtual camera?",
+    "new": "Another virtual camera is running.\nCosmoSlice supports only a single virtual camera.\nDo you want to stop this virtual camera?"
+  },
+  {
+    "old": "The 3mf file version is in Beta and it is newer than the current OrcaSlicer version.",
+    "new": "The 3mf file version is in Beta and it is newer than the current CosmoSlice version."
+  },
+  {
+    "old": "The 3mf file version is newer than the current Orca Slicer version.",
+    "new": "The 3mf file version is newer than the current CosmoSlice version."
+  },
+  {
+    "old": "Update your Orca Slicer could enable all functionality in the 3mf file.",
+    "new": "Update your CosmoSlice could enable all functionality in the 3mf file."
+  },
+  {
+    "old": "OrcaSlicer Version:",
+    "new": "CosmoSlice Version:"
+  },
+  {
+    "old": "There are some unknown filaments mapped to generic preset. Please update Orca Slicer or restart Orca Slicer to check if there is an update to system presets.",
+    "new": "There are some unknown filaments mapped to generic preset. Please update CosmoSlice or restart CosmoSlice to check if there is an update to system presets."
+  },
+  {
+    "old": "The 3mf is not supported by OrcaSlicer, load geometry data only.",
+    "new": "The 3mf is not supported by CosmoSlice, load geometry data only."
+  },
+  {
+    "old": "Would you like OrcaSlicer to automatically fix this by clearing the rotation template settings?",
+    "new": "Would you like CosmoSlice to automatically fix this by clearing the rotation template settings?"
+  },
+  {
+    "old": "Importing to Orca Slicer failed. Please download the file and manually import it.",
+    "new": "Importing to CosmoSlice failed. Please download the file and manually import it."
+  },
+  {
+    "old": "\"Fix Model\" feature is currently only on Windows. Please repair the model on Orca Slicer(windows) or CAD softwares.",
+    "new": "\"Fix Model\" feature is currently only on Windows. Please repair the model on CosmoSlice(windows) or CAD softwares."
+  },
+  {
+    "old": "with OrcaSlicer so that Orca can open models from",
+    "new": "with CosmoSlice so that CosmoSlice can open models from"
+  },
+  {
+    "old": "Use legacy network plugin (Takes effect after restarting Orca)",
+    "new": "Use legacy network plugin (Takes effect after restarting CosmoSlice)"
+  },
+  {
+    "old": "Allow only one OrcaSlicer instance",
+    "new": "Allow only one CosmoSlice instance"
+  },
+  {
+    "old": "If this is enabled, when starting OrcaSlicer and another instance of the same OrcaSlicer is already running, that instance will be reactivated instead.",
+    "new": "If this is enabled, when starting CosmoSlice and another instance of the same CosmoSlice is already running, that instance will be reactivated instead."
+  },
+  {
+    "old": "If enabled, Orca will remember and switch filament/process configuration for each printer automatically.",
+    "new": "If enabled, CosmoSlice will remember and switch filament/process configuration for each printer automatically."
+  },
+  {
+    "old": "Multi-device Management (Take effect after restarting Orca Slicer).",
+    "new": "Multi-device Management (Take effect after restarting CosmoSlice)."
+  },
+  {
+    "old": "Associate files to OrcaSlicer",
+    "new": "Associate files to CosmoSlice"
+  },
+  {
+    "old": "Associate .3mf files to OrcaSlicer",
+    "new": "Associate .3mf files to CosmoSlice"
+  },
+  {
+    "old": "If enabled, sets OrcaSlicer as default application to open .3mf files",
+    "new": "If enabled, sets CosmoSlice as default application to open .3mf files"
+  },
+  {
+    "old": "Associate .stl files to OrcaSlicer",
+    "new": "Associate .stl files to CosmoSlice"
+  },
+  {
+    "old": "If enabled, sets OrcaSlicer as default application to open .stl files",
+    "new": "If enabled, sets CosmoSlice as default application to open .stl files"
+  },
+  {
+    "old": "Associate .step/.stp files to OrcaSlicer",
+    "new": "Associate .step/.stp files to CosmoSlice"
+  },
+  {
+    "old": "If enabled, sets OrcaSlicer as default application to open .step files",
+    "new": "If enabled, sets CosmoSlice as default application to open .step files"
+  },
+  {
+    "old": "Associate web links to OrcaSlicer",
+    "new": "Associate web links to CosmoSlice"
+  },
+  {
+    "old": "Associate URLs to OrcaSlicer",
+    "new": "Associate URLs to CosmoSlice"
+  },
+  {
+    "old": "Click OK to update the Network plug-in when Orca Slicer launches next time.",
+    "new": "Click OK to update the Network plug-in when CosmoSlice launches next time."
+  },
+  {
+    "old": "New version of Orca Slicer",
+    "new": "New version of CosmoSlice"
+  },
+  {
+    "old": "Step 1. Please confirm Orca Slicer and your printer are in the same LAN.",
+    "new": "Step 1. Please confirm CosmoSlice and your printer are in the same LAN."
+  },
+  {
+    "old": "The printer is required to be in the same LAN as Orca Slicer.",
+    "new": "The printer is required to be in the same LAN as CosmoSlice."
+  },
+  {
+    "old": "Blacklisted libraries loaded into OrcaSlicer process:",
+    "new": "Blacklisted libraries loaded into CosmoSlice process:"
+  },
+  {
+    "old": "The firmware version is abnormal. Repairing and updating are required before printing. Do you want to update now? You can also update later on printer or update next time starting Orca.",
+    "new": "The firmware version is abnormal. Repairing and updating are required before printing. Do you want to update now? You can also update later on printer or update next time starting CosmoSlice."
+  },
+  {
+    "old": "Please check the network connection of the printer and Orca.",
+    "new": "Please check the network connection of the printer and CosmoSlice."
+  },
+  {
+    "old": "Orca would re-calculate your flushing volumes every time the filaments color changed. You could disable the auto-calculate in Orca Slicer > Preferences",
+    "new": "CosmoSlice would re-calculate your flushing volumes every time the filaments color changed. You could disable the auto-calculate in CosmoSlice > Preferences"
+  },
+  {
+    "old": "Your system is missing H.264 codecs for GStreamer, which are required to play video. (Try installing the gstreamer1.0-plugins-bad or gstreamer1.0-libav packages, then restart Orca Slicer?)",
+    "new": "Your system is missing H.264 codecs for GStreamer, which are required to play video. (Try installing the gstreamer1.0-plugins-bad or gstreamer1.0-libav packages, then restart CosmoSlice?)"
+  },
+  {
+    "old": "Chamber temperature\nDid you know that OrcaSlicer supports chamber temperature?",
+    "new": "Chamber temperature\nDid you know that CosmoSlice supports chamber temperature?"
+  },
+  {
+    "old": "Calibration\nDid you know that calibrating your printer can do wonders? Check out our beloved calibration solution in OrcaSlicer.",
+    "new": "Calibration\nDid you know that calibrating your printer can do wonders? Check out our beloved calibration solution in CosmoSlice."
+  },
+  {
+    "old": "Auxiliary fan\nDid you know that OrcaSlicer supports Auxiliary part cooling fan?",
+    "new": "Auxiliary fan\nDid you know that CosmoSlice supports Auxiliary part cooling fan?"
+  },
+  {
+    "old": "Air filtration/Exhaust Fan\nDid you know that OrcaSlicer can support Air filtration/Exhaust Fan?",
+    "new": "Air filtration/Exhaust Fan\nDid you know that CosmoSlice can support Air filtration/Exhaust Fan?"
+  },
+  {
+    "old": "How to use keyboard shortcuts\nDid you know that Orca Slicer offers a wide range of keyboard shortcuts and 3D scene operations?",
+    "new": "How to use keyboard shortcuts\nDid you know that CosmoSlice offers a wide range of keyboard shortcuts and 3D scene operations?"
+  },
+  {
+    "old": "Search Functionality\nDid you know that you use the Search tool to quickly find a specific Orca Slicer setting?",
+    "new": "Search Functionality\nDid you know that you use the Search tool to quickly find a specific CosmoSlice setting?"
+  },
+  {
+    "old": "Subtract a Part\nDid you know that you can subtract one mesh from another using the Negative part modifier? That way you can, for example, create easily resizable holes directly in Orca Slicer.",
+    "new": "Subtract a Part\nDid you know that you can subtract one mesh from another using the Negative part modifier? That way you can, for example, create easily resizable holes directly in CosmoSlice."
+  },
+  {
+    "old": "STEP\nDid you know that you can improve your print quality by slicing a STEP file instead of an STL?\nOrca Slicer supports slicing STEP files, providing smoother results than a lower resolution STL. Give it a try!",
+    "new": "STEP\nDid you know that you can improve your print quality by slicing a STEP file instead of an STL?\nCosmoSlice supports slicing STEP files, providing smoother results than a lower resolution STL. Give it a try!"
+  }
+]

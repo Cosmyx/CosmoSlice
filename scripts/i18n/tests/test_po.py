@@ -87,3 +87,12 @@ def test_crlf_is_rejected() -> None:
 def test_unexpected_line_is_an_error() -> None:
     with pytest.raises(ValueError, match="line 2"):
         po.parse('msgid "a"\ngarbage\nmsgstr ""\n')
+
+
+def test_entries_without_blank_line_between_them_are_split() -> None:
+    text = 'msgid "a"\nmsgstr ""\nmsgid "b"\nmsgstr "B"\n#, fuzzy\nmsgid "c"\nmsgstr ""\n'
+    lines, entries = po.parse(text)
+    assert [e.msgid for e in entries] == ["a", "b", "c"]
+    assert entries[1].msgstrs == ["B"]
+    assert entries[2].is_fuzzy
+    assert (entries[2].start, entries[2].end) == (4, 7)

@@ -37,10 +37,19 @@ fmt:
 i18n-rename *args:
     {{python}} scripts/i18n/rename_msgids.py {{args}}
 
+# Check the catalogues (msgfmt --check-format, duplicates) and the product-name guards, in the CI image
+i18n-check:
+    {{docker}} -- python scripts/i18n/check_catalogs.py
+    {{docker}} -- python -m pytest -q scripts/i18n/tests/test_product_name_guard.py
+
+# Show what translators still have to do after the rename, for one language or all
+i18n-status lang="":
+    {{python}} scripts/i18n/status.py {{lang}}
+
 # Append msgids found in src/ but missing from the pot and every .po (wraps scripts/update_pot.py)
 i18n-update-pot:
     {{python}} scripts/update_pot.py --update-po
 
-# Full gate: lint, every test suite, every module `check` recipe (discovered)
-ci: lint test
+# Full gate: lint, every test suite, i18n checks, every module `check` recipe (discovered)
+ci: lint test i18n-check
     {{python}} tools/ci/suites.py checks --just "{{just_executable()}}"
