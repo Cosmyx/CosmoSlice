@@ -10,5 +10,5 @@
     "printer_model": "Cosmyx Nova can-out",
     "printer_variant": "0.8",
     "nozzle_type": "cht",
-    "machine_start_gcode": "M104 S[first_layer_temperature] ; set extruder temp M140 S[first_layer_bed_temperature] ; set bed temp M190 S[first_layer_bed_temperature] ; wait for bed temp M109 S[first_layer_temperature] ; wait for extruder temp G1 Z5 F15000 ; lift G1 X299 Y160 F4500 ; move to prime G1 Z0.29 F4500 ; get ready to prime G92 E0 ; reset extrusion distance G1 Y150 E5.0 F600 ; prime nozzle G1 Y110 E9.5 F600 ; prime nozzle G1 Y80 F5000 ; quick wipe ;; start_print ;;"
+    "machine_start_gcode": "M104 S[first_layer_temperature] ; set extruder temp\nM140 S[first_layer_bed_temperature] ; set bed temp\nM190 S[first_layer_bed_temperature] ; wait for bed temp\nM109 S[first_layer_temperature] ; wait for extruder temp\nG1 Z5 F15000 ; lift\nG1 X299 Y160 F4500 ; move to prime\nG1 Z0.29 F4500 ; get ready to prime\nG92 E0 ; reset extrusion distance\nG1 Y150 E5.0 F600 ; prime nozzle\nG1 Y110 E9.5 F600 ; prime nozzle\nG1 Y80 F5000 ; quick wipe\n;; start_print ;;"
 }
