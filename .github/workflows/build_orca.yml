@@ -93,29 +93,30 @@ jobs:
 
 #   Mac
       - name: Install tools mac
-        if: inputs.os == 'macos-14'
+        if: inputs.os == 'macos-15'
         run: |
           brew install libtool
           brew list
           mkdir -p ${{ github.workspace }}/deps/build
 
       - name: Free disk space
-        if: inputs.os == 'macos-14'
+        if: inputs.os == 'macos-15'
         run: |
           df -hI /dev/disk3s1s1
-          sudo find /Applications -maxdepth 1 -type d -name "Xcode_*.app" ! -name "Xcode_15.4.app" -exec rm -rf {} +
+          sudo find /Applications -maxdepth 1 -type d -name "Xcode_*.app" ! -name "Xcode_16.4.app" -exec rm -rf {} +
+          sudo xcode-select -s /Applications/Xcode_16.4.app
           sudo rm -rf ~/Library/Developer/CoreSimulator/Caches/*
           df -hI /dev/disk3s1s1
 
       - name: Build slicer mac
-        if: inputs.os == 'macos-14'
+        if: inputs.os == 'macos-15'
         working-directory: ${{ github.workspace }}
         run: |
           ./build_release_macos.sh -s -n -x -a universal -t 10.15 -1
 
  # Thanks to RaySajuuk, it's working now
       - name: Sign app and notary
-        if: (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/')) && inputs.os == 'macos-14'
+        if: (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/')) && inputs.os == 'macos-15'
         working-directory: ${{ github.workspace }}
         env:
           BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
@@ -168,7 +169,7 @@ jobs:
           fi
 
       - name: Create DMG without notary
-        if: github.ref != 'refs/heads/main' && inputs.os == 'macos-14'
+        if: github.ref != 'refs/heads/main' && inputs.os == 'macos-15'
         working-directory: ${{ github.workspace }}
         run: |
           mkdir -p ${{ github.workspace }}/build/universal/OrcaSlicer_dmg
@@ -187,14 +188,14 @@ jobs:
           fi
 
       - name: Upload artifacts mac
-        if: inputs.os == 'macos-14'
+        if: inputs.os == 'macos-15'
         uses: actions/upload-artifact@v4
         with:
           name: CosmoSlice_Mac_${{ env.cosmyx_patch_ver }}
           path: ${{ github.workspace }}/OrcaSlicer_Mac_universal_${{ env.ver }}.dmg
 
       - name: Deploy Mac release
-        if: github.ref == 'refs/heads/main' && inputs.os == 'macos-14'
+        if: github.ref == 'refs/heads/main' && inputs.os == 'macos-15'
         uses: WebFreak001/deploy-nightly@v3.2.0
         with:
           upload_url: https://uploads.github.com/repos/SoftFever/OrcaSlicer/releases/137995723/assets{?name,label}
@@ -205,7 +206,7 @@ jobs:
           max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
 
       - name: Deploy Mac OrcaSlicer_profile_validator DMG release
-        if: github.ref == 'refs/heads/main' && inputs.os == 'macos-14'
+        if: github.ref == 'refs/heads/main' && inputs.os == 'macos-15'
         uses: WebFreak001/deploy-nightly@v3.2.0
         with:
           upload_url: https://uploads.github.com/repos/SoftFever/OrcaSlicer/releases/137995723/assets{?name,label}

@@ -33,7 +33,7 @@ jobs:
 
           case "${{ inputs.os }}" in
             windows-2022|windows-latest) os_label="Windows" ;;
-            macos-14)       os_label="Mac" ;;
+            macos-15)       os_label="Mac" ;;
             ubuntu-24.04)   os_label="Linux_Ubuntu2404" ;;
             ubuntu-20.04)   os_label="Linux_Ubuntu2004" ;;
             *)              os_label="${{ inputs.os }}" ;;
