@@ -27,6 +27,11 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 - The 76 renamed msgids are renamed in the pot and every .po; existing translations are kept but marked fuzzy with the
   previous msgid until each language is updated (`just i18n-status <lang>`). MR: pending. D-004.
 
+### web
+
+- The first-run setup guide says CosmoSlice (English text and page fallbacks); the 14 other guide languages are
+  listed in `scripts/i18n/pending/` until translated. MR: pending. D-002, D-006.
+
 ### tooling
 
 - `just i18n-check` validates every catalogue and guards against the upstream product name in user-visible text;

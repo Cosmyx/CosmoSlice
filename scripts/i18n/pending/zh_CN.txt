@@ -1,0 +1,9 @@
+# text.js keys of this language still naming the upstream product (see `just i18n-status zh_CN`).
+# Translate each key to say CosmoSlice, then delete this file.
+t1
+t2
+t6
+t54
+t65
+t83
+t85

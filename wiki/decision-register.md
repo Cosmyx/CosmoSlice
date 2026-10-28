@@ -140,3 +140,5 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
 - **Pot without blank lines**: a few pot entries are not separated by a blank line (`po.py` handles it).
 - **Translations pending**: after the rename, every .po has fuzzy entries for the renamed msgids and some text.js
   keys are listed in `scripts/i18n/pending/<lang>.txt`; see `just i18n-status`.
+- **Setup guide leftovers**: `guide/21` and `guide/24` show "Orca colosseum" from their JS (out of scope), and some
+  text.js blocks keep unused `wk*` keys naming the upstream product (no page uses them).

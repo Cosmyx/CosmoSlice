@@ -104,3 +104,19 @@ def test_mapping_is_the_frozen_contract() -> None:
     assert len(MAPPING) == 76
     assert all(pn.NEW_NAME in pair["new"] for pair in MAPPING)
     assert all(not pn.has_token(pair["new"]) or pair["new"] in KEPT_MSGIDS for pair in MAPPING)
+
+
+def test_g6_text_js_english_block_does_not_name_the_upstream_product() -> None:
+    english = pn.text_js_blocks()["en"]
+    assert {k: v for k, v in english.items() if pn.has_token(v)} == {}
+
+
+def test_g6_text_js_other_blocks_are_pending_or_renamed() -> None:
+    stale = {lang: sorted(keys) for lang, keys in pn.stale_text_js_keys().items()}
+    langs = {p.stem for p in pn.PENDING_DIR.glob("*.txt")} | set(stale)
+    pending = {lang: sorted(pn.pending_keys(lang)) for lang in langs if pn.pending_keys(lang)}
+    assert stale == pending, "pending/<lang>.txt must list exactly the text.js keys still naming the upstream product"
+
+
+def test_g7_setup_guide_pages_do_not_name_the_upstream_product() -> None:
+    assert [(path, line, text) for path, line, text in pn.guide_texts() if pn.has_token(text)] == []

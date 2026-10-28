@@ -111,3 +111,20 @@ def test_guide_texts_only_trans_elements(tmp_path: Path, monkeypatch: pytest.Mon
         ("guide/1/index.html", 1, "Orca"),
         ("guide/1/index.html", 1, "Slicer"),
     ]
+
+
+def test_po_language_of_text_js_blocks() -> None:
+    langs = {"fr", "zh_CN", "pt_BR", "lt"}
+    assert [pn.po_language(b, langs) for b in ["fr_FR", "zh_CN", "pt_BR", "lt"]] == ["fr", "zh_CN", "pt_BR", "lt"]
+
+
+def test_pending_keys_skip_comments(tmp_path: Path) -> None:
+    (tmp_path / "fr.txt").write_text("# header\nt1\n\nt54  # long one\n", encoding="utf-8")
+    assert pn.pending_keys("fr", tmp_path) == ["t1", "t54"]
+    assert pn.pending_keys("de", tmp_path) == []
+
+
+def test_guide_tids(tmp_path: Path) -> None:
+    (tmp_path / "1").mkdir()
+    (tmp_path / "1" / "index.html").write_text('<a tid="t1">x</a><b data-tid="no" tid="t2"></b>', encoding="utf-8")
+    assert pn.guide_tids(tmp_path) == {"t1", "t2"}

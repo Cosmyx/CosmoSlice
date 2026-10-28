@@ -35,13 +35,6 @@ def language_status(path: Path, renamed: set[str], kept: set[str]) -> dict[str, 
     return {"fuzzy": fuzzy, "stray": stray}
 
 
-def pending_keys(lang: str) -> list[str]:
-    path = pn.PENDING_DIR / f"{lang}.txt"
-    if not path.is_file():
-        return []
-    return [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
-
-
 def main(argv: list[str] | None = None) -> int:
     args = sys.argv[1:] if argv is None else argv
     wanted = args[0] if args else ""
@@ -56,7 +49,7 @@ def main(argv: list[str] | None = None) -> int:
     for path in files:
         lang = path.parent.name
         status = language_status(path, renamed, kept)
-        pending = pending_keys(lang)
+        pending = pn.pending_keys(lang)
         print(f"{lang}: {len(status['fuzzy'])} fuzzy renamed, {len(status['stray'])} stray, {len(pending)} text.js")
         if wanted:
             for label in ("fuzzy", "stray"):

@@ -258,3 +258,40 @@ def guide_texts(root: Path = GUIDE_DIR) -> list[tuple[str, int, str]]:
         rel = page.relative_to(REPO_ROOT).as_posix()
         out += [(rel, line, text) for line, text in parser.texts]
     return out
+
+
+def guide_tids(root: Path = GUIDE_DIR) -> set[str]:
+    """Every text.js key a setup-guide page asks for (its `tid` attributes)."""
+    tids: set[str] = set()
+    for page in root.rglob("*.html"):
+        tids |= set(re.findall(r'(?<![\w-])tid="([^"]+)"', page.read_text(encoding="utf-8")))
+    return tids
+
+
+def po_language(block: str, po_langs: set[str]) -> str:
+    """The .po language of a text.js block: the block name itself (zh_CN, pt_BR, lt) or its language part (fr_FR)."""
+    return block if block in po_langs else block.split("_")[0]
+
+
+def pending_keys(lang: str, root: Path = PENDING_DIR) -> list[str]:
+    """text.js keys still to translate for a .po language (scripts/i18n/pending/<lang>.txt, # starts a comment)."""
+    path = root / f"{lang}.txt"
+    if not path.is_file():
+        return []
+    lines = (line.split("#", 1)[0].strip() for line in path.read_text(encoding="utf-8").splitlines())
+    return [line for line in lines if line]
+
+
+def stale_text_js_keys() -> dict[str, list[str]]:
+    """Per .po language, the guide keys of its text.js block that still name the upstream product."""
+    po_langs = {p.parent.name for p in CATALOG_DIR.glob("*/*.po")}
+    tids = guide_tids()
+    out: dict[str, list[str]] = {}
+    for block, entries in text_js_blocks().items():
+        if block == "en":
+            continue
+        lang = po_language(block, po_langs)
+        keys = [k for k, v in entries.items() if k in tids and (has_token(v) or has_native_token(v, lang))]
+        if keys:
+            out[lang] = keys
+    return out
