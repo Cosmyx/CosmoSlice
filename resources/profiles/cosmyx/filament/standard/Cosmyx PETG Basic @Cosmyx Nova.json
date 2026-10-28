@@ -1,0 +1,14 @@
+{
+    "type": "filament",
+    "setting_id": "GFSG00_01",
+    "name": "Cosmyx PETG Basic @Cosmyx Nova",
+    "renamed_from": "\"Cosmyx PETG Basic Cosmyx Nova\";\"Cosmyx PETG Basic @Cosmyx Common\";\"Cosmyx PETG Basic @Cosmyx Nova can-out 0.2\";\"Cosmyx PETG Basic @Cosmyx Nova can-out 0.4\";\"Cosmyx PETG Basic @Cosmyx Nova can-out 0.6\";\"Cosmyx PETG Basic @Cosmyx Nova can-out 0.8\";\"Cosmyx PETG Basic @Haute Temperature 0.2\";\"Cosmyx PETG Basic @Haute Temperature 0.4\";\"Cosmyx PETG Basic @Haute Temperature 0.6\";\"Cosmyx PETG Basic @Haute Temperature 0.8\";\"Cosmyx PETG Basic @Nova 0.2\";\"Cosmyx PETG Basic @Nova 0.4\";\"Cosmyx PETG Basic @Nova 0.6\";\"Cosmyx PETG Basic @Nova 0.8\";\"Cosmyx PETG Basic @Nova DT 0.2\";\"Cosmyx PETG Basic @Nova DT 0.4\";\"Cosmyx PETG Basic @Nova DT 0.6\";\"Cosmyx PETG Basic @Nova DT 0.8\";\"Cosmyx PETG Basic @Nova Metal Ceramique 0.2\";\"Cosmyx PETG Basic @Nova Metal Ceramique 0.4\";\"Cosmyx PETG Basic @Nova Metal Ceramique 0.6\";\"Cosmyx PETG Basic @Nova Metal Ceramique 0.8\";\"Cosmyx PETG Basic @SuperNova 0.2\";\"Cosmyx PETG Basic @SuperNova 0.4\";\"Cosmyx PETG Basic @SuperNova 0.6\";\"Cosmyx PETG Basic @SuperNova 0.8\";\"Cosmyx PETG Basic @SuperNova DT 0.2\";\"Cosmyx PETG Basic @SuperNova DT 0.4\";\"Cosmyx PETG Basic @SuperNova DT 0.6\";\"Cosmyx PETG Basic @SuperNova DT 0.8\";\"Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.2\";\"Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.4\";\"Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.6\";\"Cosmyx PETG Basic @SuperNova DT Metal Ceramique 0.8\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PETG Basic @base",
+    "filament_max_volumetric_speed": [
+        "13"
+    ],
+    "compatible_printers": [],
+    "version": "01.07.00.18"
+}

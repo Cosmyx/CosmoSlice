@@ -1,0 +1,20 @@
+{
+    "type": "process",
+    "setting_id": "GP027",
+    "name": "0.14mm Standard @Cosmyx Nova 0.25 nozzle",
+    "renamed_from": "\"0.14mm Standard Cosmyx Nova 0.25 nozzle\";\"0.14mm Standard @Cosmyx Nova 0.2 nozzle\";\"0.14mm Standard @Cosmyx Nova can-out 0.2 nozzle\";\"0.14mm Standard @Haute Temperature 0.2 nozzle\";\"0.14mm Standard @Nova 0.2 nozzle\";\"0.14mm Standard @Nova DT 0.2 nozzle\";\"0.14mm Standard @SuperNova 0.2 nozzle\";\"0.14mm Standard @SuperNova DT 0.2 nozzle\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_cosmyx_0.14_nozzle_0.25",
+    "compatible_printers": [
+        "Cosmyx Nova 0.25 nozzle",
+        "Cosmyx Nova 0.25 nozzle can-out",
+        "Cosmyx SuperNova 0.25 nozzle",
+        "Cosmyx SuperNova Double Tete 0.25 nozzle",
+        "Cosmyx SuperNova Double Tete Metal Ceramique 0.25 nozzle",
+        "Cosmyx Nova Metal Ceramique 0.25 nozzle",
+        "Cosmyx Nova Haute Temperature 0.25 nozzle",
+        "Cosmyx Nova Double Tete 0.25 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

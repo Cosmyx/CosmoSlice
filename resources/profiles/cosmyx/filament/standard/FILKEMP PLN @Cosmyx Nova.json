@@ -1,0 +1,84 @@
+{
+    "type": "filament",
+    "setting_id": "FKPPLNCOS",
+    "instantiation": "true",
+    "filament_type": [
+        "PLN"
+    ],
+    "default_filament_colour": [
+        "#004080"
+    ],
+    "filament_max_volumetric_speed": [
+        "14"
+    ],
+    "filament_settings_id": [
+        "FILKEMP PLN @Cosmyx Nova"
+    ],
+    "filament_vendor": [
+        "FILKEMP"
+    ],
+    "from": "User",
+    "cosmyx_textured_bed_temp": [
+        "65"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "65"
+    ],
+    "supertack_plate_temp": [
+        "65"
+    ],
+    "supertack_plate_temp_initial_layer": [
+        "65"
+    ],
+    "cool_plate_temp": [
+        "65"
+    ],
+    "cool_plate_temp_initial_layer": [
+        "65"
+    ],
+    "textured_cool_plate_temp": [
+        "65"
+    ],
+    "textured_cool_plate_temp_initial_layer": [
+        "65"
+    ],
+    "eng_plate_temp": [
+        "65"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "65"
+    ],
+    "hot_plate_temp": [
+        "65"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "65"
+    ],
+    "textured_plate_temp": [
+        "65"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "65"
+    ],
+    "inherits": "Cosmyx PLA Basic @Cosmyx Nova",
+    "is_custom_defined": "0",
+    "name": "FILKEMP PLN @Cosmyx Nova",
+    "renamed_from": "\"FILKEMP PLN Cosmyx Nova\";\"FILKEMP PLN @Cosmyx Common\";\"FILKEMP PLN @Cosmyx Nova can-out 0.2\";\"FILKEMP PLN @Cosmyx Nova can-out 0.4\";\"FILKEMP PLN @Cosmyx Nova can-out 0.6\";\"FILKEMP PLN @Cosmyx Nova can-out 0.8\";\"FILKEMP PLN @Haute Temperature 0.2\";\"FILKEMP PLN @Haute Temperature 0.4\";\"FILKEMP PLN @Haute Temperature 0.6\";\"FILKEMP PLN @Haute Temperature 0.8\";\"FILKEMP PLN @Nova 0.2\";\"FILKEMP PLN @Nova 0.4\";\"FILKEMP PLN @Nova 0.6\";\"FILKEMP PLN @Nova 0.8\";\"FILKEMP PLN @Nova DT 0.2\";\"FILKEMP PLN @Nova DT 0.4\";\"FILKEMP PLN @Nova DT 0.6\";\"FILKEMP PLN @Nova DT 0.8\";\"FILKEMP PLN @Nova Metal Ceramique 0.2\";\"FILKEMP PLN @Nova Metal Ceramique 0.4\";\"FILKEMP PLN @Nova Metal Ceramique 0.6\";\"FILKEMP PLN @Nova Metal Ceramique 0.8\";\"FILKEMP PLN @SuperNova 0.2\";\"FILKEMP PLN @SuperNova 0.4\";\"FILKEMP PLN @SuperNova 0.6\";\"FILKEMP PLN @SuperNova 0.8\";\"FILKEMP PLN @SuperNova DT 0.2\";\"FILKEMP PLN @SuperNova DT 0.4\";\"FILKEMP PLN @SuperNova DT 0.6\";\"FILKEMP PLN @SuperNova DT 0.8\";\"FILKEMP PLN @SuperNova DT Metal Ceramique 0.2\";\"FILKEMP PLN @SuperNova DT Metal Ceramique 0.4\";\"FILKEMP PLN @SuperNova DT Metal Ceramique 0.6\";\"FILKEMP PLN @SuperNova DT Metal Ceramique 0.8\"",
+    "nozzle_temperature": [
+        "240"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "220"
+    ],
+    "nozzle_temperature_range_high": [
+        "250"
+    ],
+    "slow_down_layer_time": [
+        "8"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "version": "1.7.0.18",
+    "compatible_printers": []
+}

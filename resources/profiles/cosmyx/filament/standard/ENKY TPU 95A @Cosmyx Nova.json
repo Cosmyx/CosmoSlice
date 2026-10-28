@@ -1,0 +1,68 @@
+{
+    "type": "filament",
+    "filament_id": "MIL04",
+    "name": "ENKY TPU 95A @Cosmyx Nova",
+    "renamed_from": "\"ENKY TPU 95A Cosmyx Nova\";\"ENKY TPU 95A @Cosmyx Common\";\"ENKY TPU 95A @Cosmyx Nova can-out 0.2\";\"ENKY TPU 95A @Cosmyx Nova can-out 0.4\";\"ENKY TPU 95A @Cosmyx Nova can-out 0.6\";\"ENKY TPU 95A @Cosmyx Nova can-out 0.8\";\"ENKY TPU 95A @Haute Temperature 0.2\";\"ENKY TPU 95A @Haute Temperature 0.4\";\"ENKY TPU 95A @Haute Temperature 0.6\";\"ENKY TPU 95A @Haute Temperature 0.8\";\"ENKY TPU 95A @Nova 0.2\";\"ENKY TPU 95A @Nova 0.4\";\"ENKY TPU 95A @Nova 0.6\";\"ENKY TPU 95A @Nova 0.8\";\"ENKY TPU 95A @Nova DT 0.2\";\"ENKY TPU 95A @Nova DT 0.4\";\"ENKY TPU 95A @Nova DT 0.6\";\"ENKY TPU 95A @Nova DT 0.8\";\"ENKY TPU 95A @Nova Metal Ceramique 0.2\";\"ENKY TPU 95A @Nova Metal Ceramique 0.4\";\"ENKY TPU 95A @Nova Metal Ceramique 0.6\";\"ENKY TPU 95A @Nova Metal Ceramique 0.8\";\"ENKY TPU 95A @SuperNova 0.2\";\"ENKY TPU 95A @SuperNova 0.4\";\"ENKY TPU 95A @SuperNova 0.6\";\"ENKY TPU 95A @SuperNova 0.8\";\"ENKY TPU 95A @SuperNova DT 0.2\";\"ENKY TPU 95A @SuperNova DT 0.4\";\"ENKY TPU 95A @SuperNova DT 0.6\";\"ENKY TPU 95A @SuperNova DT 0.8\";\"ENKY TPU 95A @SuperNova DT Metal Ceramique 0.2\";\"ENKY TPU 95A @SuperNova DT Metal Ceramique 0.4\";\"ENKY TPU 95A @SuperNova DT Metal Ceramique 0.6\";\"ENKY TPU 95A @SuperNova DT Metal Ceramique 0.8\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "KIMYA TPC 91A @Cosmyx Nova",
+    "filament_settings_id": [
+        "ENKY TPU 95A @Cosmyx Nova"
+    ],
+    "filament_type": [
+        "TPU"
+    ],
+    "filament_vendor": [
+        "ENKY"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "80"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "80"
+    ],
+    "supertack_plate_temp": [
+        "80"
+    ],
+    "supertack_plate_temp_initial_layer": [
+        "80"
+    ],
+    "cool_plate_temp": [
+        "80"
+    ],
+    "cool_plate_temp_initial_layer": [
+        "80"
+    ],
+    "textured_cool_plate_temp": [
+        "80"
+    ],
+    "textured_cool_plate_temp_initial_layer": [
+        "80"
+    ],
+    "eng_plate_temp": [
+        "80"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "80"
+    ],
+    "hot_plate_temp": [
+        "80"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "80"
+    ],
+    "textured_plate_temp": [
+        "80"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "80"
+    ],
+    "is_custom_defined": "0",
+    "nozzle_temperature": [
+        "210"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "220"
+    ],
+    "compatible_printers": []
+}

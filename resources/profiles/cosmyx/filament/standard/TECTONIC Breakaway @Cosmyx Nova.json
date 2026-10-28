@@ -1,0 +1,87 @@
+{
+    "type": "filament",
+    "filament_id": "MIL07",
+    "name": "TECTONIC Breakaway @Cosmyx Nova",
+    "renamed_from": "\"TECTONIC Breakaway Cosmyx Nova\";\"TECTONIC Breakaway @Cosmyx Common\";\"TECTONIC Breakaway @Cosmyx Nova can-out 0.2\";\"TECTONIC Breakaway @Cosmyx Nova can-out 0.4\";\"TECTONIC Breakaway @Cosmyx Nova can-out 0.6\";\"TECTONIC Breakaway @Cosmyx Nova can-out 0.8\";\"TECTONIC Breakaway @Haute Temperature 0.2\";\"TECTONIC Breakaway @Haute Temperature 0.4\";\"TECTONIC Breakaway @Haute Temperature 0.6\";\"TECTONIC Breakaway @Haute Temperature 0.8\";\"TECTONIC Breakaway @Nova 0.2\";\"TECTONIC Breakaway @Nova 0.4\";\"TECTONIC Breakaway @Nova 0.6\";\"TECTONIC Breakaway @Nova 0.8\";\"TECTONIC Breakaway @Nova DT 0.2\";\"TECTONIC Breakaway @Nova DT 0.4\";\"TECTONIC Breakaway @Nova DT 0.6\";\"TECTONIC Breakaway @Nova DT 0.8\";\"TECTONIC Breakaway @Nova Metal Ceramique 0.2\";\"TECTONIC Breakaway @Nova Metal Ceramique 0.4\";\"TECTONIC Breakaway @Nova Metal Ceramique 0.6\";\"TECTONIC Breakaway @Nova Metal Ceramique 0.8\";\"TECTONIC Breakaway @SuperNova 0.2\";\"TECTONIC Breakaway @SuperNova 0.4\";\"TECTONIC Breakaway @SuperNova 0.6\";\"TECTONIC Breakaway @SuperNova 0.8\";\"TECTONIC Breakaway @SuperNova DT 0.2\";\"TECTONIC Breakaway @SuperNova DT 0.4\";\"TECTONIC Breakaway @SuperNova DT 0.6\";\"TECTONIC Breakaway @SuperNova DT 0.8\";\"TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.2\";\"TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.4\";\"TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.6\";\"TECTONIC Breakaway @SuperNova DT Metal Ceramique 0.8\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PLA Basic @Cosmyx Nova",
+    "default_filament_colour": [
+        "#FFFFFF"
+    ],
+    "fan_max_speed": [
+        "20"
+    ],
+    "fan_min_speed": [
+        "20"
+    ],
+    "filament_is_support": [
+        "1"
+    ],
+    "filament_settings_id": [
+        "TECTONIC Breakaway @Cosmyx Nova"
+    ],
+    "filament_type": [
+        "BREAKAWAY"
+    ],
+    "filament_vendor": [
+        "TECTONIC"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "65"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "65"
+    ],
+    "supertack_plate_temp": [
+        "65"
+    ],
+    "supertack_plate_temp_initial_layer": [
+        "65"
+    ],
+    "cool_plate_temp": [
+        "65"
+    ],
+    "cool_plate_temp_initial_layer": [
+        "65"
+    ],
+    "textured_cool_plate_temp": [
+        "65"
+    ],
+    "textured_cool_plate_temp_initial_layer": [
+        "65"
+    ],
+    "eng_plate_temp": [
+        "65"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "65"
+    ],
+    "hot_plate_temp": [
+        "65"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "65"
+    ],
+    "textured_plate_temp": [
+        "65"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "65"
+    ],
+    "filament_max_volumetric_speed": [
+        "13"
+    ],
+    "is_custom_defined": "0",
+    "nozzle_temperature": [
+        "230"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "220"
+    ],
+    "overhang_fan_speed": [
+        "20"
+    ],
+    "version": "1.7.0.18",
+    "compatible_printers": []
+}

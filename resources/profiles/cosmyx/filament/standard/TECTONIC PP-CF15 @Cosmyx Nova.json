@@ -1,0 +1,93 @@
+{
+    "type": "filament",
+    "filament_id": "MIL10",
+    "name": "TECTONIC PP-CF15 @Cosmyx Nova",
+    "renamed_from": "\"TECTONIC PP-CF15 Cosmyx Nova\";\"TECTONIC PP-CF15 @Cosmyx Common\";\"TECTONIC PP-CF15 @Cosmyx Nova can-out 0.2\";\"TECTONIC PP-CF15 @Cosmyx Nova can-out 0.4\";\"TECTONIC PP-CF15 @Cosmyx Nova can-out 0.6\";\"TECTONIC PP-CF15 @Cosmyx Nova can-out 0.8\";\"TECTONIC PP-CF15 @Haute Temperature 0.2\";\"TECTONIC PP-CF15 @Haute Temperature 0.4\";\"TECTONIC PP-CF15 @Haute Temperature 0.6\";\"TECTONIC PP-CF15 @Haute Temperature 0.8\";\"TECTONIC PP-CF15 @Nova 0.2\";\"TECTONIC PP-CF15 @Nova 0.4\";\"TECTONIC PP-CF15 @Nova 0.6\";\"TECTONIC PP-CF15 @Nova 0.8\";\"TECTONIC PP-CF15 @Nova DT 0.2\";\"TECTONIC PP-CF15 @Nova DT 0.4\";\"TECTONIC PP-CF15 @Nova DT 0.6\";\"TECTONIC PP-CF15 @Nova DT 0.8\";\"TECTONIC PP-CF15 @Nova Metal Ceramique 0.2\";\"TECTONIC PP-CF15 @Nova Metal Ceramique 0.4\";\"TECTONIC PP-CF15 @Nova Metal Ceramique 0.6\";\"TECTONIC PP-CF15 @Nova Metal Ceramique 0.8\";\"TECTONIC PP-CF15 @SuperNova 0.2\";\"TECTONIC PP-CF15 @SuperNova 0.4\";\"TECTONIC PP-CF15 @SuperNova 0.6\";\"TECTONIC PP-CF15 @SuperNova 0.8\";\"TECTONIC PP-CF15 @SuperNova DT 0.2\";\"TECTONIC PP-CF15 @SuperNova DT 0.4\";\"TECTONIC PP-CF15 @SuperNova DT 0.6\";\"TECTONIC PP-CF15 @SuperNova DT 0.8\";\"TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.2\";\"TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.4\";\"TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.6\";\"TECTONIC PP-CF15 @SuperNova DT Metal Ceramique 0.8\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PA6-CF @Cosmyx Nova",
+    "default_filament_colour": [
+        "#808080"
+    ],
+    "fan_max_speed": [
+        "70"
+    ],
+    "fan_min_speed": [
+        "70"
+    ],
+    "filament_settings_id": [
+        "TECTONIC PP-CF15 @Cosmyx Nova"
+    ],
+    "filament_vendor": [
+        "TECTONIC"
+    ],
+    "is_custom_defined": "0",
+    "nozzle_temperature": [
+        "295"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "295"
+    ],
+    "overhang_fan_speed": [
+        "70"
+    ],
+    "reduce_fan_stop_start_freq": [
+        "1"
+    ],
+    "fan_cooling_layer_time": [
+        "80"
+    ],
+    "filament_density": [
+        "1.07"
+    ],
+    "filament_max_volumetric_speed": [
+        "6.8"
+    ],
+    "filament_type": [
+        "PP-CF"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "80"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "80"
+    ],
+    "supertack_plate_temp": [
+        "80"
+    ],
+    "supertack_plate_temp_initial_layer": [
+        "80"
+    ],
+    "cool_plate_temp": [
+        "80"
+    ],
+    "cool_plate_temp_initial_layer": [
+        "80"
+    ],
+    "textured_cool_plate_temp": [
+        "80"
+    ],
+    "textured_cool_plate_temp_initial_layer": [
+        "80"
+    ],
+    "eng_plate_temp": [
+        "80"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "80"
+    ],
+    "hot_plate_temp": [
+        "80"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "80"
+    ],
+    "textured_plate_temp": [
+        "80"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "80"
+    ],
+    "version": "1.7.0.18",
+    "compatible_printers": []
+}

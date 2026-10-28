@@ -1,0 +1,20 @@
+{
+    "type": "process",
+    "setting_id": "GP002",
+    "name": "0.12mm Fine @Cosmyx Nova",
+    "renamed_from": "\"0.12mm Fine Cosmyx Nova\";\"0.12mm Fine @Cosmyx Nova can-out 0.4\";\"0.12mm Fine @Haute Temperature 0.4\";\"0.12mm Fine @Nova 0.4\";\"0.12mm Fine @Nova DT 0.4\";\"0.12mm Fine @SuperNova 0.4\";\"0.12mm Fine @SuperNova DT 0.4\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_cosmyx_0.12",
+    "compatible_printers": [
+        "Cosmyx Nova 0.4 nozzle",
+        "Cosmyx Nova 0.4 nozzle can-out",
+        "Cosmyx SuperNova 0.4 nozzle",
+        "Cosmyx SuperNova Double Tete 0.4 nozzle",
+        "Cosmyx SuperNova Double Tete Metal Ceramique 0.4 nozzle",
+        "Cosmyx Nova Metal Ceramique 0.4 nozzle",
+        "Cosmyx Nova Haute Temperature 0.4 nozzle",
+        "Cosmyx Nova Double Tete 0.4 nozzle"
+    ],
+    "version": "01.07.00.18"
+}

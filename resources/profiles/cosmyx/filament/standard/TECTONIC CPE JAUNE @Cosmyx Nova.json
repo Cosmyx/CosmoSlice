@@ -1,0 +1,84 @@
+{
+    "type": "filament",
+    "filament_id": "MIL08",
+    "name": "TECTONIC CPE JAUNE @Cosmyx Nova",
+    "renamed_from": "\"TECTONIC CPE JAUNE Cosmyx Nova\";\"TECTONIC CPE JAUNE @Cosmyx Common\";\"TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.2\";\"TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.4\";\"TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.6\";\"TECTONIC CPE JAUNE @Cosmyx Nova can-out 0.8\";\"TECTONIC CPE JAUNE @Haute Temperature 0.2\";\"TECTONIC CPE JAUNE @Haute Temperature 0.4\";\"TECTONIC CPE JAUNE @Haute Temperature 0.6\";\"TECTONIC CPE JAUNE @Haute Temperature 0.8\";\"TECTONIC CPE JAUNE @Nova 0.2\";\"TECTONIC CPE JAUNE @Nova 0.4\";\"TECTONIC CPE JAUNE @Nova 0.6\";\"TECTONIC CPE JAUNE @Nova 0.8\";\"TECTONIC CPE JAUNE @Nova DT 0.2\";\"TECTONIC CPE JAUNE @Nova DT 0.4\";\"TECTONIC CPE JAUNE @Nova DT 0.6\";\"TECTONIC CPE JAUNE @Nova DT 0.8\";\"TECTONIC CPE JAUNE @Nova Metal Ceramique 0.2\";\"TECTONIC CPE JAUNE @Nova Metal Ceramique 0.4\";\"TECTONIC CPE JAUNE @Nova Metal Ceramique 0.6\";\"TECTONIC CPE JAUNE @Nova Metal Ceramique 0.8\";\"TECTONIC CPE JAUNE @SuperNova 0.2\";\"TECTONIC CPE JAUNE @SuperNova 0.4\";\"TECTONIC CPE JAUNE @SuperNova 0.6\";\"TECTONIC CPE JAUNE @SuperNova 0.8\";\"TECTONIC CPE JAUNE @SuperNova DT 0.2\";\"TECTONIC CPE JAUNE @SuperNova DT 0.4\";\"TECTONIC CPE JAUNE @SuperNova DT 0.6\";\"TECTONIC CPE JAUNE @SuperNova DT 0.8\";\"TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.2\";\"TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.4\";\"TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.6\";\"TECTONIC CPE JAUNE @SuperNova DT Metal Ceramique 0.8\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PETG Basic @Cosmyx Nova",
+    "default_filament_colour": [
+        "#FFFF00"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "filament_flow_ratio": [
+        "0.97"
+    ],
+    "filament_max_volumetric_speed": [
+        "13"
+    ],
+    "filament_settings_id": [
+        "TECTONIC CPE JAUNE @Cosmyx Nova"
+    ],
+    "filament_type": [
+        "CPE Jaune"
+    ],
+    "filament_vendor": [
+        "TECTONIC"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "90"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "90"
+    ],
+    "supertack_plate_temp": [
+        "90"
+    ],
+    "supertack_plate_temp_initial_layer": [
+        "90"
+    ],
+    "cool_plate_temp": [
+        "90"
+    ],
+    "cool_plate_temp_initial_layer": [
+        "90"
+    ],
+    "textured_cool_plate_temp": [
+        "90"
+    ],
+    "textured_cool_plate_temp_initial_layer": [
+        "90"
+    ],
+    "eng_plate_temp": [
+        "90"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "90"
+    ],
+    "hot_plate_temp": [
+        "90"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "90"
+    ],
+    "textured_plate_temp": [
+        "90"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "90"
+    ],
+    "is_custom_defined": "0",
+    "nozzle_temperature_initial_layer": [
+        "260"
+    ],
+    "overhang_fan_speed": [
+        "50"
+    ],
+    "pressure_advance": [
+        "0.046"
+    ],
+    "version": "1.7.0.18",
+    "compatible_printers": []
+}

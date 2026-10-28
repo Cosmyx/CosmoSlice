@@ -1,0 +1,32 @@
+{
+    "type": "process",
+    "setting_id": "GP013",
+    "name": "0.20mm Strength @Cosmyx Nova",
+    "renamed_from": "\"0.20mm Strength Cosmyx Nova\";\"0.20mm Strength @Cosmyx Nova can-out 0.4\";\"0.20mm Strength @Haute Temperature 0.4\";\"0.20mm Strength @Nova 0.4\";\"0.20mm Strength @Nova DT 0.4\";\"0.20mm Strength @SuperNova 0.4\";\"0.20mm Strength @SuperNova DT 0.4\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_cosmyx_0.20",
+    "outer_wall_speed": "60",
+    "wall_loops": "6",
+    "sparse_infill_density": "25%",
+    "detect_narrow_internal_solid_infill": "0",
+    "enable_overhang_speed": "0",
+    "ironing_flow": "18%",
+    "small_perimeter_speed": "30%",
+    "small_perimeter_threshold": "10",
+    "support_remove_small_overhang": "0",
+    "support_threshold_angle": "20",
+    "support_top_z_distance": "0.25",
+    "wall_generator": "arachne",
+    "compatible_printers": [
+        "Cosmyx Nova 0.4 nozzle",
+        "Cosmyx Nova 0.4 nozzle can-out",
+        "Cosmyx SuperNova 0.4 nozzle",
+        "Cosmyx SuperNova Double Tete 0.4 nozzle",
+        "Cosmyx SuperNova Double Tete Metal Ceramique 0.4 nozzle",
+        "Cosmyx Nova Metal Ceramique 0.4 nozzle",
+        "Cosmyx Nova Haute Temperature 0.4 nozzle",
+        "Cosmyx Nova Double Tete 0.4 nozzle"
+    ],
+    "version": "28.06.2026.01"
+}

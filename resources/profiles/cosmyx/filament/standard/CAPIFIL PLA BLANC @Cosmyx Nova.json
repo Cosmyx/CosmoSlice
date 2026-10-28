@@ -1,0 +1,91 @@
+{
+    "type": "filament",
+    "filament_id": "MIL01",
+    "name": "CAPIFIL PLA BLANC @Cosmyx Nova",
+    "renamed_from": "\"CAPIFIL PLA BLANC Cosmyx Nova\";\"CAPIFIL PLA BLANC @Cosmyx Common\";\"CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.2\";\"CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.4\";\"CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.6\";\"CAPIFIL PLA BLANC @Cosmyx Nova can-out 0.8\";\"CAPIFIL PLA BLANC @Haute Temperature 0.2\";\"CAPIFIL PLA BLANC @Haute Temperature 0.4\";\"CAPIFIL PLA BLANC @Haute Temperature 0.6\";\"CAPIFIL PLA BLANC @Haute Temperature 0.8\";\"CAPIFIL PLA BLANC @Nova 0.2\";\"CAPIFIL PLA BLANC @Nova 0.4\";\"CAPIFIL PLA BLANC @Nova 0.6\";\"CAPIFIL PLA BLANC @Nova 0.8\";\"CAPIFIL PLA BLANC @Nova DT 0.2\";\"CAPIFIL PLA BLANC @Nova DT 0.4\";\"CAPIFIL PLA BLANC @Nova DT 0.6\";\"CAPIFIL PLA BLANC @Nova DT 0.8\";\"CAPIFIL PLA BLANC @Nova Metal Ceramique 0.2\";\"CAPIFIL PLA BLANC @Nova Metal Ceramique 0.4\";\"CAPIFIL PLA BLANC @Nova Metal Ceramique 0.6\";\"CAPIFIL PLA BLANC @Nova Metal Ceramique 0.8\";\"CAPIFIL PLA BLANC @SuperNova 0.2\";\"CAPIFIL PLA BLANC @SuperNova 0.4\";\"CAPIFIL PLA BLANC @SuperNova 0.6\";\"CAPIFIL PLA BLANC @SuperNova 0.8\";\"CAPIFIL PLA BLANC @SuperNova DT 0.2\";\"CAPIFIL PLA BLANC @SuperNova DT 0.4\";\"CAPIFIL PLA BLANC @SuperNova DT 0.6\";\"CAPIFIL PLA BLANC @SuperNova DT 0.8\";\"CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.2\";\"CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.4\";\"CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.6\";\"CAPIFIL PLA BLANC @SuperNova DT Metal Ceramique 0.8\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PLA Basic @Cosmyx Nova",
+    "filament_vendor": [
+        "CAPIFIL"
+    ],
+    "default_filament_colour": [
+        "#FFFFFF"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "65"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "65"
+    ],
+    "supertack_plate_temp": [
+        "65"
+    ],
+    "supertack_plate_temp_initial_layer": [
+        "65"
+    ],
+    "cool_plate_temp": [
+        "65"
+    ],
+    "cool_plate_temp_initial_layer": [
+        "65"
+    ],
+    "textured_cool_plate_temp": [
+        "65"
+    ],
+    "textured_cool_plate_temp_initial_layer": [
+        "65"
+    ],
+    "eng_plate_temp": [
+        "65"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "65"
+    ],
+    "hot_plate_temp": [
+        "65"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "65"
+    ],
+    "textured_plate_temp": [
+        "65"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "65"
+    ],
+    "nozzle_temperature": [
+        "215"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "220"
+    ],
+    "pressure_advance": [
+        "0.04"
+    ],
+    "filament_max_volumetric_speed": [
+        "14"
+    ],
+    "filament_deretraction_speed": [
+        "10"
+    ],
+    "filament_retract_when_changing_layer": [
+        "0"
+    ],
+    "filament_retraction_speed": [
+        "10"
+    ],
+    "filament_wipe": [
+        "0"
+    ],
+    "filament_z_hop_types": [
+        "Auto Lift"
+    ],
+    "slow_down_layer_time": [
+        "8"
+    ],
+    "compatible_printers": []
+}

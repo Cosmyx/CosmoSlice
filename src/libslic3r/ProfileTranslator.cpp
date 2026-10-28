@@ -72,9 +72,12 @@ bool ProfileTranslator::try_load_file(const std::string& filepath)
                         while (!src_alias.empty() && src_alias.back() == ' ') src_alias.pop_back();
                         while (!trl_alias.empty() && trl_alias.back() == ' ') trl_alias.pop_back();
                         if (!src_alias.empty() && !trl_alias.empty() &&
-                            m_translations.find(src_alias) == m_translations.end())
+                            m_translations.find(src_alias) == m_translations.end()) {
                             m_translations[src_alias] = trl_alias;
+                            m_reverse_translations.emplace(trl_alias, src_alias);
+                        }
                     }
+                    // Combo boxes display translated names, so selecting an entry must map it back to the preset name.
                     m_reverse_translations[trl] = src;
                     m_translations[std::move(src)] = std::move(trl);
                 }

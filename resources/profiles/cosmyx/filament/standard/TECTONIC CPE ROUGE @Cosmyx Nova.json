@@ -1,0 +1,81 @@
+{
+    "type": "filament",
+    "filament_id": "MIL09",
+    "name": "TECTONIC CPE ROUGE @Cosmyx Nova",
+    "renamed_from": "\"TECTONIC CPE ROUGE Cosmyx Nova\";\"TECTONIC CPE ROUGE @Cosmyx Common\";\"TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.2\";\"TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.4\";\"TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.6\";\"TECTONIC CPE ROUGE @Cosmyx Nova can-out 0.8\";\"TECTONIC CPE ROUGE @Haute Temperature 0.2\";\"TECTONIC CPE ROUGE @Haute Temperature 0.4\";\"TECTONIC CPE ROUGE @Haute Temperature 0.6\";\"TECTONIC CPE ROUGE @Haute Temperature 0.8\";\"TECTONIC CPE ROUGE @Nova 0.2\";\"TECTONIC CPE ROUGE @Nova 0.4\";\"TECTONIC CPE ROUGE @Nova 0.6\";\"TECTONIC CPE ROUGE @Nova 0.8\";\"TECTONIC CPE ROUGE @Nova DT 0.2\";\"TECTONIC CPE ROUGE @Nova DT 0.4\";\"TECTONIC CPE ROUGE @Nova DT 0.6\";\"TECTONIC CPE ROUGE @Nova DT 0.8\";\"TECTONIC CPE ROUGE @Nova Metal Ceramique 0.2\";\"TECTONIC CPE ROUGE @Nova Metal Ceramique 0.4\";\"TECTONIC CPE ROUGE @Nova Metal Ceramique 0.6\";\"TECTONIC CPE ROUGE @Nova Metal Ceramique 0.8\";\"TECTONIC CPE ROUGE @SuperNova 0.2\";\"TECTONIC CPE ROUGE @SuperNova 0.4\";\"TECTONIC CPE ROUGE @SuperNova 0.6\";\"TECTONIC CPE ROUGE @SuperNova 0.8\";\"TECTONIC CPE ROUGE @SuperNova DT 0.2\";\"TECTONIC CPE ROUGE @SuperNova DT 0.4\";\"TECTONIC CPE ROUGE @SuperNova DT 0.6\";\"TECTONIC CPE ROUGE @SuperNova DT 0.8\";\"TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.2\";\"TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.4\";\"TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.6\";\"TECTONIC CPE ROUGE @SuperNova DT Metal Ceramique 0.8\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PETG Basic @Cosmyx Nova",
+    "default_filament_colour": [
+        "#FF0000"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "filament_max_volumetric_speed": [
+        "13"
+    ],
+    "filament_settings_id": [
+        "TECTONIC CPE ROUGE @Cosmyx Nova"
+    ],
+    "filament_type": [
+        "CPE Rouge"
+    ],
+    "filament_vendor": [
+        "TECTONIC"
+    ],
+    "cosmyx_textured_bed_temp": [
+        "90"
+    ],
+    "cosmyx_textured_bed_temp_initial_layer": [
+        "90"
+    ],
+    "supertack_plate_temp": [
+        "90"
+    ],
+    "supertack_plate_temp_initial_layer": [
+        "90"
+    ],
+    "cool_plate_temp": [
+        "90"
+    ],
+    "cool_plate_temp_initial_layer": [
+        "90"
+    ],
+    "textured_cool_plate_temp": [
+        "90"
+    ],
+    "textured_cool_plate_temp_initial_layer": [
+        "90"
+    ],
+    "eng_plate_temp": [
+        "90"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "90"
+    ],
+    "hot_plate_temp": [
+        "90"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "90"
+    ],
+    "textured_plate_temp": [
+        "90"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "90"
+    ],
+    "is_custom_defined": "0",
+    "nozzle_temperature": [
+        "245"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "245"
+    ],
+    "pressure_advance": [
+        "0.046"
+    ],
+    "version": "1.7.0.18",
+    "compatible_printers": []
+}

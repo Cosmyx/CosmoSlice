@@ -1,0 +1,14 @@
+{
+    "type": "filament",
+    "setting_id": "GFSU00",
+    "name": "Cosmyx TPU 95A @Cosmyx Nova",
+    "renamed_from": "\"Cosmyx TPU 95A Cosmyx Nova\";\"Cosmyx TPU 95A @Cosmyx Common\";\"Cosmyx TPU 95A @Cosmyx Nova can-out 0.2\";\"Cosmyx TPU 95A @Cosmyx Nova can-out 0.4\";\"Cosmyx TPU 95A @Cosmyx Nova can-out 0.6\";\"Cosmyx TPU 95A @Cosmyx Nova can-out 0.8\";\"Cosmyx TPU 95A @Haute Temperature 0.2\";\"Cosmyx TPU 95A @Haute Temperature 0.4\";\"Cosmyx TPU 95A @Haute Temperature 0.6\";\"Cosmyx TPU 95A @Haute Temperature 0.8\";\"Cosmyx TPU 95A @Nova 0.2\";\"Cosmyx TPU 95A @Nova 0.4\";\"Cosmyx TPU 95A @Nova 0.6\";\"Cosmyx TPU 95A @Nova 0.8\";\"Cosmyx TPU 95A @Nova DT 0.2\";\"Cosmyx TPU 95A @Nova DT 0.4\";\"Cosmyx TPU 95A @Nova DT 0.6\";\"Cosmyx TPU 95A @Nova DT 0.8\";\"Cosmyx TPU 95A @Nova Metal Ceramique 0.2\";\"Cosmyx TPU 95A @Nova Metal Ceramique 0.4\";\"Cosmyx TPU 95A @Nova Metal Ceramique 0.6\";\"Cosmyx TPU 95A @Nova Metal Ceramique 0.8\";\"Cosmyx TPU 95A @SuperNova 0.2\";\"Cosmyx TPU 95A @SuperNova 0.4\";\"Cosmyx TPU 95A @SuperNova 0.6\";\"Cosmyx TPU 95A @SuperNova 0.8\";\"Cosmyx TPU 95A @SuperNova DT 0.2\";\"Cosmyx TPU 95A @SuperNova DT 0.4\";\"Cosmyx TPU 95A @SuperNova DT 0.6\";\"Cosmyx TPU 95A @SuperNova DT 0.8\";\"Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.2\";\"Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.4\";\"Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.6\";\"Cosmyx TPU 95A @SuperNova DT Metal Ceramique 0.8\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx TPU 95A @base",
+    "filament_max_volumetric_speed": [
+        "3.6"
+    ],
+    "compatible_printers": [],
+    "version": "01.07.00.18"
+}

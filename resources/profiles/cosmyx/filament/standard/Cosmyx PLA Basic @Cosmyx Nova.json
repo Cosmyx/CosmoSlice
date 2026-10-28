@@ -1,0 +1,14 @@
+{
+    "type": "filament",
+    "setting_id": "GFSA00",
+    "name": "Cosmyx PLA Basic @Cosmyx Nova",
+    "renamed_from": "\"Cosmyx PLA Basic Cosmyx Nova\";\"Cosmyx PLA Basic @Cosmyx Common\";\"Cosmyx PLA Basic @Cosmyx Nova can-out 0.2\";\"Cosmyx PLA Basic @Cosmyx Nova can-out 0.4\";\"Cosmyx PLA Basic @Cosmyx Nova can-out 0.6\";\"Cosmyx PLA Basic @Cosmyx Nova can-out 0.8\";\"Cosmyx PLA Basic @Haute Temperature 0.2\";\"Cosmyx PLA Basic @Haute Temperature 0.4\";\"Cosmyx PLA Basic @Haute Temperature 0.6\";\"Cosmyx PLA Basic @Haute Temperature 0.8\";\"Cosmyx PLA Basic @Nova 0.2\";\"Cosmyx PLA Basic @Nova 0.4\";\"Cosmyx PLA Basic @Nova 0.6\";\"Cosmyx PLA Basic @Nova 0.8\";\"Cosmyx PLA Basic @Nova DT 0.2\";\"Cosmyx PLA Basic @Nova DT 0.4\";\"Cosmyx PLA Basic @Nova DT 0.6\";\"Cosmyx PLA Basic @Nova DT 0.8\";\"Cosmyx PLA Basic @Nova Metal Ceramique 0.2\";\"Cosmyx PLA Basic @Nova Metal Ceramique 0.4\";\"Cosmyx PLA Basic @Nova Metal Ceramique 0.6\";\"Cosmyx PLA Basic @Nova Metal Ceramique 0.8\";\"Cosmyx PLA Basic @SuperNova 0.2\";\"Cosmyx PLA Basic @SuperNova 0.4\";\"Cosmyx PLA Basic @SuperNova 0.6\";\"Cosmyx PLA Basic @SuperNova 0.8\";\"Cosmyx PLA Basic @SuperNova DT 0.2\";\"Cosmyx PLA Basic @SuperNova DT 0.4\";\"Cosmyx PLA Basic @SuperNova DT 0.6\";\"Cosmyx PLA Basic @SuperNova DT 0.8\";\"Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.2\";\"Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.4\";\"Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.6\";\"Cosmyx PLA Basic @SuperNova DT Metal Ceramique 0.8\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PLA Basic @base",
+    "filament_max_volumetric_speed": [
+        "21"
+    ],
+    "compatible_printers": [],
+    "version": "01.07.00.18"
+}

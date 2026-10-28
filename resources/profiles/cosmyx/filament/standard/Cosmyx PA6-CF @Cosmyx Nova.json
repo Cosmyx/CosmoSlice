@@ -1,0 +1,11 @@
+{
+    "type": "filament",
+    "setting_id": "GFSN05_02",
+    "name": "Cosmyx PA6-CF @Cosmyx Nova",
+    "renamed_from": "\"Cosmyx PA6-CF Cosmyx Nova\";\"Cosmyx PA6-CF @Cosmyx Common\";\"Cosmyx PA6-CF @Cosmyx Nova can-out 0.2\";\"Cosmyx PA6-CF @Cosmyx Nova can-out 0.4\";\"Cosmyx PA6-CF @Cosmyx Nova can-out 0.6\";\"Cosmyx PA6-CF @Cosmyx Nova can-out 0.8\";\"Cosmyx PA6-CF @Haute Temperature 0.2\";\"Cosmyx PA6-CF @Haute Temperature 0.4\";\"Cosmyx PA6-CF @Haute Temperature 0.6\";\"Cosmyx PA6-CF @Haute Temperature 0.8\";\"Cosmyx PA6-CF @Nova 0.2\";\"Cosmyx PA6-CF @Nova 0.4\";\"Cosmyx PA6-CF @Nova 0.6\";\"Cosmyx PA6-CF @Nova 0.8\";\"Cosmyx PA6-CF @Nova DT 0.2\";\"Cosmyx PA6-CF @Nova DT 0.4\";\"Cosmyx PA6-CF @Nova DT 0.6\";\"Cosmyx PA6-CF @Nova DT 0.8\";\"Cosmyx PA6-CF @Nova Metal Ceramique 0.2\";\"Cosmyx PA6-CF @Nova Metal Ceramique 0.4\";\"Cosmyx PA6-CF @Nova Metal Ceramique 0.6\";\"Cosmyx PA6-CF @Nova Metal Ceramique 0.8\";\"Cosmyx PA6-CF @SuperNova 0.2\";\"Cosmyx PA6-CF @SuperNova 0.4\";\"Cosmyx PA6-CF @SuperNova 0.6\";\"Cosmyx PA6-CF @SuperNova 0.8\";\"Cosmyx PA6-CF @SuperNova DT 0.2\";\"Cosmyx PA6-CF @SuperNova DT 0.4\";\"Cosmyx PA6-CF @SuperNova DT 0.6\";\"Cosmyx PA6-CF @SuperNova DT 0.8\";\"Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.2\";\"Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.4\";\"Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.6\";\"Cosmyx PA6-CF @SuperNova DT Metal Ceramique 0.8\"",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Cosmyx PA6-CF @base",
+    "compatible_printers": [],
+    "version": "01.07.00.18"
+}
