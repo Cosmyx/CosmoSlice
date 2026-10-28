@@ -35,7 +35,7 @@
         },
         {
             "name": "Cosmyx Nova can-out",
-            "sub_path": "machine/nova_can_out/Cosmyx Nova can-out.json"
+            "sub_path": "machine/Nova_can_out/Cosmyx Nova can-out.json"
         }
     ],
     "process_list": [
@@ -561,19 +561,19 @@
         },
         {
             "name": "Cosmyx Nova 0.4 nozzle can-out",
-            "sub_path": "machine/nova_can_out/Cosmyx Nova 0.4 nozzle can-out.json"
+            "sub_path": "machine/Nova_can_out/Cosmyx Nova 0.4 nozzle can-out.json"
         },
         {
             "name": "Cosmyx Nova 0.25 nozzle can-out",
-            "sub_path": "machine/nova_can_out/Cosmyx Nova 0.25 nozzle can-out.json"
+            "sub_path": "machine/Nova_can_out/Cosmyx Nova 0.25 nozzle can-out.json"
         },
         {
             "name": "Cosmyx Nova 0.6 nozzle can-out",
-            "sub_path": "machine/nova_can_out/Cosmyx Nova 0.6 nozzle can-out.json"
+            "sub_path": "machine/Nova_can_out/Cosmyx Nova 0.6 nozzle can-out.json"
         },
         {
             "name": "Cosmyx Nova 0.8 nozzle can-out",
-            "sub_path": "machine/nova_can_out/Cosmyx Nova 0.8 nozzle can-out.json"
+            "sub_path": "machine/Nova_can_out/Cosmyx Nova 0.8 nozzle can-out.json"
         }
     ]
 }

@@ -35,6 +35,8 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ### resources
 
+- The Cosmyx Nova can-out printer loads on Linux: its profile index named the `nova_can_out` folder with the wrong
+  case, which only case-insensitive file systems (macOS, Windows) accepted. MR: pending.
 - The 3D bed of the Cosmyx Nova printers shows its logo in white, blue and red instead of black. MR: pending.
   D-012.
 - The 3D bed of the Custom printers (MyKlipper, MyMarlin, MyRRF, MyToolChanger) shows the CosmoSlice logo
