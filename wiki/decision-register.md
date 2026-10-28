@@ -106,8 +106,9 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   specified in Open issues (A1 has since been provided, see Resolved issues). Out of scope, on purpose:
   `resources/images/logo2.png` (not referenced), the embossed model `OrcaCube_v2.3mf`, the flatpak screenshots, the
   dead `src/dev-utils/platform/osx/Info.plist.in`, the single-size `.ico` files, the "grayscale" PNG that is
-  coloured, and `resources/web/homepage/img/3d_text.png` (Bambu wordmark). Already CosmoSlice and untouched: `OrcaSlicer.svg`, `_about*`, `_gradient*`, `_gray`,
-  `studio_logo`, `splash_logo*`, `OrcaSlicer*.png`, `OrcaSlicer.ico`, `OrcaSlicerTitle.ico`, `OrcaSlicer-mac_256px.*`.
+  coloured, and `resources/web/homepage/img/3d_text.png` (Bambu wordmark). Already CosmoSlice and untouched:
+  `OrcaSlicer.svg`, `_about*`, `_gradient*`, `_gray`, `studio_logo`, `splash_logo*`, `OrcaSlicer*.png`,
+  `OrcaSlicer.ico`, `OrcaSlicerTitle.ico`, `OrcaSlicer-mac_256px.*`.
   No golden is added: no suite exists (D-009). A bed texture is stretched over the bounding box of the printable_area,
   so its viewBox must have the aspect ratio of every bed that uses it, within 5% (not be square): the Nova artwork
   is 4.5% narrower than its 300x200 bed, which does not show.

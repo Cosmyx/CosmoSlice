@@ -2,9 +2,12 @@
 
 The 3D bed is textured by NanoSVG (deps_src/nanosvg/nanosvg.h, loaded in src/slic3r/GUI/GLTexture.cpp). NanoSVG
 draws path, rect, circle, ellipse, line, polyline and polygon with inline styles and gradients, and nothing else. It
-does not know clipPath, mask, filter, text, image, use, foreignObject, pattern or a <style> sheet: an element it does
-not know is skipped but the shapes inside it are still drawn (a clipPath rect becomes an opaque black square), and
-a clip-path, mask or filter reference is ignored. A shape styled by a <style> class gets no fill and turns black.
+does not know clipPath, mask, filter, text, image, use, foreignObject, pattern, symbol, marker or a <style> sheet:
+outside <defs>, an element it does not know is skipped but the shapes inside it are still drawn (a clipPath rect
+becomes an opaque black square, a symbol or marker is drawn in place although a browser draws it only where it is
+used), and a clip-path, mask or filter reference is ignored. Inside <defs> it reads gradients only (defsFlag). A
+shape styled by a <style> class gets no fill and turns black. The check below is stricter: it rejects these elements
+wherever they are, <defs> included.
 
 The texture is stretched over the bounding box of the printer's `printable_area` (PartPlate::generate_logo_polygon,
 then UVs from the polygon's bounding box in init_model_from_poly), so the viewBox must have the aspect ratio of every
@@ -31,7 +34,7 @@ PROFILES = REPO_ROOT / "resources" / "profiles"
 SVG_NS = "{http://www.w3.org/2000/svg}"
 
 UNSUPPORTED_ELEMENTS = frozenset(
-    {"clipPath", "mask", "filter", "text", "image", "use", "foreignObject", "pattern", "style"}
+    {"clipPath", "mask", "filter", "text", "image", "use", "foreignObject", "pattern", "style", "symbol", "marker"}
 )
 UNSUPPORTED_PROPERTIES = frozenset({"clip-path", "mask", "filter"})
 
@@ -53,6 +56,11 @@ KNOWN_STRETCHED: dict[str, dict[str, str]] = {
 }
 
 
+def is_svg(texture: str) -> bool:
+    """Whether the bed loads `texture` as an SVG: the extension is compared without case, as the app does."""
+    return texture.lower().endswith(".svg")
+
+
 def bed_textures() -> list[str]:
     """Repo-relative POSIX paths of every .svg named by a machine profile's `bed_texture`."""
     found = set()
@@ -60,7 +68,7 @@ def bed_textures() -> list[str]:
         if profile.name.startswith(".smbdelete"):
             continue
         texture = json.loads(profile.read_text(encoding="utf-8")).get("bed_texture", "")
-        if texture.endswith(".svg"):
+        if is_svg(texture):
             vendor = profile.relative_to(PROFILES).parts[0]
             found.add((PROFILES / vendor / texture).relative_to(REPO_ROOT).as_posix())
     return sorted(found)
@@ -147,7 +155,7 @@ def profile_bed_sizes() -> dict[str, dict[str, tuple[float, float]]]:
             if not f.name.startswith(".smbdelete")
         ]
         for texture, models in bed_sizes(profiles).items():
-            if texture.lower().endswith(".svg"):
+            if is_svg(texture):
                 out[(vendor / texture).relative_to(REPO_ROOT).as_posix()] = models
     return out
 
@@ -175,6 +183,12 @@ def test_custom_printer_bed_texture_is_in_scope():
 @pytest.mark.parametrize("relative", [t for t in bed_textures() if t not in KNOWN_UNSAFE])
 def test_bed_texture_is_nanosvg_safe(relative):
     assert nanosvg_problems((REPO_ROOT / relative).read_bytes()) == []
+
+
+@pytest.mark.parametrize(("name", "svg"), [("a.svg", True), ("a.SVG", True), ("a.Svg", True), ("a.png", False)])
+def test_svg_texture_extension_ignores_case(name, svg):
+    # PartPlate::render_logo picks the SVG loader with boost::iends_with.
+    assert is_svg(name) is svg
 
 
 def test_every_texture_has_a_bed():
@@ -232,6 +246,8 @@ def test_checker_accepts_plain_shapes():
         (b"<foreignObject/>", "<foreignObject> element"),
         (b"<pattern/>", "<pattern> element"),
         (b"<style>.a{fill:red}</style>", "<style> element"),
+        (b'<symbol id="s"><rect width="1" height="1"/></symbol>', "<symbol> element"),
+        (b'<marker id="m"><rect width="1" height="1"/></marker>', "<marker> element"),
         (b'<g clip-path="url(#c)"/>', "clip-path attribute"),
         (b'<g mask="url(#m)"/>', "mask attribute"),
         (b'<g filter="url(#f)"/>', "filter attribute"),

@@ -6,9 +6,8 @@ from the git blobs (no git at test time):
     git show <rev>:<path> | shasum -a 256        # and `| wc -c` for the size
 
 with <rev> = a6f1ed8ab4 (last Orca version) for every path, except resources/images/OrcaSlicer.icns, whose last
-Orca version is b56bbbff4e (d317226e47 replaced it by a corrupt file), and resources/profiles/Custom/
-orcaslicer_bed_texture.svg, read at dd9a17e13d (the Orca texture, unchanged since a6f1ed8ab4). Files still waiting
-for a CosmoSlice asset (logo2.png) are not listed, otherwise the suite would be red on pending assets.
+Orca version is b56bbbff4e (d317226e47 replaced it by a corrupt file). Files still waiting for a CosmoSlice asset
+(logo2.png) are not listed, otherwise the suite would be red on pending assets.
 """
 
 import hashlib
