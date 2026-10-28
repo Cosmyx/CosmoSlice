@@ -36,11 +36,23 @@ def context_dir(image: str, images_dir: Path = IMAGES_DIR) -> Path:
     return folder
 
 
+# Dotfiles kept in the hash: they change what `docker build` sees.
+HASHED_DOTFILES = frozenset({".dockerignore"})
+
+
+def is_hashed(path: Path, folder: Path) -> bool:
+    """True for a real build-context file: not a cache, not a host dotfile (.DS_Store, ._*, .smbdelete*)."""
+    parts = path.relative_to(folder).parts
+    if "__pycache__" in parts:
+        return False
+    return all(not part.startswith(".") or part in HASHED_DOTFILES for part in parts)
+
+
 def context_hash(folder: Path) -> str:
     """Hash every file of the build context (relative POSIX path + bytes), independent of the host OS."""
     digest = hashlib.sha256()
     files = sorted(
-        (p for p in folder.rglob("*") if p.is_file() and "__pycache__" not in p.parts),
+        (p for p in folder.rglob("*") if p.is_file() and is_hashed(p, folder)),
         key=lambda p: p.relative_to(folder).as_posix(),
     )
     for path in files:

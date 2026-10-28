@@ -91,7 +91,10 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   image with a hash of its whole build context (not only the Dockerfile, so a requirements change also rebuilds),
   always builds and runs `linux/amd64`, mounts the repository at `/repo`, and passes `--user uid:gid` only where the
   host has POSIX ids. Test suites are discovered as `scripts/<suite>/tests` and `tools/<suite>/tests`; module checks
-  as the `check` recipe of `scripts/<module>/justfile` or `tools/<module>/justfile` (`tools/ci/suites.py`). Ruff
+  as the `check` recipe of `scripts/<module>/justfile` or `tools/<module>/justfile` (`tools/ci/suites.py`). The
+  image tag hashes only real build-context files: `__pycache__`, host dotfiles (`.DS_Store`, `._*`) and SMB
+  `.smbdelete*` leftovers are skipped, `.dockerignore` is kept. `just ci` runs lint, every suite (the
+  product-name guard included), the catalogue check (`just i18n-catalogs`) and the module checks, each once. Ruff
   lints `scripts/` and `tools/`, excluding the legacy upstream scripts directly in `scripts/`. `CHANGELOG.md` at the
   root carries its rules at its top; this register lives in `wiki/`.
 - **The C++ build and the C++ tests (Catch2, `tests/`) run on GitHub CI only.** They need the full dependency build
@@ -108,9 +111,14 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   scripts on macOS.
 - **Decision.** `.gitattributes` sets `* text=auto eol=lf` and marks the binary types (`png jpg jpeg gif ico icns 3mf
   stl ttf xlsx dll lib exe`) as `binary`; the CRLF files were renormalised (only line endings changed).
-  `tools/repo/tests/test_line_endings.py` fails on any CRLF text file in the tree.
+  `tools/repo/line_endings.py` (the `check` recipe of `tools/repo/justfile`, run by `just ci`) fails on any
+  tracked text file with CRLF in the working tree; untracked and ignored files are never read. It lists the files
+  with `git ls-files`, so it runs on the host, not in the CI image: the image has no git, and a worktree's git
+  folder lies outside the mounted repository. git is present on every host OS that has the repository. Its
+  selection logic and `.gitattributes` are tested in `tools/repo/tests/`.
 - **Reason.** One line ending for every OS; binary assets never touched by normalisation.
-- **Reverting.** Restore the old `.gitattributes` (`* text=auto`) and drop the test.
+- **Reverting.** Restore the old `.gitattributes` (`* text=auto`) and drop `tools/repo/line_endings.py`, the `check`
+  recipe of `tools/repo/justfile` and `tools/repo/tests/test_line_endings.py`.
 
 ## D-009 GUI goldens: known gap
 

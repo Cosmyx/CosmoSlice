@@ -1,65 +1,51 @@
-"""Repository hygiene: every text file is LF in the working tree, and .gitattributes keeps it that way."""
+"""Repository hygiene: .gitattributes keeps every text file LF, and the CRLF check looks at tracked files only."""
 
 from pathlib import Path
 
+import line_endings as le
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
-
-# Binary types declared in .gitattributes; they are never checked for line endings.
-BINARY_SUFFIXES = {
-    ".png",
-    ".jpg",
-    ".jpeg",
-    ".gif",
-    ".ico",
-    ".icns",
-    ".3mf",
-    ".stl",
-    ".ttf",
-    ".xlsx",
-    ".dll",
-    ".lib",
-    ".exe",
-}
-# Generated or local folders that are not part of the repository content.
-SKIPPED_DIRS = {".git", "__pycache__", ".pytest_cache", ".ruff_cache", "node_modules", ".flatpak-builder", "DL_CACHE"}
-
-
-def is_skipped_dir(path: Path) -> bool:
-    name = path.name
-    return (
-        name in SKIPPED_DIRS or name.startswith(".smbdelete") or (path.parent == REPO_ROOT and name.startswith("build"))
-    )
-
-
-def text_files(root: Path):
-    stack = [root]
-    while stack:
-        folder = stack.pop()
-        for entry in folder.iterdir():
-            if entry.is_dir():
-                if not is_skipped_dir(entry):
-                    stack.append(entry)
-            elif (
-                entry.is_file()
-                and entry.suffix.lower() not in BINARY_SUFFIXES
-                and not entry.name.startswith(".smbdelete")
-            ):
-                yield entry
 
 
 def test_gitattributes_forces_lf_and_marks_binaries() -> None:
     lines = {line.strip() for line in (REPO_ROOT / ".gitattributes").read_text(encoding="utf-8").splitlines()}
     assert "* text=auto eol=lf" in lines
-    for suffix in BINARY_SUFFIXES:
+    for suffix in le.BINARY_SUFFIXES:
         assert f"*{suffix} binary" in lines
 
 
-def test_no_crlf_in_text_files() -> None:
-    offenders = []
-    for path in text_files(REPO_ROOT):
-        data = path.read_bytes()
-        if b"\0" in data[:8000]:
-            continue  # binary content with an unusual suffix
-        if b"\r\n" in data:
-            offenders.append(path.relative_to(REPO_ROOT).as_posix())
-    assert offenders == [], f"CRLF line endings in: {offenders[:20]}"
+def test_ls_files_output_is_split_on_nul() -> None:
+    output = "a.txt\0dir/b c.py\0café.md\0".encode()
+    assert le.parse_ls_files(output) == ["a.txt", "dir/b c.py", "café.md"]
+    assert le.parse_ls_files(b"") == []
+
+
+def test_declared_binary_suffixes_are_not_candidates() -> None:
+    assert le.text_candidates(["logo.PNG", "a/model.3mf", "src/x.cpp", "justfile"]) == ["src/x.cpp", "justfile"]
+
+
+def test_only_listed_files_are_checked(tmp_path: Path) -> None:
+    (tmp_path / "sub").mkdir()
+    (tmp_path / "sub" / "tracked.sh").write_bytes(b"echo\r\n")
+    (tmp_path / "clean.txt").write_bytes(b"ok\n")
+    # Not in the tracked list (untracked or ignored): never reported, even with CRLF.
+    (tmp_path / "untracked.txt").write_bytes(b"local\r\n")
+    (tmp_path / "blob.bin").write_bytes(b"\0\r\n")
+    listed = ["sub/tracked.sh", "clean.txt", "blob.bin", "deleted.txt"]
+    assert le.crlf_offenders(tmp_path, listed) == ["sub/tracked.sh"]
+
+
+def test_main_reports_tracked_crlf(tmp_path: Path, monkeypatch, capsys) -> None:
+    (tmp_path / "a.txt").write_bytes(b"x\r\n")
+    monkeypatch.setattr(le, "tracked_files", lambda root: ["a.txt"])
+    assert le.main(tmp_path) == 1
+    assert "a.txt" in capsys.readouterr().err
+
+
+def test_main_fails_clearly_without_git(tmp_path: Path, monkeypatch, capsys) -> None:
+    def no_git(root: Path) -> list[str]:
+        raise FileNotFoundError("git")
+
+    monkeypatch.setattr(le, "tracked_files", no_git)
+    assert le.main(tmp_path) == 2
+    assert "git" in capsys.readouterr().err

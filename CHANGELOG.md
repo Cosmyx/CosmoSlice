@@ -34,12 +34,12 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ### tooling
 
-- `just i18n-check` validates every catalogue and guards against the upstream product name in user-visible text;
-  `just i18n-status` lists what each language still has to translate. MR: pending. D-006.
+- `just i18n-check` validates every catalogue (`just i18n-catalogs` alone) and guards against the upstream product
+  name in user-visible text; `just i18n-status` lists what each language still has to translate. MR: pending. D-006.
 - `just lint` now checks the Python modules below `scripts/` (only the legacy upstream scripts are skipped).
   MR: pending. D-007.
 - `just i18n-rename`: renames msgids in place in the pot and every .po from a frozen mapping, marking changed
   translations fuzzy with the previous msgid (and context), without re-wrapping the catalogues; when one catalogue
   cannot be renamed, none is written. MR: pending. D-004.
 - Repository-wide `just` task runner with a pinned Docker CI image for Python tests, lint and i18n checks, and LF
-  line endings enforced for every text file. MR: pending. D-007, D-008.
+  line endings enforced for every tracked text file. MR: pending. D-007, D-008.

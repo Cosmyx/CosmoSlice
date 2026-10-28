@@ -1,0 +1,13 @@
+# tools/repo: repository hygiene. Its `check` recipe is discovered and run by `just ci` (tools/ci/suites.py).
+
+set windows-shell := ["powershell.exe", "-NoLogo", "-Command"]
+
+python := if os_family() == "windows" { "python" } else { "python3" }
+
+# List every recipe of this module
+default:
+    @just --justfile "{{justfile()}}" --list
+
+# Fail on CRLF line endings in any tracked text file (runs on the host: it needs git, the CI image has none)
+check:
+    {{python}} "{{justfile_directory()}}/line_endings.py"

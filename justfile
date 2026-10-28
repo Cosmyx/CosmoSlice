@@ -37,9 +37,12 @@ fmt:
 i18n-rename *args:
     {{python}} scripts/i18n/rename_msgids.py {{args}}
 
-# Check the catalogues (msgfmt --check-format, duplicates) and the product-name guards, in the CI image
-i18n-check:
+# Check the catalogues only (msgfmt --check-format, duplicates), in the CI image
+i18n-catalogs:
     {{docker}} -- python scripts/i18n/check_catalogs.py
+
+# Check the catalogues and the product-name guards (also part of `just test i18n`), in the CI image
+i18n-check: i18n-catalogs
     {{docker}} -- python -m pytest -q scripts/i18n/tests/test_product_name_guard.py
 
 # Show what translators still have to do after the rename, for one language or all
@@ -50,6 +53,6 @@ i18n-status lang="":
 i18n-update-pot:
     {{python}} scripts/update_pot.py --update-po
 
-# Full gate: lint, every test suite, i18n checks, every module `check` recipe (discovered)
-ci: lint test i18n-check
+# Full gate: lint, every test suite (guards included), catalogue check, every module `check` recipe (discovered)
+ci: lint test i18n-catalogs
     {{python}} tools/ci/suites.py checks --just "{{just_executable()}}"

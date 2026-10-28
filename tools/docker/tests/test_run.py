@@ -31,6 +31,21 @@ def test_tag_ignores_pycache(tmp_path: Path) -> None:
     assert run.image_tag("ci", folder) == before
 
 
+@pytest.mark.parametrize("junk", [".DS_Store", ".smbdelete0001", "sub/._Dockerfile", ".cache/x"])
+def test_tag_ignores_dotfiles_and_smb_leftovers(tmp_path: Path, junk: str) -> None:
+    folder = make_context(tmp_path, {"Dockerfile": b"FROM x\n"})
+    before = run.image_tag("ci", folder)
+    make_context(tmp_path, {junk: b"junk"})
+    assert run.image_tag("ci", folder) == before
+
+
+def test_tag_depends_on_dockerignore(tmp_path: Path) -> None:
+    folder = make_context(tmp_path, {"Dockerfile": b"FROM x\n"})
+    before = run.image_tag("ci", folder)
+    make_context(tmp_path, {".dockerignore": b"*.md\n"})
+    assert run.image_tag("ci", folder) != before
+
+
 def test_missing_image_fails_clearly(tmp_path: Path) -> None:
     with pytest.raises(SystemExit, match="no Dockerfile"):
         run.context_dir("nope", tmp_path)
