@@ -70,9 +70,10 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   stage of the shared CI image (`tools/docker/ci/Dockerfile`); only its binary is copied into the final stage, and it
   always runs `linux/amd64` through `tools/docker/run.py`. `scripts/brand_assets/derive.py` renders each PNG with
   `resvg -w N -h N` and writes ICNS files with `scripts/brand_assets/icns.py` (stdlib): entries in a fixed order
-  (`icp4` 16, `icp5` 32, `icp6` 64, `ic07` 128, `ic08` 256, `ic09` 512, `ic10` 1024, `ic11` 32, `ic12` 64, `ic13` 256,
-  `ic14` 512), PNG payloads only, no table of contents, no info chunk, no timestamp. Outputs are rewritten in place
-  and only when their bytes change. Recipes: `just -f scripts/brand_assets/justfile derive|check|stable`; `check`
+  (`icp4` 16, `icp5` 32, `ic07` 128, `ic08` 256, `ic09` 512, `ic10` 1024, `ic11` 32, `ic12` 64, `ic13` 256, `ic14` 512;
+  type/size table verified against macOS `iconutil`), PNG payloads only, no table of contents, no info chunk, no
+  timestamp. `icp6` is not written: it is a 48 px slot, and 64 px already lives in `ic12`. Outputs are rewritten in
+  place and only when their bytes change. Recipes: `just -f scripts/brand_assets/justfile derive|check|stable`; `check`
   runs in `just ci`. The module lives in `scripts/`, not `resources/`, which is installed whole.
 - **Reason.** One pinned renderer and one deterministic container format give the same bytes on every host and in CI.
 - **Reverting.** Remove `scripts/brand_assets/` and the `resvg` stage and `COPY` line of the CI Dockerfile; the
@@ -130,5 +131,7 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   tests only gate locally until a CI job calls it.
 - **Icon.icns chain not verified on a build** (D-011): `CFBundleIconFile` = `Icon.icns` is read from the CMake and
   packaging scripts; check the icon of the next CI DMG. Finder and LaunchServices may show the old icon from cache.
+  Also check the 16 and 32 px list-view icons in Finder: `icp4`/`icp5` hold PNG payloads, while `iconutil` writes
+  ARGB `ic04`/`ic05` for those sizes.
 - **No golden suite** (D-009): wx dialogs need a build; the setup-guide HTML goldens are a follow-up workstream.
 - **Merge request links**: CHANGELOG lines of this branch carry `MR: pending` until the request is opened.

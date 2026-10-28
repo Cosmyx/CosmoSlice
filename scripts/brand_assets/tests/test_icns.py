@@ -9,7 +9,6 @@ import pytest
 EXPECTED_ORDER = [
     ("icp4", 16),
     ("icp5", 32),
-    ("icp6", 64),
     ("ic07", 128),
     ("ic08", 256),
     ("ic09", 512),
@@ -36,6 +35,32 @@ def all_pngs() -> dict[int, bytes]:
 def test_entry_table_is_fixed():
     assert list(icns.ENTRIES) == EXPECTED_ORDER
     assert icns.REQUIRED_SIZES == (16, 32, 64, 128, 256, 512, 1024)
+
+
+# Pixel size of every OSType slot written, as macOS iconutil reads it (iconutil -c iconset names each slot's file).
+APPLE_SLOT_SIZES = {
+    "icp4": 16,
+    "icp5": 32,
+    "ic07": 128,
+    "ic08": 256,
+    "ic09": 512,
+    "ic10": 1024,
+    "ic11": 32,
+    "ic12": 64,
+    "ic13": 256,
+    "ic14": 512,
+}
+
+
+def test_entry_sizes_match_apple_slots():
+    assert dict(icns.ENTRIES) == APPLE_SLOT_SIZES
+
+
+def test_icp6_is_never_written():
+    # icp6 is a 48 px slot: iconutil rescales whatever it holds to icon_48x48.png.
+    assert "icp6" not in dict(icns.ENTRIES)
+    kinds = [kind for kind, _ in icns.parse_icns(icns.write_icns(all_pngs()))]
+    assert "icp6" not in kinds
 
 
 def test_header_magic_and_length():

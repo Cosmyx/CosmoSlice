@@ -12,11 +12,11 @@ from collections.abc import Mapping
 PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 HEADER = struct.Struct(">4sI")
 
-# (OSType, pixel size) in file order. ic11..ic14 are the @2x variants (32@2x is 64 px, etc.), payload size given.
+# (OSType, pixel size) in file order, sizes as macOS iconutil reads each slot. ic11..ic14 are the @2x variants
+# (32@2x is 64 px, etc.), payload size given. icp6 is a 48 px slot and is not written: 64 px lives in ic12.
 ENTRIES: tuple[tuple[str, int], ...] = (
     ("icp4", 16),
     ("icp5", 32),
-    ("icp6", 64),
     ("ic07", 128),
     ("ic08", 256),
     ("ic09", 512),
