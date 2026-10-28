@@ -54,6 +54,8 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   catalogue has neither the old nor the new msgid, or both (duplicate); the mapping is rejected on identity,
   duplicates and chains. Every catalogue is computed before any is written, so a failure leaves none half-renamed.
   Obsolete `#~` entries and headers are never touched. `--check` reports without writing.
+- **Consequence.** msgfmt leaves fuzzy entries out of the `.mo` (the build does not pass `--use-fuzzy`), so until
+  each language's translation is updated the 76 renamed strings show in English in translated UIs.
 - **Reason.** Translators get gettext's own "previous msgid" signal for exactly the renamed entries, and nothing else
   in the 21 catalogues moves.
 - **Reverting.** Run the tool with the mapping's old and new swapped, then drop the fuzzy flags it added.
@@ -97,6 +99,9 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   product-name guard included), the catalogue check (`just i18n-catalogs`) and the module checks, each once. Ruff
   lints `scripts/` and `tools/`, excluding the legacy upstream scripts directly in `scripts/`. `CHANGELOG.md` at the
   root carries its rules at its top; this register lives in `wiki/`.
+- **Accepted risk: the apt pin.** `gettext=0.21-12` is pinned against the live bookworm index, which drops a version
+  after a Debian point or security release that replaces it; the image build then fails. Fix at that point: bump the
+  pin to the new version, or install from `snapshot.debian.org` for a frozen index.
 - **The C++ build and the C++ tests (Catch2, `tests/`) run on GitHub CI only.** They need the full dependency build
   (several hours, per OS); no local recipe builds them.
 - **Reason.** One command per job, identical for humans, agents and CI, on every host OS. `tools/<suite>/tests` is
@@ -147,6 +152,13 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
 - **"Download Beta Version"** links to the BambuStudio releases page.
 - **Version check URL** still points upstream (the check is disabled).
 - **Pot without blank lines**: a few pot entries are not separated by a blank line (`po.py` handles it).
+- **macOS menu name**: `WipeTowerDialog.cpp:466` tells users to look in "CosmoSlice > Preferences", but the macOS
+  application menu is titled by `CFBundleName`, which is `SLIC3R_APP_KEY` ("OrcaSlicer",
+  `src/dev-utils/platform/osx/Info.plist.in`). The string stays; it becomes right with the Info.plist / bundle-name
+  follow-up that renames the bundle.
+- **`.bat` files are LF now** (D-008): cmd has label-lookup bugs with LF batch files, and
+  `build_release_vs2022.bat` jumps with `GOTO :slicer` (called by `.github/workflows/build_orca.yml`). Verify on
+  the GitHub Windows build; if it fails, add a recorded `*.bat eol=crlf` exception.
 - **Translations pending**: after the rename, every .po has fuzzy entries for the renamed msgids and some text.js
   keys are listed in `scripts/i18n/pending/<lang>.txt`; see `just i18n-status`.
 - **Setup guide leftovers**: `guide/21` and `guide/24` show "Orca colosseum" from their JS (out of scope), and some

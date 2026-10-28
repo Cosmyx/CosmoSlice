@@ -25,7 +25,8 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 ### i18n
 
 - The 76 renamed msgids are renamed in the pot and every .po; existing translations are kept but marked fuzzy with the
-  previous msgid until each language is updated (`just i18n-status <lang>`). MR: pending. D-004.
+  previous msgid until each language is updated (`just i18n-status <lang>`). Until then these 76 strings show in
+  English in translated UIs (fuzzy entries are left out of the .mo). MR: pending. D-004.
 
 ### web
 
