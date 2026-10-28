@@ -137,9 +137,80 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   text change would not give full coverage.
 - **Reverting.** Not applicable: closing the gap means adding the suites.
 
+## D-010 Brand assets rendered by a pinned resvg and a stdlib ICNS writer
+
+- **Context.** Logos and icons derived from the CosmoSlice SVG must come from a recipe and be byte-identical on every
+  host. `sips`/`iconutil` exist only on macOS, a host `rsvg-convert` is unpinned, and `cairosvg` needs native cairo.
+- **Decision.** `resvg` 0.48.1 is built with `cargo install --locked` in a digest-pinned `rust:1.90-slim-bookworm`
+  stage of the shared CI image (`tools/docker/ci/Dockerfile`); only its binary is copied into the final stage, and it
+  always runs `linux/amd64` through `tools/docker/run.py`. `scripts/brand_assets/derive.py` renders each PNG with
+  `resvg -w N -h N` and writes ICNS files with `scripts/brand_assets/icns.py` (stdlib): entries in a fixed order
+  (`icp4` 16, `icp5` 32, `ic07` 128, `ic08` 256, `ic09` 512, `ic10` 1024, `ic11` 32, `ic12` 64, `ic13` 256, `ic14` 512;
+  type/size table verified against macOS `iconutil`), PNG payloads only, no table of contents, no info chunk, no
+  timestamp. `icp6` is not written: it is a 48 px slot, and 64 px already lives in `ic12`. Outputs are rewritten in
+  place and only when their bytes change. Recipes: `just -f scripts/brand_assets/justfile derive|check|stable`; `check`
+  runs in `just ci`. The module lives in `scripts/`, not `resources/`, which is installed whole.
+- **Reason.** One pinned renderer and one deterministic container format give the same bytes on every host and in CI.
+- **Reverting.** Remove `scripts/brand_assets/` and the `resvg` stage and `COPY` line of the CI Dockerfile; the
+  derived binaries then become hand-maintained files again.
+
+## D-011 Source of truth for the visible logos, and temporary document icons
+
+- **Context.** The Orca logo was still shown by `resources/web/image/logo.png` (home page, setup guide),
+  `resources/Icon.icns` (the macOS bundle icon: `CFBundleIconFile` in `cmake/modules/MacOSXBundleInfo.plist.in`,
+  `resources/` copied into `Contents/Resources`), and `resources/images/stl.icns` and `gcode.icns` (document icons).
+  `resources/images/OrcaSlicer.icns` (.3mf/.obj/.amf document icon) was corrupt: no `icns` header, first 5072 bytes zero.
+- **Decision.** `resources/images/OrcaSlicer.svg` is the single source of every derived app-icon variant, listed in
+  `scripts/brand_assets/derived-assets.toml`: `logo.png` at 154 px (the size of the file it replaces), and
+  `Icon.icns`, `images/OrcaSlicer.icns`, `images/stl.icns`, `images/gcode.icns`. File names are unchanged, so no C++,
+  CMake or HTML changes. **User decision (2026-10-28), temporary:** until dedicated document icons are provided
+  (asset request A2 in Open issues), `stl.icns` and `gcode.icns` use the same icon as the app; when the A2 sources
+  arrive only their manifest `source` changes. Tests (`scripts/brand_assets/tests/`) require every output to equal a
+  fresh render, no file under `resources/` to match the hashes of the replaced Orca files, and every `.icns` under
+  `resources/` to be a valid container.
+- **Reason.** One source means one place to change the brand; deriving by recipe keeps the binaries reviewable as
+  "output of this source".
+- **Reverting.** Restore the five binaries from git history and drop their manifest entries and the denylist test.
+
+## D-012 Scope of the visible-logos change, and what is asked for instead of drawn
+
+- **Context.** Several Orca or Bambu images remain in the tree; some are composed designs that cannot be derived
+  from the app icon, and project rules forbid drawing a missing asset.
+- **Decision.** In scope: the five files of D-011. Asked for, not drawn: the bed texture
+  `resources/profiles/Custom/orcaslicer_bed_texture.svg` (A1) and dedicated .stl/.gcode document icon sources (A2),
+  specified in Open issues (A1 has since been provided, see Resolved issues). Out of scope, on purpose:
+  `resources/images/logo2.png` (not referenced), the embossed model `OrcaCube_v2.3mf`, the flatpak screenshots, the
+  dead `src/dev-utils/platform/osx/Info.plist.in`, the single-size `.ico` files, the "grayscale" PNG that is
+  coloured, and `resources/web/homepage/img/3d_text.png` (Bambu wordmark). Already CosmoSlice and untouched:
+  `OrcaSlicer.svg`, `_about*`, `_gradient*`, `_gray`, `studio_logo`, `splash_logo*`, `OrcaSlicer*.png`,
+  `OrcaSlicer.ico`, `OrcaSlicerTitle.ico`, `OrcaSlicer-mac_256px.*`.
+  No golden is added: no suite exists (D-009). A bed texture is stretched over the bounding box of the printable_area,
+  so its viewBox must have the aspect ratio of every bed that uses it, within 5% (not be square): the Nova artwork
+  is 4.5% narrower than its 300x200 bed, which does not show.
+- **Reason.** Only files that are both visible and derivable from the existing source change here; the rest needs a
+  new asset or is not seen by users.
+- **Reverting.** Not applicable: it only bounds the change.
+
 ## Open issues
 
+- **Asset request A2, document icons** (D-011, optional improvement): `scripts/brand_assets/sources/stl-document.svg`
+  and `gcode-document.svg` (viewBox `0 0 1024 1024`; Apple document page with a folded corner, the CosmoSlice tile
+  centred, about 410 px wide at y 290-700, an "STL" / "GCODE" grey label with text outlined to paths). Then point the
+  `stl.icns` and `gcode.icns` manifest entries at them and run `just -f scripts/brand_assets/justfile derive`.
+  Alternative: finished `.icns` files with 16-1024 px entries.
+- **CI job runs `just ci`** (follow-up): the GitHub workflows do not run `just ci` yet, so the brand-asset `check` and
+  tests only gate locally until a CI job calls it.
+- **Icon.icns chain not verified on a build** (D-011): `CFBundleIconFile` = `Icon.icns` is read from the CMake and
+  packaging scripts; check the icon of the next CI DMG. Finder and LaunchServices may show the old icon from cache.
+  Also check the 16 and 32 px list-view icons in Finder: `icp4`/`icp5` hold PNG payloads, while `iconutil` writes
+  ARGB `ic04`/`ic05` for those sizes.
 - **No golden suite** (D-009): wx dialogs need a build; the setup-guide HTML goldens are a follow-up workstream.
+- **Nova Double Tete bed logo squeezed** (D-012): the `Cosmyx Nova Double Tete` machine model reuses
+  `resources/profiles/cosmyx/Nova-bed_texture.svg` (drawn for the 300x200 Nova bed), but its printable_area is
+  156x200 (x 68-224), and the texture is stretched over that box, so the logo is about half as wide as it should be.
+  Needs a dedicated texture from Cosmyx with the aspect ratio of a 156x200 bed (SVG, NanoSVG-safe: inline styles, no
+  `<style>`, clipPath, mask, filter or text), or a decision that the bed area is wrong. Excluded in `KNOWN_STRETCHED`
+  of `scripts/brand_assets/tests/test_bed_texture.py`, which fails once it is no longer needed.
 - **Merge request links**: CHANGELOG lines of this branch carry `MR: pending` until the request is opened.
 - **Config.cpp:1287** only recognises `; generated by CosmoSlice` as its own G-code header (pre-existing; G-code
   written by OrcaSlicer is detected by the `; OrcaSlicer` branch only).
@@ -163,3 +234,25 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   keys are listed in `scripts/i18n/pending/<lang>.txt`; see `just i18n-status`.
 - **Setup guide leftovers**: `guide/21` and `guide/24` show "Orca colosseum" from their JS (out of scope), and some
   text.js blocks keep unused `wk*` keys naming the upstream product (no page uses them).
+
+
+## Resolved issues
+
+- **Asset request A1, bed texture** (D-012), resolved 2026-10-28: the user provided the CosmoSlice bed texture, now
+  `resources/profiles/Custom/orcaslicer_bed_texture.svg` (name kept, so the MyKlipper, MyMarlin, MyRRF and
+  MyToolChanger profiles need no change). On the user's request one change was made to the file as provided: its
+  `<clipPath id="_clip1">` element was removed and the `<g clip-path="url(#_clip1)">` that used it became a plain
+  `<g>`. NanoSVG, which draws the bed, has no clipPath support and draws the rect inside it as an opaque black square
+  behind the logo; the clip region was the whole 100x100 logo box and the logo lies inside it, so removing it changes
+  nothing in a browser. The Orca texture's hash is in the denylist of
+  `scripts/brand_assets/tests/test_visible_logos.py`, and `scripts/brand_assets/tests/test_bed_texture.py` keeps
+  every SVG bed texture of the profiles NanoSVG-safe.
+- **Nova bed texture not NanoSVG-safe** (D-012), resolved 2026-10-28 on the user's decision:
+  `resources/profiles/cosmyx/Nova-bed_texture.svg` (cosmyx profile pack, used by the Nova, Nova Metal Ceramique,
+  Nova Haute Temperature, Nova Double Tete and Nova can-out machine models) coloured its 77 shapes through a
+  `<style>` sheet with classes. NanoSVG, which draws the bed, has no stylesheet support, so every shape was drawn
+  opaque black instead of white, blue (`#335AFA`) and red (`#DA0000`). Each `class="stN"` was replaced by the inline
+  `style` of its class and the `<style>` element removed, nothing else changed (paths, viewBox, ids, order): the
+  resolved fill and stroke of every shape are identical, and NanoSVG now reads 75 white, 1 blue and 1 red shape. The
+  file now passes the NanoSVG check of `scripts/brand_assets/tests/test_bed_texture.py` without an exclusion.
+  Reverting: restore the file from git history and put it back in `KNOWN_UNSAFE`.

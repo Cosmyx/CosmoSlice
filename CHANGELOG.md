@@ -33,6 +33,18 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 - The first-run setup guide says CosmoSlice (English text and page fallbacks); the 14 other guide languages are
   listed in `scripts/i18n/pending/` until translated. MR: pending. D-002, D-006.
 
+### resources
+
+- The 3D bed of the Cosmyx Nova printers shows its logo in white, blue and red instead of black. MR: pending.
+  D-012.
+- The 3D bed of the Custom printers (MyKlipper, MyMarlin, MyRRF, MyToolChanger) shows the CosmoSlice logo
+  instead of Orca's. MR: pending. D-012.
+- The home page and setup guide logo, the macOS app icon and the macOS document icons (.3mf/.obj/.amf, .stl,
+  .gcode) now show the CosmoSlice logo instead of Orca's; the .3mf/.obj/.amf icon was a broken file before. They are
+  rendered from `resources/images/OrcaSlicer.svg` by `just -f scripts/brand_assets/justfile derive`, and `just ci`
+  fails when one drifts. The .stl and .gcode icons are the app icon until dedicated document icons are provided.
+  MR: pending. D-010, D-011, D-012.
+
 ### tooling
 
 - `just i18n-check` validates every catalogue (`just i18n-catalogs` alone) and guards against the upstream product
