@@ -6,7 +6,8 @@ expands that same definition instead of repeating its format, so the app and the
     cosmoslice_version.py version    [--inc PATH]                 -> 2.3.1-5
     cosmoslice_version.py build-tag  [--inc PATH] [--commit SHA]  -> 2.3.1-5_aa9dac8
 
-The commit defaults to `git log -1 --format=%h`, the short hash CMakeLists.txt embeds as GIT_COMMIT_HASH.
+The commit defaults to `git log -1 --format=%h`, the abbreviated hash (7 characters or more) CMakeLists.txt embeds
+as GIT_COMMIT_HASH. Only quoted `set(NAME "value")` lines are read; anything else in version.inc is ignored.
 """
 
 from __future__ import annotations
