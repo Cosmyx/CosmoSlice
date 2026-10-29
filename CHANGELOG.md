@@ -79,6 +79,7 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 
 ### Corrigé
 
+- **2025-10-05** — Les fichiers 3MF ne contiennent plus de données sensibles.
 - **2025-10-05** — Gestion du G-code des mouvements en Z.
 - **2025-10-05** — Mauvais modèle d'imprimante pour les Prusa MK3S et MINI.
 - **2025-10-05** — Crash à l'import d'un 3MF enregistré en 2.3.1-alpha en mode géométrie seule.
@@ -105,10 +106,9 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 
 ### Supprimé
 
-- **2025-10-05** — Données sensibles retirées des fichiers 3MF.
 - **2025-10-05** — Ancien code de vitesse en surplomb « classique ».
 - **2025-10-05** — Dialogue d'erreur serveur Bambu, et connexion automatique à l'imprimante Bambu par défaut au démarrage.
-- **2025-03-20** — Grille n'est plus le remplissage par défaut, remplacé par Crosshatch.
+- **2025-03-20** — La grille n'est plus le remplissage par défaut : Crosshatch la remplace.
 - **2024-10-28** — Option `overhang_speed_classic` dépréciée. Le ralentissement des parois recourbées est activé par défaut.
 - **2024-03-30** — Le ratio de débit de la couture en biseau n'est plus visible qu'en mode développeur.
 - **2024-03-30** — Log réseau Bambu chiffré supprimé. Le niveau de log par défaut passe à « warning ».
@@ -117,7 +117,7 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 
 ### Ajouté
 
-- **2026-10-29** — Version CosmoSlice `2.3.1-5` (version d'OrcaSlicer + numéro de patch Cosmyx) affichée dans « À propos », l'écran de démarrage et le test réseau, à la place de « 2.3.1 » et de la ligne « Cosmyx Bundle Version ». **Attention :** l'avis de nouveau build compare désormais cette version : depuis un build `CSDEV-V1.2`, il affiche « CSDEV-V1.2 → 2.3.1-5 » à chaque lancement, jusqu'à la réinitialisation du dossier AppData ou sa désactivation dans les préférences.
+- **2026-10-29** — Version CosmoSlice `2.3.1-5` (version d'OrcaSlicer + numéro de patch Cosmyx) affichée dans « À propos », l'écran de démarrage et le test réseau, à la place de « 2.3.1 » et de la ligne « Cosmyx Bundle Version ». **Attention :** l'avis de nouveau build compare désormais cette version : si le dossier AppData a été créé par un build CSDEV, il affiche « CSDEV-V… → 2.3.1-5 » (la version enregistrée à sa création) à chaque lancement, jusqu'à la réinitialisation du dossier AppData ou sa désactivation dans les préférences.
 - **2026-10-29** — CI : les builds sont nommés `CosmoSlice_<OS>_<version>_<commit court>` (par exemple `CosmoSlice_Windows_2.3.1-5_aa9dac8`). `just version` affiche la version.
 - **2026-10-29** — L'index des profils Cosmyx (`cosmyx.json`) est généré à chaque build depuis l'arborescence des profils (`just profiles-index`), avec la date du commit comme version : chaque nouveau build réinstalle les profils Cosmyx fournis. Un nouveau preset n'a plus besoin d'entrée écrite à la main. La CI le génère avant chaque build et vérifie la copie présente dans chaque paquet.
 - **2026-10-28** — Le nom CosmoSlice remplace OrcaSlicer dans les dialogues, messages, infobulles, préférences et astuces. La boîte « À propos » crédite OrcaSlicer, et les noms qui désignent l'amont ou sont enregistrés dans des fichiers sont gardés.
@@ -149,14 +149,13 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 - **2026-03-03** — Sous-menu « Cosmyx 3D Models », avec le logo Cosmyx, dans le menu d'ajout : modèles de calibration double tête (Calage 1, 2 et 3 SNDT, cube bicolore), simple tête (Calage 1 Nova, Cosmyx Cube) et modèles pratiques (contrôle de tension de courroie, support de bobine), aux noms traduits. Les modèles de calibration proposent d'appliquer leurs réglages recommandés, et le Calage 3 place ses modificateurs d'après un fichier de configuration JSON. Les modèles OrcaSlicer restent disponibles.
 - **2026-03-02** — Bouton « Exporter tous les fichiers G-code » : les G-code de tous les plateaux dans un dossier, en une fois. Placeholder `plate_count` pour le nom des fichiers.
 - **2026-03-02** — Température de lissage (`ironing_temperature`) dans les presets filament : appliquée pendant le lissage, puis la température d'impression est rétablie. Traduite.
-- **2026-03-02** — Version du bundle Cosmyx affichée dans la boîte « À propos ». Numéros successifs : `CSDEV-V0.6` (2026-02-27), `CSDEV-V0.7` (2026-03-02), `CSDEV-V0.8` puis `CSDEV-V0.9` (2026-03-03), `CSDEV-V1.0` (2026-03-05), `CSDEV-V1.1` (2026-04-17) et `CSDEV-V1.2` (2026-04-24), remplacé par `2.3.1-5` le 2026-10-29.
+- **2026-03-02** — Version du bundle Cosmyx affichée dans la boîte « À propos ». Numéros successifs : `CSDEV-V0.6` puis `CSDEV-V0.7` (2026-03-02), `CSDEV-V0.8` (2026-03-03), `CSDEV-V0.9` puis `CSDEV-V1.0` (2026-03-05), `CSDEV-V1.1` (2026-04-17) et `CSDEV-V1.2` (2026-04-24), remplacé par `2.3.1-5` le 2026-10-29.
 - **2026-03-02** — Traduction des noms de profils fabricant (fichiers I18N) dans l'assistant de configuration (fenêtre native et guide web), la sélection des filaments et les listes de presets.
 - **2026-03-02** — Les espaces en fin de nom (preset, imprimante physique, fichier) sont retirés automatiquement au lieu de bloquer l'enregistrement.
 - **2026-02-27** — Buses CHT et carbure de tungstène, avec leurs traductions.
 
 ### Corrigé
 
-- **2026-10-29** — CI macOS : l'étape d'espace disque ne bloque plus le build sur les runners macos-15.
 - **2026-10-28** — L'icône de document macOS .3mf/.obj/.amf était un fichier corrompu.
 - **2026-10-28** — L'imprimante Cosmyx Nova can-out se charge sous Linux : l'index des profils nommait son dossier avec la mauvaise casse.
 - **2026-10-28** — Le G-code de démarrage de la Nova can-out chauffe, purge et essuie de nouveau : le pack importé l'avait mis sur une seule ligne, et seul le M104 s'exécutait.
@@ -165,7 +164,7 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 - **2026-10-28** — La buse 0.2 devient une buse 0.25 (noms, fichiers, diamètres, variantes).
 - **2026-10-28** — Le filament par défaut de toutes les machines Cosmyx est « Cosmyx PLA Basic @Cosmyx Nova ».
 - **2026-10-28** — CI Windows : runners fixés sur windows-2022, et une erreur de build des dépendances arrête désormais la CI.
-- **2026-10-28** — CI macOS : passage aux runners macos-15 avant le retrait de macos-14.
+- **2026-10-28** — CI macOS : passage aux runners macos-15 avant le retrait de macos-14, avec une étape d'espace disque compatible avec ces runners.
 - **2026-04-17** — Choisir un preset traduit dans l'onglet de réglages sélectionne le bon preset.
 - **2026-04-17** — Entrée en double pour la Nova Double Tête.
 - **2026-04-14** — L'avis de nouveau build reste affiché à chaque lancement tant que le dossier AppData n'a pas été migré, au lieu de disparaître après le premier.
@@ -181,7 +180,7 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 - **2026-10-29** — Les deux derniers fichiers « 0.20mm Cosmyx Support W » (communs Nova et Métal Céramique), restés dans le pack sans être indexés depuis le 2026-10-28.
 - **2026-10-28** — Process « 0.20mm Cosmyx Support W » (Nova, Nova can-out, Nova Double Tête, Nova Haute Température, Nova Métal Céramique, SuperNova, SuperNova Double Tête, SuperNova Double Tête Métal Céramique, et les deux communs Nova et Métal Céramique), absents du pack `spyder-2.3.1-4`. **Attention :** les presets utilisateur qui en héritent ne sont plus rattachés à un preset système.
 - **2026-10-28** — Filaments Cosmyx ABS, Cosmyx ULTEM et Zetamix Zirconia, absents du pack `spyder-2.3.1-4`. **Attention :** les presets utilisateur qui en héritent ne sont plus rattachés à un preset système.
-- **2026-10-28** — Profils des autres marques : seuls Cosmyx, Custom et OrcaFilamentLibrary sont gardés. Scripts Ztool retirés du pack.
+- **2026-10-28** — Profils des autres marques : seuls Cosmyx, Custom et OrcaFilamentLibrary sont gardés. Scripts Ztool retirés du pack. **Attention :** les imprimantes et presets système des autres marques disparaissent, et les presets utilisateur qui en héritent ne sont plus rattachés à un preset système. Recréer ces imprimantes à partir d'un profil Custom.
 - **2026-10-28** — Restriction `compatible_printers` sur les filaments Cosmyx, et entrées mortes Cosmyx X1/P1S.
 - **2026-10-28** — Filaments MyToolChanger et matériaux génériques par défaut des imprimantes Custom qui héritaient de presets disparus, et entrée FusRock ABS-GF absente d'OrcaFilamentLibrary.
 - **2026-04-29** — Build quotidien planifié de la CI.
