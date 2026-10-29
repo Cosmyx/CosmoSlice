@@ -115,37 +115,54 @@ def scan(tree: Path) -> list[dict]:
     return sorted(records, key=lambda r: r["sub_path"])
 
 
-VERSION_KEY = re.compile(r'"version"\s*:\s*"[^"]*"')
+VERSION_KEY = re.compile(r'"version"\s*:\s*"([^"\\]*)"')
 FIRST_KEY_INDENT = re.compile(r"\{(\r?\n)([ \t]*)\S")
 
 
 def stamp_presets(tree: Path, version: str) -> int:
     """Write `version` as the top-level "version" of every preset the scan reads; return how many files it rewrote.
 
-    Only the version text changes: an existing value is replaced in place, a missing key is added as the first key
-    with the indentation of the file. A "version" key nested below the top level is refused rather than guessed at.
+    Only the version text changes, line endings included: an existing value is replaced in place, a missing key is
+    added as the first key with the indentation of the file. Anything else (a "version" that is not one plain
+    top-level string, a single-line object) is refused rather than guessed at, and then no file is written.
     """
-    changed = 0
+    updates = []
     for record in scan(tree):
         path = tree / record["sub_path"]
-        text = path.read_text(encoding="utf-8")
-        has_key = "version" in json.loads(text)
-        if len(VERSION_KEY.findall(text)) != int(has_key):
-            raise CosmyxIndexError(f"{record['sub_path']}: a nested \"version\" key; cannot stamp it safely")
-        if has_key:
-            new = VERSION_KEY.sub(lambda _: f'"version": "{version}"', text)
-        else:
-            match = FIRST_KEY_INDENT.match(text.lstrip())
-            if not match or not text.lstrip() == text:
-                raise CosmyxIndexError(f"{record['sub_path']}: not a multi-line JSON object; cannot stamp it safely")
-            newline, indent = match[1], match[2]
-            new = "{" + f'{newline}{indent}"version": "{version}",' + text[1:]
-        if json.loads(new).get("version") != version:
-            raise CosmyxIndexError(f"{record['sub_path']}: stamping did not give the expected version")
+        text = path.read_bytes().decode("utf-8")
+        new = _stamped(text, version, record["sub_path"])
         if new != text:
-            path.write_bytes(new.encode("utf-8"))
-            changed += 1
-    return changed
+            updates.append((path, new))
+    for path, new in updates:
+        path.write_bytes(new.encode("utf-8"))
+    return len(updates)
+
+
+def _stamped(text: str, version: str, sub_path: str) -> str:
+    data = json.loads(text)
+    found = VERSION_KEY.findall(text)
+    if "version" in data:
+        if not (isinstance(data["version"], str) and found == [data["version"]]):
+            raise CosmyxIndexError(
+                f'{sub_path}: a "version" key that is not a single top-level string; cannot stamp it'
+            )
+        new = VERSION_KEY.sub(lambda _: f'"version": "{version}"', text)
+    else:
+        if found:
+            raise CosmyxIndexError(
+                f'{sub_path}: a "version" key that is not a single top-level string; cannot stamp it'
+            )
+        match = FIRST_KEY_INDENT.match(text)
+        if not match:
+            raise CosmyxIndexError(f"{sub_path}: not a multi-line JSON object; cannot stamp it safely")
+        new = "{" + f'{match[1]}{match[2]}"version": "{version}",' + text[1:]
+    try:
+        result = json.loads(new)
+    except json.JSONDecodeError as error:
+        raise CosmyxIndexError(f"{sub_path}: stamping gave invalid JSON: {error}") from error
+    if result.get("version") != version:
+        raise CosmyxIndexError(f"{sub_path}: stamping did not give the expected version")
+    return new
 
 
 def check_preset_versions(tree: Path, version: str) -> list[str]:

@@ -265,13 +265,13 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
 
 ## D-015 Cosmyx presets carry the version of the generated index
 
-- **Context.** Of the 161 files in `resources/profiles/cosmyx`, 69 carried a top-level `"version"` with stale,
-  mixed values (`01.07.00.18`, `1.7.0.18`, `28.06.2026.01`) and the others none, while the index version changes
-  with every build (D-013). The user asked that the presets carry the same version as `cosmyx.json`.
+- **Context.** Of the 141 preset files in `resources/profiles/cosmyx` (`machine/`, `filament/`, `process/`), 69
+  carried a top-level `"version"` with stale, mixed values (`01.07.00.18`, `1.7.0.18`, `28.06.2026.01`) and the
+  others none, while the index version changes with every build (D-013). The user asked that the presets carry the same version as `cosmyx.json`.
 - **Decision.** The tracked presets carry no `"version"`. `tools/profiles/cosmyx_index.py generate --stamp-presets`
   writes the index version into every preset the scan reads (an existing value replaced in place, a missing key
-  added as the first key with the file's indentation; a nested `"version"` key is refused), and `verify` fails
-  when a preset packaged beside the index (`profiles/cosmyx/`) lacks that version or the folder is missing.
+  added as the first key with the file's indentation and line endings; a `"version"` that is not one plain top-level
+  string, or a single-line object, is refused and then no file is written), and `verify` fails when a preset packaged beside the index (`profiles/cosmyx/`) lacks that version or the folder is missing.
   `build_orca.yml` and the flatpak job of `build_all.yml` stamp; `check_profiles.yml` validates the tracked files
   as they are; `just profiles-index` does not stamp, so a local run leaves the tree clean.
 - **Reason.** One source for the version, the build, as for the index. The slicer already gives every system
@@ -279,6 +279,8 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   current_vendor_profile->config_version`), so the stamped value changes no behaviour; it makes the shipped files
   agree with it. Removing the tracked values touched only those lines (and a trailing comma where `"version"` was
   the last key).
+`tools/profiles/tests/test_preset_versions.py` stamps a copy of the real tree, so `just ci` catches a preset the
+  stamper would refuse before a CI build does.
 - **Accepted risks.** A local build (`just profiles-index` without `--stamp-presets`) ships presets without a
   version, which the slicer accepts. A future import of a profile pack brings tracked versions back: strip them
   (`tools/profiles/tests/test_preset_versions.py` fails until then).

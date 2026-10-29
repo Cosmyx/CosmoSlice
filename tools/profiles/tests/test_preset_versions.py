@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import shutil
 from pathlib import Path
 
 import cosmyx_index
@@ -176,6 +177,52 @@ def test_verify_fails_without_packaged_presets(tmp_path: Path, capsys) -> None:
     assert cosmyx_index.main(["generate", *source, "--out", str(index)]) == 0
     assert cosmyx_index.main(["verify", *source, "--index", str(index)]) == 1
     assert "no packaged presets" in capsys.readouterr().err
+
+
+@pytest.mark.parametrize("newline, indent", [("\n", "\t"), ("\r\n", "  ")])
+def test_stamp_keeps_the_indentation_and_line_endings(tmp_path: Path, newline: str, indent: str) -> None:
+    raw = "{" + newline + indent + '"type": "process",' + newline + indent + '"name": "p"' + newline + "}" + newline
+    write(tmp_path, "process/p.json", raw=raw.encode())
+    cosmyx_index.stamp_presets(tmp_path, VERSION)
+    expected = "{" + newline + indent + f'"version": "{VERSION}",' + raw[1:]
+    assert (tmp_path / "process" / "p.json").read_bytes() == expected.encode()
+
+
+@pytest.mark.parametrize(
+    "raw, message",
+    [
+        ('{"type": "process", "name": "p"}', "multi-line"),
+        ('{\n    "type": "process",\n    "name": "p",\n    "version": 1\n}\n', "single top-level string"),
+        ('{\n    "type": "process",\n    "name": "p",\n    "version": "a\\"b"\n}\n', "single top-level string"),
+    ],
+)
+def test_stamp_refuses_what_it_cannot_edit_safely(tmp_path: Path, raw: str, message: str) -> None:
+    write(tmp_path, "process/p.json", raw=raw.encode())
+    with pytest.raises(cosmyx_index.CosmyxIndexError, match=message):
+        cosmyx_index.stamp_presets(tmp_path, VERSION)
+
+
+def test_stamp_writes_nothing_when_one_preset_is_refused(tmp_path: Path) -> None:
+    tree = make_tree(tmp_path)
+    write(tree, "process/zz bad.json", raw=b'{"type": "process", "name": "bad"}')
+    before = {p: p.read_bytes() for p in tree.rglob("*") if p.is_file()}
+    with pytest.raises(cosmyx_index.CosmyxIndexError):
+        cosmyx_index.stamp_presets(tree, VERSION)
+    assert {p: p.read_bytes() for p in tree.rglob("*") if p.is_file()} == before
+
+
+def test_the_real_tree_stamps_cleanly(tmp_path: Path) -> None:
+    """Catches a preset the stamper refuses before CI's build does (a pack import, a hand edit)."""
+    copy = tmp_path / "cosmyx"
+    shutil.copytree(cosmyx_index.DEFAULT_TREE, copy)
+    cosmyx_index.stamp_presets(copy, VERSION)
+    assert cosmyx_index.check_preset_versions(copy, VERSION) == []
+    for record in cosmyx_index.scan(cosmyx_index.DEFAULT_TREE):
+        original = json.loads(
+            (cosmyx_index.DEFAULT_TREE / record["sub_path"]).read_text("utf-8"), object_pairs_hook=list
+        )
+        stamped_pairs = json.loads((copy / record["sub_path"]).read_text("utf-8"), object_pairs_hook=list)
+        assert stamped_pairs == [("version", VERSION), *original], record["sub_path"]
 
 
 def test_tracked_presets_carry_no_version() -> None:
