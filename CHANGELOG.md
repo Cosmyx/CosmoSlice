@@ -122,25 +122,25 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 - **2026-10-29** — L'index des profils Cosmyx (`cosmyx.json`) est généré à chaque build depuis l'arborescence des profils (`just profiles-index`), avec la date du commit comme version : chaque nouveau build réinstalle les profils Cosmyx fournis. Un nouveau preset n'a plus besoin d'entrée écrite à la main. La CI le génère avant chaque build et vérifie la copie présente dans chaque paquet.
 - **2026-10-28** — Le nom CosmoSlice remplace OrcaSlicer dans les dialogues, messages, infobulles, préférences et astuces. La boîte « À propos » crédite OrcaSlicer, et les noms qui désignent l'amont ou sont enregistrés dans des fichiers sont gardés.
 - **2026-10-28** — Les 76 textes renommés le sont aussi dans tous les catalogues de traduction. **Attention :** leurs traductions sont marquées à revoir (fuzzy) et s'affichent en anglais tant que chaque langue n'est pas mise à jour (`just i18n-status <langue>`).
-- **2026-10-28** — Le guide de première configuration affiche CosmoSlice (texte anglais). Les 14 autres langues du guide restent à traduire.
-- **2026-10-28** — Logo CosmoSlice sur la page d'accueil, le guide de configuration, l'icône de l'application macOS et les icônes de documents macOS (.3mf/.obj/.amf, .stl, .gcode). Ils sont générés depuis le SVG source, et `just ci` échoue si l'un d'eux s'en écarte. Les icônes .stl et .gcode reprennent l'icône de l'application en attendant des icônes dédiées.
+- **2026-10-28** — L'assistant de configuration affiche CosmoSlice (texte anglais). Ses 14 autres langues restent à traduire.
+- **2026-10-28** — Logo CosmoSlice sur la page d'accueil, l'assistant de configuration, l'icône de l'application macOS et les icônes de documents macOS (.3mf/.obj/.amf, .stl, .gcode). Ils sont générés depuis le SVG source, et `just ci` échoue si l'un d'eux s'en écarte. Les icônes .stl et .gcode reprennent l'icône de l'application en attendant des icônes dédiées.
 - **2026-10-28** — Le plateau 3D des imprimantes Custom (MyKlipper, MyMarlin, MyRRF, MyToolChanger) affiche le logo CosmoSlice au lieu de celui d'Orca.
 - **2026-10-28** — Pack de profils `spyder-2.3.1-4` : les filaments Cosmyx sont communs et disponibles sur toutes les machines Cosmyx, au lieu d'une copie par machine.
 - **2026-10-28** — Les anciens noms de presets (buse 0.2, process et filaments par machine) sont reliés aux nouveaux : les presets utilisateur qui en héritent restent attachés.
 - **2026-10-28** — Outillage : `just` à la racine (`just --list`) avec une image Docker CI figée pour les tests Python, le lint et les contrôles de traduction (`just i18n-check`, `just i18n-status`, `just i18n-rename`). Le lint couvre les scripts Python sous `scripts/`. Fins de ligne LF imposées pour tous les fichiers texte.
 - **2026-09-03** — CI Windows : workflow de diagnostic de la signature Azure.
 - **2026-04-24** — Journal Cosmyx (CosmoLogs) : les fonctions ajoutées par Cosmyx (température de lissage, presets, modèles Cosmyx…) écrivent dans leur propre fichier de log, avec le nom du preset concerné.
-- **2026-04-24** — CI Windows : signature des exécutables avec Azure Trusted Signing.
-- **2026-04-24** — CI : workflow de build Windows seul. Les builds sont nommés `CosmoSlice_<OS>_<version Cosmyx>` et l'installeur Windows `CosmoSlice_Windows_Installer`.
+- **2026-04-24** — CI Windows : signature des exécutables, des DLL et de l'installeur avec Azure Trusted Signing.
+- **2026-04-24** — CI : workflow de build Windows seul. Les builds sont nommés `CosmoSlice_<OS>_<version Cosmyx>` et l'installeur Windows `CosmoSlice_Windows_Installer_V<version>`.
 - **2026-04-24** — Modèles de tickets GitHub propres à CosmoSlice : bug, amélioration, mise à jour de profil.
 - **2026-04-17** — Le visualiseur G-code lit les températures `TL=` et `TR=` des macros personnalisées (par exemple `PREHEAT B=60 TL=215 TR=200`) pour la tête gauche et la tête droite.
 - **2026-04-17** — Page « Connexion à l'imprimante » : animation d'aide propre à Cosmyx sur les machines Cosmyx.
-- **2026-04-17** — Cosmyx est épinglé en tête de la liste des imprimantes du guide de configuration.
+- **2026-04-17** — Cosmyx est épinglé en tête de la liste des imprimantes de l'assistant de configuration.
 - **2026-04-17** — Noms traduits des profils Cosmyx mis à jour dans toutes les langues, avec un outil de génération des fichiers I18N.
-- **2026-04-14** — Index du pack Cosmyx (`Cosmyx.json`) : les machines, process et filaments Cosmyx sont chargés par le slicer.
-- **2026-03-05** — Pack de profils Cosmyx : Nova, Nova can-out, Nova Haute Température, Nova Double Tête, Nova Métal Céramique, SuperNova, SuperNova Double Tête et SuperNova Double Tête Métal Céramique, en buses 0.2 à 0.8, avec leurs covers, modèles et textures de plateau, filaments et process. Scripts Ztool pour générer les variantes et l'index.
+- **2026-04-14** — Index du pack Cosmyx (`Cosmyx.json`, PR #35) : les machines, process et filaments Cosmyx sont chargés par le slicer. Sans cet index, le pack fourni depuis le 2026-03-05 n'était pas chargé.
+- **2026-03-05** — Pack de profils Cosmyx : Nova, Nova can-out, Nova Haute Température, Nova Double Tête, Nova Métal Céramique, SuperNova, SuperNova Double Tête et SuperNova Double Tête Métal Céramique, en buses 0.2 à 0.8, avec leurs covers, modèles et textures de plateau, filaments et process. Scripts Ztool pour générer les variantes et l'index. Le slicer ne le charge qu'à partir du 2026-04-14, quand son index est ajouté.
 - **2026-03-05** — Traduction : environ 290 textes manquants ajoutés et traduits dans toutes les langues, avec des scripts de mise à jour des catalogues.
-- **2026-03-05** — L'application s'appelle CosmoSlice : exécutable, titre de fenêtre, barre des tâches. Elle s'installe dans `Cosmyx\OrcaSlicer` et range sa configuration dans un sous-dossier `Cosmyx`, séparé de celui d'OrcaSlicer.
+- **2026-03-05** — L'application s'appelle CosmoSlice : exécutable, titre de fenêtre, barre des tâches. L'installeur Windows la place dans `Cosmyx\OrcaSlicer`. Sur tous les systèmes, sa configuration va dans `Cosmyx/OrcaSlicer`, séparée de celle d'OrcaSlicer.
 - **2026-03-05** — Logo CosmoSlice : icônes de l'application, boîte « À propos » et logos de l'interface. Images du plateau Cosmyx.
 - **2026-03-05** — Écran de démarrage au logo CosmoSlice, sans la mention « Based on ».
 - **2026-03-05** — Thème sombre par défaut.
@@ -149,14 +149,15 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 - **2026-03-03** — Sous-menu « Cosmyx 3D Models », avec le logo Cosmyx, dans le menu d'ajout : modèles de calibration double tête (Calage 1, 2 et 3 SNDT, cube bicolore), simple tête (Calage 1 Nova, Cosmyx Cube) et modèles pratiques (contrôle de tension de courroie, support de bobine), aux noms traduits. Les modèles de calibration proposent d'appliquer leurs réglages recommandés, et le Calage 3 place ses modificateurs d'après un fichier de configuration JSON. Les modèles OrcaSlicer restent disponibles.
 - **2026-03-02** — Bouton « Exporter tous les fichiers G-code » : les G-code de tous les plateaux dans un dossier, en une fois. Placeholder `plate_count` pour le nom des fichiers.
 - **2026-03-02** — Température de lissage (`ironing_temperature`) dans les presets filament : appliquée pendant le lissage, puis la température d'impression est rétablie. Traduite.
-- **2026-03-02** — Version du bundle Cosmyx affichée dans la boîte « À propos ».
-- **2026-03-02** — Traduction des noms de profils vendeur (fichiers I18N) dans l'assistant de configuration, le guide, la sélection des filaments et les listes de presets.
+- **2026-03-02** — Version du bundle Cosmyx affichée dans la boîte « À propos ». Numéros successifs : `CSDEV-V0.6` (2026-02-27), `CSDEV-V0.7` (2026-03-02), `CSDEV-V0.8` puis `CSDEV-V0.9` (2026-03-03), `CSDEV-V1.0` (2026-03-05), `CSDEV-V1.1` (2026-04-17) et `CSDEV-V1.2` (2026-04-24), remplacé par `2.3.1-5` le 2026-10-29.
+- **2026-03-02** — Traduction des noms de profils fabricant (fichiers I18N) dans l'assistant de configuration (fenêtre native et guide web), la sélection des filaments et les listes de presets.
 - **2026-03-02** — Les espaces en fin de nom (preset, imprimante physique, fichier) sont retirés automatiquement au lieu de bloquer l'enregistrement.
 - **2026-02-27** — Buses CHT et carbure de tungstène, avec leurs traductions.
 
 ### Corrigé
 
 - **2026-10-29** — CI macOS : l'étape d'espace disque ne bloque plus le build sur les runners macos-15.
+- **2026-10-28** — L'icône de document macOS .3mf/.obj/.amf était un fichier corrompu.
 - **2026-10-28** — L'imprimante Cosmyx Nova can-out se charge sous Linux : l'index des profils nommait son dossier avec la mauvaise casse.
 - **2026-10-28** — Le G-code de démarrage de la Nova can-out chauffe, purge et essuie de nouveau : le pack importé l'avait mis sur une seule ligne, et seul le M104 s'exécutait.
 - **2026-10-28** — Le plateau 3D des Cosmyx Nova affiche son logo en blanc, bleu et rouge au lieu de noir.
@@ -171,14 +172,15 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 - **2026-04-14** — Process et réglages filament en double dans le pack Cosmyx, et numéros de version écrasés.
 - **2026-04-14** — Erreurs de compilation des catalogues de traduction (doublons en polonais et en espagnol, lituanien, format en français).
 - **2026-03-02** — La version OrcaSlicer affichée est 2.3.1 au lieu de 2.3.2-dev.
-- **2026-03-02** — Erreur de compilation (virgule manquante dans les types de buse).
 - **2026-03-02** — Affichage des noms traduits dans les popups.
 - **2026-02-27** — Au changement d'outil, la commande ventilateur (M106) est émise après le changement de tête, et s'applique donc à la nouvelle tête.
 
 ### Supprimé
 
 - **2026-10-29** — **Attention :** `resources/profiles/cosmyx.json` n'est plus versionné, il est généré. Lancer `just profiles-index` avant un build C++ local : CMake s'arrête sinon.
-- **2026-10-29** — Les deux process « 0.20mm Cosmyx Support W » (Nova et Métal Céramique). Ils n'étaient pas indexés et n'apparaissaient donc jamais : rien ne change pour l'utilisateur.
+- **2026-10-29** — Les deux derniers fichiers « 0.20mm Cosmyx Support W » (communs Nova et Métal Céramique), restés dans le pack sans être indexés depuis le 2026-10-28.
+- **2026-10-28** — Process « 0.20mm Cosmyx Support W » (Nova, Nova can-out, Nova Double Tête, Nova Haute Température, Nova Métal Céramique, SuperNova, SuperNova Double Tête, SuperNova Double Tête Métal Céramique, et les deux communs Nova et Métal Céramique), absents du pack `spyder-2.3.1-4`. **Attention :** les presets utilisateur qui en héritent ne sont plus rattachés à un preset système.
+- **2026-10-28** — Filaments Cosmyx ABS, Cosmyx ULTEM et Zetamix Zirconia, absents du pack `spyder-2.3.1-4`. **Attention :** les presets utilisateur qui en héritent ne sont plus rattachés à un preset système.
 - **2026-10-28** — Profils des autres marques : seuls Cosmyx, Custom et OrcaFilamentLibrary sont gardés. Scripts Ztool retirés du pack.
 - **2026-10-28** — Restriction `compatible_printers` sur les filaments Cosmyx, et entrées mortes Cosmyx X1/P1S.
 - **2026-10-28** — Filaments MyToolChanger et matériaux génériques par défaut des imprimantes Custom qui héritaient de presets disparus, et entrée FusRock ABS-GF absente d'OrcaFilamentLibrary.
@@ -186,4 +188,4 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 - **2026-04-24** — CI : builds Flatpak et validation de la documentation désactivés.
 - **2026-04-24** — Lien de financement et anciens modèles de tickets d'OrcaSlicer.
 - **2026-02-27** — Popup de mise à jour et menu « Vérifier les mises à jour ».
-- **2026-02-27** — Choix du mode furtif (désormais forcé) et page du plugin réseau dans le guide de configuration.
+- **2026-02-27** — Choix du mode furtif (désormais forcé) et page du plugin réseau dans l'assistant de configuration.
