@@ -35,6 +35,9 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ### resources
 
+- **Removal:** the two "0.20mm Cosmyx Support W" process presets (Nova and Metal and Ceramics) are deleted: they
+  were never listed in the Cosmyx index, so they never showed in the slicer, and nothing changes for users.
+  MR: pending. D-013.
 - **Breaking:** `resources/profiles/cosmyx.json` is no longer in git: it is generated for every build from the
   profile tree, with the build commit's UTC date as its version (`YYYYMMDD.HHMMSS.00.00`), so each new build
   reinstalls the bundled Cosmyx profiles over the copy in the user's folder. A local C++ build must run

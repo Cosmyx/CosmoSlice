@@ -2,7 +2,9 @@
 
 Both fixtures are frozen at 3cc7dc1df7 so the test never needs git history: `cosmyx_index_3cc7dc1df7.json` is a
 verbatim copy of resources/profiles/cosmyx.json, and `records_3cc7dc1df7.json` is `cosmyx_index.py records` run on
-resources/profiles/cosmyx at that commit.
+resources/profiles/cosmyx at that commit. That tree still held the two "Support W" presets the index left out
+(deleted since, see the resolved issues of wiki/decision-register.md), so the fixture is generated with the
+exclusions in force then.
 """
 
 from __future__ import annotations
@@ -17,6 +19,10 @@ LISTS = ("machine_model_list", "process_list", "filament_list", "machine_list")
 DATE = "2026-10-29T13:03:12Z"
 BRANCH = "ci/generate-cosmyx-index"
 COMMIT = "3cc7dc1df7" + "0" * 30
+LEGACY_EXCLUDE = [
+    {"sub_path": "process/ceramics/0.20mm Cosmyx Support W @Metal and Ceramics.json", "reason": "not indexed then"},
+    {"sub_path": "process/global/0.20mm Cosmyx Support W @Cosmyx Nova.json", "reason": "not indexed then"},
+]
 
 
 def load(name: str):
@@ -24,7 +30,7 @@ def load(name: str):
 
 
 def generated_from_fixture() -> dict:
-    config = cosmyx_index.load_config(cosmyx_index.DEFAULT_CONFIG)
+    config = {**cosmyx_index.load_config(cosmyx_index.DEFAULT_CONFIG), "exclude": LEGACY_EXCLUDE}
     return cosmyx_index.build_index(load("records_3cc7dc1df7.json"), config, DATE, BRANCH, COMMIT)
 
 

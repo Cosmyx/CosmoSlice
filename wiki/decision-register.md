@@ -227,7 +227,7 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   a Python model of the cited C++ lines (`tools/profiles/tests/test_version.py`), not by the C++ itself, which CI does
   not test (D-007); the model must follow those lines if they change. The CMake guard and the CI steps are checked by
   their text (`tools/profiles/tests/test_build_wiring.py`), not by running them. The two "Support W" process presets
-  stay out of the index, as before (see Open issues).
+  stayed out of the index, as before, and were deleted later (see Resolved issues).
 - **Reverting.** Generate the file once (`just profiles-index`), set a fixed version, commit it and remove its
   `.gitignore` line; then remove the CMake guard, the CI generate and check steps, and the `profiles-index` recipe.
   The generator can stay as a helper.
@@ -252,10 +252,6 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   Needs a dedicated texture from Cosmyx with the aspect ratio of a 156x200 bed (SVG, NanoSVG-safe: inline styles, no
   `<style>`, clipPath, mask, filter or text), or a decision that the bed area is wrong. Excluded in `KNOWN_STRETCHED`
   of `scripts/brand_assets/tests/test_bed_texture.py`, which fails once it is no longer needed.
-- **Support W presets not shipped** (D-013): `process/ceramics/0.20mm Cosmyx Support W @Metal and Ceramics.json`
-  and `process/global/0.20mm Cosmyx Support W @Cosmyx Nova.json` exist in `resources/profiles/cosmyx` but were never
-  in the hand-written index, so they stay excluded in `tools/profiles/data/cosmyx_index.json`. The user decides:
-  ship them (remove the exclusions) or delete the files.
 - **Build and profile workflows do not run on CosmoSlice** (D-013): `build_all.yml` and `check_profiles.yml` trigger
   only on `main` and `release/*` while the default branch is `CosmoSlice`, and their path filters do not include
   `tools/profiles/**`, so a generator change alone triggers neither.
@@ -287,6 +283,12 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
 
 ## Resolved issues
 
+- **Support W presets not shipped** (D-013), resolved 2026-10-29 on the user's decision: the process presets
+  `process/ceramics/0.20mm Cosmyx Support W @Metal and Ceramics.json` and
+  `process/global/0.20mm Cosmyx Support W @Cosmyx Nova.json` came with the cosmyx profile pack but were never in its
+  index, so the slicer never loaded them. They are deleted, and `tools/profiles/data/cosmyx_index.json` excludes
+  nothing any more, so every preset on disk ships. Reverting: restore both files from git history; the generator then
+  lists them (add exclusions to keep them out).
 - **Asset request A1, bed texture** (D-012), resolved 2026-10-28: the user provided the CosmoSlice bed texture, now
   `resources/profiles/Custom/orcaslicer_bed_texture.svg` (name kept, so the MyKlipper, MyMarlin, MyRRF and
   MyToolChanger profiles need no change). On the user's request one change was made to the file as provided: its
