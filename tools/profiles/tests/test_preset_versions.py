@@ -214,7 +214,7 @@ def test_stamp_writes_nothing_when_one_preset_is_refused(tmp_path: Path) -> None
 def test_the_real_tree_stamps_cleanly(tmp_path: Path) -> None:
     """Catches a preset the stamper refuses before CI's build does (a pack import, a hand edit)."""
     copy = tmp_path / "cosmyx"
-    shutil.copytree(cosmyx_index.DEFAULT_TREE, copy)
+    shutil.copytree(cosmyx_index.DEFAULT_TREE, copy, ignore=shutil.ignore_patterns(".*"))
     cosmyx_index.stamp_presets(copy, VERSION)
     assert cosmyx_index.check_preset_versions(copy, VERSION) == []
     for record in cosmyx_index.scan(cosmyx_index.DEFAULT_TREE):
