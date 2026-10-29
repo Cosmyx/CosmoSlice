@@ -7,9 +7,15 @@ different commit differs in major.minor and the slicer reinstalls the bundled pr
 same bytes.
 
     python3 tools/profiles/cosmyx_index.py generate [--out PATH] [--branch NAME] [--commit SHA] [--commit-date ISO]
-    python3 tools/profiles/cosmyx_index.py verify --index PATH [same options]   # regenerate and compare bytes
+                                                    [--stamp-presets]        # CI: write the version into every preset
+    python3 tools/profiles/cosmyx_index.py verify --index PATH [same options]   # regenerate and compare bytes, and
+                                                                                # check the presets packaged beside it
     python3 tools/profiles/cosmyx_index.py version --commit-date ISO            # print the version only
     python3 tools/profiles/cosmyx_index.py records [--tree PATH] [--out PATH]   # dump the scanned presets
+
+The tracked presets carry no "version" (D-015): CI stamps the index version into every preset file it scans, so
+the packaged presets and the index always agree. The slicer gives system presets the vendor version anyway; this
+keeps the shipped files consistent with it.
 
 Values not given are read from git (`git log -1 --format=%cI`, `git rev-parse HEAD`, `git rev-parse --abbrev-ref
 HEAD`); a detached HEAD needs --branch. Standard library only, Python 3.9 or later (CI runs it on the host runners).
@@ -107,6 +113,48 @@ def scan(tree: Path) -> list[dict]:
                     }
                 )
     return sorted(records, key=lambda r: r["sub_path"])
+
+
+VERSION_KEY = re.compile(r'"version"\s*:\s*"[^"]*"')
+FIRST_KEY_INDENT = re.compile(r"\{(\r?\n)([ \t]*)\S")
+
+
+def stamp_presets(tree: Path, version: str) -> int:
+    """Write `version` as the top-level "version" of every preset the scan reads; return how many files it rewrote.
+
+    Only the version text changes: an existing value is replaced in place, a missing key is added as the first key
+    with the indentation of the file. A "version" key nested below the top level is refused rather than guessed at.
+    """
+    changed = 0
+    for record in scan(tree):
+        path = tree / record["sub_path"]
+        text = path.read_text(encoding="utf-8")
+        has_key = "version" in json.loads(text)
+        if len(VERSION_KEY.findall(text)) != int(has_key):
+            raise CosmyxIndexError(f"{record['sub_path']}: a nested \"version\" key; cannot stamp it safely")
+        if has_key:
+            new = VERSION_KEY.sub(lambda _: f'"version": "{version}"', text)
+        else:
+            match = FIRST_KEY_INDENT.match(text.lstrip())
+            if not match or not text.lstrip() == text:
+                raise CosmyxIndexError(f"{record['sub_path']}: not a multi-line JSON object; cannot stamp it safely")
+            newline, indent = match[1], match[2]
+            new = "{" + f'{newline}{indent}"version": "{version}",' + text[1:]
+        if json.loads(new).get("version") != version:
+            raise CosmyxIndexError(f"{record['sub_path']}: stamping did not give the expected version")
+        if new != text:
+            path.write_bytes(new.encode("utf-8"))
+            changed += 1
+    return changed
+
+
+def check_preset_versions(tree: Path, version: str) -> list[str]:
+    """Sub-paths of the presets whose top-level "version" is not `version` (missing included), sorted."""
+    return [
+        record["sub_path"]
+        for record in scan(tree)
+        if json.loads((tree / record["sub_path"]).read_text(encoding="utf-8")).get("version") != version
+    ]
 
 
 def load_config(path: Path) -> dict:
@@ -270,6 +318,9 @@ def _parser() -> argparse.ArgumentParser:
     generate = sub.add_parser("generate", help="write the index")
     add_source(generate)
     generate.add_argument("--out", type=Path, default=DEFAULT_OUT, help="output file")
+    generate.add_argument(
+        "--stamp-presets", action="store_true", help="also write the index version into every preset of --tree (CI)"
+    )
     verify = sub.add_parser("verify", help="regenerate in memory and compare with an existing index, byte for byte")
     add_source(verify)
     verify.add_argument("--index", type=Path, required=True, help="the index to check")
@@ -296,7 +347,11 @@ def main(argv: list | None = None, runner: Runner | None = None) -> int:
         elif args.command == "generate":
             data = _generate(args, runner)
             args.out.write_bytes(data)
-            print(f"cosmyx_index.py: wrote {args.out} ({json.loads(data)['version']})")
+            index_version = json.loads(data)["version"]
+            print(f"cosmyx_index.py: wrote {args.out} ({index_version})")
+            if args.stamp_presets:
+                count = stamp_presets(args.tree, index_version)
+                print(f"cosmyx_index.py: stamped {index_version} into {count} preset files of {args.tree}")
         else:
             expected = _generate(args, runner)
             try:
@@ -305,7 +360,13 @@ def main(argv: list | None = None, runner: Runner | None = None) -> int:
                 raise CosmyxIndexError(f"cannot read {args.index}: {error}") from error
             if actual != expected:
                 raise CosmyxIndexError(f"{args.index} differs from the index generated for this commit")
-            print(f"cosmyx_index.py: {args.index} matches")
+            packaged = args.index.parent / args.tree.name
+            if not packaged.is_dir():
+                raise CosmyxIndexError(f"no packaged presets beside {args.index} (expected {packaged})")
+            stale = check_preset_versions(packaged, json.loads(expected)["version"])
+            if stale:
+                raise CosmyxIndexError(f"{len(stale)} presets in {packaged} lack the index version, first: {stale[0]}")
+            print(f"cosmyx_index.py: {args.index} and the presets in {packaged} match")
     except CosmyxIndexError as error:
         print(f"cosmyx_index.py: error: {error}", file=sys.stderr)
         return 1

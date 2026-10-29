@@ -26,7 +26,6 @@
     "machine_end_gcode": ";; end_print ;;",
     "machine_pause_gcode": "PAUSE",
     "purge_in_prime_tower": "0",
-    "version": "1.7.0.18",
     "machine_tool_change_time": "6.625",
     "single_extruder_multi_material": "1",
     "extruders_count": "2",

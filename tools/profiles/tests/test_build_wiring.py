@@ -89,6 +89,13 @@ def test_build_generates_the_index_after_checkout() -> None:
     assert_generates_right_after_checkout("build_orca.yml", "Checkout")
 
 
+def test_packaging_builds_stamp_the_index_version_into_the_presets() -> None:
+    """Builds that package the presets stamp them (D-015); the profile check validates the tracked files as they are."""
+    for workflow, stamps in (("build_orca.yml", True), ("build_all.yml", True), ("check_profiles.yml", False)):
+        block = steps(workflow)[index_of(steps(workflow), GENERATE)][1]
+        assert ("--stamp-presets" in block) is stamps, workflow
+
+
 def test_profile_check_generates_the_index_before_validating() -> None:
     assert_generates_right_after_checkout("check_profiles.yml", "Checkout repository")
     found = steps("check_profiles.yml")

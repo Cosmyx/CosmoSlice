@@ -79,6 +79,5 @@
     "enable_pressure_advance": [
         "1"
     ],
-    "version": "1.7.0.18",
     "compatible_printers": []
 }

@@ -23,7 +23,7 @@ CONFIG = {
 def write(root: Path, rel: str, data: dict | None = None, raw: bytes | None = None) -> None:
     path = root.joinpath(*rel.split("/"))
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_bytes(raw if raw is not None else json.dumps(data).encode("utf-8"))
+    path.write_bytes(raw if raw is not None else json.dumps(data, indent=4).encode("utf-8"))
 
 
 def preset(name: str, kind: str, inherits: str = "", instantiation: str | None = "true") -> dict:
@@ -230,7 +230,8 @@ def test_generate_writes_identical_files(tmp_path: Path) -> None:
 def test_verify_passes_on_a_fresh_index_and_fails_on_a_changed_one(tmp_path: Path, capsys) -> None:
     make_tree(tmp_path / "tree")
     out = tmp_path / "index.json"
-    assert run_main(["generate", *source_args(tmp_path), "--out", str(out), *explicit_args()]) == 0
+    generate = ["generate", *source_args(tmp_path), "--out", str(out), *explicit_args(), "--stamp-presets"]
+    assert run_main(generate) == 0
     assert run_main(["verify", *source_args(tmp_path), "--index", str(out), *explicit_args()]) == 0
     out.write_bytes(out.read_bytes().replace(b"\n", b"\r\n"))
     assert run_main(["verify", *source_args(tmp_path), "--index", str(out), *explicit_args()]) == 1

@@ -10,7 +10,6 @@
         "Cosmyx SuperNova Double Tete Metal Ceramique 0.6 nozzle",
         "Cosmyx Nova Metal Ceramique 0.6 nozzle"
     ],
-    "version": "01.07.00.18",
     "overhang_reverse": "1",
     "overhang_reverse_threshold": "0%",
     "sparse_infill_density": "92%",

@@ -51,7 +51,7 @@ jobs:
         run: |
           PY=python3
           "$PY" --version > /dev/null 2>&1 || PY=python
-          "$PY" tools/profiles/cosmyx_index.py generate --out resources/profiles/cosmyx.json --branch "$COSMYX_BRANCH"
+          "$PY" tools/profiles/cosmyx_index.py generate --out resources/profiles/cosmyx.json --branch "$COSMYX_BRANCH" --stamp-presets
 
       - name: load cached deps
         uses: actions/cache@v4
