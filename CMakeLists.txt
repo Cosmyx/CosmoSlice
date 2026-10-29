@@ -62,6 +62,12 @@ include(CMakeDependentOption)
 set(SLIC3R_RESOURCES_DIR "${CMAKE_CURRENT_SOURCE_DIR}/resources")
 file(TO_NATIVE_PATH "${SLIC3R_RESOURCES_DIR}" SLIC3R_RESOURCES_DIR_WIN)
 
+# CosmoSlice: the Cosmyx vendor index is generated from the profile tree and the built commit, not tracked (D-013).
+# CI generates it before building; a local build needs it generated first.
+if(NOT EXISTS "${SLIC3R_RESOURCES_DIR}/profiles/cosmyx.json")
+    message(FATAL_ERROR "resources/profiles/cosmyx.json is missing: run `just profiles-index` before configuring (D-013).")
+endif()
+
 if (NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
   message(STATUS "No build type selected, default to Release")
   set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Build type (default Release)" FORCE)
