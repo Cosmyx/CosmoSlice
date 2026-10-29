@@ -23,6 +23,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
+      # The Cosmyx vendor index is generated, not tracked (D-013).
+      - name: Generate Cosmyx vendor index
+        shell: bash
+        env:
+          COSMYX_BRANCH: ${{ github.head_ref || github.ref_name }}
+        run: |
+          PY=python3
+          "$PY" --version > /dev/null 2>&1 || PY=python
+          "$PY" tools/profiles/cosmyx_index.py generate --out resources/profiles/cosmyx.json --branch "$COSMYX_BRANCH"
+
       - name: Run extra JSON check
         run: |
           python3 ./scripts/orca_extra_profile_check.py

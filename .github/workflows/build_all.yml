@@ -90,6 +90,15 @@ jobs:
       run:
         rm -rf /usr/local/lib/android/* /usr/share/dotnet/* /opt/ghc1/* "/usr/local/share/boost1/*"
     - uses: actions/checkout@v5
+    # The Cosmyx vendor index is generated, not tracked (D-013); CMake stops without it.
+    - name: Generate Cosmyx vendor index
+      shell: bash
+      env:
+        COSMYX_BRANCH: ${{ github.head_ref || github.ref_name }}
+      run: |
+        PY=python3
+        "$PY" --version > /dev/null 2>&1 || PY=python
+        "$PY" tools/profiles/cosmyx_index.py generate --out resources/profiles/cosmyx.json --branch "$COSMYX_BRANCH"
     - name: Get the version and date
       run: |
         ver_pure=$(grep 'set(SoftFever_VERSION' version.inc | cut -d '"' -f2)

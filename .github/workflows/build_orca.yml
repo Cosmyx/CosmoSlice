@@ -43,6 +43,16 @@ jobs:
         with:
           lfs: 'true'
 
+      # The Cosmyx vendor index is generated, not tracked (D-013); CMake stops without it.
+      - name: Generate Cosmyx vendor index
+        shell: bash
+        env:
+          COSMYX_BRANCH: ${{ github.head_ref || github.ref_name }}
+        run: |
+          PY=python3
+          "$PY" --version > /dev/null 2>&1 || PY=python
+          "$PY" tools/profiles/cosmyx_index.py generate --out resources/profiles/cosmyx.json --branch "$COSMYX_BRANCH"
+
       - name: load cached deps
         uses: actions/cache@v4
         with:
@@ -113,6 +123,16 @@ jobs:
         working-directory: ${{ github.workspace }}
         run: |
           ./build_release_macos.sh -s -n -x -a universal -t 10.15 -1
+
+      - name: Check packaged Cosmyx index mac
+        if: inputs.os == 'macos-15'
+        shell: bash
+        env:
+          COSMYX_BRANCH: ${{ github.head_ref || github.ref_name }}
+        run: |
+          PY=python3
+          "$PY" --version > /dev/null 2>&1 || PY=python
+          "$PY" tools/profiles/cosmyx_index.py verify --index build/universal/OrcaSlicer/OrcaSlicer.app/Contents/Resources/profiles/cosmyx.json --branch "$COSMYX_BRANCH"
 
  # Thanks to RaySajuuk, it's working now
       - name: Sign app and notary
@@ -234,6 +254,16 @@ jobs:
           WindowsSdkDir: 'C:\Program Files (x86)\Windows Kits\10\'
           WindowsSDKVersion: '10.0.26100.0\'
         run: .\build_release_vs2022.bat slicer
+
+      - name: Check packaged Cosmyx index Win
+        if: inputs.os == 'windows-2022'
+        shell: bash
+        env:
+          COSMYX_BRANCH: ${{ github.head_ref || github.ref_name }}
+        run: |
+          PY=python3
+          "$PY" --version > /dev/null 2>&1 || PY=python
+          "$PY" tools/profiles/cosmyx_index.py verify --index build/OrcaSlicer/resources/profiles/cosmyx.json --branch "$COSMYX_BRANCH"
 
       - name: Azure Login
         if: inputs.os == 'windows-2022'
@@ -377,6 +407,16 @@ jobs:
           ./build_linux.sh -isr
           mv -n ./build/OrcaSlicer_Linux_V${{ env.ver_pure }}.AppImage ./build/OrcaSlicer_Linux_AppImage${{ env.ubuntu-ver-str }}_${{ env.ver }}.AppImage
           chmod +x ./build/OrcaSlicer_Linux_AppImage${{ env.ubuntu-ver-str }}_${{ env.ver }}.AppImage
+
+      - name: Check packaged Cosmyx index Linux
+        if: inputs.os == 'ubuntu-20.04' || inputs.os == 'ubuntu-24.04'
+        shell: bash
+        env:
+          COSMYX_BRANCH: ${{ github.head_ref || github.ref_name }}
+        run: |
+          PY=python3
+          "$PY" --version > /dev/null 2>&1 || PY=python
+          "$PY" tools/profiles/cosmyx_index.py verify --index build/package/resources/profiles/cosmyx.json --branch "$COSMYX_BRANCH"
 
       - name: Build orca_custom_preset_tests
         if: github.ref == 'refs/heads/main' && inputs.os == 'ubuntu-24.04'
