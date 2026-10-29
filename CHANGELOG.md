@@ -57,6 +57,8 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ### tooling
 
+- The macOS build no longer stops at its disk-space step on the macos-15 runners, where the disk device it
+  named does not exist; it now reports the volume of `/Applications`. MR: pending.
 - `just profiles-index` generates the Cosmyx vendor index from the profile tree and the current commit; CI
   generates it before every build and checks the copy inside each package. MR: pending. D-013.
 - `just i18n-check` validates every catalogue (`just i18n-catalogs` alone) and guards against the upstream product
