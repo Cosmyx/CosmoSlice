@@ -191,6 +191,47 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   new asset or is not seen by users.
 - **Reverting.** Not applicable: it only bounds the change.
 
+## D-013 Cosmyx vendor index generated at build time
+
+- **Context.** `resources/profiles/cosmyx.json` lists every Cosmyx preset (parents before children in each list) and
+  carries the vendor version. It was maintained by hand: a preset missing from it is not loaded, and the slicer only
+  replaces the user's installed copy of the profiles when the bundled version is newer
+  (`src/slic3r/Utils/PresetUpdater.cpp:1123-1125`), so a forgotten version bump left users on old profiles. The user
+  decided that the index is generated, not tracked, and that its version changes with every build.
+- **Decision.** `tools/profiles/cosmyx_index.py` (stdlib, Python 3.9+) scans `machine/`, `filament/` and `process/`
+  of `resources/profiles/cosmyx` (dot-files, non-JSON files and `I18N/` skipped, names as they are on disk) and writes
+  the index: `machine_model_list` in the order of `tools/profiles/data/cosmyx_index.json` (the setup wizard's order),
+  then unlisted models by name; the other lists in inheritance order (Kahn, ties by name, as the former
+  `ztool_generate_cosmyx_json.py`). It fails on a missing name, type or instantiation, a type in the wrong folder, a
+  duplicate name, a parent missing from the same list, a cycle, and a stale exclusion or model-order entry. The
+  version is the built commit's UTC committer date, `YYYYMMDD.HHMMSS.00.00`; the description names the branch, the
+  short SHA and that date. The file is git-ignored; CI generates it right after checkout (`build_orca.yml` on every
+  OS, `check_profiles.yml`, the disabled flatpak job of `build_all.yml`) and, after each OS build, regenerates it in
+  memory and compares it byte for byte with the packaged copy. CMake stops at configure when it is missing; locally,
+  `just profiles-index` writes it (it needs git, or `--commit-date`, `--branch`, `--commit`; a detached HEAD needs
+  `--branch`). The build scripts do not generate it: the version inputs belong to the build's commit.
+- **Reason.** The version fits the slicer's parser (`deps_src/semver/semver.c:142,175`: four dot-separated parts,
+  each at most 50 characters and parsed base 10, so leading zeros are fine; the fourth is folded as patch =
+  CC * 100 + DD at `:202`; `YYYYMMDD` and `HHMMSS` stay below the `int` limit) and round-trips through
+  `Semver::to_string` (`src/libslic3r/Semver.hpp:157`), which user presets re-parse
+  (`src/libslic3r/PresetBundle.cpp:815`). Two different seconds give a different major.minor, which always reinstalls
+  (`PresetUpdater.cpp:1123-1125`), in both directions, and also replaces the former hand-written `01.07.00.19`; the
+  same commit gives the same bytes and does not reinstall. Nothing ties the vendor version to the app version, the
+  index `url` is stored but unused, and the OTA source (`orcaslicer-profiles`) has no Cosmyx file.
+  Today's output equals the hand-written index of 3cc7dc1df7 apart from version and description: same machine model
+  order, same entries per list (frozen fixtures in `tools/profiles/tests/fixtures/`).
+- **Accepted risks.** Two commits made in the same second share a version. Pull-request builds describe GitHub's
+  merge commit, not the branch head. Cosmyx OTA updates are effectively off (they need the same major.minor). A new
+  machine model goes after the configured ones, by name, until it is added to `machine_model_order`. A future import
+  of an upstream profile pack that brings a `cosmyx.json` must drop it. The semver and reinstall rules are checked by
+  a Python model of the cited C++ lines (`tools/profiles/tests/test_version.py`), not by the C++ itself, which CI does
+  not test (D-007); the model must follow those lines if they change. The CMake guard and the CI steps are checked by
+  their text (`tools/profiles/tests/test_build_wiring.py`), not by running them. The two "Support W" process presets
+  stay out of the index, as before (see Open issues).
+- **Reverting.** Generate the file once (`just profiles-index`), set a fixed version, commit it and remove its
+  `.gitignore` line; then remove the CMake guard, the CI generate and check steps, and the `profiles-index` recipe.
+  The generator can stay as a helper.
+
 ## Open issues
 
 - **Asset request A2, document icons** (D-011, optional improvement): `scripts/brand_assets/sources/stl-document.svg`
@@ -211,6 +252,14 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   Needs a dedicated texture from Cosmyx with the aspect ratio of a 156x200 bed (SVG, NanoSVG-safe: inline styles, no
   `<style>`, clipPath, mask, filter or text), or a decision that the bed area is wrong. Excluded in `KNOWN_STRETCHED`
   of `scripts/brand_assets/tests/test_bed_texture.py`, which fails once it is no longer needed.
+- **Support W presets not shipped** (D-013): `process/ceramics/0.20mm Cosmyx Support W @Metal and Ceramics.json`
+  and `process/global/0.20mm Cosmyx Support W @Cosmyx Nova.json` exist in `resources/profiles/cosmyx` but were never
+  in the hand-written index, so they stay excluded in `tools/profiles/data/cosmyx_index.json`. The user decides:
+  ship them (remove the exclusions) or delete the files.
+- **Build and profile workflows do not run on CosmoSlice** (D-013): `build_all.yml` and `check_profiles.yml` trigger
+  only on `main` and `release/*` while the default branch is `CosmoSlice`, and their path filters do not include
+  `tools/profiles/**`, so a generator change alone triggers neither.
+- **C++ tests not built in CI** (D-007, D-013): the version rules are checked by a Python model of the C++ only.
 - **Merge request links**: CHANGELOG lines of this branch carry `MR: pending` until the request is opened.
 - **Config.cpp:1287** only recognises `; generated by CosmoSlice` as its own G-code header (pre-existing; G-code
   written by OrcaSlicer is detected by the `; OrcaSlicer` branch only).

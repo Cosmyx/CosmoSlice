@@ -35,6 +35,11 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ### resources
 
+- **Breaking:** `resources/profiles/cosmyx.json` is no longer in git: it is generated for every build from the
+  profile tree, with the build commit's UTC date as its version (`YYYYMMDD.HHMMSS.00.00`), so each new build
+  reinstalls the bundled Cosmyx profiles over the copy in the user's folder. A local C++ build must run
+  `just profiles-index` first; CMake stops otherwise. New presets no longer need a hand-written index entry.
+  MR: pending. D-013.
 - The Cosmyx Nova can-out printer loads on Linux: its profile index named the `nova_can_out` folder with the wrong
   case, which only case-insensitive file systems (macOS, Windows) accepted. MR: pending.
 - The 3D bed of the Cosmyx Nova printers shows its logo in white, blue and red instead of black. MR: pending.
@@ -49,6 +54,8 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ### tooling
 
+- `just profiles-index` generates the Cosmyx vendor index from the profile tree and the current commit; CI
+  generates it before every build and checks the copy inside each package. MR: pending. D-013.
 - `just i18n-check` validates every catalogue (`just i18n-catalogs` alone) and guards against the upstream product
   name in user-visible text; `just i18n-status` lists what each language still has to translate. MR: pending. D-006.
 - `just lint` now checks the Python modules below `scripts/` (only the legacy upstream scripts are skipped).

@@ -44,3 +44,5 @@ deps_src/build/
 __pycache__/
 .pytest_cache/
 .ruff_cache/
+# Generated per build by tools/profiles/cosmyx_index.py (`just profiles-index`), never tracked (D-013)
+/resources/profiles/cosmyx.json

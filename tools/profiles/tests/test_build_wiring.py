@@ -108,3 +108,9 @@ def test_each_build_verifies_its_packaged_index() -> None:
         assert f"tools/profiles/cosmyx_index.py verify --index {path}" in block, check
         assert '--branch "$COSMYX_BRANCH"' in block, check
         assert BRANCH_ENV in block, check
+
+
+def test_the_generated_index_is_ignored_by_git() -> None:
+    rel = cosmyx_index.DEFAULT_OUT.relative_to(REPO_ROOT).as_posix()
+    lines = (REPO_ROOT / ".gitignore").read_text(encoding="utf-8").splitlines()
+    assert f"/{rel}" in lines
