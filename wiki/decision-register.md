@@ -232,6 +232,29 @@ reverting it would take. Problems found but not fixed go to [Open issues](#open-
   `.gitignore` line; then remove the CMake guard, the CI generate and check steps, and the `profiles-index` recipe.
   The generator can stay as a helper.
 
+## D-014 CosmoSlice version built from the OrcaSlicer base and the Cosmyx patch
+
+- **Context.** The About dialog showed the OrcaSlicer base version (`SoftFever_VERSION`, `2.3.1`) and, on a separate
+  line, `COSMYX_PATCH_VERSION` (`CSDEV-V1.2`); CI named builds after the patch alone. The user asked for the Cosmyx
+  OrcaSlicer scheme (base version plus patch number, `cosmyx-2.3.1-5` there), shown as one built version, `2.3.1-5`,
+  not typed by hand, and for build names `<version>_<build hash>`.
+- **Decision.** `version.inc` sets `COSMYX_PATCH_VERSION` to `5` and defines
+  `COSMOSLICE_VERSION` as `${SoftFever_VERSION}-${COSMYX_PATCH_VERSION}`; `libslic3r_version.h` exposes it. The About
+  dialog, the splash screen and "copy version" use it through `GUI_App::format_display_version()`, and the "Cosmyx
+  Bundle Version" line is gone. The "new build" notice stores and compares the full version under the existing
+  `cosmyx_version` key. `tools/version/cosmoslice_version.py` expands that same `version.inc` line (it does not
+  repeat the format) and appends the short commit hash CMake embeds (`git log -1 --format=%h`); the CI naming job
+  calls it, giving `CosmoSlice_<OS>_2.3.1-5_<hash>`.
+- **Reason.** One definition feeds the app and the build names, so they cannot disagree, and bumping either part
+  needs no other edit. `SoftFever_VERSION` stays as it is everywhere else (G-code and 3MF headers, file
+  compatibility checks, user agent, macOS bundle version, preset backups): those compare or parse it as an
+  OrcaSlicer semver, and the suffix would break them. Upgrading from a `CSDEV-V1.2` build shows the "new build"
+  notice once, which is wanted for a new version.
+- **Accepted risks.** The wiring is checked by its text (`tools/version/tests/test_wiring.py`), not by building
+  (D-007). The `Cosmyx Bundle Version %s` msgid stays in the catalogues, unused, until they are regenerated.
+- **Reverting.** Show `SoftFever_VERSION` again in `format_display_version()` and the About dialog, compare
+  `COSMYX_PATCH_VERSION` in the notice, and read the patch alone in `cosmyx-artifact-naming.yml`.
+
 ## Open issues
 
 - **Asset request A2, document icons** (D-011, optional improvement): `scripts/brand_assets/sources/stl-document.svg`

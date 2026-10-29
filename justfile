@@ -57,6 +57,10 @@ i18n-update-pot:
 profiles-index *args:
     {{python}} tools/profiles/cosmyx_index.py generate {{args}}
 
+# Print the CosmoSlice version built from version.inc, or `just version build-tag` for the CI build name suffix
+version command="version" *args:
+    {{python}} tools/version/cosmoslice_version.py {{command}} {{args}}
+
 # Full gate: lint, every test suite (guards included), catalogue check, every module `check` recipe (discovered)
 ci: lint test i18n-catalogs
     {{python}} tools/ci/suites.py checks --just "{{just_executable()}}"

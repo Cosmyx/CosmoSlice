@@ -1083,8 +1083,8 @@ void GUI_App::post_init()
                        _L("Please Backup and delete the Cosmyx AppData Folder.") + "\n\n";
         if (m_pending_build_stored_hash != std::string(GIT_COMMIT_HASH))
             msg += wxString::Format(_L("Build: %s \u2192 %s"), m_pending_build_stored_hash, GIT_COMMIT_HASH) + "\n";
-        if (m_pending_build_stored_cosmyx_ver != std::string(COSMYX_PATCH_VERSION))
-            msg += wxString::Format(_L("Bundle: %s \u2192 %s"), m_pending_build_stored_cosmyx_ver, COSMYX_PATCH_VERSION) + "\n";
+        if (m_pending_build_stored_cosmyx_ver != std::string(COSMOSLICE_VERSION))
+            msg += wxString::Format(_L("Bundle: %s \u2192 %s"), m_pending_build_stored_cosmyx_ver, COSMOSLICE_VERSION) + "\n";
         msg += "\n" + _L("Would you like to Close CosmoSlice and Open your AppData folder?");
         RichMessageDialog dlg(mainframe, msg, _L("New Build Detected"), wxYES_NO | wxICON_INFORMATION);
         dlg.SetButtonLabel(wxID_YES, _L("OK"));
@@ -2067,7 +2067,7 @@ void GUI_App::init_app_config()
     cosmo_buf << std::put_time(now_time, "cosmo_%a_%b_%d_%H_%M_%S_");
     cosmo_buf << get_current_pid() << ".log";
     set_cosmo_log_path_and_level(cosmo_buf.str());
-    COSMO_LOG(info) << "[GUI_App] CosmoSlice log initialized — version " << COSMYX_PATCH_VERSION;
+    COSMO_LOG(info) << "[GUI_App] CosmoSlice log initialized — version " << COSMOSLICE_VERSION;
 
     //BBS: remove GCodeViewer as seperate APP logic
 	if (!app_config)
@@ -2467,10 +2467,10 @@ bool GUI_App::on_init_inner()
     const std::string stored_cosmyx_ver  = app_config->get("cosmyx_version");
     const bool        first_run          = stored_build_hash.empty() && stored_cosmyx_ver.empty();
     const bool        build_hash_changed = !stored_build_hash.empty() && stored_build_hash != GIT_COMMIT_HASH;
-    const bool        cosmyx_ver_changed = !stored_cosmyx_ver.empty() && stored_cosmyx_ver != COSMYX_PATCH_VERSION;
+    const bool        cosmyx_ver_changed = !stored_cosmyx_ver.empty() && stored_cosmyx_ver != COSMOSLICE_VERSION;
 
     COSMO_LOG(info) << "[GUI_App] Version check — stored: " << stored_cosmyx_ver
-                    << "  current: " << COSMYX_PATCH_VERSION
+                    << "  current: " << COSMOSLICE_VERSION
                     << (first_run ? "  (first run)" : "");
 
     // Only write these values once — when AppData is first created (empty keys).
@@ -2478,13 +2478,13 @@ bool GUI_App::on_init_inner()
     if (stored_build_hash.empty())
         app_config->set("build_hash",     GIT_COMMIT_HASH);
     if (stored_cosmyx_ver.empty()) {
-        COSMO_LOG(info) << "[GUI_App] Storing initial Cosmyx version: " << COSMYX_PATCH_VERSION;
-        app_config->set("cosmyx_version", COSMYX_PATCH_VERSION);
+        COSMO_LOG(info) << "[GUI_App] Storing initial Cosmyx version: " << COSMOSLICE_VERSION;
+        app_config->set("cosmyx_version", COSMOSLICE_VERSION);
     }
 
     if (!first_run && (build_hash_changed || cosmyx_ver_changed) && !app_config->get_bool("skip_build_change_notify")) {
         if (cosmyx_ver_changed)
-            COSMO_LOG(info) << "[GUI_App] Cosmyx version updated: " << stored_cosmyx_ver << " -> " << COSMYX_PATCH_VERSION;
+            COSMO_LOG(info) << "[GUI_App] Cosmyx version updated: " << stored_cosmyx_ver << " -> " << COSMOSLICE_VERSION;
         m_pending_build_change_notify    = true;
         m_pending_build_stored_hash      = stored_build_hash;
         m_pending_build_stored_cosmyx_ver = stored_cosmyx_ver;
@@ -5028,7 +5028,7 @@ std::string GUI_App::format_display_version()
 {
     if (!version_display.empty()) return version_display;
 
-    version_display = SoftFever_VERSION;
+    version_display = COSMOSLICE_VERSION;
     return version_display;
 }
 

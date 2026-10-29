@@ -242,7 +242,7 @@ AboutDialog::AboutDialog()
         // _build_string_font.SetStyle(wxFONTSTYLE_ITALIC);
 
         vesizer->Add(0, 0, 1, wxEXPAND, FromDIP(5));
-        auto          version_string = std::string(SoftFever_VERSION); // _L("Orca Slicer ") + " " + std::string(SoftFever_VERSION);
+        auto          version_string = GUI_App::format_display_version();
         wxStaticText* version = new wxStaticText(this, wxID_ANY, version_string.c_str(), wxDefaultPosition, wxDefaultSize);
         wxStaticText* credits_string = new wxStaticText(this, wxID_ANY, wxString::Format("Build %s", std::string(GIT_COMMIT_HASH)), wxDefaultPosition, wxDefaultSize);
         credits_string->SetFont(_build_string_font);
@@ -262,13 +262,6 @@ AboutDialog::AboutDialog()
         vesizer->Add(version, 0, wxRIGHT | wxALIGN_RIGHT, FromDIP(20));
         vesizer->AddSpacer(FromDIP(5));
         vesizer->Add(credits_string, 0, wxRIGHT | wxALIGN_RIGHT, FromDIP(20));
-        vesizer->AddSpacer(FromDIP(5));
-        wxString cosmyx_str = wxString::Format(_L("Cosmyx Bundle Version %s"), COSMYX_PATCH_VERSION);
-        wxStaticText* cosmyx_version = new wxStaticText(this, wxID_ANY, cosmyx_str, wxDefaultPosition, wxDefaultSize);
-        cosmyx_version->SetFont(_build_string_font);
-        cosmyx_version->SetForegroundColour(wxColour("#949494"));
-        cosmyx_version->SetBackgroundColour(wxColour("#FFFFFF"));
-        vesizer->Add(cosmyx_version, 0, wxRIGHT | wxALIGN_RIGHT, FromDIP(20));
         vesizer->Add(0, 0, 1, wxEXPAND, FromDIP(5));
     }
 

@@ -18,6 +18,10 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ### gui
 
+- The About dialog and the splash screen show the CosmoSlice version, `2.3.1-5`, built from the OrcaSlicer base
+  version and the Cosmyx patch number, instead of `2.3.1` plus a separate "Cosmyx Bundle Version" line. The
+  "new build" notice compares and shows this full version, so users who ran a `CSDEV-V1.2` build see it once.
+  MR: pending. D-014. COSMYX_PATCH_VERSION 5.
 - Dialogs, messages, tooltips, preferences and hints say CosmoSlice instead of OrcaSlicer; the About dialog credits
   OrcaSlicer, and names that refer to upstream or are stored in files are kept. MR: pending. D-001, D-002, D-003,
   D-005, D-006.
@@ -57,6 +61,8 @@ Every change to CosmoSlice is recorded here, in English, in the branch that make
 
 ### tooling
 
+- CI build artifacts are named `CosmoSlice_<OS>_<version>_<short commit hash>` (for example
+  `CosmoSlice_Windows_2.3.1-5_aa9dac8`); `just version` prints the version. MR: pending. D-014.
 - The macOS build no longer stops at its disk-space step on the macos-15 runners, where the disk device it
   named does not exist; it now reports the volume of `/Applications`. MR: pending.
 - `just profiles-index` generates the Cosmyx vendor index from the profile tree and the current commit; CI
