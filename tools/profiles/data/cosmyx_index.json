@@ -1,0 +1,25 @@
+{
+    "name": "Cosmyx",
+    "url": "http://www.cosmyx.com/Parameters/vendor/Cosmyx.json",
+    "force_update": "0",
+    "machine_model_order": [
+        "Cosmyx SuperNova Double Tete",
+        "Cosmyx SuperNova Double Tete Metal Ceramique",
+        "Cosmyx Nova",
+        "Cosmyx SuperNova",
+        "Cosmyx Nova Metal Ceramique",
+        "Cosmyx Nova Haute Temperature",
+        "Cosmyx Nova Double Tete",
+        "Cosmyx Nova can-out"
+    ],
+    "exclude": [
+        {
+            "sub_path": "process/ceramics/0.20mm Cosmyx Support W @Metal and Ceramics.json",
+            "reason": "On disk but not in the hand-maintained index at 3cc7dc1df7; kept out for parity until the user decides to ship or delete it (wiki/decision-register.md, open issues)."
+        },
+        {
+            "sub_path": "process/global/0.20mm Cosmyx Support W @Cosmyx Nova.json",
+            "reason": "On disk but not in the hand-maintained index at 3cc7dc1df7; kept out for parity until the user decides to ship or delete it (wiki/decision-register.md, open issues)."
+        }
+    ]
+}

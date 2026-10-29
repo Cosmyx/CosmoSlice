@@ -53,6 +53,10 @@ i18n-status lang="":
 i18n-update-pot:
     {{python}} scripts/update_pot.py --update-po
 
+# Generate resources/profiles/cosmyx.json from the profile tree and HEAD's commit (required before a local C++ build)
+profiles-index *args:
+    {{python}} tools/profiles/cosmyx_index.py generate {{args}}
+
 # Full gate: lint, every test suite (guards included), catalogue check, every module `check` recipe (discovered)
 ci: lint test i18n-catalogs
     {{python}} tools/ci/suites.py checks --just "{{just_executable()}}"
