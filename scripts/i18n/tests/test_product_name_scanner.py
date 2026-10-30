@@ -138,4 +138,26 @@ def test_guide_tids(tmp_path: Path) -> None:
 def test_guide_tids_include_keys_injected_by_page_scripts(tmp_path: Path) -> None:
     (tmp_path / "21").mkdir()
     (tmp_path / "21" / "21.js").write_text("""html += '<div class="trans" tid="t11">all</div>';""", encoding="utf-8")
-    assert pn.guide_tids(tmp_path) == {"t11"}
+    (tmp_path / "6").mkdir()
+    (tmp_path / "6" / "6.js").write_text("""$("#Msg").attr( 'tid', "t72" );""", encoding="utf-8")
+    assert pn.guide_tids(tmp_path) == {"t11", "t72"}
+
+
+def test_stale_text_js_keys_reports_guide_keys_naming_the_upstream_product(tmp_path: Path) -> None:
+    text_js = tmp_path / "text.js"
+    text_js.write_text(
+        "var LangText = {\n"
+        '  en: {\n    t1: "Welcome to Orca",\n  },\n'
+        '  fr_FR: {\n    t1: "Bienvenue sur Orca Slicer",\n    t2: "CosmoSlice",\n    wk1: "Orca",\n  },\n'
+        '  zh_CN: {\n    t1: "欢迎使用逆戟鲸",\n    t2: "Orcslicer",\n  },\n'
+        '  de_DE: {\n    t1: "Willkommen bei CosmoSlice",\n  },\n'
+        "};\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "guide" / "1").mkdir(parents=True)
+    (tmp_path / "guide" / "1" / "index.html").write_text('<a tid="t1"></a><a tid="t2"></a>', encoding="utf-8")
+    for lang in ("fr", "zh_CN", "de"):
+        (tmp_path / "i18n" / lang).mkdir(parents=True)
+        (tmp_path / "i18n" / lang / f"x_{lang}.po").write_text("", encoding="utf-8")
+    stale = pn.stale_text_js_keys(text_js, tmp_path / "guide", tmp_path / "i18n")
+    assert stale == {"fr": ["t1"], "zh_CN": ["t1", "t2"]}

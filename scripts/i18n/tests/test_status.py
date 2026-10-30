@@ -37,5 +37,12 @@ def test_main_reports_every_language(capsys) -> None:
     assert len(out) == 20 and out[0].startswith("ca: ")
 
 
+def test_main_lists_the_stale_text_js_keys_of_a_language(capsys, monkeypatch) -> None:
+    monkeypatch.setattr(status.pn, "stale_text_js_keys", lambda: {"fr": ["t1"]})
+    assert status.main(["fr"]) == 0
+    out = capsys.readouterr().out.splitlines()
+    assert out[0].endswith(", 1 text.js") and "  text.js: t1" in out
+
+
 def test_unknown_language_fails() -> None:
     assert status.main(["xx"]) == 2

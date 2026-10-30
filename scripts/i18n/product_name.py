@@ -263,7 +263,9 @@ def guide_tids(root: Path = GUIDE_DIR) -> set[str]:
     """Every text.js key a setup-guide page asks for (its `tid` attributes, in the page or injected by its scripts)."""
     tids: set[str] = set()
     for page in (p for p in root.rglob("*") if p.suffix in {".html", ".js"}):
-        tids |= set(re.findall(r'(?<![\w-])tid="([^"]+)"', page.read_text(encoding="utf-8")))
+        text = page.read_text(encoding="utf-8")
+        tids |= set(re.findall(r'(?<![\w-])tid="([^"]+)"', text))
+        tids |= set(re.findall(r"""\.attr\(\s*["']tid["']\s*,\s*["']([^"']+)["']""", text))
     return tids
 
 
@@ -272,12 +274,14 @@ def po_language(block: str, po_langs: set[str]) -> str:
     return block if block in po_langs else block.split("_")[0]
 
 
-def stale_text_js_keys() -> dict[str, list[str]]:
+def stale_text_js_keys(
+    text_js: Path = TEXT_JS_PATH, guide_root: Path = GUIDE_DIR, catalog_dir: Path = CATALOG_DIR
+) -> dict[str, list[str]]:
     """Per .po language, the guide keys of its text.js block that still name the upstream product."""
-    po_langs = {p.parent.name for p in CATALOG_DIR.glob("*/*.po")}
-    tids = guide_tids()
+    po_langs = {p.parent.name for p in catalog_dir.glob("*/*.po")}
+    tids = guide_tids(guide_root)
     out: dict[str, list[str]] = {}
-    for block, entries in text_js_blocks().items():
+    for block, entries in text_js_blocks(text_js).items():
         if block == "en":
             continue
         lang = po_language(block, po_langs)
