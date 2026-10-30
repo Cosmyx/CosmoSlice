@@ -35,8 +35,8 @@ CPP_SUFFIXES = {".cpp", ".hpp", ".h", ".mm", ".c", ".cc", ".cxx", ".hxx"}
 NEW_NAME = "CosmoSlice"
 
 # The upstream name as a word. It may follow an escaped newline ("\nOrca" in a C++ or PO literal), and lowercase
-# identifiers (orca_slicer, orcaslicer.com) never match.
-TOKEN = re.compile(r"(?:(?<![A-Za-z])|(?<=\\n))(?:Orca ?Slicer|Orca|ORCA)(?![a-z])")
+# identifiers (orca_slicer, orcaslicer.com) never match. "Orc slicer" is a misspelling some translations carry.
+TOKEN = re.compile(r"(?:(?<![A-Za-z])|(?<=\\n))(?:Orca ?Slicer|Orc ?[Ss]licer|Orca|ORCA)(?![a-z])")
 # Native spellings used by some translations for the upstream name.
 NATIVE_TOKENS = {"zh_CN": re.compile("逆戟鲸"), "zh_TW": re.compile("逆戟鯨|逆戟鲸"), "ko": re.compile("오르카")}
 LOG_MARKERS = ("BOOST_LOG_TRIVIAL", "COSMO_LOG")
@@ -260,9 +260,9 @@ def guide_texts(root: Path = GUIDE_DIR) -> list[tuple[str, int, str]]:
 
 
 def guide_tids(root: Path = GUIDE_DIR) -> set[str]:
-    """Every text.js key a setup-guide page asks for (its `tid` attributes)."""
+    """Every text.js key a setup-guide page asks for (its `tid` attributes, in the page or injected by its scripts)."""
     tids: set[str] = set()
-    for page in root.rglob("*.html"):
+    for page in (p for p in root.rglob("*") if p.suffix in {".html", ".js"}):
         tids |= set(re.findall(r'(?<![\w-])tid="([^"]+)"', page.read_text(encoding="utf-8")))
     return tids
 

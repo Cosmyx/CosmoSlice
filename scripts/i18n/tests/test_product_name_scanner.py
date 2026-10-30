@@ -8,7 +8,18 @@ import pytest
 
 @pytest.mark.parametrize(
     "text",
-    ["OrcaSlicer", "Orca Slicer", "Orca will", "ORCA", "\\nOrca will", "(Orca)", "restarting Orca.", "Orca-PA"],
+    [
+        "OrcaSlicer",
+        "Orca Slicer",
+        "Orca will",
+        "ORCA",
+        "\\nOrca will",
+        "(Orca)",
+        "restarting Orca.",
+        "Orca-PA",
+        "Orcslicer",
+        "Orc Slicer",
+    ],
 )
 def test_token_matches_product_name(text: str) -> None:
     assert pn.has_token(text)
@@ -122,3 +133,9 @@ def test_guide_tids(tmp_path: Path) -> None:
     (tmp_path / "1").mkdir()
     (tmp_path / "1" / "index.html").write_text('<a tid="t1">x</a><b data-tid="no" tid="t2"></b>', encoding="utf-8")
     assert pn.guide_tids(tmp_path) == {"t1", "t2"}
+
+
+def test_guide_tids_include_keys_injected_by_page_scripts(tmp_path: Path) -> None:
+    (tmp_path / "21").mkdir()
+    (tmp_path / "21" / "21.js").write_text("""html += '<div class="trans" tid="t11">all</div>';""", encoding="utf-8")
+    assert pn.guide_tids(tmp_path) == {"t11"}
