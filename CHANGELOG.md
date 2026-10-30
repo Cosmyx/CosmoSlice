@@ -156,6 +156,7 @@ CosmoSlice repose sur OrcaSlicer 2.3.1 et succède à Spyder (`spyder-2.3.1-4`).
 
 ### Corrigé
 
+- **2026-10-30** — L'assistant du premier lancement affiche « CosmoSlice » au lieu d'« Orca Slicer » dans toutes ses langues (accueil, partage des données, avertissement et installation des plugins), et plus seulement en anglais. Les textes concernés ont aussi été relus et corrigés langue par langue.
 - **2026-10-29** — Tous les presets Cosmyx livrés (machines, filaments, process) portent la version de `cosmyx.json`, écrite à chaque build. Avant, une partie n'en portait pas et les autres gardaient d'anciennes valeurs disparates. Les fichiers du dépôt n'en portent plus.
 - **2026-10-28** — L'icône de document macOS .3mf/.obj/.amf était un fichier corrompu.
 - **2026-10-28** — L'imprimante Cosmyx Nova can-out se charge sous Linux : l'index des profils nommait son dossier avec la mauvaise casse.

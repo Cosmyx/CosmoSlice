@@ -5,7 +5,7 @@
 
 For each language: the renamed entries still fuzzy (fix the translation, then drop `fuzzy` and the `#|` line), the
 translated entries whose msgstr still names the upstream product (review: keep only when the source keeps it too),
-and the setup-guide text.js keys still pending in scripts/i18n/pending/<lang>.txt.
+and the setup-guide text.js keys of its block that still name the upstream product.
 """
 
 from __future__ import annotations
@@ -46,10 +46,11 @@ def main(argv: list[str] | None = None) -> int:
         if not files:
             print(f"status: no catalogue for language '{wanted}'", file=sys.stderr)
             return 2
+    stale_keys = pn.stale_text_js_keys()
     for path in files:
         lang = path.parent.name
         status = language_status(path, renamed, kept)
-        pending = pn.pending_keys(lang)
+        pending = stale_keys.get(lang, [])
         print(f"{lang}: {len(status['fuzzy'])} fuzzy renamed, {len(status['stray'])} stray, {len(pending)} text.js")
         if wanted:
             for label in ("fuzzy", "stray"):

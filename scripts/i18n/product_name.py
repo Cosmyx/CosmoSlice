@@ -30,7 +30,6 @@ GUIDE_DIR = REPO_ROOT / "resources" / "web" / "guide"
 DATA_DIR = Path(__file__).resolve().parent / "data"
 MAPPING_PATH = DATA_DIR / "cosmoslice_rename.json"
 ALLOWLIST_PATH = DATA_DIR / "product_name_allowlist.json"
-PENDING_DIR = Path(__file__).resolve().parent / "pending"
 
 CPP_SUFFIXES = {".cpp", ".hpp", ".h", ".mm", ".c", ".cc", ".cxx", ".hxx"}
 NEW_NAME = "CosmoSlice"
@@ -271,15 +270,6 @@ def guide_tids(root: Path = GUIDE_DIR) -> set[str]:
 def po_language(block: str, po_langs: set[str]) -> str:
     """The .po language of a text.js block: the block name itself (zh_CN, pt_BR, lt) or its language part (fr_FR)."""
     return block if block in po_langs else block.split("_")[0]
-
-
-def pending_keys(lang: str, root: Path = PENDING_DIR) -> list[str]:
-    """text.js keys still to translate for a .po language (scripts/i18n/pending/<lang>.txt, # starts a comment)."""
-    path = root / f"{lang}.txt"
-    if not path.is_file():
-        return []
-    lines = (line.split("#", 1)[0].strip() for line in path.read_text(encoding="utf-8").splitlines())
-    return [line for line in lines if line]
 
 
 def stale_text_js_keys() -> dict[str, list[str]]:
